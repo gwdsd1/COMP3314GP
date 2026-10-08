@@ -1,0 +1,50 @@
+{
+  "seed": 25,
+  "shared_input_id": "yunet_d22_replicate_fixed39_zero",
+  "shared_policy": {
+    "scaling": "unit_columns",
+    "metric": "cosine",
+    "lda_center": true
+  },
+  "methods": [
+    {
+      "method": "CSA-2+LDA",
+      "kind": "gray",
+      "ranks": [
+        8,
+        4
+      ],
+      "lda": true,
+      "dimension": 27,
+      "correct": 66,
+      "origin": "initial grid"
+    },
+    {
+      "method": "CSA-3",
+      "kind": "gabor",
+      "ranks": [
+        13,
+        3,
+        10
+      ],
+      "lda": false,
+      "dimension": 390,
+      "correct": 63,
+      "origin": "balanced rank extension"
+    },
+    {
+      "method": "CSA-3+LDA",
+      "kind": "gabor",
+      "ranks": [
+        4,
+        2,
+        3
+      ],
+      "lda": true,
+      "dimension": 12,
+      "correct": 63,
+      "origin": "initial grid"
+    }
+  ],
+  "selected_before_refinement_outer_prediction": true
+}

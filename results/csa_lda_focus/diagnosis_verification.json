@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "score_records": 2850,
+  "prediction_records": 912000,
+  "independent_matrix_NN": true,
+  "independent_generalized_LDA": true,
+  "full_QR_vs_raw_Euclidean_invariance": true,
+  "four_previous_LDA_means_reproduced": true,
+  "code_sha256": "03ecef965cfd50c118a20209c29ce2136510e36fa789160e719843c65085b518"
+}

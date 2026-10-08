@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "models_checked": 60,
+  "scores_checked": 160,
+  "predictions_checked": 36800,
+  "maximum_relative_Fisher_residual": 1.8034341488767808e-14,
+  "maximum_CSA_update_projector_error": 1.3091194794867533e-12,
+  "checks": [
+    "independent tensor/PCA encoding",
+    "orthogonality",
+    "scatter sums",
+    "independent three-sweep CSA Procedure 1",
+    "Fisher equation",
+    "nested splits and no train/probe overlap",
+    "independent cosine NN and CSV scores"
+  ]
+}

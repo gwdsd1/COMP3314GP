@@ -1,0 +1,55 @@
+{
+  "status": "partial reproduction with documented protocol differences",
+  "scope": "ORL Table II gray rows / Figure 7(a) only; no Gabor experiment",
+  "run_time_taipei": "2026-10-05T22:07:42.772470+08:00",
+  "preprocess": "Pillow bilinear 112x92 -> 56x46, then ImageOps.equalize; float64 [0,255]",
+  "split": "NumPy default_rng(seed); per subject first 2 permuted indices for training/gallery, other 8 probe",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "centering_variants": [
+    false,
+    true
+  ],
+  "csa": {
+    "ranks": [
+      11,
+      2
+    ],
+    "init": "identity truncated",
+    "max_iter": 3,
+    "epsilon": 0.001
+  },
+  "pca_components": 30,
+  "lda": "Fisher generalized eigensystem via positive-Sw whitening; W.T Sw W=I; no ridge or column unit normalization",
+  "classifier": "Euclidean 1-NN; no feature normalization; ties use first gallery index",
+  "parameter_selection": "fixed paper configurations; dimension curves descriptive only, no probe-based parameter selection",
+  "paper_targets_percent": {
+    "PCA+LDA (Gray)": 82.2,
+    "CSA-2+LDA": 84.1
+  },
+  "unknown_original_details": [
+    "split indices",
+    "resize interpolation",
+    "histogram equalization implementation",
+    "centering",
+    "CSA initialization",
+    "LDA solver/vector normalization",
+    "NN metric"
+  ],
+  "raw_data_sha256": "60da43f93507e4e90b97129bd4e72266e02dc041ab563df8969ab7def9a2b286",
+  "processed_data_sha256": "f980d6deba63cb74051167f0976cb517b5a7622ca487be97be07962440afc6ad",
+  "versions": {
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "pillow": "12.3.0",
+    "matplotlib": "3.11.1"
+  },
+  "code_sha256": {
+    "csa.py": "29226eaae53c3c5b9d5e752d55a8d675e0a40b2d8eefac186f06682ad02ea64c",
+    "run_orl_gray.py": "ddff280aed8e0d96cdbefb6f1bc059ae4c07221af3869f71c0c61c119588ac72"
+  }
+}

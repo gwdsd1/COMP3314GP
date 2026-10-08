@@ -1,0 +1,80 @@
+[
+  {
+    "entry_id": "yunet_d18_zero_fixed39_zero",
+    "normalization": "none",
+    "policy": "unit_columns_cosine_centered",
+    "methods": [
+      {
+        "method": "PCA+LDA (Gray)",
+        "case_index": 0,
+        "alpha": 0.15,
+        "dimension": 23,
+        "correct": 54
+      },
+      {
+        "method": "CSA-2+LDA",
+        "case_index": 1,
+        "alpha": 0.0,
+        "dimension": 13,
+        "correct": 50
+      },
+      {
+        "method": "PCA+LDA (Gabor)",
+        "case_index": 2,
+        "alpha": 0.0,
+        "dimension": 20,
+        "correct": 67
+      },
+      {
+        "method": "CSA-3+LDA",
+        "case_index": 3,
+        "alpha": 0.0,
+        "dimension": 23,
+        "correct": 51
+      }
+    ],
+    "CSA_sum_correct": 101,
+    "profile": "optimized_shrinkage_LDA",
+    "score_file": "seed22/fixed/cv_yunet_d18_zero_fixed39_zero_none.npz",
+    "score_sha256": "f44ffd174642568a49807725ca73e51cba0e7829d53c2cf6c0f55a397fadb11b"
+  },
+  {
+    "entry_id": "yunet_d18_zero_fixed39_zero",
+    "normalization": "none",
+    "policy": "unit_columns_cosine_centered",
+    "methods": [
+      {
+        "method": "PCA+LDA (Gray)",
+        "case_index": 0,
+        "alpha": 0.0,
+        "dimension": 23,
+        "correct": 53
+      },
+      {
+        "method": "CSA-2+LDA",
+        "case_index": 1,
+        "alpha": 0.0,
+        "dimension": 13,
+        "correct": 50
+      },
+      {
+        "method": "PCA+LDA (Gabor)",
+        "case_index": 2,
+        "alpha": 0.0,
+        "dimension": 20,
+        "correct": 67
+      },
+      {
+        "method": "CSA-3+LDA",
+        "case_index": 3,
+        "alpha": 0.0,
+        "dimension": 23,
+        "correct": 51
+      }
+    ],
+    "CSA_sum_correct": 101,
+    "profile": "optimized_ordinary_LDA",
+    "score_file": "seed22/fixed/cv_yunet_d18_zero_fixed39_zero_none.npz",
+    "score_sha256": "f44ffd174642568a49807725ca73e51cba0e7829d53c2cf6c0f55a397fadb11b"
+  }
+]

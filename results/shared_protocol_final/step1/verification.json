@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "stage": 1,
+  "models": 18,
+  "predictions": 5760,
+  "splits": 1200,
+  "verifier_sha256": "a2284c93ccbd899316fb8b754ddf6e352d789b3736e278b08fdb8cce6fe9dda4",
+  "checks": [
+    "snapshot/feature hashes",
+    "shared input hashes across methods",
+    "gallery/probe disjoint and class counts",
+    "independent matrix cosine NN on saved embeddings",
+    "prediction-derived accuracy and sample SD",
+    "CSA three iterations and monotone SSE",
+    "prior-stage anchor checks"
+  ],
+  "external_reused_scores": 18
+}

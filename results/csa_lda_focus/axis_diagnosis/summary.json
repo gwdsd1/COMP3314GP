@@ -1,0 +1,37 @@
+[
+  {
+    "kind": "gray",
+    "case": "swap_rank_assignment",
+    "n_splits": 10,
+    "mean_percent": 58.625,
+    "std_pp": 3.8080005325046313
+  },
+  {
+    "kind": "gray",
+    "case": "transpose_with_ranks",
+    "n_splits": 10,
+    "mean_percent": 77.5,
+    "std_pp": 5.295110427974514
+  },
+  {
+    "kind": "gabor",
+    "case": "swap_rank_assignment",
+    "n_splits": 10,
+    "mean_percent": 71.21875,
+    "std_pp": 3.762854126930189
+  },
+  {
+    "kind": "gabor",
+    "case": "transpose_with_ranks",
+    "n_splits": 10,
+    "mean_percent": 80.03125,
+    "std_pp": 2.599787985479671
+  },
+  {
+    "kind": "gabor",
+    "case": "orientation_then_scale",
+    "n_splits": 10,
+    "mean_percent": 80.0,
+    "std_pp": 2.7322660517925
+  }
+]

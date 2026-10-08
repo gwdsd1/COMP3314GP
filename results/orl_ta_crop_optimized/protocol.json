@@ -1,0 +1,159 @@
+{
+  "date": "2026-10-08",
+  "seeds": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "outer": "all400 ORL images,40classes,2gallery/8probe per class",
+  "inner": "own80gallery only,16folds of75learning/5validation,all40classes; each validated once",
+  "inputs": [
+    {
+      "id": "crop_2pi_zero",
+      "wavelength": 4.0,
+      "support": 19,
+      "finite_dc": true,
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "histogram": "PIL",
+      "context": false,
+      "downsample_first": false,
+      "sigma": 6.283185307179586,
+      "boundary": "zero"
+    },
+    {
+      "id": "crop_2pi_reflect",
+      "wavelength": 4.0,
+      "support": 19,
+      "finite_dc": true,
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "histogram": "PIL",
+      "context": false,
+      "downsample_first": false,
+      "sigma": 6.283185307179586,
+      "boundary": "reflect"
+    },
+    {
+      "id": "crop_pi_zero",
+      "wavelength": 4.0,
+      "support": 19,
+      "finite_dc": true,
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "histogram": "PIL",
+      "context": false,
+      "downsample_first": false,
+      "sigma": 3.141592653589793,
+      "boundary": "zero"
+    },
+    {
+      "id": "crop_pi_reflect",
+      "wavelength": 4.0,
+      "support": 19,
+      "finite_dc": true,
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "histogram": "PIL",
+      "context": false,
+      "downsample_first": false,
+      "sigma": 3.141592653589793,
+      "boundary": "reflect"
+    }
+  ],
+  "powers": [
+    1.0
+  ],
+  "starts": [
+    "identity",
+    "hosvd"
+  ],
+  "policies": [
+    {
+      "id": "unit_gallery_cosine",
+      "scale": "unit",
+      "origin": "gallery",
+      "metric": "cosine"
+    },
+    {
+      "id": "unit_linear_cosine",
+      "scale": "unit",
+      "origin": "linear",
+      "metric": "cosine"
+    },
+    {
+      "id": "unit_gallery_euclidean",
+      "scale": "unit",
+      "origin": "gallery",
+      "metric": "euclidean"
+    },
+    {
+      "id": "sw_gallery_cosine",
+      "scale": "sw",
+      "origin": "gallery",
+      "metric": "cosine"
+    },
+    {
+      "id": "sw_linear_cosine",
+      "scale": "sw",
+      "origin": "linear",
+      "metric": "cosine"
+    },
+    {
+      "id": "sw_gallery_euclidean",
+      "scale": "sw",
+      "origin": "gallery",
+      "metric": "euclidean"
+    }
+  ],
+  "geometry": "YuNet; target(13,24)/(33,24),cv2 linear warp/replicate,56x46; PIL equalize",
+  "Gabor": "5scales wavelength4*sqrt(2)^s,8orientations o*pi/8,39x39 finite-mean-zero complex kernels; magnitude then stride00",
+  "boundary_definition": "zero=np.pad constant0; reflect=np.pad reflect,edge excluded; no raw-image context",
+  "CSA_center": false,
+  "Tmax": 3,
+  "LDA_alpha": 0.0,
+  "dimensions": "CSA4x2x3->LDA23,CSA15x1x26,PCA24->LDA23,PCA33->LDA25",
+  "LDA_limit": "24<=75-40 inside;24/33<=80-40 outside;390 has no LDA",
+  "target": "CSA24+ordinaryLDA23; four outer methods share input/init(where applicable)/NN policy",
+  "stage_A": "4inputs,identity,unit/gallery/cosine; complete16folds,keep2",
+  "stage_B": "best2inputs x2starts x6policies=24 complete-CV configurations",
+  "tie_rule": "inner correct,worst fold,declared input order,identity,declared policy order",
+  "freeze": "all10 choices and CV models hashed; independently verify before any outer scoring",
+  "baseline": {
+    "root": "results\\orl_fixed_input_extensions",
+    "feature": {
+      "path": "results/orl_protocol_audit/features/yunet_d20_replicate_fixed39_zero.npy",
+      "sha256": "849b1161d752d9b131fbe85724de26df7e13d9e8d38be0f3fded05c95e4b307c"
+    },
+    "score_sha256": "e03ed517be8bb3feeee5f733056ae287f237e3ee757aae385fa1120bfd18c33f",
+    "verification_sha256": "b63f0f6c9505cd3056431cea8c56c010ae45e1942c6da62929bd917c078779f4"
+  },
+  "raw_manifest_sha256": "ab48048e0fe799d4369b9f40e880c2ec5105c49228074be603e1f20a6e4124a6",
+  "eyes_sha256": "bf2dbbd7e1f7fe3f00ac17dbb80a87851a6ea299a29a281a302e15ca283cf6d3",
+  "source_sha256": {
+    "optimize_orl_ta_crop.py": "c712328235c8ace2da88e5e0e0efc8a54ed57365f3423753ec9eb87b243783b8",
+    "optimize_orl_unknowns.py": "d9b8800f62f47ac89f92da64f56a3a73ad930c6c52b9842bbcc9ec84048ea5fc",
+    "csa.py": "6aabff534f47786c9a5098b2459e3afc55f39ad3d86d99b2bcba220f868b06a3",
+    "gabor.py": "ceb12f2bfbe82e381375e14a1c60d0a0a4795b91544e7bff02c22e93ac61578f",
+    "audit_orl_protocol.py": "d80bc8fc89f327dc0aac0abaeec326d07a3f7f181da427e50f02b98687cd9247",
+    "run_available_reproduction.py": "135ab16b4e47f840ad0e711c9bb1cb72166e1a3f871e46ae4d25726ae6928a71",
+    "run_orl_fixed_inputs.py": "f67e34d0c5ecb6229fd3f0fac21c40e558a3f347ef73732b71059afe44f3e8ce",
+    "prepare_available_data.py": "0f5d07532716155b41c7264fc55cfcb749678d9ce1c77a1ad479d8f43e65f6e0"
+  },
+  "limits": [
+    "author numeric settings not confirmed; TA explicitly allows remaining alignment/Gabor choices with disclosure",
+    "NN/init/scaling are disclosed implementations,not individually TA-confirmed",
+    "historical probes observed; not blind",
+    "paper best versus repeated mean differs",
+    "4input pruning by default policy may omit a better input under another policy",
+    "per-gallery validation winners,not global optimality; controls not separately optimized"
+  ],
+  "stop": "all10 selections and40new outer fits; retain negatives; no more candidates/seeds"
+}

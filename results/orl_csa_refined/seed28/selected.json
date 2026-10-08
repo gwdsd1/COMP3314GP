@@ -1,0 +1,55 @@
+{
+  "seed": 28,
+  "training_only": true,
+  "profiles": [
+    {
+      "entry_id": "yunet_d16_replicate_sigma_pi_zero",
+      "normalization": "tensor_l2",
+      "profile": "ordinary",
+      "policy": "unit_columns_cosine_centered",
+      "CSA": {
+        "case_index": 1,
+        "alpha": 0.0,
+        "dimension": 16,
+        "correct": 66
+      },
+      "PCA": {
+        "case_index": 0,
+        "alpha": 0.0,
+        "dimension": 29,
+        "correct": 71
+      },
+      "score_file": "seed28/full/yunet_d16_replicate_sigma_pi_zero_tensor_l2.npz",
+      "score_sha256": "da3543f910b8171908b73f459a5e9dc7e0837d388b110bfc28f3c44e4d582730",
+      "pure": {
+        "case_index": 0,
+        "correct": 65
+      }
+    },
+    {
+      "entry_id": "yunet_d16_replicate_sigma_pi_zero",
+      "normalization": "tensor_l2",
+      "profile": "shrinkage",
+      "policy": "unit_columns_cosine_centered",
+      "CSA": {
+        "case_index": 19,
+        "alpha": 0.05,
+        "dimension": 28,
+        "correct": 71
+      },
+      "PCA": {
+        "case_index": 0,
+        "alpha": 0.0,
+        "dimension": 29,
+        "correct": 71
+      },
+      "score_file": "seed28/full/yunet_d16_replicate_sigma_pi_zero_tensor_l2.npz",
+      "score_sha256": "da3543f910b8171908b73f459a5e9dc7e0837d388b110bfc28f3c44e4d582730",
+      "pure": {
+        "case_index": 0,
+        "correct": 65
+      }
+    }
+  ],
+  "elapsed_seconds": 192.27427779999925
+}

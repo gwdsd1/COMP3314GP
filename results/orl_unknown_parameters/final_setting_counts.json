@@ -1,0 +1,18 @@
+{
+  "input": {
+    "context_anchor": 1,
+    "context_sigma_pi": 8,
+    "context_cdfmin": 1
+  },
+  "power": {
+    "1.0": 7,
+    "0.75": 3
+  },
+  "init": {
+    "identity": 6,
+    "hosvd": 4
+  },
+  "policy": {
+    "unit_gallery_cosine": 10
+  }
+}

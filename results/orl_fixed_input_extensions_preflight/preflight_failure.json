@@ -1,0 +1,8 @@
+{
+  "status": "failed before scoring; not an experiment result",
+  "reason": "Canvas-dependent OpenCV interpolation rounding changed central pixels",
+  "mismatched_pixels": 4878,
+  "total_pixels": 1030400,
+  "resolution": "Expanded center overwritten with exact legacy central warp; new preparation verified all400 centers",
+  "outer_fits": 0
+}

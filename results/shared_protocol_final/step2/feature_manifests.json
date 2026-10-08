@@ -1,0 +1,30 @@
+[
+  {
+    "variant": "whole_hist",
+    "gray_path": "results\\shared_protocol_final\\step2\\whole_hist.npy",
+    "gray_sha256": "14f4c6054d91901a5efd70591d28e080eac90acaa4cd565b8bc9d549f5031b27",
+    "gabor_path": "results\\shared_protocol_final\\step2\\whole_hist_gabor.npy",
+    "gabor_sha256": "90845a5424b37ed7d7aef5f2353806c89302c3e19a6905972580a3ce57113ca8"
+  },
+  {
+    "variant": "valid_hist",
+    "gray_path": "results\\shared_protocol_final\\step2\\valid_hist.npy",
+    "gray_sha256": "04ce36618bc80b2077eb070b2e4fc24eafda1c35f0f0261f5f6857c57159e2dc",
+    "gabor_path": "results\\shared_protocol_final\\step2\\valid_hist_gabor.npy",
+    "gabor_sha256": "ad3a3f246f84501c84fe6c0935d1865ca587cd596821907ef1d66a1a47d6e665"
+  },
+  {
+    "variant": "valid_zscore",
+    "gray_path": "results\\shared_protocol_final\\step2\\valid_zscore.npy",
+    "gray_sha256": "316b1f06f2fa3144781018161c1303bdd79d119a8b7ac81e758899fa23134b4d",
+    "gabor_path": "results\\shared_protocol_final\\step2\\valid_zscore_gabor.npy",
+    "gabor_sha256": "87e8529b4aa3549a5a344a2d39b6dc0086002d889973cfac774caf46d91b2df6"
+  },
+  {
+    "variant": "valid_zscore_lanczos",
+    "gray_path": "results\\shared_protocol_final\\step2\\valid_zscore_lanczos.npy",
+    "gray_sha256": "61747c7dec23f33e62cae6fb9d9141b908cdf068389b846c284b026d9a0fcb1e",
+    "gabor_path": "results\\shared_protocol_final\\step2\\valid_zscore_lanczos_gabor.npy",
+    "gabor_sha256": "098630c1718c126cc98d2815a486c93fe3c9b22facf4a564c655d31a9ad84c8f"
+  }
+]

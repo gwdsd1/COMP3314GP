@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "outer_models": 30,
+  "outer_predictions": 9600,
+  "selected_inner_predictions": 2400,
+  "checks": [
+    "fixed shared input/policy",
+    "selection only original80gallery",
+    "all inner scores replayed",
+    "independent matrix NN for inner/outer",
+    "prediction CSV readback"
+  ],
+  "code_sha256": "d80bc8fc89f327dc0aac0abaeec326d07a3f7f181da427e50f02b98687cd9247"
+}

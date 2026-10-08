@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "all_outer_actual_dimensions_checked": 200,
+  "shared4method_groups_checked": 50,
+  "summary_groups_independently_recomputed": 20,
+  "stage_C_scores_and_threshold_counts": {
+    "CSA24_LDA23": {
+      "paper_threshold_met_count": 2,
+      "seed_scores": {
+        "20": 86.5625,
+        "21": 90.0,
+        "22": 91.25,
+        "23": 84.6875,
+        "24": 91.5625,
+        "25": 81.875,
+        "26": 89.6875,
+        "27": 90.625,
+        "28": 87.1875,
+        "29": 85.0
+      }
+    },
+    "CSA390": {
+      "paper_threshold_met_count": 0,
+      "seed_scores": {
+        "20": 91.875,
+        "21": 92.8125,
+        "22": 92.1875,
+        "23": 89.0625,
+        "24": 90.0,
+        "25": 91.25,
+        "26": 91.5625,
+        "27": 92.5,
+        "28": 88.75,
+        "29": 90.3125
+      }
+    },
+    "PCA24_LDA23": {
+      "paper_threshold_met_count": null,
+      "seed_scores": {
+        "20": 91.5625,
+        "21": 91.25,
+        "22": 93.4375,
+        "23": 90.625,
+        "24": 88.125,
+        "25": 88.125,
+        "26": 90.625,
+        "27": 91.875,
+        "28": 90.0,
+        "29": 91.25
+      }
+    },
+    "PCA33_LDA25": {
+      "paper_threshold_met_count": 10,
+      "seed_scores": {
+        "20": 96.25,
+        "21": 92.8125,
+        "22": 96.25,
+        "23": 92.8125,
+        "24": 93.75,
+        "25": 93.125,
+        "26": 93.4375,
+        "27": 94.6875,
+        "28": 94.6875,
+        "29": 93.75
+      }
+    }
+  },
+  "gallery_inner_CV_percent": {
+    "stage0_context": 67.75,
+    "stage_A": 77.0,
+    "stage_B": 77.875,
+    "stage_C": 78.375
+  },
+  "training_only_representation_diagnostics": [
+    {
+      "stage": "stage0_context",
+      "mean_between_variation_retained_percent": 22.667255633894637,
+      "median_sw_condition": 717.5763257255167
+    },
+    {
+      "stage": "stage_A",
+      "mean_between_variation_retained_percent": 26.32750591975813,
+      "median_sw_condition": 660.6478842577644
+    },
+    {
+      "stage": "stage_B",
+      "mean_between_variation_retained_percent": 25.767143721812815,
+      "median_sw_condition": 660.6478842577644
+    },
+    {
+      "stage": "stage_C",
+      "mean_between_variation_retained_percent": 25.892665985818713,
+      "median_sw_condition": 660.6478842577644
+    }
+  ]
+}

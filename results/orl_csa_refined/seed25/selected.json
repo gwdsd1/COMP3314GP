@@ -1,0 +1,55 @@
+{
+  "seed": 25,
+  "training_only": true,
+  "profiles": [
+    {
+      "entry_id": "yunet_d22_replicate_fixed39_zero",
+      "normalization": "none",
+      "profile": "ordinary",
+      "policy": "unit_columns_cosine_centered",
+      "CSA": {
+        "case_index": 1,
+        "alpha": 0.0,
+        "dimension": 23,
+        "correct": 63
+      },
+      "PCA": {
+        "case_index": 0,
+        "alpha": 0.0,
+        "dimension": 18,
+        "correct": 66
+      },
+      "score_file": "seed25/full/yunet_d22_replicate_fixed39_zero_none.npz",
+      "score_sha256": "ee66fc1d629dd88f77813ec788b64ca76eb0282462aca02261e7db2dad4e46a4",
+      "pure": {
+        "case_index": 0,
+        "correct": 59
+      }
+    },
+    {
+      "entry_id": "yunet_d22_replicate_fixed39_zero",
+      "normalization": "channel_rms",
+      "profile": "shrinkage",
+      "policy": "unit_columns_cosine_centered",
+      "CSA": {
+        "case_index": 4,
+        "alpha": 0.15,
+        "dimension": 18,
+        "correct": 68
+      },
+      "PCA": {
+        "case_index": 0,
+        "alpha": 0.0,
+        "dimension": 24,
+        "correct": 66
+      },
+      "score_file": "seed25/full/yunet_d22_replicate_fixed39_zero_channel_rms.npz",
+      "score_sha256": "91d86f6f1d7fb515916afb33e602c074877680673cd98179df49c7a5cea522fb",
+      "pure": {
+        "case_index": 0,
+        "correct": 57
+      }
+    }
+  ],
+  "elapsed_seconds": 209.8760289999991
+}

@@ -1,0 +1,14 @@
+{
+  "input": {
+    "crop_2pi_zero": 3,
+    "crop_pi_reflect": 6,
+    "crop_pi_zero": 1
+  },
+  "init": {
+    "hosvd": 2,
+    "identity": 8
+  },
+  "policy": {
+    "unit_gallery_cosine": 10
+  }
+}

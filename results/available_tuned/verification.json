@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "counts": {
+    "final_results": 30,
+    "final_predictions": 61560,
+    "outer_split_rows": 31200,
+    "validation_fold_rows": 10920,
+    "validation_results": 7152,
+    "validation_predictions": 103200,
+    "candidates": 1092,
+    "selected_units": 30,
+    "summary_groups": 10,
+    "csa_histories": 15
+  },
+  "checks": [
+    "source snapshots, inputs, eye annotations and eight feature caches match recorded hashes",
+    "original seeds and 2/8, G30/P470, G40/P460 splits; every validation index belongs to original training/gallery",
+    "all validation predictions and pooled/worst-fold scores; both-stage winners replay without final-probe scores",
+    "final predictions, selected configurations, paper dimensions, three-seed mean/sample-SD and monotone CSA histories",
+    "new base-2 Gabor FFT matches independent spatial convolution for nine kernels; sampling and configuration restoration verified"
+  ],
+  "new_gabor_max_absolute_error": 5.372932005975883e-07,
+  "limits": [
+    "audit checks recorded outputs, not an independent full model reimplementation",
+    "previous final scores were already observed; development evaluation, not a fresh blind test"
+  ]
+}

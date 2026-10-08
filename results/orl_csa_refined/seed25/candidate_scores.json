@@ -1,0 +1,722 @@
+[
+  {
+    "entry_id": "yunet_d22_replicate_fixed39_zero",
+    "normalization": "none",
+    "profile": "ordinary",
+    "policy": "unit_columns_cosine_centered",
+    "CSA": {
+      "case_index": 1,
+      "alpha": 0.0,
+      "dimension": 23,
+      "correct": 63
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.0,
+      "dimension": 18,
+      "correct": 66
+    },
+    "score_file": "seed25/full/yunet_d22_replicate_fixed39_zero_none.npz",
+    "score_sha256": "ee66fc1d629dd88f77813ec788b64ca76eb0282462aca02261e7db2dad4e46a4"
+  },
+  {
+    "entry_id": "yunet_d22_replicate_fixed39_zero",
+    "normalization": "none",
+    "profile": "ordinary",
+    "policy": "unit_columns_cosine_linear",
+    "CSA": {
+      "case_index": 3,
+      "alpha": 0.0,
+      "dimension": 24,
+      "correct": 59
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.0,
+      "dimension": 18,
+      "correct": 66
+    },
+    "score_file": "seed25/full/yunet_d22_replicate_fixed39_zero_none.npz",
+    "score_sha256": "ee66fc1d629dd88f77813ec788b64ca76eb0282462aca02261e7db2dad4e46a4"
+  },
+  {
+    "entry_id": "yunet_d22_replicate_fixed39_zero",
+    "normalization": "none",
+    "profile": "ordinary",
+    "policy": "unit_columns_euclidean",
+    "CSA": {
+      "case_index": 3,
+      "alpha": 0.0,
+      "dimension": 24,
+      "correct": 58
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.0,
+      "dimension": 26,
+      "correct": 59
+    },
+    "score_file": "seed25/full/yunet_d22_replicate_fixed39_zero_none.npz",
+    "score_sha256": "ee66fc1d629dd88f77813ec788b64ca76eb0282462aca02261e7db2dad4e46a4"
+  },
+  {
+    "entry_id": "yunet_d22_replicate_fixed39_zero",
+    "normalization": "none",
+    "profile": "ordinary",
+    "policy": "sw_identity_cosine_centered",
+    "CSA": {
+      "case_index": 1,
+      "alpha": 0.0,
+      "dimension": 23,
+      "correct": 56
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.0,
+      "dimension": 25,
+      "correct": 44
+    },
+    "score_file": "seed25/full/yunet_d22_replicate_fixed39_zero_none.npz",
+    "score_sha256": "ee66fc1d629dd88f77813ec788b64ca76eb0282462aca02261e7db2dad4e46a4"
+  },
+  {
+    "entry_id": "yunet_d22_replicate_fixed39_zero",
+    "normalization": "none",
+    "profile": "ordinary",
+    "policy": "sw_identity_cosine_linear",
+    "CSA": {
+      "case_index": 1,
+      "alpha": 0.0,
+      "dimension": 17,
+      "correct": 48
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.0,
+      "dimension": 25,
+      "correct": 44
+    },
+    "score_file": "seed25/full/yunet_d22_replicate_fixed39_zero_none.npz",
+    "score_sha256": "ee66fc1d629dd88f77813ec788b64ca76eb0282462aca02261e7db2dad4e46a4"
+  },
+  {
+    "entry_id": "yunet_d22_replicate_fixed39_zero",
+    "normalization": "none",
+    "profile": "ordinary",
+    "policy": "sw_identity_euclidean",
+    "CSA": {
+      "case_index": 1,
+      "alpha": 0.0,
+      "dimension": 23,
+      "correct": 48
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.0,
+      "dimension": 25,
+      "correct": 31
+    },
+    "score_file": "seed25/full/yunet_d22_replicate_fixed39_zero_none.npz",
+    "score_sha256": "ee66fc1d629dd88f77813ec788b64ca76eb0282462aca02261e7db2dad4e46a4"
+  },
+  {
+    "entry_id": "yunet_d22_replicate_fixed39_zero",
+    "normalization": "none",
+    "profile": "shrinkage",
+    "policy": "unit_columns_cosine_centered",
+    "CSA": {
+      "case_index": 1,
+      "alpha": 0.01,
+      "dimension": 23,
+      "correct": 64
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.0,
+      "dimension": 18,
+      "correct": 66
+    },
+    "score_file": "seed25/full/yunet_d22_replicate_fixed39_zero_none.npz",
+    "score_sha256": "ee66fc1d629dd88f77813ec788b64ca76eb0282462aca02261e7db2dad4e46a4"
+  },
+  {
+    "entry_id": "yunet_d22_replicate_fixed39_zero",
+    "normalization": "none",
+    "profile": "shrinkage",
+    "policy": "unit_columns_cosine_linear",
+    "CSA": {
+      "case_index": 3,
+      "alpha": 0.15,
+      "dimension": 26,
+      "correct": 64
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.0,
+      "dimension": 18,
+      "correct": 66
+    },
+    "score_file": "seed25/full/yunet_d22_replicate_fixed39_zero_none.npz",
+    "score_sha256": "ee66fc1d629dd88f77813ec788b64ca76eb0282462aca02261e7db2dad4e46a4"
+  },
+  {
+    "entry_id": "yunet_d22_replicate_fixed39_zero",
+    "normalization": "none",
+    "profile": "shrinkage",
+    "policy": "unit_columns_euclidean",
+    "CSA": {
+      "case_index": 3,
+      "alpha": 0.15,
+      "dimension": 24,
+      "correct": 63
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.0,
+      "dimension": 26,
+      "correct": 59
+    },
+    "score_file": "seed25/full/yunet_d22_replicate_fixed39_zero_none.npz",
+    "score_sha256": "ee66fc1d629dd88f77813ec788b64ca76eb0282462aca02261e7db2dad4e46a4"
+  },
+  {
+    "entry_id": "yunet_d22_replicate_fixed39_zero",
+    "normalization": "none",
+    "profile": "shrinkage",
+    "policy": "sw_identity_cosine_centered",
+    "CSA": {
+      "case_index": 3,
+      "alpha": 0.05,
+      "dimension": 23,
+      "correct": 64
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.15,
+      "dimension": 24,
+      "correct": 65
+    },
+    "score_file": "seed25/full/yunet_d22_replicate_fixed39_zero_none.npz",
+    "score_sha256": "ee66fc1d629dd88f77813ec788b64ca76eb0282462aca02261e7db2dad4e46a4"
+  },
+  {
+    "entry_id": "yunet_d22_replicate_fixed39_zero",
+    "normalization": "none",
+    "profile": "shrinkage",
+    "policy": "sw_identity_cosine_linear",
+    "CSA": {
+      "case_index": 3,
+      "alpha": 0.15,
+      "dimension": 31,
+      "correct": 62
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.15,
+      "dimension": 24,
+      "correct": 65
+    },
+    "score_file": "seed25/full/yunet_d22_replicate_fixed39_zero_none.npz",
+    "score_sha256": "ee66fc1d629dd88f77813ec788b64ca76eb0282462aca02261e7db2dad4e46a4"
+  },
+  {
+    "entry_id": "yunet_d22_replicate_fixed39_zero",
+    "normalization": "none",
+    "profile": "shrinkage",
+    "policy": "sw_identity_euclidean",
+    "CSA": {
+      "case_index": 3,
+      "alpha": 0.15,
+      "dimension": 23,
+      "correct": 63
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.15,
+      "dimension": 23,
+      "correct": 59
+    },
+    "score_file": "seed25/full/yunet_d22_replicate_fixed39_zero_none.npz",
+    "score_sha256": "ee66fc1d629dd88f77813ec788b64ca76eb0282462aca02261e7db2dad4e46a4"
+  },
+  {
+    "entry_id": "yunet_d22_replicate_fixed39_zero",
+    "normalization": "channel_rms",
+    "profile": "ordinary",
+    "policy": "unit_columns_cosine_centered",
+    "CSA": {
+      "case_index": 1,
+      "alpha": 0.0,
+      "dimension": 19,
+      "correct": 59
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.0,
+      "dimension": 24,
+      "correct": 66
+    },
+    "score_file": "seed25/full/yunet_d22_replicate_fixed39_zero_channel_rms.npz",
+    "score_sha256": "91d86f6f1d7fb515916afb33e602c074877680673cd98179df49c7a5cea522fb"
+  },
+  {
+    "entry_id": "yunet_d22_replicate_fixed39_zero",
+    "normalization": "channel_rms",
+    "profile": "ordinary",
+    "policy": "unit_columns_cosine_linear",
+    "CSA": {
+      "case_index": 1,
+      "alpha": 0.0,
+      "dimension": 19,
+      "correct": 56
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.0,
+      "dimension": 24,
+      "correct": 66
+    },
+    "score_file": "seed25/full/yunet_d22_replicate_fixed39_zero_channel_rms.npz",
+    "score_sha256": "91d86f6f1d7fb515916afb33e602c074877680673cd98179df49c7a5cea522fb"
+  },
+  {
+    "entry_id": "yunet_d22_replicate_fixed39_zero",
+    "normalization": "channel_rms",
+    "profile": "ordinary",
+    "policy": "unit_columns_euclidean",
+    "CSA": {
+      "case_index": 1,
+      "alpha": 0.0,
+      "dimension": 19,
+      "correct": 53
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.0,
+      "dimension": 24,
+      "correct": 55
+    },
+    "score_file": "seed25/full/yunet_d22_replicate_fixed39_zero_channel_rms.npz",
+    "score_sha256": "91d86f6f1d7fb515916afb33e602c074877680673cd98179df49c7a5cea522fb"
+  },
+  {
+    "entry_id": "yunet_d22_replicate_fixed39_zero",
+    "normalization": "channel_rms",
+    "profile": "ordinary",
+    "policy": "sw_identity_cosine_centered",
+    "CSA": {
+      "case_index": 1,
+      "alpha": 0.0,
+      "dimension": 21,
+      "correct": 50
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.0,
+      "dimension": 25,
+      "correct": 43
+    },
+    "score_file": "seed25/full/yunet_d22_replicate_fixed39_zero_channel_rms.npz",
+    "score_sha256": "91d86f6f1d7fb515916afb33e602c074877680673cd98179df49c7a5cea522fb"
+  },
+  {
+    "entry_id": "yunet_d22_replicate_fixed39_zero",
+    "normalization": "channel_rms",
+    "profile": "ordinary",
+    "policy": "sw_identity_cosine_linear",
+    "CSA": {
+      "case_index": 1,
+      "alpha": 0.0,
+      "dimension": 19,
+      "correct": 48
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.0,
+      "dimension": 25,
+      "correct": 43
+    },
+    "score_file": "seed25/full/yunet_d22_replicate_fixed39_zero_channel_rms.npz",
+    "score_sha256": "91d86f6f1d7fb515916afb33e602c074877680673cd98179df49c7a5cea522fb"
+  },
+  {
+    "entry_id": "yunet_d22_replicate_fixed39_zero",
+    "normalization": "channel_rms",
+    "profile": "ordinary",
+    "policy": "sw_identity_euclidean",
+    "CSA": {
+      "case_index": 1,
+      "alpha": 0.0,
+      "dimension": 23,
+      "correct": 46
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.0,
+      "dimension": 25,
+      "correct": 36
+    },
+    "score_file": "seed25/full/yunet_d22_replicate_fixed39_zero_channel_rms.npz",
+    "score_sha256": "91d86f6f1d7fb515916afb33e602c074877680673cd98179df49c7a5cea522fb"
+  },
+  {
+    "entry_id": "yunet_d22_replicate_fixed39_zero",
+    "normalization": "channel_rms",
+    "profile": "shrinkage",
+    "policy": "unit_columns_cosine_centered",
+    "CSA": {
+      "case_index": 4,
+      "alpha": 0.15,
+      "dimension": 18,
+      "correct": 68
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.0,
+      "dimension": 24,
+      "correct": 66
+    },
+    "score_file": "seed25/full/yunet_d22_replicate_fixed39_zero_channel_rms.npz",
+    "score_sha256": "91d86f6f1d7fb515916afb33e602c074877680673cd98179df49c7a5cea522fb"
+  },
+  {
+    "entry_id": "yunet_d22_replicate_fixed39_zero",
+    "normalization": "channel_rms",
+    "profile": "shrinkage",
+    "policy": "unit_columns_cosine_linear",
+    "CSA": {
+      "case_index": 9,
+      "alpha": 0.35,
+      "dimension": 18,
+      "correct": 64
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.0,
+      "dimension": 24,
+      "correct": 66
+    },
+    "score_file": "seed25/full/yunet_d22_replicate_fixed39_zero_channel_rms.npz",
+    "score_sha256": "91d86f6f1d7fb515916afb33e602c074877680673cd98179df49c7a5cea522fb"
+  },
+  {
+    "entry_id": "yunet_d22_replicate_fixed39_zero",
+    "normalization": "channel_rms",
+    "profile": "shrinkage",
+    "policy": "unit_columns_euclidean",
+    "CSA": {
+      "case_index": 4,
+      "alpha": 0.35,
+      "dimension": 18,
+      "correct": 63
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.35,
+      "dimension": 25,
+      "correct": 56
+    },
+    "score_file": "seed25/full/yunet_d22_replicate_fixed39_zero_channel_rms.npz",
+    "score_sha256": "91d86f6f1d7fb515916afb33e602c074877680673cd98179df49c7a5cea522fb"
+  },
+  {
+    "entry_id": "yunet_d22_replicate_fixed39_zero",
+    "normalization": "channel_rms",
+    "profile": "shrinkage",
+    "policy": "sw_identity_cosine_centered",
+    "CSA": {
+      "case_index": 4,
+      "alpha": 0.35,
+      "dimension": 18,
+      "correct": 65
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.35,
+      "dimension": 31,
+      "correct": 62
+    },
+    "score_file": "seed25/full/yunet_d22_replicate_fixed39_zero_channel_rms.npz",
+    "score_sha256": "91d86f6f1d7fb515916afb33e602c074877680673cd98179df49c7a5cea522fb"
+  },
+  {
+    "entry_id": "yunet_d22_replicate_fixed39_zero",
+    "normalization": "channel_rms",
+    "profile": "shrinkage",
+    "policy": "sw_identity_cosine_linear",
+    "CSA": {
+      "case_index": 4,
+      "alpha": 0.35,
+      "dimension": 17,
+      "correct": 62
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.35,
+      "dimension": 31,
+      "correct": 62
+    },
+    "score_file": "seed25/full/yunet_d22_replicate_fixed39_zero_channel_rms.npz",
+    "score_sha256": "91d86f6f1d7fb515916afb33e602c074877680673cd98179df49c7a5cea522fb"
+  },
+  {
+    "entry_id": "yunet_d22_replicate_fixed39_zero",
+    "normalization": "channel_rms",
+    "profile": "shrinkage",
+    "policy": "sw_identity_euclidean",
+    "CSA": {
+      "case_index": 4,
+      "alpha": 0.35,
+      "dimension": 18,
+      "correct": 63
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.35,
+      "dimension": 24,
+      "correct": 56
+    },
+    "score_file": "seed25/full/yunet_d22_replicate_fixed39_zero_channel_rms.npz",
+    "score_sha256": "91d86f6f1d7fb515916afb33e602c074877680673cd98179df49c7a5cea522fb"
+  },
+  {
+    "entry_id": "yunet_d18_replicate_wavelength2_zero",
+    "normalization": "tensor_l2",
+    "profile": "ordinary",
+    "policy": "unit_columns_cosine_centered",
+    "CSA": {
+      "case_index": 27,
+      "alpha": 0.0,
+      "dimension": 26,
+      "correct": 56
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.0,
+      "dimension": 27,
+      "correct": 59
+    },
+    "score_file": "seed25/full/yunet_d18_replicate_wavelength2_zero_tensor_l2.npz",
+    "score_sha256": "6fe2e40707dd52eb6edd546ef712c0769f5bf23d1e70f5ee9d581bbce62373e1"
+  },
+  {
+    "entry_id": "yunet_d18_replicate_wavelength2_zero",
+    "normalization": "tensor_l2",
+    "profile": "ordinary",
+    "policy": "unit_columns_cosine_linear",
+    "CSA": {
+      "case_index": 5,
+      "alpha": 0.0,
+      "dimension": 23,
+      "correct": 55
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.0,
+      "dimension": 27,
+      "correct": 59
+    },
+    "score_file": "seed25/full/yunet_d18_replicate_wavelength2_zero_tensor_l2.npz",
+    "score_sha256": "6fe2e40707dd52eb6edd546ef712c0769f5bf23d1e70f5ee9d581bbce62373e1"
+  },
+  {
+    "entry_id": "yunet_d18_replicate_wavelength2_zero",
+    "normalization": "tensor_l2",
+    "profile": "ordinary",
+    "policy": "unit_columns_euclidean",
+    "CSA": {
+      "case_index": 5,
+      "alpha": 0.0,
+      "dimension": 23,
+      "correct": 57
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.0,
+      "dimension": 18,
+      "correct": 51
+    },
+    "score_file": "seed25/full/yunet_d18_replicate_wavelength2_zero_tensor_l2.npz",
+    "score_sha256": "6fe2e40707dd52eb6edd546ef712c0769f5bf23d1e70f5ee9d581bbce62373e1"
+  },
+  {
+    "entry_id": "yunet_d18_replicate_wavelength2_zero",
+    "normalization": "tensor_l2",
+    "profile": "ordinary",
+    "policy": "sw_identity_cosine_centered",
+    "CSA": {
+      "case_index": 1,
+      "alpha": 0.0,
+      "dimension": 23,
+      "correct": 46
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.0,
+      "dimension": 25,
+      "correct": 42
+    },
+    "score_file": "seed25/full/yunet_d18_replicate_wavelength2_zero_tensor_l2.npz",
+    "score_sha256": "6fe2e40707dd52eb6edd546ef712c0769f5bf23d1e70f5ee9d581bbce62373e1"
+  },
+  {
+    "entry_id": "yunet_d18_replicate_wavelength2_zero",
+    "normalization": "tensor_l2",
+    "profile": "ordinary",
+    "policy": "sw_identity_cosine_linear",
+    "CSA": {
+      "case_index": 1,
+      "alpha": 0.0,
+      "dimension": 23,
+      "correct": 42
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.0,
+      "dimension": 25,
+      "correct": 42
+    },
+    "score_file": "seed25/full/yunet_d18_replicate_wavelength2_zero_tensor_l2.npz",
+    "score_sha256": "6fe2e40707dd52eb6edd546ef712c0769f5bf23d1e70f5ee9d581bbce62373e1"
+  },
+  {
+    "entry_id": "yunet_d18_replicate_wavelength2_zero",
+    "normalization": "tensor_l2",
+    "profile": "ordinary",
+    "policy": "sw_identity_euclidean",
+    "CSA": {
+      "case_index": 1,
+      "alpha": 0.0,
+      "dimension": 16,
+      "correct": 42
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.0,
+      "dimension": 25,
+      "correct": 30
+    },
+    "score_file": "seed25/full/yunet_d18_replicate_wavelength2_zero_tensor_l2.npz",
+    "score_sha256": "6fe2e40707dd52eb6edd546ef712c0769f5bf23d1e70f5ee9d581bbce62373e1"
+  },
+  {
+    "entry_id": "yunet_d18_replicate_wavelength2_zero",
+    "normalization": "tensor_l2",
+    "profile": "shrinkage",
+    "policy": "unit_columns_cosine_centered",
+    "CSA": {
+      "case_index": 27,
+      "alpha": 0.65,
+      "dimension": 17,
+      "correct": 66
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.15,
+      "dimension": 20,
+      "correct": 61
+    },
+    "score_file": "seed25/full/yunet_d18_replicate_wavelength2_zero_tensor_l2.npz",
+    "score_sha256": "6fe2e40707dd52eb6edd546ef712c0769f5bf23d1e70f5ee9d581bbce62373e1"
+  },
+  {
+    "entry_id": "yunet_d18_replicate_wavelength2_zero",
+    "normalization": "tensor_l2",
+    "profile": "shrinkage",
+    "policy": "unit_columns_cosine_linear",
+    "CSA": {
+      "case_index": 1,
+      "alpha": 1.0,
+      "dimension": 22,
+      "correct": 66
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.15,
+      "dimension": 20,
+      "correct": 61
+    },
+    "score_file": "seed25/full/yunet_d18_replicate_wavelength2_zero_tensor_l2.npz",
+    "score_sha256": "6fe2e40707dd52eb6edd546ef712c0769f5bf23d1e70f5ee9d581bbce62373e1"
+  },
+  {
+    "entry_id": "yunet_d18_replicate_wavelength2_zero",
+    "normalization": "tensor_l2",
+    "profile": "shrinkage",
+    "policy": "unit_columns_euclidean",
+    "CSA": {
+      "case_index": 1,
+      "alpha": 1.0,
+      "dimension": 23,
+      "correct": 65
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.35,
+      "dimension": 16,
+      "correct": 54
+    },
+    "score_file": "seed25/full/yunet_d18_replicate_wavelength2_zero_tensor_l2.npz",
+    "score_sha256": "6fe2e40707dd52eb6edd546ef712c0769f5bf23d1e70f5ee9d581bbce62373e1"
+  },
+  {
+    "entry_id": "yunet_d18_replicate_wavelength2_zero",
+    "normalization": "tensor_l2",
+    "profile": "shrinkage",
+    "policy": "sw_identity_cosine_centered",
+    "CSA": {
+      "case_index": 27,
+      "alpha": 0.65,
+      "dimension": 23,
+      "correct": 66
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.15,
+      "dimension": 31,
+      "correct": 61
+    },
+    "score_file": "seed25/full/yunet_d18_replicate_wavelength2_zero_tensor_l2.npz",
+    "score_sha256": "6fe2e40707dd52eb6edd546ef712c0769f5bf23d1e70f5ee9d581bbce62373e1"
+  },
+  {
+    "entry_id": "yunet_d18_replicate_wavelength2_zero",
+    "normalization": "tensor_l2",
+    "profile": "shrinkage",
+    "policy": "sw_identity_cosine_linear",
+    "CSA": {
+      "case_index": 1,
+      "alpha": 1.0,
+      "dimension": 22,
+      "correct": 66
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.15,
+      "dimension": 31,
+      "correct": 61
+    },
+    "score_file": "seed25/full/yunet_d18_replicate_wavelength2_zero_tensor_l2.npz",
+    "score_sha256": "6fe2e40707dd52eb6edd546ef712c0769f5bf23d1e70f5ee9d581bbce62373e1"
+  },
+  {
+    "entry_id": "yunet_d18_replicate_wavelength2_zero",
+    "normalization": "tensor_l2",
+    "profile": "shrinkage",
+    "policy": "sw_identity_euclidean",
+    "CSA": {
+      "case_index": 1,
+      "alpha": 1.0,
+      "dimension": 23,
+      "correct": 65
+    },
+    "PCA": {
+      "case_index": 0,
+      "alpha": 0.35,
+      "dimension": 18,
+      "correct": 55
+    },
+    "score_file": "seed25/full/yunet_d18_replicate_wavelength2_zero_tensor_l2.npz",
+    "score_sha256": "6fe2e40707dd52eb6edd546ef712c0769f5bf23d1e70f5ee9d581bbce62373e1"
+  }
+]

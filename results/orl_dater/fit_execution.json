@@ -1,0 +1,8 @@
+{
+  "new_DATER_models": 20,
+  "control_refits": 0,
+  "no_probe_scoring": true,
+  "elapsed_seconds": 15.999559299999873,
+  "BLAS_threads": 2,
+  "python": "3.11.9"
+}

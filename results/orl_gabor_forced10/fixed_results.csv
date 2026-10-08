@@ -1,0 +1,7 @@
+branch,seed,accuracy_percent,changed_predictions,relative_sse_reduction_after3,actual_iterations
+eyes_only,20,81.5625,0,3.3921913042877e-13,10
+eyes_only,21,76.5625,0,3.77196613114084e-12,10
+eyes_only,22,74.6875,0,5.845474340083697e-13,10
+paper_description,20,85.9375,0,2.63930745161976e-13,10
+paper_description,21,83.125,0,1.1118265106076708e-12,10
+paper_description,22,86.875,0,4.192583081422891e-13,10

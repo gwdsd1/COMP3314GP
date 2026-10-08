@@ -1,0 +1,26 @@
+dataset,profile,method,n_splits,mean_percent,std_pp,paper_percent,difference_pp,source
+ORL,paper_dimensions,PCA+LDA (Gray),10,83.21875,1.7557568999342326,82.2,1.0187499999999972,evaluation/fixed_results.csv
+ORL,paper_dimensions,CSA-2+LDA,10,77.46875,5.409550614165859,84.1,-6.631249999999994,evaluation/fixed_results.csv
+ORL,paper_dimensions,PCA (Gabor),10,86.875,1.6337903272248044,86.6,0.2750000000000057,evaluation/fixed_results.csv
+ORL,paper_dimensions,CSA-3,10,90.1875,2.367128769440123,94.4,-4.212500000000006,evaluation/fixed_results.csv
+ORL,paper_dimensions,PCA+LDA (Gabor),10,92.09375,2.062657822244559,87.2,4.893749999999997,evaluation/fixed_results.csv
+ORL,paper_dimensions,CSA-3+LDA,10,79.65625,2.7656200957269763,90.9,-11.243750000000006,evaluation/fixed_results.csv
+ORL,training_selected,PCA+LDA (Gray),10,82.25,2.3468729194398232,82.2,0.04999999999999716,evaluation/fixed_results.csv
+ORL,training_selected,CSA-2+LDA,10,79.75,4.329625817807149,84.1,-4.349999999999994,evaluation/fixed_results.csv
+ORL,training_selected,PCA (Gabor),10,86.75,1.5534459901922708,86.6,0.15000000000000568,evaluation/fixed_results.csv
+ORL,training_selected,CSA-3,10,89.71875,2.2556353040773236,94.4,-4.681250000000006,evaluation/fixed_results.csv
+ORL,training_selected,PCA+LDA (Gabor),10,91.3125,1.9025750094718124,87.2,4.112499999999997,evaluation/fixed_results.csv
+ORL,training_selected,CSA-3+LDA,10,80.34375,3.7944415212694125,90.9,-10.556250000000006,evaluation/fixed_results.csv
+ORL,balanced_rank_extension,CSA-2+LDA,10,78.4375,3.939098000247716,84.1,-5.662499999999994,refinement/fixed_results.csv
+ORL,balanced_rank_extension,CSA-3,10,88.96875,3.5110502642846533,94.4,-5.431250000000006,refinement/fixed_results.csv
+ORL,balanced_rank_extension,CSA-3+LDA,10,80.34375,4.154800812513961,90.9,-10.556250000000006,refinement/fixed_results.csv
+MNIST G30/P470,group_primary,PCA (Gabor),3,87.51773049645391,0.4044419128903065,88.5,-0.9822695035460924,../available_reproduction_v2/fixed_results.csv
+MNIST G30/P470,group_primary,CSA-3,3,90.34042553191489,0.14740857936757013,92.8,-2.4595744680851084,../available_reproduction_v2/fixed_results.csv
+MNIST G40/P460,group_primary,PCA (Gabor),3,88.57971014492755,0.36656927159251457,90.5,-1.920289855072454,../available_reproduction_v2/fixed_results.csv
+MNIST G40/P460,group_primary,CSA-3,3,91.03623188405795,0.2538301433063328,92.4,-1.363768115942051,../available_reproduction_v2/fixed_results.csv
+FERET q=50,cosine_control,PCA+LDA (Gray),1,89.08296943231441,,84.6,4.48296943231442,../feret_validation_selected_v3/fixed_results.csv
+FERET q=50,cosine_control,CSA-2+LDA,1,88.73362445414847,,88.2,0.533624454148466,../feret_validation_selected_v3/fixed_results.csv
+FERET q=100,cosine_control,PCA+LDA (Gray),1,90.8675799086758,,90.6,0.26757990867579906,../feret_validation_selected_v3/fixed_results.csv
+FERET q=100,cosine_control,CSA-2+LDA,1,94.24657534246575,,92.2,2.0465753424657436,../feret_validation_selected_v3/fixed_results.csv
+FERET q=200,cosine_control,PCA+LDA (Gray),1,93.86934673366834,,93.4,0.46934673366833124,../feret_validation_selected_v3/fixed_results.csv
+FERET q=200,cosine_control,CSA-2+LDA,1,95.37688442211055,,95.2,0.17688442211054678,../feret_validation_selected_v3/fixed_results.csv

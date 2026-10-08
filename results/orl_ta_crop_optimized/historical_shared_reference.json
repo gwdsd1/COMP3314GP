@@ -1,0 +1,15 @@
+{
+  "row": {
+    "dataset": "ORL",
+    "profile": "paper_dimensions",
+    "method": "CSA-3+LDA",
+    "n_splits": "10",
+    "mean_percent": "79.65625",
+    "std_pp": "2.7656200957269763",
+    "paper_percent": "90.9",
+    "difference_pp": "-11.243750000000006",
+    "source": "evaluation/fixed_results.csv"
+  },
+  "source_sha256": "d7dcc7a1f7515f35323655ff321c78f6633d19a1de91622ae82fc120fd6ccf33",
+  "comparison_limit": "historic shared79.66 uses another input configuration; paired gain calculated against81.25 baseline only"
+}

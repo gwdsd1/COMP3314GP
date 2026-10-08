@@ -1,0 +1,55 @@
+{
+  "seed": 22,
+  "training_only": true,
+  "profiles": [
+    {
+      "entry_id": "yunet_d18_zero_fixed39_zero",
+      "normalization": "sqrt",
+      "profile": "ordinary",
+      "policy": "unit_columns_cosine_centered",
+      "CSA": {
+        "case_index": 19,
+        "alpha": 0.0,
+        "dimension": 18,
+        "correct": 62
+      },
+      "PCA": {
+        "case_index": 0,
+        "alpha": 0.0,
+        "dimension": 21,
+        "correct": 67
+      },
+      "score_file": "seed22/full/yunet_d18_zero_fixed39_zero_sqrt.npz",
+      "score_sha256": "6aa603802d53436e5a7a7527a12c5cbbd2f2270c155b2dabfec27a2a18fc37f2",
+      "pure": {
+        "case_index": 0,
+        "correct": 59
+      }
+    },
+    {
+      "entry_id": "yunet_d18_zero_fixed39_zero",
+      "normalization": "sqrt",
+      "profile": "shrinkage",
+      "policy": "unit_columns_cosine_centered",
+      "CSA": {
+        "case_index": 19,
+        "alpha": 0.05,
+        "dimension": 32,
+        "correct": 65
+      },
+      "PCA": {
+        "case_index": 0,
+        "alpha": 0.0,
+        "dimension": 21,
+        "correct": 67
+      },
+      "score_file": "seed22/full/yunet_d18_zero_fixed39_zero_sqrt.npz",
+      "score_sha256": "6aa603802d53436e5a7a7527a12c5cbbd2f2270c155b2dabfec27a2a18fc37f2",
+      "pure": {
+        "case_index": 0,
+        "correct": 59
+      }
+    }
+  ],
+  "elapsed_seconds": 210.2119406999991
+}

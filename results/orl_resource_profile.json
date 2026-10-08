@@ -1,0 +1,11 @@
+{
+  "scope": "entire current ORL gray script: preprocessing, 3 seeds, 2 centering variants, 2 methods, 312 LDA curve evaluations and PNG/CSV output; CPU only",
+  "wall_seconds_including_startup": 2.1248176999997668,
+  "sampled_peak_process_rss_MiB": 125.1875,
+  "windows_peak_working_set_MiB": 136.11328125,
+  "samples": 103,
+  "minimum_system_available_RAM_GiB": 16.841007232666016,
+  "system_RAM_GiB": 31.46640396118164,
+  "output": "results/orl_gray_profile",
+  "exit_code": 0
+}

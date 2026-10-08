@@ -1,0 +1,22 @@
+[
+  {
+    "directory": "results\\available_reproduction_v2",
+    "profile": "group_primary",
+    "sha256": {
+      "fixed_results.csv": "b9cedaea06ac2a84607a842a38d60d3c54cf38b3f5d1d309be33d31879728e19",
+      "predictions.csv": "b02bfc9c7a4667144a0cda33fb566c479f362ad4d9cff45c80fa5dfc1764ab68",
+      "protocol.json": "b2e0de3e916643e64ecaf0ca4c3c3e7643c173f6eedf290fa05fa95284c37aee",
+      "verification.json": "fd8ec1455759cb340ed563b203a23176431a011b89869fca9287adff699adcd4"
+    }
+  },
+  {
+    "directory": "results\\feret_validation_selected_v3",
+    "profile": "cosine_control",
+    "sha256": {
+      "fixed_results.csv": "01aa2bed85f1822886099c87c8fdf7497e2cef95be17627acf5a26008a69d54d",
+      "predictions.csv": "db8faaeb4bcecbc9e7ef77ced85300ff76ea480282772a90e78d5ffa652eb1ec",
+      "protocol.json": "e8a13fe07578e23d35e3f2b1e224acfec55a92181b9ccca68f862bef2d2ff845",
+      "verification.json": "b8aa637e826b539e147d44a5c845c4df88cd75d88bcbdd11c3ddf4fa1d5db37b"
+    }
+  }
+]

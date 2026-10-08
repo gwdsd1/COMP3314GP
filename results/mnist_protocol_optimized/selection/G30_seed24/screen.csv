@@ -1,0 +1,5 @@
+input,pca_correct,csa_correct,joint_correct,total
+adaptive_reflect,258,271,529,600
+adaptive_zero,265,275,540,600
+fixed39_reflect,264,270,534,600
+fixed39_zero,267,276,543,600

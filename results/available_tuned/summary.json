@@ -1,0 +1,106 @@
+{
+  "selection_seconds": 486.45292250000057,
+  "wall_seconds_before_plot": 527.4235948000005,
+  "summary": [
+    {
+      "dataset": "ORL",
+      "method": "PCA+LDA (Gray)",
+      "mean_percent": 58.4375,
+      "std_pp": 6.680486977009984,
+      "paper_percent": 82.2,
+      "previous_percent": 71.97916666666667,
+      "improvement_pp": -13.541666666666671,
+      "difference_pp": -23.762500000000003
+    },
+    {
+      "dataset": "ORL",
+      "method": "CSA-2+LDA",
+      "mean_percent": 65.0,
+      "std_pp": 3.6039258108346237,
+      "paper_percent": 84.1,
+      "previous_percent": 66.5625,
+      "improvement_pp": -1.5625,
+      "difference_pp": -19.099999999999994
+    },
+    {
+      "dataset": "ORL",
+      "method": "PCA (Gabor)",
+      "mean_percent": 76.77083333333333,
+      "std_pp": 3.3414614442386332,
+      "paper_percent": 86.6,
+      "previous_percent": 77.29166666666667,
+      "improvement_pp": -0.5208333333333428,
+      "difference_pp": -9.829166666666666
+    },
+    {
+      "dataset": "ORL",
+      "method": "CSA-3",
+      "mean_percent": 74.375,
+      "std_pp": 5.42167236653046,
+      "paper_percent": 94.4,
+      "previous_percent": 77.39583333333333,
+      "improvement_pp": -3.0208333333333286,
+      "difference_pp": -20.025000000000006
+    },
+    {
+      "dataset": "ORL",
+      "method": "PCA+LDA (Gabor)",
+      "mean_percent": 71.25,
+      "std_pp": 2.724311839712921,
+      "paper_percent": 87.2,
+      "previous_percent": 79.0625,
+      "improvement_pp": -7.8125,
+      "difference_pp": -15.950000000000003
+    },
+    {
+      "dataset": "ORL",
+      "method": "CSA-3+LDA",
+      "mean_percent": 67.8125,
+      "std_pp": 4.0625,
+      "paper_percent": 90.9,
+      "previous_percent": 66.77083333333333,
+      "improvement_pp": 1.0416666666666714,
+      "difference_pp": -23.087500000000006
+    },
+    {
+      "dataset": "MNIST G30/P470",
+      "method": "PCA (Gabor)",
+      "mean_percent": 90.12056737588652,
+      "std_pp": 0.34395335185764453,
+      "paper_percent": 88.5,
+      "previous_percent": 87.51773049645391,
+      "improvement_pp": 2.6028368794326155,
+      "difference_pp": 1.620567375886523
+    },
+    {
+      "dataset": "MNIST G30/P470",
+      "method": "CSA-3",
+      "mean_percent": 90.21985815602837,
+      "std_pp": 0.35111755445352044,
+      "paper_percent": 92.8,
+      "previous_percent": 90.34042553191489,
+      "improvement_pp": -0.12056737588652311,
+      "difference_pp": -2.5801418439716315
+    },
+    {
+      "dataset": "MNIST G40/P460",
+      "method": "PCA (Gabor)",
+      "mean_percent": 90.7536231884058,
+      "std_pp": 0.9208602591529327,
+      "paper_percent": 90.5,
+      "previous_percent": 88.57971014492755,
+      "improvement_pp": 2.173913043478251,
+      "difference_pp": 0.2536231884057969
+    },
+    {
+      "dataset": "MNIST G40/P460",
+      "method": "CSA-3",
+      "mean_percent": 91.21739130434783,
+      "std_pp": 0.49238050664809263,
+      "paper_percent": 92.4,
+      "previous_percent": 91.03623188405795,
+      "improvement_pp": 0.1811594202898732,
+      "difference_pp": -1.1826086956521777
+    }
+  ]
+}

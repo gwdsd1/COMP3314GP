@@ -1,0 +1,131 @@
+{
+  "time_taipei": "2026-10-05T21:59:35.415538+08:00",
+  "scope": "available ORL and balanced MNIST; FERET/PIE not obtained",
+  "seeds": [
+    20,
+    21,
+    22
+  ],
+  "test_used_for_parameter_selection": false,
+  "preprocessing": {
+    "orl_target_eyes_xy": [
+      [
+        14.0,
+        20.0
+      ],
+      [
+        32.0,
+        20.0
+      ]
+    ],
+    "eye_methods": {
+      "auto_haar_visual_reviewed": 384,
+      "visual_corrected_by_codex": 16
+    },
+    "eye_provenance": "OpenCV Haar candidates, Codex visual review and 16 approximate corrections; not official annotations",
+    "max_eye_transform_error_pixels": 7.105427357601002e-15,
+    "opencv_version": "4.12.0",
+    "face_warp": "similarity, bilinear, BORDER_REFLECT_101, equalize after warp",
+    "mnist_selection": "first 500 per label in original official 10000-image test order; group convention",
+    "eye_annotations_sha256": "e0a9dafcd320717637c29a468e4343406244d976b98e195df45b6ca6e7dc2bcb"
+  },
+  "gabor_group_conventions": {
+    "wavelengths": [
+      4.0,
+      5.656854249492381,
+      8.000000000000002,
+      11.313708498984763,
+      16.000000000000004
+    ],
+    "orientations": [
+      0.0,
+      0.39269908169872414,
+      0.7853981633974483,
+      1.1780972450961724,
+      1.5707963267948966,
+      1.9634954084936207,
+      2.356194490192345,
+      2.748893571891069
+    ],
+    "sigma": 6.283185307179586,
+    "truncate_sigma": 3,
+    "finite_kernel_zero_mean": true,
+    "boundary": "reflect",
+    "response": "complex_magnitude",
+    "channel_order": "scale_then_orientation",
+    "feature_normalization": "none",
+    "cache_dtype": "float32",
+    "downsample": "response[::step,::step]"
+  },
+  "profiles": {
+    "euclidean_control": "all uncentered, Sw-normalized LDA, Euclidean NN",
+    "group_primary": "PCA centered, CSA uncentered; unit-column LDA; gray CSA Euclidean, other cosine NN"
+  },
+  "recognition_csa": {
+    "max_iter": 3,
+    "init": "truncated identity",
+    "epsilon": 0.001
+  },
+  "pca_solver": "sample Gram eigendecomposition, conservative numerical-rank check",
+  "orl_pure_csa_curve_ranks": [
+    [
+      2,
+      1,
+      4
+    ],
+    [
+      4,
+      1,
+      8
+    ],
+    [
+      6,
+      1,
+      10
+    ],
+    [
+      8,
+      1,
+      12
+    ],
+    [
+      10,
+      1,
+      16
+    ],
+    [
+      12,
+      1,
+      20
+    ],
+    [
+      15,
+      1,
+      26
+    ],
+    [
+      16,
+      1,
+      28
+    ],
+    [
+      18,
+      1,
+      30
+    ]
+  ],
+  "reconstruction": "s*/1.pgm; uncentered; r=1..40, CSA Tmax=10; PCA d=1..40; no mean storage",
+  "limitations": [
+    "group eye coordinates, target coordinates and Gabor implementation not confirmed original",
+    "MNIST balanced source indices differ from literal first-half wording",
+    "original random indices unavailable",
+    "profiles fixed before this run; ORL was previously explored"
+  ],
+  "code_sha256": {
+    "csa.py": "29226eaae53c3c5b9d5e752d55a8d675e0a40b2d8eefac186f06682ad02ea64c",
+    "gabor.py": "ceb12f2bfbe82e381375e14a1c60d0a0a4795b91544e7bff02c22e93ac61578f",
+    "prepare_available_data.py": "095eca855fc36d8a69e567bfcd4fcb779e8a1128dc4b4f588bae8b31944e83df",
+    "run_available_reproduction.py": "a0b4cb0bdafd8d45703631e1c9c9271226058e158ccaaf41517c684d69819d1f"
+  },
+  "python": "3.11.9"
+}

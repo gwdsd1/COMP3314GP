@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "old_scores_checked": 12,
+  "old_prediction_records_checked": 55800,
+  "balanced_images": 5000,
+  "raw_IDX_source_reconstructed": true,
+  "source_indices_and_hashes": true,
+  "limits": "historical score readback; actual baseline models refitted during evaluation"
+}

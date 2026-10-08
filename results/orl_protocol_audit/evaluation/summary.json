@@ -1,0 +1,122 @@
+[
+  {
+    "profile": "paper_dimensions",
+    "method": "PCA+LDA (Gray)",
+    "mean_percent": 83.21875,
+    "std_pp": 1.7557568999342326,
+    "min_percent": 80.3125,
+    "max_percent": 85.9375,
+    "paper_percent": 82.2,
+    "difference_pp": 1.0187499999999972
+  },
+  {
+    "profile": "paper_dimensions",
+    "method": "CSA-2+LDA",
+    "mean_percent": 77.46875,
+    "std_pp": 5.409550614165859,
+    "min_percent": 68.4375,
+    "max_percent": 82.5,
+    "paper_percent": 84.1,
+    "difference_pp": -6.631249999999994
+  },
+  {
+    "profile": "paper_dimensions",
+    "method": "PCA (Gabor)",
+    "mean_percent": 86.875,
+    "std_pp": 1.6337903272248044,
+    "min_percent": 85.0,
+    "max_percent": 89.375,
+    "paper_percent": 86.6,
+    "difference_pp": 0.2750000000000057
+  },
+  {
+    "profile": "paper_dimensions",
+    "method": "CSA-3",
+    "mean_percent": 90.1875,
+    "std_pp": 2.367128769440123,
+    "min_percent": 86.25,
+    "max_percent": 94.375,
+    "paper_percent": 94.4,
+    "difference_pp": -4.212500000000006
+  },
+  {
+    "profile": "paper_dimensions",
+    "method": "PCA+LDA (Gabor)",
+    "mean_percent": 92.09375,
+    "std_pp": 2.062657822244559,
+    "min_percent": 89.375,
+    "max_percent": 95.625,
+    "paper_percent": 87.2,
+    "difference_pp": 4.893749999999997
+  },
+  {
+    "profile": "paper_dimensions",
+    "method": "CSA-3+LDA",
+    "mean_percent": 79.65625,
+    "std_pp": 2.7656200957269763,
+    "min_percent": 76.5625,
+    "max_percent": 83.4375,
+    "paper_percent": 90.9,
+    "difference_pp": -11.243750000000006
+  },
+  {
+    "profile": "training_selected",
+    "method": "PCA+LDA (Gray)",
+    "mean_percent": 82.25,
+    "std_pp": 2.3468729194398232,
+    "min_percent": 79.0625,
+    "max_percent": 85.9375,
+    "paper_percent": 82.2,
+    "difference_pp": 0.04999999999999716
+  },
+  {
+    "profile": "training_selected",
+    "method": "CSA-2+LDA",
+    "mean_percent": 79.75,
+    "std_pp": 4.329625817807149,
+    "min_percent": 71.875,
+    "max_percent": 85.3125,
+    "paper_percent": 84.1,
+    "difference_pp": -4.349999999999994
+  },
+  {
+    "profile": "training_selected",
+    "method": "PCA (Gabor)",
+    "mean_percent": 86.75,
+    "std_pp": 1.5534459901922708,
+    "min_percent": 84.375,
+    "max_percent": 88.75,
+    "paper_percent": 86.6,
+    "difference_pp": 0.15000000000000568
+  },
+  {
+    "profile": "training_selected",
+    "method": "CSA-3",
+    "mean_percent": 89.71875,
+    "std_pp": 2.2556353040773236,
+    "min_percent": 86.25,
+    "max_percent": 94.0625,
+    "paper_percent": 94.4,
+    "difference_pp": -4.681250000000006
+  },
+  {
+    "profile": "training_selected",
+    "method": "PCA+LDA (Gabor)",
+    "mean_percent": 91.3125,
+    "std_pp": 1.9025750094718124,
+    "min_percent": 87.8125,
+    "max_percent": 94.0625,
+    "paper_percent": 87.2,
+    "difference_pp": 4.112499999999997
+  },
+  {
+    "profile": "training_selected",
+    "method": "CSA-3+LDA",
+    "mean_percent": 80.34375,
+    "std_pp": 3.7944415212694125,
+    "min_percent": 75.625,
+    "max_percent": 87.5,
+    "paper_percent": 90.9,
+    "difference_pp": -10.556250000000006
+  }
+]

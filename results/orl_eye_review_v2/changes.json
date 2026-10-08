@@ -1,0 +1,103 @@
+{
+  "reviewed_images": 400,
+  "changed_images": 6,
+  "changes": [
+    {
+      "file": "s1/4.pgm",
+      "old_xy": [
+        15.25,
+        45.75,
+        67.25,
+        45.25
+      ],
+      "new_xy": [
+        15.5,
+        44.0,
+        57.5,
+        41.5
+      ],
+      "reason": "right Haar point at outer eye/temple instead of pupil; coordinate grid reviewed"
+    },
+    {
+      "file": "s13/1.pgm",
+      "old_xy": [
+        19.25,
+        52.25,
+        54.75,
+        54.25
+      ],
+      "new_xy": [
+        21.5,
+        51.5,
+        57.5,
+        53.5
+      ],
+      "reason": "glasses image: approximate dark pupil centers checked in coordinate grid"
+    },
+    {
+      "file": "s13/6.pgm",
+      "old_xy": [
+        31.75,
+        52.25,
+        63.5,
+        53.5
+      ],
+      "new_xy": [
+        38.5,
+        51.5,
+        70.5,
+        52.0
+      ],
+      "reason": "both old points displaced left of visible pupils behind glasses"
+    },
+    {
+      "file": "s13/7.pgm",
+      "old_xy": [
+        12.75,
+        51.25,
+        49.0,
+        53.0
+      ],
+      "new_xy": [
+        16.0,
+        50.5,
+        51.5,
+        52.0
+      ],
+      "reason": "glasses image: rechecked centers, left detector point displaced outward"
+    },
+    {
+      "file": "s13/8.pgm",
+      "old_xy": [
+        14.5,
+        51.0,
+        51.0,
+        53.5
+      ],
+      "new_xy": [
+        18.5,
+        50.0,
+        56.5,
+        52.5
+      ],
+      "reason": "glasses image: detector centers displaced left of visible pupils"
+    },
+    {
+      "file": "s36/10.pgm",
+      "old_xy": [
+        37.25,
+        62.25,
+        62.0,
+        49.0
+      ],
+      "new_xy": [
+        26.5,
+        48.5,
+        61.5,
+        47.5
+      ],
+      "reason": "old left point was on nose; corrected to pupil/eye opening under lens glare"
+    }
+  ],
+  "limits": "approximate image-based annotations, not official ground truth; untouched points may still be imperfect"
+}

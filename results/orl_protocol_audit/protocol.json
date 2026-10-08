@@ -1,0 +1,177 @@
+{
+  "created_utc": "2026-10-07T02:23:53.638903+00:00",
+  "seeds": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "outer_split": "2 gallery / 8 probe per class, unchanged",
+  "eye_sources": [
+    "retained Haar v2",
+    "YuNet2023mar fixed 2x; external pretrained detector; no CSA/recognition network"
+  ],
+  "eye_files_sha256": {
+    "old": "f6b1d38f2713ab27466478b1ee8b73ece496f09839215b70c6c4fdc1d6e51c3e",
+    "yunet": "bf2dbbd7e1f7fe3f00ac17dbb80a87851a6ea299a29a281a302e15ca283cf6d3"
+  },
+  "model_sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+  "policies": {
+    "unit_columns_cosine_centered": {
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "lda_center": true
+    },
+    "unit_columns_cosine_linear": {
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "lda_center": false
+    },
+    "unit_columns_euclidean": {
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "lda_center": true
+    },
+    "sw_identity_cosine_centered": {
+      "scaling": "sw_identity",
+      "metric": "cosine",
+      "lda_center": true
+    },
+    "sw_identity_cosine_linear": {
+      "scaling": "sw_identity",
+      "metric": "cosine",
+      "lda_center": false
+    },
+    "sw_identity_euclidean": {
+      "scaling": "sw_identity",
+      "metric": "euclidean",
+      "lda_center": true
+    }
+  },
+  "model_cases": [
+    [
+      "PCA+LDA (Gray)",
+      "gray",
+      "pca",
+      30,
+      true
+    ],
+    [
+      "CSA-2+LDA",
+      "gray",
+      "csa",
+      [
+        11,
+        2
+      ],
+      true
+    ],
+    [
+      "CSA-2+LDA",
+      "gray",
+      "csa",
+      [
+        8,
+        4
+      ],
+      true
+    ],
+    [
+      "PCA (Gabor)",
+      "gabor",
+      "pca",
+      74,
+      false
+    ],
+    [
+      "CSA-3",
+      "gabor",
+      "csa",
+      [
+        15,
+        1,
+        26
+      ],
+      false
+    ],
+    [
+      "CSA-3",
+      "gabor",
+      "csa",
+      [
+        10,
+        2,
+        16
+      ],
+      false
+    ],
+    [
+      "PCA+LDA (Gabor)",
+      "gabor",
+      "pca",
+      33,
+      true
+    ],
+    [
+      "CSA-3+LDA",
+      "gabor",
+      "csa",
+      [
+        4,
+        2,
+        3
+      ],
+      true
+    ],
+    [
+      "CSA-3+LDA",
+      "gabor",
+      "csa",
+      [
+        4,
+        2,
+        4
+      ],
+      true
+    ]
+  ],
+  "preprocessing_screen": "training-gallery leave-self-out raw gray and adaptive Gabor cosine NN mean; top three geometries; no probe",
+  "deep_candidates": "two Gabor supports on top three geometries, plus previous_frozen anchor (seven per seed)",
+  "inner_validation": "16 folds; each holds one gallery image for five classes; fit 75 images/40 classes => N-Nc=35; all 80 gallery images validated once",
+  "pure_PCA_inner": "rank74 because centered PCA on75 images has rank<=74; final optimized rank<=74; fixed-paper comparison uses76 on80 images",
+  "selection": "maximize six-method mean inner accuracy; per method optimize listed ranks/LDA dimension/PCA prefix; ties prefer earlier catalog/policy/case/dimension",
+  "shared_per_outer_seed": "all six methods share chosen geometry, Gabor, metric, LDA scale/origin; each seed uses only its own gallery for selection",
+  "CSA": {
+    "center": false,
+    "init": "identity",
+    "Tmax": 3,
+    "epsilon": 0.001
+  },
+  "PCA_center": true,
+  "LDA": "Fisher unregularized; p<=N-Nc; no ridge",
+  "limitations": [
+    "historical probes already observed; not a blind study",
+    "two gallery images/class limit inner task to one held-out image; small validation sample",
+    "source retention counts raw pixel locations, not semantic face information",
+    "YuNet preprocessing is a modern group convention, not a2008 CSA component"
+  ],
+  "sources_sha256": {
+    "audit_orl_protocol.py": "eaae486ee20a74c676986322e98c065dbbeb144f479159dfdedbc41e8e78cdfd",
+    "csa.py": "29226eaae53c3c5b9d5e752d55a8d675e0a40b2d8eefac186f06682ad02ea64c",
+    "diagnose_orl_gabor.py": "3b59a9f9fc8d5bea84fe22176b8ef6fb7f4f7d972905e895ce4ef4a88c4410f9",
+    "run_shared_protocol.py": "eae57198a016ae94ab43ffd3e91888c4ae917bcee8873701ef094bed38d2749b",
+    "prepare_available_data.py": "0f5d07532716155b41c7264fc55cfcb749678d9ce1c77a1ad479d8f43e65f6e0",
+    "run_available_reproduction.py": "135ab16b4e47f840ad0e711c9bb1cb72166e1a3f871e46ae4d25726ae6928a71"
+  },
+  "paper_sha256": "bfc9e2eb3a86381105d2c583ebb271fad797df23e14219a771374fced36b329f",
+  "prefix_ties": "Cosine distances clipped to [0,2]; first dimension uses cdist to resolve sign-only ties identically",
+  "execution_note": "After seed20 selection, remaining independent seeds dispatched in three CPU workers; incomplete seed21 screening safely recomputed; candidate grid/objective unchanged",
+  "selection_snapshot_note": "Snapshot captures the selection implementation used by workers; seed20 differed only in directory resume guard. Later source additions expose contrast/plot stages and fresh-output preparation; selection mathematics/grid remain identical.",
+  "final_entrypoint_sha256": "d80bc8fc89f327dc0aac0abaeec326d07a3f7f181da427e50f02b98687cd9247"
+}

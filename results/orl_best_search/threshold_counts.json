@@ -1,0 +1,12 @@
+{
+  "CSA+LDA": {
+    "near_or_exceed_score_cells": 5944,
+    "at_least_paper_score_cells": 2306,
+    "distinct_splits_at_least_paper": 62
+  },
+  "CSA": {
+    "near_or_exceed_score_cells": 488,
+    "at_least_paper_score_cells": 133,
+    "distinct_splits_at_least_paper": 28
+  }
+}

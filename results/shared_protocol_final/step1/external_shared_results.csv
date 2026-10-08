@@ -1,0 +1,19 @@
+dataset,method,seed,correct,probe_count,accuracy_percent,paper_percent,source,source_profile
+MNIST G30/P470,PCA (Gabor),20,4114,4700,87.53191489361703,88.5,results\available_reproduction_v2,group_primary
+MNIST G30/P470,CSA-3,20,4242,4700,90.25531914893617,92.8,results\available_reproduction_v2,group_primary
+MNIST G30/P470,PCA (Gabor),21,4132,4700,87.91489361702128,88.5,results\available_reproduction_v2,group_primary
+MNIST G30/P470,CSA-3,21,4242,4700,90.25531914893617,92.8,results\available_reproduction_v2,group_primary
+MNIST G30/P470,PCA (Gabor),22,4094,4700,87.1063829787234,88.5,results\available_reproduction_v2,group_primary
+MNIST G30/P470,CSA-3,22,4254,4700,90.51063829787235,92.8,results\available_reproduction_v2,group_primary
+MNIST G40/P460,PCA (Gabor),20,4067,4600,88.41304347826087,90.5,results\available_reproduction_v2,group_primary
+MNIST G40/P460,CSA-3,20,4175,4600,90.76086956521739,92.4,results\available_reproduction_v2,group_primary
+MNIST G40/P460,PCA (Gabor),21,4094,4600,89.0,90.5,results\available_reproduction_v2,group_primary
+MNIST G40/P460,CSA-3,21,4198,4600,91.26086956521739,92.4,results\available_reproduction_v2,group_primary
+MNIST G40/P460,PCA (Gabor),22,4063,4600,88.32608695652173,90.5,results\available_reproduction_v2,group_primary
+MNIST G40/P460,CSA-3,22,4190,4600,91.08695652173913,92.4,results\available_reproduction_v2,group_primary
+FERET q=50,PCA+LDA (Gray),fixed,1020,1145,89.08296943231441,84.6,results\feret_validation_selected_v3,cosine_control
+FERET q=50,CSA-2+LDA,fixed,1016,1145,88.73362445414847,88.2,results\feret_validation_selected_v3,cosine_control
+FERET q=100,PCA+LDA (Gray),fixed,995,1095,90.8675799086758,90.6,results\feret_validation_selected_v3,cosine_control
+FERET q=100,CSA-2+LDA,fixed,1032,1095,94.24657534246575,92.2,results\feret_validation_selected_v3,cosine_control
+FERET q=200,PCA+LDA (Gray),fixed,934,995,93.86934673366834,93.4,results\feret_validation_selected_v3,cosine_control
+FERET q=200,CSA-2+LDA,fixed,949,995,95.37688442211055,95.2,results\feret_validation_selected_v3,cosine_control

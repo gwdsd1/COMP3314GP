@@ -1,0 +1,52 @@
+{
+  "adaptive_reflect": {
+    "base_wavelength": 4.0,
+    "sigma": 6.283185307179586,
+    "radius": null,
+    "boundary": "reflect",
+    "finite_zero_mean": true,
+    "sampling": "stride00",
+    "normalization": "none",
+    "stable_radius": true
+  },
+  "fixed39_reflect": {
+    "base_wavelength": 4.0,
+    "sigma": 6.283185307179586,
+    "radius": 19,
+    "boundary": "reflect",
+    "finite_zero_mean": true,
+    "sampling": "stride00",
+    "normalization": "none",
+    "stable_radius": true
+  },
+  "mean2_zero": {
+    "base_wavelength": 4.0,
+    "sigma": 6.283185307179586,
+    "radius": null,
+    "boundary": "constant",
+    "finite_zero_mean": true,
+    "sampling": "mean2",
+    "normalization": "none",
+    "stable_radius": true
+  },
+  "sigma_pi_zero": {
+    "base_wavelength": 4.0,
+    "sigma": 3.141592653589793,
+    "radius": null,
+    "boundary": "constant",
+    "finite_zero_mean": true,
+    "sampling": "stride00",
+    "normalization": "none",
+    "stable_radius": true
+  },
+  "wavelength2_zero": {
+    "base_wavelength": 2.0,
+    "sigma": 6.283185307179586,
+    "radius": null,
+    "boundary": "constant",
+    "finite_zero_mean": true,
+    "sampling": "stride00",
+    "normalization": "none",
+    "stable_radius": true
+  }
+}

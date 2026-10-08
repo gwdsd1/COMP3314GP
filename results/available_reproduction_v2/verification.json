@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "counts": {
+    "fixed_results": 60,
+    "predictions": 123120,
+    "splits": 31200,
+    "dimension_curves": 1164,
+    "reconstruction": 80,
+    "summary_groups": 20
+  },
+  "checks": [
+    "run source snapshots, prepared arrays, annotations and feature hashes/shapes",
+    "balanced class counts, source labels, no train/probe overlap and complete coverage",
+    "all predictions match gallery/probe labels, score counts and recomputed mean/sample SD",
+    "recognition <=3 iterations; diagnostic 10; reconstruction CR includes bases and RMSE uses N",
+    "expected output row counts",
+    "original gray entrypoint scores and all dimension curves unchanged",
+    "first-run code snapshots retained and match first-run hashes"
+  ],
+  "limits": "checks establish internal consistency, not identity with original undisclosed protocol"
+}

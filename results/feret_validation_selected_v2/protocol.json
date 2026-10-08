@@ -1,0 +1,1469 @@
+{
+  "time_taipei": "2026-10-06T11:18:04.049025+08:00",
+  "preprocessing": {
+    "source": "official_fa_fb_pairs.csv; official gallery order, filtered to1195 paired identities",
+    "shape": [
+      2390,
+      41,
+      27
+    ],
+    "target_eyes_xy": [
+      [
+        7.0,
+        16.0
+      ],
+      [
+        20.0,
+        16.0
+      ]
+    ],
+    "eye_semantics": "sort anatomical left/right by image x",
+    "normalization": "geometric similarity only; no per-image zero-mean/unit-variance intensity standardization",
+    "warp": "OpenCV bilinear, constant zero boundary, output width27 height41",
+    "histogram": "Pillow ImageOps.equalize AFTER alignment; intensity0..255",
+    "group_conventions": [
+      "target eyes",
+      "warp/interpolation/boundary",
+      "exact meaning of normalization",
+      "filtered official gallery order for first q"
+    ],
+    "opencv_version": "4.12.0",
+    "selected_images_and_gnd_and_xml_hashes_checked": 7170,
+    "source_support_fraction_mean": 0.9998386078700395,
+    "source_support_fraction_min": 0.8915989159891599,
+    "max_eye_mapping_error": 7.105427357601002e-15,
+    "source_manifest_sha256": "560114a7d1b18f311489c936524980f21579482cbcabf642b931e3d636b656aa",
+    "pair_table_sha256": "27c83f9de4dba649cbf4e89bc4d3a06be0bbe6507f367c8460cab1b5832816cb",
+    "candidate_table_sha256": "bb6c33d1f018712242d606abd2a1ddcd9919295adc132cf727b3f5adb7337df8",
+    "prepared_sha256": {
+      "aligned.npy": "a69f0a076890a1ccc814c66c549044f55ca11bfce7444d84257f63f513e6fe4d",
+      "labels.npy": "7c50ab759227f152cab0ce3ad0208c655adf3de2a448f1efbeda175d712f70e5",
+      "records.csv": "f7b2813f850d254c2bfc89720369dcd3cc165649351ab3dc2461650570dbf99c"
+    },
+    "prepare_code_sha256": "21125fb15371774eae5e8ecdfb2ab832bed152b15e8bdbd85f8ae2a874a11f68"
+  },
+  "cases": {
+    "50": [
+      [
+        "PCA+LDA (Gray)",
+        45,
+        25,
+        84.6
+      ],
+      [
+        "CSA-2+LDA",
+        [
+          10,
+          4
+        ],
+        35,
+        88.2
+      ]
+    ],
+    "100": [
+      [
+        "PCA+LDA (Gray)",
+        95,
+        40,
+        90.6
+      ],
+      [
+        "CSA-2+LDA",
+        [
+          11,
+          5
+        ],
+        44,
+        92.2
+      ]
+    ],
+    "200": [
+      [
+        "PCA+LDA (Gray)",
+        112,
+        69,
+        93.4
+      ],
+      [
+        "CSA-2+LDA",
+        [
+          13,
+          7
+        ],
+        62,
+        95.2
+      ]
+    ]
+  },
+  "selection": "maximize pooled 5-fold unseen-target-identity validation accuracy ONLY among first q subjects; ties maximize mean normalized correct-vs-nearest-wrong distance margin",
+  "fold_seed": "3314+q; permute first q identities; split into5 equal folds",
+  "candidate_grids": {
+    "PCA+LDA (Gray)": [
+      {
+        "candidate_id": "c000",
+        "eye_target": "wide",
+        "normalization": "equalized",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c001",
+        "eye_target": "wide",
+        "normalization": "equalized",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c002",
+        "eye_target": "wide",
+        "normalization": "equalized",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c003",
+        "eye_target": "wide",
+        "normalization": "equalized",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c004",
+        "eye_target": "wide",
+        "normalization": "equalized",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c005",
+        "eye_target": "wide",
+        "normalization": "equalized",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c006",
+        "eye_target": "wide",
+        "normalization": "equalized",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c007",
+        "eye_target": "wide",
+        "normalization": "equalized",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c008",
+        "eye_target": "wide",
+        "normalization": "zscore",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c009",
+        "eye_target": "wide",
+        "normalization": "zscore",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c010",
+        "eye_target": "wide",
+        "normalization": "zscore",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c011",
+        "eye_target": "wide",
+        "normalization": "zscore",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c012",
+        "eye_target": "wide",
+        "normalization": "zscore",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c013",
+        "eye_target": "wide",
+        "normalization": "zscore",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c014",
+        "eye_target": "wide",
+        "normalization": "zscore",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c015",
+        "eye_target": "wide",
+        "normalization": "zscore",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c016",
+        "eye_target": "medium",
+        "normalization": "equalized",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c017",
+        "eye_target": "medium",
+        "normalization": "equalized",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c018",
+        "eye_target": "medium",
+        "normalization": "equalized",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c019",
+        "eye_target": "medium",
+        "normalization": "equalized",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c020",
+        "eye_target": "medium",
+        "normalization": "equalized",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c021",
+        "eye_target": "medium",
+        "normalization": "equalized",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c022",
+        "eye_target": "medium",
+        "normalization": "equalized",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c023",
+        "eye_target": "medium",
+        "normalization": "equalized",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c024",
+        "eye_target": "medium",
+        "normalization": "zscore",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c025",
+        "eye_target": "medium",
+        "normalization": "zscore",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c026",
+        "eye_target": "medium",
+        "normalization": "zscore",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c027",
+        "eye_target": "medium",
+        "normalization": "zscore",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c028",
+        "eye_target": "medium",
+        "normalization": "zscore",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c029",
+        "eye_target": "medium",
+        "normalization": "zscore",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c030",
+        "eye_target": "medium",
+        "normalization": "zscore",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c031",
+        "eye_target": "medium",
+        "normalization": "zscore",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c032",
+        "eye_target": "compact",
+        "normalization": "equalized",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c033",
+        "eye_target": "compact",
+        "normalization": "equalized",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c034",
+        "eye_target": "compact",
+        "normalization": "equalized",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c035",
+        "eye_target": "compact",
+        "normalization": "equalized",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c036",
+        "eye_target": "compact",
+        "normalization": "equalized",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c037",
+        "eye_target": "compact",
+        "normalization": "equalized",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c038",
+        "eye_target": "compact",
+        "normalization": "equalized",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c039",
+        "eye_target": "compact",
+        "normalization": "equalized",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c040",
+        "eye_target": "compact",
+        "normalization": "zscore",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c041",
+        "eye_target": "compact",
+        "normalization": "zscore",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c042",
+        "eye_target": "compact",
+        "normalization": "zscore",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c043",
+        "eye_target": "compact",
+        "normalization": "zscore",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c044",
+        "eye_target": "compact",
+        "normalization": "zscore",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c045",
+        "eye_target": "compact",
+        "normalization": "zscore",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c046",
+        "eye_target": "compact",
+        "normalization": "zscore",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c047",
+        "eye_target": "compact",
+        "normalization": "zscore",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      }
+    ],
+    "CSA-2+LDA": [
+      {
+        "candidate_id": "c000",
+        "eye_target": "wide",
+        "normalization": "equalized",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c001",
+        "eye_target": "wide",
+        "normalization": "equalized",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c002",
+        "eye_target": "wide",
+        "normalization": "equalized",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c003",
+        "eye_target": "wide",
+        "normalization": "equalized",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c004",
+        "eye_target": "wide",
+        "normalization": "equalized",
+        "center": false,
+        "init": "random",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c005",
+        "eye_target": "wide",
+        "normalization": "equalized",
+        "center": false,
+        "init": "random",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c006",
+        "eye_target": "wide",
+        "normalization": "equalized",
+        "center": false,
+        "init": "random",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c007",
+        "eye_target": "wide",
+        "normalization": "equalized",
+        "center": false,
+        "init": "random",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c008",
+        "eye_target": "wide",
+        "normalization": "equalized",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c009",
+        "eye_target": "wide",
+        "normalization": "equalized",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c010",
+        "eye_target": "wide",
+        "normalization": "equalized",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c011",
+        "eye_target": "wide",
+        "normalization": "equalized",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c012",
+        "eye_target": "wide",
+        "normalization": "equalized",
+        "center": true,
+        "init": "random",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c013",
+        "eye_target": "wide",
+        "normalization": "equalized",
+        "center": true,
+        "init": "random",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c014",
+        "eye_target": "wide",
+        "normalization": "equalized",
+        "center": true,
+        "init": "random",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c015",
+        "eye_target": "wide",
+        "normalization": "equalized",
+        "center": true,
+        "init": "random",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c016",
+        "eye_target": "wide",
+        "normalization": "zscore",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c017",
+        "eye_target": "wide",
+        "normalization": "zscore",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c018",
+        "eye_target": "wide",
+        "normalization": "zscore",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c019",
+        "eye_target": "wide",
+        "normalization": "zscore",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c020",
+        "eye_target": "wide",
+        "normalization": "zscore",
+        "center": false,
+        "init": "random",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c021",
+        "eye_target": "wide",
+        "normalization": "zscore",
+        "center": false,
+        "init": "random",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c022",
+        "eye_target": "wide",
+        "normalization": "zscore",
+        "center": false,
+        "init": "random",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c023",
+        "eye_target": "wide",
+        "normalization": "zscore",
+        "center": false,
+        "init": "random",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c024",
+        "eye_target": "wide",
+        "normalization": "zscore",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c025",
+        "eye_target": "wide",
+        "normalization": "zscore",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c026",
+        "eye_target": "wide",
+        "normalization": "zscore",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c027",
+        "eye_target": "wide",
+        "normalization": "zscore",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c028",
+        "eye_target": "wide",
+        "normalization": "zscore",
+        "center": true,
+        "init": "random",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c029",
+        "eye_target": "wide",
+        "normalization": "zscore",
+        "center": true,
+        "init": "random",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c030",
+        "eye_target": "wide",
+        "normalization": "zscore",
+        "center": true,
+        "init": "random",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c031",
+        "eye_target": "wide",
+        "normalization": "zscore",
+        "center": true,
+        "init": "random",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c032",
+        "eye_target": "medium",
+        "normalization": "equalized",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c033",
+        "eye_target": "medium",
+        "normalization": "equalized",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c034",
+        "eye_target": "medium",
+        "normalization": "equalized",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c035",
+        "eye_target": "medium",
+        "normalization": "equalized",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c036",
+        "eye_target": "medium",
+        "normalization": "equalized",
+        "center": false,
+        "init": "random",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c037",
+        "eye_target": "medium",
+        "normalization": "equalized",
+        "center": false,
+        "init": "random",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c038",
+        "eye_target": "medium",
+        "normalization": "equalized",
+        "center": false,
+        "init": "random",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c039",
+        "eye_target": "medium",
+        "normalization": "equalized",
+        "center": false,
+        "init": "random",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c040",
+        "eye_target": "medium",
+        "normalization": "equalized",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c041",
+        "eye_target": "medium",
+        "normalization": "equalized",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c042",
+        "eye_target": "medium",
+        "normalization": "equalized",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c043",
+        "eye_target": "medium",
+        "normalization": "equalized",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c044",
+        "eye_target": "medium",
+        "normalization": "equalized",
+        "center": true,
+        "init": "random",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c045",
+        "eye_target": "medium",
+        "normalization": "equalized",
+        "center": true,
+        "init": "random",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c046",
+        "eye_target": "medium",
+        "normalization": "equalized",
+        "center": true,
+        "init": "random",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c047",
+        "eye_target": "medium",
+        "normalization": "equalized",
+        "center": true,
+        "init": "random",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c048",
+        "eye_target": "medium",
+        "normalization": "zscore",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c049",
+        "eye_target": "medium",
+        "normalization": "zscore",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c050",
+        "eye_target": "medium",
+        "normalization": "zscore",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c051",
+        "eye_target": "medium",
+        "normalization": "zscore",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c052",
+        "eye_target": "medium",
+        "normalization": "zscore",
+        "center": false,
+        "init": "random",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c053",
+        "eye_target": "medium",
+        "normalization": "zscore",
+        "center": false,
+        "init": "random",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c054",
+        "eye_target": "medium",
+        "normalization": "zscore",
+        "center": false,
+        "init": "random",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c055",
+        "eye_target": "medium",
+        "normalization": "zscore",
+        "center": false,
+        "init": "random",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c056",
+        "eye_target": "medium",
+        "normalization": "zscore",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c057",
+        "eye_target": "medium",
+        "normalization": "zscore",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c058",
+        "eye_target": "medium",
+        "normalization": "zscore",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c059",
+        "eye_target": "medium",
+        "normalization": "zscore",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c060",
+        "eye_target": "medium",
+        "normalization": "zscore",
+        "center": true,
+        "init": "random",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c061",
+        "eye_target": "medium",
+        "normalization": "zscore",
+        "center": true,
+        "init": "random",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c062",
+        "eye_target": "medium",
+        "normalization": "zscore",
+        "center": true,
+        "init": "random",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c063",
+        "eye_target": "medium",
+        "normalization": "zscore",
+        "center": true,
+        "init": "random",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c064",
+        "eye_target": "compact",
+        "normalization": "equalized",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c065",
+        "eye_target": "compact",
+        "normalization": "equalized",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c066",
+        "eye_target": "compact",
+        "normalization": "equalized",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c067",
+        "eye_target": "compact",
+        "normalization": "equalized",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c068",
+        "eye_target": "compact",
+        "normalization": "equalized",
+        "center": false,
+        "init": "random",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c069",
+        "eye_target": "compact",
+        "normalization": "equalized",
+        "center": false,
+        "init": "random",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c070",
+        "eye_target": "compact",
+        "normalization": "equalized",
+        "center": false,
+        "init": "random",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c071",
+        "eye_target": "compact",
+        "normalization": "equalized",
+        "center": false,
+        "init": "random",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c072",
+        "eye_target": "compact",
+        "normalization": "equalized",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c073",
+        "eye_target": "compact",
+        "normalization": "equalized",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c074",
+        "eye_target": "compact",
+        "normalization": "equalized",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c075",
+        "eye_target": "compact",
+        "normalization": "equalized",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c076",
+        "eye_target": "compact",
+        "normalization": "equalized",
+        "center": true,
+        "init": "random",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c077",
+        "eye_target": "compact",
+        "normalization": "equalized",
+        "center": true,
+        "init": "random",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c078",
+        "eye_target": "compact",
+        "normalization": "equalized",
+        "center": true,
+        "init": "random",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c079",
+        "eye_target": "compact",
+        "normalization": "equalized",
+        "center": true,
+        "init": "random",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c080",
+        "eye_target": "compact",
+        "normalization": "zscore",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c081",
+        "eye_target": "compact",
+        "normalization": "zscore",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c082",
+        "eye_target": "compact",
+        "normalization": "zscore",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c083",
+        "eye_target": "compact",
+        "normalization": "zscore",
+        "center": false,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c084",
+        "eye_target": "compact",
+        "normalization": "zscore",
+        "center": false,
+        "init": "random",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c085",
+        "eye_target": "compact",
+        "normalization": "zscore",
+        "center": false,
+        "init": "random",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c086",
+        "eye_target": "compact",
+        "normalization": "zscore",
+        "center": false,
+        "init": "random",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c087",
+        "eye_target": "compact",
+        "normalization": "zscore",
+        "center": false,
+        "init": "random",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c088",
+        "eye_target": "compact",
+        "normalization": "zscore",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c089",
+        "eye_target": "compact",
+        "normalization": "zscore",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c090",
+        "eye_target": "compact",
+        "normalization": "zscore",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c091",
+        "eye_target": "compact",
+        "normalization": "zscore",
+        "center": true,
+        "init": "identity",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c092",
+        "eye_target": "compact",
+        "normalization": "zscore",
+        "center": true,
+        "init": "random",
+        "lda_scaling": "unit_columns",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c093",
+        "eye_target": "compact",
+        "normalization": "zscore",
+        "center": true,
+        "init": "random",
+        "lda_scaling": "unit_columns",
+        "metric": "cosine"
+      },
+      {
+        "candidate_id": "c094",
+        "eye_target": "compact",
+        "normalization": "zscore",
+        "center": true,
+        "init": "random",
+        "lda_scaling": "sw_identity",
+        "metric": "euclidean"
+      },
+      {
+        "candidate_id": "c095",
+        "eye_target": "compact",
+        "normalization": "zscore",
+        "center": true,
+        "init": "random",
+        "lda_scaling": "sw_identity",
+        "metric": "cosine"
+      }
+    ]
+  },
+  "eye_targets": {
+    "wide": [
+      [
+        7.0,
+        16.0
+      ],
+      [
+        20.0,
+        16.0
+      ]
+    ],
+    "medium": [
+      [
+        8.0,
+        15.0
+      ],
+      [
+        19.0,
+        15.0
+      ]
+    ],
+    "compact": [
+      [
+        8.5,
+        15.0
+      ],
+      [
+        18.5,
+        15.0
+      ]
+    ]
+  },
+  "CSA_seed": 3314,
+  "CSA_max_iter": 3,
+  "CSA_epsilon": 0.001,
+  "PCA_validation_cap": "min(paper_pre_dim, number of inner-training identities); q50:45->40, q100:95->80, q200:112 unchanged",
+  "validation_gallery": "ALL first-q Fa images; inner-trained identity Fa added as distractors; target probe identities excluded from fitting",
+  "tie_break": "highest mean (nearest_wrong_distance-correct_distance)/(nearest_wrong_distance+correct_distance+1e-12), then lowest candidate number",
+  "chronology": "v2 expands training-only validation gallery and adds margin tie-break after observing v1 validation saturation and final scores; v1 retained; no final test scores used in candidate objective",
+  "primary_profile": "validation_selected",
+  "test_used_for_parameter_selection": false,
+  "test_protocol": "first q pairs train using Fa+Fb; remaining identities Fa gallery/Fb probe",
+  "curve_role": "descriptive only AFTER selection; fixed paper final LDA dimensions",
+  "comparison_profiles": [
+    "group_primary fixed baseline",
+    "sw_euclidean_control",
+    "cosine_control"
+  ],
+  "limitations": [
+    "finite candidate grid, not guaranteed global optimum",
+    "surrogate PCA pre-dim in q50/q100 inner folds",
+    "original first-q ordering and normalization details unconfirmed",
+    "validation-selected PCA/CSA may differ in metric/preprocessing",
+    "validation gallery includes trained-identity distractors; final gallery has only unseen identities",
+    "v2 is not a fresh blind test after v1; first-q training remains the only selection data"
+  ],
+  "python": "3.11.9",
+  "BLAS_threads": 4,
+  "code_sha256": {
+    "csa.py": "29226eaae53c3c5b9d5e752d55a8d675e0a40b2d8eefac186f06682ad02ea64c",
+    "gabor.py": "ceb12f2bfbe82e381375e14a1c60d0a0a4795b91544e7bff02c22e93ac61578f",
+    "prepare_available_data.py": "0f5d07532716155b41c7264fc55cfcb749678d9ce1c77a1ad479d8f43e65f6e0",
+    "prepare_feret.py": "21125fb15371774eae5e8ecdfb2ab832bed152b15e8bdbd85f8ae2a874a11f68",
+    "run_feret.py": "a964dfaebc747d63b894583cbd449e0ef56adbcf62ed74dbf2ed520fa71031f9",
+    "select_feret.py": "d1b76112b0900884c3a240bf9d726807e8fad2da55e705c058b5149e21bcc8c0",
+    "run_orl_gray.py": "ddff280aed8e0d96cdbefb6f1bc059ae4c07221af3869f71c0c61c119588ac72"
+  }
+}

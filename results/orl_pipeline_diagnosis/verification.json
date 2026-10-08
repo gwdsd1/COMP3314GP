@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "fixed_results": 108,
+  "predictions": 34560,
+  "summary_groups": 36,
+  "independent_real_data_CSA_comparisons": 6,
+  "real_data_LDA_max_relative_eigen_residual": 1.5324871387163829e-12,
+  "checks": [
+    "source snapshots match hashes",
+    "same seed20/21/22 per-class2/8 split and label isolation",
+    "all prediction counts, accuracies, three-seed mean and SD replay",
+    "six original aligned primary baseline means reproduced exactly",
+    "independent real-data sequential CSA/projectors/distances and full-rank LDA generalized eigenproblem checked during run",
+    "both reused Gabor caches match exact grayscale input hashes, Gabor parameters/implementation and array file hashes"
+  ],
+  "limits": "diagnostic evaluation of already observed probes, not a new blind optimized result"
+}

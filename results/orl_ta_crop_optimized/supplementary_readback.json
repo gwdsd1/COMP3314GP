@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "outer_actual_dimensions_checked": 80,
+  "four_method_shared_groups_checked": 20,
+  "summary_groups_recomputed": 8,
+  "inner_correct_counts": {
+    "baseline": 508,
+    "input_A": 566,
+    "final_B": 568
+  },
+  "unchanged_baseline_setting_scores_and_NN_reproduced": 12
+}

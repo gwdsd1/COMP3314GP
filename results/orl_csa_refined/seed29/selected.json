@@ -1,0 +1,55 @@
+{
+  "seed": 29,
+  "training_only": true,
+  "profiles": [
+    {
+      "entry_id": "yunet_d16_replicate_fixed39_zero",
+      "normalization": "channel_rms",
+      "profile": "ordinary",
+      "policy": "unit_columns_cosine_centered",
+      "CSA": {
+        "case_index": 20,
+        "alpha": 0.0,
+        "dimension": 28,
+        "correct": 61
+      },
+      "PCA": {
+        "case_index": 0,
+        "alpha": 0.0,
+        "dimension": 18,
+        "correct": 67
+      },
+      "score_file": "seed29/full/yunet_d16_replicate_fixed39_zero_channel_rms.npz",
+      "score_sha256": "8c3c9757c13b4115ddb510b1c0dcb4368818f5492282de1450263e6912139cdf",
+      "pure": {
+        "case_index": 2,
+        "correct": 62
+      }
+    },
+    {
+      "entry_id": "yunet_d16_replicate_fixed39_zero",
+      "normalization": "none",
+      "profile": "shrinkage",
+      "policy": "unit_columns_cosine_centered",
+      "CSA": {
+        "case_index": 8,
+        "alpha": 0.15,
+        "dimension": 23,
+        "correct": 66
+      },
+      "PCA": {
+        "case_index": 0,
+        "alpha": 0.0,
+        "dimension": 25,
+        "correct": 70
+      },
+      "score_file": "seed29/full/yunet_d16_replicate_fixed39_zero_none.npz",
+      "score_sha256": "1dba69219425fdd10609ed9e5fd7117e50d2c74cbc6379c86fa916e1492ea29f",
+      "pure": {
+        "case_index": 2,
+        "correct": 65
+      }
+    }
+  ],
+  "elapsed_seconds": 230.4101765000014
+}

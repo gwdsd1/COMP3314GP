@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "seed": 314,
+  "checks": [
+    "non-square tensor axes and unfold/fold round-trip",
+    "2-D sequential update agrees with independent matrix formulas",
+    "3-D sequential update and shared-core transform agree with independent einsum",
+    "orthogonality, per-mode monotonic SSE, full reconstruction, first-order PCA equivalence, PCA optimum; both mean settings",
+    "LDA matches generalized eigenproblem; dimension guard; 1-NN hand example",
+    "paper RMSE and total-storage CR verified against hand calculation",
+    "ORL per-class 2/8 split, coverage, isolation and deterministic replay"
+  ]
+}

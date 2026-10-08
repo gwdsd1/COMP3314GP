@@ -1,0 +1,104 @@
+{
+  "created_utc": "2026-10-07T01:49:30.194630+00:00",
+  "stage": 2,
+  "not_blind": "ORL probes and historical variants previously observed; all alternatives retained",
+  "group_conventions": {
+    "metric": "cosine",
+    "lda_scaling": "unit_columns",
+    "PCA_center": true,
+    "CSA_center": false,
+    "CSA_init": "identity",
+    "CSA_Tmax": 3,
+    "epsilon": 0.001
+  },
+  "fixed_paper_cases": [
+    [
+      "PCA+LDA (Gray)",
+      "gray",
+      "pca",
+      30,
+      18,
+      82.2
+    ],
+    [
+      "CSA-2+LDA",
+      "gray",
+      "csa",
+      [
+        11,
+        2
+      ],
+      16,
+      84.1
+    ],
+    [
+      "PCA (Gabor)",
+      "gabor",
+      "pca",
+      76,
+      null,
+      86.6
+    ],
+    [
+      "CSA-3",
+      "gabor",
+      "csa",
+      [
+        15,
+        1,
+        26
+      ],
+      null,
+      94.4
+    ],
+    [
+      "PCA+LDA (Gabor)",
+      "gabor",
+      "pca",
+      33,
+      25,
+      87.2
+    ],
+    [
+      "CSA-3+LDA",
+      "gabor",
+      "csa",
+      [
+        4,
+        2,
+        3
+      ],
+      23,
+      90.9
+    ]
+  ],
+  "code_sha256": {
+    "csa.py": "29226eaae53c3c5b9d5e752d55a8d675e0a40b2d8eefac186f06682ad02ea64c",
+    "diagnose_orl_gabor.py": "3b59a9f9fc8d5bea84fe22176b8ef6fb7f4f7d972905e895ce4ef4a88c4410f9",
+    "prepare_available_data.py": "0f5d07532716155b41c7264fc55cfcb749678d9ce1c77a1ad479d8f43e65f6e0",
+    "run_available_reproduction.py": "135ab16b4e47f840ad0e711c9bb1cb72166e1a3f871e46ae4d25726ae6928a71",
+    "run_shared_protocol.py": "84d92379c418aae38c49344513d1b4b667b1d50f42b9afcb0a45f2cbe66f2303",
+    "verify_shared_protocol.py": "32e1e81f92a306fad8eca90037ea923ca2685479ad66c5e904846f42a75bd7ad"
+  },
+  "preprocessing_candidates": [
+    "whole_hist",
+    "valid_hist",
+    "valid_zscore",
+    "valid_zscore_lanczos"
+  ],
+  "selected_preprocessing": "valid_zscore_lanczos",
+  "seeds": [
+    20,
+    21,
+    22
+  ],
+  "feature_spec": {
+    "base_wavelength": 4.0,
+    "sigma": 6.283185307179586,
+    "radius": null,
+    "boundary": "reflect",
+    "finite_zero_mean": true,
+    "sampling": "stride00",
+    "normalization": "none"
+  }
+}

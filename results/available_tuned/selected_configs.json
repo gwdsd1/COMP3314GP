@@ -1,0 +1,542 @@
+[
+  {
+    "dataset": "ORL",
+    "seed": 20,
+    "method": "PCA+LDA (Gray)",
+    "config": {
+      "geometry": "fuller",
+      "kernel": "standard4",
+      "response": "linear",
+      "normalization": "l2",
+      "center": true,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "candidate_id": "model_000"
+    },
+    "preprocess_validation_percent": 50.0,
+    "validation_percent": 50.0
+  },
+  {
+    "dataset": "ORL",
+    "seed": 20,
+    "method": "CSA-2+LDA",
+    "config": {
+      "geometry": "original",
+      "kernel": "standard4",
+      "response": "linear",
+      "normalization": "l2",
+      "center": false,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "candidate_id": "model_000"
+    },
+    "preprocess_validation_percent": 46.25,
+    "validation_percent": 46.25
+  },
+  {
+    "dataset": "ORL",
+    "seed": 20,
+    "method": "PCA (Gabor)",
+    "config": {
+      "geometry": "original",
+      "kernel": "smaller2",
+      "response": "linear",
+      "normalization": "l2",
+      "center": true,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "candidate_id": "model_000"
+    },
+    "preprocess_validation_percent": 66.25,
+    "validation_percent": 66.25
+  },
+  {
+    "dataset": "ORL",
+    "seed": 20,
+    "method": "CSA-3",
+    "config": {
+      "geometry": "fuller",
+      "kernel": "standard4",
+      "response": "sqrt",
+      "normalization": "none",
+      "center": false,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "candidate_id": "model_000"
+    },
+    "preprocess_validation_percent": 56.25,
+    "validation_percent": 56.25
+  },
+  {
+    "dataset": "ORL",
+    "seed": 20,
+    "method": "PCA+LDA (Gabor)",
+    "config": {
+      "geometry": "original",
+      "kernel": "smaller2",
+      "response": "sqrt",
+      "normalization": "none",
+      "center": true,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "candidate_id": "model_000"
+    },
+    "preprocess_validation_percent": 70.0,
+    "validation_percent": 70.0
+  },
+  {
+    "dataset": "ORL",
+    "seed": 20,
+    "method": "CSA-3+LDA",
+    "config": {
+      "geometry": "original",
+      "kernel": "smaller2",
+      "response": "sqrt",
+      "normalization": "l2",
+      "center": false,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "candidate_id": "model_000"
+    },
+    "preprocess_validation_percent": 55.0,
+    "validation_percent": 55.0
+  },
+  {
+    "dataset": "ORL",
+    "seed": 21,
+    "method": "PCA+LDA (Gray)",
+    "config": {
+      "geometry": "original",
+      "kernel": "standard4",
+      "response": "linear",
+      "normalization": "none",
+      "center": false,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "candidate_id": "model_005"
+    },
+    "preprocess_validation_percent": 63.75,
+    "validation_percent": 65.0
+  },
+  {
+    "dataset": "ORL",
+    "seed": 21,
+    "method": "CSA-2+LDA",
+    "config": {
+      "geometry": "original",
+      "kernel": "standard4",
+      "response": "linear",
+      "normalization": "l2",
+      "center": true,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "candidate_id": "model_008"
+    },
+    "preprocess_validation_percent": 65.0,
+    "validation_percent": 67.5
+  },
+  {
+    "dataset": "ORL",
+    "seed": 21,
+    "method": "PCA (Gabor)",
+    "config": {
+      "geometry": "medium",
+      "kernel": "standard4",
+      "response": "sqrt",
+      "normalization": "l2",
+      "center": true,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "candidate_id": "model_000"
+    },
+    "preprocess_validation_percent": 75.0,
+    "validation_percent": 75.0
+  },
+  {
+    "dataset": "ORL",
+    "seed": 21,
+    "method": "CSA-3",
+    "config": {
+      "geometry": "medium",
+      "kernel": "smaller2",
+      "response": "linear",
+      "normalization": "none",
+      "center": false,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "candidate_id": "model_000"
+    },
+    "preprocess_validation_percent": 75.0,
+    "validation_percent": 75.0
+  },
+  {
+    "dataset": "ORL",
+    "seed": 21,
+    "method": "PCA+LDA (Gabor)",
+    "config": {
+      "geometry": "original",
+      "kernel": "standard4",
+      "response": "sqrt",
+      "normalization": "l2",
+      "center": true,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "candidate_id": "model_000"
+    },
+    "preprocess_validation_percent": 76.25,
+    "validation_percent": 76.25
+  },
+  {
+    "dataset": "ORL",
+    "seed": 21,
+    "method": "CSA-3+LDA",
+    "config": {
+      "geometry": "medium",
+      "kernel": "standard4",
+      "response": "sqrt",
+      "normalization": "none",
+      "center": false,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "candidate_id": "model_000"
+    },
+    "preprocess_validation_percent": 71.25,
+    "validation_percent": 71.25
+  },
+  {
+    "dataset": "ORL",
+    "seed": 22,
+    "method": "PCA+LDA (Gray)",
+    "config": {
+      "geometry": "original",
+      "kernel": "standard4",
+      "response": "linear",
+      "normalization": "none",
+      "center": true,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "candidate_id": "model_000"
+    },
+    "preprocess_validation_percent": 53.75,
+    "validation_percent": 53.75
+  },
+  {
+    "dataset": "ORL",
+    "seed": 22,
+    "method": "CSA-2+LDA",
+    "config": {
+      "geometry": "medium",
+      "kernel": "standard4",
+      "response": "linear",
+      "normalization": "l2",
+      "center": false,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "candidate_id": "model_000"
+    },
+    "preprocess_validation_percent": 52.5,
+    "validation_percent": 52.5
+  },
+  {
+    "dataset": "ORL",
+    "seed": 22,
+    "method": "PCA (Gabor)",
+    "config": {
+      "geometry": "original",
+      "kernel": "standard4",
+      "response": "sqrt",
+      "normalization": "l2",
+      "center": true,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "candidate_id": "model_000"
+    },
+    "preprocess_validation_percent": 68.75,
+    "validation_percent": 68.75
+  },
+  {
+    "dataset": "ORL",
+    "seed": 22,
+    "method": "CSA-3",
+    "config": {
+      "geometry": "medium",
+      "kernel": "standard4",
+      "response": "sqrt",
+      "normalization": "none",
+      "center": false,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "candidate_id": "model_000"
+    },
+    "preprocess_validation_percent": 60.0,
+    "validation_percent": 60.0
+  },
+  {
+    "dataset": "ORL",
+    "seed": 22,
+    "method": "PCA+LDA (Gabor)",
+    "config": {
+      "geometry": "original",
+      "kernel": "standard4",
+      "response": "sqrt",
+      "normalization": "l2",
+      "center": true,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "candidate_id": "model_000"
+    },
+    "preprocess_validation_percent": 72.5,
+    "validation_percent": 72.5
+  },
+  {
+    "dataset": "ORL",
+    "seed": 22,
+    "method": "CSA-3+LDA",
+    "config": {
+      "geometry": "medium",
+      "kernel": "smaller2",
+      "response": "sqrt",
+      "normalization": "none",
+      "center": false,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "candidate_id": "model_000"
+    },
+    "preprocess_validation_percent": 56.25,
+    "validation_percent": 56.25
+  },
+  {
+    "dataset": "MNIST G30/P470",
+    "seed": 20,
+    "method": "PCA (Gabor)",
+    "config": {
+      "geometry": "unchanged",
+      "kernel": "standard4",
+      "response": "sqrt",
+      "normalization": "l2",
+      "center": true,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "candidate_id": "model_000"
+    },
+    "preprocess_validation_percent": 92.5,
+    "validation_percent": 92.5
+  },
+  {
+    "dataset": "MNIST G30/P470",
+    "seed": 20,
+    "method": "CSA-3",
+    "config": {
+      "geometry": "unchanged",
+      "kernel": "smaller2",
+      "response": "sqrt",
+      "normalization": "none",
+      "center": false,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "candidate_id": "model_000"
+    },
+    "preprocess_validation_percent": 92.5,
+    "validation_percent": 92.5
+  },
+  {
+    "dataset": "MNIST G30/P470",
+    "seed": 21,
+    "method": "PCA (Gabor)",
+    "config": {
+      "geometry": "unchanged",
+      "kernel": "standard4",
+      "response": "sqrt",
+      "normalization": "l2",
+      "center": true,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "candidate_id": "model_000"
+    },
+    "preprocess_validation_percent": 91.66666666666667,
+    "validation_percent": 91.66666666666667
+  },
+  {
+    "dataset": "MNIST G30/P470",
+    "seed": 21,
+    "method": "CSA-3",
+    "config": {
+      "geometry": "unchanged",
+      "kernel": "standard4",
+      "response": "linear",
+      "normalization": "l2",
+      "center": false,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "candidate_id": "model_000"
+    },
+    "preprocess_validation_percent": 91.66666666666667,
+    "validation_percent": 91.66666666666667
+  },
+  {
+    "dataset": "MNIST G30/P470",
+    "seed": 22,
+    "method": "PCA (Gabor)",
+    "config": {
+      "geometry": "unchanged",
+      "kernel": "standard4",
+      "response": "sqrt",
+      "normalization": "l2",
+      "center": true,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "candidate_id": "model_000"
+    },
+    "preprocess_validation_percent": 92.5,
+    "validation_percent": 92.5
+  },
+  {
+    "dataset": "MNIST G30/P470",
+    "seed": 22,
+    "method": "CSA-3",
+    "config": {
+      "geometry": "unchanged",
+      "kernel": "standard4",
+      "response": "linear",
+      "normalization": "none",
+      "center": false,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "candidate_id": "model_000"
+    },
+    "preprocess_validation_percent": 92.5,
+    "validation_percent": 92.5
+  },
+  {
+    "dataset": "MNIST G40/P460",
+    "seed": 20,
+    "method": "PCA (Gabor)",
+    "config": {
+      "geometry": "unchanged",
+      "kernel": "smaller2",
+      "response": "sqrt",
+      "normalization": "none",
+      "center": true,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "candidate_id": "model_000"
+    },
+    "preprocess_validation_percent": 94.375,
+    "validation_percent": 94.375
+  },
+  {
+    "dataset": "MNIST G40/P460",
+    "seed": 20,
+    "method": "CSA-3",
+    "config": {
+      "geometry": "unchanged",
+      "kernel": "standard4",
+      "response": "linear",
+      "normalization": "l2",
+      "center": false,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "candidate_id": "model_000"
+    },
+    "preprocess_validation_percent": 96.25,
+    "validation_percent": 96.25
+  },
+  {
+    "dataset": "MNIST G40/P460",
+    "seed": 21,
+    "method": "PCA (Gabor)",
+    "config": {
+      "geometry": "unchanged",
+      "kernel": "smaller2",
+      "response": "sqrt",
+      "normalization": "l2",
+      "center": true,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "candidate_id": "model_000"
+    },
+    "preprocess_validation_percent": 88.75,
+    "validation_percent": 88.75
+  },
+  {
+    "dataset": "MNIST G40/P460",
+    "seed": 21,
+    "method": "CSA-3",
+    "config": {
+      "geometry": "unchanged",
+      "kernel": "smaller2",
+      "response": "linear",
+      "normalization": "l2",
+      "center": false,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "candidate_id": "model_000"
+    },
+    "preprocess_validation_percent": 90.0,
+    "validation_percent": 90.0
+  },
+  {
+    "dataset": "MNIST G40/P460",
+    "seed": 22,
+    "method": "PCA (Gabor)",
+    "config": {
+      "geometry": "unchanged",
+      "kernel": "standard4",
+      "response": "sqrt",
+      "normalization": "none",
+      "center": false,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "candidate_id": "model_003"
+    },
+    "preprocess_validation_percent": 93.125,
+    "validation_percent": 93.75
+  },
+  {
+    "dataset": "MNIST G40/P460",
+    "seed": 22,
+    "method": "CSA-3",
+    "config": {
+      "geometry": "unchanged",
+      "kernel": "standard4",
+      "response": "sqrt",
+      "normalization": "none",
+      "center": false,
+      "init": "identity",
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "candidate_id": "model_000"
+    },
+    "preprocess_validation_percent": 94.375,
+    "validation_percent": 94.375
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "score_records": 160,
+  "outer_predictions": 51200,
+  "selected_inner_predictions": 9600,
+  "all_embeddings_NN_replayed": true,
+  "independent_Fisher_checks": 160,
+  "selection_files_unchanged": true,
+  "all_training_objectives_recomputed": true,
+  "shared_input_metric": true,
+  "selected_feature_caches_recomputed": [
+    {
+      "entry_id": "yunet_d16_replicate_sigma_pi_zero",
+      "samples": [
+        0,
+        197
+      ],
+      "max_abs_error": 0.0
+    },
+    {
+      "entry_id": "yunet_d16_replicate_fixed39_reflect",
+      "samples": [
+        0,
+        197
+      ],
+      "max_abs_error": 0.0
+    },
+    {
+      "entry_id": "yunet_d18_replicate_sigma_pi_zero",
+      "samples": [
+        0,
+        197
+      ],
+      "max_abs_error": 0.0
+    }
+  ],
+  "training_only_channel_scales_recomputed": true,
+  "verifier_sha256": "c78530502ff833dbd9843c702102a97ac44bf99779041c36c0f7382cb811d06b"
+}

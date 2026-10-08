@@ -1,0 +1,38 @@
+[
+  {
+    "branch": "eyes_only",
+    "method": "CSA-3",
+    "mean_percent": 77.60416666666667,
+    "std_pp": 3.5539004394233293
+  },
+  {
+    "branch": "paper_description",
+    "method": "CSA-3",
+    "mean_percent": 85.20833333333333,
+    "std_pp": 1.8310828990882235
+  },
+  {
+    "branch": "eyes_only",
+    "method": "PCA (Gabor)",
+    "mean_percent": 78.22916666666667,
+    "std_pp": 1.2629537138523064
+  },
+  {
+    "branch": "paper_description",
+    "method": "PCA (Gabor)",
+    "mean_percent": 83.75,
+    "std_pp": 2.049199538844375
+  },
+  {
+    "branch": "eyes_only",
+    "method": "CSA-3+LDA",
+    "mean_percent": 66.04166666666667,
+    "std_pp": 2.6020824993326657
+  },
+  {
+    "branch": "paper_description",
+    "method": "CSA-3+LDA",
+    "mean_percent": 78.85416666666667,
+    "std_pp": 3.035167142569472
+  }
+]

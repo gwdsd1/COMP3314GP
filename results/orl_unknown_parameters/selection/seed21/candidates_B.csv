@@ -1,0 +1,7 @@
+input,power,init,policy,inner_correct,inner_total,worst_fold_correct
+context_sigma_pi,1.0,identity,unit_gallery_cosine,64,80,3
+context_sigma_pi,0.75,identity,unit_gallery_cosine,62,80,3
+context_sigma_pi,0.5,identity,unit_gallery_cosine,62,80,3
+context_analytic_dc,1.0,identity,unit_gallery_cosine,64,80,3
+context_analytic_dc,0.75,identity,unit_gallery_cosine,59,80,3
+context_analytic_dc,0.5,identity,unit_gallery_cosine,61,80,3

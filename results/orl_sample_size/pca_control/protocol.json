@@ -1,0 +1,8 @@
+{
+  "role": "post-main fixed equal-budget PCA control; no search",
+  "PCA_components": 24,
+  "LDA_components": 23,
+  "alpha": 0.15,
+  "centering": true,
+  "parent_protocol": "protocol.json"
+}

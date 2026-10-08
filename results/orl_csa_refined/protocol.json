@@ -1,0 +1,451 @@
+{
+  "seeds": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "gallery": 2,
+  "probe": 8,
+  "Tmax": 3,
+  "cases": [
+    {
+      "algorithm": "pca",
+      "ranks": 33,
+      "center": true,
+      "init": "identity"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        4,
+        2,
+        3
+      ],
+      "center": false,
+      "init": "identity"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        4,
+        2,
+        3
+      ],
+      "center": true,
+      "init": "identity"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        4,
+        2,
+        4
+      ],
+      "center": false,
+      "init": "identity"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        3,
+        3,
+        3
+      ],
+      "center": false,
+      "init": "identity"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        4,
+        2,
+        3
+      ],
+      "center": false,
+      "init": "hosvd"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        4,
+        2,
+        3
+      ],
+      "center": true,
+      "init": "hosvd"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        4,
+        2,
+        4
+      ],
+      "center": false,
+      "init": "hosvd"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        4,
+        2,
+        4
+      ],
+      "center": true,
+      "init": "hosvd"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        3,
+        3,
+        3
+      ],
+      "center": false,
+      "init": "hosvd"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        3,
+        3,
+        3
+      ],
+      "center": true,
+      "init": "hosvd"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        2,
+        2,
+        6
+      ],
+      "center": false,
+      "init": "hosvd"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        2,
+        2,
+        6
+      ],
+      "center": true,
+      "init": "hosvd"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        2,
+        3,
+        4
+      ],
+      "center": false,
+      "init": "hosvd"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        2,
+        3,
+        4
+      ],
+      "center": true,
+      "init": "hosvd"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        3,
+        2,
+        4
+      ],
+      "center": false,
+      "init": "hosvd"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        3,
+        2,
+        4
+      ],
+      "center": true,
+      "init": "hosvd"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        2,
+        4,
+        4
+      ],
+      "center": false,
+      "init": "hosvd"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        2,
+        4,
+        4
+      ],
+      "center": true,
+      "init": "hosvd"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        4,
+        1,
+        8
+      ],
+      "center": false,
+      "init": "hosvd"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        4,
+        1,
+        8
+      ],
+      "center": true,
+      "init": "hosvd"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        2,
+        2,
+        8
+      ],
+      "center": false,
+      "init": "hosvd"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        2,
+        2,
+        8
+      ],
+      "center": true,
+      "init": "hosvd"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        3,
+        2,
+        5
+      ],
+      "center": false,
+      "init": "hosvd"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        3,
+        2,
+        5
+      ],
+      "center": true,
+      "init": "hosvd"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        2,
+        3,
+        5
+      ],
+      "center": false,
+      "init": "hosvd"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        2,
+        3,
+        5
+      ],
+      "center": true,
+      "init": "hosvd"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        7,
+        1,
+        5
+      ],
+      "center": false,
+      "init": "hosvd"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        7,
+        1,
+        5
+      ],
+      "center": true,
+      "init": "hosvd"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        4,
+        2,
+        3
+      ],
+      "center": false,
+      "init": "random"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        4,
+        2,
+        3
+      ],
+      "center": true,
+      "init": "random"
+    }
+  ],
+  "pure_cases": [
+    {
+      "algorithm": "csa",
+      "ranks": [
+        15,
+        1,
+        26
+      ],
+      "center": false,
+      "init": "identity"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        15,
+        1,
+        26
+      ],
+      "center": false,
+      "init": "hosvd"
+    },
+    {
+      "algorithm": "csa",
+      "ranks": [
+        15,
+        1,
+        26
+      ],
+      "center": true,
+      "init": "hosvd"
+    }
+  ],
+  "normalizations": [
+    "none",
+    "channel_rms",
+    "sqrt",
+    "jet_l2",
+    "tensor_l2"
+  ],
+  "alphas": [
+    0.0,
+    0.01,
+    0.05,
+    0.15,
+    0.35,
+    0.65,
+    1.0
+  ],
+  "policies": {
+    "unit_columns_cosine_centered": {
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "lda_center": true
+    },
+    "unit_columns_cosine_linear": {
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "lda_center": false
+    },
+    "unit_columns_euclidean": {
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "lda_center": true
+    },
+    "sw_identity_cosine_centered": {
+      "scaling": "sw_identity",
+      "metric": "cosine",
+      "lda_center": true
+    },
+    "sw_identity_cosine_linear": {
+      "scaling": "sw_identity",
+      "metric": "cosine",
+      "lda_center": false
+    },
+    "sw_identity_euclidean": {
+      "scaling": "sw_identity",
+      "metric": "euclidean",
+      "lda_center": true
+    }
+  },
+  "eligible_input_ids": [
+    "yunet_d22_zero_adaptive_zero",
+    "yunet_d22_zero_fixed39_zero",
+    "yunet_d20_replicate_adaptive_zero",
+    "yunet_d20_replicate_fixed39_zero",
+    "yunet_d18_replicate_adaptive_zero",
+    "yunet_d18_replicate_fixed39_zero",
+    "yunet_d16_replicate_adaptive_zero",
+    "yunet_d16_replicate_fixed39_zero",
+    "yunet_d22_zero_adaptive_reflect",
+    "yunet_d22_zero_mean2_zero",
+    "yunet_d22_zero_sigma_pi_zero",
+    "yunet_d22_zero_wavelength2_zero",
+    "yunet_d20_replicate_adaptive_reflect",
+    "yunet_d20_replicate_mean2_zero",
+    "yunet_d20_replicate_sigma_pi_zero",
+    "yunet_d20_replicate_wavelength2_zero",
+    "yunet_d18_replicate_adaptive_reflect",
+    "yunet_d18_replicate_mean2_zero",
+    "yunet_d18_replicate_sigma_pi_zero",
+    "yunet_d18_replicate_wavelength2_zero",
+    "yunet_d16_replicate_adaptive_reflect",
+    "yunet_d16_replicate_mean2_zero",
+    "yunet_d16_replicate_sigma_pi_zero",
+    "yunet_d16_replicate_wavelength2_zero"
+  ],
+  "screen": "CSA24 HOSVD noncentered fitted to own80gallery; centered cosine leave-self-out score; approximate input pruning only",
+  "input_shortlist": "previous own ordinary+shrinkage input/norm anchors; best screen and best jet_l2/tensor_l2 screen; at most4",
+  "partial_CV": "folds0/4/8/12,20 held-out gallery images,75learning/5validation each; all40classes retained",
+  "case_shortlist": "top2 ordinary and top2 shrinkage per input, plus paper case/PCA/own previous cases",
+  "full_CV": "all16 folds; each own gallery image validated once; partial counts reused, remaining12 replayed",
+  "objective": "maximize Gabor CSA+LDA inner correct; ties favor earlier input, original case, alpha0, paper dimension23 then smaller dimension",
+  "comparisons": "within each profile PCA/CSA390/CSA+LDA share input,norm,NN policy; PCA33 and CSA390 have their own training-selected parameters",
+  "LDA_pre_limit": "<=35 in every inner fold and <=40 outside; shrinkage retains the same constraint",
+  "initialization": "HOSVD bases from learning images only; fixed random3314; arbitrary orthogonal starts permitted by Procedure1, not asserted author configuration",
+  "reporting": "ordinary LDA separate from shrinkage extension; original paper ranks retained as an anchor",
+  "limitations": "finite two-stage pruning may miss optimum; historical probes seen in earlier development; not blind; no test-based seed/config selection",
+  "references": [
+    "https://www.kolda.net/publication/koba09/",
+    "https://cenl.ucsd.edu/pubs/ieee-1997.pdf"
+  ],
+  "sources": {
+    "refine_orl_csa.py": "e0c555d5256698ded50afc9cb0fb0e50975761bc19e161cd0d2ac6a79baf4b0b",
+    "csa.py": "6aabff534f47786c9a5098b2459e3afc55f39ad3d86d99b2bcba220f868b06a3",
+    "optimize_csa_lda.py": "01e95359497d1e2d77f8f02d0706cf2d30b11cb7a0ea654aec5a316822249c51"
+  }
+}

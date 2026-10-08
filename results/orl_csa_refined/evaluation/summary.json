@@ -1,0 +1,74 @@
+[
+  {
+    "profile": "ordinary",
+    "method": "CSA-3+LDA",
+    "n_splits": 10,
+    "mean_percent": 83.28125,
+    "std_pp": 3.298154208122409,
+    "min_percent": 78.75,
+    "max_percent": 89.0625
+  },
+  {
+    "profile": "same_input_paper_case",
+    "method": "CSA-3+LDA",
+    "n_splits": 10,
+    "mean_percent": 80.8125,
+    "std_pp": 3.2615978957151253,
+    "min_percent": 75.9375,
+    "max_percent": 85.0
+  },
+  {
+    "profile": "ordinary",
+    "method": "PCA+LDA (Gabor)",
+    "n_splits": 10,
+    "mean_percent": 92.09375,
+    "std_pp": 2.3572527707057636,
+    "min_percent": 87.1875,
+    "max_percent": 95.9375
+  },
+  {
+    "profile": "ordinary",
+    "method": "CSA-3",
+    "n_splits": 10,
+    "mean_percent": 89.96875,
+    "std_pp": 2.22658534345007,
+    "min_percent": 86.5625,
+    "max_percent": 93.4375
+  },
+  {
+    "profile": "shrinkage",
+    "method": "CSA-3+LDA",
+    "n_splits": 10,
+    "mean_percent": 85.46875,
+    "std_pp": 4.574446877613851,
+    "min_percent": 74.6875,
+    "max_percent": 90.0
+  },
+  {
+    "profile": "shrinkage_alpha0",
+    "method": "CSA-3+LDA",
+    "n_splits": 10,
+    "mean_percent": 77.0,
+    "std_pp": 8.680527777733333,
+    "min_percent": 65.0,
+    "max_percent": 88.75
+  },
+  {
+    "profile": "shrinkage",
+    "method": "PCA+LDA (Gabor)",
+    "n_splits": 10,
+    "mean_percent": 91.40625,
+    "std_pp": 2.6031247915832916,
+    "min_percent": 85.625,
+    "max_percent": 95.0
+  },
+  {
+    "profile": "shrinkage",
+    "method": "CSA-3",
+    "n_splits": 10,
+    "mean_percent": 90.125,
+    "std_pp": 2.1153785450573355,
+    "min_percent": 85.625,
+    "max_percent": 93.4375
+  }
+]

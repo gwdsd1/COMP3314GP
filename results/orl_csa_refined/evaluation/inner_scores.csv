@@ -1,0 +1,61 @@
+seed,profile,method,correct,n
+20,ordinary,CSA-3+LDA,59,80
+20,ordinary,PCA+LDA (Gabor),71,80
+20,ordinary,CSA-3,58,80
+20,shrinkage,CSA-3+LDA,65,80
+20,shrinkage,PCA+LDA (Gabor),66,80
+20,shrinkage,CSA-3,58,80
+21,ordinary,CSA-3+LDA,68,80
+21,ordinary,PCA+LDA (Gabor),70,80
+21,ordinary,CSA-3,67,80
+21,shrinkage,CSA-3+LDA,72,80
+21,shrinkage,PCA+LDA (Gabor),70,80
+21,shrinkage,CSA-3,70,80
+22,ordinary,CSA-3+LDA,62,80
+22,ordinary,PCA+LDA (Gabor),67,80
+22,ordinary,CSA-3,59,80
+22,shrinkage,CSA-3+LDA,65,80
+22,shrinkage,PCA+LDA (Gabor),67,80
+22,shrinkage,CSA-3,59,80
+23,ordinary,CSA-3+LDA,58,80
+23,ordinary,PCA+LDA (Gabor),66,80
+23,ordinary,CSA-3,54,80
+23,shrinkage,CSA-3+LDA,63,80
+23,shrinkage,PCA+LDA (Gabor),63,80
+23,shrinkage,CSA-3,68,80
+24,ordinary,CSA-3+LDA,60,80
+24,ordinary,PCA+LDA (Gabor),66,80
+24,ordinary,CSA-3,61,80
+24,shrinkage,CSA-3+LDA,62,80
+24,shrinkage,PCA+LDA (Gabor),66,80
+24,shrinkage,CSA-3,58,80
+25,ordinary,CSA-3+LDA,63,80
+25,ordinary,PCA+LDA (Gabor),66,80
+25,ordinary,CSA-3,59,80
+25,shrinkage,CSA-3+LDA,68,80
+25,shrinkage,PCA+LDA (Gabor),66,80
+25,shrinkage,CSA-3,57,80
+26,ordinary,CSA-3+LDA,62,80
+26,ordinary,PCA+LDA (Gabor),72,80
+26,ordinary,CSA-3,67,80
+26,shrinkage,CSA-3+LDA,68,80
+26,shrinkage,PCA+LDA (Gabor),71,80
+26,shrinkage,CSA-3,65,80
+27,ordinary,CSA-3+LDA,57,80
+27,ordinary,PCA+LDA (Gabor),69,80
+27,ordinary,CSA-3,62,80
+27,shrinkage,CSA-3+LDA,62,80
+27,shrinkage,PCA+LDA (Gabor),65,80
+27,shrinkage,CSA-3,62,80
+28,ordinary,CSA-3+LDA,66,80
+28,ordinary,PCA+LDA (Gabor),71,80
+28,ordinary,CSA-3,65,80
+28,shrinkage,CSA-3+LDA,71,80
+28,shrinkage,PCA+LDA (Gabor),71,80
+28,shrinkage,CSA-3,65,80
+29,ordinary,CSA-3+LDA,61,80
+29,ordinary,PCA+LDA (Gabor),67,80
+29,ordinary,CSA-3,62,80
+29,shrinkage,CSA-3+LDA,66,80
+29,shrinkage,PCA+LDA (Gabor),70,80
+29,shrinkage,CSA-3,65,80

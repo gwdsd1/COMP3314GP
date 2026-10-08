@@ -1,0 +1,22 @@
+{
+  "purpose": "Causal preprocessing contrasts, descriptive only; never used to select the main configuration",
+  "seeds": [
+    20,
+    21,
+    22
+  ],
+  "cases": "six fixed Table II dimensions",
+  "policy": {
+    "metric": "cosine",
+    "scaling": "unit_columns",
+    "lda_center": true
+  },
+  "inputs": [
+    "previous_frozen",
+    "haar_v2_d22_zero_adaptive_zero",
+    "yunet_d22_zero_adaptive_zero",
+    "yunet_d18_replicate_adaptive_zero",
+    "yunet_d16_replicate_adaptive_zero"
+  ],
+  "limits": "Old-to-new first contrast combines intensity/resampling changes; eye-only second contrast and crop+warp-fill contrasts are isolated separately"
+}

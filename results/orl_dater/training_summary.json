@@ -1,0 +1,30 @@
+{
+  "models": 20,
+  "iterations": [
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    18
+  ],
+  "converged": 1,
+  "reached_cap": 19,
+  "maximum_Sw_condition": 26502.630180915738,
+  "no_regularization": true,
+  "settings_selected_by_probe": false
+}

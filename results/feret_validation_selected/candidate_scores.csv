@@ -1,0 +1,433 @@
+q,method,candidate_id,eye_target,normalization,center,init,lda_scaling,metric,validation_correct,validation_probes,validation_percent
+50,PCA+LDA (Gray),c000,wide,equalized,True,identity,unit_columns,euclidean,50,50,100.0
+50,PCA+LDA (Gray),c001,wide,equalized,True,identity,unit_columns,cosine,50,50,100.0
+50,PCA+LDA (Gray),c002,wide,equalized,True,identity,sw_identity,euclidean,38,50,76.0
+50,PCA+LDA (Gray),c003,wide,equalized,True,identity,sw_identity,cosine,40,50,80.0
+50,PCA+LDA (Gray),c004,wide,equalized,False,identity,unit_columns,euclidean,50,50,100.0
+50,PCA+LDA (Gray),c005,wide,equalized,False,identity,unit_columns,cosine,49,50,98.0
+50,PCA+LDA (Gray),c006,wide,equalized,False,identity,sw_identity,euclidean,39,50,78.0
+50,PCA+LDA (Gray),c007,wide,equalized,False,identity,sw_identity,cosine,42,50,84.0
+50,PCA+LDA (Gray),c008,wide,zscore,True,identity,unit_columns,euclidean,50,50,100.0
+50,PCA+LDA (Gray),c009,wide,zscore,True,identity,unit_columns,cosine,50,50,100.0
+50,PCA+LDA (Gray),c010,wide,zscore,True,identity,sw_identity,euclidean,35,50,70.0
+50,PCA+LDA (Gray),c011,wide,zscore,True,identity,sw_identity,cosine,40,50,80.0
+50,PCA+LDA (Gray),c012,wide,zscore,False,identity,unit_columns,euclidean,50,50,100.0
+50,PCA+LDA (Gray),c013,wide,zscore,False,identity,unit_columns,cosine,50,50,100.0
+50,PCA+LDA (Gray),c014,wide,zscore,False,identity,sw_identity,euclidean,39,50,78.0
+50,PCA+LDA (Gray),c015,wide,zscore,False,identity,sw_identity,cosine,42,50,84.0
+50,PCA+LDA (Gray),c016,medium,equalized,True,identity,unit_columns,euclidean,50,50,100.0
+50,PCA+LDA (Gray),c017,medium,equalized,True,identity,unit_columns,cosine,50,50,100.0
+50,PCA+LDA (Gray),c018,medium,equalized,True,identity,sw_identity,euclidean,31,50,62.0
+50,PCA+LDA (Gray),c019,medium,equalized,True,identity,sw_identity,cosine,35,50,70.0
+50,PCA+LDA (Gray),c020,medium,equalized,False,identity,unit_columns,euclidean,48,50,96.0
+50,PCA+LDA (Gray),c021,medium,equalized,False,identity,unit_columns,cosine,49,50,98.0
+50,PCA+LDA (Gray),c022,medium,equalized,False,identity,sw_identity,euclidean,35,50,70.0
+50,PCA+LDA (Gray),c023,medium,equalized,False,identity,sw_identity,cosine,41,50,82.0
+50,PCA+LDA (Gray),c024,medium,zscore,True,identity,unit_columns,euclidean,50,50,100.0
+50,PCA+LDA (Gray),c025,medium,zscore,True,identity,unit_columns,cosine,50,50,100.0
+50,PCA+LDA (Gray),c026,medium,zscore,True,identity,sw_identity,euclidean,33,50,66.0
+50,PCA+LDA (Gray),c027,medium,zscore,True,identity,sw_identity,cosine,36,50,72.0
+50,PCA+LDA (Gray),c028,medium,zscore,False,identity,unit_columns,euclidean,50,50,100.0
+50,PCA+LDA (Gray),c029,medium,zscore,False,identity,unit_columns,cosine,50,50,100.0
+50,PCA+LDA (Gray),c030,medium,zscore,False,identity,sw_identity,euclidean,39,50,78.0
+50,PCA+LDA (Gray),c031,medium,zscore,False,identity,sw_identity,cosine,43,50,86.0
+50,PCA+LDA (Gray),c032,compact,equalized,True,identity,unit_columns,euclidean,48,50,96.0
+50,PCA+LDA (Gray),c033,compact,equalized,True,identity,unit_columns,cosine,48,50,96.0
+50,PCA+LDA (Gray),c034,compact,equalized,True,identity,sw_identity,euclidean,41,50,82.0
+50,PCA+LDA (Gray),c035,compact,equalized,True,identity,sw_identity,cosine,40,50,80.0
+50,PCA+LDA (Gray),c036,compact,equalized,False,identity,unit_columns,euclidean,47,50,94.0
+50,PCA+LDA (Gray),c037,compact,equalized,False,identity,unit_columns,cosine,47,50,94.0
+50,PCA+LDA (Gray),c038,compact,equalized,False,identity,sw_identity,euclidean,32,50,64.0
+50,PCA+LDA (Gray),c039,compact,equalized,False,identity,sw_identity,cosine,37,50,74.0
+50,PCA+LDA (Gray),c040,compact,zscore,True,identity,unit_columns,euclidean,48,50,96.0
+50,PCA+LDA (Gray),c041,compact,zscore,True,identity,unit_columns,cosine,48,50,96.0
+50,PCA+LDA (Gray),c042,compact,zscore,True,identity,sw_identity,euclidean,43,50,86.0
+50,PCA+LDA (Gray),c043,compact,zscore,True,identity,sw_identity,cosine,40,50,80.0
+50,PCA+LDA (Gray),c044,compact,zscore,False,identity,unit_columns,euclidean,48,50,96.0
+50,PCA+LDA (Gray),c045,compact,zscore,False,identity,unit_columns,cosine,48,50,96.0
+50,PCA+LDA (Gray),c046,compact,zscore,False,identity,sw_identity,euclidean,37,50,74.0
+50,PCA+LDA (Gray),c047,compact,zscore,False,identity,sw_identity,cosine,40,50,80.0
+50,CSA-2+LDA,c000,wide,equalized,False,identity,unit_columns,euclidean,50,50,100.0
+50,CSA-2+LDA,c001,wide,equalized,False,identity,unit_columns,cosine,50,50,100.0
+50,CSA-2+LDA,c002,wide,equalized,False,identity,sw_identity,euclidean,45,50,90.0
+50,CSA-2+LDA,c003,wide,equalized,False,identity,sw_identity,cosine,44,50,88.0
+50,CSA-2+LDA,c004,wide,equalized,False,random,unit_columns,euclidean,50,50,100.0
+50,CSA-2+LDA,c005,wide,equalized,False,random,unit_columns,cosine,50,50,100.0
+50,CSA-2+LDA,c006,wide,equalized,False,random,sw_identity,euclidean,45,50,90.0
+50,CSA-2+LDA,c007,wide,equalized,False,random,sw_identity,cosine,44,50,88.0
+50,CSA-2+LDA,c008,wide,equalized,True,identity,unit_columns,euclidean,50,50,100.0
+50,CSA-2+LDA,c009,wide,equalized,True,identity,unit_columns,cosine,50,50,100.0
+50,CSA-2+LDA,c010,wide,equalized,True,identity,sw_identity,euclidean,41,50,82.0
+50,CSA-2+LDA,c011,wide,equalized,True,identity,sw_identity,cosine,45,50,90.0
+50,CSA-2+LDA,c012,wide,equalized,True,random,unit_columns,euclidean,50,50,100.0
+50,CSA-2+LDA,c013,wide,equalized,True,random,unit_columns,cosine,50,50,100.0
+50,CSA-2+LDA,c014,wide,equalized,True,random,sw_identity,euclidean,41,50,82.0
+50,CSA-2+LDA,c015,wide,equalized,True,random,sw_identity,cosine,45,50,90.0
+50,CSA-2+LDA,c016,wide,zscore,False,identity,unit_columns,euclidean,50,50,100.0
+50,CSA-2+LDA,c017,wide,zscore,False,identity,unit_columns,cosine,50,50,100.0
+50,CSA-2+LDA,c018,wide,zscore,False,identity,sw_identity,euclidean,41,50,82.0
+50,CSA-2+LDA,c019,wide,zscore,False,identity,sw_identity,cosine,45,50,90.0
+50,CSA-2+LDA,c020,wide,zscore,False,random,unit_columns,euclidean,50,50,100.0
+50,CSA-2+LDA,c021,wide,zscore,False,random,unit_columns,cosine,50,50,100.0
+50,CSA-2+LDA,c022,wide,zscore,False,random,sw_identity,euclidean,41,50,82.0
+50,CSA-2+LDA,c023,wide,zscore,False,random,sw_identity,cosine,45,50,90.0
+50,CSA-2+LDA,c024,wide,zscore,True,identity,unit_columns,euclidean,50,50,100.0
+50,CSA-2+LDA,c025,wide,zscore,True,identity,unit_columns,cosine,50,50,100.0
+50,CSA-2+LDA,c026,wide,zscore,True,identity,sw_identity,euclidean,43,50,86.0
+50,CSA-2+LDA,c027,wide,zscore,True,identity,sw_identity,cosine,45,50,90.0
+50,CSA-2+LDA,c028,wide,zscore,True,random,unit_columns,euclidean,50,50,100.0
+50,CSA-2+LDA,c029,wide,zscore,True,random,unit_columns,cosine,50,50,100.0
+50,CSA-2+LDA,c030,wide,zscore,True,random,sw_identity,euclidean,43,50,86.0
+50,CSA-2+LDA,c031,wide,zscore,True,random,sw_identity,cosine,45,50,90.0
+50,CSA-2+LDA,c032,medium,equalized,False,identity,unit_columns,euclidean,50,50,100.0
+50,CSA-2+LDA,c033,medium,equalized,False,identity,unit_columns,cosine,50,50,100.0
+50,CSA-2+LDA,c034,medium,equalized,False,identity,sw_identity,euclidean,37,50,74.0
+50,CSA-2+LDA,c035,medium,equalized,False,identity,sw_identity,cosine,37,50,74.0
+50,CSA-2+LDA,c036,medium,equalized,False,random,unit_columns,euclidean,50,50,100.0
+50,CSA-2+LDA,c037,medium,equalized,False,random,unit_columns,cosine,50,50,100.0
+50,CSA-2+LDA,c038,medium,equalized,False,random,sw_identity,euclidean,37,50,74.0
+50,CSA-2+LDA,c039,medium,equalized,False,random,sw_identity,cosine,37,50,74.0
+50,CSA-2+LDA,c040,medium,equalized,True,identity,unit_columns,euclidean,49,50,98.0
+50,CSA-2+LDA,c041,medium,equalized,True,identity,unit_columns,cosine,49,50,98.0
+50,CSA-2+LDA,c042,medium,equalized,True,identity,sw_identity,euclidean,26,50,52.0
+50,CSA-2+LDA,c043,medium,equalized,True,identity,sw_identity,cosine,40,50,80.0
+50,CSA-2+LDA,c044,medium,equalized,True,random,unit_columns,euclidean,49,50,98.0
+50,CSA-2+LDA,c045,medium,equalized,True,random,unit_columns,cosine,49,50,98.0
+50,CSA-2+LDA,c046,medium,equalized,True,random,sw_identity,euclidean,25,50,50.0
+50,CSA-2+LDA,c047,medium,equalized,True,random,sw_identity,cosine,40,50,80.0
+50,CSA-2+LDA,c048,medium,zscore,False,identity,unit_columns,euclidean,50,50,100.0
+50,CSA-2+LDA,c049,medium,zscore,False,identity,unit_columns,cosine,50,50,100.0
+50,CSA-2+LDA,c050,medium,zscore,False,identity,sw_identity,euclidean,36,50,72.0
+50,CSA-2+LDA,c051,medium,zscore,False,identity,sw_identity,cosine,39,50,78.0
+50,CSA-2+LDA,c052,medium,zscore,False,random,unit_columns,euclidean,50,50,100.0
+50,CSA-2+LDA,c053,medium,zscore,False,random,unit_columns,cosine,50,50,100.0
+50,CSA-2+LDA,c054,medium,zscore,False,random,sw_identity,euclidean,36,50,72.0
+50,CSA-2+LDA,c055,medium,zscore,False,random,sw_identity,cosine,39,50,78.0
+50,CSA-2+LDA,c056,medium,zscore,True,identity,unit_columns,euclidean,48,50,96.0
+50,CSA-2+LDA,c057,medium,zscore,True,identity,unit_columns,cosine,49,50,98.0
+50,CSA-2+LDA,c058,medium,zscore,True,identity,sw_identity,euclidean,37,50,74.0
+50,CSA-2+LDA,c059,medium,zscore,True,identity,sw_identity,cosine,42,50,84.0
+50,CSA-2+LDA,c060,medium,zscore,True,random,unit_columns,euclidean,48,50,96.0
+50,CSA-2+LDA,c061,medium,zscore,True,random,unit_columns,cosine,49,50,98.0
+50,CSA-2+LDA,c062,medium,zscore,True,random,sw_identity,euclidean,37,50,74.0
+50,CSA-2+LDA,c063,medium,zscore,True,random,sw_identity,cosine,42,50,84.0
+50,CSA-2+LDA,c064,compact,equalized,False,identity,unit_columns,euclidean,49,50,98.0
+50,CSA-2+LDA,c065,compact,equalized,False,identity,unit_columns,cosine,47,50,94.0
+50,CSA-2+LDA,c066,compact,equalized,False,identity,sw_identity,euclidean,39,50,78.0
+50,CSA-2+LDA,c067,compact,equalized,False,identity,sw_identity,cosine,42,50,84.0
+50,CSA-2+LDA,c068,compact,equalized,False,random,unit_columns,euclidean,49,50,98.0
+50,CSA-2+LDA,c069,compact,equalized,False,random,unit_columns,cosine,47,50,94.0
+50,CSA-2+LDA,c070,compact,equalized,False,random,sw_identity,euclidean,41,50,82.0
+50,CSA-2+LDA,c071,compact,equalized,False,random,sw_identity,cosine,42,50,84.0
+50,CSA-2+LDA,c072,compact,equalized,True,identity,unit_columns,euclidean,49,50,98.0
+50,CSA-2+LDA,c073,compact,equalized,True,identity,unit_columns,cosine,48,50,96.0
+50,CSA-2+LDA,c074,compact,equalized,True,identity,sw_identity,euclidean,36,50,72.0
+50,CSA-2+LDA,c075,compact,equalized,True,identity,sw_identity,cosine,41,50,82.0
+50,CSA-2+LDA,c076,compact,equalized,True,random,unit_columns,euclidean,49,50,98.0
+50,CSA-2+LDA,c077,compact,equalized,True,random,unit_columns,cosine,48,50,96.0
+50,CSA-2+LDA,c078,compact,equalized,True,random,sw_identity,euclidean,36,50,72.0
+50,CSA-2+LDA,c079,compact,equalized,True,random,sw_identity,cosine,42,50,84.0
+50,CSA-2+LDA,c080,compact,zscore,False,identity,unit_columns,euclidean,50,50,100.0
+50,CSA-2+LDA,c081,compact,zscore,False,identity,unit_columns,cosine,49,50,98.0
+50,CSA-2+LDA,c082,compact,zscore,False,identity,sw_identity,euclidean,31,50,62.0
+50,CSA-2+LDA,c083,compact,zscore,False,identity,sw_identity,cosine,34,50,68.0
+50,CSA-2+LDA,c084,compact,zscore,False,random,unit_columns,euclidean,50,50,100.0
+50,CSA-2+LDA,c085,compact,zscore,False,random,unit_columns,cosine,49,50,98.0
+50,CSA-2+LDA,c086,compact,zscore,False,random,sw_identity,euclidean,32,50,64.0
+50,CSA-2+LDA,c087,compact,zscore,False,random,sw_identity,cosine,34,50,68.0
+50,CSA-2+LDA,c088,compact,zscore,True,identity,unit_columns,euclidean,50,50,100.0
+50,CSA-2+LDA,c089,compact,zscore,True,identity,unit_columns,cosine,49,50,98.0
+50,CSA-2+LDA,c090,compact,zscore,True,identity,sw_identity,euclidean,40,50,80.0
+50,CSA-2+LDA,c091,compact,zscore,True,identity,sw_identity,cosine,41,50,82.0
+50,CSA-2+LDA,c092,compact,zscore,True,random,unit_columns,euclidean,50,50,100.0
+50,CSA-2+LDA,c093,compact,zscore,True,random,unit_columns,cosine,49,50,98.0
+50,CSA-2+LDA,c094,compact,zscore,True,random,sw_identity,euclidean,40,50,80.0
+50,CSA-2+LDA,c095,compact,zscore,True,random,sw_identity,cosine,43,50,86.0
+100,PCA+LDA (Gray),c000,wide,equalized,True,identity,unit_columns,euclidean,100,100,100.0
+100,PCA+LDA (Gray),c001,wide,equalized,True,identity,unit_columns,cosine,100,100,100.0
+100,PCA+LDA (Gray),c002,wide,equalized,True,identity,sw_identity,euclidean,47,100,47.0
+100,PCA+LDA (Gray),c003,wide,equalized,True,identity,sw_identity,cosine,67,100,67.0
+100,PCA+LDA (Gray),c004,wide,equalized,False,identity,unit_columns,euclidean,100,100,100.0
+100,PCA+LDA (Gray),c005,wide,equalized,False,identity,unit_columns,cosine,100,100,100.0
+100,PCA+LDA (Gray),c006,wide,equalized,False,identity,sw_identity,euclidean,63,100,63.0
+100,PCA+LDA (Gray),c007,wide,equalized,False,identity,sw_identity,cosine,66,100,66.0
+100,PCA+LDA (Gray),c008,wide,zscore,True,identity,unit_columns,euclidean,100,100,100.0
+100,PCA+LDA (Gray),c009,wide,zscore,True,identity,unit_columns,cosine,100,100,100.0
+100,PCA+LDA (Gray),c010,wide,zscore,True,identity,sw_identity,euclidean,56,100,56.0
+100,PCA+LDA (Gray),c011,wide,zscore,True,identity,sw_identity,cosine,68,100,68.0
+100,PCA+LDA (Gray),c012,wide,zscore,False,identity,unit_columns,euclidean,100,100,100.0
+100,PCA+LDA (Gray),c013,wide,zscore,False,identity,unit_columns,cosine,100,100,100.0
+100,PCA+LDA (Gray),c014,wide,zscore,False,identity,sw_identity,euclidean,59,100,59.0
+100,PCA+LDA (Gray),c015,wide,zscore,False,identity,sw_identity,cosine,69,100,69.0
+100,PCA+LDA (Gray),c016,medium,equalized,True,identity,unit_columns,euclidean,100,100,100.0
+100,PCA+LDA (Gray),c017,medium,equalized,True,identity,unit_columns,cosine,100,100,100.0
+100,PCA+LDA (Gray),c018,medium,equalized,True,identity,sw_identity,euclidean,67,100,67.0
+100,PCA+LDA (Gray),c019,medium,equalized,True,identity,sw_identity,cosine,75,100,75.0
+100,PCA+LDA (Gray),c020,medium,equalized,False,identity,unit_columns,euclidean,99,100,99.0
+100,PCA+LDA (Gray),c021,medium,equalized,False,identity,unit_columns,cosine,99,100,99.0
+100,PCA+LDA (Gray),c022,medium,equalized,False,identity,sw_identity,euclidean,74,100,74.0
+100,PCA+LDA (Gray),c023,medium,equalized,False,identity,sw_identity,cosine,78,100,78.0
+100,PCA+LDA (Gray),c024,medium,zscore,True,identity,unit_columns,euclidean,100,100,100.0
+100,PCA+LDA (Gray),c025,medium,zscore,True,identity,unit_columns,cosine,100,100,100.0
+100,PCA+LDA (Gray),c026,medium,zscore,True,identity,sw_identity,euclidean,72,100,72.0
+100,PCA+LDA (Gray),c027,medium,zscore,True,identity,sw_identity,cosine,78,100,78.0
+100,PCA+LDA (Gray),c028,medium,zscore,False,identity,unit_columns,euclidean,100,100,100.0
+100,PCA+LDA (Gray),c029,medium,zscore,False,identity,unit_columns,cosine,100,100,100.0
+100,PCA+LDA (Gray),c030,medium,zscore,False,identity,sw_identity,euclidean,85,100,85.0
+100,PCA+LDA (Gray),c031,medium,zscore,False,identity,sw_identity,cosine,89,100,89.0
+100,PCA+LDA (Gray),c032,compact,equalized,True,identity,unit_columns,euclidean,99,100,99.0
+100,PCA+LDA (Gray),c033,compact,equalized,True,identity,unit_columns,cosine,99,100,99.0
+100,PCA+LDA (Gray),c034,compact,equalized,True,identity,sw_identity,euclidean,78,100,78.0
+100,PCA+LDA (Gray),c035,compact,equalized,True,identity,sw_identity,cosine,80,100,80.0
+100,PCA+LDA (Gray),c036,compact,equalized,False,identity,unit_columns,euclidean,99,100,99.0
+100,PCA+LDA (Gray),c037,compact,equalized,False,identity,unit_columns,cosine,99,100,99.0
+100,PCA+LDA (Gray),c038,compact,equalized,False,identity,sw_identity,euclidean,80,100,80.0
+100,PCA+LDA (Gray),c039,compact,equalized,False,identity,sw_identity,cosine,77,100,77.0
+100,PCA+LDA (Gray),c040,compact,zscore,True,identity,unit_columns,euclidean,100,100,100.0
+100,PCA+LDA (Gray),c041,compact,zscore,True,identity,unit_columns,cosine,99,100,99.0
+100,PCA+LDA (Gray),c042,compact,zscore,True,identity,sw_identity,euclidean,75,100,75.0
+100,PCA+LDA (Gray),c043,compact,zscore,True,identity,sw_identity,cosine,80,100,80.0
+100,PCA+LDA (Gray),c044,compact,zscore,False,identity,unit_columns,euclidean,99,100,99.0
+100,PCA+LDA (Gray),c045,compact,zscore,False,identity,unit_columns,cosine,99,100,99.0
+100,PCA+LDA (Gray),c046,compact,zscore,False,identity,sw_identity,euclidean,67,100,67.0
+100,PCA+LDA (Gray),c047,compact,zscore,False,identity,sw_identity,cosine,77,100,77.0
+100,CSA-2+LDA,c000,wide,equalized,False,identity,unit_columns,euclidean,100,100,100.0
+100,CSA-2+LDA,c001,wide,equalized,False,identity,unit_columns,cosine,100,100,100.0
+100,CSA-2+LDA,c002,wide,equalized,False,identity,sw_identity,euclidean,100,100,100.0
+100,CSA-2+LDA,c003,wide,equalized,False,identity,sw_identity,cosine,99,100,99.0
+100,CSA-2+LDA,c004,wide,equalized,False,random,unit_columns,euclidean,100,100,100.0
+100,CSA-2+LDA,c005,wide,equalized,False,random,unit_columns,cosine,100,100,100.0
+100,CSA-2+LDA,c006,wide,equalized,False,random,sw_identity,euclidean,100,100,100.0
+100,CSA-2+LDA,c007,wide,equalized,False,random,sw_identity,cosine,99,100,99.0
+100,CSA-2+LDA,c008,wide,equalized,True,identity,unit_columns,euclidean,100,100,100.0
+100,CSA-2+LDA,c009,wide,equalized,True,identity,unit_columns,cosine,100,100,100.0
+100,CSA-2+LDA,c010,wide,equalized,True,identity,sw_identity,euclidean,100,100,100.0
+100,CSA-2+LDA,c011,wide,equalized,True,identity,sw_identity,cosine,99,100,99.0
+100,CSA-2+LDA,c012,wide,equalized,True,random,unit_columns,euclidean,100,100,100.0
+100,CSA-2+LDA,c013,wide,equalized,True,random,unit_columns,cosine,100,100,100.0
+100,CSA-2+LDA,c014,wide,equalized,True,random,sw_identity,euclidean,100,100,100.0
+100,CSA-2+LDA,c015,wide,equalized,True,random,sw_identity,cosine,99,100,99.0
+100,CSA-2+LDA,c016,wide,zscore,False,identity,unit_columns,euclidean,100,100,100.0
+100,CSA-2+LDA,c017,wide,zscore,False,identity,unit_columns,cosine,99,100,99.0
+100,CSA-2+LDA,c018,wide,zscore,False,identity,sw_identity,euclidean,100,100,100.0
+100,CSA-2+LDA,c019,wide,zscore,False,identity,sw_identity,cosine,100,100,100.0
+100,CSA-2+LDA,c020,wide,zscore,False,random,unit_columns,euclidean,100,100,100.0
+100,CSA-2+LDA,c021,wide,zscore,False,random,unit_columns,cosine,99,100,99.0
+100,CSA-2+LDA,c022,wide,zscore,False,random,sw_identity,euclidean,100,100,100.0
+100,CSA-2+LDA,c023,wide,zscore,False,random,sw_identity,cosine,100,100,100.0
+100,CSA-2+LDA,c024,wide,zscore,True,identity,unit_columns,euclidean,100,100,100.0
+100,CSA-2+LDA,c025,wide,zscore,True,identity,unit_columns,cosine,100,100,100.0
+100,CSA-2+LDA,c026,wide,zscore,True,identity,sw_identity,euclidean,100,100,100.0
+100,CSA-2+LDA,c027,wide,zscore,True,identity,sw_identity,cosine,99,100,99.0
+100,CSA-2+LDA,c028,wide,zscore,True,random,unit_columns,euclidean,100,100,100.0
+100,CSA-2+LDA,c029,wide,zscore,True,random,unit_columns,cosine,100,100,100.0
+100,CSA-2+LDA,c030,wide,zscore,True,random,sw_identity,euclidean,100,100,100.0
+100,CSA-2+LDA,c031,wide,zscore,True,random,sw_identity,cosine,99,100,99.0
+100,CSA-2+LDA,c032,medium,equalized,False,identity,unit_columns,euclidean,98,100,98.0
+100,CSA-2+LDA,c033,medium,equalized,False,identity,unit_columns,cosine,98,100,98.0
+100,CSA-2+LDA,c034,medium,equalized,False,identity,sw_identity,euclidean,96,100,96.0
+100,CSA-2+LDA,c035,medium,equalized,False,identity,sw_identity,cosine,97,100,97.0
+100,CSA-2+LDA,c036,medium,equalized,False,random,unit_columns,euclidean,98,100,98.0
+100,CSA-2+LDA,c037,medium,equalized,False,random,unit_columns,cosine,98,100,98.0
+100,CSA-2+LDA,c038,medium,equalized,False,random,sw_identity,euclidean,96,100,96.0
+100,CSA-2+LDA,c039,medium,equalized,False,random,sw_identity,cosine,97,100,97.0
+100,CSA-2+LDA,c040,medium,equalized,True,identity,unit_columns,euclidean,98,100,98.0
+100,CSA-2+LDA,c041,medium,equalized,True,identity,unit_columns,cosine,98,100,98.0
+100,CSA-2+LDA,c042,medium,equalized,True,identity,sw_identity,euclidean,98,100,98.0
+100,CSA-2+LDA,c043,medium,equalized,True,identity,sw_identity,cosine,98,100,98.0
+100,CSA-2+LDA,c044,medium,equalized,True,random,unit_columns,euclidean,98,100,98.0
+100,CSA-2+LDA,c045,medium,equalized,True,random,unit_columns,cosine,98,100,98.0
+100,CSA-2+LDA,c046,medium,equalized,True,random,sw_identity,euclidean,98,100,98.0
+100,CSA-2+LDA,c047,medium,equalized,True,random,sw_identity,cosine,98,100,98.0
+100,CSA-2+LDA,c048,medium,zscore,False,identity,unit_columns,euclidean,98,100,98.0
+100,CSA-2+LDA,c049,medium,zscore,False,identity,unit_columns,cosine,99,100,99.0
+100,CSA-2+LDA,c050,medium,zscore,False,identity,sw_identity,euclidean,97,100,97.0
+100,CSA-2+LDA,c051,medium,zscore,False,identity,sw_identity,cosine,98,100,98.0
+100,CSA-2+LDA,c052,medium,zscore,False,random,unit_columns,euclidean,98,100,98.0
+100,CSA-2+LDA,c053,medium,zscore,False,random,unit_columns,cosine,99,100,99.0
+100,CSA-2+LDA,c054,medium,zscore,False,random,sw_identity,euclidean,97,100,97.0
+100,CSA-2+LDA,c055,medium,zscore,False,random,sw_identity,cosine,98,100,98.0
+100,CSA-2+LDA,c056,medium,zscore,True,identity,unit_columns,euclidean,99,100,99.0
+100,CSA-2+LDA,c057,medium,zscore,True,identity,unit_columns,cosine,98,100,98.0
+100,CSA-2+LDA,c058,medium,zscore,True,identity,sw_identity,euclidean,99,100,99.0
+100,CSA-2+LDA,c059,medium,zscore,True,identity,sw_identity,cosine,99,100,99.0
+100,CSA-2+LDA,c060,medium,zscore,True,random,unit_columns,euclidean,99,100,99.0
+100,CSA-2+LDA,c061,medium,zscore,True,random,unit_columns,cosine,98,100,98.0
+100,CSA-2+LDA,c062,medium,zscore,True,random,sw_identity,euclidean,99,100,99.0
+100,CSA-2+LDA,c063,medium,zscore,True,random,sw_identity,cosine,99,100,99.0
+100,CSA-2+LDA,c064,compact,equalized,False,identity,unit_columns,euclidean,98,100,98.0
+100,CSA-2+LDA,c065,compact,equalized,False,identity,unit_columns,cosine,100,100,100.0
+100,CSA-2+LDA,c066,compact,equalized,False,identity,sw_identity,euclidean,98,100,98.0
+100,CSA-2+LDA,c067,compact,equalized,False,identity,sw_identity,cosine,97,100,97.0
+100,CSA-2+LDA,c068,compact,equalized,False,random,unit_columns,euclidean,98,100,98.0
+100,CSA-2+LDA,c069,compact,equalized,False,random,unit_columns,cosine,99,100,99.0
+100,CSA-2+LDA,c070,compact,equalized,False,random,sw_identity,euclidean,98,100,98.0
+100,CSA-2+LDA,c071,compact,equalized,False,random,sw_identity,cosine,96,100,96.0
+100,CSA-2+LDA,c072,compact,equalized,True,identity,unit_columns,euclidean,99,100,99.0
+100,CSA-2+LDA,c073,compact,equalized,True,identity,unit_columns,cosine,100,100,100.0
+100,CSA-2+LDA,c074,compact,equalized,True,identity,sw_identity,euclidean,98,100,98.0
+100,CSA-2+LDA,c075,compact,equalized,True,identity,sw_identity,cosine,97,100,97.0
+100,CSA-2+LDA,c076,compact,equalized,True,random,unit_columns,euclidean,99,100,99.0
+100,CSA-2+LDA,c077,compact,equalized,True,random,unit_columns,cosine,100,100,100.0
+100,CSA-2+LDA,c078,compact,equalized,True,random,sw_identity,euclidean,98,100,98.0
+100,CSA-2+LDA,c079,compact,equalized,True,random,sw_identity,cosine,97,100,97.0
+100,CSA-2+LDA,c080,compact,zscore,False,identity,unit_columns,euclidean,99,100,99.0
+100,CSA-2+LDA,c081,compact,zscore,False,identity,unit_columns,cosine,99,100,99.0
+100,CSA-2+LDA,c082,compact,zscore,False,identity,sw_identity,euclidean,99,100,99.0
+100,CSA-2+LDA,c083,compact,zscore,False,identity,sw_identity,cosine,97,100,97.0
+100,CSA-2+LDA,c084,compact,zscore,False,random,unit_columns,euclidean,99,100,99.0
+100,CSA-2+LDA,c085,compact,zscore,False,random,unit_columns,cosine,99,100,99.0
+100,CSA-2+LDA,c086,compact,zscore,False,random,sw_identity,euclidean,99,100,99.0
+100,CSA-2+LDA,c087,compact,zscore,False,random,sw_identity,cosine,97,100,97.0
+100,CSA-2+LDA,c088,compact,zscore,True,identity,unit_columns,euclidean,98,100,98.0
+100,CSA-2+LDA,c089,compact,zscore,True,identity,unit_columns,cosine,98,100,98.0
+100,CSA-2+LDA,c090,compact,zscore,True,identity,sw_identity,euclidean,97,100,97.0
+100,CSA-2+LDA,c091,compact,zscore,True,identity,sw_identity,cosine,96,100,96.0
+100,CSA-2+LDA,c092,compact,zscore,True,random,unit_columns,euclidean,98,100,98.0
+100,CSA-2+LDA,c093,compact,zscore,True,random,unit_columns,cosine,98,100,98.0
+100,CSA-2+LDA,c094,compact,zscore,True,random,sw_identity,euclidean,97,100,97.0
+100,CSA-2+LDA,c095,compact,zscore,True,random,sw_identity,cosine,96,100,96.0
+200,PCA+LDA (Gray),c000,wide,equalized,True,identity,unit_columns,euclidean,199,200,99.5
+200,PCA+LDA (Gray),c001,wide,equalized,True,identity,unit_columns,cosine,199,200,99.5
+200,PCA+LDA (Gray),c002,wide,equalized,True,identity,sw_identity,euclidean,198,200,99.0
+200,PCA+LDA (Gray),c003,wide,equalized,True,identity,sw_identity,cosine,198,200,99.0
+200,PCA+LDA (Gray),c004,wide,equalized,False,identity,unit_columns,euclidean,198,200,99.0
+200,PCA+LDA (Gray),c005,wide,equalized,False,identity,unit_columns,cosine,199,200,99.5
+200,PCA+LDA (Gray),c006,wide,equalized,False,identity,sw_identity,euclidean,198,200,99.0
+200,PCA+LDA (Gray),c007,wide,equalized,False,identity,sw_identity,cosine,198,200,99.0
+200,PCA+LDA (Gray),c008,wide,zscore,True,identity,unit_columns,euclidean,199,200,99.5
+200,PCA+LDA (Gray),c009,wide,zscore,True,identity,unit_columns,cosine,199,200,99.5
+200,PCA+LDA (Gray),c010,wide,zscore,True,identity,sw_identity,euclidean,198,200,99.0
+200,PCA+LDA (Gray),c011,wide,zscore,True,identity,sw_identity,cosine,198,200,99.0
+200,PCA+LDA (Gray),c012,wide,zscore,False,identity,unit_columns,euclidean,198,200,99.0
+200,PCA+LDA (Gray),c013,wide,zscore,False,identity,unit_columns,cosine,199,200,99.5
+200,PCA+LDA (Gray),c014,wide,zscore,False,identity,sw_identity,euclidean,198,200,99.0
+200,PCA+LDA (Gray),c015,wide,zscore,False,identity,sw_identity,cosine,198,200,99.0
+200,PCA+LDA (Gray),c016,medium,equalized,True,identity,unit_columns,euclidean,200,200,100.0
+200,PCA+LDA (Gray),c017,medium,equalized,True,identity,unit_columns,cosine,200,200,100.0
+200,PCA+LDA (Gray),c018,medium,equalized,True,identity,sw_identity,euclidean,200,200,100.0
+200,PCA+LDA (Gray),c019,medium,equalized,True,identity,sw_identity,cosine,199,200,99.5
+200,PCA+LDA (Gray),c020,medium,equalized,False,identity,unit_columns,euclidean,199,200,99.5
+200,PCA+LDA (Gray),c021,medium,equalized,False,identity,unit_columns,cosine,199,200,99.5
+200,PCA+LDA (Gray),c022,medium,equalized,False,identity,sw_identity,euclidean,199,200,99.5
+200,PCA+LDA (Gray),c023,medium,equalized,False,identity,sw_identity,cosine,198,200,99.0
+200,PCA+LDA (Gray),c024,medium,zscore,True,identity,unit_columns,euclidean,199,200,99.5
+200,PCA+LDA (Gray),c025,medium,zscore,True,identity,unit_columns,cosine,200,200,100.0
+200,PCA+LDA (Gray),c026,medium,zscore,True,identity,sw_identity,euclidean,200,200,100.0
+200,PCA+LDA (Gray),c027,medium,zscore,True,identity,sw_identity,cosine,200,200,100.0
+200,PCA+LDA (Gray),c028,medium,zscore,False,identity,unit_columns,euclidean,199,200,99.5
+200,PCA+LDA (Gray),c029,medium,zscore,False,identity,unit_columns,cosine,200,200,100.0
+200,PCA+LDA (Gray),c030,medium,zscore,False,identity,sw_identity,euclidean,200,200,100.0
+200,PCA+LDA (Gray),c031,medium,zscore,False,identity,sw_identity,cosine,200,200,100.0
+200,PCA+LDA (Gray),c032,compact,equalized,True,identity,unit_columns,euclidean,199,200,99.5
+200,PCA+LDA (Gray),c033,compact,equalized,True,identity,unit_columns,cosine,200,200,100.0
+200,PCA+LDA (Gray),c034,compact,equalized,True,identity,sw_identity,euclidean,198,200,99.0
+200,PCA+LDA (Gray),c035,compact,equalized,True,identity,sw_identity,cosine,199,200,99.5
+200,PCA+LDA (Gray),c036,compact,equalized,False,identity,unit_columns,euclidean,199,200,99.5
+200,PCA+LDA (Gray),c037,compact,equalized,False,identity,unit_columns,cosine,200,200,100.0
+200,PCA+LDA (Gray),c038,compact,equalized,False,identity,sw_identity,euclidean,199,200,99.5
+200,PCA+LDA (Gray),c039,compact,equalized,False,identity,sw_identity,cosine,199,200,99.5
+200,PCA+LDA (Gray),c040,compact,zscore,True,identity,unit_columns,euclidean,199,200,99.5
+200,PCA+LDA (Gray),c041,compact,zscore,True,identity,unit_columns,cosine,200,200,100.0
+200,PCA+LDA (Gray),c042,compact,zscore,True,identity,sw_identity,euclidean,199,200,99.5
+200,PCA+LDA (Gray),c043,compact,zscore,True,identity,sw_identity,cosine,199,200,99.5
+200,PCA+LDA (Gray),c044,compact,zscore,False,identity,unit_columns,euclidean,199,200,99.5
+200,PCA+LDA (Gray),c045,compact,zscore,False,identity,unit_columns,cosine,200,200,100.0
+200,PCA+LDA (Gray),c046,compact,zscore,False,identity,sw_identity,euclidean,199,200,99.5
+200,PCA+LDA (Gray),c047,compact,zscore,False,identity,sw_identity,cosine,199,200,99.5
+200,CSA-2+LDA,c000,wide,equalized,False,identity,unit_columns,euclidean,197,200,98.5
+200,CSA-2+LDA,c001,wide,equalized,False,identity,unit_columns,cosine,198,200,99.0
+200,CSA-2+LDA,c002,wide,equalized,False,identity,sw_identity,euclidean,198,200,99.0
+200,CSA-2+LDA,c003,wide,equalized,False,identity,sw_identity,cosine,198,200,99.0
+200,CSA-2+LDA,c004,wide,equalized,False,random,unit_columns,euclidean,197,200,98.5
+200,CSA-2+LDA,c005,wide,equalized,False,random,unit_columns,cosine,198,200,99.0
+200,CSA-2+LDA,c006,wide,equalized,False,random,sw_identity,euclidean,198,200,99.0
+200,CSA-2+LDA,c007,wide,equalized,False,random,sw_identity,cosine,198,200,99.0
+200,CSA-2+LDA,c008,wide,equalized,True,identity,unit_columns,euclidean,197,200,98.5
+200,CSA-2+LDA,c009,wide,equalized,True,identity,unit_columns,cosine,198,200,99.0
+200,CSA-2+LDA,c010,wide,equalized,True,identity,sw_identity,euclidean,198,200,99.0
+200,CSA-2+LDA,c011,wide,equalized,True,identity,sw_identity,cosine,198,200,99.0
+200,CSA-2+LDA,c012,wide,equalized,True,random,unit_columns,euclidean,197,200,98.5
+200,CSA-2+LDA,c013,wide,equalized,True,random,unit_columns,cosine,198,200,99.0
+200,CSA-2+LDA,c014,wide,equalized,True,random,sw_identity,euclidean,198,200,99.0
+200,CSA-2+LDA,c015,wide,equalized,True,random,sw_identity,cosine,198,200,99.0
+200,CSA-2+LDA,c016,wide,zscore,False,identity,unit_columns,euclidean,198,200,99.0
+200,CSA-2+LDA,c017,wide,zscore,False,identity,unit_columns,cosine,197,200,98.5
+200,CSA-2+LDA,c018,wide,zscore,False,identity,sw_identity,euclidean,198,200,99.0
+200,CSA-2+LDA,c019,wide,zscore,False,identity,sw_identity,cosine,198,200,99.0
+200,CSA-2+LDA,c020,wide,zscore,False,random,unit_columns,euclidean,198,200,99.0
+200,CSA-2+LDA,c021,wide,zscore,False,random,unit_columns,cosine,197,200,98.5
+200,CSA-2+LDA,c022,wide,zscore,False,random,sw_identity,euclidean,198,200,99.0
+200,CSA-2+LDA,c023,wide,zscore,False,random,sw_identity,cosine,198,200,99.0
+200,CSA-2+LDA,c024,wide,zscore,True,identity,unit_columns,euclidean,198,200,99.0
+200,CSA-2+LDA,c025,wide,zscore,True,identity,unit_columns,cosine,198,200,99.0
+200,CSA-2+LDA,c026,wide,zscore,True,identity,sw_identity,euclidean,197,200,98.5
+200,CSA-2+LDA,c027,wide,zscore,True,identity,sw_identity,cosine,198,200,99.0
+200,CSA-2+LDA,c028,wide,zscore,True,random,unit_columns,euclidean,198,200,99.0
+200,CSA-2+LDA,c029,wide,zscore,True,random,unit_columns,cosine,198,200,99.0
+200,CSA-2+LDA,c030,wide,zscore,True,random,sw_identity,euclidean,197,200,98.5
+200,CSA-2+LDA,c031,wide,zscore,True,random,sw_identity,cosine,198,200,99.0
+200,CSA-2+LDA,c032,medium,equalized,False,identity,unit_columns,euclidean,199,200,99.5
+200,CSA-2+LDA,c033,medium,equalized,False,identity,unit_columns,cosine,198,200,99.0
+200,CSA-2+LDA,c034,medium,equalized,False,identity,sw_identity,euclidean,199,200,99.5
+200,CSA-2+LDA,c035,medium,equalized,False,identity,sw_identity,cosine,198,200,99.0
+200,CSA-2+LDA,c036,medium,equalized,False,random,unit_columns,euclidean,199,200,99.5
+200,CSA-2+LDA,c037,medium,equalized,False,random,unit_columns,cosine,198,200,99.0
+200,CSA-2+LDA,c038,medium,equalized,False,random,sw_identity,euclidean,199,200,99.5
+200,CSA-2+LDA,c039,medium,equalized,False,random,sw_identity,cosine,198,200,99.0
+200,CSA-2+LDA,c040,medium,equalized,True,identity,unit_columns,euclidean,199,200,99.5
+200,CSA-2+LDA,c041,medium,equalized,True,identity,unit_columns,cosine,198,200,99.0
+200,CSA-2+LDA,c042,medium,equalized,True,identity,sw_identity,euclidean,199,200,99.5
+200,CSA-2+LDA,c043,medium,equalized,True,identity,sw_identity,cosine,197,200,98.5
+200,CSA-2+LDA,c044,medium,equalized,True,random,unit_columns,euclidean,199,200,99.5
+200,CSA-2+LDA,c045,medium,equalized,True,random,unit_columns,cosine,198,200,99.0
+200,CSA-2+LDA,c046,medium,equalized,True,random,sw_identity,euclidean,199,200,99.5
+200,CSA-2+LDA,c047,medium,equalized,True,random,sw_identity,cosine,197,200,98.5
+200,CSA-2+LDA,c048,medium,zscore,False,identity,unit_columns,euclidean,199,200,99.5
+200,CSA-2+LDA,c049,medium,zscore,False,identity,unit_columns,cosine,197,200,98.5
+200,CSA-2+LDA,c050,medium,zscore,False,identity,sw_identity,euclidean,200,200,100.0
+200,CSA-2+LDA,c051,medium,zscore,False,identity,sw_identity,cosine,200,200,100.0
+200,CSA-2+LDA,c052,medium,zscore,False,random,unit_columns,euclidean,199,200,99.5
+200,CSA-2+LDA,c053,medium,zscore,False,random,unit_columns,cosine,197,200,98.5
+200,CSA-2+LDA,c054,medium,zscore,False,random,sw_identity,euclidean,200,200,100.0
+200,CSA-2+LDA,c055,medium,zscore,False,random,sw_identity,cosine,200,200,100.0
+200,CSA-2+LDA,c056,medium,zscore,True,identity,unit_columns,euclidean,200,200,100.0
+200,CSA-2+LDA,c057,medium,zscore,True,identity,unit_columns,cosine,198,200,99.0
+200,CSA-2+LDA,c058,medium,zscore,True,identity,sw_identity,euclidean,200,200,100.0
+200,CSA-2+LDA,c059,medium,zscore,True,identity,sw_identity,cosine,199,200,99.5
+200,CSA-2+LDA,c060,medium,zscore,True,random,unit_columns,euclidean,200,200,100.0
+200,CSA-2+LDA,c061,medium,zscore,True,random,unit_columns,cosine,198,200,99.0
+200,CSA-2+LDA,c062,medium,zscore,True,random,sw_identity,euclidean,200,200,100.0
+200,CSA-2+LDA,c063,medium,zscore,True,random,sw_identity,cosine,199,200,99.5
+200,CSA-2+LDA,c064,compact,equalized,False,identity,unit_columns,euclidean,200,200,100.0
+200,CSA-2+LDA,c065,compact,equalized,False,identity,unit_columns,cosine,200,200,100.0
+200,CSA-2+LDA,c066,compact,equalized,False,identity,sw_identity,euclidean,199,200,99.5
+200,CSA-2+LDA,c067,compact,equalized,False,identity,sw_identity,cosine,199,200,99.5
+200,CSA-2+LDA,c068,compact,equalized,False,random,unit_columns,euclidean,200,200,100.0
+200,CSA-2+LDA,c069,compact,equalized,False,random,unit_columns,cosine,200,200,100.0
+200,CSA-2+LDA,c070,compact,equalized,False,random,sw_identity,euclidean,199,200,99.5
+200,CSA-2+LDA,c071,compact,equalized,False,random,sw_identity,cosine,199,200,99.5
+200,CSA-2+LDA,c072,compact,equalized,True,identity,unit_columns,euclidean,199,200,99.5
+200,CSA-2+LDA,c073,compact,equalized,True,identity,unit_columns,cosine,200,200,100.0
+200,CSA-2+LDA,c074,compact,equalized,True,identity,sw_identity,euclidean,198,200,99.0
+200,CSA-2+LDA,c075,compact,equalized,True,identity,sw_identity,cosine,199,200,99.5
+200,CSA-2+LDA,c076,compact,equalized,True,random,unit_columns,euclidean,199,200,99.5
+200,CSA-2+LDA,c077,compact,equalized,True,random,unit_columns,cosine,200,200,100.0
+200,CSA-2+LDA,c078,compact,equalized,True,random,sw_identity,euclidean,198,200,99.0
+200,CSA-2+LDA,c079,compact,equalized,True,random,sw_identity,cosine,199,200,99.5
+200,CSA-2+LDA,c080,compact,zscore,False,identity,unit_columns,euclidean,195,200,97.5
+200,CSA-2+LDA,c081,compact,zscore,False,identity,unit_columns,cosine,199,200,99.5
+200,CSA-2+LDA,c082,compact,zscore,False,identity,sw_identity,euclidean,199,200,99.5
+200,CSA-2+LDA,c083,compact,zscore,False,identity,sw_identity,cosine,199,200,99.5
+200,CSA-2+LDA,c084,compact,zscore,False,random,unit_columns,euclidean,195,200,97.5
+200,CSA-2+LDA,c085,compact,zscore,False,random,unit_columns,cosine,199,200,99.5
+200,CSA-2+LDA,c086,compact,zscore,False,random,sw_identity,euclidean,199,200,99.5
+200,CSA-2+LDA,c087,compact,zscore,False,random,sw_identity,cosine,199,200,99.5
+200,CSA-2+LDA,c088,compact,zscore,True,identity,unit_columns,euclidean,198,200,99.0
+200,CSA-2+LDA,c089,compact,zscore,True,identity,unit_columns,cosine,199,200,99.5
+200,CSA-2+LDA,c090,compact,zscore,True,identity,sw_identity,euclidean,198,200,99.0
+200,CSA-2+LDA,c091,compact,zscore,True,identity,sw_identity,cosine,198,200,99.0
+200,CSA-2+LDA,c092,compact,zscore,True,random,unit_columns,euclidean,198,200,99.0
+200,CSA-2+LDA,c093,compact,zscore,True,random,unit_columns,cosine,199,200,99.5
+200,CSA-2+LDA,c094,compact,zscore,True,random,sw_identity,euclidean,198,200,99.0
+200,CSA-2+LDA,c095,compact,zscore,True,random,sw_identity,cosine,198,200,99.0

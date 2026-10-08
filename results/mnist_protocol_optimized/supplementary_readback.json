@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "role": "supplementary actual-output and statistics readback; not a standard CLI stage",
+  "summary_groups_checked": 16,
+  "TA_checks": {
+    "500_per_class": true,
+    "G30_P470_and_G40_P460": true,
+    "input28x28x40": true,
+    "5scales8orientations": true,
+    "shared_input_and_NN_in_all80_method_pairs": true,
+    "nearest_neighbor": true,
+    "Tmax3_frozen_source": true,
+    "no_LDA_or_extra_samples": true
+  },
+  "paper_checks": {
+    "TableIV_dimensions60_810_50_975_match_actual_models": true,
+    "core_CSA_unchanged": true,
+    "exact_author_protocol_confirmed": false
+  },
+  "unknown_author_details": [
+    "exact5000source_indices",
+    "Gabor_support_padding_numeric_details",
+    "NN_distance_and_origin",
+    "initialization",
+    "random_splits_and_aggregation"
+  ],
+  "limitations": "Overlapping ten splits are descriptive; historical probes seen. Source configuration and feature hashes support five scales/eight orientations/Tmax; no author confirmation inferred."
+}

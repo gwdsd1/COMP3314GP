@@ -1,0 +1,218 @@
+{
+  "seeds": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "cases": [
+    [
+      "gray",
+      "PCA-paper",
+      "pca",
+      30,
+      18,
+      true,
+      "identity"
+    ],
+    [
+      "gray",
+      "PCA-equal-budget",
+      "pca",
+      22,
+      16,
+      true,
+      "identity"
+    ],
+    [
+      "gray",
+      "CSA-paper",
+      "csa",
+      [
+        11,
+        2
+      ],
+      16,
+      false,
+      "identity"
+    ],
+    [
+      "gray",
+      "CSA-centered",
+      "csa",
+      [
+        11,
+        2
+      ],
+      16,
+      true,
+      "identity"
+    ],
+    [
+      "gray",
+      "CSA-random",
+      "csa",
+      [
+        11,
+        2
+      ],
+      16,
+      false,
+      "random"
+    ],
+    [
+      "gabor",
+      "PCA-paper",
+      "pca",
+      33,
+      25,
+      true,
+      "identity"
+    ],
+    [
+      "gabor",
+      "PCA-equal-budget",
+      "pca",
+      24,
+      23,
+      true,
+      "identity"
+    ],
+    [
+      "gabor",
+      "CSA-paper",
+      "csa",
+      [
+        4,
+        2,
+        3
+      ],
+      23,
+      false,
+      "identity"
+    ],
+    [
+      "gabor",
+      "CSA-centered",
+      "csa",
+      [
+        4,
+        2,
+        3
+      ],
+      23,
+      true,
+      "identity"
+    ],
+    [
+      "gabor",
+      "CSA-random",
+      "csa",
+      [
+        4,
+        2,
+        3
+      ],
+      23,
+      false,
+      "random"
+    ],
+    [
+      "gabor",
+      "CSA-highrank",
+      "csa",
+      [
+        15,
+        1,
+        26
+      ],
+      null,
+      false,
+      "identity"
+    ]
+  ],
+  "normalizations": [
+    "baseline",
+    "tensor_l2",
+    "image_zscore",
+    "jet_l2",
+    "channel_rms"
+  ],
+  "input": "frozen selected inputs from previous audit; original per-class2gallery/8probe unchanged",
+  "Tmax": 3,
+  "random_init_seed": 3314,
+  "LDA_pre_dimension_limit": 40,
+  "core_NN": "cosine and Euclidean; mean/origin explicitly labelled",
+  "LDA": "unregularized Fisher whitened generalized eigenproblem; independent scipy.eigh(Sb,Sw)",
+  "diagnostic_metrics": "six old conventions + QR orthonormal basis; fixed reported dimension and full pre-dimension",
+  "QR_role": "alternative metric on the same chosen LDA span; diagnostic only, not asserted original algorithm",
+  "normalization_scope": "same feature array for PCA and CSA within each kind; image_zscore filters zero-mean unit-std gray before Gabor",
+  "normalization_detail": "tensor_l2 per sample; jet_l2 per pixel Gabor40-vector (gray uses tensor_l2); channel_rms train-only40channel RMS (gray unchanged)",
+  "variance_retention": "centered total/between/within energy of encoded training features divided by corresponding original input energy",
+  "diagnostic_selection": "none; all fixed outer diagnostic scores retained; historical probes already observed, not blind",
+  "training_selection": "fixed original ranks/center/init; mean CSA Gray/Gabor inner accuracy; choose shared input+LDA policy and legal LDA dimensions; only own80gallery",
+  "input_sha256": {
+    "20": {
+      "selection": "07cf42bef5a3134c6625aeea84029f6b58610d47c00959854dd633400540f1f9",
+      "gray": "ad1d1980684e9c59d6975ff700ce89d0484f2a647738480c1a60311be9793d72",
+      "gabor": "849b1161d752d9b131fbe85724de26df7e13d9e8d38be0f3fded05c95e4b307c"
+    },
+    "21": {
+      "selection": "41f2997f1fdbd09dd84c7c55df6429cd818d045994c9edcb4a3b73daf31b6a78",
+      "gray": "ed4bd2ddc9d2d529dce51fd22e6cb9a490de6e4a7098cb6901341c231aca8bdb",
+      "gabor": "685ca0e0426f5c89b7a551efd0c1242f9ccc4182405e8d45b636c9122dfbfbf3"
+    },
+    "22": {
+      "selection": "a546dfa64d151321c03c39572616e0ea10782a7eec2e24f3f2b25402f33699e3",
+      "gray": "13cff148fb117de699fbe32d049790666ab3eaeb0ca2532361368db6f33aebd4",
+      "gabor": "96c4ea14fc726bd72480075c335676a604425e4a89f63ae94e4c889f0844dfe4"
+    },
+    "23": {
+      "selection": "080a13c7f96ee0260e62b0b4ead9b02e618a2a71780d7ffcc4f349bd17fa1297",
+      "gray": "2ee59af911714d6e6fb6fa0f7893860858e2f8c008de607baefec27ada7488b7",
+      "gabor": "5b76cf57f74fed6d5099f1b7b6b895e7ffbcebc63306af4a3d05aba03e8f6085"
+    },
+    "24": {
+      "selection": "31e844d00e1e9ccc590e677780663a2cf924c42d439500e75adca648a141d6de",
+      "gray": "b710fa454c1817add447f72fd9559d6ca1847c45e173f57a8f6e44be33511310",
+      "gabor": "81f56813f2e0f138e54a17998c79c8622f6cb342b01999f944dfee23db9a76c0"
+    },
+    "25": {
+      "selection": "e5f198f8924094978b3fde438e444f46a0688e329f0f14c9006a85700388b6d2",
+      "gray": "03e64f5c6aa465f0d8513bb87d6236cd4fedd60248fd013f5214a26e696a7369",
+      "gabor": "56bb6159bb1faf1517cf01cbb960cc4b8fa2e766b2bb771e5e79c4fc648c0113"
+    },
+    "26": {
+      "selection": "873886b2d56f176494cc55fead97c520fcbc3d2bb1bace0b04409145d8692c56",
+      "gray": "b710fa454c1817add447f72fd9559d6ca1847c45e173f57a8f6e44be33511310",
+      "gabor": "81f56813f2e0f138e54a17998c79c8622f6cb342b01999f944dfee23db9a76c0"
+    },
+    "27": {
+      "selection": "c97cdfffdd0b76ad6de8d3d83ba1b4b1e732129ee94bd9bdff39967f0f225685",
+      "gray": "ed4bd2ddc9d2d529dce51fd22e6cb9a490de6e4a7098cb6901341c231aca8bdb",
+      "gabor": "685ca0e0426f5c89b7a551efd0c1242f9ccc4182405e8d45b636c9122dfbfbf3"
+    },
+    "28": {
+      "selection": "defe60bfa1181492e9834e253e3ae6f82968faffe9ba27fe646017281bd2d4e3",
+      "gray": "ed4bd2ddc9d2d529dce51fd22e6cb9a490de6e4a7098cb6901341c231aca8bdb",
+      "gabor": "56f4a9dd17691f2d991d3fe165e305a831ba1e2148bee3d7106c98c31bd5869f"
+    },
+    "29": {
+      "selection": "3b30307f27626d20352dcf1c8e3fa26b3a7644dca31746ad115caca76ee4d564",
+      "gray": "ed4bd2ddc9d2d529dce51fd22e6cb9a490de6e4a7098cb6901341c231aca8bdb",
+      "gabor": "685ca0e0426f5c89b7a551efd0c1242f9ccc4182405e8d45b636c9122dfbfbf3"
+    }
+  },
+  "sources_sha256": {
+    "diagnose_csa_lda.py": "9a4d6df176586acc821484c26b079762e4e2ab69874bd80c00f8f519bcf8a881",
+    "csa.py": "29226eaae53c3c5b9d5e752d55a8d675e0a40b2d8eefac186f06682ad02ea64c",
+    "audit_orl_protocol.py": "d80bc8fc89f327dc0aac0abaeec326d07a3f7f181da427e50f02b98687cd9247",
+    "diagnose_orl_gabor.py": "3b59a9f9fc8d5bea84fe22176b8ef6fb7f4f7d972905e895ce4ef4a88c4410f9"
+  }
+}

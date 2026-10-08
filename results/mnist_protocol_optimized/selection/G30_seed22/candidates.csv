@@ -1,0 +1,13 @@
+input,CSA_init,policy,pca_correct,csa_correct,joint_correct,total,worst_method_fold
+fixed39_zero,identity,cosine_raw,257,271,528,600,0.8333333333333334
+fixed39_zero,identity,cosine_gallery,257,263,520,600,0.8166666666666667
+fixed39_zero,identity,euclidean,258,263,521,600,0.8166666666666667
+fixed39_zero,hosvd,cosine_raw,257,271,528,600,0.8333333333333334
+fixed39_zero,hosvd,cosine_gallery,257,263,520,600,0.8166666666666667
+fixed39_zero,hosvd,euclidean,258,263,521,600,0.8166666666666667
+adaptive_zero,identity,cosine_raw,256,271,527,600,0.8333333333333334
+adaptive_zero,identity,cosine_gallery,256,264,520,600,0.8166666666666667
+adaptive_zero,identity,euclidean,257,263,520,600,0.8166666666666667
+adaptive_zero,hosvd,cosine_raw,256,271,527,600,0.8333333333333334
+adaptive_zero,hosvd,cosine_gallery,256,264,520,600,0.8166666666666667
+adaptive_zero,hosvd,euclidean,257,263,520,600,0.8166666666666667

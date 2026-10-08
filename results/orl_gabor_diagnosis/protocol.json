@@ -1,0 +1,207 @@
+{
+  "branches": [
+    "eyes_only",
+    "paper_description"
+  ],
+  "seeds": [
+    20,
+    21,
+    22
+  ],
+  "features": {
+    "baseline": {
+      "base_wavelength": 4.0,
+      "sigma": 6.283185307179586,
+      "radius": null,
+      "boundary": "reflect",
+      "finite_zero_mean": true,
+      "sampling": "stride00",
+      "normalization": "none"
+    },
+    "zero_boundary": {
+      "base_wavelength": 4.0,
+      "sigma": 6.283185307179586,
+      "radius": null,
+      "boundary": "constant",
+      "finite_zero_mean": true,
+      "sampling": "stride00",
+      "normalization": "none"
+    },
+    "wrap_boundary": {
+      "base_wavelength": 4.0,
+      "sigma": 6.283185307179586,
+      "radius": null,
+      "boundary": "wrap",
+      "finite_zero_mean": true,
+      "sampling": "stride00",
+      "normalization": "none"
+    },
+    "fixed39_support": {
+      "base_wavelength": 4.0,
+      "sigma": 6.283185307179586,
+      "radius": 19,
+      "boundary": "reflect",
+      "finite_zero_mean": true,
+      "sampling": "stride00",
+      "normalization": "none"
+    },
+    "wavelength2": {
+      "base_wavelength": 2.0,
+      "sigma": 6.283185307179586,
+      "radius": null,
+      "boundary": "reflect",
+      "finite_zero_mean": true,
+      "sampling": "stride00",
+      "normalization": "none"
+    },
+    "sigma_pi": {
+      "base_wavelength": 4.0,
+      "sigma": 3.141592653589793,
+      "radius": null,
+      "boundary": "reflect",
+      "finite_zero_mean": true,
+      "sampling": "stride00",
+      "normalization": "none"
+    },
+    "jet_l2": {
+      "base_wavelength": 4.0,
+      "sigma": 6.283185307179586,
+      "radius": null,
+      "boundary": "reflect",
+      "finite_zero_mean": true,
+      "sampling": "stride00",
+      "normalization": "jet_l2"
+    },
+    "sqrt_response": {
+      "base_wavelength": 4.0,
+      "sigma": 6.283185307179586,
+      "radius": null,
+      "boundary": "reflect",
+      "finite_zero_mean": true,
+      "sampling": "stride00",
+      "normalization": "sqrt_response"
+    },
+    "offset11": {
+      "base_wavelength": 4.0,
+      "sigma": 6.283185307179586,
+      "radius": null,
+      "boundary": "reflect",
+      "finite_zero_mean": true,
+      "sampling": "stride11",
+      "normalization": "none"
+    },
+    "mean_pool2": {
+      "base_wavelength": 4.0,
+      "sigma": 6.283185307179586,
+      "radius": null,
+      "boundary": "reflect",
+      "finite_zero_mean": true,
+      "sampling": "mean2",
+      "normalization": "none"
+    },
+    "tensor_l2": {
+      "base_wavelength": 4.0,
+      "sigma": 6.283185307179586,
+      "radius": null,
+      "boundary": "reflect",
+      "finite_zero_mean": true,
+      "sampling": "stride00",
+      "normalization": "tensor_l2"
+    },
+    "train_channel_rms": {
+      "base_wavelength": 4.0,
+      "sigma": 6.283185307179586,
+      "radius": null,
+      "boundary": "reflect",
+      "finite_zero_mean": true,
+      "sampling": "stride00",
+      "normalization": "train_channel_rms"
+    }
+  },
+  "model_variants": [
+    "centered",
+    "euclidean",
+    "iterations10"
+  ],
+  "pure_csa_ranks": [
+    15,
+    1,
+    26
+  ],
+  "pca_dimension": 76,
+  "csa_lda_ranks": [
+    4,
+    2,
+    3
+  ],
+  "lda_dimension": 23,
+  "default_center": false,
+  "default_metric": "cosine",
+  "default_lda_scaling": "unit_columns",
+  "Tmax": 3,
+  "training_only_channel_scale": true,
+  "stage1_protocol_sha256": "37fd9484fb0d3bbfc9651be94f910d7d73d49814244e28da9effef2e5d5982e6",
+  "all_scores": "development diagnostics; probes already observed; no winner promoted as blind reproduction",
+  "baseline_gabor": {
+    "wavelengths": [
+      4.0,
+      5.656854249492381,
+      8.000000000000002,
+      11.313708498984763,
+      16.000000000000004
+    ],
+    "orientations": [
+      0.0,
+      0.39269908169872414,
+      0.7853981633974483,
+      1.1780972450961724,
+      1.5707963267948966,
+      1.9634954084936207,
+      2.356194490192345,
+      2.748893571891069
+    ],
+    "sigma": 6.283185307179586,
+    "truncate_sigma": 3,
+    "finite_kernel_zero_mean": true,
+    "boundary": "reflect",
+    "response": "complex_magnitude",
+    "channel_order": "scale_then_orientation",
+    "feature_normalization": "none",
+    "cache_dtype": "float32",
+    "downsample": "response[::step,::step]"
+  },
+  "sources": {
+    "diagnose_orl_gabor.py": "2958aeef01ef687cecb5a120dfb4ad5bb7a4490dc32899a17f97475b5531b1df",
+    "csa.py": "29226eaae53c3c5b9d5e752d55a8d675e0a40b2d8eefac186f06682ad02ea64c",
+    "gabor.py": "ceb12f2bfbe82e381375e14a1c60d0a0a4795b91544e7bff02c22e93ac61578f",
+    "run_available_reproduction.py": "135ab16b4e47f840ad0e711c9bb1cb72166e1a3f871e46ae4d25726ae6928a71"
+  },
+  "reference": "https://cenl.ucsd.edu/pubs/ieee-1997.pdf",
+  "reference_limit": "Wiskott wavelength 4-16 specified for 128x128 images; CSA paper does not resolve ORL rescaling/boundary/support/normalization",
+  "convolution_checks": [
+    {
+      "variant": "baseline",
+      "max_abs_error": 1.6804346443834247e-07
+    },
+    {
+      "variant": "zero_boundary",
+      "max_abs_error": 8.338901323944249e-08
+    },
+    {
+      "variant": "wrap_boundary",
+      "max_abs_error": 2.0148817550125314e-07
+    },
+    {
+      "variant": "fixed39_support",
+      "max_abs_error": 1.861576676041958e-07
+    },
+    {
+      "variant": "wavelength2",
+      "max_abs_error": 2.8572789326205557e-07
+    },
+    {
+      "variant": "sigma_pi",
+      "max_abs_error": 3.0612108580061005e-07
+    }
+  ]
+}

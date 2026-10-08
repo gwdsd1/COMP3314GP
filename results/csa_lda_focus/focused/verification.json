@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "score_records": 60,
+  "prediction_records": 19200,
+  "training_validation_predictions": 1600,
+  "all_selected_inner_scores_replayed": true,
+  "independent_matrix_NN": true,
+  "selection_sha256": "938e4ae32db4f1e6934a8b2deff50d468d8753472af5adf6ef0d360313bfb902",
+  "code_sha256": "03dee754d1eca2d5aa84ec83a57ea242b72d4be58118176b245019f3ce1d6c15",
+  "not_blind": "development follows earlier observed probe results; current objective only reads gallery CV",
+  "code_hash_semantics": "code_sha256 was read from workspace file at finish; plotting/stage additions during development do not alter already loaded numerical functions",
+  "source_snapshot_sha256": "03dee754d1eca2d5aa84ec83a57ea242b72d4be58118176b245019f3ce1d6c15"
+}

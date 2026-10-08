@@ -1,0 +1,86 @@
+{
+  "validation_evaluations": 37920,
+  "wall_seconds": 27.432735699998375,
+  "summary": [
+    {
+      "method": "PCA+LDA",
+      "level": "original_default",
+      "runs": 5,
+      "mean_test_percent": 70.91666666666666,
+      "sample_std_pp": 3.5770293385557936,
+      "min_test_percent": 67.08333333333333,
+      "max_test_percent": 75.0,
+      "mean_validation_percent": 72.25
+    },
+    {
+      "method": "PCA+LDA",
+      "level": "plausible_fixed",
+      "runs": 5,
+      "mean_test_percent": 82.25,
+      "sample_std_pp": 1.2004050242406632,
+      "min_test_percent": 80.83333333333333,
+      "max_test_percent": 83.75,
+      "mean_validation_percent": 81.0
+    },
+    {
+      "method": "PCA+LDA",
+      "level": "protocol_selected",
+      "runs": 5,
+      "mean_test_percent": 82.58333333333334,
+      "sample_std_pp": 1.4553540997144143,
+      "min_test_percent": 81.25,
+      "max_test_percent": 85.0,
+      "mean_validation_percent": 83.5
+    },
+    {
+      "method": "PCA+LDA",
+      "level": "grid_selected",
+      "runs": 5,
+      "mean_test_percent": 81.5,
+      "sample_std_pp": 1.0865337342004424,
+      "min_test_percent": 80.0,
+      "max_test_percent": 82.5,
+      "mean_validation_percent": 85.75
+    },
+    {
+      "method": "CSA-2+LDA",
+      "level": "original_default",
+      "runs": 5,
+      "mean_test_percent": 79.41666666666666,
+      "sample_std_pp": 3.0132807886274215,
+      "min_test_percent": 77.5,
+      "max_test_percent": 84.58333333333333,
+      "mean_validation_percent": 80.0
+    },
+    {
+      "method": "CSA-2+LDA",
+      "level": "plausible_fixed",
+      "runs": 5,
+      "mean_test_percent": 82.00000000000001,
+      "sample_std_pp": 3.777675652214379,
+      "min_test_percent": 77.91666666666667,
+      "max_test_percent": 86.25,
+      "mean_validation_percent": 83.0
+    },
+    {
+      "method": "CSA-2+LDA",
+      "level": "protocol_selected",
+      "runs": 5,
+      "mean_test_percent": 81.58333333333334,
+      "sample_std_pp": 4.033281680110018,
+      "min_test_percent": 77.91666666666667,
+      "max_test_percent": 87.5,
+      "mean_validation_percent": 86.75
+    },
+    {
+      "method": "CSA-2+LDA",
+      "level": "grid_selected",
+      "runs": 5,
+      "mean_test_percent": 83.5,
+      "sample_std_pp": 4.435103030245058,
+      "min_test_percent": 76.25,
+      "max_test_percent": 87.5,
+      "mean_validation_percent": 89.75
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+# Preserve exact bytes of archived source and protocol files for SHA-256 checks.
+* -text

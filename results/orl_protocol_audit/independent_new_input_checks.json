@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "source": "results\\orl_protocol_audit\\features\\yunet_d18_replicate_adaptive_zero.npy",
+  "records": [
+    {
+      "ranks": [
+        15,
+        1,
+        26
+      ],
+      "max_projector_errors": [
+        1.2936318682932324e-12,
+        1.1796119636642288e-16,
+        9.50350909079134e-14
+      ],
+      "direct_einsum_encode_error": 9.094947017729282e-13
+    },
+    {
+      "ranks": [
+        4,
+        2,
+        3
+      ],
+      "max_projector_errors": [
+        8.93729534823251e-15,
+        3.0531133177191805e-16,
+        1.4641066137244252e-15
+      ],
+      "direct_einsum_encode_error": 2.2737367544323206e-12,
+      "lda_relative_eigen_residual": 1.4902112255731675e-14,
+      "lda_whitening_error": 1.6764367671839864e-14,
+      "sw_rank": 24,
+      "lda_pre_dimension": 24,
+      "N_minus_Nc": 40
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "raw_image_hashes_checked": 400,
+  "summary_groups_recomputed": 12,
+  "actual_model_dimensions_checked": 120,
+  "shared_variant_seed_groups": 30,
+  "fixed_gallery_jitter_records": 24,
+  "independent_images": 400,
+  "verifier_amendment_AST_checked": true,
+  "ordinary_LDA_no_shrinkage": true,
+  "note": "Supplementary manual readback; not an automatic CLI stage"
+}

@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "model_fits": 50,
+  "prediction_records": 16000,
+  "independent_matrix_NN": true,
+  "code_sha256": "1246b6623d4f21d49024b5da315e1dbd919f27bd1d8130bf74f48227b819672e",
+  "code_hash_semantics": "code_sha256 was read from workspace file at finish; plotting/stage additions during development do not alter already loaded numerical functions"
+}

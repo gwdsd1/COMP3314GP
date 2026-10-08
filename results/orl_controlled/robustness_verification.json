@@ -1,0 +1,94 @@
+{
+  "passed": true,
+  "extra_fits": 0,
+  "scores": 1280,
+  "prediction_records_checked": 409600,
+  "independent_normalized_dot_NN": true,
+  "zero_shift_feature_checks": "first2images all40channels for all4inputs exact",
+  "direct_channel_checks": 640,
+  "checks": [
+    {
+      "input": "2pi_crop",
+      "shift": "x_minus1",
+      "max_abs_error": 3.0960028663429284e-05
+    },
+    {
+      "input": "2pi_crop",
+      "shift": "x_plus1",
+      "max_abs_error": 3.53013237486266e-05
+    },
+    {
+      "input": "2pi_crop",
+      "shift": "y_minus1",
+      "max_abs_error": 2.2587589370459682e-05
+    },
+    {
+      "input": "2pi_crop",
+      "shift": "y_plus1",
+      "max_abs_error": 2.796748287181572e-05
+    },
+    {
+      "input": "2pi_context",
+      "shift": "x_minus1",
+      "max_abs_error": 3.0324854389363054e-05
+    },
+    {
+      "input": "2pi_context",
+      "shift": "x_plus1",
+      "max_abs_error": 2.9665908805043273e-05
+    },
+    {
+      "input": "2pi_context",
+      "shift": "y_minus1",
+      "max_abs_error": 2.8396924694362724e-05
+    },
+    {
+      "input": "2pi_context",
+      "shift": "y_plus1",
+      "max_abs_error": 2.9637007930460868e-05
+    },
+    {
+      "input": "pi_crop",
+      "shift": "x_minus1",
+      "max_abs_error": 4.9792122538860895e-05
+    },
+    {
+      "input": "pi_crop",
+      "shift": "x_plus1",
+      "max_abs_error": 4.359444251633704e-05
+    },
+    {
+      "input": "pi_crop",
+      "shift": "y_minus1",
+      "max_abs_error": 4.8873253831516195e-05
+    },
+    {
+      "input": "pi_crop",
+      "shift": "y_plus1",
+      "max_abs_error": 4.516921473829427e-05
+    },
+    {
+      "input": "pi_context",
+      "shift": "x_minus1",
+      "max_abs_error": 5.444547474553474e-05
+    },
+    {
+      "input": "pi_context",
+      "shift": "x_plus1",
+      "max_abs_error": 4.28917889276903e-05
+    },
+    {
+      "input": "pi_context",
+      "shift": "y_minus1",
+      "max_abs_error": 4.921932934109918e-05
+    },
+    {
+      "input": "pi_context",
+      "shift": "y_plus1",
+      "max_abs_error": 4.408573366276869e-05
+    }
+  ],
+  "source_input_model_settings_unchanged": true,
+  "elapsed_seconds": 150.00759359999984,
+  "limits": "common translations of both eyes in source pixels only; no independent eye displacement or rotation"
+}

@@ -1,0 +1,46 @@
+{
+  "adaptive_reflect": {
+    "path": "data\\processed\\available\\mnist_gabor.npy",
+    "sha256": "606adccd46d4d5fef7cf667fb162ae80f1cb28c2e6fef49ba483533e069927f7",
+    "shape": [
+      5000,
+      28,
+      28,
+      40
+    ],
+    "seconds": 1.0572907000023406
+  },
+  "adaptive_zero": {
+    "path": "results\\mnist_protocol_optimized\\features\\adaptive_zero.npy",
+    "sha256": "0493f335125238025164f46a51674815771d5b6a2acf2d3584ce994cadb11c94",
+    "shape": [
+      5000,
+      28,
+      28,
+      40
+    ],
+    "seconds": 45.45585410000058
+  },
+  "fixed39_reflect": {
+    "path": "results\\mnist_protocol_optimized\\features\\fixed39_reflect.npy",
+    "sha256": "f22276d5920a26a9ccc37534b67759ac5fb4ffbb03849d51ed63758bebaf78c2",
+    "shape": [
+      5000,
+      28,
+      28,
+      40
+    ],
+    "seconds": 22.28979949999848
+  },
+  "fixed39_zero": {
+    "path": "results\\mnist_protocol_optimized\\features\\fixed39_zero.npy",
+    "sha256": "ebc4e98ecf1f4bfb8a4c65da640e741b8bc94f881ab1593eb5f588e40c40b672",
+    "shape": [
+      5000,
+      28,
+      28,
+      40
+    ],
+    "seconds": 22.499739200000477
+  }
+}

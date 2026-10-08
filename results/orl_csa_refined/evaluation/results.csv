@@ -1,0 +1,81 @@
+seed,profile,method,entry_id,normalization,policy,ranks,center,init,alpha,dimension,inner_correct,correct,probe_count,accuracy_percent,embedding
+20,ordinary,CSA-3+LDA,yunet_d20_replicate_fixed39_zero,none,unit_columns_cosine_centered,"(4, 2, 4)",False,identity,0.0,28,59,280,320,87.5,embeddings/20_ordinary_CSA-3_LDA.npz
+20,same_input_paper_case,CSA-3+LDA,yunet_d20_replicate_fixed39_zero,none,unit_columns_cosine_centered,"(4, 2, 3)",False,identity,0.0,23,,267,320,83.4375,embeddings/20_same_input_paper_case_CSA-3_LDA.npz
+20,ordinary,PCA+LDA (Gabor),yunet_d20_replicate_fixed39_zero,none,unit_columns_cosine_centered,33,True,identity,0.0,21,71,301,320,94.0625,embeddings/20_ordinary_PCA_LDA_(Gabor).npz
+20,ordinary,CSA-3,yunet_d20_replicate_fixed39_zero,none,unit_columns_cosine_centered,"(15, 1, 26)",True,hosvd,,390,58,284,320,88.75,embeddings/20_ordinary_CSA-3.npz
+20,shrinkage,CSA-3+LDA,yunet_d20_replicate_fixed39_zero,none,sw_identity_cosine_centered,"(4, 2, 4)",False,identity,0.05,23,65,280,320,87.5,embeddings/20_shrinkage_CSA-3_LDA.npz
+20,shrinkage_alpha0,CSA-3+LDA,yunet_d20_replicate_fixed39_zero,none,sw_identity_cosine_centered,"(4, 2, 4)",False,identity,0.0,23,,231,320,72.1875,embeddings/20_shrinkage_alpha0_CSA-3_LDA.npz
+20,shrinkage,PCA+LDA (Gabor),yunet_d20_replicate_fixed39_zero,none,sw_identity_cosine_centered,33,True,identity,0.05,25,66,299,320,93.4375,embeddings/20_shrinkage_PCA_LDA_(Gabor).npz
+20,shrinkage,CSA-3,yunet_d20_replicate_fixed39_zero,none,sw_identity_cosine_centered,"(15, 1, 26)",True,hosvd,,390,58,284,320,88.75,embeddings/20_shrinkage_CSA-3.npz
+21,ordinary,CSA-3+LDA,yunet_d22_zero_fixed39_zero,jet_l2,unit_columns_cosine_centered,"(4, 2, 4)",True,hosvd,0.0,24,68,252,320,78.75,embeddings/21_ordinary_CSA-3_LDA.npz
+21,same_input_paper_case,CSA-3+LDA,yunet_d22_zero_fixed39_zero,jet_l2,unit_columns_cosine_centered,"(4, 2, 3)",False,identity,0.0,23,,243,320,75.9375,embeddings/21_same_input_paper_case_CSA-3_LDA.npz
+21,ordinary,PCA+LDA (Gabor),yunet_d22_zero_fixed39_zero,jet_l2,unit_columns_cosine_centered,33,True,identity,0.0,25,70,298,320,93.125,embeddings/21_ordinary_PCA_LDA_(Gabor).npz
+21,ordinary,CSA-3,yunet_d22_zero_fixed39_zero,jet_l2,unit_columns_cosine_centered,"(15, 1, 26)",False,identity,,390,67,284,320,88.75,embeddings/21_ordinary_CSA-3.npz
+21,shrinkage,CSA-3+LDA,yunet_d22_zero_fixed39_zero,jet_l2,sw_identity_euclidean,"(4, 2, 4)",True,hosvd,0.35,19,72,272,320,85.0,embeddings/21_shrinkage_CSA-3_LDA.npz
+21,shrinkage_alpha0,CSA-3+LDA,yunet_d22_zero_fixed39_zero,jet_l2,sw_identity_euclidean,"(4, 2, 4)",True,hosvd,0.0,19,,208,320,65.0,embeddings/21_shrinkage_alpha0_CSA-3_LDA.npz
+21,shrinkage,PCA+LDA (Gabor),yunet_d22_zero_fixed39_zero,jet_l2,sw_identity_euclidean,33,True,identity,0.65,22,70,274,320,85.625,embeddings/21_shrinkage_PCA_LDA_(Gabor).npz
+21,shrinkage,CSA-3,yunet_d22_zero_fixed39_zero,jet_l2,sw_identity_euclidean,"(15, 1, 26)",True,hosvd,,390,70,292,320,91.25,embeddings/21_shrinkage_CSA-3.npz
+22,ordinary,CSA-3+LDA,yunet_d18_zero_fixed39_zero,sqrt,unit_columns_cosine_centered,"(4, 1, 8)",False,hosvd,0.0,18,62,285,320,89.0625,embeddings/22_ordinary_CSA-3_LDA.npz
+22,same_input_paper_case,CSA-3+LDA,yunet_d18_zero_fixed39_zero,sqrt,unit_columns_cosine_centered,"(4, 2, 3)",False,identity,0.0,23,,249,320,77.8125,embeddings/22_same_input_paper_case_CSA-3_LDA.npz
+22,ordinary,PCA+LDA (Gabor),yunet_d18_zero_fixed39_zero,sqrt,unit_columns_cosine_centered,33,True,identity,0.0,21,67,299,320,93.4375,embeddings/22_ordinary_PCA_LDA_(Gabor).npz
+22,ordinary,CSA-3,yunet_d18_zero_fixed39_zero,sqrt,unit_columns_cosine_centered,"(15, 1, 26)",False,identity,,390,59,299,320,93.4375,embeddings/22_ordinary_CSA-3.npz
+22,shrinkage,CSA-3+LDA,yunet_d18_zero_fixed39_zero,sqrt,unit_columns_cosine_centered,"(4, 1, 8)",False,hosvd,0.05,32,65,281,320,87.8125,embeddings/22_shrinkage_CSA-3_LDA.npz
+22,shrinkage_alpha0,CSA-3+LDA,yunet_d18_zero_fixed39_zero,sqrt,unit_columns_cosine_centered,"(4, 1, 8)",False,hosvd,0.0,32,,284,320,88.75,embeddings/22_shrinkage_alpha0_CSA-3_LDA.npz
+22,shrinkage,PCA+LDA (Gabor),yunet_d18_zero_fixed39_zero,sqrt,unit_columns_cosine_centered,33,True,identity,0.0,21,67,299,320,93.4375,embeddings/22_shrinkage_PCA_LDA_(Gabor).npz
+22,shrinkage,CSA-3,yunet_d18_zero_fixed39_zero,sqrt,unit_columns_cosine_centered,"(15, 1, 26)",False,identity,,390,59,299,320,93.4375,embeddings/22_shrinkage_CSA-3.npz
+23,ordinary,CSA-3+LDA,yunet_d22_zero_adaptive_zero,sqrt,unit_columns_cosine_centered,"(4, 2, 4)",False,identity,0.0,26,58,271,320,84.6875,embeddings/23_ordinary_CSA-3_LDA.npz
+23,same_input_paper_case,CSA-3+LDA,yunet_d22_zero_adaptive_zero,sqrt,unit_columns_cosine_centered,"(4, 2, 3)",False,identity,0.0,23,,269,320,84.0625,embeddings/23_same_input_paper_case_CSA-3_LDA.npz
+23,ordinary,PCA+LDA (Gabor),yunet_d22_zero_adaptive_zero,sqrt,unit_columns_cosine_centered,33,True,identity,0.0,19,66,290,320,90.625,embeddings/23_ordinary_PCA_LDA_(Gabor).npz
+23,ordinary,CSA-3,yunet_d22_zero_adaptive_zero,sqrt,unit_columns_cosine_centered,"(15, 1, 26)",False,identity,,390,54,277,320,86.5625,embeddings/23_ordinary_CSA-3.npz
+23,shrinkage,CSA-3+LDA,yunet_d16_replicate_fixed39_zero,tensor_l2,sw_identity_cosine_centered,"(4, 1, 8)",False,hosvd,0.65,14,63,279,320,87.1875,embeddings/23_shrinkage_CSA-3_LDA.npz
+23,shrinkage_alpha0,CSA-3+LDA,yunet_d16_replicate_fixed39_zero,tensor_l2,sw_identity_cosine_centered,"(4, 1, 8)",False,hosvd,0.0,14,,211,320,65.9375,embeddings/23_shrinkage_alpha0_CSA-3_LDA.npz
+23,shrinkage,PCA+LDA (Gabor),yunet_d16_replicate_fixed39_zero,tensor_l2,sw_identity_cosine_centered,33,True,identity,0.15,25,63,296,320,92.5,embeddings/23_shrinkage_PCA_LDA_(Gabor).npz
+23,shrinkage,CSA-3,yunet_d16_replicate_fixed39_zero,tensor_l2,sw_identity_cosine_centered,"(15, 1, 26)",True,hosvd,,390,68,287,320,89.6875,embeddings/23_shrinkage_CSA-3.npz
+24,ordinary,CSA-3+LDA,yunet_d18_replicate_sigma_pi_zero,tensor_l2,unit_columns_cosine_centered,"(4, 2, 3)",False,identity,0.0,16,60,267,320,83.4375,embeddings/24_ordinary_CSA-3_LDA.npz
+24,same_input_paper_case,CSA-3+LDA,yunet_d18_replicate_sigma_pi_zero,tensor_l2,unit_columns_cosine_centered,"(4, 2, 3)",False,identity,0.0,23,,272,320,85.0,embeddings/24_same_input_paper_case_CSA-3_LDA.npz
+24,ordinary,PCA+LDA (Gabor),yunet_d18_replicate_sigma_pi_zero,tensor_l2,unit_columns_cosine_centered,33,True,identity,0.0,22,66,307,320,95.9375,embeddings/24_ordinary_PCA_LDA_(Gabor).npz
+24,ordinary,CSA-3,yunet_d18_replicate_sigma_pi_zero,tensor_l2,unit_columns_cosine_centered,"(15, 1, 26)",False,identity,,390,61,296,320,92.5,embeddings/24_ordinary_CSA-3.npz
+24,shrinkage,CSA-3+LDA,yunet_d18_replicate_sigma_pi_zero,sqrt,unit_columns_cosine_centered,"(4, 2, 4)",False,identity,0.15,25,62,288,320,90.0,embeddings/24_shrinkage_CSA-3_LDA.npz
+24,shrinkage_alpha0,CSA-3+LDA,yunet_d18_replicate_sigma_pi_zero,sqrt,unit_columns_cosine_centered,"(4, 2, 4)",False,identity,0.0,25,,283,320,88.4375,embeddings/24_shrinkage_alpha0_CSA-3_LDA.npz
+24,shrinkage,PCA+LDA (Gabor),yunet_d18_replicate_sigma_pi_zero,sqrt,unit_columns_cosine_centered,33,True,identity,0.01,19,66,304,320,95.0,embeddings/24_shrinkage_PCA_LDA_(Gabor).npz
+24,shrinkage,CSA-3,yunet_d18_replicate_sigma_pi_zero,sqrt,unit_columns_cosine_centered,"(15, 1, 26)",False,identity,,390,58,293,320,91.5625,embeddings/24_shrinkage_CSA-3.npz
+25,ordinary,CSA-3+LDA,yunet_d22_replicate_fixed39_zero,none,unit_columns_cosine_centered,"(4, 2, 3)",False,identity,0.0,23,63,254,320,79.375,embeddings/25_ordinary_CSA-3_LDA.npz
+25,same_input_paper_case,CSA-3+LDA,yunet_d22_replicate_fixed39_zero,none,unit_columns_cosine_centered,"(4, 2, 3)",False,identity,0.0,23,,254,320,79.375,embeddings/25_same_input_paper_case_CSA-3_LDA.npz
+25,ordinary,PCA+LDA (Gabor),yunet_d22_replicate_fixed39_zero,none,unit_columns_cosine_centered,33,True,identity,0.0,18,66,295,320,92.1875,embeddings/25_ordinary_PCA_LDA_(Gabor).npz
+25,ordinary,CSA-3,yunet_d22_replicate_fixed39_zero,none,unit_columns_cosine_centered,"(15, 1, 26)",False,identity,,390,59,281,320,87.8125,embeddings/25_ordinary_CSA-3.npz
+25,shrinkage,CSA-3+LDA,yunet_d22_replicate_fixed39_zero,channel_rms,unit_columns_cosine_centered,"(3, 3, 3)",False,identity,0.15,18,68,239,320,74.6875,embeddings/25_shrinkage_CSA-3_LDA.npz
+25,shrinkage_alpha0,CSA-3+LDA,yunet_d22_replicate_fixed39_zero,channel_rms,unit_columns_cosine_centered,"(3, 3, 3)",False,identity,0.0,18,,232,320,72.5,embeddings/25_shrinkage_alpha0_CSA-3_LDA.npz
+25,shrinkage,PCA+LDA (Gabor),yunet_d22_replicate_fixed39_zero,channel_rms,unit_columns_cosine_centered,33,True,identity,0.0,24,66,294,320,91.875,embeddings/25_shrinkage_PCA_LDA_(Gabor).npz
+25,shrinkage,CSA-3,yunet_d22_replicate_fixed39_zero,channel_rms,unit_columns_cosine_centered,"(15, 1, 26)",False,identity,,390,57,274,320,85.625,embeddings/25_shrinkage_CSA-3.npz
+26,ordinary,CSA-3+LDA,yunet_d18_replicate_fixed39_zero,sqrt,unit_columns_cosine_centered,"(4, 2, 4)",False,hosvd,0.0,26,62,260,320,81.25,embeddings/26_ordinary_CSA-3_LDA.npz
+26,same_input_paper_case,CSA-3+LDA,yunet_d18_replicate_fixed39_zero,sqrt,unit_columns_cosine_centered,"(4, 2, 3)",False,identity,0.0,23,,250,320,78.125,embeddings/26_same_input_paper_case_CSA-3_LDA.npz
+26,ordinary,PCA+LDA (Gabor),yunet_d18_replicate_fixed39_zero,sqrt,unit_columns_cosine_centered,33,True,identity,0.0,28,72,294,320,91.875,embeddings/26_ordinary_PCA_LDA_(Gabor).npz
+26,ordinary,CSA-3,yunet_d18_replicate_fixed39_zero,sqrt,unit_columns_cosine_centered,"(15, 1, 26)",False,identity,,390,67,292,320,91.25,embeddings/26_ordinary_CSA-3.npz
+26,shrinkage,CSA-3+LDA,yunet_d16_replicate_fixed39_zero,channel_rms,unit_columns_cosine_centered,"(4, 2, 4)",False,identity,0.35,25,68,275,320,85.9375,embeddings/26_shrinkage_CSA-3_LDA.npz
+26,shrinkage_alpha0,CSA-3+LDA,yunet_d16_replicate_fixed39_zero,channel_rms,unit_columns_cosine_centered,"(4, 2, 4)",False,identity,0.0,25,,249,320,77.8125,embeddings/26_shrinkage_alpha0_CSA-3_LDA.npz
+26,shrinkage,PCA+LDA (Gabor),yunet_d16_replicate_fixed39_zero,channel_rms,unit_columns_cosine_centered,33,True,identity,0.0,23,71,292,320,91.25,embeddings/26_shrinkage_PCA_LDA_(Gabor).npz
+26,shrinkage,CSA-3,yunet_d16_replicate_fixed39_zero,channel_rms,unit_columns_cosine_centered,"(15, 1, 26)",True,hosvd,,390,65,285,320,89.0625,embeddings/26_shrinkage_CSA-3.npz
+27,ordinary,CSA-3+LDA,yunet_d16_replicate_sigma_pi_zero,tensor_l2,unit_columns_cosine_centered,"(4, 2, 3)",False,identity,0.0,24,57,269,320,84.0625,embeddings/27_ordinary_CSA-3_LDA.npz
+27,same_input_paper_case,CSA-3+LDA,yunet_d16_replicate_sigma_pi_zero,tensor_l2,unit_columns_cosine_centered,"(4, 2, 3)",False,identity,0.0,23,,268,320,83.75,embeddings/27_same_input_paper_case_CSA-3_LDA.npz
+27,ordinary,PCA+LDA (Gabor),yunet_d16_replicate_sigma_pi_zero,tensor_l2,unit_columns_cosine_centered,33,True,identity,0.0,25,69,294,320,91.875,embeddings/27_ordinary_PCA_LDA_(Gabor).npz
+27,ordinary,CSA-3,yunet_d16_replicate_sigma_pi_zero,tensor_l2,unit_columns_cosine_centered,"(15, 1, 26)",False,identity,,390,62,293,320,91.5625,embeddings/27_ordinary_CSA-3.npz
+27,shrinkage,CSA-3+LDA,yunet_d16_replicate_sigma_pi_zero,tensor_l2,sw_identity_cosine_centered,"(4, 1, 8)",True,hosvd,0.05,28,62,287,320,89.6875,embeddings/27_shrinkage_CSA-3_LDA.npz
+27,shrinkage_alpha0,CSA-3+LDA,yunet_d16_replicate_sigma_pi_zero,tensor_l2,sw_identity_cosine_centered,"(4, 1, 8)",True,hosvd,0.0,28,,270,320,84.375,embeddings/27_shrinkage_alpha0_CSA-3_LDA.npz
+27,shrinkage,PCA+LDA (Gabor),yunet_d16_replicate_sigma_pi_zero,tensor_l2,sw_identity_cosine_centered,33,True,identity,0.05,21,65,291,320,90.9375,embeddings/27_shrinkage_PCA_LDA_(Gabor).npz
+27,shrinkage,CSA-3,yunet_d16_replicate_sigma_pi_zero,tensor_l2,sw_identity_cosine_centered,"(15, 1, 26)",False,identity,,390,62,293,320,91.5625,embeddings/27_shrinkage_CSA-3.npz
+28,ordinary,CSA-3+LDA,yunet_d16_replicate_sigma_pi_zero,tensor_l2,unit_columns_cosine_centered,"(4, 2, 3)",False,identity,0.0,16,66,260,320,81.25,embeddings/28_ordinary_CSA-3_LDA.npz
+28,same_input_paper_case,CSA-3+LDA,yunet_d16_replicate_sigma_pi_zero,tensor_l2,unit_columns_cosine_centered,"(4, 2, 3)",False,identity,0.0,23,,264,320,82.5,embeddings/28_same_input_paper_case_CSA-3_LDA.npz
+28,ordinary,PCA+LDA (Gabor),yunet_d16_replicate_sigma_pi_zero,tensor_l2,unit_columns_cosine_centered,33,True,identity,0.0,29,71,290,320,90.625,embeddings/28_ordinary_PCA_LDA_(Gabor).npz
+28,ordinary,CSA-3,yunet_d16_replicate_sigma_pi_zero,tensor_l2,unit_columns_cosine_centered,"(15, 1, 26)",False,identity,,390,65,290,320,90.625,embeddings/28_ordinary_CSA-3.npz
+28,shrinkage,CSA-3+LDA,yunet_d16_replicate_sigma_pi_zero,tensor_l2,unit_columns_cosine_centered,"(4, 1, 8)",False,hosvd,0.05,28,71,275,320,85.9375,embeddings/28_shrinkage_CSA-3_LDA.npz
+28,shrinkage_alpha0,CSA-3+LDA,yunet_d16_replicate_sigma_pi_zero,tensor_l2,unit_columns_cosine_centered,"(4, 1, 8)",False,hosvd,0.0,28,,263,320,82.1875,embeddings/28_shrinkage_alpha0_CSA-3_LDA.npz
+28,shrinkage,PCA+LDA (Gabor),yunet_d16_replicate_sigma_pi_zero,tensor_l2,unit_columns_cosine_centered,33,True,identity,0.0,29,71,290,320,90.625,embeddings/28_shrinkage_PCA_LDA_(Gabor).npz
+28,shrinkage,CSA-3,yunet_d16_replicate_sigma_pi_zero,tensor_l2,unit_columns_cosine_centered,"(15, 1, 26)",False,identity,,390,65,290,320,90.625,embeddings/28_shrinkage_CSA-3.npz
+29,ordinary,CSA-3+LDA,yunet_d16_replicate_fixed39_zero,channel_rms,unit_columns_cosine_centered,"(4, 1, 8)",True,hosvd,0.0,28,61,267,320,83.4375,embeddings/29_ordinary_CSA-3_LDA.npz
+29,same_input_paper_case,CSA-3+LDA,yunet_d16_replicate_fixed39_zero,channel_rms,unit_columns_cosine_centered,"(4, 2, 3)",False,identity,0.0,23,,250,320,78.125,embeddings/29_same_input_paper_case_CSA-3_LDA.npz
+29,ordinary,PCA+LDA (Gabor),yunet_d16_replicate_fixed39_zero,channel_rms,unit_columns_cosine_centered,33,True,identity,0.0,18,67,279,320,87.1875,embeddings/29_ordinary_PCA_LDA_(Gabor).npz
+29,ordinary,CSA-3,yunet_d16_replicate_fixed39_zero,channel_rms,unit_columns_cosine_centered,"(15, 1, 26)",True,hosvd,,390,62,283,320,88.4375,embeddings/29_ordinary_CSA-3.npz
+29,shrinkage,CSA-3+LDA,yunet_d16_replicate_fixed39_zero,none,unit_columns_cosine_centered,"(4, 2, 4)",True,hosvd,0.15,23,66,259,320,80.9375,embeddings/29_shrinkage_CSA-3_LDA.npz
+29,shrinkage_alpha0,CSA-3+LDA,yunet_d16_replicate_fixed39_zero,none,unit_columns_cosine_centered,"(4, 2, 4)",True,hosvd,0.0,23,,233,320,72.8125,embeddings/29_shrinkage_alpha0_CSA-3_LDA.npz
+29,shrinkage,PCA+LDA (Gabor),yunet_d16_replicate_fixed39_zero,none,unit_columns_cosine_centered,33,True,identity,0.0,25,70,286,320,89.375,embeddings/29_shrinkage_PCA_LDA_(Gabor).npz
+29,shrinkage,CSA-3,yunet_d16_replicate_fixed39_zero,none,unit_columns_cosine_centered,"(15, 1, 26)",True,hosvd,,390,65,287,320,89.6875,embeddings/29_shrinkage_CSA-3.npz

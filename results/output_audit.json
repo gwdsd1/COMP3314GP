@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "fixed_results": 12,
+  "curve_points": 312,
+  "predictions": 3840,
+  "split_records": 1200,
+  "repeat_run": "identical CSV outputs",
+  "code_hashes": "verified",
+  "per_sample_accuracy": "verified",
+  "csa_real_data_sse": "non-increasing"
+}

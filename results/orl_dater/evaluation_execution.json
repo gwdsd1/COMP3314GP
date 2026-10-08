@@ -1,0 +1,9 @@
+{
+  "score_rows": 120,
+  "prediction_records": 38400,
+  "new_DATER_fits": 0,
+  "control_fits_reused": 40,
+  "LDA_control_prediction_matches": 40,
+  "elapsed_seconds": 4.244593899999927,
+  "BLAS_threads": 2
+}

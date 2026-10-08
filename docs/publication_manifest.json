@@ -1,0 +1,235 @@
+{
+  "publication_date": "2026-10-08",
+  "repository": "https://github.com/gwdsd1/COMP3314GP",
+  "scope": "Independent CSA partial reproduction and critical analysis; no new recognition fits during publication preparation.",
+  "dataset_exclusions": [
+    "ORL",
+    "MNIST",
+    "FERET"
+  ],
+  "excluded_material": [
+    "Raw images and label files",
+    "Prepared data/annotations",
+    "Generated NPY/NPZ feature, embedding, and model caches",
+    "Image-bearing sample/reconstruction figures",
+    "Private data-access request letters and credentials",
+    "Installed dependencies and temporary files"
+  ],
+  "retained_evidence": "Result CSV/JSON tables, split indices, mathematical histories, verification reports, frozen source snapshots, and chart-only figures; not a dataset distribution.",
+  "language_exceptions": [
+    "DETAIL.md",
+    "docs/REPORT.md",
+    "docs/HANDOFF.md"
+  ],
+  "immutable_evidence": "Hash-bound live sources and frozen experiment files retain original bytes and may contain Chinese. Git text normalization is disabled to preserve bytes across checkout.",
+  "protected_live_source": [
+    {
+      "path": "audit_orl_protocol.py",
+      "sha256": "d80bc8fc89f327dc0aac0abaeec326d07a3f7f181da427e50f02b98687cd9247"
+    },
+    {
+      "path": "csa.py",
+      "sha256": "6aabff534f47786c9a5098b2459e3afc55f39ad3d86d99b2bcba220f868b06a3"
+    },
+    {
+      "path": "dater.py",
+      "sha256": "b7a00dde4a270b938e2acb661f0789a570dae295f48d96300417f924e5ccd911"
+    },
+    {
+      "path": "diagnose_csa_lda.py",
+      "sha256": "af1e7a68429b17e3bc9402032587328b14b33f3f8e9aae447e762d63b159dc7d"
+    },
+    {
+      "path": "diagnose_orl_gabor.py",
+      "sha256": "3b59a9f9fc8d5bea84fe22176b8ef6fb7f4f7d972905e895ce4ef4a88c4410f9"
+    },
+    {
+      "path": "diagnose_orl_iterations.py",
+      "sha256": "b62930c2da857f23aa90cef80c0da952cd7dad1225198752850d7a34c30f77a5"
+    },
+    {
+      "path": "diagnose_orl_metric.py",
+      "sha256": "45bbfa9b3d3d4aeb02247a99f1ff5b102fcdd3776fd5e6b7f533ff6955a031fc"
+    },
+    {
+      "path": "diagnose_orl_pipeline.py",
+      "sha256": "1daeaf00b18e3c3f8c8dc0462b816ffed512e830b6b9f15b87456a91c1105b08"
+    },
+    {
+      "path": "diagnose_orl_radius_rounding.py",
+      "sha256": "226984e742113e9eb91f53a7a581415126b1730f39028a1f2991473b9890eedf"
+    },
+    {
+      "path": "evaluate_orl_dater.py",
+      "sha256": "e1441273ba586661f86bfbe429b095d4c40153dd7de2b612502a7d1fc17648d1"
+    },
+    {
+      "path": "gabor.py",
+      "sha256": "ceb12f2bfbe82e381375e14a1c60d0a0a4795b91544e7bff02c22e93ac61578f"
+    },
+    {
+      "path": "improve_orl_gray.py",
+      "sha256": "a5ff72da9178ea192a2627cdc4319d30ca41c6e2ccdadaa18c40be1d0bbc78e6"
+    },
+    {
+      "path": "optimize_csa_lda.py",
+      "sha256": "01e95359497d1e2d77f8f02d0706cf2d30b11cb7a0ea654aec5a316822249c51"
+    },
+    {
+      "path": "optimize_mnist_protocol.py",
+      "sha256": "5f522f13b229987fda463443e43127df1adcc0d596590f3a18c57294b864a162"
+    },
+    {
+      "path": "optimize_orl_ta_crop.py",
+      "sha256": "c712328235c8ace2da88e5e0e0efc8a54ed57365f3423753ec9eb87b243783b8"
+    },
+    {
+      "path": "optimize_orl_unknowns.py",
+      "sha256": "d9b8800f62f47ac89f92da64f56a3a73ad930c6c52b9842bbcc9ec84048ea5fc"
+    },
+    {
+      "path": "prepare_available_data.py",
+      "sha256": "0f5d07532716155b41c7264fc55cfcb749678d9ce1c77a1ad479d8f43e65f6e0"
+    },
+    {
+      "path": "prepare_feret.py",
+      "sha256": "21125fb15371774eae5e8ecdfb2ab832bed152b15e8bdbd85f8ae2a874a11f68"
+    },
+    {
+      "path": "refine_orl_csa.py",
+      "sha256": "df3c866bab0c07db212e02763cfe1e67aff3c9304fe0db3fb799966a4f746952"
+    },
+    {
+      "path": "run_available_reproduction.py",
+      "sha256": "135ab16b4e47f840ad0e711c9bb1cb72166e1a3f871e46ae4d25726ae6928a71"
+    },
+    {
+      "path": "run_feret.py",
+      "sha256": "a964dfaebc747d63b894583cbd449e0ef56adbcf62ed74dbf2ed520fa71031f9"
+    },
+    {
+      "path": "run_orl_branches.py",
+      "sha256": "962bb377fa58224256c9962da612bde55b0e5289ba6431b168e369f6c0e376f3"
+    },
+    {
+      "path": "run_orl_controlled.py",
+      "sha256": "bf2bcecb7b5de852a0753e570d6c8d936b4e944cb2a885502a22ba582e9d4111"
+    },
+    {
+      "path": "run_orl_dater.py",
+      "sha256": "6f39fd1d961dc69a0dcd07e2b474759a2beabb4e93327a6a7ef477d929b268d8"
+    },
+    {
+      "path": "run_orl_fixed_inputs.py",
+      "sha256": "f67e34d0c5ecb6229fd3f0fac21c40e558a3f347ef73732b71059afe44f3e8ce"
+    },
+    {
+      "path": "run_orl_gray.py",
+      "sha256": "ddff280aed8e0d96cdbefb6f1bc059ae4c07221af3869f71c0c61c119588ac72"
+    },
+    {
+      "path": "run_orl_sample_size.py",
+      "sha256": "a6b88b1086378ab09a4aca4685d8b2da3ac7e5c44868c0cdbef68f4330fd936b"
+    },
+    {
+      "path": "run_shared_protocol.py",
+      "sha256": "eae57198a016ae94ab43ffd3e91888c4ae917bcee8873701ef094bed38d2749b"
+    },
+    {
+      "path": "search_orl_best.py",
+      "sha256": "56ad07a60868708206362b544304c551ec93640eba7841a48aceacb5e607fc82"
+    },
+    {
+      "path": "select_feret.py",
+      "sha256": "a8646460e82af2d89968833376ec0ca2b157013de9cf3160e3ada3065e6c0c3c"
+    },
+    {
+      "path": "tune_available.py",
+      "sha256": "535eb70dc795885ca9a97761762b7d0c193e55d7687c6d1877a7926c86cfb39c"
+    },
+    {
+      "path": "verify_orl_dater.py",
+      "sha256": "81ad6a67ba46d85d4a4d5f4195b2bb6f35de1125c6a47f3dc2585a2e6854190a"
+    },
+    {
+      "path": "verify_shared_protocol.py",
+      "sha256": "a2284c93ccbd899316fb8b754ddf6e352d789b3736e278b08fdb8cce6fe9dda4"
+    }
+  ],
+  "translation": {
+    "documents": [
+      "docs/TEAM_BRIEF.md",
+      "docs/HISTORY.md",
+      "FERET/README.md"
+    ],
+    "method": "English README authored for submission; other editable guides translated with terminology and literal protection, followed by numeric/structure/link validation.",
+    "review": "Translated documents retain all original table rows, numeric results, link targets and mathematical fragments; manual terminology/layout corrections and publication notes added.",
+    "original_document_sha256": {
+      "docs/HISTORY.md": "c62ee65c8d4686e07093f08c0a485ac065b83847352861c97097c0e77df1ac60",
+      "docs/TEAM_BRIEF.md": "5f530978f6719b23d5247a2ec58f6fc55a7b5a964c65544f116f4bdc35cbbbd2",
+      "FERET/README.md": "d4e8360f2952d2248ac2e8dd2bdfb46eefe73f9a41d8ba85266d4792a1c0d124",
+      "DETAIL.md": "2c493b6ef92a881c9256f72adbc48440128baf5111fedf58b844853aad07b97f",
+      "docs/REPORT.md": "60973d1153246f29a90727daf3cbc41d8e18a759223640bb9c98afcecae647c7",
+      "docs/HANDOFF.md": "6fa0a154e36b2856615b4eacff4dd496084caf2b869e8a334662f281f03597f4"
+    },
+    "source_comment_docstring_changes": [
+      {
+        "path": "check_available_numerics.py",
+        "before_sha256": "41748711257e375dba2a4fb352cd7b469172b5f47319e6fd2b93d9de45705b12",
+        "after_sha256": "c7682e21969dbd3c65ddf961f42ebf7dd97dceddffe0f2948f3f59cb645fddf9",
+        "executable_ast_unchanged": true
+      },
+      {
+        "path": "check_numerics.py",
+        "before_sha256": "bb6332a9dec917b56c56b5ebda838423f8218d9c83ecf8902577920c5197c672",
+        "after_sha256": "257cb5c5a6675efdb5325bce4b96df81aa9480f867592430fa0ecc830a693893",
+        "executable_ast_unchanged": true
+      },
+      {
+        "path": "diagnose_available_alignment.py",
+        "before_sha256": "9a29faa458735c5f36d9d9b9a936420d1628b4814494f37b35daf2d710817959",
+        "after_sha256": "45437a5aefb217272e20af21b4de8de6f35f70220a9aab37b4197209b6bf5ce9",
+        "executable_ast_unchanged": true
+      },
+      {
+        "path": "verify_available_results.py",
+        "before_sha256": "857cb3b5f928308e1944cf03f5421239c7ef9b44891499833f8feaa267bd12ff",
+        "after_sha256": "51dfaafdc3e8a01a81c1dbffd4d9308da3a6bfefd36c105c249fae9ad6480b13",
+        "executable_ast_unchanged": true
+      },
+      {
+        "path": "verify_feret.py",
+        "before_sha256": "b19ad36d6e4bd00399c4efbd7ae9f4f0fa6a6263f8fa283d1cae0d7f5484a9cc",
+        "after_sha256": "cd6ac4639ac6045898902424a157baa9c9378f33132fe886834dd29569df6a32",
+        "executable_ast_unchanged": true
+      },
+      {
+        "path": "verify_orl_followup.py",
+        "before_sha256": "95e6cf4624fef1df3fdbfbac95454a18f77419c35a43bfb972707d117d4deab9",
+        "after_sha256": "eecdddbea1b9096306bfabd54e0ef97a470cf62875362474ed5593fbf6ba0e02",
+        "executable_ast_unchanged": true
+      },
+      {
+        "path": "verify_orl_gabor.py",
+        "before_sha256": "fb838090e76b199f8feefff2caa17afb70e8cff98620484dd5e18fcb59f1381d",
+        "after_sha256": "d8da3c35211d1732516d01480628228fc62dbe1f51e280f8b2f4c77fe486ade0",
+        "executable_ast_unchanged": true
+      },
+      {
+        "path": "verify_tuned.py",
+        "before_sha256": "2cf91f4baf2d453efb7cb19657c36cc6098e9b9f5d63ef46fdd1c98ead8adb08",
+        "after_sha256": "39fdd697d4b546913e191939219a6734a3843192f9e4dd6f1e6b46d352d0859c",
+        "executable_ast_unchanged": true
+      }
+    ]
+  },
+  "checks": {
+    "protected_live_sources_unchanged": 33,
+    "result_csv_json_source_files_unchanged": 1299,
+    "executable_ast_unchanged_for_translated_source": true,
+    "dataset_independent_numerics": "Passed; imported check() without overwriting recorded result files.",
+    "readme_local_links": "All targets exist and are publishable.",
+    "historical_links": "Some dataset/cache/private-letter links intentionally remain local; notices explain their exclusion."
+  },
+  "reconstruction_limits": "Data acquisition/preprocessing code is supplied. Later drivers reuse fixed historical paths and hashes; omitted caches must be rebuilt and some manually annotated inputs cannot be promised byte-identical from automatic detection. Recorded scores are evidence, not new rerun results."
+}

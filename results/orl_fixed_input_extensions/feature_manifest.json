@@ -1,0 +1,14 @@
+{
+  "baseline": {
+    "path": "results/orl_protocol_audit/features/yunet_d20_replicate_fixed39_zero.npy",
+    "sha256": "849b1161d752d9b131fbe85724de26df7e13d9e8d38be0f3fded05c95e4b307c"
+  },
+  "tt_hist": {
+    "path": "results/orl_fixed_input_extensions/features/tt_hist.npy",
+    "sha256": "1420d7aeeff937c515960d6e8e6b3bffaea88cf585aae3cc135f077716ea9d65"
+  },
+  "crop_context": {
+    "path": "results/orl_fixed_input_extensions/features/crop_context.npy",
+    "sha256": "1ef121fc7ae4254cbc329acf514c43bcc495cec28e0b3b5656fa6879e886d3d7"
+  }
+}

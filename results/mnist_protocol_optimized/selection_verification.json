@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "independent_validation_prediction_checks": 210000,
+  "selected_CV_models_refitted": 200,
+  "all_screen_candidates_and_ties_recomputed": true,
+  "all_validation_inside_own_gallery": true,
+  "probe_not_scored_before_this_verification": true
+}

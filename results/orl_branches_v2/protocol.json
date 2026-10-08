@@ -1,0 +1,364 @@
+{
+  "branches": [
+    "teacher_old",
+    "eyes_only",
+    "geometry_only",
+    "teacher_revised",
+    "paper_description"
+  ],
+  "main_branches": [
+    "teacher_revised",
+    "paper_description"
+  ],
+  "seeds": [
+    20,
+    21,
+    22
+  ],
+  "fixed_cases": [
+    [
+      "PCA+LDA (Gray)",
+      "gray",
+      "pca",
+      30,
+      18,
+      82.2
+    ],
+    [
+      "CSA-2+LDA",
+      "gray",
+      "csa",
+      [
+        11,
+        2
+      ],
+      16,
+      84.1
+    ],
+    [
+      "PCA (Gabor)",
+      "gabor",
+      "pca",
+      76,
+      null,
+      86.6
+    ],
+    [
+      "CSA-3",
+      "gabor",
+      "csa",
+      [
+        15,
+        1,
+        26
+      ],
+      null,
+      94.4
+    ],
+    [
+      "PCA+LDA (Gabor)",
+      "gabor",
+      "pca",
+      33,
+      25,
+      87.2
+    ],
+    [
+      "CSA-3+LDA",
+      "gabor",
+      "csa",
+      [
+        4,
+        2,
+        3
+      ],
+      23,
+      90.9
+    ]
+  ],
+  "preprocessing": {
+    "raw_sha256": "60da43f93507e4e90b97129bd4e72266e02dc041ab563df8969ab7def9a2b286",
+    "old_eyes_sha256": "e0a9dafcd320717637c29a468e4343406244d976b98e195df45b6ca6e7dc2bcb",
+    "v2_eyes_sha256": "f6b1d38f2713ab27466478b1ee8b73ece496f09839215b70c6c4fdc1d6e51c3e",
+    "target_rule": "median training eye midpoint /2; median training inter-eye distance /2; horizontal target; no probe statistics",
+    "shape": [
+      400,
+      56,
+      46
+    ],
+    "interpolation": "OpenCV bilinear, constant-zero boundary, Pillow equalize AFTER warp",
+    "paper_description": "Pillow bilinear resize 92x112 to46x56 then equalize; no extra eye alignment",
+    "annotations": "400 overlays rechecked; six image-based approximate corrections; not official ground truth",
+    "arrays": [
+      {
+        "branch": "teacher_old",
+        "seed": 20,
+        "path": "data/processed/orl_branches_v2/teacher_old_seed20.npy",
+        "eyes": "old",
+        "target_xy": [
+          [
+            12.0,
+            22.0
+          ],
+          [
+            34.0,
+            22.0
+          ]
+        ],
+        "sha256": "01f02ced751f66dd35c9e33bb47fa2f60fb6f3e38ad9606f4e0498e4392f4c03",
+        "support_mean": 0.9848394064605236,
+        "support_min": 0.6676533222198486
+      },
+      {
+        "branch": "eyes_only",
+        "seed": 20,
+        "path": "data/processed/orl_branches_v2/eyes_only_seed20.npy",
+        "eyes": "v2",
+        "target_xy": [
+          [
+            12.0,
+            22.0
+          ],
+          [
+            34.0,
+            22.0
+          ]
+        ],
+        "sha256": "14f4c6054d91901a5efd70591d28e080eac90acaa4cd565b8bc9d549f5031b27",
+        "support_mean": 0.9856043785810471,
+        "support_min": 0.6676533222198486
+      },
+      {
+        "branch": "geometry_only",
+        "seed": 20,
+        "path": "data/processed/orl_branches_v2/geometry_only_seed20.npy",
+        "eyes": "old",
+        "target_xy": [
+          [
+            13.655790466020175,
+            26.09375
+          ],
+          [
+            30.656709533979825,
+            26.09375
+          ]
+        ],
+        "sha256": "dc8666940d13e7aff9a6a75de10de198025faf82ed7039619c19da2b9e46ab6d",
+        "support_mean": 0.8815057852864265,
+        "support_min": 0.42279696464538574
+      },
+      {
+        "branch": "teacher_revised",
+        "seed": 20,
+        "path": "data/processed/orl_branches_v2/teacher_revised_seed20.npy",
+        "eyes": "v2",
+        "target_xy": [
+          [
+            13.655790466020175,
+            26.09375
+          ],
+          [
+            30.656709533979825,
+            26.09375
+          ]
+        ],
+        "sha256": "b660e036a64d1e40d90aaac14f7454815f90ff2e992aa425a34ad5c29f8e3752",
+        "support_mean": 0.8819366954267025,
+        "support_min": 0.4411151111125946
+      },
+      {
+        "branch": "paper_description",
+        "seed": 20,
+        "path": "data/processed/orl_branches_v2/paper_description_seed20.npy",
+        "eyes": "none",
+        "target_xy": null,
+        "sha256": "ed44f25cf1c89db0629d1cfaf7ab94681b89e529c6c7a413d0c2878ab2912e14",
+        "support_mean": 1.0,
+        "support_min": 1.0
+      },
+      {
+        "branch": "teacher_old",
+        "seed": 21,
+        "path": "data/processed/orl_branches_v2/teacher_old_seed21.npy",
+        "eyes": "old",
+        "target_xy": [
+          [
+            12.0,
+            22.0
+          ],
+          [
+            34.0,
+            22.0
+          ]
+        ],
+        "sha256": "01f02ced751f66dd35c9e33bb47fa2f60fb6f3e38ad9606f4e0498e4392f4c03",
+        "support_mean": 0.9848394064605236,
+        "support_min": 0.6676533222198486
+      },
+      {
+        "branch": "eyes_only",
+        "seed": 21,
+        "path": "data/processed/orl_branches_v2/eyes_only_seed21.npy",
+        "eyes": "v2",
+        "target_xy": [
+          [
+            12.0,
+            22.0
+          ],
+          [
+            34.0,
+            22.0
+          ]
+        ],
+        "sha256": "14f4c6054d91901a5efd70591d28e080eac90acaa4cd565b8bc9d549f5031b27",
+        "support_mean": 0.9856043785810471,
+        "support_min": 0.6676533222198486
+      },
+      {
+        "branch": "geometry_only",
+        "seed": 21,
+        "path": "data/processed/orl_branches_v2/geometry_only_seed21.npy",
+        "eyes": "old",
+        "target_xy": [
+          [
+            14.342592722749293,
+            25.875
+          ],
+          [
+            31.219907277250705,
+            25.875
+          ]
+        ],
+        "sha256": "e0568938d982c28946bf1949b013db1d751d9bfbf083caae846955f563f9ae5b",
+        "support_mean": 0.8742418050765991,
+        "support_min": 0.4228212237358093
+      },
+      {
+        "branch": "teacher_revised",
+        "seed": 21,
+        "path": "data/processed/orl_branches_v2/teacher_revised_seed21.npy",
+        "eyes": "v2",
+        "target_xy": [
+          [
+            14.342592722749293,
+            25.875
+          ],
+          [
+            31.219907277250705,
+            25.875
+          ]
+        ],
+        "sha256": "6c57886771c446998c7c0d1cd01fd3a8c2f3d0c75416198b24629d4d6aef80e4",
+        "support_mean": 0.8746590648591518,
+        "support_min": 0.43200457096099854
+      },
+      {
+        "branch": "paper_description",
+        "seed": 21,
+        "path": "data/processed/orl_branches_v2/paper_description_seed21.npy",
+        "eyes": "none",
+        "target_xy": null,
+        "sha256": "ed44f25cf1c89db0629d1cfaf7ab94681b89e529c6c7a413d0c2878ab2912e14",
+        "support_mean": 1.0,
+        "support_min": 1.0
+      },
+      {
+        "branch": "teacher_old",
+        "seed": 22,
+        "path": "data/processed/orl_branches_v2/teacher_old_seed22.npy",
+        "eyes": "old",
+        "target_xy": [
+          [
+            12.0,
+            22.0
+          ],
+          [
+            34.0,
+            22.0
+          ]
+        ],
+        "sha256": "01f02ced751f66dd35c9e33bb47fa2f60fb6f3e38ad9606f4e0498e4392f4c03",
+        "support_mean": 0.9848394064605236,
+        "support_min": 0.6676533222198486
+      },
+      {
+        "branch": "eyes_only",
+        "seed": 22,
+        "path": "data/processed/orl_branches_v2/eyes_only_seed22.npy",
+        "eyes": "v2",
+        "target_xy": [
+          [
+            12.0,
+            22.0
+          ],
+          [
+            34.0,
+            22.0
+          ]
+        ],
+        "sha256": "14f4c6054d91901a5efd70591d28e080eac90acaa4cd565b8bc9d549f5031b27",
+        "support_mean": 0.9856043785810471,
+        "support_min": 0.6676533222198486
+      },
+      {
+        "branch": "geometry_only",
+        "seed": 22,
+        "path": "data/processed/orl_branches_v2/geometry_only_seed22.npy",
+        "eyes": "old",
+        "target_xy": [
+          [
+            13.810416923804826,
+            26.15625
+          ],
+          [
+            30.689583076195174,
+            26.15625
+          ]
+        ],
+        "sha256": "a9670cc9975b142b4ef1c4180afbe3c8f6413b590c275fa507f8ac99fa40f1a2",
+        "support_mean": 0.8753607868403196,
+        "support_min": 0.4195677936077118
+      },
+      {
+        "branch": "teacher_revised",
+        "seed": 22,
+        "path": "data/processed/orl_branches_v2/teacher_revised_seed22.npy",
+        "eyes": "v2",
+        "target_xy": [
+          [
+            13.810416923804826,
+            26.15625
+          ],
+          [
+            30.689583076195174,
+            26.15625
+          ]
+        ],
+        "sha256": "919409df28a53d87f96f69ff92ac846af0bc943d12a26f1c893480a994403cc0",
+        "support_mean": 0.8757373142242432,
+        "support_min": 0.43058520555496216
+      },
+      {
+        "branch": "paper_description",
+        "seed": 22,
+        "path": "data/processed/orl_branches_v2/paper_description_seed22.npy",
+        "eyes": "none",
+        "target_xy": null,
+        "sha256": "ed44f25cf1c89db0629d1cfaf7ab94681b89e529c6c7a413d0c2878ab2912e14",
+        "support_mean": 1.0,
+        "support_min": 1.0
+      }
+    ]
+  },
+  "profile": "group_primary, unchanged model/metric/LDA scaling; no internal winner selection",
+  "selected_by_probe": false,
+  "chronology": "development evaluation; previous probes already seen",
+  "code_sha256": {
+    "run_orl_branches.py": "1b4a19d685152e74e0293d1999621927fa368f682f83ab7dd825cbcd82ffb40f",
+    "csa.py": "29226eaae53c3c5b9d5e752d55a8d675e0a40b2d8eefac186f06682ad02ea64c",
+    "gabor.py": "ceb12f2bfbe82e381375e14a1c60d0a0a4795b91544e7bff02c22e93ac61578f",
+    "prepare_available_data.py": "0f5d07532716155b41c7264fc55cfcb749678d9ce1c77a1ad479d8f43e65f6e0",
+    "run_available_reproduction.py": "135ab16b4e47f840ad0e711c9bb1cb72166e1a3f871e46ae4d25726ae6928a71",
+    "run_orl_gray.py": "ddff280aed8e0d96cdbefb6f1bc059ae4c07221af3869f71c0c61c119588ac72"
+  }
+}

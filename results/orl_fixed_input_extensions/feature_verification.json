@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "all400_warp_centers_exact": true,
+  "all400_equalized_centers_exact": true,
+  "independent_TT_images": 3,
+  "direct_convolution_channel_checks": 240,
+  "max_abs_error": 3.1788867730142556e-05
+}

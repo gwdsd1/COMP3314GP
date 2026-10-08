@@ -1,0 +1,401 @@
+{
+  "seeds": [
+    3000,
+    3001,
+    3002,
+    3003,
+    3004,
+    3005,
+    3006,
+    3007,
+    3008,
+    3009,
+    3010,
+    3011,
+    3012,
+    3013,
+    3014,
+    3015,
+    3016,
+    3017,
+    3018,
+    3019,
+    3020,
+    3021,
+    3022,
+    3023,
+    3024,
+    3025,
+    3026,
+    3027,
+    3028,
+    3029,
+    3030,
+    3031,
+    3032,
+    3033,
+    3034,
+    3035,
+    3036,
+    3037,
+    3038,
+    3039,
+    3040,
+    3041,
+    3042,
+    3043,
+    3044,
+    3045,
+    3046,
+    3047,
+    3048,
+    3049,
+    3050,
+    3051,
+    3052,
+    3053,
+    3054,
+    3055,
+    3056,
+    3057,
+    3058,
+    3059,
+    3060,
+    3061,
+    3062,
+    3063,
+    3064,
+    3065,
+    3066,
+    3067,
+    3068,
+    3069,
+    3070,
+    3071,
+    3072,
+    3073,
+    3074,
+    3075,
+    3076,
+    3077,
+    3078,
+    3079,
+    3080,
+    3081,
+    3082,
+    3083,
+    3084,
+    3085,
+    3086,
+    3087,
+    3088,
+    3089,
+    3090,
+    3091,
+    3092,
+    3093,
+    3094,
+    3095,
+    3096,
+    3097,
+    3098,
+    3099,
+    3100,
+    3101,
+    3102,
+    3103,
+    3104,
+    3105,
+    3106,
+    3107,
+    3108,
+    3109,
+    3110,
+    3111,
+    3112,
+    3113,
+    3114,
+    3115,
+    3116,
+    3117,
+    3118,
+    3119,
+    3120,
+    3121,
+    3122,
+    3123,
+    3124,
+    3125,
+    3126,
+    3127,
+    3128,
+    3129,
+    3130,
+    3131,
+    3132,
+    3133,
+    3134,
+    3135,
+    3136,
+    3137,
+    3138,
+    3139,
+    3140,
+    3141,
+    3142,
+    3143,
+    3144,
+    3145,
+    3146,
+    3147,
+    3148,
+    3149,
+    3150,
+    3151,
+    3152,
+    3153,
+    3154,
+    3155,
+    3156,
+    3157,
+    3158,
+    3159,
+    3160,
+    3161,
+    3162,
+    3163,
+    3164,
+    3165,
+    3166,
+    3167,
+    3168,
+    3169,
+    3170,
+    3171,
+    3172,
+    3173,
+    3174,
+    3175,
+    3176,
+    3177,
+    3178,
+    3179,
+    3180,
+    3181,
+    3182,
+    3183,
+    3184,
+    3185,
+    3186,
+    3187,
+    3188,
+    3189,
+    3190,
+    3191,
+    3192,
+    3193,
+    3194,
+    3195,
+    3196,
+    3197,
+    3198,
+    3199
+  ],
+  "branches": [
+    {
+      "input": "yunet_d20_replicate_fixed39_zero",
+      "normalization": "none"
+    },
+    {
+      "input": "yunet_d20_replicate_fixed39_zero",
+      "normalization": "power075"
+    },
+    {
+      "input": "yunet_d18_zero_fixed39_zero",
+      "normalization": "sqrt"
+    }
+  ],
+  "cases": [
+    {
+      "family": "CSA+LDA",
+      "ranks": [
+        4,
+        2,
+        3
+      ],
+      "center": false,
+      "init": "identity"
+    },
+    {
+      "family": "CSA+LDA",
+      "ranks": [
+        4,
+        2,
+        4
+      ],
+      "center": false,
+      "init": "identity"
+    },
+    {
+      "family": "CSA+LDA",
+      "ranks": [
+        4,
+        1,
+        8
+      ],
+      "center": false,
+      "init": "hosvd"
+    },
+    {
+      "family": "CSA+LDA",
+      "ranks": [
+        2,
+        2,
+        8
+      ],
+      "center": true,
+      "init": "hosvd"
+    },
+    {
+      "family": "CSA+LDA",
+      "ranks": [
+        2,
+        1,
+        16
+      ],
+      "center": false,
+      "init": "hosvd"
+    },
+    {
+      "family": "CSA+LDA",
+      "ranks": [
+        3,
+        1,
+        11
+      ],
+      "center": true,
+      "init": "hosvd"
+    },
+    {
+      "family": "CSA+LDA",
+      "ranks": [
+        4,
+        2,
+        5
+      ],
+      "center": false,
+      "init": "hosvd"
+    },
+    {
+      "family": "CSA+LDA",
+      "ranks": [
+        4,
+        2,
+        5
+      ],
+      "center": true,
+      "init": "hosvd"
+    },
+    {
+      "family": "CSA+LDA",
+      "ranks": [
+        4,
+        1,
+        10
+      ],
+      "center": false,
+      "init": "hosvd"
+    },
+    {
+      "family": "CSA+LDA",
+      "ranks": [
+        4,
+        1,
+        10
+      ],
+      "center": true,
+      "init": "hosvd"
+    },
+    {
+      "family": "CSA",
+      "ranks": [
+        15,
+        1,
+        26
+      ],
+      "center": false,
+      "init": "identity"
+    },
+    {
+      "family": "CSA",
+      "ranks": [
+        15,
+        1,
+        26
+      ],
+      "center": false,
+      "init": "hosvd"
+    },
+    {
+      "family": "CSA",
+      "ranks": [
+        14,
+        2,
+        20
+      ],
+      "center": false,
+      "init": "hosvd"
+    },
+    {
+      "family": "CSA",
+      "ranks": [
+        12,
+        3,
+        20
+      ],
+      "center": false,
+      "init": "hosvd"
+    },
+    {
+      "family": "CSA",
+      "ranks": [
+        14,
+        4,
+        20
+      ],
+      "center": false,
+      "init": "hosvd"
+    }
+  ],
+  "policies": [
+    "unit_columns_cosine_centered",
+    "unit_columns_cosine_linear",
+    "unit_columns_euclidean",
+    "sw_identity_cosine_centered",
+    "sw_identity_cosine_linear",
+    "sw_identity_euclidean"
+  ],
+  "gallery_per_class": 2,
+  "probe_per_class": 8,
+  "N": 80,
+  "Nc": 40,
+  "Tmax": 3,
+  "LDA": "ordinary Fisher only, alpha=0; pre dimension <=40, final <=39; numerical nullspace removal is unchanged",
+  "LDA_dimensions": "all valid dimensions 2 through min(pre dimension,39)",
+  "pure_policies": "first three policies only; LDA column scaling is inapplicable to pure CSA",
+  "inputs": "existing fixed eye-aligned 56x46 gray / 28x23x40 Gabor, five scales and eight orientations",
+  "new_conventions": "power0.75 amplitudes; alternative mode ranks; training-derived HOSVD start; pure dimensions390/560/720/1120",
+  "selection": "EXPLORATORY: maxima across configurations AND splits selected using probe accuracy; no independent validation claim",
+  "reporting": "all scores saved; report best brackets, seed, mean and SD for the corresponding fixed config, grid size and split count",
+  "near_threshold": "within1 percentage point of paper or higher; paper90.9 for ordinary CSA+LDA and94.4 for pure CSA",
+  "limits": "previous probes were seen; repeated use of same400images; maxima and winning-config statistics are optimistic; not original author protocol",
+  "stopping": "complete all200 predeclared splits regardless of crossing a target",
+  "source_sha256": {
+    "search_orl_best.py": "56ad07a60868708206362b544304c551ec93640eba7841a48aceacb5e607fc82",
+    "csa.py": "6aabff534f47786c9a5098b2459e3afc55f39ad3d86d99b2bcba220f868b06a3",
+    "refine_orl_csa.py": "df3c866bab0c07db212e02763cfe1e67aff3c9304fe0db3fb799966a4f746952",
+    "optimize_csa_lda.py": "01e95359497d1e2d77f8f02d0706cf2d30b11cb7a0ea654aec5a316822249c51",
+    "audit_orl_protocol.py": "d80bc8fc89f327dc0aac0abaeec326d07a3f7f181da427e50f02b98687cd9247",
+    "run_available_reproduction.py": "135ab16b4e47f840ad0e711c9bb1cb72166e1a3f871e46ae4d25726ae6928a71"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "raw_image_hashes_checked": 400,
+  "outer_splits_checked": 10,
+  "inner_folds_checked": 160,
+  "source_snapshots_checked": 8,
+  "gray_sha256": "ad1d1980684e9c59d6975ff700ce89d0484f2a647738480c1a60311be9793d72",
+  "no_probe_scoring": true,
+  "all_CV_saved_indices_checked": 960,
+  "all_CV_actual_dimensions_checked": 960
+}

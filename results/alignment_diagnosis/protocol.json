@@ -1,0 +1,11 @@
+{
+  "scope": "resize-only sensitivity control; no new parameter selection",
+  "seeds": [
+    20,
+    21,
+    22
+  ],
+  "raw_sha256": "60da43f93507e4e90b97129bd4e72266e02dc041ab563df8969ab7def9a2b286",
+  "preprocessing": "Pillow bilinear + equalize; no eye alignment",
+  "fixed_profiles": "same as available reproduction, no selection from probe"
+}

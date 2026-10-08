@@ -1,0 +1,7 @@
+{
+  "new_outer_fits": 40,
+  "historical_baseline_scores_reused": 40,
+  "score_rows": 80,
+  "elapsed_seconds": 14.610253300000068,
+  "BLAS_threads": 2
+}

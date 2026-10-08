@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "manual_supplement_not_standard_driver_stage": true,
+  "hashes_source_input_old_controls_models_scores_and_adapter_unchanged": true,
+  "actual_saved_files_read": 120,
+  "repeated_probe_records": 38400,
+  "different_photos": 400,
+  "six_means_and_sample_sd_checked": [
+    {
+      "method": "DATER24",
+      "branch": "direct24",
+      "mean_percent": 71.640625,
+      "sample_sd_pp": 3.1818432132260432
+    },
+    {
+      "method": "CSA24",
+      "branch": "direct24",
+      "mean_percent": 74.328125,
+      "sample_sd_pp": 3.948000566159375
+    },
+    {
+      "method": "PCA24",
+      "branch": "direct24",
+      "mean_percent": 82.703125,
+      "sample_sd_pp": 2.9459826431180196
+    },
+    {
+      "method": "DATER24",
+      "branch": "LDA23",
+      "mean_percent": 67.109375,
+      "sample_sd_pp": 3.591604050365974
+    },
+    {
+      "method": "CSA24",
+      "branch": "LDA23",
+      "mean_percent": 80.125,
+      "sample_sd_pp": 3.4892928328938244
+    },
+    {
+      "method": "PCA24",
+      "branch": "LDA23",
+      "mean_percent": 88.8125,
+      "sample_sd_pp": 2.468135749700038
+    }
+  ],
+  "matched_LDA_minus_direct": [
+    {
+      "method": "DATER24",
+      "LDA_minus_direct_pp": -4.531250000000001,
+      "sample_sd_pp": 2.501027749272603,
+      "wins": 1,
+      "ties": 0,
+      "losses": 19
+    },
+    {
+      "method": "CSA24",
+      "LDA_minus_direct_pp": 5.796875,
+      "sample_sd_pp": 2.7024808138712304,
+      "wins": 20,
+      "ties": 0,
+      "losses": 0
+    },
+    {
+      "method": "PCA24",
+      "LDA_minus_direct_pp": 6.109375,
+      "sample_sd_pp": 1.6735995471076548,
+      "wins": 20,
+      "ties": 0,
+      "losses": 0
+    }
+  ],
+  "split_counts_and_dimensions_checked": true,
+  "no_new_fit_or_new_probe_variant": true,
+  "comparison_plot_visually_inspected": true
+}

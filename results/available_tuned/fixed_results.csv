@@ -1,0 +1,31 @@
+dataset,seed,method,pre_dims,lda_dim,geometry,kernel,response,normalization,center,init,scaling,metric,candidate_id,correct,probe_count,accuracy_percent,paper_percent,difference_pp
+ORL,20,PCA+LDA (Gray),30,18,fuller,standard4,linear,l2,True,identity,unit_columns,euclidean,model_000,163,320,50.9375,82.2,-31.262500000000003
+ORL,20,CSA-2+LDA,"(11, 2)",16,original,standard4,linear,l2,False,identity,unit_columns,cosine,model_000,221,320,69.0625,84.1,-15.037499999999994
+ORL,20,PCA (Gabor),76,,original,smaller2,linear,l2,True,identity,unit_columns,euclidean,model_000,248,320,77.5,86.6,-9.099999999999994
+ORL,20,CSA-3,"(15, 1, 26)",,fuller,standard4,sqrt,none,False,identity,unit_columns,cosine,model_000,227,320,70.9375,94.4,-23.462500000000006
+ORL,20,PCA+LDA (Gabor),33,25,original,smaller2,sqrt,none,True,identity,unit_columns,euclidean,model_000,218,320,68.125,87.2,-19.075000000000003
+ORL,20,CSA-3+LDA,"(4, 2, 3)",23,original,smaller2,sqrt,l2,False,identity,unit_columns,cosine,model_000,230,320,71.875,90.9,-19.025000000000006
+ORL,21,PCA+LDA (Gray),30,18,original,standard4,linear,none,False,identity,unit_columns,euclidean,model_005,194,320,60.625,82.2,-21.575000000000003
+ORL,21,CSA-2+LDA,"(11, 2)",16,original,standard4,linear,l2,True,identity,unit_columns,cosine,model_008,204,320,63.75,84.1,-20.349999999999994
+ORL,21,PCA (Gabor),76,,medium,standard4,sqrt,l2,True,identity,unit_columns,euclidean,model_000,234,320,73.125,86.6,-13.474999999999994
+ORL,21,CSA-3,"(15, 1, 26)",,medium,smaller2,linear,none,False,identity,unit_columns,cosine,model_000,229,320,71.5625,94.4,-22.837500000000006
+ORL,21,PCA+LDA (Gabor),33,25,original,standard4,sqrt,l2,True,identity,unit_columns,euclidean,model_000,234,320,73.125,87.2,-14.075000000000003
+ORL,21,CSA-3+LDA,"(4, 2, 3)",23,medium,standard4,sqrt,none,False,identity,unit_columns,cosine,model_000,204,320,63.75,90.9,-27.150000000000006
+ORL,22,PCA+LDA (Gray),30,18,original,standard4,linear,none,True,identity,unit_columns,euclidean,model_000,204,320,63.75,82.2,-18.450000000000003
+ORL,22,CSA-2+LDA,"(11, 2)",16,medium,standard4,linear,l2,False,identity,unit_columns,cosine,model_000,199,320,62.1875,84.1,-21.912499999999994
+ORL,22,PCA (Gabor),76,,original,standard4,sqrt,l2,True,identity,unit_columns,euclidean,model_000,255,320,79.6875,86.6,-6.912499999999994
+ORL,22,CSA-3,"(15, 1, 26)",,medium,standard4,sqrt,none,False,identity,unit_columns,cosine,model_000,258,320,80.625,94.4,-13.775000000000006
+ORL,22,PCA+LDA (Gabor),33,25,original,standard4,sqrt,l2,True,identity,unit_columns,euclidean,model_000,232,320,72.5,87.2,-14.700000000000003
+ORL,22,CSA-3+LDA,"(4, 2, 3)",23,medium,smaller2,sqrt,none,False,identity,unit_columns,cosine,model_000,217,320,67.8125,90.9,-23.087500000000006
+MNIST G30/P470,20,PCA (Gabor),60,,unchanged,standard4,sqrt,l2,True,identity,unit_columns,euclidean,model_000,4253,4700,90.48936170212765,88.5,1.9893617021276526
+MNIST G30/P470,20,CSA-3,"(5, 9, 18)",,unchanged,smaller2,sqrt,none,False,identity,unit_columns,euclidean,model_000,4222,4700,89.82978723404256,92.8,-2.9702127659574415
+MNIST G30/P470,21,PCA (Gabor),60,,unchanged,standard4,sqrt,l2,True,identity,unit_columns,cosine,model_000,4221,4700,89.80851063829788,88.5,1.308510638297875
+MNIST G30/P470,21,CSA-3,"(5, 9, 18)",,unchanged,standard4,linear,l2,False,identity,unit_columns,cosine,model_000,4245,4700,90.31914893617021,92.8,-2.480851063829789
+MNIST G30/P470,22,PCA (Gabor),60,,unchanged,standard4,sqrt,l2,True,identity,unit_columns,euclidean,model_000,4233,4700,90.06382978723404,88.5,1.5638297872340416
+MNIST G30/P470,22,CSA-3,"(5, 9, 18)",,unchanged,standard4,linear,none,False,identity,unit_columns,cosine,model_000,4254,4700,90.51063829787235,92.8,-2.28936170212765
+MNIST G40/P460,20,PCA (Gabor),50,,unchanged,smaller2,sqrt,none,True,identity,unit_columns,euclidean,model_000,4127,4600,89.71739130434783,90.5,-0.7826086956521721
+MNIST G40/P460,20,CSA-3,"(15, 5, 13)",,unchanged,standard4,linear,l2,False,identity,unit_columns,euclidean,model_000,4172,4600,90.69565217391305,92.4,-1.7043478260869591
+MNIST G40/P460,21,PCA (Gabor),50,,unchanged,smaller2,sqrt,l2,True,identity,unit_columns,euclidean,model_000,4189,4600,91.06521739130434,90.5,0.5652173913043441
+MNIST G40/P460,21,CSA-3,"(15, 5, 13)",,unchanged,smaller2,linear,l2,False,identity,unit_columns,cosine,model_000,4199,4600,91.28260869565217,92.4,-1.1173913043478336
+MNIST G40/P460,22,PCA (Gabor),50,,unchanged,standard4,sqrt,none,False,identity,unit_columns,cosine,model_003,4208,4600,91.47826086956522,90.5,0.9782608695652186
+MNIST G40/P460,22,CSA-3,"(15, 5, 13)",,unchanged,standard4,sqrt,none,False,identity,unit_columns,cosine,model_000,4217,4600,91.67391304347827,92.4,-0.7260869565217405

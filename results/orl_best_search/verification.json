@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "planned_splits": 200,
+  "complete_score_cells": 1200600,
+  "independently_refitted_best_runs": 20,
+  "best_predictions_replayed": 6400,
+  "independent_encoding_scatter_Fisher_NN": true,
+  "all_CSV_scores_match_grid": true,
+  "protocol_sha256": "f88144a550b02b3717e847a50b80834adeb48749be9688a32c1019d6fec2dff2",
+  "source_sha256": "56ad07a60868708206362b544304c551ec93640eba7841a48aceacb5e607fc82",
+  "limit": "all score cells recorded; independent model replay restricted to top10 distinct seeds per family and winners"
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "candidate": "previous_frozen",
+    "method": "PCA+LDA (Gray)",
+    "mean_percent": 70.41666666666667,
+    "std_pp": 2.386758174456167
+  },
+  {
+    "candidate": "previous_frozen",
+    "method": "CSA-2+LDA",
+    "mean_percent": 68.02083333333333,
+    "std_pp": 5.0518148554092255
+  },
+  {
+    "candidate": "previous_frozen",
+    "method": "PCA (Gabor)",
+    "mean_percent": 83.4375,
+    "std_pp": 1.9008632907181937
+  },
+  {
+    "candidate": "previous_frozen",
+    "method": "CSA-3",
+    "mean_percent": 82.60416666666667,
+    "std_pp": 2.6207803386269006
+  },
+  {
+    "candidate": "previous_frozen",
+    "method": "PCA+LDA (Gabor)",
+    "mean_percent": 84.0625,
+    "std_pp": 0.8267972847076845
+  },
+  {
+    "candidate": "previous_frozen",
+    "method": "CSA-3+LDA",
+    "mean_percent": 71.45833333333333,
+    "std_pp": 2.8009020124476565
+  },
+  {
+    "candidate": "haar_v2_d22_zero_adaptive_zero",
+    "method": "PCA+LDA (Gray)",
+    "mean_percent": 72.5,
+    "std_pp": 2.165063509461097
+  },
+  {
+    "candidate": "haar_v2_d22_zero_adaptive_zero",
+    "method": "CSA-2+LDA",
+    "mean_percent": 67.91666666666667,
+    "std_pp": 3.067173305069887
+  },
+  {
+    "candidate": "haar_v2_d22_zero_adaptive_zero",
+    "method": "PCA (Gabor)",
+    "mean_percent": 80.3125,
+    "std_pp": 2.8641098093474
+  },
+  {
+    "candidate": "haar_v2_d22_zero_adaptive_zero",
+    "method": "CSA-3",
+    "mean_percent": 83.75,
+    "std_pp": 2.1875
+  },
+  {
+    "candidate": "haar_v2_d22_zero_adaptive_zero",
+    "method": "PCA+LDA (Gabor)",
+    "mean_percent": 85.0,
+    "std_pp": 0.3125
+  },
+  {
+    "candidate": "haar_v2_d22_zero_adaptive_zero",
+    "method": "CSA-3+LDA",
+    "mean_percent": 74.27083333333333,
+    "std_pp": 3.8188130791298667
+  },
+  {
+    "candidate": "yunet_d22_zero_adaptive_zero",
+    "method": "PCA+LDA (Gray)",
+    "mean_percent": 83.22916666666667,
+    "std_pp": 1.4091405477571546
+  },
+  {
+    "candidate": "yunet_d22_zero_adaptive_zero",
+    "method": "CSA-2+LDA",
+    "mean_percent": 75.9375,
+    "std_pp": 1.653594569415369
+  },
+  {
+    "candidate": "yunet_d22_zero_adaptive_zero",
+    "method": "PCA (Gabor)",
+    "mean_percent": 85.9375,
+    "std_pp": 2.6700011704117284
+  },
+  {
+    "candidate": "yunet_d22_zero_adaptive_zero",
+    "method": "CSA-3",
+    "mean_percent": 86.875,
+    "std_pp": 2.165063509461097
+  },
+  {
+    "candidate": "yunet_d22_zero_adaptive_zero",
+    "method": "PCA+LDA (Gabor)",
+    "mean_percent": 91.14583333333333,
+    "std_pp": 2.545164942264712
+  },
+  {
+    "candidate": "yunet_d22_zero_adaptive_zero",
+    "method": "CSA-3+LDA",
+    "mean_percent": 79.79166666666667,
+    "std_pp": 2.835553664336708
+  },
+  {
+    "candidate": "yunet_d18_replicate_adaptive_zero",
+    "method": "PCA+LDA (Gray)",
+    "mean_percent": 83.54166666666667,
+    "std_pp": 1.2629537138523064
+  },
+  {
+    "candidate": "yunet_d18_replicate_adaptive_zero",
+    "method": "CSA-2+LDA",
+    "mean_percent": 78.22916666666667,
+    "std_pp": 1.0974639325888271
+  },
+  {
+    "candidate": "yunet_d18_replicate_adaptive_zero",
+    "method": "PCA (Gabor)",
+    "mean_percent": 88.85416666666667,
+    "std_pp": 2.0807275370248104
+  },
+  {
+    "candidate": "yunet_d18_replicate_adaptive_zero",
+    "method": "CSA-3",
+    "mean_percent": 89.89583333333333,
+    "std_pp": 1.2629537138523064
+  },
+  {
+    "candidate": "yunet_d18_replicate_adaptive_zero",
+    "method": "PCA+LDA (Gabor)",
+    "mean_percent": 91.45833333333333,
+    "std_pp": 2.6577814212860567
+  },
+  {
+    "candidate": "yunet_d18_replicate_adaptive_zero",
+    "method": "CSA-3+LDA",
+    "mean_percent": 77.39583333333333,
+    "std_pp": 1.5415258944738273
+  },
+  {
+    "candidate": "yunet_d16_replicate_adaptive_zero",
+    "method": "PCA+LDA (Gray)",
+    "mean_percent": 84.16666666666667,
+    "std_pp": 1.4768173832039402
+  },
+  {
+    "candidate": "yunet_d16_replicate_adaptive_zero",
+    "method": "CSA-2+LDA",
+    "mean_percent": 80.41666666666667,
+    "std_pp": 1.4768173832039402
+  },
+  {
+    "candidate": "yunet_d16_replicate_adaptive_zero",
+    "method": "PCA (Gabor)",
+    "mean_percent": 87.60416666666667,
+    "std_pp": 3.1302040002743166
+  },
+  {
+    "candidate": "yunet_d16_replicate_adaptive_zero",
+    "method": "CSA-3",
+    "mean_percent": 89.375,
+    "std_pp": 0.8267972847076845
+  },
+  {
+    "candidate": "yunet_d16_replicate_adaptive_zero",
+    "method": "PCA+LDA (Gabor)",
+    "mean_percent": 91.77083333333333,
+    "std_pp": 0.47735163489123333
+  },
+  {
+    "candidate": "yunet_d16_replicate_adaptive_zero",
+    "method": "CSA-3+LDA",
+    "mean_percent": 78.64583333333333,
+    "std_pp": 1.301041249666333
+  }
+]

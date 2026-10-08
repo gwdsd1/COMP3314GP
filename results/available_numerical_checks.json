@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "seed": 314,
+  "checks": [
+    "non-square tensor axes and unfold/fold round-trip",
+    "2-D sequential update agrees with independent matrix formulas",
+    "3-D sequential update and shared-core transform agree with independent einsum",
+    "orthogonality, per-mode monotonic SSE, full reconstruction, first-order PCA equivalence, PCA optimum; both mean settings",
+    "LDA matches generalized eigenproblem; dimension guard; 1-NN hand example",
+    "paper RMSE and total-storage CR verified against hand calculation",
+    "ORL per-class 2/8 split, coverage, isolation and deterministic replay",
+    "Gram PCA projector and reconstruction agree with independent SVD",
+    "Gabor FFT agrees with spatial complex convolution for 9 kernels",
+    "finite DC-free constant response and filter-before-downsample verified",
+    "10-iteration diagnostic does not alter default recognition stopping"
+  ],
+  "gabor_max_absolute_error": 1.2214220540540666e-07
+}

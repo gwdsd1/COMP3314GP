@@ -1,0 +1,35 @@
+[
+  {
+    "method": "CSA24_LDA23",
+    "n_splits": 100,
+    "mean_percent": 80.925,
+    "std_pp": 2.976563017809282,
+    "min_percent": 73.4375,
+    "max_percent": 87.5,
+    "max_seed": 1010,
+    "at_least_paper_count": 0,
+    "paper_target": 90.9
+  },
+  {
+    "method": "fixed_refined_LDA",
+    "n_splits": 100,
+    "mean_percent": 84.35625,
+    "std_pp": 2.841572523544957,
+    "min_percent": 77.1875,
+    "max_percent": 90.3125,
+    "max_seed": 1004,
+    "at_least_paper_count": 0,
+    "paper_target": 90.9
+  },
+  {
+    "method": "CSA390",
+    "n_splits": 100,
+    "mean_percent": 89.26875,
+    "std_pp": 1.9909537363542706,
+    "min_percent": 83.75,
+    "max_percent": 93.75,
+    "max_seed": 1015,
+    "at_least_paper_count": 0,
+    "paper_target": 94.4
+  }
+]

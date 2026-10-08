@@ -1,0 +1,26 @@
+{
+  "selection_sha256": {
+    "selection\\G30_seed20\\selected.json": "a1e0dd04995091f0c5fb590c72c7ae726bb3c70600dc0696e1c9b2cfebafdc3a",
+    "selection\\G40_seed20\\selected.json": "1142976968918a101e0e558b3bbb606f288fd912950056ddc059adb67c293f00",
+    "selection\\G30_seed21\\selected.json": "f4a2413cd45a2c07eca752b783e69e60aa491abeb6c36a5ebd43124918fed5b1",
+    "selection\\G40_seed21\\selected.json": "c6f81de12867957c60887277d1142c695ae6c37ca1cf9e75f5902cef07de3c6a",
+    "selection\\G30_seed22\\selected.json": "8463487cc20e032e932f498187771f4b9bb3a4728a53cc45777195a60da90990",
+    "selection\\G40_seed22\\selected.json": "6a27c01650fc327df6d4370a9fea4f9a57a7dcaa51254bb2b4eb8165c7013b2a",
+    "selection\\G30_seed23\\selected.json": "98e2f161a166944d3624efd4df294c9c29d9617a5a458f93ada1d597b2177c44",
+    "selection\\G40_seed23\\selected.json": "94946c8384a98865184cb51314c992d3f251a5652b92434fe8d9d72532c92341",
+    "selection\\G30_seed24\\selected.json": "573cc718cda00e4c8f9d67a5b05975271a71f2c329e415e4c563631e9b1eee99",
+    "selection\\G40_seed24\\selected.json": "7ad8c4cec72e1a8480c80ab536dcce0f93473f86bbb844b6231c520a5b685642",
+    "selection\\G30_seed25\\selected.json": "e935cfbd642f9a34e2429a385fc14b7722d69068a1fd502bec12b35ffb8fcfe0",
+    "selection\\G40_seed25\\selected.json": "2729315b1404b128733fbca1cece55afa001797216aaa74b148205ac566a1279",
+    "selection\\G30_seed26\\selected.json": "8c352740eb43a7afdf7450ed9b7f5c67980d21c407fb7d11ec16dde245e0f877",
+    "selection\\G40_seed26\\selected.json": "60cf1f9af3ad6291634f6a7d6b2d9517ff47f852a4ff04669104c022f705fdc8",
+    "selection\\G30_seed27\\selected.json": "4be42230d74f3446c11df0f6e6299bdd09cbbe30e70bd96a54d6b3231daf67bb",
+    "selection\\G40_seed27\\selected.json": "d82d05235f741e85ca3d6c508b3868a5dfa4b42359208583dc316453245f4007",
+    "selection\\G30_seed28\\selected.json": "518b37775efdf8d2bf1bc45e56f6412b17e98c866a799223d7a89adda5f7cf34",
+    "selection\\G40_seed28\\selected.json": "e6187b67ec6af7dd7c1f84882d105c3da6cb2817d9d15d5154497ced62c62c2b",
+    "selection\\G30_seed29\\selected.json": "4cec387fff94357209be3ab876003ebacf548db6deba39fecc440162e322c621",
+    "selection\\G40_seed29\\selected.json": "89236604e09bea29ca9f4144a78a422e0487f33fd8ecdd97fb9a9568907ef044"
+  },
+  "protocol_sha256": "02a619a027cf24ee213480ede79b7f081541075c388a362c15153e2429b11e90",
+  "probe_scored": false
+}

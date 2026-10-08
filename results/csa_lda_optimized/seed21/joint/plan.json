@@ -1,0 +1,53 @@
+{
+  "candidates": [
+    {
+      "entry_id": "yunet_d16_replicate_fixed39_zero",
+      "normalization": "none"
+    },
+    {
+      "entry_id": "yunet_d16_replicate_fixed39_zero",
+      "normalization": "channel_rms"
+    },
+    {
+      "entry_id": "yunet_d16_replicate_fixed39_zero",
+      "normalization": "sqrt"
+    },
+    {
+      "entry_id": "yunet_d16_replicate_adaptive_zero",
+      "normalization": "none"
+    },
+    {
+      "entry_id": "yunet_d16_replicate_adaptive_zero",
+      "normalization": "sqrt"
+    }
+  ],
+  "cases": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "policies": [
+    "unit_columns_cosine_centered",
+    "unit_columns_cosine_linear",
+    "unit_columns_euclidean",
+    "sw_identity_cosine_centered",
+    "sw_identity_cosine_linear",
+    "sw_identity_euclidean"
+  ],
+  "alpha_grid": [
+    0.0,
+    0.01,
+    0.05,
+    0.15,
+    0.35,
+    0.65,
+    1.0
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "model_count": 60,
+  "new_DATER_models": 20,
+  "reused_control_models": 40,
+  "independent_DATER_model_verification": {
+    "passed": true,
+    "models_checked": 20,
+    "independent_exact_path_update_checks": 1194,
+    "independent_free_reference_refits": 20,
+    "ordinary_LDA_checks": 20,
+    "no_probe_scoring": true,
+    "max_scatter_relative_error": 4.0154109774513996e-15,
+    "max_single_update_unit_basis_abs_error": 7.324862938418164e-12,
+    "max_generalized_eigen_residual": 3.1853672948619845e-13,
+    "max_gallery_core_encode_abs_error": 3.289729599842417e-14,
+    "exact_saved_stopping_conditions_checked": true,
+    "joint_DTC_decreasing_transitions": 165,
+    "source_input_models_and_historical_hashes_unchanged": true,
+    "full_refit_tolerance_claim": "No blanket numerical equality asserted. All exact-path updates separately validated; free differences in numerical_sensitivity.csv",
+    "max_free_reference_unit_basis_difference": 1.0076444721549005e-05,
+    "max_free_reference_projector_difference": 1.9658855965887234e-06,
+    "max_free_reference_gallery_core_relative_difference": 1.8508771912411797e-05,
+    "free_refits_with_changed_stop_length": 0,
+    "elapsed_seconds": 16.87735200000043,
+    "verifier_path": "verify_orl_dater.py",
+    "verifier_sha256": "81ad6a67ba46d85d4a4d5f4195b2bb6f35de1125c6a47f3dc2585a2e6854190a"
+  },
+  "score_rows_checked": 120,
+  "prediction_records_checked": 38400,
+  "unchanged_LDA_control_predictions": 40,
+  "all_source_input_model_score_and_historical_hashes_unchanged": true
+}

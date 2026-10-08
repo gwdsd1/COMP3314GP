@@ -1,0 +1,19 @@
+{
+  "seed": 29,
+  "gallery_count": 40,
+  "shortlist": [
+    "fixed39_reflect",
+    "adaptive_reflect"
+  ],
+  "winner": {
+    "input": "fixed39_reflect",
+    "CSA_init": "identity",
+    "policy": "cosine_raw",
+    "pca_correct": 353,
+    "csa_correct": 370,
+    "joint_correct": 723,
+    "total": 800,
+    "worst_method_fold": 0.825
+  },
+  "protocol_sha256": "02a619a027cf24ee213480ede79b7f081541075c388a362c15153e2429b11e90"
+}

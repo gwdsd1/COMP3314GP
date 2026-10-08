@@ -1,0 +1,109 @@
+geometry,seed,method,initialization,center,metric,scaling,pre_dims,lda_dim,correct,probe_count,accuracy_percent,paper_percent,training_sse,sw_rank,sw_condition,lda_relative_residual
+aligned_equalized,20,PCA+LDA (Gray),identity,True,cosine,unit_columns,30,18,235,320,73.4375,82.2,,30,925.3934019989804,3.866289214814596e-14
+aligned_equalized,20,CSA-2+LDA,identity,False,euclidean,unit_columns,"(11, 2)",16,216,320,67.5,84.1,435260636.88275146,22,996.0482773028177,3.077352784286209e-14
+aligned_equalized,20,CSA-2+LDA,hosvd,False,euclidean,unit_columns,"(11, 2)",16,216,320,67.5,84.1,435260641.17530966,22,995.6452564722496,1.2814955178629348e-14
+aligned_equalized,20,PCA (Gabor),identity,True,cosine,unit_columns,76,,251,320,78.4375,86.6,,,,
+aligned_equalized,20,CSA-3,identity,False,cosine,unit_columns,"(15, 1, 26)",,260,320,81.25,94.4,152492543.63076115,,,
+aligned_equalized,20,CSA-3,hosvd,False,cosine,unit_columns,"(15, 1, 26)",,260,320,81.25,94.4,152492543.63071227,,,
+aligned_equalized,20,PCA+LDA (Gabor),identity,True,cosine,unit_columns,33,25,259,320,80.9375,87.2,,33,528.2238782883268,6.584044172972237e-14
+aligned_equalized,20,CSA-3+LDA,identity,False,cosine,unit_columns,"(4, 2, 3)",23,218,320,68.125,90.9,228762250.73074675,24,1014.1533445190803,8.511130176399506e-15
+aligned_equalized,20,CSA-3+LDA,hosvd,False,cosine,unit_columns,"(4, 2, 3)",23,219,320,68.4375,90.9,228762329.54985392,24,1012.4857145589095,1.5120654888198147e-14
+aligned_equalized,21,PCA+LDA (Gray),identity,True,cosine,unit_columns,30,18,228,320,71.25,82.2,,30,752.8864361898237,3.4064517751498543e-14
+aligned_equalized,21,CSA-2+LDA,identity,False,euclidean,unit_columns,"(11, 2)",16,202,320,63.125,84.1,434193113.26930475,22,628.7518213214257,1.1121793101250007e-14
+aligned_equalized,21,CSA-2+LDA,hosvd,False,euclidean,unit_columns,"(11, 2)",16,202,320,63.125,84.1,434193033.8305063,22,628.1773266690979,9.142221844282085e-15
+aligned_equalized,21,PCA (Gabor),identity,True,cosine,unit_columns,76,,245,320,76.5625,86.6,,,,
+aligned_equalized,21,CSA-3,identity,False,cosine,unit_columns,"(15, 1, 26)",,245,320,76.5625,94.4,152626366.96813798,,,
+aligned_equalized,21,CSA-3,hosvd,False,cosine,unit_columns,"(15, 1, 26)",,245,320,76.5625,94.4,152626366.96736646,,,
+aligned_equalized,21,PCA+LDA (Gabor),identity,True,cosine,unit_columns,33,25,248,320,77.5,87.2,,33,2382.183795165192,1.5760868092607858e-13
+aligned_equalized,21,CSA-3+LDA,identity,False,cosine,unit_columns,"(4, 2, 3)",23,207,320,64.6875,90.9,224448826.645612,24,3026.1213666889375,1.0949361687263954e-14
+aligned_equalized,21,CSA-3+LDA,hosvd,False,cosine,unit_columns,"(4, 2, 3)",23,207,320,64.6875,90.9,224448507.56120145,24,3027.888108111318,1.4865982070706494e-14
+aligned_equalized,22,PCA+LDA (Gray),identity,True,cosine,unit_columns,30,18,228,320,71.25,82.2,,30,2033.7368885694973,7.301317056967311e-14
+aligned_equalized,22,CSA-2+LDA,identity,False,euclidean,unit_columns,"(11, 2)",16,221,320,69.0625,84.1,439499471.51981544,22,1508.7129648721627,4.518751000922681e-14
+aligned_equalized,22,CSA-2+LDA,hosvd,False,euclidean,unit_columns,"(11, 2)",16,221,320,69.0625,84.1,439499324.4891796,22,1510.7041140627487,3.3665682821106104e-14
+aligned_equalized,22,PCA (Gabor),identity,True,cosine,unit_columns,76,,246,320,76.875,86.6,,,,
+aligned_equalized,22,CSA-3,identity,False,cosine,unit_columns,"(15, 1, 26)",,238,320,74.375,94.4,157080919.40621448,,,
+aligned_equalized,22,CSA-3,hosvd,False,cosine,unit_columns,"(15, 1, 26)",,238,320,74.375,94.4,157080919.40612936,,,
+aligned_equalized,22,PCA+LDA (Gabor),identity,True,cosine,unit_columns,33,25,252,320,78.75,87.2,,33,681.8924638184075,1.268298603198647e-13
+aligned_equalized,22,CSA-3+LDA,identity,False,cosine,unit_columns,"(4, 2, 3)",23,216,320,67.5,90.9,230247169.7544186,24,2067.1218835489644,9.573508208741525e-15
+aligned_equalized,22,CSA-3+LDA,hosvd,False,cosine,unit_columns,"(4, 2, 3)",23,216,320,67.5,90.9,230247219.43553734,24,2060.8949482918015,9.8655082723407e-15
+resize_equalized,20,PCA+LDA (Gray),identity,True,cosine,unit_columns,30,18,265,320,82.8125,82.2,,30,698.5526769677517,8.241702275028251e-14
+resize_equalized,20,CSA-2+LDA,identity,False,euclidean,unit_columns,"(11, 2)",16,277,320,86.5625,84.1,358677984.42564535,22,554.9545444297526,1.6538171212220736e-14
+resize_equalized,20,CSA-2+LDA,hosvd,False,euclidean,unit_columns,"(11, 2)",16,277,320,86.5625,84.1,358677984.2144947,22,555.0118756462306,1.570492478271739e-14
+resize_equalized,20,PCA (Gabor),identity,True,cosine,unit_columns,76,,274,320,85.625,86.6,,,,
+resize_equalized,20,CSA-3,identity,False,cosine,unit_columns,"(15, 1, 26)",,275,320,85.9375,94.4,142727348.70251083,,,
+resize_equalized,20,CSA-3,hosvd,False,cosine,unit_columns,"(15, 1, 26)",,275,320,85.9375,94.4,142727348.70247185,,,
+resize_equalized,20,PCA+LDA (Gabor),identity,True,cosine,unit_columns,33,25,285,320,89.0625,87.2,,33,579.9482627167628,8.816097588531746e-14
+resize_equalized,20,CSA-3+LDA,identity,False,cosine,unit_columns,"(4, 2, 3)",23,262,320,81.875,90.9,211428537.47463608,24,5128.457402910269,1.8436947724054715e-14
+resize_equalized,20,CSA-3+LDA,hosvd,False,cosine,unit_columns,"(4, 2, 3)",23,256,320,80.0,90.9,211407723.36335754,24,5552.318810013202,4.7434613372647437e-14
+resize_equalized,21,PCA+LDA (Gray),identity,True,cosine,unit_columns,30,18,265,320,82.8125,82.2,,30,499.72674501802345,5.6779721908389575e-14
+resize_equalized,21,CSA-2+LDA,identity,False,euclidean,unit_columns,"(11, 2)",16,256,320,80.0,84.1,356781990.50471115,22,351.1071373600376,8.975420021242836e-15
+resize_equalized,21,CSA-2+LDA,hosvd,False,euclidean,unit_columns,"(11, 2)",16,256,320,80.0,84.1,356781989.9878516,22,351.100979764122,6.211844438179692e-15
+resize_equalized,21,PCA (Gabor),identity,True,cosine,unit_columns,76,,261,320,81.5625,86.6,,,,
+resize_equalized,21,CSA-3,identity,False,cosine,unit_columns,"(15, 1, 26)",,266,320,83.125,94.4,151179250.23638296,,,
+resize_equalized,21,CSA-3,hosvd,False,cosine,unit_columns,"(15, 1, 26)",,266,320,83.125,94.4,151179250.23621678,,,
+resize_equalized,21,PCA+LDA (Gabor),identity,True,cosine,unit_columns,33,25,267,320,83.4375,87.2,,33,734.7319715277555,9.834329160535075e-14
+resize_equalized,21,CSA-3+LDA,identity,False,cosine,unit_columns,"(4, 2, 3)",23,244,320,76.25,90.9,218309200.26087415,24,1290.7586420882453,7.166647350433938e-15
+resize_equalized,21,CSA-3+LDA,hosvd,False,cosine,unit_columns,"(4, 2, 3)",23,244,320,76.25,90.9,218309099.34924364,24,1294.9123938063678,1.39855526719392e-14
+resize_equalized,22,PCA+LDA (Gray),identity,True,cosine,unit_columns,30,18,267,320,83.4375,82.2,,30,677.4083536134306,5.598058731552164e-14
+resize_equalized,22,CSA-2+LDA,identity,False,euclidean,unit_columns,"(11, 2)",16,258,320,80.625,84.1,361111018.2406254,22,679.4315520749915,1.6105529461876183e-14
+resize_equalized,22,CSA-2+LDA,hosvd,False,euclidean,unit_columns,"(11, 2)",16,258,320,80.625,84.1,361111018.2202492,22,679.4662927614788,1.3324229158890908e-14
+resize_equalized,22,PCA (Gabor),identity,True,cosine,unit_columns,76,,269,320,84.0625,86.6,,,,
+resize_equalized,22,CSA-3,identity,False,cosine,unit_columns,"(15, 1, 26)",,278,320,86.875,94.4,148137886.95364058,,,
+resize_equalized,22,CSA-3,hosvd,False,cosine,unit_columns,"(15, 1, 26)",,278,320,86.875,94.4,148137886.95358062,,,
+resize_equalized,22,PCA+LDA (Gabor),identity,True,cosine,unit_columns,33,25,277,320,86.5625,87.2,,33,728.9992723154697,8.026995655650703e-14
+resize_equalized,22,CSA-3+LDA,identity,False,cosine,unit_columns,"(4, 2, 3)",23,251,320,78.4375,90.9,221422306.82783175,24,4756.209975995003,2.3491750947984973e-14
+resize_equalized,22,CSA-3+LDA,hosvd,False,cosine,unit_columns,"(4, 2, 3)",23,249,320,77.8125,90.9,221420322.16890156,24,5023.137467427956,3.33209793737748e-14
+aligned_no_equalize,20,PCA+LDA (Gray),identity,True,cosine,unit_columns,30,18,250,320,78.125,82.2,,30,1820.5809394508228,4.5940014450024575e-14
+aligned_no_equalize,20,CSA-2+LDA,identity,False,euclidean,unit_columns,"(11, 2)",16,213,320,66.5625,84.1,144293616.50864887,22,3012.8773647345674,2.1802029253706976e-14
+aligned_no_equalize,20,CSA-2+LDA,hosvd,False,euclidean,unit_columns,"(11, 2)",16,213,320,66.5625,84.1,144293616.4912882,22,3013.25690988129,4.4263785684096e-14
+aligned_no_equalize,20,PCA (Gabor),identity,True,cosine,unit_columns,76,,233,320,72.8125,86.6,,,,
+aligned_no_equalize,20,CSA-3,identity,False,cosine,unit_columns,"(15, 1, 26)",,247,320,77.1875,94.4,57866275.72389209,,,
+aligned_no_equalize,20,CSA-3,hosvd,False,cosine,unit_columns,"(15, 1, 26)",,247,320,77.1875,94.4,57866275.72389209,,,
+aligned_no_equalize,20,PCA+LDA (Gabor),identity,True,cosine,unit_columns,33,25,252,320,78.75,87.2,,33,1596.49911880737,1.0688706378957178e-13
+aligned_no_equalize,20,CSA-3+LDA,identity,False,cosine,unit_columns,"(4, 2, 3)",23,200,320,62.5,90.9,75722697.98980975,24,3999.989577379722,7.77646481730384e-14
+aligned_no_equalize,20,CSA-3+LDA,hosvd,False,cosine,unit_columns,"(4, 2, 3)",23,199,320,62.1875,90.9,75722877.34774548,24,4025.4737989528853,5.866074470391788e-14
+aligned_no_equalize,21,PCA+LDA (Gray),identity,True,cosine,unit_columns,30,18,241,320,75.3125,82.2,,30,922.3410483679364,7.329032347284933e-14
+aligned_no_equalize,21,CSA-2+LDA,identity,False,euclidean,unit_columns,"(11, 2)",16,217,320,67.8125,84.1,146270069.87381077,22,682.5697515540858,1.1290734408243264e-14
+aligned_no_equalize,21,CSA-2+LDA,hosvd,False,euclidean,unit_columns,"(11, 2)",16,217,320,67.8125,84.1,146270062.87083912,22,681.9645870659728,7.488351626031973e-15
+aligned_no_equalize,21,PCA (Gabor),identity,True,cosine,unit_columns,76,,226,320,70.625,86.6,,,,
+aligned_no_equalize,21,CSA-3,identity,False,cosine,unit_columns,"(15, 1, 26)",,230,320,71.875,94.4,58958322.64823449,,,
+aligned_no_equalize,21,CSA-3,hosvd,False,cosine,unit_columns,"(15, 1, 26)",,230,320,71.875,94.4,58958322.64823151,,,
+aligned_no_equalize,21,PCA+LDA (Gabor),identity,True,cosine,unit_columns,33,25,245,320,76.5625,87.2,,33,19976.50294168189,1.5324871387163829e-12
+aligned_no_equalize,21,CSA-3+LDA,identity,False,cosine,unit_columns,"(4, 2, 3)",23,197,320,61.5625,90.9,75994201.82589626,24,4417.995119167755,2.597815524352045e-14
+aligned_no_equalize,21,CSA-3+LDA,hosvd,False,cosine,unit_columns,"(4, 2, 3)",23,197,320,61.5625,90.9,75994377.82868993,24,4426.9273861687425,4.258149852006927e-14
+aligned_no_equalize,22,PCA+LDA (Gray),identity,True,cosine,unit_columns,30,18,254,320,79.375,82.2,,30,1815.283338716935,5.923769372558086e-14
+aligned_no_equalize,22,CSA-2+LDA,identity,False,euclidean,unit_columns,"(11, 2)",16,215,320,67.1875,84.1,149644309.8364272,22,3643.4563892673655,3.1450336012135215e-14
+aligned_no_equalize,22,CSA-2+LDA,hosvd,False,euclidean,unit_columns,"(11, 2)",16,214,320,66.875,84.1,149644304.3148551,22,3637.922323849523,2.29915043938297e-14
+aligned_no_equalize,22,PCA (Gabor),identity,True,cosine,unit_columns,76,,236,320,73.75,86.6,,,,
+aligned_no_equalize,22,CSA-3,identity,False,cosine,unit_columns,"(15, 1, 26)",,222,320,69.375,94.4,61712237.59156698,,,
+aligned_no_equalize,22,CSA-3,hosvd,False,cosine,unit_columns,"(15, 1, 26)",,222,320,69.375,94.4,61712237.591563225,,,
+aligned_no_equalize,22,PCA+LDA (Gabor),identity,True,cosine,unit_columns,33,25,241,320,75.3125,87.2,,33,5849.192157628172,2.5433000500581024e-13
+aligned_no_equalize,22,CSA-3+LDA,identity,False,cosine,unit_columns,"(4, 2, 3)",23,188,320,58.75,90.9,79302193.84448922,24,6721.419926924218,2.0836351143957075e-14
+aligned_no_equalize,22,CSA-3+LDA,hosvd,False,cosine,unit_columns,"(4, 2, 3)",23,189,320,59.0625,90.9,79301785.7493118,24,6707.278368855941,2.6492441804701764e-14
+resize_no_equalize,20,PCA+LDA (Gray),identity,True,cosine,unit_columns,30,18,272,320,85.0,82.2,,30,415.50409386903397,3.209327843564535e-14
+resize_no_equalize,20,CSA-2+LDA,identity,False,euclidean,unit_columns,"(11, 2)",16,270,320,84.375,84.1,132470119.02919197,22,735.8228426272691,1.069868229612813e-14
+resize_no_equalize,20,CSA-2+LDA,hosvd,False,euclidean,unit_columns,"(11, 2)",16,270,320,84.375,84.1,132470118.9992261,22,735.9149730071782,9.721545798529164e-15
+resize_no_equalize,20,PCA (Gabor),identity,True,cosine,unit_columns,76,,270,320,84.375,86.6,,,,
+resize_no_equalize,20,CSA-3,identity,False,cosine,unit_columns,"(15, 1, 26)",,278,320,86.875,94.4,52561041.377052546,,,
+resize_no_equalize,20,CSA-3,hosvd,False,cosine,unit_columns,"(15, 1, 26)",,278,320,86.875,94.4,52561041.3769573,,,
+resize_no_equalize,20,PCA+LDA (Gabor),identity,True,cosine,unit_columns,33,25,282,320,88.125,87.2,,33,1984.4321927729516,3.2536510036992377e-13
+resize_no_equalize,20,CSA-3+LDA,identity,False,cosine,unit_columns,"(4, 2, 3)",23,245,320,76.5625,90.9,77364044.00026429,24,1741.6365209388846,1.1791223252807649e-14
+resize_no_equalize,20,CSA-3+LDA,hosvd,False,cosine,unit_columns,"(4, 2, 3)",23,251,320,78.4375,90.9,77284142.95872402,24,2600.5937238889537,1.0769417786689973e-14
+resize_no_equalize,21,PCA+LDA (Gray),identity,True,cosine,unit_columns,30,18,264,320,82.5,82.2,,30,700.3500179087139,8.206591108887517e-14
+resize_no_equalize,21,CSA-2+LDA,identity,False,euclidean,unit_columns,"(11, 2)",16,268,320,83.75,84.1,127910114.24568653,22,523.2615457317917,2.4248615885292544e-14
+resize_no_equalize,21,CSA-2+LDA,hosvd,False,euclidean,unit_columns,"(11, 2)",16,268,320,83.75,84.1,127910114.20765924,22,523.2516154145227,2.7453199485753504e-14
+resize_no_equalize,21,PCA (Gabor),identity,True,cosine,unit_columns,76,,263,320,82.1875,86.6,,,,
+resize_no_equalize,21,CSA-3,identity,False,cosine,unit_columns,"(15, 1, 26)",,269,320,84.0625,94.4,53962025.46000594,,,
+resize_no_equalize,21,CSA-3,hosvd,False,cosine,unit_columns,"(15, 1, 26)",,269,320,84.0625,94.4,53962025.45994145,,,
+resize_no_equalize,21,PCA+LDA (Gabor),identity,True,cosine,unit_columns,33,25,276,320,86.25,87.2,,33,1689.4410969474309,1.751071523391078e-13
+resize_no_equalize,21,CSA-3+LDA,identity,False,cosine,unit_columns,"(4, 2, 3)",23,259,320,80.9375,90.9,78255118.61372656,24,1669.489271384447,1.248328290544425e-14
+resize_no_equalize,21,CSA-3+LDA,hosvd,False,cosine,unit_columns,"(4, 2, 3)",23,268,320,83.75,90.9,78241379.15786529,24,1653.9225319300178,2.7481027696449515e-14
+resize_no_equalize,22,PCA+LDA (Gray),identity,True,cosine,unit_columns,30,18,269,320,84.0625,82.2,,30,872.9757768819896,5.3635465502551534e-14
+resize_no_equalize,22,CSA-2+LDA,identity,False,euclidean,unit_columns,"(11, 2)",16,271,320,84.6875,84.1,130423654.57483006,22,429.45821121365077,9.473878467776356e-15
+resize_no_equalize,22,CSA-2+LDA,hosvd,False,euclidean,unit_columns,"(11, 2)",16,271,320,84.6875,84.1,130423654.56920767,22,429.47374122903653,8.023651445195505e-15
+resize_no_equalize,22,PCA (Gabor),identity,True,cosine,unit_columns,76,,281,320,87.8125,86.6,,,,
+resize_no_equalize,22,CSA-3,identity,False,cosine,unit_columns,"(15, 1, 26)",,279,320,87.1875,94.4,53856546.729213655,,,
+resize_no_equalize,22,CSA-3,hosvd,False,cosine,unit_columns,"(15, 1, 26)",,279,320,87.1875,94.4,53856546.72918671,,,
+resize_no_equalize,22,PCA+LDA (Gabor),identity,True,cosine,unit_columns,33,25,284,320,88.75,87.2,,33,521.1798943901633,5.953132927514062e-14
+resize_no_equalize,22,CSA-3+LDA,identity,False,cosine,unit_columns,"(4, 2, 3)",23,232,320,72.5,90.9,80033846.80310768,24,1285.261824748164,1.677265846780246e-14
+resize_no_equalize,22,CSA-3+LDA,hosvd,False,cosine,unit_columns,"(4, 2, 3)",23,237,320,74.0625,90.9,80029139.28316814,24,1602.1362431781274,2.2547377358776812e-14

@@ -1,0 +1,6 @@
+{
+  "objective": "equal mean of CSA2-LDA and CSA3-LDA training CV, fixed original11x2 and4x2x3 ranks, choose legal LDA dimension",
+  "inputs": "reuses all original seven-candidate training-only16fold scores per seed; no outer labels in objective",
+  "shared": "candidate+policy shared by both CSA and both PCA controls",
+  "chronology": "targeted further development after previous outer results, not blind; new choices frozen before own outer scoring"
+}

@@ -1,0 +1,245 @@
+{
+  "wall_seconds": 88.20427500000005,
+  "summary": [
+    {
+      "branch": "teacher_old",
+      "method": "PCA+LDA (Gray)",
+      "mean_percent": 71.97916666666667,
+      "std_pp": 1.2629537138523064,
+      "paper_percent": 82.2,
+      "difference_pp": -10.220833333333331
+    },
+    {
+      "branch": "teacher_old",
+      "method": "CSA-2+LDA",
+      "mean_percent": 66.5625,
+      "std_pp": 3.0777680630612827,
+      "paper_percent": 84.1,
+      "difference_pp": -17.537499999999994
+    },
+    {
+      "branch": "teacher_old",
+      "method": "PCA (Gabor)",
+      "mean_percent": 77.29166666666667,
+      "std_pp": 1.0045469542700995,
+      "paper_percent": 86.6,
+      "difference_pp": -9.308333333333323
+    },
+    {
+      "branch": "teacher_old",
+      "method": "CSA-3",
+      "mean_percent": 77.39583333333333,
+      "std_pp": 3.512440687518201,
+      "paper_percent": 94.4,
+      "difference_pp": -17.004166666666677
+    },
+    {
+      "branch": "teacher_old",
+      "method": "PCA+LDA (Gabor)",
+      "mean_percent": 79.0625,
+      "std_pp": 1.7399263633843818,
+      "paper_percent": 87.2,
+      "difference_pp": -8.137500000000003
+    },
+    {
+      "branch": "teacher_old",
+      "method": "CSA-3+LDA",
+      "mean_percent": 66.77083333333333,
+      "std_pp": 1.8310828990882235,
+      "paper_percent": 90.9,
+      "difference_pp": -24.129166666666677
+    },
+    {
+      "branch": "eyes_only",
+      "method": "PCA+LDA (Gray)",
+      "mean_percent": 72.5,
+      "std_pp": 2.165063509461097,
+      "paper_percent": 82.2,
+      "difference_pp": -9.700000000000003
+    },
+    {
+      "branch": "eyes_only",
+      "method": "CSA-2+LDA",
+      "mean_percent": 66.97916666666667,
+      "std_pp": 2.8009020124476565,
+      "paper_percent": 84.1,
+      "difference_pp": -17.120833333333323
+    },
+    {
+      "branch": "eyes_only",
+      "method": "PCA (Gabor)",
+      "mean_percent": 78.22916666666667,
+      "std_pp": 1.2629537138523064,
+      "paper_percent": 86.6,
+      "difference_pp": -8.370833333333323
+    },
+    {
+      "branch": "eyes_only",
+      "method": "CSA-3",
+      "mean_percent": 77.60416666666667,
+      "std_pp": 3.5539004394233293,
+      "paper_percent": 94.4,
+      "difference_pp": -16.795833333333334
+    },
+    {
+      "branch": "eyes_only",
+      "method": "PCA+LDA (Gabor)",
+      "mean_percent": 79.79166666666667,
+      "std_pp": 2.0807275370248104,
+      "paper_percent": 87.2,
+      "difference_pp": -7.408333333333331
+    },
+    {
+      "branch": "eyes_only",
+      "method": "CSA-3+LDA",
+      "mean_percent": 65.9375,
+      "std_pp": 2.5579227412101404,
+      "paper_percent": 90.9,
+      "difference_pp": -24.962500000000006
+    },
+    {
+      "branch": "geometry_only",
+      "method": "PCA+LDA (Gray)",
+      "mean_percent": 66.77083333333333,
+      "std_pp": 1.183105905375057,
+      "paper_percent": 82.2,
+      "difference_pp": -15.429166666666674
+    },
+    {
+      "branch": "geometry_only",
+      "method": "CSA-2+LDA",
+      "mean_percent": 56.979166666666664,
+      "std_pp": 1.2629537138523064,
+      "paper_percent": 84.1,
+      "difference_pp": -27.12083333333333
+    },
+    {
+      "branch": "geometry_only",
+      "method": "PCA (Gabor)",
+      "mean_percent": 73.54166666666667,
+      "std_pp": 0.9021097956087903,
+      "paper_percent": 86.6,
+      "difference_pp": -13.058333333333323
+    },
+    {
+      "branch": "geometry_only",
+      "method": "CSA-3",
+      "mean_percent": 71.97916666666667,
+      "std_pp": 0.3608439182435161,
+      "paper_percent": 94.4,
+      "difference_pp": -22.420833333333334
+    },
+    {
+      "branch": "geometry_only",
+      "method": "PCA+LDA (Gabor)",
+      "mean_percent": 76.14583333333333,
+      "std_pp": 1.0974639325888271,
+      "paper_percent": 87.2,
+      "difference_pp": -11.054166666666674
+    },
+    {
+      "branch": "geometry_only",
+      "method": "CSA-3+LDA",
+      "mean_percent": 56.770833333333336,
+      "std_pp": 2.1271435267356393,
+      "paper_percent": 90.9,
+      "difference_pp": -34.12916666666667
+    },
+    {
+      "branch": "teacher_revised",
+      "method": "PCA+LDA (Gray)",
+      "mean_percent": 67.91666666666667,
+      "std_pp": 2.1271435267356393,
+      "paper_percent": 82.2,
+      "difference_pp": -14.283333333333331
+    },
+    {
+      "branch": "teacher_revised",
+      "method": "CSA-2+LDA",
+      "mean_percent": 57.604166666666664,
+      "std_pp": 1.7211157960269068,
+      "paper_percent": 84.1,
+      "difference_pp": -26.49583333333333
+    },
+    {
+      "branch": "teacher_revised",
+      "method": "PCA (Gabor)",
+      "mean_percent": 73.85416666666667,
+      "std_pp": 0.6505206248331664,
+      "paper_percent": 86.6,
+      "difference_pp": -12.745833333333323
+    },
+    {
+      "branch": "teacher_revised",
+      "method": "CSA-3",
+      "mean_percent": 71.97916666666667,
+      "std_pp": 0.18042195912175807,
+      "paper_percent": 94.4,
+      "difference_pp": -22.420833333333334
+    },
+    {
+      "branch": "teacher_revised",
+      "method": "PCA+LDA (Gabor)",
+      "mean_percent": 76.66666666666667,
+      "std_pp": 0.47735163489123333,
+      "paper_percent": 87.2,
+      "difference_pp": -10.533333333333331
+    },
+    {
+      "branch": "teacher_revised",
+      "method": "CSA-3+LDA",
+      "mean_percent": 54.895833333333336,
+      "std_pp": 3.5539004394233293,
+      "paper_percent": 90.9,
+      "difference_pp": -36.00416666666667
+    },
+    {
+      "branch": "paper_description",
+      "method": "PCA+LDA (Gray)",
+      "mean_percent": 83.02083333333333,
+      "std_pp": 0.3608439182435161,
+      "paper_percent": 82.2,
+      "difference_pp": 0.8208333333333258
+    },
+    {
+      "branch": "paper_description",
+      "method": "CSA-2+LDA",
+      "mean_percent": 82.39583333333333,
+      "std_pp": 3.621945552232023,
+      "paper_percent": 84.1,
+      "difference_pp": -1.7041666666666657
+    },
+    {
+      "branch": "paper_description",
+      "method": "PCA (Gabor)",
+      "mean_percent": 83.75,
+      "std_pp": 2.049199538844375,
+      "paper_percent": 86.6,
+      "difference_pp": -2.8499999999999943
+    },
+    {
+      "branch": "paper_description",
+      "method": "CSA-3",
+      "mean_percent": 85.3125,
+      "std_pp": 1.9515618744994994,
+      "paper_percent": 94.4,
+      "difference_pp": -9.087500000000006
+    },
+    {
+      "branch": "paper_description",
+      "method": "PCA+LDA (Gabor)",
+      "mean_percent": 86.35416666666667,
+      "std_pp": 2.8182810955143087,
+      "paper_percent": 87.2,
+      "difference_pp": -0.8458333333333314
+    },
+    {
+      "branch": "paper_description",
+      "method": "CSA-3+LDA",
+      "mean_percent": 78.85416666666667,
+      "std_pp": 2.835553664336708,
+      "paper_percent": 90.9,
+      "difference_pp": -12.045833333333334
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "stage": "evaluate",
+  "exit_code": 1,
+  "error": "KeyError: seed; controls.json incorrectly read as CSV",
+  "probe_scores_written": false,
+  "primary_sources_and_models_unchanged": true,
+  "correction": "evaluate_orl_dater.py dispatches JSON controls to existing JSON reader; all scoring and model code unchanged"
+}

@@ -1,0 +1,371 @@
+{
+  "gabor_d4fcff2d7c8d997e.npy": {
+    "specification": {
+      "input_sha256": "d4fcff2d7c8d997ee2319dae7a477a78efd195714f4b8183badac68ea95176e0",
+      "input_shape": [
+        400,
+        56,
+        46
+      ],
+      "step": 2,
+      "gabor": {
+        "wavelengths": [
+          4.0,
+          5.656854249492381,
+          8.000000000000002,
+          11.313708498984763,
+          16.000000000000004
+        ],
+        "orientations": [
+          0.0,
+          0.39269908169872414,
+          0.7853981633974483,
+          1.1780972450961724,
+          1.5707963267948966,
+          1.9634954084936207,
+          2.356194490192345,
+          2.748893571891069
+        ],
+        "sigma": 6.283185307179586,
+        "truncate_sigma": 3,
+        "finite_kernel_zero_mean": true,
+        "boundary": "reflect",
+        "response": "complex_magnitude",
+        "channel_order": "scale_then_orientation",
+        "feature_normalization": "none",
+        "cache_dtype": "float32",
+        "downsample": "response[::step,::step]"
+      },
+      "implementation_sha256": "ceb12f2bfbe82e381375e14a1c60d0a0a4795b91544e7bff02c22e93ac61578f"
+    },
+    "file_sha256": "57e7e9c11fe1b6811b8e4da78c09de9f751e0a7840293e0475f564a9f94fd927"
+  },
+  "gabor_70c6f62ac47d92bd.npy": {
+    "specification": {
+      "input_sha256": "70c6f62ac47d92bd89f2b95182c8bee50d630386922818b12397a0486693ad4f",
+      "input_shape": [
+        400,
+        56,
+        46
+      ],
+      "step": 2,
+      "gabor": {
+        "wavelengths": [
+          4.0,
+          5.656854249492381,
+          8.000000000000002,
+          11.313708498984763,
+          16.000000000000004
+        ],
+        "orientations": [
+          0.0,
+          0.39269908169872414,
+          0.7853981633974483,
+          1.1780972450961724,
+          1.5707963267948966,
+          1.9634954084936207,
+          2.356194490192345,
+          2.748893571891069
+        ],
+        "sigma": 6.283185307179586,
+        "truncate_sigma": 3,
+        "finite_kernel_zero_mean": true,
+        "boundary": "reflect",
+        "response": "complex_magnitude",
+        "channel_order": "scale_then_orientation",
+        "feature_normalization": "none",
+        "cache_dtype": "float32",
+        "downsample": "response[::step,::step]"
+      },
+      "implementation_sha256": "ceb12f2bfbe82e381375e14a1c60d0a0a4795b91544e7bff02c22e93ac61578f"
+    },
+    "file_sha256": "90845a5424b37ed7d7aef5f2353806c89302c3e19a6905972580a3ce57113ca8"
+  },
+  "gabor_3f5663c27e7a83dd.npy": {
+    "specification": {
+      "input_sha256": "3f5663c27e7a83ddc7c1fe22f3ec2a69f6a344477d0e60408eed3b9a17a4bf3c",
+      "input_shape": [
+        400,
+        56,
+        46
+      ],
+      "step": 2,
+      "gabor": {
+        "wavelengths": [
+          4.0,
+          5.656854249492381,
+          8.000000000000002,
+          11.313708498984763,
+          16.000000000000004
+        ],
+        "orientations": [
+          0.0,
+          0.39269908169872414,
+          0.7853981633974483,
+          1.1780972450961724,
+          1.5707963267948966,
+          1.9634954084936207,
+          2.356194490192345,
+          2.748893571891069
+        ],
+        "sigma": 6.283185307179586,
+        "truncate_sigma": 3,
+        "finite_kernel_zero_mean": true,
+        "boundary": "reflect",
+        "response": "complex_magnitude",
+        "channel_order": "scale_then_orientation",
+        "feature_normalization": "none",
+        "cache_dtype": "float32",
+        "downsample": "response[::step,::step]"
+      },
+      "implementation_sha256": "ceb12f2bfbe82e381375e14a1c60d0a0a4795b91544e7bff02c22e93ac61578f"
+    },
+    "file_sha256": "3081268e071d90575ec5afeaf42c5f2241594d536ef433994c139d1f9dd8a94e"
+  },
+  "gabor_f8c41329ff774f7d.npy": {
+    "specification": {
+      "input_sha256": "f8c41329ff774f7deec26b917d8ed2acabf14cda484cefe018a20544c5c7f9e7",
+      "input_shape": [
+        400,
+        56,
+        46
+      ],
+      "step": 2,
+      "gabor": {
+        "wavelengths": [
+          4.0,
+          5.656854249492381,
+          8.000000000000002,
+          11.313708498984763,
+          16.000000000000004
+        ],
+        "orientations": [
+          0.0,
+          0.39269908169872414,
+          0.7853981633974483,
+          1.1780972450961724,
+          1.5707963267948966,
+          1.9634954084936207,
+          2.356194490192345,
+          2.748893571891069
+        ],
+        "sigma": 6.283185307179586,
+        "truncate_sigma": 3,
+        "finite_kernel_zero_mean": true,
+        "boundary": "reflect",
+        "response": "complex_magnitude",
+        "channel_order": "scale_then_orientation",
+        "feature_normalization": "none",
+        "cache_dtype": "float32",
+        "downsample": "response[::step,::step]"
+      },
+      "implementation_sha256": "ceb12f2bfbe82e381375e14a1c60d0a0a4795b91544e7bff02c22e93ac61578f"
+    },
+    "file_sha256": "fabfca2d94104a03d0494b41bbf61021304364d1a94362c6a7b721eaf6fc3ffc"
+  },
+  "gabor_87a3e23664ee102a.npy": {
+    "specification": {
+      "input_sha256": "87a3e23664ee102a289cdcaf577e9250c30c4a98edd455f9bae6cabe654b9443",
+      "input_shape": [
+        400,
+        56,
+        46
+      ],
+      "step": 2,
+      "gabor": {
+        "wavelengths": [
+          4.0,
+          5.656854249492381,
+          8.000000000000002,
+          11.313708498984763,
+          16.000000000000004
+        ],
+        "orientations": [
+          0.0,
+          0.39269908169872414,
+          0.7853981633974483,
+          1.1780972450961724,
+          1.5707963267948966,
+          1.9634954084936207,
+          2.356194490192345,
+          2.748893571891069
+        ],
+        "sigma": 6.283185307179586,
+        "truncate_sigma": 3,
+        "finite_kernel_zero_mean": true,
+        "boundary": "reflect",
+        "response": "complex_magnitude",
+        "channel_order": "scale_then_orientation",
+        "feature_normalization": "none",
+        "cache_dtype": "float32",
+        "downsample": "response[::step,::step]"
+      },
+      "implementation_sha256": "ceb12f2bfbe82e381375e14a1c60d0a0a4795b91544e7bff02c22e93ac61578f"
+    },
+    "file_sha256": "0d91542de07e97887a8bc6d00d2479719e74fd804f9d35c5f99f3abe79ffe4a7"
+  },
+  "gabor_460118003219c71f.npy": {
+    "specification": {
+      "input_sha256": "460118003219c71f6d76326d054bb2d9e078ed228f520daf2410f2b762c0a7a8",
+      "input_shape": [
+        400,
+        56,
+        46
+      ],
+      "step": 2,
+      "gabor": {
+        "wavelengths": [
+          4.0,
+          5.656854249492381,
+          8.000000000000002,
+          11.313708498984763,
+          16.000000000000004
+        ],
+        "orientations": [
+          0.0,
+          0.39269908169872414,
+          0.7853981633974483,
+          1.1780972450961724,
+          1.5707963267948966,
+          1.9634954084936207,
+          2.356194490192345,
+          2.748893571891069
+        ],
+        "sigma": 6.283185307179586,
+        "truncate_sigma": 3,
+        "finite_kernel_zero_mean": true,
+        "boundary": "reflect",
+        "response": "complex_magnitude",
+        "channel_order": "scale_then_orientation",
+        "feature_normalization": "none",
+        "cache_dtype": "float32",
+        "downsample": "response[::step,::step]"
+      },
+      "implementation_sha256": "ceb12f2bfbe82e381375e14a1c60d0a0a4795b91544e7bff02c22e93ac61578f"
+    },
+    "file_sha256": "1a21b14f7f748fc3ab74f10b3386ac6e29f19c6c838456fe070f23bb3968b20a"
+  },
+  "gabor_e58d4584b6203162.npy": {
+    "specification": {
+      "input_sha256": "e58d4584b62031628c53369080aa5dbf70364224f0a381e4f564d85e63c31295",
+      "input_shape": [
+        400,
+        56,
+        46
+      ],
+      "step": 2,
+      "gabor": {
+        "wavelengths": [
+          4.0,
+          5.656854249492381,
+          8.000000000000002,
+          11.313708498984763,
+          16.000000000000004
+        ],
+        "orientations": [
+          0.0,
+          0.39269908169872414,
+          0.7853981633974483,
+          1.1780972450961724,
+          1.5707963267948966,
+          1.9634954084936207,
+          2.356194490192345,
+          2.748893571891069
+        ],
+        "sigma": 6.283185307179586,
+        "truncate_sigma": 3,
+        "finite_kernel_zero_mean": true,
+        "boundary": "reflect",
+        "response": "complex_magnitude",
+        "channel_order": "scale_then_orientation",
+        "feature_normalization": "none",
+        "cache_dtype": "float32",
+        "downsample": "response[::step,::step]"
+      },
+      "implementation_sha256": "ceb12f2bfbe82e381375e14a1c60d0a0a4795b91544e7bff02c22e93ac61578f"
+    },
+    "file_sha256": "f78adf3ae032426013d3940caf1aa29e7df57938ab54a3e86e33a285b33459fb"
+  },
+  "gabor_e63c4e510a1e0325.npy": {
+    "specification": {
+      "input_sha256": "e63c4e510a1e032580f7209005c5c46d77f2000f2464127c57cf571f6ce1bdc4",
+      "input_shape": [
+        400,
+        56,
+        46
+      ],
+      "step": 2,
+      "gabor": {
+        "wavelengths": [
+          4.0,
+          5.656854249492381,
+          8.000000000000002,
+          11.313708498984763,
+          16.000000000000004
+        ],
+        "orientations": [
+          0.0,
+          0.39269908169872414,
+          0.7853981633974483,
+          1.1780972450961724,
+          1.5707963267948966,
+          1.9634954084936207,
+          2.356194490192345,
+          2.748893571891069
+        ],
+        "sigma": 6.283185307179586,
+        "truncate_sigma": 3,
+        "finite_kernel_zero_mean": true,
+        "boundary": "reflect",
+        "response": "complex_magnitude",
+        "channel_order": "scale_then_orientation",
+        "feature_normalization": "none",
+        "cache_dtype": "float32",
+        "downsample": "response[::step,::step]"
+      },
+      "implementation_sha256": "ceb12f2bfbe82e381375e14a1c60d0a0a4795b91544e7bff02c22e93ac61578f"
+    },
+    "file_sha256": "75d00618d20c63928a5790cfbd8c02f0828ccadc896f23b9a10c6d9884e15653"
+  },
+  "gabor_04334742195e95f7.npy": {
+    "specification": {
+      "input_sha256": "04334742195e95f7e421ad32812ef82e809a0993ea0ad1bee23b69f394ac6bb3",
+      "input_shape": [
+        400,
+        56,
+        46
+      ],
+      "step": 2,
+      "gabor": {
+        "wavelengths": [
+          4.0,
+          5.656854249492381,
+          8.000000000000002,
+          11.313708498984763,
+          16.000000000000004
+        ],
+        "orientations": [
+          0.0,
+          0.39269908169872414,
+          0.7853981633974483,
+          1.1780972450961724,
+          1.5707963267948966,
+          1.9634954084936207,
+          2.356194490192345,
+          2.748893571891069
+        ],
+        "sigma": 6.283185307179586,
+        "truncate_sigma": 3,
+        "finite_kernel_zero_mean": true,
+        "boundary": "reflect",
+        "response": "complex_magnitude",
+        "channel_order": "scale_then_orientation",
+        "feature_normalization": "none",
+        "cache_dtype": "float32",
+        "downsample": "response[::step,::step]"
+      },
+      "implementation_sha256": "ceb12f2bfbe82e381375e14a1c60d0a0a4795b91544e7bff02c22e93ac61578f"
+    },
+    "file_sha256": "6a1355e3e64d787713062844c247b1db72516b4dbf0d4c5aa1caed25832a2ec9"
+  }
+}

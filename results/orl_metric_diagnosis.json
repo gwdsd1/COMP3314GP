@@ -1,0 +1,395 @@
+{
+  "scope": "paired protocol sensitivity; no parameter selection; original models untouched",
+  "split_seeds": [
+    0,
+    1,
+    2
+  ],
+  "cosine_origin": "subtract LDA training mean",
+  "results": [
+    {
+      "seed": 0,
+      "center": false,
+      "method": "PCA",
+      "scaling": "sw_identity",
+      "metric": "euclidean",
+      "accuracy": 69.6875
+    },
+    {
+      "seed": 0,
+      "center": false,
+      "method": "PCA",
+      "scaling": "sw_identity",
+      "metric": "cosine",
+      "accuracy": 72.1875
+    },
+    {
+      "seed": 0,
+      "center": false,
+      "method": "PCA",
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "accuracy": 71.25
+    },
+    {
+      "seed": 0,
+      "center": false,
+      "method": "PCA",
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "accuracy": 75.3125
+    },
+    {
+      "seed": 0,
+      "center": false,
+      "method": "CSA",
+      "scaling": "sw_identity",
+      "metric": "euclidean",
+      "accuracy": 78.75
+    },
+    {
+      "seed": 0,
+      "center": false,
+      "method": "CSA",
+      "scaling": "sw_identity",
+      "metric": "cosine",
+      "accuracy": 76.875
+    },
+    {
+      "seed": 0,
+      "center": false,
+      "method": "CSA",
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "accuracy": 81.5625
+    },
+    {
+      "seed": 0,
+      "center": false,
+      "method": "CSA",
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "accuracy": 81.5625
+    },
+    {
+      "seed": 0,
+      "center": true,
+      "method": "PCA",
+      "scaling": "sw_identity",
+      "metric": "euclidean",
+      "accuracy": 70.9375
+    },
+    {
+      "seed": 0,
+      "center": true,
+      "method": "PCA",
+      "scaling": "sw_identity",
+      "metric": "cosine",
+      "accuracy": 71.5625
+    },
+    {
+      "seed": 0,
+      "center": true,
+      "method": "PCA",
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "accuracy": 76.5625
+    },
+    {
+      "seed": 0,
+      "center": true,
+      "method": "PCA",
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "accuracy": 82.8125
+    },
+    {
+      "seed": 0,
+      "center": true,
+      "method": "CSA",
+      "scaling": "sw_identity",
+      "metric": "euclidean",
+      "accuracy": 77.8125
+    },
+    {
+      "seed": 0,
+      "center": true,
+      "method": "CSA",
+      "scaling": "sw_identity",
+      "metric": "cosine",
+      "accuracy": 76.875
+    },
+    {
+      "seed": 0,
+      "center": true,
+      "method": "CSA",
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "accuracy": 80.625
+    },
+    {
+      "seed": 0,
+      "center": true,
+      "method": "CSA",
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "accuracy": 80.9375
+    },
+    {
+      "seed": 1,
+      "center": false,
+      "method": "PCA",
+      "scaling": "sw_identity",
+      "metric": "euclidean",
+      "accuracy": 66.25
+    },
+    {
+      "seed": 1,
+      "center": false,
+      "method": "PCA",
+      "scaling": "sw_identity",
+      "metric": "cosine",
+      "accuracy": 75.0
+    },
+    {
+      "seed": 1,
+      "center": false,
+      "method": "PCA",
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "accuracy": 73.75
+    },
+    {
+      "seed": 1,
+      "center": false,
+      "method": "PCA",
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "accuracy": 78.4375
+    },
+    {
+      "seed": 1,
+      "center": false,
+      "method": "CSA",
+      "scaling": "sw_identity",
+      "metric": "euclidean",
+      "accuracy": 78.125
+    },
+    {
+      "seed": 1,
+      "center": false,
+      "method": "CSA",
+      "scaling": "sw_identity",
+      "metric": "cosine",
+      "accuracy": 78.125
+    },
+    {
+      "seed": 1,
+      "center": false,
+      "method": "CSA",
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "accuracy": 81.875
+    },
+    {
+      "seed": 1,
+      "center": false,
+      "method": "CSA",
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "accuracy": 82.1875
+    },
+    {
+      "seed": 1,
+      "center": true,
+      "method": "PCA",
+      "scaling": "sw_identity",
+      "metric": "euclidean",
+      "accuracy": 69.375
+    },
+    {
+      "seed": 1,
+      "center": true,
+      "method": "PCA",
+      "scaling": "sw_identity",
+      "metric": "cosine",
+      "accuracy": 74.6875
+    },
+    {
+      "seed": 1,
+      "center": true,
+      "method": "PCA",
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "accuracy": 75.9375
+    },
+    {
+      "seed": 1,
+      "center": true,
+      "method": "PCA",
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "accuracy": 84.0625
+    },
+    {
+      "seed": 1,
+      "center": true,
+      "method": "CSA",
+      "scaling": "sw_identity",
+      "metric": "euclidean",
+      "accuracy": 75.9375
+    },
+    {
+      "seed": 1,
+      "center": true,
+      "method": "CSA",
+      "scaling": "sw_identity",
+      "metric": "cosine",
+      "accuracy": 76.5625
+    },
+    {
+      "seed": 1,
+      "center": true,
+      "method": "CSA",
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "accuracy": 77.1875
+    },
+    {
+      "seed": 1,
+      "center": true,
+      "method": "CSA",
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "accuracy": 79.0625
+    },
+    {
+      "seed": 2,
+      "center": false,
+      "method": "PCA",
+      "scaling": "sw_identity",
+      "metric": "euclidean",
+      "accuracy": 73.125
+    },
+    {
+      "seed": 2,
+      "center": false,
+      "method": "PCA",
+      "scaling": "sw_identity",
+      "metric": "cosine",
+      "accuracy": 71.5625
+    },
+    {
+      "seed": 2,
+      "center": false,
+      "method": "PCA",
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "accuracy": 69.0625
+    },
+    {
+      "seed": 2,
+      "center": false,
+      "method": "PCA",
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "accuracy": 75.625
+    },
+    {
+      "seed": 2,
+      "center": false,
+      "method": "CSA",
+      "scaling": "sw_identity",
+      "metric": "euclidean",
+      "accuracy": 77.8125
+    },
+    {
+      "seed": 2,
+      "center": false,
+      "method": "CSA",
+      "scaling": "sw_identity",
+      "metric": "cosine",
+      "accuracy": 78.4375
+    },
+    {
+      "seed": 2,
+      "center": false,
+      "method": "CSA",
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "accuracy": 77.1875
+    },
+    {
+      "seed": 2,
+      "center": false,
+      "method": "CSA",
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "accuracy": 78.4375
+    },
+    {
+      "seed": 2,
+      "center": true,
+      "method": "PCA",
+      "scaling": "sw_identity",
+      "metric": "euclidean",
+      "accuracy": 70.3125
+    },
+    {
+      "seed": 2,
+      "center": true,
+      "method": "PCA",
+      "scaling": "sw_identity",
+      "metric": "cosine",
+      "accuracy": 71.875
+    },
+    {
+      "seed": 2,
+      "center": true,
+      "method": "PCA",
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "accuracy": 72.8125
+    },
+    {
+      "seed": 2,
+      "center": true,
+      "method": "PCA",
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "accuracy": 76.875
+    },
+    {
+      "seed": 2,
+      "center": true,
+      "method": "CSA",
+      "scaling": "sw_identity",
+      "metric": "euclidean",
+      "accuracy": 76.25
+    },
+    {
+      "seed": 2,
+      "center": true,
+      "method": "CSA",
+      "scaling": "sw_identity",
+      "metric": "cosine",
+      "accuracy": 77.8125
+    },
+    {
+      "seed": 2,
+      "center": true,
+      "method": "CSA",
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "accuracy": 75.625
+    },
+    {
+      "seed": 2,
+      "center": true,
+      "method": "CSA",
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "accuracy": 78.125
+    }
+  ]
+}

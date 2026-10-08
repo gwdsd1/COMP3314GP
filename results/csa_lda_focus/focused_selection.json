@@ -1,0 +1,202 @@
+[
+  {
+    "seed": 20,
+    "candidate": "yunet_d20_replicate_fixed39_zero",
+    "policy": "unit_columns_cosine_centered",
+    "inner_correct_sum": 99,
+    "methods": [
+      {
+        "method": "CSA-2+LDA",
+        "case_index": "1",
+        "dimension": "10",
+        "correct": "41"
+      },
+      {
+        "method": "CSA-3+LDA",
+        "case_index": "7",
+        "dimension": "24",
+        "correct": "58"
+      }
+    ]
+  },
+  {
+    "seed": 21,
+    "candidate": "yunet_d16_replicate_fixed39_zero",
+    "policy": "unit_columns_cosine_centered",
+    "inner_correct_sum": 124,
+    "methods": [
+      {
+        "method": "CSA-2+LDA",
+        "case_index": "1",
+        "dimension": "22",
+        "correct": "58"
+      },
+      {
+        "method": "CSA-3+LDA",
+        "case_index": "7",
+        "dimension": "24",
+        "correct": "66"
+      }
+    ]
+  },
+  {
+    "seed": 22,
+    "candidate": "yunet_d18_zero_adaptive_zero",
+    "policy": "unit_columns_cosine_centered",
+    "inner_correct_sum": 102,
+    "methods": [
+      {
+        "method": "CSA-2+LDA",
+        "case_index": "1",
+        "dimension": "13",
+        "correct": "50"
+      },
+      {
+        "method": "CSA-3+LDA",
+        "case_index": "7",
+        "dimension": "23",
+        "correct": "52"
+      }
+    ]
+  },
+  {
+    "seed": 23,
+    "candidate": "yunet_d22_zero_adaptive_zero",
+    "policy": "unit_columns_cosine_centered",
+    "inner_correct_sum": 114,
+    "methods": [
+      {
+        "method": "CSA-2+LDA",
+        "case_index": "1",
+        "dimension": "16",
+        "correct": "57"
+      },
+      {
+        "method": "CSA-3+LDA",
+        "case_index": "7",
+        "dimension": "19",
+        "correct": "57"
+      }
+    ]
+  },
+  {
+    "seed": 24,
+    "candidate": "haar_v2_d16_replicate_adaptive_zero",
+    "policy": "unit_columns_cosine_centered",
+    "inner_correct_sum": 96,
+    "methods": [
+      {
+        "method": "CSA-2+LDA",
+        "case_index": "1",
+        "dimension": "21",
+        "correct": "49"
+      },
+      {
+        "method": "CSA-3+LDA",
+        "case_index": "7",
+        "dimension": "15",
+        "correct": "47"
+      }
+    ]
+  },
+  {
+    "seed": 25,
+    "candidate": "yunet_d22_zero_fixed39_zero",
+    "policy": "unit_columns_cosine_centered",
+    "inner_correct_sum": 117,
+    "methods": [
+      {
+        "method": "CSA-2+LDA",
+        "case_index": "1",
+        "dimension": "14",
+        "correct": "54"
+      },
+      {
+        "method": "CSA-3+LDA",
+        "case_index": "7",
+        "dimension": "13",
+        "correct": "63"
+      }
+    ]
+  },
+  {
+    "seed": 26,
+    "candidate": "yunet_d16_replicate_fixed39_zero",
+    "policy": "unit_columns_cosine_centered",
+    "inner_correct_sum": 110,
+    "methods": [
+      {
+        "method": "CSA-2+LDA",
+        "case_index": "1",
+        "dimension": "22",
+        "correct": "56"
+      },
+      {
+        "method": "CSA-3+LDA",
+        "case_index": "7",
+        "dimension": "19",
+        "correct": "54"
+      }
+    ]
+  },
+  {
+    "seed": 27,
+    "candidate": "yunet_d16_replicate_fixed39_zero",
+    "policy": "unit_columns_cosine_centered",
+    "inner_correct_sum": 106,
+    "methods": [
+      {
+        "method": "CSA-2+LDA",
+        "case_index": "1",
+        "dimension": "18",
+        "correct": "56"
+      },
+      {
+        "method": "CSA-3+LDA",
+        "case_index": "7",
+        "dimension": "20",
+        "correct": "50"
+      }
+    ]
+  },
+  {
+    "seed": 28,
+    "candidate": "yunet_d18_replicate_adaptive_zero",
+    "policy": "unit_columns_cosine_centered",
+    "inner_correct_sum": 125,
+    "methods": [
+      {
+        "method": "CSA-2+LDA",
+        "case_index": "1",
+        "dimension": "22",
+        "correct": "61"
+      },
+      {
+        "method": "CSA-3+LDA",
+        "case_index": "7",
+        "dimension": "17",
+        "correct": "64"
+      }
+    ]
+  },
+  {
+    "seed": 29,
+    "candidate": "yunet_d22_zero_fixed39_zero",
+    "policy": "unit_columns_cosine_centered",
+    "inner_correct_sum": 107,
+    "methods": [
+      {
+        "method": "CSA-2+LDA",
+        "case_index": "1",
+        "dimension": "22",
+        "correct": "51"
+      },
+      {
+        "method": "CSA-3+LDA",
+        "case_index": "7",
+        "dimension": "21",
+        "correct": "56"
+      }
+    ]
+  }
+]

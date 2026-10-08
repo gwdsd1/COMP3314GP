@@ -1,0 +1,6 @@
+{
+  "outer_fits": 320,
+  "prediction_records": 102400,
+  "elapsed_seconds": 106.33571159999974,
+  "BLAS_threads": 2
+}

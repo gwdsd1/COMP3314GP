@@ -1,0 +1,21 @@
+{
+  "completed": "2026-10-08",
+  "new_DATER_models": 20,
+  "reused_control_models": 40,
+  "score_rows": 120,
+  "probe_records_checked": 38400,
+  "results_are_negative": true,
+  "sha256": {
+    "results\\orl_dater\\summary.csv": "3c7fc240ffaa7c014f9b0e4cce5243d9ea3157a8c8cca36a8869327ca73883b4",
+    "results\\orl_dater\\summary.json": "42d52e4f6738a5aa93bd0b32b342fe9f913752e29d7a8b9ac0132d1a06fc9e02",
+    "results\\orl_dater\\paired_changes.csv": "87f977514e4228a6459cf526ff8e557ade64799226161ae683272724054b697f",
+    "results\\orl_dater\\training_summary.json": "066ab0e30e1d8e1250f92c1a062f92f49263c009292896b7e1df6e535ceca6a3",
+    "results\\orl_dater\\comparison.png": "cd0f320112ea1f07206f2cb1cbe672633710cf7571c746089c6355db6cceea6e",
+    "results\\orl_dater\\verification.json": "6361bdb9ed312a5d58a7674558df1cf3af5c6d050dd75e23c5191900ad07b3a5",
+    "results\\orl_dater\\supplementary_readback.json": "56eabef4b7a2d22c5252a04734fd63fc1eec0459e54ce86b656d9f579c0408bf",
+    "results\\orl_dater\\evaluation_execution.json": "06bcb56548c66ff44696a3ea2741c96f608a845e7a6e45690ba69592a3f1d774",
+    "results\\orl_dater\\verification_freeze.json": "d737968ce2ba16ce6bde6e35fab8d1b0a72db6c623700953773120d8ec6006d5",
+    "results\\orl_dater\\evaluation_adapter_freeze.json": "15f8b9de36d069fdb883e209272d153a07615a49a4ddc7e278576ee3eafdf2c5",
+    "results\\orl_dater\\score_freeze.json": "4fa92591d620b51bcac75c8eff824893772a85f8b1fee8eeb00177df49ac3a16"
+  }
+}

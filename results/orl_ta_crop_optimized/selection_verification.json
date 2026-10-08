@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "candidate_rows_checked": 280,
+  "validation_prediction_records_checked": 22400,
+  "selected_CV_independent_refits": 304,
+  "max_CSA_projector_abs_error": 2.1593837828959295e-14,
+  "max_Fisher_relative_residual": 2.1872900898029808e-13,
+  "own_gallery_only": true,
+  "all_frozen_hashes_unchanged": true
+}

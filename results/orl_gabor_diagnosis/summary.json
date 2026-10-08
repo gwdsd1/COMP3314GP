@@ -1,0 +1,677 @@
+{
+  "wall_seconds": 131.50841020000007,
+  "summary": [
+    {
+      "branch": "eyes_only",
+      "feature_variant": "baseline",
+      "method": "CSA-3",
+      "model_variant": "default",
+      "mean_percent": 77.60416666666667,
+      "std_pp": 3.5539004394233293
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "baseline",
+      "method": "PCA (Gabor)",
+      "model_variant": "default",
+      "mean_percent": 78.22916666666667,
+      "std_pp": 1.2629537138523064
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "baseline",
+      "method": "CSA-3+LDA",
+      "model_variant": "default",
+      "mean_percent": 65.9375,
+      "std_pp": 2.5579227412101404
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "baseline",
+      "method": "CSA-3",
+      "model_variant": "centered",
+      "mean_percent": 77.5,
+      "std_pp": 2.7775607554111215
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "baseline",
+      "method": "CSA-3",
+      "model_variant": "euclidean",
+      "mean_percent": 77.29166666666667,
+      "std_pp": 3.3414614442386332
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "baseline",
+      "method": "CSA-3",
+      "model_variant": "iterations10",
+      "mean_percent": 77.60416666666667,
+      "std_pp": 3.5539004394233293
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "baseline",
+      "method": "CSA-3+LDA",
+      "model_variant": "unit_columns_euclidean",
+      "mean_percent": 63.958333333333336,
+      "std_pp": 2.345485468582855
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "baseline",
+      "method": "CSA-3+LDA",
+      "model_variant": "sw_identity_cosine",
+      "mean_percent": 63.958333333333336,
+      "std_pp": 4.242794136336729
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "baseline",
+      "method": "CSA-3+LDA",
+      "model_variant": "sw_identity_euclidean",
+      "mean_percent": 63.125,
+      "std_pp": 3.4374999999999964
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "zero_boundary",
+      "method": "CSA-3",
+      "model_variant": "default",
+      "mean_percent": 83.64583333333333,
+      "std_pp": 2.303473373697498
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "zero_boundary",
+      "method": "PCA (Gabor)",
+      "model_variant": "default",
+      "mean_percent": 80.3125,
+      "std_pp": 2.8641098093474
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "zero_boundary",
+      "method": "CSA-3+LDA",
+      "model_variant": "default",
+      "mean_percent": 74.27083333333333,
+      "std_pp": 3.8188130791298667
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "wrap_boundary",
+      "method": "CSA-3",
+      "model_variant": "default",
+      "mean_percent": 75.41666666666667,
+      "std_pp": 3.0671733050698866
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "wrap_boundary",
+      "method": "PCA (Gabor)",
+      "model_variant": "default",
+      "mean_percent": 78.75,
+      "std_pp": 1.4320549046737
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "wrap_boundary",
+      "method": "CSA-3+LDA",
+      "model_variant": "default",
+      "mean_percent": 66.14583333333333,
+      "std_pp": 1.301041249666333
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "fixed39_support",
+      "method": "CSA-3",
+      "model_variant": "default",
+      "mean_percent": 81.04166666666667,
+      "std_pp": 2.0807275370248104
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "fixed39_support",
+      "method": "PCA (Gabor)",
+      "model_variant": "default",
+      "mean_percent": 81.14583333333333,
+      "std_pp": 1.2629537138523064
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "fixed39_support",
+      "method": "CSA-3+LDA",
+      "model_variant": "default",
+      "mean_percent": 71.25,
+      "std_pp": 2.4803918541230536
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "wavelength2",
+      "method": "CSA-3",
+      "model_variant": "default",
+      "mean_percent": 78.4375,
+      "std_pp": 3.1715286140913186
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "wavelength2",
+      "method": "PCA (Gabor)",
+      "model_variant": "default",
+      "mean_percent": 78.22916666666667,
+      "std_pp": 1.183105905375057
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "wavelength2",
+      "method": "CSA-3+LDA",
+      "model_variant": "default",
+      "mean_percent": 67.39583333333333,
+      "std_pp": 4.8847392032055685
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "sigma_pi",
+      "method": "CSA-3",
+      "model_variant": "default",
+      "mean_percent": 83.125,
+      "std_pp": 1.653594569415369
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "sigma_pi",
+      "method": "PCA (Gabor)",
+      "model_variant": "default",
+      "mean_percent": 81.04166666666667,
+      "std_pp": 1.0045469542700995
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "sigma_pi",
+      "method": "CSA-3+LDA",
+      "model_variant": "default",
+      "mean_percent": 75.72916666666667,
+      "std_pp": 2.345485468582855
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "jet_l2",
+      "method": "CSA-3",
+      "model_variant": "default",
+      "mean_percent": 77.39583333333333,
+      "std_pp": 2.545164942264712
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "jet_l2",
+      "method": "PCA (Gabor)",
+      "model_variant": "default",
+      "mean_percent": 77.91666666666667,
+      "std_pp": 1.2629537138523064
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "jet_l2",
+      "method": "CSA-3+LDA",
+      "model_variant": "default",
+      "mean_percent": 60.625,
+      "std_pp": 1.0825317547305524
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "sqrt_response",
+      "method": "CSA-3",
+      "model_variant": "default",
+      "mean_percent": 80.20833333333333,
+      "std_pp": 1.7769502197116647
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "sqrt_response",
+      "method": "PCA (Gabor)",
+      "model_variant": "default",
+      "mean_percent": 81.66666666666667,
+      "std_pp": 2.8182810955143087
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "sqrt_response",
+      "method": "CSA-3+LDA",
+      "model_variant": "default",
+      "mean_percent": 71.77083333333333,
+      "std_pp": 2.366211810750114
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "offset11",
+      "method": "CSA-3",
+      "model_variant": "default",
+      "mean_percent": 78.02083333333333,
+      "std_pp": 3.8188130791298667
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "offset11",
+      "method": "PCA (Gabor)",
+      "model_variant": "default",
+      "mean_percent": 77.5,
+      "std_pp": 1.0825317547305484
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "offset11",
+      "method": "CSA-3+LDA",
+      "model_variant": "default",
+      "mean_percent": 66.45833333333333,
+      "std_pp": 1.301041249666333
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "mean_pool2",
+      "method": "CSA-3",
+      "model_variant": "default",
+      "mean_percent": 77.8125,
+      "std_pp": 3.684320663297374
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "mean_pool2",
+      "method": "PCA (Gabor)",
+      "model_variant": "default",
+      "mean_percent": 78.02083333333333,
+      "std_pp": 1.301041249666333
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "mean_pool2",
+      "method": "CSA-3+LDA",
+      "model_variant": "default",
+      "mean_percent": 66.77083333333333,
+      "std_pp": 1.8310828990882235
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "tensor_l2",
+      "method": "CSA-3",
+      "model_variant": "default",
+      "mean_percent": 77.70833333333333,
+      "std_pp": 3.7282354517027665
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "tensor_l2",
+      "method": "PCA (Gabor)",
+      "model_variant": "default",
+      "mean_percent": 78.85416666666667,
+      "std_pp": 1.9846415503393386
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "tensor_l2",
+      "method": "CSA-3+LDA",
+      "model_variant": "default",
+      "mean_percent": 66.25,
+      "std_pp": 0.5412658773652742
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "train_channel_rms",
+      "method": "CSA-3",
+      "model_variant": "default",
+      "mean_percent": 80.20833333333333,
+      "std_pp": 1.5728821740147396
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "train_channel_rms",
+      "method": "PCA (Gabor)",
+      "model_variant": "default",
+      "mean_percent": 81.5625,
+      "std_pp": 2.8641098093474
+    },
+    {
+      "branch": "eyes_only",
+      "feature_variant": "train_channel_rms",
+      "method": "CSA-3+LDA",
+      "model_variant": "default",
+      "mean_percent": 68.85416666666667,
+      "std_pp": 1.9846415503393386
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "baseline",
+      "method": "CSA-3",
+      "model_variant": "default",
+      "mean_percent": 85.3125,
+      "std_pp": 1.9515618744994994
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "baseline",
+      "method": "PCA (Gabor)",
+      "model_variant": "default",
+      "mean_percent": 83.75,
+      "std_pp": 2.049199538844375
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "baseline",
+      "method": "CSA-3+LDA",
+      "model_variant": "default",
+      "mean_percent": 78.85416666666667,
+      "std_pp": 2.835553664336708
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "baseline",
+      "method": "CSA-3",
+      "model_variant": "centered",
+      "mean_percent": 85.0,
+      "std_pp": 3.549317716125171
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "baseline",
+      "method": "CSA-3",
+      "model_variant": "euclidean",
+      "mean_percent": 83.75,
+      "std_pp": 3.1715286140913186
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "baseline",
+      "method": "CSA-3",
+      "model_variant": "iterations10",
+      "mean_percent": 85.3125,
+      "std_pp": 1.9515618744994994
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "baseline",
+      "method": "CSA-3+LDA",
+      "model_variant": "unit_columns_euclidean",
+      "mean_percent": 77.60416666666667,
+      "std_pp": 1.5415258944738273
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "baseline",
+      "method": "CSA-3+LDA",
+      "model_variant": "sw_identity_cosine",
+      "mean_percent": 74.79166666666667,
+      "std_pp": 2.506501961565826
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "baseline",
+      "method": "CSA-3+LDA",
+      "model_variant": "sw_identity_euclidean",
+      "mean_percent": 74.58333333333333,
+      "std_pp": 3.145764348029479
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "zero_boundary",
+      "method": "CSA-3",
+      "model_variant": "default",
+      "mean_percent": 87.39583333333333,
+      "std_pp": 0.3608439182435161
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "zero_boundary",
+      "method": "PCA (Gabor)",
+      "model_variant": "default",
+      "mean_percent": 87.91666666666667,
+      "std_pp": 1.721115796026907
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "zero_boundary",
+      "method": "CSA-3+LDA",
+      "model_variant": "default",
+      "mean_percent": 85.625,
+      "std_pp": 3.8017265814363874
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "wrap_boundary",
+      "method": "CSA-3",
+      "model_variant": "default",
+      "mean_percent": 84.58333333333333,
+      "std_pp": 2.657781421286057
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "wrap_boundary",
+      "method": "PCA (Gabor)",
+      "model_variant": "default",
+      "mean_percent": 87.8125,
+      "std_pp": 2.1875
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "wrap_boundary",
+      "method": "CSA-3+LDA",
+      "model_variant": "default",
+      "mean_percent": 79.375,
+      "std_pp": 0.3125
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "fixed39_support",
+      "method": "CSA-3",
+      "model_variant": "default",
+      "mean_percent": 91.77083333333333,
+      "std_pp": 0.3608439182435161
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "fixed39_support",
+      "method": "PCA (Gabor)",
+      "model_variant": "default",
+      "mean_percent": 87.1875,
+      "std_pp": 2.7775607554111215
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "fixed39_support",
+      "method": "CSA-3+LDA",
+      "model_variant": "default",
+      "mean_percent": 84.16666666666667,
+      "std_pp": 4.8445899809306185
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "wavelength2",
+      "method": "CSA-3",
+      "model_variant": "default",
+      "mean_percent": 90.72916666666667,
+      "std_pp": 2.217062151436746
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "wavelength2",
+      "method": "PCA (Gabor)",
+      "model_variant": "default",
+      "mean_percent": 86.14583333333333,
+      "std_pp": 2.657781421286057
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "wavelength2",
+      "method": "CSA-3+LDA",
+      "model_variant": "default",
+      "mean_percent": 81.45833333333333,
+      "std_pp": 1.183105905375057
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "sigma_pi",
+      "method": "CSA-3",
+      "model_variant": "default",
+      "mean_percent": 90.52083333333333,
+      "std_pp": 2.620780338626901
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "sigma_pi",
+      "method": "PCA (Gabor)",
+      "model_variant": "default",
+      "mean_percent": 86.5625,
+      "std_pp": 2.1875
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "sigma_pi",
+      "method": "CSA-3+LDA",
+      "model_variant": "default",
+      "mean_percent": 86.875,
+      "std_pp": 1.9515618744994994
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "jet_l2",
+      "method": "CSA-3",
+      "model_variant": "default",
+      "mean_percent": 83.125,
+      "std_pp": 3.0777680630612827
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "jet_l2",
+      "method": "PCA (Gabor)",
+      "model_variant": "default",
+      "mean_percent": 85.10416666666667,
+      "std_pp": 0.9547032697824668
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "jet_l2",
+      "method": "CSA-3+LDA",
+      "model_variant": "default",
+      "mean_percent": 71.14583333333333,
+      "std_pp": 2.386758174456167
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "sqrt_response",
+      "method": "CSA-3",
+      "model_variant": "default",
+      "mean_percent": 87.39583333333333,
+      "std_pp": 2.1271435267356393
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "sqrt_response",
+      "method": "PCA (Gabor)",
+      "model_variant": "default",
+      "mean_percent": 86.875,
+      "std_pp": 2.359323261022109
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "sqrt_response",
+      "method": "CSA-3+LDA",
+      "model_variant": "default",
+      "mean_percent": 82.1875,
+      "std_pp": 3.915613776919271
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "offset11",
+      "method": "CSA-3",
+      "model_variant": "default",
+      "mean_percent": 85.10416666666667,
+      "std_pp": 1.883660554169284
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "offset11",
+      "method": "PCA (Gabor)",
+      "model_variant": "default",
+      "mean_percent": 83.75,
+      "std_pp": 2.049199538844375
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "offset11",
+      "method": "CSA-3+LDA",
+      "model_variant": "default",
+      "mean_percent": 80.0,
+      "std_pp": 3.915613776919271
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "mean_pool2",
+      "method": "CSA-3",
+      "model_variant": "default",
+      "mean_percent": 85.0,
+      "std_pp": 2.049199538844375
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "mean_pool2",
+      "method": "PCA (Gabor)",
+      "model_variant": "default",
+      "mean_percent": 83.54166666666667,
+      "std_pp": 2.0807275370248104
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "mean_pool2",
+      "method": "CSA-3+LDA",
+      "model_variant": "default",
+      "mean_percent": 79.6875,
+      "std_pp": 2.981060004427955
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "tensor_l2",
+      "method": "CSA-3",
+      "model_variant": "default",
+      "mean_percent": 85.10416666666667,
+      "std_pp": 2.303473373697498
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "tensor_l2",
+      "method": "PCA (Gabor)",
+      "model_variant": "default",
+      "mean_percent": 84.27083333333333,
+      "std_pp": 1.5415258944738273
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "tensor_l2",
+      "method": "CSA-3+LDA",
+      "model_variant": "default",
+      "mean_percent": 78.54166666666667,
+      "std_pp": 0.47735163489123333
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "train_channel_rms",
+      "method": "CSA-3",
+      "model_variant": "default",
+      "mean_percent": 88.4375,
+      "std_pp": 1.3621559198564606
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "train_channel_rms",
+      "method": "PCA (Gabor)",
+      "model_variant": "default",
+      "mean_percent": 87.60416666666667,
+      "std_pp": 2.8009020124476565
+    },
+    {
+      "branch": "paper_description",
+      "feature_variant": "train_channel_rms",
+      "method": "CSA-3+LDA",
+      "model_variant": "default",
+      "mean_percent": 82.29166666666667,
+      "std_pp": 1.4091405477571546
+    }
+  ]
+}

@@ -1,0 +1,822 @@
+[
+  {
+    "seed": 10,
+    "method": "PCA+LDA",
+    "level": "original_default",
+    "config": {
+      "method": "PCA+LDA",
+      "profile": "bilinear_pillow",
+      "center": false,
+      "pre_dims": 30,
+      "init": "svd",
+      "max_iter": 0,
+      "lda_dim": 18,
+      "scaling": "sw_identity",
+      "metric": "euclidean",
+      "origin": "train_mean"
+    },
+    "validation_percent": 72.5,
+    "test_percent": 71.25
+  },
+  {
+    "seed": 10,
+    "method": "PCA+LDA",
+    "level": "plausible_fixed",
+    "config": {
+      "method": "PCA+LDA",
+      "profile": "bilinear_pillow",
+      "center": true,
+      "pre_dims": 30,
+      "init": "svd",
+      "max_iter": 0,
+      "lda_dim": 18,
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "origin": "train_mean"
+    },
+    "validation_percent": 81.25,
+    "test_percent": 80.83333333333333
+  },
+  {
+    "seed": 10,
+    "method": "PCA+LDA",
+    "level": "protocol_selected",
+    "config": {
+      "method": "PCA+LDA",
+      "profile": "lanczos_pillow",
+      "center": true,
+      "pre_dims": 30,
+      "init": "svd",
+      "max_iter": 0,
+      "lda_dim": 18,
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "origin": "train_mean"
+    },
+    "validation_percent": 85.0,
+    "test_percent": 82.5
+  },
+  {
+    "seed": 10,
+    "method": "PCA+LDA",
+    "level": "grid_selected",
+    "config": {
+      "method": "PCA+LDA",
+      "profile": "bilinear_cdf_min256",
+      "center": false,
+      "pre_dims": 30,
+      "init": "svd",
+      "max_iter": 0,
+      "lda_dim": 30,
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "origin": "train_mean"
+    },
+    "validation_percent": 85.0,
+    "test_percent": 82.5
+  },
+  {
+    "seed": 10,
+    "method": "CSA-2+LDA",
+    "level": "original_default",
+    "config": {
+      "method": "CSA-2+LDA",
+      "profile": "bilinear_pillow",
+      "center": false,
+      "pre_dims": [
+        11,
+        2
+      ],
+      "init": "identity",
+      "max_iter": 3,
+      "lda_dim": 16,
+      "scaling": "sw_identity",
+      "metric": "euclidean",
+      "origin": "train_mean"
+    },
+    "validation_percent": 77.5,
+    "test_percent": 77.5
+  },
+  {
+    "seed": 10,
+    "method": "CSA-2+LDA",
+    "level": "plausible_fixed",
+    "config": {
+      "method": "CSA-2+LDA",
+      "profile": "bilinear_pillow",
+      "center": true,
+      "pre_dims": [
+        11,
+        2
+      ],
+      "init": "identity",
+      "max_iter": 3,
+      "lda_dim": 16,
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "origin": "train_mean"
+    },
+    "validation_percent": 83.75,
+    "test_percent": 77.91666666666667
+  },
+  {
+    "seed": 10,
+    "method": "CSA-2+LDA",
+    "level": "protocol_selected",
+    "config": {
+      "method": "CSA-2+LDA",
+      "profile": "lanczos_cdf_min256",
+      "center": true,
+      "pre_dims": [
+        11,
+        2
+      ],
+      "init": "identity",
+      "max_iter": 3,
+      "lda_dim": 16,
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "origin": "train_mean"
+    },
+    "validation_percent": 85.0,
+    "test_percent": 77.91666666666667
+  },
+  {
+    "seed": 10,
+    "method": "CSA-2+LDA",
+    "level": "grid_selected",
+    "config": {
+      "method": "CSA-2+LDA",
+      "profile": "lanczos_pillow",
+      "center": true,
+      "pre_dims": [
+        10,
+        4
+      ],
+      "init": "identity",
+      "max_iter": 3,
+      "lda_dim": 30,
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "origin": "train_mean"
+    },
+    "validation_percent": 86.25,
+    "test_percent": 76.25
+  },
+  {
+    "seed": 11,
+    "method": "PCA+LDA",
+    "level": "original_default",
+    "config": {
+      "method": "PCA+LDA",
+      "profile": "bilinear_pillow",
+      "center": false,
+      "pre_dims": 30,
+      "init": "svd",
+      "max_iter": 0,
+      "lda_dim": 18,
+      "scaling": "sw_identity",
+      "metric": "euclidean",
+      "origin": "train_mean"
+    },
+    "validation_percent": 72.5,
+    "test_percent": 75.0
+  },
+  {
+    "seed": 11,
+    "method": "PCA+LDA",
+    "level": "plausible_fixed",
+    "config": {
+      "method": "PCA+LDA",
+      "profile": "bilinear_pillow",
+      "center": true,
+      "pre_dims": 30,
+      "init": "svd",
+      "max_iter": 0,
+      "lda_dim": 18,
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "origin": "train_mean"
+    },
+    "validation_percent": 82.5,
+    "test_percent": 82.5
+  },
+  {
+    "seed": 11,
+    "method": "PCA+LDA",
+    "level": "protocol_selected",
+    "config": {
+      "method": "PCA+LDA",
+      "profile": "bilinear_cdf_min256",
+      "center": true,
+      "pre_dims": 30,
+      "init": "svd",
+      "max_iter": 0,
+      "lda_dim": 18,
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "origin": "train_mean"
+    },
+    "validation_percent": 83.75,
+    "test_percent": 82.5
+  },
+  {
+    "seed": 11,
+    "method": "PCA+LDA",
+    "level": "grid_selected",
+    "config": {
+      "method": "PCA+LDA",
+      "profile": "bilinear_pillow",
+      "center": true,
+      "pre_dims": 30,
+      "init": "svd",
+      "max_iter": 0,
+      "lda_dim": 24,
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "origin": "train_mean"
+    },
+    "validation_percent": 86.25,
+    "test_percent": 80.83333333333333
+  },
+  {
+    "seed": 11,
+    "method": "CSA-2+LDA",
+    "level": "original_default",
+    "config": {
+      "method": "CSA-2+LDA",
+      "profile": "bilinear_pillow",
+      "center": false,
+      "pre_dims": [
+        11,
+        2
+      ],
+      "init": "identity",
+      "max_iter": 3,
+      "lda_dim": 16,
+      "scaling": "sw_identity",
+      "metric": "euclidean",
+      "origin": "train_mean"
+    },
+    "validation_percent": 78.75,
+    "test_percent": 77.91666666666667
+  },
+  {
+    "seed": 11,
+    "method": "CSA-2+LDA",
+    "level": "plausible_fixed",
+    "config": {
+      "method": "CSA-2+LDA",
+      "profile": "bilinear_pillow",
+      "center": true,
+      "pre_dims": [
+        11,
+        2
+      ],
+      "init": "identity",
+      "max_iter": 3,
+      "lda_dim": 16,
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "origin": "train_mean"
+    },
+    "validation_percent": 82.5,
+    "test_percent": 81.66666666666667
+  },
+  {
+    "seed": 11,
+    "method": "CSA-2+LDA",
+    "level": "protocol_selected",
+    "config": {
+      "method": "CSA-2+LDA",
+      "profile": "bilinear_pillow",
+      "center": false,
+      "pre_dims": [
+        11,
+        2
+      ],
+      "init": "identity",
+      "max_iter": 3,
+      "lda_dim": 16,
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "origin": "zero"
+    },
+    "validation_percent": 87.5,
+    "test_percent": 81.25
+  },
+  {
+    "seed": 11,
+    "method": "CSA-2+LDA",
+    "level": "grid_selected",
+    "config": {
+      "method": "CSA-2+LDA",
+      "profile": "bilinear_pillow",
+      "center": false,
+      "pre_dims": [
+        6,
+        4
+      ],
+      "init": "identity",
+      "max_iter": 3,
+      "lda_dim": 24,
+      "scaling": "sw_identity",
+      "metric": "cosine",
+      "origin": "train_mean"
+    },
+    "validation_percent": 93.75,
+    "test_percent": 83.33333333333333
+  },
+  {
+    "seed": 12,
+    "method": "PCA+LDA",
+    "level": "original_default",
+    "config": {
+      "method": "PCA+LDA",
+      "profile": "bilinear_pillow",
+      "center": false,
+      "pre_dims": 30,
+      "init": "svd",
+      "max_iter": 0,
+      "lda_dim": 18,
+      "scaling": "sw_identity",
+      "metric": "euclidean",
+      "origin": "train_mean"
+    },
+    "validation_percent": 67.5,
+    "test_percent": 73.75
+  },
+  {
+    "seed": 12,
+    "method": "PCA+LDA",
+    "level": "plausible_fixed",
+    "config": {
+      "method": "PCA+LDA",
+      "profile": "bilinear_pillow",
+      "center": true,
+      "pre_dims": 30,
+      "init": "svd",
+      "max_iter": 0,
+      "lda_dim": 18,
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "origin": "train_mean"
+    },
+    "validation_percent": 76.25,
+    "test_percent": 83.75
+  },
+  {
+    "seed": 12,
+    "method": "PCA+LDA",
+    "level": "protocol_selected",
+    "config": {
+      "method": "PCA+LDA",
+      "profile": "lanczos_pillow",
+      "center": false,
+      "pre_dims": 30,
+      "init": "svd",
+      "max_iter": 0,
+      "lda_dim": 18,
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "origin": "train_mean"
+    },
+    "validation_percent": 80.0,
+    "test_percent": 85.0
+  },
+  {
+    "seed": 12,
+    "method": "PCA+LDA",
+    "level": "grid_selected",
+    "config": {
+      "method": "PCA+LDA",
+      "profile": "bilinear_pillow",
+      "center": true,
+      "pre_dims": 30,
+      "init": "svd",
+      "max_iter": 0,
+      "lda_dim": 16,
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "origin": "train_mean"
+    },
+    "validation_percent": 83.75,
+    "test_percent": 82.5
+  },
+  {
+    "seed": 12,
+    "method": "CSA-2+LDA",
+    "level": "original_default",
+    "config": {
+      "method": "CSA-2+LDA",
+      "profile": "bilinear_pillow",
+      "center": false,
+      "pre_dims": [
+        11,
+        2
+      ],
+      "init": "identity",
+      "max_iter": 3,
+      "lda_dim": 16,
+      "scaling": "sw_identity",
+      "metric": "euclidean",
+      "origin": "train_mean"
+    },
+    "validation_percent": 80.0,
+    "test_percent": 79.58333333333333
+  },
+  {
+    "seed": 12,
+    "method": "CSA-2+LDA",
+    "level": "plausible_fixed",
+    "config": {
+      "method": "CSA-2+LDA",
+      "profile": "bilinear_pillow",
+      "center": true,
+      "pre_dims": [
+        11,
+        2
+      ],
+      "init": "identity",
+      "max_iter": 3,
+      "lda_dim": 16,
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "origin": "train_mean"
+    },
+    "validation_percent": 82.5,
+    "test_percent": 86.25
+  },
+  {
+    "seed": 12,
+    "method": "CSA-2+LDA",
+    "level": "protocol_selected",
+    "config": {
+      "method": "CSA-2+LDA",
+      "profile": "lanczos_cdf_min256",
+      "center": false,
+      "pre_dims": [
+        11,
+        2
+      ],
+      "init": "identity",
+      "max_iter": 3,
+      "lda_dim": 16,
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "origin": "train_mean"
+    },
+    "validation_percent": 86.25,
+    "test_percent": 83.33333333333333
+  },
+  {
+    "seed": 12,
+    "method": "CSA-2+LDA",
+    "level": "grid_selected",
+    "config": {
+      "method": "CSA-2+LDA",
+      "profile": "lanczos_cdf_min256",
+      "center": false,
+      "pre_dims": [
+        11,
+        2
+      ],
+      "init": "identity",
+      "max_iter": 3,
+      "lda_dim": 22,
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "origin": "train_mean"
+    },
+    "validation_percent": 88.75,
+    "test_percent": 86.66666666666667
+  },
+  {
+    "seed": 13,
+    "method": "PCA+LDA",
+    "level": "original_default",
+    "config": {
+      "method": "PCA+LDA",
+      "profile": "bilinear_pillow",
+      "center": false,
+      "pre_dims": 30,
+      "init": "svd",
+      "max_iter": 0,
+      "lda_dim": 18,
+      "scaling": "sw_identity",
+      "metric": "euclidean",
+      "origin": "train_mean"
+    },
+    "validation_percent": 75.0,
+    "test_percent": 67.5
+  },
+  {
+    "seed": 13,
+    "method": "PCA+LDA",
+    "level": "plausible_fixed",
+    "config": {
+      "method": "PCA+LDA",
+      "profile": "bilinear_pillow",
+      "center": true,
+      "pre_dims": 30,
+      "init": "svd",
+      "max_iter": 0,
+      "lda_dim": 18,
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "origin": "train_mean"
+    },
+    "validation_percent": 85.0,
+    "test_percent": 81.25
+  },
+  {
+    "seed": 13,
+    "method": "PCA+LDA",
+    "level": "protocol_selected",
+    "config": {
+      "method": "PCA+LDA",
+      "profile": "lanczos_cdf_min256",
+      "center": true,
+      "pre_dims": 30,
+      "init": "svd",
+      "max_iter": 0,
+      "lda_dim": 18,
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "origin": "train_mean"
+    },
+    "validation_percent": 86.25,
+    "test_percent": 81.25
+  },
+  {
+    "seed": 13,
+    "method": "PCA+LDA",
+    "level": "grid_selected",
+    "config": {
+      "method": "PCA+LDA",
+      "profile": "bilinear_pillow",
+      "center": true,
+      "pre_dims": 20,
+      "init": "svd",
+      "max_iter": 0,
+      "lda_dim": 16,
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "origin": "train_mean"
+    },
+    "validation_percent": 90.0,
+    "test_percent": 81.66666666666667
+  },
+  {
+    "seed": 13,
+    "method": "CSA-2+LDA",
+    "level": "original_default",
+    "config": {
+      "method": "CSA-2+LDA",
+      "profile": "bilinear_pillow",
+      "center": false,
+      "pre_dims": [
+        11,
+        2
+      ],
+      "init": "identity",
+      "max_iter": 3,
+      "lda_dim": 16,
+      "scaling": "sw_identity",
+      "metric": "euclidean",
+      "origin": "train_mean"
+    },
+    "validation_percent": 80.0,
+    "test_percent": 77.5
+  },
+  {
+    "seed": 13,
+    "method": "CSA-2+LDA",
+    "level": "plausible_fixed",
+    "config": {
+      "method": "CSA-2+LDA",
+      "profile": "bilinear_pillow",
+      "center": true,
+      "pre_dims": [
+        11,
+        2
+      ],
+      "init": "identity",
+      "max_iter": 3,
+      "lda_dim": 16,
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "origin": "train_mean"
+    },
+    "validation_percent": 82.5,
+    "test_percent": 78.75
+  },
+  {
+    "seed": 13,
+    "method": "CSA-2+LDA",
+    "level": "protocol_selected",
+    "config": {
+      "method": "CSA-2+LDA",
+      "profile": "bilinear_pillow",
+      "center": false,
+      "pre_dims": [
+        11,
+        2
+      ],
+      "init": "identity",
+      "max_iter": 3,
+      "lda_dim": 16,
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "origin": "train_mean"
+    },
+    "validation_percent": 85.0,
+    "test_percent": 77.91666666666667
+  },
+  {
+    "seed": 13,
+    "method": "CSA-2+LDA",
+    "level": "grid_selected",
+    "config": {
+      "method": "CSA-2+LDA",
+      "profile": "lanczos_cdf_min256",
+      "center": true,
+      "pre_dims": [
+        8,
+        3
+      ],
+      "init": "identity",
+      "max_iter": 3,
+      "lda_dim": 24,
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "origin": "train_mean"
+    },
+    "validation_percent": 90.0,
+    "test_percent": 83.75
+  },
+  {
+    "seed": 14,
+    "method": "PCA+LDA",
+    "level": "original_default",
+    "config": {
+      "method": "PCA+LDA",
+      "profile": "bilinear_pillow",
+      "center": false,
+      "pre_dims": 30,
+      "init": "svd",
+      "max_iter": 0,
+      "lda_dim": 18,
+      "scaling": "sw_identity",
+      "metric": "euclidean",
+      "origin": "train_mean"
+    },
+    "validation_percent": 73.75,
+    "test_percent": 67.08333333333333
+  },
+  {
+    "seed": 14,
+    "method": "PCA+LDA",
+    "level": "plausible_fixed",
+    "config": {
+      "method": "PCA+LDA",
+      "profile": "bilinear_pillow",
+      "center": true,
+      "pre_dims": 30,
+      "init": "svd",
+      "max_iter": 0,
+      "lda_dim": 18,
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "origin": "train_mean"
+    },
+    "validation_percent": 80.0,
+    "test_percent": 82.91666666666667
+  },
+  {
+    "seed": 14,
+    "method": "PCA+LDA",
+    "level": "protocol_selected",
+    "config": {
+      "method": "PCA+LDA",
+      "profile": "bilinear_pillow",
+      "center": false,
+      "pre_dims": 30,
+      "init": "svd",
+      "max_iter": 0,
+      "lda_dim": 18,
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "origin": "train_mean"
+    },
+    "validation_percent": 82.5,
+    "test_percent": 81.66666666666667
+  },
+  {
+    "seed": 14,
+    "method": "PCA+LDA",
+    "level": "grid_selected",
+    "config": {
+      "method": "PCA+LDA",
+      "profile": "bilinear_pillow",
+      "center": true,
+      "pre_dims": 20,
+      "init": "svd",
+      "max_iter": 0,
+      "lda_dim": 18,
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "origin": "train_mean"
+    },
+    "validation_percent": 83.75,
+    "test_percent": 80.0
+  },
+  {
+    "seed": 14,
+    "method": "CSA-2+LDA",
+    "level": "original_default",
+    "config": {
+      "method": "CSA-2+LDA",
+      "profile": "bilinear_pillow",
+      "center": false,
+      "pre_dims": [
+        11,
+        2
+      ],
+      "init": "identity",
+      "max_iter": 3,
+      "lda_dim": 16,
+      "scaling": "sw_identity",
+      "metric": "euclidean",
+      "origin": "train_mean"
+    },
+    "validation_percent": 83.75,
+    "test_percent": 84.58333333333333
+  },
+  {
+    "seed": 14,
+    "method": "CSA-2+LDA",
+    "level": "plausible_fixed",
+    "config": {
+      "method": "CSA-2+LDA",
+      "profile": "bilinear_pillow",
+      "center": true,
+      "pre_dims": [
+        11,
+        2
+      ],
+      "init": "identity",
+      "max_iter": 3,
+      "lda_dim": 16,
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "origin": "train_mean"
+    },
+    "validation_percent": 83.75,
+    "test_percent": 85.41666666666667
+  },
+  {
+    "seed": 14,
+    "method": "CSA-2+LDA",
+    "level": "protocol_selected",
+    "config": {
+      "method": "CSA-2+LDA",
+      "profile": "bilinear_pillow",
+      "center": false,
+      "pre_dims": [
+        11,
+        2
+      ],
+      "init": "identity",
+      "max_iter": 3,
+      "lda_dim": 16,
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "origin": "train_mean"
+    },
+    "validation_percent": 90.0,
+    "test_percent": 87.5
+  },
+  {
+    "seed": 14,
+    "method": "CSA-2+LDA",
+    "level": "grid_selected",
+    "config": {
+      "method": "CSA-2+LDA",
+      "profile": "bilinear_pillow",
+      "center": false,
+      "pre_dims": [
+        11,
+        2
+      ],
+      "init": "identity",
+      "max_iter": 3,
+      "lda_dim": 16,
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "origin": "train_mean"
+    },
+    "validation_percent": 90.0,
+    "test_percent": 87.5
+  }
+]

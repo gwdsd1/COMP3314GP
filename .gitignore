@@ -1,0 +1,39 @@
+.deps/
+.venv/
+__pycache__/
+*.pyc
+tmp/
+
+# All three datasets and generated numerical caches remain local.
+data/raw/
+data/processed/
+data/annotations/
+FERET/*
+!FERET/README.md
+!FERET/download_subset.py
+*.npy
+*.npz
+
+# Credentials, personal data-access correspondence, and machine-local files.
+.env
+.env.*
+*.pem
+*.key
+CMU_PIE_subset_request.txt
+NIST_account_request_body.txt
+NIST_FERET_subset_enquiry.txt
+
+# Image-bearing dataset examples/reconstructions remain local, too.
+results/**/eye_review_*.png
+results/**/yunet_eyes_*.png
+results/**/coordinate_grid_*.png
+results/**/corrections.png
+results/**/flagged_raw_eyes.png
+results/**/crop_comparison.png
+results/**/alignment_comparison.png
+results/**/gabor_response_examples.png
+results/**/orl_raw_sample.png
+results/**/orl_convergence_reconstruction.png
+results/**/historical_error_montage.png
+results/**/historical_aligned_error_montage.png
+results/**/preprocessing_examples.png

@@ -1,0 +1,8 @@
+{
+  "reason": "Verifier WindowsPath indexing repaired after120 fits; no fitting/feature/analysis changes",
+  "frozen_run_source_sha256": "de7a176a80274d4b0ad684c70227d50e5fff7baac81b17b498508c33d7ae0cab",
+  "current_source_sha256": "f67e34d0c5ecb6229fd3f0fac21c40e558a3f347ef73732b71059afe44f3e8ce",
+  "AST_unaffected_outside_check_freeze_and_verify": true,
+  "fits_repeated": 0,
+  "cleanup": "Removed unused verifier intermediate; numerical checks unchanged"
+}

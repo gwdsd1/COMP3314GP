@@ -1,0 +1,26 @@
+[
+  {
+    "method": "CSA-2+LDA",
+    "mean_percent": 78.4375,
+    "std_pp": 3.939098000247716,
+    "paper_percent": 84.1,
+    "min_percent": 71.875,
+    "max_percent": 84.375
+  },
+  {
+    "method": "CSA-3",
+    "mean_percent": 88.96875,
+    "std_pp": 3.5110502642846533,
+    "paper_percent": 94.4,
+    "min_percent": 82.5,
+    "max_percent": 94.0625
+  },
+  {
+    "method": "CSA-3+LDA",
+    "mean_percent": 80.34375,
+    "std_pp": 4.154800812513961,
+    "paper_percent": 90.9,
+    "min_percent": 75.625,
+    "max_percent": 87.5
+  }
+]

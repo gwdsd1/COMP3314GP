@@ -1,0 +1,14 @@
+{
+  "stage": "before_probe_evaluation",
+  "primary_fitting_sources_and_protocol_unchanged": true,
+  "sha256": {
+    "verify_orl_dater.py": "81ad6a67ba46d85d4a4d5f4195b2bb6f35de1125c6a47f3dc2585a2e6854190a",
+    "results\\orl_dater\\source_snapshot\\verify_orl_dater.py": "81ad6a67ba46d85d4a4d5f4195b2bb6f35de1125c6a47f3dc2585a2e6854190a",
+    "results\\orl_dater\\model_verification.json": "5b24c2201887c7b46e6dfc6522b7945ec33b58c900ec00666986157a3060d0c8",
+    "results\\orl_dater\\initial_verification_failure.json": "cb33f24323ec82a6b4146a919e20d0eaa736ca1857791ea7956dd74eeddea8c0",
+    "results\\orl_dater\\model_update_checks.csv": "81d4914128ab0589f13a79764d96965a4d7ca3947e9d976ba1a93ec77c0df56c",
+    "results\\orl_dater\\numerical_sensitivity.csv": "a4e1a1f7d552ac43be6381538e66093c0f4a90cf898a55c8568bb939e39e407f",
+    "results\\orl_dater\\protocol.json": "c924646a0baf0bfcb17caa50542a506d200bfb9f95c9a6b9da867f1a51ca5b82",
+    "results\\orl_dater\\model_freeze.json": "bab4f1420f7c9c20846dcab3455468ad34c0521e17a8ea4a8c8d6f872aa2c1d3"
+  }
+}

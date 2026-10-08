@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "models_checked": 320,
+  "CSA_independent_refits": 160,
+  "PCA_eigen_checks": 160,
+  "prediction_records_checked": 102400,
+  "max_CSA_projector_error": 1.1445844272373051e-12,
+  "max_Fisher_residual": 1.4446164697325602e-12,
+  "freeze_hashes_unchanged": true
+}

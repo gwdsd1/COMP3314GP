@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "model_runs": 90,
+  "predictions": 28800,
+  "independent_matrix_NN": true,
+  "fixed_plan_sha256": "28c76129111f72f0075beea033991c421d1ede34cbfb8f6356264c0145259967",
+  "descriptive_only": true,
+  "code_sha256": "d098ae5e61d47e9dfab985029db91bb3c9a248546ce4452f86235ada87b0b9d7"
+}

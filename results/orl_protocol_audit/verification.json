@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "model_runs": 120,
+  "outer_predictions": 38400,
+  "selected_inner_predictions": 4800,
+  "checks": [
+    "raw/feature/source hashes",
+    "16 inner folds restricted to own80gallery",
+    "N-Nc=35 in inner LDA",
+    "all shared objectives independently recomputed",
+    "selected inner scores match cdist rerun",
+    "shared inputs and NN/LDA policy per seed",
+    "independent matrix NN checks all outer predictions",
+    "three CSA iterations and monotone residual",
+    "ten-seed statistics",
+    "actual feature cache regeneration"
+  ],
+  "audit_code_sha256": "d80bc8fc89f327dc0aac0abaeec326d07a3f7f181da427e50f02b98687cd9247"
+}

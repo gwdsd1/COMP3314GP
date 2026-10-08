@@ -1,0 +1,9 @@
+[
+  {
+    "variant": "shared_baseline",
+    "gray_path": "data\\processed\\orl_branches_v2\\eyes_only_seed20.npy",
+    "gray_sha256": "14f4c6054d91901a5efd70591d28e080eac90acaa4cd565b8bc9d549f5031b27",
+    "gabor_path": "data\\processed\\orl_branches_v2\\gabor_70c6f62ac47d92bd.npy",
+    "gabor_sha256": "90845a5424b37ed7d7aef5f2353806c89302c3e19a6905972580a3ce57113ca8"
+  }
+]

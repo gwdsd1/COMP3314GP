@@ -1,0 +1,31 @@
+seed,method,ranks,dimension,candidate,policy,inner_correct,correct,probe_count,accuracy_percent,paper_percent
+20,CSA-2+LDA,"[8, 4]",21,yunet_d20_replicate_fixed39_zero,unit_columns_cosine_centered,48,268,320,83.75,84.1
+20,CSA-3,"[15, 1, 26]",390,yunet_d20_replicate_fixed39_zero,unit_columns_cosine_centered,56,286,320,89.375,94.4
+20,CSA-3+LDA,"[4, 2, 4]",28,yunet_d20_replicate_fixed39_zero,unit_columns_cosine_centered,59,280,320,87.5,90.9
+21,CSA-2+LDA,"[11, 3]",29,yunet_d16_replicate_fixed39_zero,unit_columns_cosine_centered,63,244,320,76.25,84.1
+21,CSA-3,"[10, 2, 16]",320,yunet_d16_replicate_fixed39_zero,unit_columns_cosine_centered,70,287,320,89.6875,94.4
+21,CSA-3+LDA,"[4, 2, 3]",24,yunet_d16_replicate_fixed39_zero,unit_columns_cosine_centered,66,255,320,79.6875,90.9
+22,CSA-2+LDA,"[11, 3]",33,yunet_d18_zero_fixed39_zero,unit_columns_cosine_centered,55,239,320,74.6875,84.1
+22,CSA-3,"[10, 2, 16]",320,yunet_d18_zero_fixed39_zero,unit_columns_cosine_centered,62,287,320,89.6875,94.4
+22,CSA-3+LDA,"[4, 2, 4]",25,yunet_d18_zero_fixed39_zero,unit_columns_cosine_centered,56,250,320,78.125,90.9
+23,CSA-2+LDA,"[11, 2]",16,yunet_d22_zero_adaptive_zero,unit_columns_cosine_centered,57,230,320,71.875,84.1
+23,CSA-3,"[10, 3, 13]",390,yunet_d22_zero_adaptive_zero,unit_columns_cosine_centered,57,268,320,83.75,94.4
+23,CSA-3+LDA,"[4, 2, 3]",19,yunet_d22_zero_adaptive_zero,unit_columns_cosine_centered,57,269,320,84.0625,90.9
+24,CSA-2+LDA,"[8, 4]",30,yunet_d18_replicate_fixed39_zero,unit_columns_cosine_centered,49,252,320,78.75,84.1
+24,CSA-3,"[10, 2, 16]",320,yunet_d18_replicate_fixed39_zero,unit_columns_cosine_centered,58,301,320,94.0625,94.4
+24,CSA-3+LDA,"[3, 2, 5]",24,yunet_d18_replicate_fixed39_zero,unit_columns_cosine_centered,55,276,320,86.25,90.9
+25,CSA-2+LDA,"[8, 4]",27,yunet_d22_replicate_fixed39_zero,unit_columns_cosine_centered,66,247,320,77.1875,84.1
+25,CSA-3,"[13, 3, 10]",390,yunet_d22_replicate_fixed39_zero,unit_columns_cosine_centered,63,264,320,82.5,94.4
+25,CSA-3+LDA,"[4, 2, 3]",12,yunet_d22_replicate_fixed39_zero,unit_columns_cosine_centered,63,244,320,76.25,90.9
+26,CSA-2+LDA,"[11, 2]",18,yunet_d18_replicate_fixed39_zero,unit_columns_cosine_centered,57,261,320,81.5625,84.1
+26,CSA-3,"[10, 2, 16]",320,yunet_d18_replicate_fixed39_zero,unit_columns_cosine_centered,66,286,320,89.375,94.4
+26,CSA-3+LDA,"[3, 2, 5]",28,yunet_d18_replicate_fixed39_zero,unit_columns_cosine_centered,57,248,320,77.5,90.9
+27,CSA-2+LDA,"[11, 2]",18,yunet_d16_replicate_fixed39_zero,unit_columns_cosine_centered,56,270,320,84.375,84.1
+27,CSA-3,"[10, 2, 16]",320,yunet_d16_replicate_fixed39_zero,unit_columns_cosine_centered,67,296,320,92.5,94.4
+27,CSA-3+LDA,"[4, 2, 4]",28,yunet_d16_replicate_fixed39_zero,unit_columns_cosine_centered,52,255,320,79.6875,90.9
+28,CSA-2+LDA,"[11, 2]",16,yunet_d16_replicate_adaptive_zero,unit_columns_cosine_linear,63,253,320,79.0625,84.1
+28,CSA-3,"[10, 2, 16]",320,yunet_d16_replicate_adaptive_zero,unit_columns_cosine_linear,72,283,320,88.4375,94.4
+28,CSA-3+LDA,"[4, 2, 4]",25,yunet_d16_replicate_adaptive_zero,unit_columns_cosine_linear,57,242,320,75.625,90.9
+29,CSA-2+LDA,"[11, 3]",32,yunet_d16_replicate_fixed39_zero,unit_columns_cosine_centered,59,246,320,76.875,84.1
+29,CSA-3,"[10, 2, 16]",320,yunet_d16_replicate_fixed39_zero,unit_columns_cosine_centered,67,289,320,90.3125,94.4
+29,CSA-3+LDA,"[4, 2, 4]",28,yunet_d16_replicate_fixed39_zero,unit_columns_cosine_centered,54,252,320,78.75,90.9

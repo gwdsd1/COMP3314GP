@@ -1,0 +1,27 @@
+{
+  "reason": "Tmax10 with original stopping rule actually stopped at iteration3; this follow-up forces 10 sweeps",
+  "branches": [
+    "eyes_only",
+    "paper_description"
+  ],
+  "seeds": [
+    20,
+    21,
+    22
+  ],
+  "ranks": [
+    15,
+    1,
+    26
+  ],
+  "center": false,
+  "metric": "cosine",
+  "max_iter": 10,
+  "stop_on_convergence": false,
+  "feature": "baseline",
+  "status": "development single-factor diagnostic, not paper Tmax3",
+  "sources": {
+    "diagnose_orl_iterations.py": "b62930c2da857f23aa90cef80c0da952cd7dad1225198752850d7a34c30f77a5",
+    "csa.py": "29226eaae53c3c5b9d5e752d55a8d675e0a40b2d8eefac186f06682ad02ea64c"
+  }
+}

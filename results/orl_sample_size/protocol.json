@@ -1,0 +1,76 @@
+{
+  "role": "sample-size extension, not replacement for paper G2/P8",
+  "seeds": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "input": {
+    "id": "yunet_d20_replicate_fixed39_zero",
+    "geometry": "yunet_d20_replicate",
+    "eyes": "yunet",
+    "target": [
+      [
+        13.0,
+        24.0
+      ],
+      [
+        33.0,
+        24.0
+      ]
+    ],
+    "warp_padding": "replicate",
+    "kernel": "fixed39_zero",
+    "gray_path": "results/orl_protocol_audit/features/yunet_d20_replicate_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/yunet_d20_replicate_fixed39_zero.npy",
+    "gray_sha256": "ad1d1980684e9c59d6975ff700ce89d0484f2a647738480c1a60311be9793d72",
+    "gabor_sha256": "849b1161d752d9b131fbe85724de26df7e13d9e8d38be0f3fded05c95e4b307c"
+  },
+  "feature_normalization": "none",
+  "gallery_sizes": [
+    2,
+    3,
+    5
+  ],
+  "probe": "last5 of per-class seeded permutation; identical for G2/G3/G5",
+  "gallery": "nested first2/3/5 from the other5; unused candidates do not train",
+  "anchor": "G2/P8 with same first2; includes fixedP5 plus unused3",
+  "csa_ranks": [
+    [
+      15,
+      1,
+      26
+    ],
+    [
+      4,
+      2,
+      3
+    ]
+  ],
+  "CSA_center": false,
+  "Tmax": 3,
+  "init": "identity",
+  "LDA_dimension": 23,
+  "policy": {
+    "scaling": "unit_columns",
+    "metric": "cosine",
+    "lda_center": true
+  },
+  "alpha": 0.15,
+  "alpha_selection": "fixed illustrative .15; not selected in this study",
+  "feature_choice": "one existing shared input fixed for every seed/method/G; no new search",
+  "pure_CSA_origin": "subtract gallery core mean before cosine, also for390; differs from old raw cosine",
+  "limitations": "historical probes have been seen; continued development, not a blind evaluation",
+  "source_sha256": {
+    "run_orl_sample_size.py": "c276a357ad94f07319b05635352e2a6896e07c1169477af71bd2cfe594ca4aeb",
+    "csa.py": "29226eaae53c3c5b9d5e752d55a8d675e0a40b2d8eefac186f06682ad02ea64c",
+    "optimize_csa_lda.py": "01e95359497d1e2d77f8f02d0706cf2d30b11cb7a0ea654aec5a316822249c51"
+  }
+}

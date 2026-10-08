@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "seeds": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "source": "previous gallery-only CV records",
+  "selection_sha256": "938e4ae32db4f1e6934a8b2deff50d468d8753472af5adf6ef0d360313bfb902",
+  "source_score_sha256": {
+    "20": "6ad47c00fad4fa96994459e1a499c7e29db0a84cf414017b21bfb43883bb6e2e",
+    "21": "e8c1bd619da4e90e36ed61d1246a7bc56f84daebe660f3f9845e5977b67fb638",
+    "22": "3deb5cd3ce42d46d7a1c8b119c1a79bf302968a23927eae66f169539a6838eff",
+    "23": "5c0fdd375b9434cb03c103a97c9a01dcc611e717bf1bec79508a90a85bfe9cd8",
+    "24": "14bc18d71bbde3ba0f2848269bc652cf8d87ba223a131d459f1393280d20b570",
+    "25": "2af2af5d1c73bee06d5d222d75c911101df7f400ba2702459e6bf64860c60007",
+    "26": "b1e97f140ea8a95a4fc003d5323b7b5790bbd8c511b00a3034922d4482ab52fc",
+    "27": "9ddda39b3bc3688c5ac612d84dc39cd6aab2bc600649b7e472cfe25085c1d8be",
+    "28": "2d23df8fe18d93d268e8573e689f0c66baecd510c02db453f2bdcac715599d3a",
+    "29": "792dd746fffd752eead51c3f5b254935efad55426df9dbfc96c9df975a949903"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "models": 6,
+  "prediction_replay_records": 15360,
+  "CSA24_LDA23_weights": 830,
+  "PCA24_LDA23_weights": 618792,
+  "definition": "actual float64 ndarray nbytes; not compressed archive size,peak memory,or total Python process memory",
+  "timing": "precomputed feature batch; excludes Gabor/preprocessing/training/disk writes; per-case 1warmup+7runs;2BLASthreads",
+  "platform": "Windows-10-10.0.26100-SP0",
+  "python": "3.11.9"
+}

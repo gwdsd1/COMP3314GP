@@ -1,0 +1,91 @@
+candidate,seed,method,correct,probe_count,accuracy_percent
+previous_frozen,20,PCA+LDA (Gray),227,320,70.9375
+previous_frozen,20,CSA-2+LDA,235,320,73.4375
+previous_frozen,20,PCA (Gabor),263,320,82.1875
+previous_frozen,20,CSA-3,274,320,85.625
+previous_frozen,20,PCA+LDA (Gabor),272,320,85.0
+previous_frozen,20,CSA-3+LDA,239,320,74.6875
+previous_frozen,21,PCA+LDA (Gray),217,320,67.8125
+previous_frozen,21,CSA-2+LDA,215,320,67.1875
+previous_frozen,21,PCA (Gabor),264,320,82.5
+previous_frozen,21,CSA-3,260,320,81.25
+previous_frozen,21,PCA+LDA (Gabor),268,320,83.75
+previous_frozen,21,CSA-3+LDA,223,320,69.6875
+previous_frozen,22,PCA+LDA (Gray),232,320,72.5
+previous_frozen,22,CSA-2+LDA,203,320,63.4375
+previous_frozen,22,PCA (Gabor),274,320,85.625
+previous_frozen,22,CSA-3,259,320,80.9375
+previous_frozen,22,PCA+LDA (Gabor),267,320,83.4375
+previous_frozen,22,CSA-3+LDA,224,320,70.0
+haar_v2_d22_zero_adaptive_zero,20,PCA+LDA (Gray),240,320,75.0
+haar_v2_d22_zero_adaptive_zero,20,CSA-2+LDA,223,320,69.6875
+haar_v2_d22_zero_adaptive_zero,20,PCA (Gabor),265,320,82.8125
+haar_v2_d22_zero_adaptive_zero,20,CSA-3,276,320,86.25
+haar_v2_d22_zero_adaptive_zero,20,PCA+LDA (Gabor),273,320,85.3125
+haar_v2_d22_zero_adaptive_zero,20,CSA-3+LDA,251,320,78.4375
+haar_v2_d22_zero_adaptive_zero,21,PCA+LDA (Gray),228,320,71.25
+haar_v2_d22_zero_adaptive_zero,21,CSA-2+LDA,206,320,64.375
+haar_v2_d22_zero_adaptive_zero,21,PCA (Gabor),247,320,77.1875
+haar_v2_d22_zero_adaptive_zero,21,CSA-3,265,320,82.8125
+haar_v2_d22_zero_adaptive_zero,21,PCA+LDA (Gabor),271,320,84.6875
+haar_v2_d22_zero_adaptive_zero,21,CSA-3+LDA,227,320,70.9375
+haar_v2_d22_zero_adaptive_zero,22,PCA+LDA (Gray),228,320,71.25
+haar_v2_d22_zero_adaptive_zero,22,CSA-2+LDA,223,320,69.6875
+haar_v2_d22_zero_adaptive_zero,22,PCA (Gabor),259,320,80.9375
+haar_v2_d22_zero_adaptive_zero,22,CSA-3,263,320,82.1875
+haar_v2_d22_zero_adaptive_zero,22,PCA+LDA (Gabor),272,320,85.0
+haar_v2_d22_zero_adaptive_zero,22,CSA-3+LDA,235,320,73.4375
+yunet_d22_zero_adaptive_zero,20,PCA+LDA (Gray),271,320,84.6875
+yunet_d22_zero_adaptive_zero,20,CSA-2+LDA,241,320,75.3125
+yunet_d22_zero_adaptive_zero,20,PCA (Gabor),284,320,88.75
+yunet_d22_zero_adaptive_zero,20,CSA-3,286,320,89.375
+yunet_d22_zero_adaptive_zero,20,PCA+LDA (Gabor),301,320,94.0625
+yunet_d22_zero_adaptive_zero,20,CSA-3+LDA,265,320,82.8125
+yunet_d22_zero_adaptive_zero,21,PCA+LDA (Gray),262,320,81.875
+yunet_d22_zero_adaptive_zero,21,CSA-2+LDA,239,320,74.6875
+yunet_d22_zero_adaptive_zero,21,PCA (Gabor),267,320,83.4375
+yunet_d22_zero_adaptive_zero,21,CSA-3,274,320,85.625
+yunet_d22_zero_adaptive_zero,21,PCA+LDA (Gabor),288,320,90.0
+yunet_d22_zero_adaptive_zero,21,CSA-3+LDA,247,320,77.1875
+yunet_d22_zero_adaptive_zero,22,PCA+LDA (Gray),266,320,83.125
+yunet_d22_zero_adaptive_zero,22,CSA-2+LDA,249,320,77.8125
+yunet_d22_zero_adaptive_zero,22,PCA (Gabor),274,320,85.625
+yunet_d22_zero_adaptive_zero,22,CSA-3,274,320,85.625
+yunet_d22_zero_adaptive_zero,22,PCA+LDA (Gabor),286,320,89.375
+yunet_d22_zero_adaptive_zero,22,CSA-3+LDA,254,320,79.375
+yunet_d18_replicate_adaptive_zero,20,PCA+LDA (Gray),271,320,84.6875
+yunet_d18_replicate_adaptive_zero,20,CSA-2+LDA,250,320,78.125
+yunet_d18_replicate_adaptive_zero,20,PCA (Gabor),292,320,91.25
+yunet_d18_replicate_adaptive_zero,20,CSA-3,290,320,90.625
+yunet_d18_replicate_adaptive_zero,20,PCA+LDA (Gabor),299,320,93.4375
+yunet_d18_replicate_adaptive_zero,20,CSA-3+LDA,251,320,78.4375
+yunet_d18_replicate_adaptive_zero,21,PCA+LDA (Gray),263,320,82.1875
+yunet_d18_replicate_adaptive_zero,21,CSA-2+LDA,247,320,77.1875
+yunet_d18_replicate_adaptive_zero,21,PCA (Gabor),280,320,87.5
+yunet_d18_replicate_adaptive_zero,21,CSA-3,283,320,88.4375
+yunet_d18_replicate_adaptive_zero,21,PCA+LDA (Gabor),283,320,88.4375
+yunet_d18_replicate_adaptive_zero,21,CSA-3+LDA,242,320,75.625
+yunet_d18_replicate_adaptive_zero,22,PCA+LDA (Gray),268,320,83.75
+yunet_d18_replicate_adaptive_zero,22,CSA-2+LDA,254,320,79.375
+yunet_d18_replicate_adaptive_zero,22,PCA (Gabor),281,320,87.8125
+yunet_d18_replicate_adaptive_zero,22,CSA-3,290,320,90.625
+yunet_d18_replicate_adaptive_zero,22,PCA+LDA (Gabor),296,320,92.5
+yunet_d18_replicate_adaptive_zero,22,CSA-3+LDA,250,320,78.125
+yunet_d16_replicate_adaptive_zero,20,PCA+LDA (Gray),273,320,85.3125
+yunet_d16_replicate_adaptive_zero,20,CSA-2+LDA,259,320,80.9375
+yunet_d16_replicate_adaptive_zero,20,PCA (Gabor),288,320,90.0
+yunet_d16_replicate_adaptive_zero,20,CSA-3,288,320,90.0
+yunet_d16_replicate_adaptive_zero,20,PCA+LDA (Gabor),292,320,91.25
+yunet_d16_replicate_adaptive_zero,20,CSA-3+LDA,247,320,77.1875
+yunet_d16_replicate_adaptive_zero,21,PCA+LDA (Gray),264,320,82.5
+yunet_d16_replicate_adaptive_zero,21,CSA-2+LDA,252,320,78.75
+yunet_d16_replicate_adaptive_zero,21,PCA (Gabor),269,320,84.0625
+yunet_d16_replicate_adaptive_zero,21,CSA-3,283,320,88.4375
+yunet_d16_replicate_adaptive_zero,21,PCA+LDA (Gabor),295,320,92.1875
+yunet_d16_replicate_adaptive_zero,21,CSA-3+LDA,253,320,79.0625
+yunet_d16_replicate_adaptive_zero,22,PCA+LDA (Gray),271,320,84.6875
+yunet_d16_replicate_adaptive_zero,22,CSA-2+LDA,261,320,81.5625
+yunet_d16_replicate_adaptive_zero,22,PCA (Gabor),284,320,88.75
+yunet_d16_replicate_adaptive_zero,22,CSA-3,287,320,89.6875
+yunet_d16_replicate_adaptive_zero,22,PCA+LDA (Gabor),294,320,91.875
+yunet_d16_replicate_adaptive_zero,22,CSA-3+LDA,255,320,79.6875

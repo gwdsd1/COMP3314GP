@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "scores_checked": 160,
+  "prediction_records_checked": 744000,
+  "unique_outer_models_checked": 78,
+  "independent_CSA_update_cases": 2,
+  "max_update_projector_error": 4.1278266842540173e-10,
+  "max_encoding_absolute_error": 2.1373125491663814e-11,
+  "historical12_baseline_scores_exact_match": true,
+  "all_inputs_and_selection_hashes_unchanged": true,
+  "limits": "all NN predictions independently replayed; encodings sampled per unique model; updates independently refitted per G/init, not every model; not proof of unknown author protocol"
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "seed": 20,
+    "image_zscore_feature_sha256": "1feb84d13c38600d20a8287cb1cf4359309d63e7fb156d96d81a2dbba0ae171b"
+  },
+  {
+    "seed": 21,
+    "image_zscore_feature_sha256": "97c275571820528060da9d293efafe3505d09db3685c671c685af1d325b314f4"
+  },
+  {
+    "seed": 22,
+    "image_zscore_feature_sha256": "4497c421272a1eeee4d0fb54b1e28fb40b54a013f8a34ccc4112d7bef12bde8e"
+  },
+  {
+    "seed": 23,
+    "image_zscore_feature_sha256": "49aec2d46f3515bc5a37edad7b3568d0ebd5462abc96284e4bb8c55f487c30dc"
+  },
+  {
+    "seed": 24,
+    "image_zscore_feature_sha256": "74f69f332fb13813979e25fbc151b32b543528ab45aa9df599de728380d4fd59"
+  },
+  {
+    "seed": 25,
+    "image_zscore_feature_sha256": "f1a0ceed274fbcf2ca4eb6c87dc0bbe825d39cb97a5187d2d4642c3092b60c42"
+  },
+  {
+    "seed": 26,
+    "image_zscore_feature_sha256": "74f69f332fb13813979e25fbc151b32b543528ab45aa9df599de728380d4fd59"
+  },
+  {
+    "seed": 27,
+    "image_zscore_feature_sha256": "97c275571820528060da9d293efafe3505d09db3685c671c685af1d325b314f4"
+  },
+  {
+    "seed": 28,
+    "image_zscore_feature_sha256": "8149bcf9722a3b0829594590abe117ed0832d0e9dbb0ce9d17527529d85c05da"
+  },
+  {
+    "seed": 29,
+    "image_zscore_feature_sha256": "97c275571820528060da9d293efafe3505d09db3685c671c685af1d325b314f4"
+  }
+]

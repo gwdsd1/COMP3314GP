@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "scores": 80,
+  "outer_predictions": 25600,
+  "selected_inner_scores_replayed": 60,
+  "independent_NN": true,
+  "independent_encoding": true,
+  "selection_freeze_unchanged": true,
+  "independent_scatter_and_Fisher_equation": true,
+  "max_relative_Fisher_residual": 2.4457567245534483e-13,
+  "all_training_objectives_recomputed": true,
+  "shared_input_and_distance": true,
+  "source_sha256": "444d2a7aef0a65a9f9dfc1bb128d9d63ae953b836852370e3a1b2d01e16efee4"
+}

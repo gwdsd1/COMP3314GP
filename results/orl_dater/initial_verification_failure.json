@@ -1,0 +1,11 @@
+{
+  "stage": "run_orl_dater.py --stage verify_models",
+  "exit_code": 1,
+  "reason": "Unconstrained reference path roundoff amplified beyond frozen1e-9 scatter equality threshold; seed4200 first crossing at iteration8/mode1",
+  "original_stage_source_sha256": "6f39fd1d961dc69a0dcd07e2b474759a2beabb4e93327a6a7ef477d929b268d8",
+  "no_probe_scoring": true,
+  "primary_models_unchanged": true,
+  "primary_algorithm_or_tolerances_unchanged": true,
+  "followup": "verify_orl_dater.py checks every exact saved path update with independent scatters and Sw-whitening; reports free-reference sensitivity",
+  "verifier_sha256": "81ad6a67ba46d85d4a4d5f4195b2bb6f35de1125c6a47f3dc2585a2e6854190a"
+}

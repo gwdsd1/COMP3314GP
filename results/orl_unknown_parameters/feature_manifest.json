@@ -1,0 +1,218 @@
+[
+  {
+    "id": "legacy_crop",
+    "path": "results/orl_protocol_audit/features/yunet_d20_replicate_fixed39_zero.npy",
+    "sha256": "849b1161d752d9b131fbe85724de26df7e13d9e8d38be0f3fded05c95e4b307c",
+    "margin": 0,
+    "spec": {
+      "id": "legacy_crop",
+      "wavelength": 4.0,
+      "sigma": 6.283185307179586,
+      "support": 19,
+      "finite_dc": true,
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "histogram": "PIL",
+      "context": false,
+      "downsample_first": false
+    }
+  },
+  {
+    "id": "context_anchor",
+    "path": "results/orl_fixed_input_extensions/features/crop_context.npy",
+    "sha256": "1ef121fc7ae4254cbc329acf514c43bcc495cec28e0b3b5656fa6879e886d3d7",
+    "margin": 19,
+    "spec": {
+      "id": "context_anchor",
+      "wavelength": 4.0,
+      "sigma": 6.283185307179586,
+      "support": 19,
+      "finite_dc": true,
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "histogram": "PIL",
+      "context": true,
+      "downsample_first": false
+    }
+  },
+  {
+    "id": "context_w8",
+    "path": "results/orl_unknown_parameters/features/context_w8.npy",
+    "sha256": "3d88f0a4a7478492f7ba331775805570ec7a4062971fe0fbb70e6077e27e9c51",
+    "margin": 19,
+    "spec": {
+      "id": "context_w8",
+      "wavelength": 8.0,
+      "sigma": 6.283185307179586,
+      "support": 19,
+      "finite_dc": true,
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "histogram": "PIL",
+      "context": true,
+      "downsample_first": false
+    }
+  },
+  {
+    "id": "context_sigma_pi",
+    "path": "results/orl_unknown_parameters/features/context_sigma_pi.npy",
+    "sha256": "0087bc61689b667a40ffdea411804ba6cbab6c1720d6278a63cc65b5092c8b72",
+    "margin": 19,
+    "spec": {
+      "id": "context_sigma_pi",
+      "wavelength": 4.0,
+      "sigma": 3.141592653589793,
+      "support": 19,
+      "finite_dc": true,
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "histogram": "PIL",
+      "context": true,
+      "downsample_first": false
+    }
+  },
+  {
+    "id": "context_w8_sigma_pi",
+    "path": "results/orl_unknown_parameters/features/context_w8_sigma_pi.npy",
+    "sha256": "6f957e63d16990eaa5c90102bf1cc556ddf0bddc8daf9a8f1dc2f1cde7661b09",
+    "margin": 19,
+    "spec": {
+      "id": "context_w8_sigma_pi",
+      "wavelength": 8.0,
+      "sigma": 3.141592653589793,
+      "support": 19,
+      "finite_dc": true,
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "histogram": "PIL",
+      "context": true,
+      "downsample_first": false
+    }
+  },
+  {
+    "id": "context_analytic_dc",
+    "path": "results/orl_unknown_parameters/features/context_analytic_dc.npy",
+    "sha256": "ed4c3f0621cb0341a71814e941fad741fed90728ba5301d2139bf8c630ad332b",
+    "margin": 19,
+    "spec": {
+      "id": "context_analytic_dc",
+      "wavelength": 4.0,
+      "sigma": 6.283185307179586,
+      "support": 19,
+      "finite_dc": false,
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "histogram": "PIL",
+      "context": true,
+      "downsample_first": false
+    }
+  },
+  {
+    "id": "resize_first_w4",
+    "path": "results/orl_unknown_parameters/features/resize_first_w4.npy",
+    "sha256": "0328a89659a1c45528f17b3aa9fca74958c40e1e7026407eaea0e839406597fd",
+    "margin": 0,
+    "spec": {
+      "id": "resize_first_w4",
+      "wavelength": 4.0,
+      "sigma": 6.283185307179586,
+      "support": 19,
+      "finite_dc": true,
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "histogram": "PIL",
+      "context": false,
+      "downsample_first": true
+    }
+  },
+  {
+    "id": "resize_first_w2",
+    "path": "results/orl_unknown_parameters/features/resize_first_w2.npy",
+    "sha256": "5d2f97ba28b546e131632d5081906dc28fe404f195cf0812b548742020a83751",
+    "margin": 0,
+    "spec": {
+      "id": "resize_first_w2",
+      "wavelength": 2.0,
+      "sigma": 6.283185307179586,
+      "support": 19,
+      "finite_dc": true,
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "histogram": "PIL",
+      "context": false,
+      "downsample_first": true
+    }
+  },
+  {
+    "id": "context_d18_y25",
+    "path": "results/orl_unknown_parameters/features/context_d18_y25.npy",
+    "sha256": "0b98cf1a74bbc2c172dc5a1976f5df4278a0f0ac0d78ff31fd1532b7a7f56d73",
+    "margin": 19,
+    "spec": {
+      "id": "context_d18_y25",
+      "wavelength": 4.0,
+      "sigma": 6.283185307179586,
+      "support": 19,
+      "finite_dc": true,
+      "distance": 18.0,
+      "eye_y": 25.0,
+      "histogram": "PIL",
+      "context": true,
+      "downsample_first": false
+    }
+  },
+  {
+    "id": "context_d22_y22",
+    "path": "results/orl_unknown_parameters/features/context_d22_y22.npy",
+    "sha256": "e3d8039c4a3a6d89adcd74b5782bbdfb28a7a828a1d998bd702c46209a61c77d",
+    "margin": 19,
+    "spec": {
+      "id": "context_d22_y22",
+      "wavelength": 4.0,
+      "sigma": 6.283185307179586,
+      "support": 19,
+      "finite_dc": true,
+      "distance": 22.0,
+      "eye_y": 22.0,
+      "histogram": "PIL",
+      "context": true,
+      "downsample_first": false
+    }
+  },
+  {
+    "id": "context_adaptive",
+    "path": "results/orl_unknown_parameters/features/context_adaptive.npy",
+    "sha256": "995a0766fdabb9560fa49c23ce92eb704a8f657f00158ca0506062a3cd4aded0",
+    "margin": 48,
+    "spec": {
+      "id": "context_adaptive",
+      "wavelength": 4.0,
+      "sigma": 6.283185307179586,
+      "support": null,
+      "finite_dc": true,
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "histogram": "PIL",
+      "context": true,
+      "downsample_first": false
+    }
+  },
+  {
+    "id": "context_cdfmin",
+    "path": "results/orl_unknown_parameters/features/context_cdfmin.npy",
+    "sha256": "e90e4399e576ffbeea6cd3c67015e1f1caa2665009f00d37fbb174e131b4a73d",
+    "margin": 19,
+    "spec": {
+      "id": "context_cdfmin",
+      "wavelength": 4.0,
+      "sigma": 6.283185307179586,
+      "support": 19,
+      "finite_dc": true,
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "histogram": "CDF_min",
+      "context": true,
+      "downsample_first": false
+    }
+  }
+]

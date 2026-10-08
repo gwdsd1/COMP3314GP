@@ -1,0 +1,622 @@
+{
+  "scores": [
+    {
+      "entry_id": "yunet_d22_zero_adaptive_zero",
+      "normalization": "none",
+      "gallery_LOO_correct": 50
+    },
+    {
+      "entry_id": "yunet_d22_zero_adaptive_zero",
+      "normalization": "channel_rms",
+      "gallery_LOO_correct": 41
+    },
+    {
+      "entry_id": "yunet_d22_zero_adaptive_zero",
+      "normalization": "sqrt",
+      "gallery_LOO_correct": 47
+    },
+    {
+      "entry_id": "yunet_d22_zero_adaptive_zero",
+      "normalization": "jet_l2",
+      "gallery_LOO_correct": 45
+    },
+    {
+      "entry_id": "yunet_d22_zero_adaptive_zero",
+      "normalization": "tensor_l2",
+      "gallery_LOO_correct": 48
+    },
+    {
+      "entry_id": "yunet_d22_zero_fixed39_zero",
+      "normalization": "none",
+      "gallery_LOO_correct": 51
+    },
+    {
+      "entry_id": "yunet_d22_zero_fixed39_zero",
+      "normalization": "channel_rms",
+      "gallery_LOO_correct": 44
+    },
+    {
+      "entry_id": "yunet_d22_zero_fixed39_zero",
+      "normalization": "sqrt",
+      "gallery_LOO_correct": 47
+    },
+    {
+      "entry_id": "yunet_d22_zero_fixed39_zero",
+      "normalization": "jet_l2",
+      "gallery_LOO_correct": 45
+    },
+    {
+      "entry_id": "yunet_d22_zero_fixed39_zero",
+      "normalization": "tensor_l2",
+      "gallery_LOO_correct": 51
+    },
+    {
+      "entry_id": "yunet_d20_replicate_adaptive_zero",
+      "normalization": "none",
+      "gallery_LOO_correct": 49
+    },
+    {
+      "entry_id": "yunet_d20_replicate_adaptive_zero",
+      "normalization": "channel_rms",
+      "gallery_LOO_correct": 45
+    },
+    {
+      "entry_id": "yunet_d20_replicate_adaptive_zero",
+      "normalization": "sqrt",
+      "gallery_LOO_correct": 47
+    },
+    {
+      "entry_id": "yunet_d20_replicate_adaptive_zero",
+      "normalization": "jet_l2",
+      "gallery_LOO_correct": 41
+    },
+    {
+      "entry_id": "yunet_d20_replicate_adaptive_zero",
+      "normalization": "tensor_l2",
+      "gallery_LOO_correct": 50
+    },
+    {
+      "entry_id": "yunet_d20_replicate_fixed39_zero",
+      "normalization": "none",
+      "gallery_LOO_correct": 50
+    },
+    {
+      "entry_id": "yunet_d20_replicate_fixed39_zero",
+      "normalization": "channel_rms",
+      "gallery_LOO_correct": 47
+    },
+    {
+      "entry_id": "yunet_d20_replicate_fixed39_zero",
+      "normalization": "sqrt",
+      "gallery_LOO_correct": 47
+    },
+    {
+      "entry_id": "yunet_d20_replicate_fixed39_zero",
+      "normalization": "jet_l2",
+      "gallery_LOO_correct": 37
+    },
+    {
+      "entry_id": "yunet_d20_replicate_fixed39_zero",
+      "normalization": "tensor_l2",
+      "gallery_LOO_correct": 50
+    },
+    {
+      "entry_id": "yunet_d18_replicate_adaptive_zero",
+      "normalization": "none",
+      "gallery_LOO_correct": 50
+    },
+    {
+      "entry_id": "yunet_d18_replicate_adaptive_zero",
+      "normalization": "channel_rms",
+      "gallery_LOO_correct": 48
+    },
+    {
+      "entry_id": "yunet_d18_replicate_adaptive_zero",
+      "normalization": "sqrt",
+      "gallery_LOO_correct": 49
+    },
+    {
+      "entry_id": "yunet_d18_replicate_adaptive_zero",
+      "normalization": "jet_l2",
+      "gallery_LOO_correct": 44
+    },
+    {
+      "entry_id": "yunet_d18_replicate_adaptive_zero",
+      "normalization": "tensor_l2",
+      "gallery_LOO_correct": 49
+    },
+    {
+      "entry_id": "yunet_d18_replicate_fixed39_zero",
+      "normalization": "none",
+      "gallery_LOO_correct": 49
+    },
+    {
+      "entry_id": "yunet_d18_replicate_fixed39_zero",
+      "normalization": "channel_rms",
+      "gallery_LOO_correct": 50
+    },
+    {
+      "entry_id": "yunet_d18_replicate_fixed39_zero",
+      "normalization": "sqrt",
+      "gallery_LOO_correct": 48
+    },
+    {
+      "entry_id": "yunet_d18_replicate_fixed39_zero",
+      "normalization": "jet_l2",
+      "gallery_LOO_correct": 44
+    },
+    {
+      "entry_id": "yunet_d18_replicate_fixed39_zero",
+      "normalization": "tensor_l2",
+      "gallery_LOO_correct": 50
+    },
+    {
+      "entry_id": "yunet_d16_replicate_adaptive_zero",
+      "normalization": "none",
+      "gallery_LOO_correct": 45
+    },
+    {
+      "entry_id": "yunet_d16_replicate_adaptive_zero",
+      "normalization": "channel_rms",
+      "gallery_LOO_correct": 46
+    },
+    {
+      "entry_id": "yunet_d16_replicate_adaptive_zero",
+      "normalization": "sqrt",
+      "gallery_LOO_correct": 46
+    },
+    {
+      "entry_id": "yunet_d16_replicate_adaptive_zero",
+      "normalization": "jet_l2",
+      "gallery_LOO_correct": 48
+    },
+    {
+      "entry_id": "yunet_d16_replicate_adaptive_zero",
+      "normalization": "tensor_l2",
+      "gallery_LOO_correct": 47
+    },
+    {
+      "entry_id": "yunet_d16_replicate_fixed39_zero",
+      "normalization": "none",
+      "gallery_LOO_correct": 45
+    },
+    {
+      "entry_id": "yunet_d16_replicate_fixed39_zero",
+      "normalization": "channel_rms",
+      "gallery_LOO_correct": 47
+    },
+    {
+      "entry_id": "yunet_d16_replicate_fixed39_zero",
+      "normalization": "sqrt",
+      "gallery_LOO_correct": 47
+    },
+    {
+      "entry_id": "yunet_d16_replicate_fixed39_zero",
+      "normalization": "jet_l2",
+      "gallery_LOO_correct": 41
+    },
+    {
+      "entry_id": "yunet_d16_replicate_fixed39_zero",
+      "normalization": "tensor_l2",
+      "gallery_LOO_correct": 53
+    },
+    {
+      "entry_id": "yunet_d22_zero_adaptive_reflect",
+      "normalization": "none",
+      "gallery_LOO_correct": 41
+    },
+    {
+      "entry_id": "yunet_d22_zero_adaptive_reflect",
+      "normalization": "channel_rms",
+      "gallery_LOO_correct": 36
+    },
+    {
+      "entry_id": "yunet_d22_zero_adaptive_reflect",
+      "normalization": "sqrt",
+      "gallery_LOO_correct": 41
+    },
+    {
+      "entry_id": "yunet_d22_zero_adaptive_reflect",
+      "normalization": "jet_l2",
+      "gallery_LOO_correct": 37
+    },
+    {
+      "entry_id": "yunet_d22_zero_adaptive_reflect",
+      "normalization": "tensor_l2",
+      "gallery_LOO_correct": 44
+    },
+    {
+      "entry_id": "yunet_d22_zero_mean2_zero",
+      "normalization": "none",
+      "gallery_LOO_correct": 49
+    },
+    {
+      "entry_id": "yunet_d22_zero_mean2_zero",
+      "normalization": "channel_rms",
+      "gallery_LOO_correct": 42
+    },
+    {
+      "entry_id": "yunet_d22_zero_mean2_zero",
+      "normalization": "sqrt",
+      "gallery_LOO_correct": 48
+    },
+    {
+      "entry_id": "yunet_d22_zero_mean2_zero",
+      "normalization": "jet_l2",
+      "gallery_LOO_correct": 48
+    },
+    {
+      "entry_id": "yunet_d22_zero_mean2_zero",
+      "normalization": "tensor_l2",
+      "gallery_LOO_correct": 48
+    },
+    {
+      "entry_id": "yunet_d22_zero_sigma_pi_zero",
+      "normalization": "none",
+      "gallery_LOO_correct": 51
+    },
+    {
+      "entry_id": "yunet_d22_zero_sigma_pi_zero",
+      "normalization": "channel_rms",
+      "gallery_LOO_correct": 49
+    },
+    {
+      "entry_id": "yunet_d22_zero_sigma_pi_zero",
+      "normalization": "sqrt",
+      "gallery_LOO_correct": 52
+    },
+    {
+      "entry_id": "yunet_d22_zero_sigma_pi_zero",
+      "normalization": "jet_l2",
+      "gallery_LOO_correct": 45
+    },
+    {
+      "entry_id": "yunet_d22_zero_sigma_pi_zero",
+      "normalization": "tensor_l2",
+      "gallery_LOO_correct": 53
+    },
+    {
+      "entry_id": "yunet_d22_zero_wavelength2_zero",
+      "normalization": "none",
+      "gallery_LOO_correct": 43
+    },
+    {
+      "entry_id": "yunet_d22_zero_wavelength2_zero",
+      "normalization": "channel_rms",
+      "gallery_LOO_correct": 40
+    },
+    {
+      "entry_id": "yunet_d22_zero_wavelength2_zero",
+      "normalization": "sqrt",
+      "gallery_LOO_correct": 41
+    },
+    {
+      "entry_id": "yunet_d22_zero_wavelength2_zero",
+      "normalization": "jet_l2",
+      "gallery_LOO_correct": 35
+    },
+    {
+      "entry_id": "yunet_d22_zero_wavelength2_zero",
+      "normalization": "tensor_l2",
+      "gallery_LOO_correct": 42
+    },
+    {
+      "entry_id": "yunet_d20_replicate_adaptive_reflect",
+      "normalization": "none",
+      "gallery_LOO_correct": 36
+    },
+    {
+      "entry_id": "yunet_d20_replicate_adaptive_reflect",
+      "normalization": "channel_rms",
+      "gallery_LOO_correct": 42
+    },
+    {
+      "entry_id": "yunet_d20_replicate_adaptive_reflect",
+      "normalization": "sqrt",
+      "gallery_LOO_correct": 45
+    },
+    {
+      "entry_id": "yunet_d20_replicate_adaptive_reflect",
+      "normalization": "jet_l2",
+      "gallery_LOO_correct": 43
+    },
+    {
+      "entry_id": "yunet_d20_replicate_adaptive_reflect",
+      "normalization": "tensor_l2",
+      "gallery_LOO_correct": 42
+    },
+    {
+      "entry_id": "yunet_d20_replicate_mean2_zero",
+      "normalization": "none",
+      "gallery_LOO_correct": 49
+    },
+    {
+      "entry_id": "yunet_d20_replicate_mean2_zero",
+      "normalization": "channel_rms",
+      "gallery_LOO_correct": 45
+    },
+    {
+      "entry_id": "yunet_d20_replicate_mean2_zero",
+      "normalization": "sqrt",
+      "gallery_LOO_correct": 47
+    },
+    {
+      "entry_id": "yunet_d20_replicate_mean2_zero",
+      "normalization": "jet_l2",
+      "gallery_LOO_correct": 41
+    },
+    {
+      "entry_id": "yunet_d20_replicate_mean2_zero",
+      "normalization": "tensor_l2",
+      "gallery_LOO_correct": 50
+    },
+    {
+      "entry_id": "yunet_d20_replicate_sigma_pi_zero",
+      "normalization": "none",
+      "gallery_LOO_correct": 55
+    },
+    {
+      "entry_id": "yunet_d20_replicate_sigma_pi_zero",
+      "normalization": "channel_rms",
+      "gallery_LOO_correct": 52
+    },
+    {
+      "entry_id": "yunet_d20_replicate_sigma_pi_zero",
+      "normalization": "sqrt",
+      "gallery_LOO_correct": 56
+    },
+    {
+      "entry_id": "yunet_d20_replicate_sigma_pi_zero",
+      "normalization": "jet_l2",
+      "gallery_LOO_correct": 51
+    },
+    {
+      "entry_id": "yunet_d20_replicate_sigma_pi_zero",
+      "normalization": "tensor_l2",
+      "gallery_LOO_correct": 52
+    },
+    {
+      "entry_id": "yunet_d20_replicate_wavelength2_zero",
+      "normalization": "none",
+      "gallery_LOO_correct": 44
+    },
+    {
+      "entry_id": "yunet_d20_replicate_wavelength2_zero",
+      "normalization": "channel_rms",
+      "gallery_LOO_correct": 45
+    },
+    {
+      "entry_id": "yunet_d20_replicate_wavelength2_zero",
+      "normalization": "sqrt",
+      "gallery_LOO_correct": 44
+    },
+    {
+      "entry_id": "yunet_d20_replicate_wavelength2_zero",
+      "normalization": "jet_l2",
+      "gallery_LOO_correct": 39
+    },
+    {
+      "entry_id": "yunet_d20_replicate_wavelength2_zero",
+      "normalization": "tensor_l2",
+      "gallery_LOO_correct": 45
+    },
+    {
+      "entry_id": "yunet_d18_replicate_adaptive_reflect",
+      "normalization": "none",
+      "gallery_LOO_correct": 43
+    },
+    {
+      "entry_id": "yunet_d18_replicate_adaptive_reflect",
+      "normalization": "channel_rms",
+      "gallery_LOO_correct": 46
+    },
+    {
+      "entry_id": "yunet_d18_replicate_adaptive_reflect",
+      "normalization": "sqrt",
+      "gallery_LOO_correct": 46
+    },
+    {
+      "entry_id": "yunet_d18_replicate_adaptive_reflect",
+      "normalization": "jet_l2",
+      "gallery_LOO_correct": 38
+    },
+    {
+      "entry_id": "yunet_d18_replicate_adaptive_reflect",
+      "normalization": "tensor_l2",
+      "gallery_LOO_correct": 48
+    },
+    {
+      "entry_id": "yunet_d18_replicate_mean2_zero",
+      "normalization": "none",
+      "gallery_LOO_correct": 50
+    },
+    {
+      "entry_id": "yunet_d18_replicate_mean2_zero",
+      "normalization": "channel_rms",
+      "gallery_LOO_correct": 50
+    },
+    {
+      "entry_id": "yunet_d18_replicate_mean2_zero",
+      "normalization": "sqrt",
+      "gallery_LOO_correct": 47
+    },
+    {
+      "entry_id": "yunet_d18_replicate_mean2_zero",
+      "normalization": "jet_l2",
+      "gallery_LOO_correct": 43
+    },
+    {
+      "entry_id": "yunet_d18_replicate_mean2_zero",
+      "normalization": "tensor_l2",
+      "gallery_LOO_correct": 49
+    },
+    {
+      "entry_id": "yunet_d18_replicate_sigma_pi_zero",
+      "normalization": "none",
+      "gallery_LOO_correct": 50
+    },
+    {
+      "entry_id": "yunet_d18_replicate_sigma_pi_zero",
+      "normalization": "channel_rms",
+      "gallery_LOO_correct": 50
+    },
+    {
+      "entry_id": "yunet_d18_replicate_sigma_pi_zero",
+      "normalization": "sqrt",
+      "gallery_LOO_correct": 53
+    },
+    {
+      "entry_id": "yunet_d18_replicate_sigma_pi_zero",
+      "normalization": "jet_l2",
+      "gallery_LOO_correct": 47
+    },
+    {
+      "entry_id": "yunet_d18_replicate_sigma_pi_zero",
+      "normalization": "tensor_l2",
+      "gallery_LOO_correct": 53
+    },
+    {
+      "entry_id": "yunet_d18_replicate_wavelength2_zero",
+      "normalization": "none",
+      "gallery_LOO_correct": 48
+    },
+    {
+      "entry_id": "yunet_d18_replicate_wavelength2_zero",
+      "normalization": "channel_rms",
+      "gallery_LOO_correct": 42
+    },
+    {
+      "entry_id": "yunet_d18_replicate_wavelength2_zero",
+      "normalization": "sqrt",
+      "gallery_LOO_correct": 49
+    },
+    {
+      "entry_id": "yunet_d18_replicate_wavelength2_zero",
+      "normalization": "jet_l2",
+      "gallery_LOO_correct": 42
+    },
+    {
+      "entry_id": "yunet_d18_replicate_wavelength2_zero",
+      "normalization": "tensor_l2",
+      "gallery_LOO_correct": 40
+    },
+    {
+      "entry_id": "yunet_d16_replicate_adaptive_reflect",
+      "normalization": "none",
+      "gallery_LOO_correct": 42
+    },
+    {
+      "entry_id": "yunet_d16_replicate_adaptive_reflect",
+      "normalization": "channel_rms",
+      "gallery_LOO_correct": 44
+    },
+    {
+      "entry_id": "yunet_d16_replicate_adaptive_reflect",
+      "normalization": "sqrt",
+      "gallery_LOO_correct": 50
+    },
+    {
+      "entry_id": "yunet_d16_replicate_adaptive_reflect",
+      "normalization": "jet_l2",
+      "gallery_LOO_correct": 37
+    },
+    {
+      "entry_id": "yunet_d16_replicate_adaptive_reflect",
+      "normalization": "tensor_l2",
+      "gallery_LOO_correct": 49
+    },
+    {
+      "entry_id": "yunet_d16_replicate_mean2_zero",
+      "normalization": "none",
+      "gallery_LOO_correct": 45
+    },
+    {
+      "entry_id": "yunet_d16_replicate_mean2_zero",
+      "normalization": "channel_rms",
+      "gallery_LOO_correct": 46
+    },
+    {
+      "entry_id": "yunet_d16_replicate_mean2_zero",
+      "normalization": "sqrt",
+      "gallery_LOO_correct": 45
+    },
+    {
+      "entry_id": "yunet_d16_replicate_mean2_zero",
+      "normalization": "jet_l2",
+      "gallery_LOO_correct": 48
+    },
+    {
+      "entry_id": "yunet_d16_replicate_mean2_zero",
+      "normalization": "tensor_l2",
+      "gallery_LOO_correct": 49
+    },
+    {
+      "entry_id": "yunet_d16_replicate_sigma_pi_zero",
+      "normalization": "none",
+      "gallery_LOO_correct": 49
+    },
+    {
+      "entry_id": "yunet_d16_replicate_sigma_pi_zero",
+      "normalization": "channel_rms",
+      "gallery_LOO_correct": 48
+    },
+    {
+      "entry_id": "yunet_d16_replicate_sigma_pi_zero",
+      "normalization": "sqrt",
+      "gallery_LOO_correct": 47
+    },
+    {
+      "entry_id": "yunet_d16_replicate_sigma_pi_zero",
+      "normalization": "jet_l2",
+      "gallery_LOO_correct": 45
+    },
+    {
+      "entry_id": "yunet_d16_replicate_sigma_pi_zero",
+      "normalization": "tensor_l2",
+      "gallery_LOO_correct": 53
+    },
+    {
+      "entry_id": "yunet_d16_replicate_wavelength2_zero",
+      "normalization": "none",
+      "gallery_LOO_correct": 40
+    },
+    {
+      "entry_id": "yunet_d16_replicate_wavelength2_zero",
+      "normalization": "channel_rms",
+      "gallery_LOO_correct": 47
+    },
+    {
+      "entry_id": "yunet_d16_replicate_wavelength2_zero",
+      "normalization": "sqrt",
+      "gallery_LOO_correct": 47
+    },
+    {
+      "entry_id": "yunet_d16_replicate_wavelength2_zero",
+      "normalization": "jet_l2",
+      "gallery_LOO_correct": 37
+    },
+    {
+      "entry_id": "yunet_d16_replicate_wavelength2_zero",
+      "normalization": "tensor_l2",
+      "gallery_LOO_correct": 42
+    }
+  ],
+  "candidates": [
+    {
+      "entry_id": "yunet_d22_zero_adaptive_zero",
+      "normalization": "sqrt"
+    },
+    {
+      "entry_id": "yunet_d16_replicate_fixed39_reflect",
+      "normalization": "sqrt"
+    },
+    {
+      "entry_id": "yunet_d20_replicate_sigma_pi_zero",
+      "normalization": "sqrt"
+    },
+    {
+      "entry_id": "yunet_d16_replicate_fixed39_zero",
+      "normalization": "tensor_l2"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+dataset,seed,profile,method,pre_dims,lda_dim,center,metric,lda_scaling,correct,probe_count,accuracy_percent,paper_percent,difference_pp,wall_seconds
+ORL resize-only,20,euclidean_control,PCA+LDA (Gray),30,18,False,euclidean,sw_identity,228,320,71.25,82.2,-10.950000000000003,0.010344399999667075
+ORL resize-only,20,euclidean_control,CSA-2+LDA,"(11, 2)",16,False,euclidean,sw_identity,253,320,79.0625,84.1,-5.037499999999994,0.02629519999936747
+ORL resize-only,20,euclidean_control,PCA (Gabor),76,,False,euclidean,sw_identity,263,320,82.1875,86.6,-4.412499999999994,0.12009629999920435
+ORL resize-only,20,euclidean_control,CSA-3,"(15, 1, 26)",,False,euclidean,sw_identity,277,320,86.5625,94.4,-7.837500000000006,0.4817886999999246
+ORL resize-only,20,euclidean_control,PCA+LDA (Gabor),33,25,False,euclidean,sw_identity,230,320,71.875,87.2,-15.325000000000003,0.1018765999997413
+ORL resize-only,20,euclidean_control,CSA-3+LDA,"(4, 2, 3)",23,False,euclidean,sw_identity,240,320,75.0,90.9,-15.900000000000006,0.3690905000003113
+ORL resize-only,20,group_primary,PCA+LDA (Gray),30,18,True,cosine,unit_columns,265,320,82.8125,82.2,0.6124999999999972,0.009710700000141514
+ORL resize-only,20,group_primary,CSA-2+LDA,"(11, 2)",16,False,euclidean,unit_columns,277,320,86.5625,84.1,2.4625000000000057,0.02539040000010573
+ORL resize-only,20,group_primary,PCA (Gabor),76,,True,cosine,unit_columns,274,320,85.625,86.6,-0.9749999999999943,0.11221839999961958
+ORL resize-only,20,group_primary,CSA-3,"(15, 1, 26)",,False,cosine,unit_columns,275,320,85.9375,94.4,-8.462500000000006,0.5109644000003755
+ORL resize-only,20,group_primary,PCA+LDA (Gabor),33,25,True,cosine,unit_columns,285,320,89.0625,87.2,1.8624999999999972,0.10678730000017822
+ORL resize-only,20,group_primary,CSA-3+LDA,"(4, 2, 3)",23,False,cosine,unit_columns,262,320,81.875,90.9,-9.025000000000006,0.35594620000028954
+ORL resize-only,21,euclidean_control,PCA+LDA (Gray),30,18,False,euclidean,sw_identity,230,320,71.875,82.2,-10.325000000000003,0.010194800000135729
+ORL resize-only,21,euclidean_control,CSA-2+LDA,"(11, 2)",16,False,euclidean,sw_identity,260,320,81.25,84.1,-2.8499999999999943,0.025277599999753875
+ORL resize-only,21,euclidean_control,PCA (Gabor),76,,False,euclidean,sw_identity,250,320,78.125,86.6,-8.474999999999994,0.10287899999912042
+ORL resize-only,21,euclidean_control,CSA-3,"(15, 1, 26)",,False,euclidean,sw_identity,257,320,80.3125,94.4,-14.087500000000006,0.4551706000002014
+ORL resize-only,21,euclidean_control,PCA+LDA (Gabor),33,25,False,euclidean,sw_identity,202,320,63.125,87.2,-24.075000000000003,0.09377829999993992
+ORL resize-only,21,euclidean_control,CSA-3+LDA,"(4, 2, 3)",23,False,euclidean,sw_identity,248,320,77.5,90.9,-13.400000000000006,0.33980440000050294
+ORL resize-only,21,group_primary,PCA+LDA (Gray),30,18,True,cosine,unit_columns,265,320,82.8125,82.2,0.6124999999999972,0.009542099999634956
+ORL resize-only,21,group_primary,CSA-2+LDA,"(11, 2)",16,False,euclidean,unit_columns,256,320,80.0,84.1,-4.099999999999994,0.0269588000001022
+ORL resize-only,21,group_primary,PCA (Gabor),76,,True,cosine,unit_columns,261,320,81.5625,86.6,-5.037499999999994,0.10352160000002186
+ORL resize-only,21,group_primary,CSA-3,"(15, 1, 26)",,False,cosine,unit_columns,266,320,83.125,94.4,-11.275000000000006,0.4431125000000975
+ORL resize-only,21,group_primary,PCA+LDA (Gabor),33,25,True,cosine,unit_columns,267,320,83.4375,87.2,-3.762500000000003,0.09337609999965935
+ORL resize-only,21,group_primary,CSA-3+LDA,"(4, 2, 3)",23,False,cosine,unit_columns,244,320,76.25,90.9,-14.650000000000006,0.32976940000025934
+ORL resize-only,22,euclidean_control,PCA+LDA (Gray),30,18,False,euclidean,sw_identity,220,320,68.75,82.2,-13.450000000000003,0.009721099999296712
+ORL resize-only,22,euclidean_control,CSA-2+LDA,"(11, 2)",16,False,euclidean,sw_identity,252,320,78.75,84.1,-5.349999999999994,0.024895900000046822
+ORL resize-only,22,euclidean_control,PCA (Gabor),76,,False,euclidean,sw_identity,260,320,81.25,86.6,-5.349999999999994,0.09839499999998225
+ORL resize-only,22,euclidean_control,CSA-3,"(15, 1, 26)",,False,euclidean,sw_identity,270,320,84.375,94.4,-10.025000000000006,0.43300170000020444
+ORL resize-only,22,euclidean_control,PCA+LDA (Gabor),33,25,False,euclidean,sw_identity,229,320,71.5625,87.2,-15.637500000000003,0.09367999999994936
+ORL resize-only,22,euclidean_control,CSA-3+LDA,"(4, 2, 3)",23,False,euclidean,sw_identity,228,320,71.25,90.9,-19.650000000000006,0.3412583999997878
+ORL resize-only,22,group_primary,PCA+LDA (Gray),30,18,True,cosine,unit_columns,267,320,83.4375,82.2,1.2374999999999972,0.01010260000020935
+ORL resize-only,22,group_primary,CSA-2+LDA,"(11, 2)",16,False,euclidean,unit_columns,258,320,80.625,84.1,-3.4749999999999943,0.02707749999990483
+ORL resize-only,22,group_primary,PCA (Gabor),76,,True,cosine,unit_columns,269,320,84.0625,86.6,-2.5374999999999943,0.10563860000002023
+ORL resize-only,22,group_primary,CSA-3,"(15, 1, 26)",,False,cosine,unit_columns,278,320,86.875,94.4,-7.525000000000006,0.44193189999987226
+ORL resize-only,22,group_primary,PCA+LDA (Gabor),33,25,True,cosine,unit_columns,277,320,86.5625,87.2,-0.6375000000000028,0.09260010000070906
+ORL resize-only,22,group_primary,CSA-3+LDA,"(4, 2, 3)",23,False,cosine,unit_columns,251,320,78.4375,90.9,-12.462500000000006,0.3572806000001947

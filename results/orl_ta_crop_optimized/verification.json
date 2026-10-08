@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "new_models_checked": 40,
+  "new_CSA_independent_refits": 20,
+  "new_PCA_eigen_checks": 20,
+  "historical_baseline_NN_replayed": 40,
+  "prediction_records_checked": 25600,
+  "max_CSA_projector_abs_error": 2.219557870830613e-12,
+  "max_Fisher_relative_residual": 8.016437889348494e-13,
+  "all_source_input_selection_hashes_unchanged": true
+}

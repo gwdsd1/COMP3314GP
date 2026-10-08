@@ -1,0 +1,695 @@
+[
+  {
+    "id": "haar_v2_d22_zero_adaptive_zero",
+    "geometry": "haar_v2_d22_zero",
+    "eyes": "haar_v2",
+    "target": [
+      [
+        12.0,
+        22.0
+      ],
+      [
+        34.0,
+        22.0
+      ]
+    ],
+    "warp_padding": "zero",
+    "kernel": "adaptive_zero",
+    "gray_path": "results/orl_protocol_audit/features/haar_v2_d22_zero_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/haar_v2_d22_zero_adaptive_zero.npy",
+    "gray_sha256": "14f4c6054d91901a5efd70591d28e080eac90acaa4cd565b8bc9d549f5031b27",
+    "gabor_sha256": "eb5112065bf86e5fd909922cdbea1f2b6406a2d53cdfe92a4bca5319156a508c"
+  },
+  {
+    "id": "haar_v2_d22_zero_fixed39_zero",
+    "geometry": "haar_v2_d22_zero",
+    "eyes": "haar_v2",
+    "target": [
+      [
+        12.0,
+        22.0
+      ],
+      [
+        34.0,
+        22.0
+      ]
+    ],
+    "warp_padding": "zero",
+    "kernel": "fixed39_zero",
+    "gray_path": "results/orl_protocol_audit/features/haar_v2_d22_zero_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/haar_v2_d22_zero_fixed39_zero.npy",
+    "gray_sha256": "14f4c6054d91901a5efd70591d28e080eac90acaa4cd565b8bc9d549f5031b27",
+    "gabor_sha256": "37e0c4a9ccb598bd4d72d7622700c030b548c7e57fb865e241bed4bd4ebefc3e"
+  },
+  {
+    "id": "haar_v2_d22_replicate_adaptive_zero",
+    "geometry": "haar_v2_d22_replicate",
+    "eyes": "haar_v2",
+    "target": [
+      [
+        12.0,
+        22.0
+      ],
+      [
+        34.0,
+        22.0
+      ]
+    ],
+    "warp_padding": "replicate",
+    "kernel": "adaptive_zero",
+    "gray_path": "results/orl_protocol_audit/features/haar_v2_d22_replicate_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/haar_v2_d22_replicate_adaptive_zero.npy",
+    "gray_sha256": "88af9d90b51c18a0555c3a5d7ae1e5c66fd40c8aadd8c454cff4c78b9ffc37ae",
+    "gabor_sha256": "24d4412cb9e74cefdb7d6f21c8c7aa3006a86cf5ef486d4c9aa3d96a21c1a666"
+  },
+  {
+    "id": "haar_v2_d22_replicate_fixed39_zero",
+    "geometry": "haar_v2_d22_replicate",
+    "eyes": "haar_v2",
+    "target": [
+      [
+        12.0,
+        22.0
+      ],
+      [
+        34.0,
+        22.0
+      ]
+    ],
+    "warp_padding": "replicate",
+    "kernel": "fixed39_zero",
+    "gray_path": "results/orl_protocol_audit/features/haar_v2_d22_replicate_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/haar_v2_d22_replicate_fixed39_zero.npy",
+    "gray_sha256": "88af9d90b51c18a0555c3a5d7ae1e5c66fd40c8aadd8c454cff4c78b9ffc37ae",
+    "gabor_sha256": "0b42366be327e7d449e081c34109673f9413aa6a4f4d027933e87be2136e7ac7"
+  },
+  {
+    "id": "haar_v2_d20_zero_adaptive_zero",
+    "geometry": "haar_v2_d20_zero",
+    "eyes": "haar_v2",
+    "target": [
+      [
+        13.0,
+        24.0
+      ],
+      [
+        33.0,
+        24.0
+      ]
+    ],
+    "warp_padding": "zero",
+    "kernel": "adaptive_zero",
+    "gray_path": "results/orl_protocol_audit/features/haar_v2_d20_zero_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/haar_v2_d20_zero_adaptive_zero.npy",
+    "gray_sha256": "82e1f6e481d30a2accad4ad242da1e6686e36834680883ba825776a1f247380e",
+    "gabor_sha256": "1d01b0fc10492f87ba52022253604e3436744b4ca5d973439b6cdd56945788a8"
+  },
+  {
+    "id": "haar_v2_d20_zero_fixed39_zero",
+    "geometry": "haar_v2_d20_zero",
+    "eyes": "haar_v2",
+    "target": [
+      [
+        13.0,
+        24.0
+      ],
+      [
+        33.0,
+        24.0
+      ]
+    ],
+    "warp_padding": "zero",
+    "kernel": "fixed39_zero",
+    "gray_path": "results/orl_protocol_audit/features/haar_v2_d20_zero_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/haar_v2_d20_zero_fixed39_zero.npy",
+    "gray_sha256": "82e1f6e481d30a2accad4ad242da1e6686e36834680883ba825776a1f247380e",
+    "gabor_sha256": "e400f7dd49bf9d8d23fae193fd8c931f2ebbc610b1334d5276ad62d63d8f2917"
+  },
+  {
+    "id": "haar_v2_d20_replicate_adaptive_zero",
+    "geometry": "haar_v2_d20_replicate",
+    "eyes": "haar_v2",
+    "target": [
+      [
+        13.0,
+        24.0
+      ],
+      [
+        33.0,
+        24.0
+      ]
+    ],
+    "warp_padding": "replicate",
+    "kernel": "adaptive_zero",
+    "gray_path": "results/orl_protocol_audit/features/haar_v2_d20_replicate_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/haar_v2_d20_replicate_adaptive_zero.npy",
+    "gray_sha256": "e9bdba393618ddd6a9f82c70137ae3403435dd2e93aebc7bf3266a3a20456e5d",
+    "gabor_sha256": "8c47cb1dbe1a49b6d4eb807cd8fc4012b7716343f982f3fabddec384e54ffb1b"
+  },
+  {
+    "id": "haar_v2_d20_replicate_fixed39_zero",
+    "geometry": "haar_v2_d20_replicate",
+    "eyes": "haar_v2",
+    "target": [
+      [
+        13.0,
+        24.0
+      ],
+      [
+        33.0,
+        24.0
+      ]
+    ],
+    "warp_padding": "replicate",
+    "kernel": "fixed39_zero",
+    "gray_path": "results/orl_protocol_audit/features/haar_v2_d20_replicate_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/haar_v2_d20_replicate_fixed39_zero.npy",
+    "gray_sha256": "e9bdba393618ddd6a9f82c70137ae3403435dd2e93aebc7bf3266a3a20456e5d",
+    "gabor_sha256": "1355dd3aef8be053cf9dc256b646bd94b6d31ec9d4d1f80de80fd8ae7db75938"
+  },
+  {
+    "id": "haar_v2_d18_zero_adaptive_zero",
+    "geometry": "haar_v2_d18_zero",
+    "eyes": "haar_v2",
+    "target": [
+      [
+        14.0,
+        25.0
+      ],
+      [
+        32.0,
+        25.0
+      ]
+    ],
+    "warp_padding": "zero",
+    "kernel": "adaptive_zero",
+    "gray_path": "results/orl_protocol_audit/features/haar_v2_d18_zero_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/haar_v2_d18_zero_adaptive_zero.npy",
+    "gray_sha256": "8e19c66c43ac61db461c6199854a03f23b196c1a883235fc3a5eed275af735f1",
+    "gabor_sha256": "a9be950e9c857daeef422a843a9868bc40b7dda634d4e8072965f8f9859b27b3"
+  },
+  {
+    "id": "haar_v2_d18_zero_fixed39_zero",
+    "geometry": "haar_v2_d18_zero",
+    "eyes": "haar_v2",
+    "target": [
+      [
+        14.0,
+        25.0
+      ],
+      [
+        32.0,
+        25.0
+      ]
+    ],
+    "warp_padding": "zero",
+    "kernel": "fixed39_zero",
+    "gray_path": "results/orl_protocol_audit/features/haar_v2_d18_zero_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/haar_v2_d18_zero_fixed39_zero.npy",
+    "gray_sha256": "8e19c66c43ac61db461c6199854a03f23b196c1a883235fc3a5eed275af735f1",
+    "gabor_sha256": "2544e322df6121bf1d825cf5c41d9408203dd9fa021a3583cb82b6010c98ade7"
+  },
+  {
+    "id": "haar_v2_d18_replicate_adaptive_zero",
+    "geometry": "haar_v2_d18_replicate",
+    "eyes": "haar_v2",
+    "target": [
+      [
+        14.0,
+        25.0
+      ],
+      [
+        32.0,
+        25.0
+      ]
+    ],
+    "warp_padding": "replicate",
+    "kernel": "adaptive_zero",
+    "gray_path": "results/orl_protocol_audit/features/haar_v2_d18_replicate_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/haar_v2_d18_replicate_adaptive_zero.npy",
+    "gray_sha256": "a043d68000f3627fc102aa014e0b9e8738930f61ceafbef560e4850539b80bca",
+    "gabor_sha256": "80ee25d0ac881ad068bc61f264652b3f28938c947d0a3931d5ec7c8fdc945360"
+  },
+  {
+    "id": "haar_v2_d18_replicate_fixed39_zero",
+    "geometry": "haar_v2_d18_replicate",
+    "eyes": "haar_v2",
+    "target": [
+      [
+        14.0,
+        25.0
+      ],
+      [
+        32.0,
+        25.0
+      ]
+    ],
+    "warp_padding": "replicate",
+    "kernel": "fixed39_zero",
+    "gray_path": "results/orl_protocol_audit/features/haar_v2_d18_replicate_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/haar_v2_d18_replicate_fixed39_zero.npy",
+    "gray_sha256": "a043d68000f3627fc102aa014e0b9e8738930f61ceafbef560e4850539b80bca",
+    "gabor_sha256": "b370f2a28a4d71910d2603cc7515ad62030471113995efd1671f66954176650b"
+  },
+  {
+    "id": "haar_v2_d16_zero_adaptive_zero",
+    "geometry": "haar_v2_d16_zero",
+    "eyes": "haar_v2",
+    "target": [
+      [
+        15.0,
+        26.0
+      ],
+      [
+        31.0,
+        26.0
+      ]
+    ],
+    "warp_padding": "zero",
+    "kernel": "adaptive_zero",
+    "gray_path": "results/orl_protocol_audit/features/haar_v2_d16_zero_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/haar_v2_d16_zero_adaptive_zero.npy",
+    "gray_sha256": "99e46c5aadb579c1f7ea4fec8255178bcdc3dddeb5618583ca1737b702883d3c",
+    "gabor_sha256": "b44f77f7640e4261e083d63c443f06ae68b6680262f72c7c3e7c20b9c57e0799"
+  },
+  {
+    "id": "haar_v2_d16_zero_fixed39_zero",
+    "geometry": "haar_v2_d16_zero",
+    "eyes": "haar_v2",
+    "target": [
+      [
+        15.0,
+        26.0
+      ],
+      [
+        31.0,
+        26.0
+      ]
+    ],
+    "warp_padding": "zero",
+    "kernel": "fixed39_zero",
+    "gray_path": "results/orl_protocol_audit/features/haar_v2_d16_zero_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/haar_v2_d16_zero_fixed39_zero.npy",
+    "gray_sha256": "99e46c5aadb579c1f7ea4fec8255178bcdc3dddeb5618583ca1737b702883d3c",
+    "gabor_sha256": "49d5a2ead12334201626c637fe98e8039f2016dd36c5df71145645166391a341"
+  },
+  {
+    "id": "haar_v2_d16_replicate_adaptive_zero",
+    "geometry": "haar_v2_d16_replicate",
+    "eyes": "haar_v2",
+    "target": [
+      [
+        15.0,
+        26.0
+      ],
+      [
+        31.0,
+        26.0
+      ]
+    ],
+    "warp_padding": "replicate",
+    "kernel": "adaptive_zero",
+    "gray_path": "results/orl_protocol_audit/features/haar_v2_d16_replicate_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/haar_v2_d16_replicate_adaptive_zero.npy",
+    "gray_sha256": "bb3b2f360005961efedc80741799c5bb9959f4ac75f5ba6bc582b91604f9f8cd",
+    "gabor_sha256": "427561afac04cf82a8ee364782863501b4f9eee2f5d504e9818af970510c5cf9"
+  },
+  {
+    "id": "haar_v2_d16_replicate_fixed39_zero",
+    "geometry": "haar_v2_d16_replicate",
+    "eyes": "haar_v2",
+    "target": [
+      [
+        15.0,
+        26.0
+      ],
+      [
+        31.0,
+        26.0
+      ]
+    ],
+    "warp_padding": "replicate",
+    "kernel": "fixed39_zero",
+    "gray_path": "results/orl_protocol_audit/features/haar_v2_d16_replicate_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/haar_v2_d16_replicate_fixed39_zero.npy",
+    "gray_sha256": "bb3b2f360005961efedc80741799c5bb9959f4ac75f5ba6bc582b91604f9f8cd",
+    "gabor_sha256": "a3d17f494039212056327781e4ce53b3951b423936602afb79a9f11c34caff5a"
+  },
+  {
+    "id": "yunet_d22_zero_adaptive_zero",
+    "geometry": "yunet_d22_zero",
+    "eyes": "yunet",
+    "target": [
+      [
+        12.0,
+        22.0
+      ],
+      [
+        34.0,
+        22.0
+      ]
+    ],
+    "warp_padding": "zero",
+    "kernel": "adaptive_zero",
+    "gray_path": "results/orl_protocol_audit/features/yunet_d22_zero_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/yunet_d22_zero_adaptive_zero.npy",
+    "gray_sha256": "2ee59af911714d6e6fb6fa0f7893860858e2f8c008de607baefec27ada7488b7",
+    "gabor_sha256": "5b76cf57f74fed6d5099f1b7b6b895e7ffbcebc63306af4a3d05aba03e8f6085"
+  },
+  {
+    "id": "yunet_d22_zero_fixed39_zero",
+    "geometry": "yunet_d22_zero",
+    "eyes": "yunet",
+    "target": [
+      [
+        12.0,
+        22.0
+      ],
+      [
+        34.0,
+        22.0
+      ]
+    ],
+    "warp_padding": "zero",
+    "kernel": "fixed39_zero",
+    "gray_path": "results/orl_protocol_audit/features/yunet_d22_zero_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/yunet_d22_zero_fixed39_zero.npy",
+    "gray_sha256": "2ee59af911714d6e6fb6fa0f7893860858e2f8c008de607baefec27ada7488b7",
+    "gabor_sha256": "3b75f4e69b338693df83f0364feff7b483316a44eb1adac17f2cb2fe0ce09409"
+  },
+  {
+    "id": "yunet_d22_replicate_adaptive_zero",
+    "geometry": "yunet_d22_replicate",
+    "eyes": "yunet",
+    "target": [
+      [
+        12.0,
+        22.0
+      ],
+      [
+        34.0,
+        22.0
+      ]
+    ],
+    "warp_padding": "replicate",
+    "kernel": "adaptive_zero",
+    "gray_path": "results/orl_protocol_audit/features/yunet_d22_replicate_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/yunet_d22_replicate_adaptive_zero.npy",
+    "gray_sha256": "03e64f5c6aa465f0d8513bb87d6236cd4fedd60248fd013f5214a26e696a7369",
+    "gabor_sha256": "3344e90bab4d30caad00fb566e6d1a644f06713287f7c2e81b3fe88dbb77d68e"
+  },
+  {
+    "id": "yunet_d22_replicate_fixed39_zero",
+    "geometry": "yunet_d22_replicate",
+    "eyes": "yunet",
+    "target": [
+      [
+        12.0,
+        22.0
+      ],
+      [
+        34.0,
+        22.0
+      ]
+    ],
+    "warp_padding": "replicate",
+    "kernel": "fixed39_zero",
+    "gray_path": "results/orl_protocol_audit/features/yunet_d22_replicate_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/yunet_d22_replicate_fixed39_zero.npy",
+    "gray_sha256": "03e64f5c6aa465f0d8513bb87d6236cd4fedd60248fd013f5214a26e696a7369",
+    "gabor_sha256": "56bb6159bb1faf1517cf01cbb960cc4b8fa2e766b2bb771e5e79c4fc648c0113"
+  },
+  {
+    "id": "yunet_d20_zero_adaptive_zero",
+    "geometry": "yunet_d20_zero",
+    "eyes": "yunet",
+    "target": [
+      [
+        13.0,
+        24.0
+      ],
+      [
+        33.0,
+        24.0
+      ]
+    ],
+    "warp_padding": "zero",
+    "kernel": "adaptive_zero",
+    "gray_path": "results/orl_protocol_audit/features/yunet_d20_zero_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/yunet_d20_zero_adaptive_zero.npy",
+    "gray_sha256": "3c8dbeb12f975fe24b87fd0d360e5bb767472b2976f5ad1fabf079d0718cbb40",
+    "gabor_sha256": "cbb806f66050085bfaa463df81ad0a925132be73c405ce9f06fa917c13d38d1c"
+  },
+  {
+    "id": "yunet_d20_zero_fixed39_zero",
+    "geometry": "yunet_d20_zero",
+    "eyes": "yunet",
+    "target": [
+      [
+        13.0,
+        24.0
+      ],
+      [
+        33.0,
+        24.0
+      ]
+    ],
+    "warp_padding": "zero",
+    "kernel": "fixed39_zero",
+    "gray_path": "results/orl_protocol_audit/features/yunet_d20_zero_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/yunet_d20_zero_fixed39_zero.npy",
+    "gray_sha256": "3c8dbeb12f975fe24b87fd0d360e5bb767472b2976f5ad1fabf079d0718cbb40",
+    "gabor_sha256": "9a03dedc63157765104f6b8ebf4f4431793f34be64fe6f634c21354bebae0338"
+  },
+  {
+    "id": "yunet_d20_replicate_adaptive_zero",
+    "geometry": "yunet_d20_replicate",
+    "eyes": "yunet",
+    "target": [
+      [
+        13.0,
+        24.0
+      ],
+      [
+        33.0,
+        24.0
+      ]
+    ],
+    "warp_padding": "replicate",
+    "kernel": "adaptive_zero",
+    "gray_path": "results/orl_protocol_audit/features/yunet_d20_replicate_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/yunet_d20_replicate_adaptive_zero.npy",
+    "gray_sha256": "ad1d1980684e9c59d6975ff700ce89d0484f2a647738480c1a60311be9793d72",
+    "gabor_sha256": "f36eb04ef63c57d0aa0cebf6dbe71d7108fda6e9cd3ef0b7e9dcff3b454d44f6"
+  },
+  {
+    "id": "yunet_d20_replicate_fixed39_zero",
+    "geometry": "yunet_d20_replicate",
+    "eyes": "yunet",
+    "target": [
+      [
+        13.0,
+        24.0
+      ],
+      [
+        33.0,
+        24.0
+      ]
+    ],
+    "warp_padding": "replicate",
+    "kernel": "fixed39_zero",
+    "gray_path": "results/orl_protocol_audit/features/yunet_d20_replicate_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/yunet_d20_replicate_fixed39_zero.npy",
+    "gray_sha256": "ad1d1980684e9c59d6975ff700ce89d0484f2a647738480c1a60311be9793d72",
+    "gabor_sha256": "849b1161d752d9b131fbe85724de26df7e13d9e8d38be0f3fded05c95e4b307c"
+  },
+  {
+    "id": "yunet_d18_zero_adaptive_zero",
+    "geometry": "yunet_d18_zero",
+    "eyes": "yunet",
+    "target": [
+      [
+        14.0,
+        25.0
+      ],
+      [
+        32.0,
+        25.0
+      ]
+    ],
+    "warp_padding": "zero",
+    "kernel": "adaptive_zero",
+    "gray_path": "results/orl_protocol_audit/features/yunet_d18_zero_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/yunet_d18_zero_adaptive_zero.npy",
+    "gray_sha256": "13cff148fb117de699fbe32d049790666ab3eaeb0ca2532361368db6f33aebd4",
+    "gabor_sha256": "e473fc13548f89c2fd850957364e174206ecc7900516e254f82ffc6a8d4d5864"
+  },
+  {
+    "id": "yunet_d18_zero_fixed39_zero",
+    "geometry": "yunet_d18_zero",
+    "eyes": "yunet",
+    "target": [
+      [
+        14.0,
+        25.0
+      ],
+      [
+        32.0,
+        25.0
+      ]
+    ],
+    "warp_padding": "zero",
+    "kernel": "fixed39_zero",
+    "gray_path": "results/orl_protocol_audit/features/yunet_d18_zero_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/yunet_d18_zero_fixed39_zero.npy",
+    "gray_sha256": "13cff148fb117de699fbe32d049790666ab3eaeb0ca2532361368db6f33aebd4",
+    "gabor_sha256": "96c4ea14fc726bd72480075c335676a604425e4a89f63ae94e4c889f0844dfe4"
+  },
+  {
+    "id": "yunet_d18_replicate_adaptive_zero",
+    "geometry": "yunet_d18_replicate",
+    "eyes": "yunet",
+    "target": [
+      [
+        14.0,
+        25.0
+      ],
+      [
+        32.0,
+        25.0
+      ]
+    ],
+    "warp_padding": "replicate",
+    "kernel": "adaptive_zero",
+    "gray_path": "results/orl_protocol_audit/features/yunet_d18_replicate_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/yunet_d18_replicate_adaptive_zero.npy",
+    "gray_sha256": "b710fa454c1817add447f72fd9559d6ca1847c45e173f57a8f6e44be33511310",
+    "gabor_sha256": "8f018a6cfdae3cbcfeeac2b71d699228895b7ffb1d7ce114a0a821b585173df0"
+  },
+  {
+    "id": "yunet_d18_replicate_fixed39_zero",
+    "geometry": "yunet_d18_replicate",
+    "eyes": "yunet",
+    "target": [
+      [
+        14.0,
+        25.0
+      ],
+      [
+        32.0,
+        25.0
+      ]
+    ],
+    "warp_padding": "replicate",
+    "kernel": "fixed39_zero",
+    "gray_path": "results/orl_protocol_audit/features/yunet_d18_replicate_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/yunet_d18_replicate_fixed39_zero.npy",
+    "gray_sha256": "b710fa454c1817add447f72fd9559d6ca1847c45e173f57a8f6e44be33511310",
+    "gabor_sha256": "81f56813f2e0f138e54a17998c79c8622f6cb342b01999f944dfee23db9a76c0"
+  },
+  {
+    "id": "yunet_d16_zero_adaptive_zero",
+    "geometry": "yunet_d16_zero",
+    "eyes": "yunet",
+    "target": [
+      [
+        15.0,
+        26.0
+      ],
+      [
+        31.0,
+        26.0
+      ]
+    ],
+    "warp_padding": "zero",
+    "kernel": "adaptive_zero",
+    "gray_path": "results/orl_protocol_audit/features/yunet_d16_zero_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/yunet_d16_zero_adaptive_zero.npy",
+    "gray_sha256": "2277d005efc6707311e84d36746d76414b38636cba11baee46a7985a89714e86",
+    "gabor_sha256": "eda49dff6af6ee2bb2d54dfac19d7f9c9f775be769c418407cd4e9ad5f8b8eb5"
+  },
+  {
+    "id": "yunet_d16_zero_fixed39_zero",
+    "geometry": "yunet_d16_zero",
+    "eyes": "yunet",
+    "target": [
+      [
+        15.0,
+        26.0
+      ],
+      [
+        31.0,
+        26.0
+      ]
+    ],
+    "warp_padding": "zero",
+    "kernel": "fixed39_zero",
+    "gray_path": "results/orl_protocol_audit/features/yunet_d16_zero_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/yunet_d16_zero_fixed39_zero.npy",
+    "gray_sha256": "2277d005efc6707311e84d36746d76414b38636cba11baee46a7985a89714e86",
+    "gabor_sha256": "97b970f0f4b6ce47d5cc13eae4370f52ad53ba4cf093682fa191a1da93616a42"
+  },
+  {
+    "id": "yunet_d16_replicate_adaptive_zero",
+    "geometry": "yunet_d16_replicate",
+    "eyes": "yunet",
+    "target": [
+      [
+        15.0,
+        26.0
+      ],
+      [
+        31.0,
+        26.0
+      ]
+    ],
+    "warp_padding": "replicate",
+    "kernel": "adaptive_zero",
+    "gray_path": "results/orl_protocol_audit/features/yunet_d16_replicate_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/yunet_d16_replicate_adaptive_zero.npy",
+    "gray_sha256": "ed4bd2ddc9d2d529dce51fd22e6cb9a490de6e4a7098cb6901341c231aca8bdb",
+    "gabor_sha256": "56f4a9dd17691f2d991d3fe165e305a831ba1e2148bee3d7106c98c31bd5869f"
+  },
+  {
+    "id": "yunet_d16_replicate_fixed39_zero",
+    "geometry": "yunet_d16_replicate",
+    "eyes": "yunet",
+    "target": [
+      [
+        15.0,
+        26.0
+      ],
+      [
+        31.0,
+        26.0
+      ]
+    ],
+    "warp_padding": "replicate",
+    "kernel": "fixed39_zero",
+    "gray_path": "results/orl_protocol_audit/features/yunet_d16_replicate_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/yunet_d16_replicate_fixed39_zero.npy",
+    "gray_sha256": "ed4bd2ddc9d2d529dce51fd22e6cb9a490de6e4a7098cb6901341c231aca8bdb",
+    "gabor_sha256": "685ca0e0426f5c89b7a551efd0c1242f9ccc4182405e8d45b636c9122dfbfbf3"
+  },
+  {
+    "id": "previous_frozen",
+    "geometry": "previous_frozen",
+    "eyes": "haar_v2",
+    "target": [
+      [
+        12,
+        22
+      ],
+      [
+        34,
+        22
+      ]
+    ],
+    "warp_padding": "zero",
+    "kernel": "adaptive_zero",
+    "gray_path": "results/shared_protocol_final/step2/valid_zscore_lanczos.npy",
+    "gabor_path": "results/shared_protocol_final/step3/adaptive_zero.npy",
+    "gray_sha256": "61747c7dec23f33e62cae6fb9d9141b908cdf068389b846c284b026d9a0fcb1e",
+    "gabor_sha256": "aa2137595397ba82dcd8f666d40e01c7c484d915c7a8cb548db1e00be7ff2f3d"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "outer_models_checked": 120,
+  "independent_CSA_three_sweep_refits": 60,
+  "PCA_eigen_residual_checks": 60,
+  "prediction_records_checked": 38400,
+  "historical_baseline_score_matches": 30,
+  "max_encoding_abs_error": 4.547473508864641e-12,
+  "max_CSA_projector_abs_error": 2.3759882950002975e-12,
+  "max_Fisher_relative_residual": 4.5324445745803033e-13,
+  "freeze_hashes_unchanged": true
+}

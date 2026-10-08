@@ -1,0 +1,84 @@
+{
+  "orl_gabor_full.json": {
+    "specification": {
+      "input_sha256": "d4fcff2d7c8d997ee2319dae7a477a78efd195714f4b8183badac68ea95176e0",
+      "input_shape": [
+        400,
+        56,
+        46
+      ],
+      "step": 1,
+      "gabor": {
+        "wavelengths": [
+          4.0,
+          5.656854249492381,
+          8.000000000000002,
+          11.313708498984763,
+          16.000000000000004
+        ],
+        "orientations": [
+          0.0,
+          0.39269908169872414,
+          0.7853981633974483,
+          1.1780972450961724,
+          1.5707963267948966,
+          1.9634954084936207,
+          2.356194490192345,
+          2.748893571891069
+        ],
+        "sigma": 6.283185307179586,
+        "truncate_sigma": 3,
+        "finite_kernel_zero_mean": true,
+        "boundary": "reflect",
+        "response": "complex_magnitude",
+        "channel_order": "scale_then_orientation",
+        "feature_normalization": "none",
+        "cache_dtype": "float32",
+        "downsample": "response[::step,::step]"
+      },
+      "implementation_sha256": "ceb12f2bfbe82e381375e14a1c60d0a0a4795b91544e7bff02c22e93ac61578f"
+    },
+    "file_sha256": "994d2315d20fff1f77031feff5b9f9f1edaee3fa20f725ff25d6d3ecd6997615"
+  },
+  "mnist_gabor.json": {
+    "specification": {
+      "input_sha256": "0f1ae636315a17d3e2f21c1ad77ccb2e28353ab98a2dedadb68793a3fc188a56",
+      "input_shape": [
+        5000,
+        28,
+        28
+      ],
+      "step": 1,
+      "gabor": {
+        "wavelengths": [
+          4.0,
+          5.656854249492381,
+          8.000000000000002,
+          11.313708498984763,
+          16.000000000000004
+        ],
+        "orientations": [
+          0.0,
+          0.39269908169872414,
+          0.7853981633974483,
+          1.1780972450961724,
+          1.5707963267948966,
+          1.9634954084936207,
+          2.356194490192345,
+          2.748893571891069
+        ],
+        "sigma": 6.283185307179586,
+        "truncate_sigma": 3,
+        "finite_kernel_zero_mean": true,
+        "boundary": "reflect",
+        "response": "complex_magnitude",
+        "channel_order": "scale_then_orientation",
+        "feature_normalization": "none",
+        "cache_dtype": "float32",
+        "downsample": "response[::step,::step]"
+      },
+      "implementation_sha256": "ceb12f2bfbe82e381375e14a1c60d0a0a4795b91544e7bff02c22e93ac61578f"
+    },
+    "file_sha256": "606adccd46d4d5fef7cf667fb162ae80f1cb28c2e6fef49ba483533e069927f7"
+  }
+}

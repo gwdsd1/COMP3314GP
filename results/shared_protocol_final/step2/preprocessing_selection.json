@@ -1,0 +1,20 @@
+{
+  "selected": "valid_zscore_lanczos",
+  "quality": {
+    "direct": {
+      "mean_coverage": 0.9856043785810471,
+      "min_coverage": 0.6676533222198486
+    },
+    "lanczos": {
+      "mean_coverage": 0.98550134152174,
+      "min_coverage": 0.6711896061897278
+    }
+  },
+  "selected_before_scores": true,
+  "rule": "valid-region histogram + population z-score, Lanczos if geometric coverage mean>=.95 and min>=.60; otherwise direct warp",
+  "not_author_parameters": true,
+  "valid_mask": "coverage >= .999; no ellipse mask",
+  "histogram": "CDF-min uint8 rounded 0..255; invalid pixels zero; then z-score on valid pixels",
+  "resampling": "warp to 112x92 at target 2*eyes+.5; Lanczos resize to 56x46",
+  "annotation_sha256": "f6b1d38f2713ab27466478b1ee8b73ece496f09839215b70c6c4fdc1d6e51c3e"
+}

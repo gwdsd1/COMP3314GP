@@ -1,0 +1,82 @@
+{
+  "verified_at_utc": "2026-10-05T02:21:23.230599+00:00",
+  "scope": "Dataset acquisition only; no model implementation or reproduction experiment has been run.",
+  "files": [
+    {
+      "dataset": "orl",
+      "path": "data/raw/orl/att_faces.zip",
+      "source_url": "https://www.cl.cam.ac.uk/research/dtg/attarchive/pub/data/att_faces.zip",
+      "resolved_url": "https://www.cl.cam.ac.uk/research/dtg/attarchive/pub/data/att_faces.zip",
+      "bytes": 3769022,
+      "md5": "ea6281c63bb2e68a64c046957a749086",
+      "expected_md5": null,
+      "sha256": "509d763bd2276aa054d260d7f1000e8be212738134f2f83d8ff13bc2adf1c8ec"
+    },
+    {
+      "dataset": "mnist",
+      "path": "data/raw/mnist/t10k-images-idx3-ubyte.gz",
+      "source_url": "https://ossci-datasets.s3.amazonaws.com/mnist/t10k-images-idx3-ubyte.gz",
+      "resolved_url": "https://ossci-datasets.s3.amazonaws.com/mnist/t10k-images-idx3-ubyte.gz",
+      "bytes": 1648877,
+      "md5": "9fb629c4189551a2d022fa330f9573f3",
+      "expected_md5": "9fb629c4189551a2d022fa330f9573f3",
+      "sha256": "8d422c7b0a1c1c79245a5bcf07fe86e33eeafee792b84584aec276f5a2dbc4e6"
+    },
+    {
+      "dataset": "mnist",
+      "path": "data/raw/mnist/t10k-labels-idx1-ubyte.gz",
+      "source_url": "https://ossci-datasets.s3.amazonaws.com/mnist/t10k-labels-idx1-ubyte.gz",
+      "resolved_url": "https://ossci-datasets.s3.amazonaws.com/mnist/t10k-labels-idx1-ubyte.gz",
+      "bytes": 4542,
+      "md5": "ec29112dd5afa0611ce80d1b7f02629c",
+      "expected_md5": "ec29112dd5afa0611ce80d1b7f02629c",
+      "sha256": "f7ae60f92e00ec6debd23a6088c31dbd2371eca3ffa0defaefb259924204aec6"
+    }
+  ],
+  "validation": {
+    "orl": {
+      "subjects": 40,
+      "images_per_subject": 10,
+      "images": 400,
+      "width": 92,
+      "height": 112,
+      "archive_crc": "passed",
+      "all_images_decoded": true
+    },
+    "mnist": {
+      "images": 10000,
+      "labels": 10000,
+      "width": 28,
+      "height": 28,
+      "idx_magic_and_lengths": "passed",
+      "full_test_label_counts": {
+        "0": 980,
+        "1": 1135,
+        "2": 1032,
+        "3": 1010,
+        "4": 982,
+        "5": 892,
+        "6": 958,
+        "7": 1028,
+        "8": 974,
+        "9": 1009
+      },
+      "first_5000_label_counts": {
+        "0": 460,
+        "1": 571,
+        "2": 530,
+        "3": 500,
+        "4": 500,
+        "5": 456,
+        "6": 462,
+        "7": 512,
+        "8": 489,
+        "9": 520
+      }
+    }
+  },
+  "unavailable": {
+    "feret_gray": "Original grayscale Fa/Fb archive not obtained; NIST currently says original grayscale FERET is unavailable. Color FERET is not the same experimental dataset.",
+    "cmu_pie": "Original PIE with camera/illumination IDs and eye locations not obtained; no verified public original archive found."
+  }
+}

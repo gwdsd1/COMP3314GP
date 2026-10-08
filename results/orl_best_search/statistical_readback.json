@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "fixed_configurations_checked": 6003,
+  "paper_dimension_replays": [
+    {
+      "seed": 3025,
+      "branch": 2,
+      "case": 10,
+      "policy_index": 1,
+      "LDA_dimension": "",
+      "correct": 311,
+      "accuracy_percent": 97.1875,
+      "relative_Fisher_residual": null
+    },
+    {
+      "seed": 3166,
+      "branch": 2,
+      "case": 0,
+      "policy_index": 0,
+      "LDA_dimension": "23",
+      "correct": 283,
+      "accuracy_percent": 88.4375,
+      "relative_Fisher_residual": 2.58492207371581e-14
+    }
+  ],
+  "same_input_controls": 6,
+  "source_checks": {
+    "search_orl_best.py": true,
+    "csa.py": true,
+    "refine_orl_csa.py": true,
+    "optimize_csa_lda.py": true,
+    "audit_orl_protocol.py": true,
+    "run_available_reproduction.py": true
+  }
+}

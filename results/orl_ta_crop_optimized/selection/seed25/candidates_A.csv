@@ -1,0 +1,5 @@
+input,power,init,policy,inner_correct,inner_total,worst_fold_correct
+crop_2pi_zero,1.0,identity,unit_gallery_cosine,57,80,2
+crop_2pi_reflect,1.0,identity,unit_gallery_cosine,52,80,2
+crop_pi_zero,1.0,identity,unit_gallery_cosine,55,80,2
+crop_pi_reflect,1.0,identity,unit_gallery_cosine,50,80,2

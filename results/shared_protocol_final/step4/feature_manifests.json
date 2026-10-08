@@ -1,0 +1,9 @@
+[
+  {
+    "variant": "frozen_main",
+    "gray_path": "results\\shared_protocol_final\\step2\\valid_zscore_lanczos.npy",
+    "gray_sha256": "61747c7dec23f33e62cae6fb9d9141b908cdf068389b846c284b026d9a0fcb1e",
+    "gabor_path": "results\\shared_protocol_final\\step3\\adaptive_zero.npy",
+    "gabor_sha256": "aa2137595397ba82dcd8f666d40e01c7c484d915c7a8cb548db1e00be7ff2f3d"
+  }
+]

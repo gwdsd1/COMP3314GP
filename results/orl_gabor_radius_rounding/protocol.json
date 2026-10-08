@@ -1,0 +1,25 @@
+{
+  "specification": {
+    "base_wavelength": 4.0,
+    "sigma": 6.283185307179586,
+    "radius": null,
+    "boundary": "reflect",
+    "finite_zero_mean": true,
+    "sampling": "stride00",
+    "normalization": "none",
+    "stable_radius": true
+  },
+  "actual_kernel_sizes": [
+    25,
+    35,
+    49,
+    69,
+    97
+  ],
+  "status": "follow-up discovered at final parameter verification; development diagnostics only",
+  "sources": {
+    "csa.py": "29226eaae53c3c5b9d5e752d55a8d675e0a40b2d8eefac186f06682ad02ea64c",
+    "diagnose_orl_gabor.py": "3b59a9f9fc8d5bea84fe22176b8ef6fb7f4f7d972905e895ce4ef4a88c4410f9",
+    "diagnose_orl_radius_rounding.py": "226984e742113e9eb91f53a7a581415126b1730f39028a1f2991473b9890eedf"
+  }
+}

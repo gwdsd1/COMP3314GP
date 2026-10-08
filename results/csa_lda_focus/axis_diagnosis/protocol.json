@@ -1,0 +1,56 @@
+{
+  "plan": [
+    [
+      "gray",
+      "swap_rank_assignment",
+      [
+        2,
+        11
+      ],
+      16
+    ],
+    [
+      "gray",
+      "transpose_with_ranks",
+      [
+        2,
+        11
+      ],
+      16
+    ],
+    [
+      "gabor",
+      "swap_rank_assignment",
+      [
+        2,
+        4,
+        3
+      ],
+      23
+    ],
+    [
+      "gabor",
+      "transpose_with_ranks",
+      [
+        2,
+        4,
+        3
+      ],
+      23
+    ],
+    [
+      "gabor",
+      "orientation_then_scale",
+      [
+        4,
+        2,
+        3
+      ],
+      23
+    ]
+  ],
+  "fixed": "same ten inputs/splits/active policy; Tmax3",
+  "role": "descriptive only; no probe-based configuration selection",
+  "transpose": "swaps both input axes and corresponding ranks, preserving intended physical rank assignment; changes sequential update order",
+  "channel_permutation": "preserves all40values, changes identity initialization/order; not a new Gabor filter"
+}

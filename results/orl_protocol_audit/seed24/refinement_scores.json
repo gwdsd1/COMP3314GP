@@ -1,0 +1,4477 @@
+[
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 30,
+    "correct": 49,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      2
+    ],
+    "lda": true,
+    "dimension": 1,
+    "correct": 4,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      2
+    ],
+    "lda": true,
+    "dimension": 2,
+    "correct": 8,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      2
+    ],
+    "lda": true,
+    "dimension": 3,
+    "correct": 11,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      2
+    ],
+    "lda": true,
+    "dimension": 4,
+    "correct": 28,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      2
+    ],
+    "lda": true,
+    "dimension": 5,
+    "correct": 30,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      2
+    ],
+    "lda": true,
+    "dimension": 6,
+    "correct": 27,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      2
+    ],
+    "lda": true,
+    "dimension": 7,
+    "correct": 37,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      2
+    ],
+    "lda": true,
+    "dimension": 8,
+    "correct": 35,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      2
+    ],
+    "lda": true,
+    "dimension": 9,
+    "correct": 39,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      2
+    ],
+    "lda": true,
+    "dimension": 10,
+    "correct": 40,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      2
+    ],
+    "lda": true,
+    "dimension": 11,
+    "correct": 41,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      2
+    ],
+    "lda": true,
+    "dimension": 12,
+    "correct": 40,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      2
+    ],
+    "lda": true,
+    "dimension": 13,
+    "correct": 38,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      2
+    ],
+    "lda": true,
+    "dimension": 14,
+    "correct": 42,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      2
+    ],
+    "lda": true,
+    "dimension": 15,
+    "correct": 43,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      2
+    ],
+    "lda": true,
+    "dimension": 16,
+    "correct": 44,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      2
+    ],
+    "lda": true,
+    "dimension": 17,
+    "correct": 44,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      2
+    ],
+    "lda": true,
+    "dimension": 18,
+    "correct": 42,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      2
+    ],
+    "lda": true,
+    "dimension": 19,
+    "correct": 45,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      2
+    ],
+    "lda": true,
+    "dimension": 20,
+    "correct": 45,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      2
+    ],
+    "lda": true,
+    "dimension": 21,
+    "correct": 45,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      2
+    ],
+    "lda": true,
+    "dimension": 22,
+    "correct": 43,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 1,
+    "correct": 2,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 2,
+    "correct": 5,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 3,
+    "correct": 16,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 4,
+    "correct": 20,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 5,
+    "correct": 24,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 6,
+    "correct": 24,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 7,
+    "correct": 28,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 8,
+    "correct": 29,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 9,
+    "correct": 27,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 10,
+    "correct": 28,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 11,
+    "correct": 30,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 12,
+    "correct": 32,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 13,
+    "correct": 33,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 14,
+    "correct": 30,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 15,
+    "correct": 39,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 16,
+    "correct": 39,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 17,
+    "correct": 39,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 18,
+    "correct": 40,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 19,
+    "correct": 39,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 20,
+    "correct": 40,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 21,
+    "correct": 41,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 22,
+    "correct": 43,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 23,
+    "correct": 44,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 24,
+    "correct": 44,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 25,
+    "correct": 43,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 26,
+    "correct": 43,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 27,
+    "correct": 46,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 28,
+    "correct": 48,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 29,
+    "correct": 48,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 31,
+    "correct": 48,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      8,
+      4
+    ],
+    "lda": true,
+    "dimension": 32,
+    "correct": 47,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3",
+    "kind": "gabor",
+    "ranks": [
+      10,
+      2,
+      16
+    ],
+    "lda": false,
+    "dimension": 320,
+    "correct": 58,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3",
+    "kind": "gabor",
+    "ranks": [
+      15,
+      1,
+      26
+    ],
+    "lda": false,
+    "dimension": 390,
+    "correct": 57,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 24,
+    "correct": 48,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 1,
+    "correct": 2,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 2,
+    "correct": 4,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 3,
+    "correct": 12,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 4,
+    "correct": 12,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 5,
+    "correct": 22,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 6,
+    "correct": 24,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 7,
+    "correct": 27,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 8,
+    "correct": 28,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 9,
+    "correct": 31,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 10,
+    "correct": 34,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 11,
+    "correct": 34,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 12,
+    "correct": 38,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 13,
+    "correct": 40,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 14,
+    "correct": 40,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 15,
+    "correct": 38,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 16,
+    "correct": 36,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 17,
+    "correct": 37,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 18,
+    "correct": 39,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 19,
+    "correct": 41,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 20,
+    "correct": 39,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 21,
+    "correct": 42,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 22,
+    "correct": 40,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 23,
+    "correct": 39,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 24,
+    "correct": 40,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 1,
+    "correct": 3,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 2,
+    "correct": 12,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 3,
+    "correct": 20,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 4,
+    "correct": 27,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 5,
+    "correct": 30,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 6,
+    "correct": 29,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 7,
+    "correct": 27,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 8,
+    "correct": 35,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 9,
+    "correct": 35,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 10,
+    "correct": 39,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 11,
+    "correct": 37,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 12,
+    "correct": 35,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 13,
+    "correct": 33,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 14,
+    "correct": 38,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 15,
+    "correct": 38,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 16,
+    "correct": 40,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 17,
+    "correct": 44,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 18,
+    "correct": 45,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 19,
+    "correct": 45,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 20,
+    "correct": 43,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 21,
+    "correct": 47,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 22,
+    "correct": 47,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 23,
+    "correct": 46,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 25,
+    "correct": 48,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 26,
+    "correct": 45,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 27,
+    "correct": 46,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 28,
+    "correct": 44,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 29,
+    "correct": 45,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 30,
+    "correct": 45,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 31,
+    "correct": 46,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      2,
+      4
+    ],
+    "lda": true,
+    "dimension": 32,
+    "correct": 46,
+    "origin": "initial grid"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 1,
+    "correct": 4,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 2,
+    "correct": 5,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 3,
+    "correct": 16,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 4,
+    "correct": 21,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 5,
+    "correct": 25,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 6,
+    "correct": 21,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 7,
+    "correct": 26,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 8,
+    "correct": 29,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 9,
+    "correct": 30,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 10,
+    "correct": 32,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 11,
+    "correct": 32,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 12,
+    "correct": 34,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 13,
+    "correct": 37,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 14,
+    "correct": 38,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 15,
+    "correct": 40,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 16,
+    "correct": 39,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 17,
+    "correct": 39,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 18,
+    "correct": 39,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 19,
+    "correct": 37,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 20,
+    "correct": 36,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 21,
+    "correct": 38,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 22,
+    "correct": 38,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 23,
+    "correct": 37,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 24,
+    "correct": 36,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 25,
+    "correct": 37,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 26,
+    "correct": 38,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 27,
+    "correct": 38,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 28,
+    "correct": 39,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 29,
+    "correct": 39,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      6,
+      5
+    ],
+    "lda": true,
+    "dimension": 30,
+    "correct": 39,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 1,
+    "correct": 1,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 2,
+    "correct": 3,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 3,
+    "correct": 12,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 4,
+    "correct": 15,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 5,
+    "correct": 23,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 6,
+    "correct": 29,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 7,
+    "correct": 29,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 8,
+    "correct": 33,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 9,
+    "correct": 30,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 10,
+    "correct": 33,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 11,
+    "correct": 31,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 12,
+    "correct": 33,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 13,
+    "correct": 34,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 14,
+    "correct": 29,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 15,
+    "correct": 31,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 16,
+    "correct": 33,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 17,
+    "correct": 32,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 18,
+    "correct": 34,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 19,
+    "correct": 35,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 20,
+    "correct": 36,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 21,
+    "correct": 37,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 22,
+    "correct": 39,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 23,
+    "correct": 39,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 24,
+    "correct": 40,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 25,
+    "correct": 43,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 26,
+    "correct": 43,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 27,
+    "correct": 42,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 28,
+    "correct": 41,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 29,
+    "correct": 40,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      5,
+      6
+    ],
+    "lda": true,
+    "dimension": 30,
+    "correct": 40,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 1,
+    "correct": 3,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 2,
+    "correct": 2,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 3,
+    "correct": 10,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 4,
+    "correct": 15,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 5,
+    "correct": 15,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 6,
+    "correct": 22,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 7,
+    "correct": 25,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 8,
+    "correct": 30,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 9,
+    "correct": 30,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 10,
+    "correct": 34,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 11,
+    "correct": 36,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 12,
+    "correct": 36,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 13,
+    "correct": 35,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 14,
+    "correct": 36,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 15,
+    "correct": 36,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 16,
+    "correct": 38,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 17,
+    "correct": 38,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 18,
+    "correct": 40,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 19,
+    "correct": 38,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 20,
+    "correct": 39,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 21,
+    "correct": 39,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 22,
+    "correct": 39,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 23,
+    "correct": 42,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 24,
+    "correct": 38,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 25,
+    "correct": 40,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 26,
+    "correct": 40,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 27,
+    "correct": 41,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 28,
+    "correct": 39,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 29,
+    "correct": 37,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 30,
+    "correct": 38,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 31,
+    "correct": 38,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      4,
+      8
+    ],
+    "lda": true,
+    "dimension": 32,
+    "correct": 37,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 1,
+    "correct": 4,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 2,
+    "correct": 2,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 3,
+    "correct": 5,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 4,
+    "correct": 15,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 5,
+    "correct": 18,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 6,
+    "correct": 23,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 7,
+    "correct": 26,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 8,
+    "correct": 32,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 9,
+    "correct": 33,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 10,
+    "correct": 37,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 11,
+    "correct": 38,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 12,
+    "correct": 38,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 13,
+    "correct": 38,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 14,
+    "correct": 38,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 15,
+    "correct": 41,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 16,
+    "correct": 41,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 17,
+    "correct": 42,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 18,
+    "correct": 42,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 19,
+    "correct": 41,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 20,
+    "correct": 41,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 21,
+    "correct": 42,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 22,
+    "correct": 41,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 23,
+    "correct": 42,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 24,
+    "correct": 44,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 25,
+    "correct": 44,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 26,
+    "correct": 44,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 27,
+    "correct": 45,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 28,
+    "correct": 44,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 29,
+    "correct": 43,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 30,
+    "correct": 44,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 31,
+    "correct": 44,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 32,
+    "correct": 43,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-2+LDA",
+    "kind": "gray",
+    "ranks": [
+      11,
+      3
+    ],
+    "lda": true,
+    "dimension": 33,
+    "correct": 43,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      3,
+      3
+    ],
+    "lda": true,
+    "dimension": 1,
+    "correct": 4,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      3,
+      3
+    ],
+    "lda": true,
+    "dimension": 2,
+    "correct": 4,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      3,
+      3
+    ],
+    "lda": true,
+    "dimension": 3,
+    "correct": 7,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      3,
+      3
+    ],
+    "lda": true,
+    "dimension": 4,
+    "correct": 12,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      3,
+      3
+    ],
+    "lda": true,
+    "dimension": 5,
+    "correct": 16,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      3,
+      3
+    ],
+    "lda": true,
+    "dimension": 6,
+    "correct": 19,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      3,
+      3
+    ],
+    "lda": true,
+    "dimension": 7,
+    "correct": 23,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      3,
+      3
+    ],
+    "lda": true,
+    "dimension": 8,
+    "correct": 25,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      3,
+      3
+    ],
+    "lda": true,
+    "dimension": 9,
+    "correct": 26,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      3,
+      3
+    ],
+    "lda": true,
+    "dimension": 10,
+    "correct": 27,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      3,
+      3
+    ],
+    "lda": true,
+    "dimension": 11,
+    "correct": 31,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      3,
+      3
+    ],
+    "lda": true,
+    "dimension": 12,
+    "correct": 32,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      3,
+      3
+    ],
+    "lda": true,
+    "dimension": 13,
+    "correct": 30,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      3,
+      3
+    ],
+    "lda": true,
+    "dimension": 14,
+    "correct": 31,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      3,
+      3
+    ],
+    "lda": true,
+    "dimension": 15,
+    "correct": 35,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      3,
+      3
+    ],
+    "lda": true,
+    "dimension": 16,
+    "correct": 36,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      3,
+      3
+    ],
+    "lda": true,
+    "dimension": 17,
+    "correct": 36,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      3,
+      3
+    ],
+    "lda": true,
+    "dimension": 18,
+    "correct": 37,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      3,
+      3
+    ],
+    "lda": true,
+    "dimension": 19,
+    "correct": 38,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      3,
+      3
+    ],
+    "lda": true,
+    "dimension": 20,
+    "correct": 41,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      3,
+      3
+    ],
+    "lda": true,
+    "dimension": 21,
+    "correct": 40,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      3,
+      3
+    ],
+    "lda": true,
+    "dimension": 22,
+    "correct": 42,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      3,
+      3
+    ],
+    "lda": true,
+    "dimension": 23,
+    "correct": 43,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      3,
+      3
+    ],
+    "lda": true,
+    "dimension": 24,
+    "correct": 43,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      3,
+      3
+    ],
+    "lda": true,
+    "dimension": 25,
+    "correct": 45,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      3,
+      3
+    ],
+    "lda": true,
+    "dimension": 26,
+    "correct": 43,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      3,
+      3
+    ],
+    "lda": true,
+    "dimension": 27,
+    "correct": 43,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 1,
+    "correct": 1,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 2,
+    "correct": 3,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 3,
+    "correct": 10,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 4,
+    "correct": 18,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 5,
+    "correct": 22,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 6,
+    "correct": 27,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 7,
+    "correct": 29,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 8,
+    "correct": 31,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 9,
+    "correct": 34,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 10,
+    "correct": 35,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 11,
+    "correct": 36,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 12,
+    "correct": 34,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 13,
+    "correct": 36,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 14,
+    "correct": 39,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 15,
+    "correct": 40,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 16,
+    "correct": 43,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 17,
+    "correct": 43,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 18,
+    "correct": 44,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 19,
+    "correct": 44,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 20,
+    "correct": 43,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 21,
+    "correct": 41,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 22,
+    "correct": 42,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 23,
+    "correct": 45,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 24,
+    "correct": 44,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 25,
+    "correct": 45,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 26,
+    "correct": 47,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 27,
+    "correct": 46,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 28,
+    "correct": 45,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 29,
+    "correct": 46,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      5,
+      2,
+      3
+    ],
+    "lda": true,
+    "dimension": 30,
+    "correct": 46,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 1,
+    "correct": 2,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 2,
+    "correct": 5,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 3,
+    "correct": 11,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 4,
+    "correct": 15,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 5,
+    "correct": 26,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 6,
+    "correct": 31,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 7,
+    "correct": 39,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 8,
+    "correct": 36,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 9,
+    "correct": 37,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 10,
+    "correct": 35,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 11,
+    "correct": 39,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 12,
+    "correct": 43,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 13,
+    "correct": 48,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 14,
+    "correct": 50,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 15,
+    "correct": 48,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 16,
+    "correct": 49,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 17,
+    "correct": 50,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 18,
+    "correct": 48,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 19,
+    "correct": 52,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 20,
+    "correct": 54,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 21,
+    "correct": 53,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 22,
+    "correct": 52,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 23,
+    "correct": 54,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 24,
+    "correct": 55,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 25,
+    "correct": 54,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 26,
+    "correct": 52,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 27,
+    "correct": 51,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 28,
+    "correct": 49,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 29,
+    "correct": 49,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      3,
+      2,
+      5
+    ],
+    "lda": true,
+    "dimension": 30,
+    "correct": 50,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 1,
+    "correct": 2,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 2,
+    "correct": 2,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 3,
+    "correct": 5,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 4,
+    "correct": 9,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 5,
+    "correct": 12,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 6,
+    "correct": 17,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 7,
+    "correct": 19,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 8,
+    "correct": 19,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 9,
+    "correct": 21,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 10,
+    "correct": 24,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 11,
+    "correct": 30,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 12,
+    "correct": 33,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 13,
+    "correct": 34,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 14,
+    "correct": 34,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 15,
+    "correct": 34,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 16,
+    "correct": 33,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 17,
+    "correct": 36,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 18,
+    "correct": 35,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 19,
+    "correct": 35,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 20,
+    "correct": 38,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 21,
+    "correct": 37,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 22,
+    "correct": 38,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 23,
+    "correct": 36,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 24,
+    "correct": 41,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 25,
+    "correct": 44,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 26,
+    "correct": 44,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 27,
+    "correct": 45,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 28,
+    "correct": 45,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 29,
+    "correct": 46,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 30,
+    "correct": 46,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 31,
+    "correct": 44,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3+LDA",
+    "kind": "gabor",
+    "ranks": [
+      4,
+      4,
+      2
+    ],
+    "lda": true,
+    "dimension": 32,
+    "correct": 43,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3",
+    "kind": "gabor",
+    "ranks": [
+      13,
+      3,
+      10
+    ],
+    "lda": false,
+    "dimension": 390,
+    "correct": 54,
+    "origin": "balanced rank extension"
+  },
+  {
+    "method": "CSA-3",
+    "kind": "gabor",
+    "ranks": [
+      10,
+      3,
+      13
+    ],
+    "lda": false,
+    "dimension": 390,
+    "correct": 55,
+    "origin": "balanced rank extension"
+  }
+]

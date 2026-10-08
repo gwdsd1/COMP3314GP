@@ -1,0 +1,242 @@
+{
+  "seeds": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "outer": "40classes; exactly2 gallery and8 probe/class",
+  "inner": "16folds,75learning/5validation; all40classes; own80gallery each held out once",
+  "inputs": [
+    {
+      "id": "legacy_crop",
+      "wavelength": 4.0,
+      "sigma": 6.283185307179586,
+      "support": 19,
+      "finite_dc": true,
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "histogram": "PIL",
+      "context": false,
+      "downsample_first": false
+    },
+    {
+      "id": "context_anchor",
+      "wavelength": 4.0,
+      "sigma": 6.283185307179586,
+      "support": 19,
+      "finite_dc": true,
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "histogram": "PIL",
+      "context": true,
+      "downsample_first": false
+    },
+    {
+      "id": "context_w8",
+      "wavelength": 8.0,
+      "sigma": 6.283185307179586,
+      "support": 19,
+      "finite_dc": true,
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "histogram": "PIL",
+      "context": true,
+      "downsample_first": false
+    },
+    {
+      "id": "context_sigma_pi",
+      "wavelength": 4.0,
+      "sigma": 3.141592653589793,
+      "support": 19,
+      "finite_dc": true,
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "histogram": "PIL",
+      "context": true,
+      "downsample_first": false
+    },
+    {
+      "id": "context_w8_sigma_pi",
+      "wavelength": 8.0,
+      "sigma": 3.141592653589793,
+      "support": 19,
+      "finite_dc": true,
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "histogram": "PIL",
+      "context": true,
+      "downsample_first": false
+    },
+    {
+      "id": "context_analytic_dc",
+      "wavelength": 4.0,
+      "sigma": 6.283185307179586,
+      "support": 19,
+      "finite_dc": false,
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "histogram": "PIL",
+      "context": true,
+      "downsample_first": false
+    },
+    {
+      "id": "resize_first_w4",
+      "wavelength": 4.0,
+      "sigma": 6.283185307179586,
+      "support": 19,
+      "finite_dc": true,
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "histogram": "PIL",
+      "context": false,
+      "downsample_first": true
+    },
+    {
+      "id": "resize_first_w2",
+      "wavelength": 2.0,
+      "sigma": 6.283185307179586,
+      "support": 19,
+      "finite_dc": true,
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "histogram": "PIL",
+      "context": false,
+      "downsample_first": true
+    },
+    {
+      "id": "context_d18_y25",
+      "wavelength": 4.0,
+      "sigma": 6.283185307179586,
+      "support": 19,
+      "finite_dc": true,
+      "distance": 18.0,
+      "eye_y": 25.0,
+      "histogram": "PIL",
+      "context": true,
+      "downsample_first": false
+    },
+    {
+      "id": "context_d22_y22",
+      "wavelength": 4.0,
+      "sigma": 6.283185307179586,
+      "support": 19,
+      "finite_dc": true,
+      "distance": 22.0,
+      "eye_y": 22.0,
+      "histogram": "PIL",
+      "context": true,
+      "downsample_first": false
+    },
+    {
+      "id": "context_adaptive",
+      "wavelength": 4.0,
+      "sigma": 6.283185307179586,
+      "support": null,
+      "finite_dc": true,
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "histogram": "PIL",
+      "context": true,
+      "downsample_first": false
+    },
+    {
+      "id": "context_cdfmin",
+      "wavelength": 4.0,
+      "sigma": 6.283185307179586,
+      "support": 19,
+      "finite_dc": true,
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "histogram": "CDF_min",
+      "context": true,
+      "downsample_first": false
+    }
+  ],
+  "powers": [
+    1.0,
+    0.75,
+    0.5
+  ],
+  "starts": [
+    "identity",
+    "hosvd"
+  ],
+  "policies": [
+    {
+      "id": "unit_gallery_cosine",
+      "scale": "unit",
+      "origin": "gallery",
+      "metric": "cosine"
+    },
+    {
+      "id": "unit_linear_cosine",
+      "scale": "unit",
+      "origin": "linear",
+      "metric": "cosine"
+    },
+    {
+      "id": "unit_gallery_euclidean",
+      "scale": "unit",
+      "origin": "gallery",
+      "metric": "euclidean"
+    },
+    {
+      "id": "sw_gallery_cosine",
+      "scale": "sw",
+      "origin": "gallery",
+      "metric": "cosine"
+    },
+    {
+      "id": "sw_linear_cosine",
+      "scale": "sw",
+      "origin": "linear",
+      "metric": "cosine"
+    },
+    {
+      "id": "sw_gallery_euclidean",
+      "scale": "sw",
+      "origin": "gallery",
+      "metric": "euclidean"
+    }
+  ],
+  "target": "ordinary CSA4x2x3 + LDA23 only; PCA/CSA390 controls share chosen input/power/NN",
+  "CSA_center": false,
+  "Tmax": 3,
+  "LDA_alpha": 0.0,
+  "dimensions": "CSA24->23, CSA390, PCA24->23(equal budget), PCA33->25(paper)",
+  "stage_A": "12 inputs, identity,power1,unit/gallery/cosine; keep2 by complete inner CV",
+  "stage_B": "best2 inputs x3 powers, same identity and policy",
+  "stage_C": "best2 inputs x3 powers x2 starts x6 policies; best final72 configurations",
+  "tie_rule": "correct count, worst fold correct count, context_anchor priority, input order, power1/.75/.5, identity, policy order",
+  "report": "stage0 frozen context plus A/B/C; all candidate scores and negative stages retained",
+  "stop": "complete all10 seeds and3 stages; never add candidates from probe scores",
+  "limits": [
+    "pruning can omit a global best input",
+    "historical probes seen; not blind",
+    "means and paper best results differ",
+    "author numeric settings not confirmed",
+    "final parameters vary with gallery; no pooling other seeds gallery to choose own parameters"
+  ],
+  "references": [
+    "https://cenl.ucsd.edu/pubs/ieee-1997.pdf",
+    "https://www.kolda.net/publication/TensorReview.pdf"
+  ],
+  "raw_manifest_sha256": "ab48048e0fe799d4369b9f40e880c2ec5105c49228074be603e1f20a6e4124a6",
+  "eyes_sha256": "bf2dbbd7e1f7fe3f00ac17dbb80a87851a6ea299a29a281a302e15ca283cf6d3",
+  "source_sha256": {
+    "optimize_orl_unknowns.py": "d9b8800f62f47ac89f92da64f56a3a73ad930c6c52b9842bbcc9ec84048ea5fc",
+    "csa.py": "6aabff534f47786c9a5098b2459e3afc55f39ad3d86d99b2bcba220f868b06a3",
+    "gabor.py": "ceb12f2bfbe82e381375e14a1c60d0a0a4795b91544e7bff02c22e93ac61578f",
+    "audit_orl_protocol.py": "d80bc8fc89f327dc0aac0abaeec326d07a3f7f181da427e50f02b98687cd9247",
+    "run_available_reproduction.py": "135ab16b4e47f840ad0e711c9bb1cb72166e1a3f871e46ae4d25726ae6928a71",
+    "run_orl_fixed_inputs.py": "f67e34d0c5ecb6229fd3f0fac21c40e558a3f347ef73732b71059afe44f3e8ce",
+    "prepare_available_data.py": "0f5d07532716155b41c7264fc55cfcb749678d9ce1c77a1ad479d8f43e65f6e0"
+  }
+}

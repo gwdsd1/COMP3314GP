@@ -1,0 +1,17 @@
+geometry,gray_correct,gabor_correct,sum_correct,total_each
+haar_v2_d22_zero,28,40,68,80
+haar_v2_d22_replicate,31,40,71,80
+haar_v2_d20_zero,29,48,77,80
+haar_v2_d20_replicate,35,48,83,80
+haar_v2_d18_zero,27,46,73,80
+haar_v2_d18_replicate,33,45,78,80
+haar_v2_d16_zero,27,42,69,80
+haar_v2_d16_replicate,34,46,80,80
+yunet_d22_zero,35,50,85,80
+yunet_d22_replicate,35,51,86,80
+yunet_d20_zero,31,52,83,80
+yunet_d20_replicate,36,52,88,80
+yunet_d18_zero,31,55,86,80
+yunet_d18_replicate,34,57,91,80
+yunet_d16_zero,27,44,71,80
+yunet_d16_replicate,37,49,86,80

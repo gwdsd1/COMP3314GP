@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "configurations": 18,
+  "predictions": 5760,
+  "checks": [
+    "expected radius sizes",
+    "all saved predictions and feature hashes",
+    "CSA monotone SSE"
+  ],
+  "limits": "development diagnostic; not author-verified original filter"
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "variant": "shared_baseline",
+    "method": "PCA+LDA (Gray)",
+    "seeds": [
+      20,
+      21,
+      22
+    ],
+    "n_splits": 3,
+    "mean_percent": 72.5,
+    "std_pp": 2.165063509461097,
+    "min_percent": 71.25,
+    "max_percent": 75.0,
+    "paper_percent": 82.2,
+    "difference_pp": -9.700000000000003
+  },
+  {
+    "variant": "shared_baseline",
+    "method": "CSA-2+LDA",
+    "seeds": [
+      20,
+      21,
+      22
+    ],
+    "n_splits": 3,
+    "mean_percent": 67.91666666666667,
+    "std_pp": 3.067173305069887,
+    "min_percent": 64.375,
+    "max_percent": 69.6875,
+    "paper_percent": 84.1,
+    "difference_pp": -16.183333333333323
+  },
+  {
+    "variant": "shared_baseline",
+    "method": "PCA (Gabor)",
+    "seeds": [
+      20,
+      21,
+      22
+    ],
+    "n_splits": 3,
+    "mean_percent": 78.22916666666667,
+    "std_pp": 1.2629537138523064,
+    "min_percent": 76.875,
+    "max_percent": 79.375,
+    "paper_percent": 86.6,
+    "difference_pp": -8.370833333333323
+  },
+  {
+    "variant": "shared_baseline",
+    "method": "CSA-3",
+    "seeds": [
+      20,
+      21,
+      22
+    ],
+    "n_splits": 3,
+    "mean_percent": 77.60416666666667,
+    "std_pp": 3.5539004394233293,
+    "min_percent": 74.6875,
+    "max_percent": 81.5625,
+    "paper_percent": 94.4,
+    "difference_pp": -16.795833333333334
+  },
+  {
+    "variant": "shared_baseline",
+    "method": "PCA+LDA (Gabor)",
+    "seeds": [
+      20,
+      21,
+      22
+    ],
+    "n_splits": 3,
+    "mean_percent": 79.79166666666667,
+    "std_pp": 2.0807275370248104,
+    "min_percent": 77.5,
+    "max_percent": 81.5625,
+    "paper_percent": 87.2,
+    "difference_pp": -7.408333333333331
+  },
+  {
+    "variant": "shared_baseline",
+    "method": "CSA-3+LDA",
+    "seeds": [
+      20,
+      21,
+      22
+    ],
+    "n_splits": 3,
+    "mean_percent": 65.9375,
+    "std_pp": 2.5579227412101404,
+    "min_percent": 63.125,
+    "max_percent": 68.125,
+    "paper_percent": 90.9,
+    "difference_pp": -24.962500000000006
+  }
+]

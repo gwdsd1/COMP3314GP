@@ -1,0 +1,14 @@
+{
+  "CPU": "Intel(R) Core(TM) Ultra 9 275HX",
+  "cores_reported": 24,
+  "logical_processors_reported": 24,
+  "OS": "Windows-10-10.0.26100-SP0",
+  "python": "3.11.9",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "pillow": "12.3.0",
+  "matplotlib": "3.11.1",
+  "opencv": "4.12.0",
+  "BLAS_threads": 2,
+  "read_only_hardware_metadata": true
+}

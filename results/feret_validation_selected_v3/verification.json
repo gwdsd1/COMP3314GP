@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "counts": {
+    "fixed_results": 24,
+    "predictions": 25880,
+    "splits": 7170,
+    "validation_folds": 13150,
+    "validation_results": 5760,
+    "validation_predictions": 50400,
+    "candidates": 432,
+    "curves": 1752
+  },
+  "checks": [
+    "official pairs, prepared data, source snapshots and final feature hashes/shapes",
+    "first-q Fa+Fb fitting, remaining Fa gallery/Fb probe, strict identity isolation",
+    "declared identity folds contain only training subjects; validation targets excluded from fitting",
+    "all validation predictions, pooled scores and declared winner rule independently recomputed",
+    "all final predictions and counts, exact Table I dimensions, three-iteration monotonic CSA"
+  ],
+  "limits": "checks validate bookkeeping and selection isolation; previous experiments were seen, so this is not a fresh blind test"
+}

@@ -1,0 +1,1093 @@
+dataset,seed,method,stage,geometry,kernel,response,normalization,center,init,scaling,metric,candidate_id,validation_correct,validation_probes,validation_percent,worst_fold_percent
+ORL,20,PCA+LDA (Gray),preprocess,original,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_000,31,80,38.75,20.0
+ORL,20,PCA+LDA (Gray),preprocess,original,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_001,36,80,45.0,20.0
+ORL,20,PCA+LDA (Gray),preprocess,original,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_002,31,80,38.75,20.0
+ORL,20,PCA+LDA (Gray),preprocess,original,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_003,36,80,45.0,20.0
+ORL,20,PCA+LDA (Gray),preprocess,medium,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_004,33,80,41.25,20.0
+ORL,20,PCA+LDA (Gray),preprocess,medium,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_005,38,80,47.5,30.0
+ORL,20,PCA+LDA (Gray),preprocess,medium,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_006,33,80,41.25,20.0
+ORL,20,PCA+LDA (Gray),preprocess,medium,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_007,38,80,47.5,30.0
+ORL,20,PCA+LDA (Gray),preprocess,fuller,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_008,27,80,33.75,30.0
+ORL,20,PCA+LDA (Gray),preprocess,fuller,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_009,39,80,48.75,40.0
+ORL,20,PCA+LDA (Gray),preprocess,fuller,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_010,29,80,36.25,30.0
+ORL,20,PCA+LDA (Gray),preprocess,fuller,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_011,40,80,50.0,40.0
+ORL,20,PCA+LDA (Gray),model,fuller,standard4,linear,l2,True,identity,unit_columns,euclidean,model_000,40,80,50.0,40.0
+ORL,20,PCA+LDA (Gray),model,fuller,standard4,linear,l2,True,identity,unit_columns,cosine,model_001,29,80,36.25,30.0
+ORL,20,PCA+LDA (Gray),model,fuller,standard4,linear,l2,True,identity,sw_identity,euclidean,model_002,3,80,3.75,0.0
+ORL,20,PCA+LDA (Gray),model,fuller,standard4,linear,l2,True,identity,sw_identity,cosine,model_003,6,80,7.5,0.0
+ORL,20,PCA+LDA (Gray),model,fuller,standard4,linear,l2,False,identity,unit_columns,euclidean,model_004,33,80,41.25,20.0
+ORL,20,PCA+LDA (Gray),model,fuller,standard4,linear,l2,False,identity,unit_columns,cosine,model_005,29,80,36.25,20.0
+ORL,20,PCA+LDA (Gray),model,fuller,standard4,linear,l2,False,identity,sw_identity,euclidean,model_006,4,80,5.0,0.0
+ORL,20,PCA+LDA (Gray),model,fuller,standard4,linear,l2,False,identity,sw_identity,cosine,model_007,10,80,12.5,0.0
+ORL,20,CSA-2+LDA,preprocess,original,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_000,32,80,40.0,20.0
+ORL,20,CSA-2+LDA,preprocess,original,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_001,35,80,43.75,20.0
+ORL,20,CSA-2+LDA,preprocess,original,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_002,32,80,40.0,20.0
+ORL,20,CSA-2+LDA,preprocess,original,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_003,37,80,46.25,20.0
+ORL,20,CSA-2+LDA,preprocess,medium,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_004,22,80,27.5,20.0
+ORL,20,CSA-2+LDA,preprocess,medium,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_005,26,80,32.5,20.0
+ORL,20,CSA-2+LDA,preprocess,medium,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_006,20,80,25.0,20.0
+ORL,20,CSA-2+LDA,preprocess,medium,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_007,22,80,27.5,20.0
+ORL,20,CSA-2+LDA,preprocess,fuller,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_008,16,80,20.0,10.0
+ORL,20,CSA-2+LDA,preprocess,fuller,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_009,16,80,20.0,10.0
+ORL,20,CSA-2+LDA,preprocess,fuller,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_010,18,80,22.5,10.0
+ORL,20,CSA-2+LDA,preprocess,fuller,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_011,18,80,22.5,10.0
+ORL,20,CSA-2+LDA,model,original,standard4,linear,l2,False,identity,unit_columns,cosine,model_000,37,80,46.25,20.0
+ORL,20,CSA-2+LDA,model,original,standard4,linear,l2,False,identity,unit_columns,euclidean,model_001,32,80,40.0,20.0
+ORL,20,CSA-2+LDA,model,original,standard4,linear,l2,False,identity,sw_identity,cosine,model_002,30,80,37.5,20.0
+ORL,20,CSA-2+LDA,model,original,standard4,linear,l2,False,identity,sw_identity,euclidean,model_003,23,80,28.75,10.0
+ORL,20,CSA-2+LDA,model,original,standard4,linear,l2,False,random,unit_columns,cosine,model_004,37,80,46.25,20.0
+ORL,20,CSA-2+LDA,model,original,standard4,linear,l2,False,random,unit_columns,euclidean,model_005,32,80,40.0,20.0
+ORL,20,CSA-2+LDA,model,original,standard4,linear,l2,False,random,sw_identity,cosine,model_006,30,80,37.5,20.0
+ORL,20,CSA-2+LDA,model,original,standard4,linear,l2,False,random,sw_identity,euclidean,model_007,23,80,28.75,10.0
+ORL,20,CSA-2+LDA,model,original,standard4,linear,l2,True,identity,unit_columns,cosine,model_008,30,80,37.5,30.0
+ORL,20,CSA-2+LDA,model,original,standard4,linear,l2,True,identity,unit_columns,euclidean,model_009,27,80,33.75,20.0
+ORL,20,CSA-2+LDA,model,original,standard4,linear,l2,True,identity,sw_identity,cosine,model_010,24,80,30.0,10.0
+ORL,20,CSA-2+LDA,model,original,standard4,linear,l2,True,identity,sw_identity,euclidean,model_011,17,80,21.25,10.0
+ORL,20,CSA-2+LDA,model,original,standard4,linear,l2,True,random,unit_columns,cosine,model_012,30,80,37.5,30.0
+ORL,20,CSA-2+LDA,model,original,standard4,linear,l2,True,random,unit_columns,euclidean,model_013,27,80,33.75,20.0
+ORL,20,CSA-2+LDA,model,original,standard4,linear,l2,True,random,sw_identity,cosine,model_014,24,80,30.0,10.0
+ORL,20,CSA-2+LDA,model,original,standard4,linear,l2,True,random,sw_identity,euclidean,model_015,17,80,21.25,10.0
+ORL,20,PCA (Gabor),preprocess,original,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_000,34,80,42.5,30.0
+ORL,20,PCA (Gabor),preprocess,original,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_001,42,80,52.5,40.0
+ORL,20,PCA (Gabor),preprocess,original,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_002,34,80,42.5,30.0
+ORL,20,PCA (Gabor),preprocess,original,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_003,48,80,60.0,40.0
+ORL,20,PCA (Gabor),preprocess,original,standard4,sqrt,none,True,identity,unit_columns,cosine,preprocess_004,37,80,46.25,40.0
+ORL,20,PCA (Gabor),preprocess,original,standard4,sqrt,none,True,identity,unit_columns,euclidean,preprocess_005,47,80,58.75,40.0
+ORL,20,PCA (Gabor),preprocess,original,standard4,sqrt,l2,True,identity,unit_columns,cosine,preprocess_006,35,80,43.75,30.0
+ORL,20,PCA (Gabor),preprocess,original,standard4,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_007,47,80,58.75,50.0
+ORL,20,PCA (Gabor),preprocess,original,smaller2,linear,none,True,identity,unit_columns,cosine,preprocess_008,39,80,48.75,40.0
+ORL,20,PCA (Gabor),preprocess,original,smaller2,linear,none,True,identity,unit_columns,euclidean,preprocess_009,49,80,61.25,40.0
+ORL,20,PCA (Gabor),preprocess,original,smaller2,linear,l2,True,identity,unit_columns,cosine,preprocess_010,40,80,50.0,30.0
+ORL,20,PCA (Gabor),preprocess,original,smaller2,linear,l2,True,identity,unit_columns,euclidean,preprocess_011,53,80,66.25,60.0
+ORL,20,PCA (Gabor),preprocess,original,smaller2,sqrt,none,True,identity,unit_columns,cosine,preprocess_012,38,80,47.5,30.0
+ORL,20,PCA (Gabor),preprocess,original,smaller2,sqrt,none,True,identity,unit_columns,euclidean,preprocess_013,50,80,62.5,40.0
+ORL,20,PCA (Gabor),preprocess,original,smaller2,sqrt,l2,True,identity,unit_columns,cosine,preprocess_014,41,80,51.25,40.0
+ORL,20,PCA (Gabor),preprocess,original,smaller2,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_015,51,80,63.75,50.0
+ORL,20,PCA (Gabor),preprocess,medium,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_016,34,80,42.5,30.0
+ORL,20,PCA (Gabor),preprocess,medium,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_017,42,80,52.5,40.0
+ORL,20,PCA (Gabor),preprocess,medium,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_018,31,80,38.75,20.0
+ORL,20,PCA (Gabor),preprocess,medium,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_019,45,80,56.25,40.0
+ORL,20,PCA (Gabor),preprocess,medium,standard4,sqrt,none,True,identity,unit_columns,cosine,preprocess_020,37,80,46.25,40.0
+ORL,20,PCA (Gabor),preprocess,medium,standard4,sqrt,none,True,identity,unit_columns,euclidean,preprocess_021,45,80,56.25,50.0
+ORL,20,PCA (Gabor),preprocess,medium,standard4,sqrt,l2,True,identity,unit_columns,cosine,preprocess_022,34,80,42.5,30.0
+ORL,20,PCA (Gabor),preprocess,medium,standard4,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_023,43,80,53.75,40.0
+ORL,20,PCA (Gabor),preprocess,medium,smaller2,linear,none,True,identity,unit_columns,cosine,preprocess_024,31,80,38.75,30.0
+ORL,20,PCA (Gabor),preprocess,medium,smaller2,linear,none,True,identity,unit_columns,euclidean,preprocess_025,41,80,51.25,40.0
+ORL,20,PCA (Gabor),preprocess,medium,smaller2,linear,l2,True,identity,unit_columns,cosine,preprocess_026,30,80,37.5,30.0
+ORL,20,PCA (Gabor),preprocess,medium,smaller2,linear,l2,True,identity,unit_columns,euclidean,preprocess_027,38,80,47.5,20.0
+ORL,20,PCA (Gabor),preprocess,medium,smaller2,sqrt,none,True,identity,unit_columns,cosine,preprocess_028,33,80,41.25,30.0
+ORL,20,PCA (Gabor),preprocess,medium,smaller2,sqrt,none,True,identity,unit_columns,euclidean,preprocess_029,40,80,50.0,40.0
+ORL,20,PCA (Gabor),preprocess,medium,smaller2,sqrt,l2,True,identity,unit_columns,cosine,preprocess_030,31,80,38.75,30.0
+ORL,20,PCA (Gabor),preprocess,medium,smaller2,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_031,38,80,47.5,30.0
+ORL,20,PCA (Gabor),preprocess,fuller,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_032,27,80,33.75,20.0
+ORL,20,PCA (Gabor),preprocess,fuller,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_033,35,80,43.75,30.0
+ORL,20,PCA (Gabor),preprocess,fuller,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_034,30,80,37.5,30.0
+ORL,20,PCA (Gabor),preprocess,fuller,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_035,37,80,46.25,30.0
+ORL,20,PCA (Gabor),preprocess,fuller,standard4,sqrt,none,True,identity,unit_columns,cosine,preprocess_036,30,80,37.5,30.0
+ORL,20,PCA (Gabor),preprocess,fuller,standard4,sqrt,none,True,identity,unit_columns,euclidean,preprocess_037,37,80,46.25,40.0
+ORL,20,PCA (Gabor),preprocess,fuller,standard4,sqrt,l2,True,identity,unit_columns,cosine,preprocess_038,29,80,36.25,20.0
+ORL,20,PCA (Gabor),preprocess,fuller,standard4,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_039,37,80,46.25,30.0
+ORL,20,PCA (Gabor),preprocess,fuller,smaller2,linear,none,True,identity,unit_columns,cosine,preprocess_040,26,80,32.5,20.0
+ORL,20,PCA (Gabor),preprocess,fuller,smaller2,linear,none,True,identity,unit_columns,euclidean,preprocess_041,36,80,45.0,30.0
+ORL,20,PCA (Gabor),preprocess,fuller,smaller2,linear,l2,True,identity,unit_columns,cosine,preprocess_042,22,80,27.5,10.0
+ORL,20,PCA (Gabor),preprocess,fuller,smaller2,linear,l2,True,identity,unit_columns,euclidean,preprocess_043,28,80,35.0,30.0
+ORL,20,PCA (Gabor),preprocess,fuller,smaller2,sqrt,none,True,identity,unit_columns,cosine,preprocess_044,25,80,31.25,10.0
+ORL,20,PCA (Gabor),preprocess,fuller,smaller2,sqrt,none,True,identity,unit_columns,euclidean,preprocess_045,35,80,43.75,30.0
+ORL,20,PCA (Gabor),preprocess,fuller,smaller2,sqrt,l2,True,identity,unit_columns,cosine,preprocess_046,25,80,31.25,10.0
+ORL,20,PCA (Gabor),preprocess,fuller,smaller2,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_047,30,80,37.5,20.0
+ORL,20,PCA (Gabor),model,original,smaller2,linear,l2,True,identity,unit_columns,euclidean,model_000,53,80,66.25,60.0
+ORL,20,PCA (Gabor),model,original,smaller2,linear,l2,True,identity,unit_columns,cosine,model_001,40,80,50.0,30.0
+ORL,20,PCA (Gabor),model,original,smaller2,linear,l2,False,identity,unit_columns,euclidean,model_002,53,80,66.25,60.0
+ORL,20,PCA (Gabor),model,original,smaller2,linear,l2,False,identity,unit_columns,cosine,model_003,53,80,66.25,60.0
+ORL,20,CSA-3,preprocess,original,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_000,44,80,55.0,40.0
+ORL,20,CSA-3,preprocess,original,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_001,38,80,47.5,30.0
+ORL,20,CSA-3,preprocess,original,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_002,43,80,53.75,40.0
+ORL,20,CSA-3,preprocess,original,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_003,43,80,53.75,40.0
+ORL,20,CSA-3,preprocess,original,standard4,sqrt,none,False,identity,unit_columns,cosine,preprocess_004,44,80,55.0,40.0
+ORL,20,CSA-3,preprocess,original,standard4,sqrt,none,False,identity,unit_columns,euclidean,preprocess_005,44,80,55.0,50.0
+ORL,20,CSA-3,preprocess,original,standard4,sqrt,l2,False,identity,unit_columns,cosine,preprocess_006,44,80,55.0,40.0
+ORL,20,CSA-3,preprocess,original,standard4,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_007,44,80,55.0,40.0
+ORL,20,CSA-3,preprocess,original,smaller2,linear,none,False,identity,unit_columns,cosine,preprocess_008,41,80,51.25,40.0
+ORL,20,CSA-3,preprocess,original,smaller2,linear,none,False,identity,unit_columns,euclidean,preprocess_009,39,80,48.75,40.0
+ORL,20,CSA-3,preprocess,original,smaller2,linear,l2,False,identity,unit_columns,cosine,preprocess_010,42,80,52.5,40.0
+ORL,20,CSA-3,preprocess,original,smaller2,linear,l2,False,identity,unit_columns,euclidean,preprocess_011,43,80,53.75,40.0
+ORL,20,CSA-3,preprocess,original,smaller2,sqrt,none,False,identity,unit_columns,cosine,preprocess_012,43,80,53.75,40.0
+ORL,20,CSA-3,preprocess,original,smaller2,sqrt,none,False,identity,unit_columns,euclidean,preprocess_013,38,80,47.5,40.0
+ORL,20,CSA-3,preprocess,original,smaller2,sqrt,l2,False,identity,unit_columns,cosine,preprocess_014,43,80,53.75,40.0
+ORL,20,CSA-3,preprocess,original,smaller2,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_015,43,80,53.75,40.0
+ORL,20,CSA-3,preprocess,medium,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_016,36,80,45.0,40.0
+ORL,20,CSA-3,preprocess,medium,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_017,34,80,42.5,30.0
+ORL,20,CSA-3,preprocess,medium,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_018,36,80,45.0,40.0
+ORL,20,CSA-3,preprocess,medium,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_019,36,80,45.0,40.0
+ORL,20,CSA-3,preprocess,medium,standard4,sqrt,none,False,identity,unit_columns,cosine,preprocess_020,40,80,50.0,40.0
+ORL,20,CSA-3,preprocess,medium,standard4,sqrt,none,False,identity,unit_columns,euclidean,preprocess_021,37,80,46.25,40.0
+ORL,20,CSA-3,preprocess,medium,standard4,sqrt,l2,False,identity,unit_columns,cosine,preprocess_022,40,80,50.0,40.0
+ORL,20,CSA-3,preprocess,medium,standard4,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_023,40,80,50.0,40.0
+ORL,20,CSA-3,preprocess,medium,smaller2,linear,none,False,identity,unit_columns,cosine,preprocess_024,39,80,48.75,40.0
+ORL,20,CSA-3,preprocess,medium,smaller2,linear,none,False,identity,unit_columns,euclidean,preprocess_025,36,80,45.0,30.0
+ORL,20,CSA-3,preprocess,medium,smaller2,linear,l2,False,identity,unit_columns,cosine,preprocess_026,39,80,48.75,40.0
+ORL,20,CSA-3,preprocess,medium,smaller2,linear,l2,False,identity,unit_columns,euclidean,preprocess_027,39,80,48.75,40.0
+ORL,20,CSA-3,preprocess,medium,smaller2,sqrt,none,False,identity,unit_columns,cosine,preprocess_028,39,80,48.75,40.0
+ORL,20,CSA-3,preprocess,medium,smaller2,sqrt,none,False,identity,unit_columns,euclidean,preprocess_029,35,80,43.75,30.0
+ORL,20,CSA-3,preprocess,medium,smaller2,sqrt,l2,False,identity,unit_columns,cosine,preprocess_030,39,80,48.75,40.0
+ORL,20,CSA-3,preprocess,medium,smaller2,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_031,41,80,51.25,40.0
+ORL,20,CSA-3,preprocess,fuller,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_032,39,80,48.75,30.0
+ORL,20,CSA-3,preprocess,fuller,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_033,31,80,38.75,20.0
+ORL,20,CSA-3,preprocess,fuller,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_034,39,80,48.75,30.0
+ORL,20,CSA-3,preprocess,fuller,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_035,40,80,50.0,40.0
+ORL,20,CSA-3,preprocess,fuller,standard4,sqrt,none,False,identity,unit_columns,cosine,preprocess_036,45,80,56.25,40.0
+ORL,20,CSA-3,preprocess,fuller,standard4,sqrt,none,False,identity,unit_columns,euclidean,preprocess_037,40,80,50.0,40.0
+ORL,20,CSA-3,preprocess,fuller,standard4,sqrt,l2,False,identity,unit_columns,cosine,preprocess_038,45,80,56.25,40.0
+ORL,20,CSA-3,preprocess,fuller,standard4,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_039,45,80,56.25,40.0
+ORL,20,CSA-3,preprocess,fuller,smaller2,linear,none,False,identity,unit_columns,cosine,preprocess_040,33,80,41.25,20.0
+ORL,20,CSA-3,preprocess,fuller,smaller2,linear,none,False,identity,unit_columns,euclidean,preprocess_041,28,80,35.0,0.0
+ORL,20,CSA-3,preprocess,fuller,smaller2,linear,l2,False,identity,unit_columns,cosine,preprocess_042,34,80,42.5,20.0
+ORL,20,CSA-3,preprocess,fuller,smaller2,linear,l2,False,identity,unit_columns,euclidean,preprocess_043,33,80,41.25,20.0
+ORL,20,CSA-3,preprocess,fuller,smaller2,sqrt,none,False,identity,unit_columns,cosine,preprocess_044,34,80,42.5,20.0
+ORL,20,CSA-3,preprocess,fuller,smaller2,sqrt,none,False,identity,unit_columns,euclidean,preprocess_045,33,80,41.25,30.0
+ORL,20,CSA-3,preprocess,fuller,smaller2,sqrt,l2,False,identity,unit_columns,cosine,preprocess_046,34,80,42.5,20.0
+ORL,20,CSA-3,preprocess,fuller,smaller2,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_047,34,80,42.5,20.0
+ORL,20,CSA-3,model,fuller,standard4,sqrt,none,False,identity,unit_columns,cosine,model_000,45,80,56.25,40.0
+ORL,20,CSA-3,model,fuller,standard4,sqrt,none,False,identity,unit_columns,euclidean,model_001,40,80,50.0,40.0
+ORL,20,CSA-3,model,fuller,standard4,sqrt,none,False,random,unit_columns,cosine,model_002,45,80,56.25,40.0
+ORL,20,CSA-3,model,fuller,standard4,sqrt,none,False,random,unit_columns,euclidean,model_003,40,80,50.0,40.0
+ORL,20,CSA-3,model,fuller,standard4,sqrt,none,True,identity,unit_columns,cosine,model_004,37,80,46.25,30.0
+ORL,20,CSA-3,model,fuller,standard4,sqrt,none,True,identity,unit_columns,euclidean,model_005,39,80,48.75,40.0
+ORL,20,CSA-3,model,fuller,standard4,sqrt,none,True,random,unit_columns,cosine,model_006,37,80,46.25,30.0
+ORL,20,CSA-3,model,fuller,standard4,sqrt,none,True,random,unit_columns,euclidean,model_007,39,80,48.75,40.0
+ORL,20,PCA+LDA (Gabor),preprocess,original,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_000,31,80,38.75,30.0
+ORL,20,PCA+LDA (Gabor),preprocess,original,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_001,43,80,53.75,40.0
+ORL,20,PCA+LDA (Gabor),preprocess,original,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_002,33,80,41.25,30.0
+ORL,20,PCA+LDA (Gabor),preprocess,original,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_003,44,80,55.0,40.0
+ORL,20,PCA+LDA (Gabor),preprocess,original,standard4,sqrt,none,True,identity,unit_columns,cosine,preprocess_004,37,80,46.25,40.0
+ORL,20,PCA+LDA (Gabor),preprocess,original,standard4,sqrt,none,True,identity,unit_columns,euclidean,preprocess_005,46,80,57.5,50.0
+ORL,20,PCA+LDA (Gabor),preprocess,original,standard4,sqrt,l2,True,identity,unit_columns,cosine,preprocess_006,36,80,45.0,30.0
+ORL,20,PCA+LDA (Gabor),preprocess,original,standard4,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_007,49,80,61.25,50.0
+ORL,20,PCA+LDA (Gabor),preprocess,original,smaller2,linear,none,True,identity,unit_columns,cosine,preprocess_008,33,80,41.25,20.0
+ORL,20,PCA+LDA (Gabor),preprocess,original,smaller2,linear,none,True,identity,unit_columns,euclidean,preprocess_009,53,80,66.25,50.0
+ORL,20,PCA+LDA (Gabor),preprocess,original,smaller2,linear,l2,True,identity,unit_columns,cosine,preprocess_010,39,80,48.75,40.0
+ORL,20,PCA+LDA (Gabor),preprocess,original,smaller2,linear,l2,True,identity,unit_columns,euclidean,preprocess_011,51,80,63.75,50.0
+ORL,20,PCA+LDA (Gabor),preprocess,original,smaller2,sqrt,none,True,identity,unit_columns,cosine,preprocess_012,41,80,51.25,40.0
+ORL,20,PCA+LDA (Gabor),preprocess,original,smaller2,sqrt,none,True,identity,unit_columns,euclidean,preprocess_013,56,80,70.0,60.0
+ORL,20,PCA+LDA (Gabor),preprocess,original,smaller2,sqrt,l2,True,identity,unit_columns,cosine,preprocess_014,43,80,53.75,40.0
+ORL,20,PCA+LDA (Gabor),preprocess,original,smaller2,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_015,53,80,66.25,50.0
+ORL,20,PCA+LDA (Gabor),preprocess,medium,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_016,34,80,42.5,30.0
+ORL,20,PCA+LDA (Gabor),preprocess,medium,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_017,43,80,53.75,30.0
+ORL,20,PCA+LDA (Gabor),preprocess,medium,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_018,31,80,38.75,20.0
+ORL,20,PCA+LDA (Gabor),preprocess,medium,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_019,40,80,50.0,30.0
+ORL,20,PCA+LDA (Gabor),preprocess,medium,standard4,sqrt,none,True,identity,unit_columns,cosine,preprocess_020,34,80,42.5,20.0
+ORL,20,PCA+LDA (Gabor),preprocess,medium,standard4,sqrt,none,True,identity,unit_columns,euclidean,preprocess_021,46,80,57.5,30.0
+ORL,20,PCA+LDA (Gabor),preprocess,medium,standard4,sqrt,l2,True,identity,unit_columns,cosine,preprocess_022,35,80,43.75,30.0
+ORL,20,PCA+LDA (Gabor),preprocess,medium,standard4,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_023,46,80,57.5,40.0
+ORL,20,PCA+LDA (Gabor),preprocess,medium,smaller2,linear,none,True,identity,unit_columns,cosine,preprocess_024,28,80,35.0,20.0
+ORL,20,PCA+LDA (Gabor),preprocess,medium,smaller2,linear,none,True,identity,unit_columns,euclidean,preprocess_025,38,80,47.5,20.0
+ORL,20,PCA+LDA (Gabor),preprocess,medium,smaller2,linear,l2,True,identity,unit_columns,cosine,preprocess_026,30,80,37.5,20.0
+ORL,20,PCA+LDA (Gabor),preprocess,medium,smaller2,linear,l2,True,identity,unit_columns,euclidean,preprocess_027,44,80,55.0,40.0
+ORL,20,PCA+LDA (Gabor),preprocess,medium,smaller2,sqrt,none,True,identity,unit_columns,cosine,preprocess_028,38,80,47.5,30.0
+ORL,20,PCA+LDA (Gabor),preprocess,medium,smaller2,sqrt,none,True,identity,unit_columns,euclidean,preprocess_029,46,80,57.5,40.0
+ORL,20,PCA+LDA (Gabor),preprocess,medium,smaller2,sqrt,l2,True,identity,unit_columns,cosine,preprocess_030,37,80,46.25,30.0
+ORL,20,PCA+LDA (Gabor),preprocess,medium,smaller2,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_031,44,80,55.0,40.0
+ORL,20,PCA+LDA (Gabor),preprocess,fuller,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_032,27,80,33.75,20.0
+ORL,20,PCA+LDA (Gabor),preprocess,fuller,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_033,33,80,41.25,20.0
+ORL,20,PCA+LDA (Gabor),preprocess,fuller,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_034,28,80,35.0,10.0
+ORL,20,PCA+LDA (Gabor),preprocess,fuller,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_035,39,80,48.75,20.0
+ORL,20,PCA+LDA (Gabor),preprocess,fuller,standard4,sqrt,none,True,identity,unit_columns,cosine,preprocess_036,27,80,33.75,20.0
+ORL,20,PCA+LDA (Gabor),preprocess,fuller,standard4,sqrt,none,True,identity,unit_columns,euclidean,preprocess_037,46,80,57.5,50.0
+ORL,20,PCA+LDA (Gabor),preprocess,fuller,standard4,sqrt,l2,True,identity,unit_columns,cosine,preprocess_038,34,80,42.5,30.0
+ORL,20,PCA+LDA (Gabor),preprocess,fuller,standard4,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_039,51,80,63.75,50.0
+ORL,20,PCA+LDA (Gabor),preprocess,fuller,smaller2,linear,none,True,identity,unit_columns,cosine,preprocess_040,25,80,31.25,20.0
+ORL,20,PCA+LDA (Gabor),preprocess,fuller,smaller2,linear,none,True,identity,unit_columns,euclidean,preprocess_041,31,80,38.75,30.0
+ORL,20,PCA+LDA (Gabor),preprocess,fuller,smaller2,linear,l2,True,identity,unit_columns,cosine,preprocess_042,21,80,26.25,10.0
+ORL,20,PCA+LDA (Gabor),preprocess,fuller,smaller2,linear,l2,True,identity,unit_columns,euclidean,preprocess_043,32,80,40.0,30.0
+ORL,20,PCA+LDA (Gabor),preprocess,fuller,smaller2,sqrt,none,True,identity,unit_columns,cosine,preprocess_044,29,80,36.25,20.0
+ORL,20,PCA+LDA (Gabor),preprocess,fuller,smaller2,sqrt,none,True,identity,unit_columns,euclidean,preprocess_045,39,80,48.75,40.0
+ORL,20,PCA+LDA (Gabor),preprocess,fuller,smaller2,sqrt,l2,True,identity,unit_columns,cosine,preprocess_046,29,80,36.25,20.0
+ORL,20,PCA+LDA (Gabor),preprocess,fuller,smaller2,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_047,39,80,48.75,30.0
+ORL,20,PCA+LDA (Gabor),model,original,smaller2,sqrt,none,True,identity,unit_columns,euclidean,model_000,56,80,70.0,60.0
+ORL,20,PCA+LDA (Gabor),model,original,smaller2,sqrt,none,True,identity,unit_columns,cosine,model_001,41,80,51.25,40.0
+ORL,20,PCA+LDA (Gabor),model,original,smaller2,sqrt,none,True,identity,sw_identity,euclidean,model_002,15,80,18.75,0.0
+ORL,20,PCA+LDA (Gabor),model,original,smaller2,sqrt,none,True,identity,sw_identity,cosine,model_003,18,80,22.5,0.0
+ORL,20,PCA+LDA (Gabor),model,original,smaller2,sqrt,none,False,identity,unit_columns,euclidean,model_004,54,80,67.5,60.0
+ORL,20,PCA+LDA (Gabor),model,original,smaller2,sqrt,none,False,identity,unit_columns,cosine,model_005,49,80,61.25,40.0
+ORL,20,PCA+LDA (Gabor),model,original,smaller2,sqrt,none,False,identity,sw_identity,euclidean,model_006,16,80,20.0,0.0
+ORL,20,PCA+LDA (Gabor),model,original,smaller2,sqrt,none,False,identity,sw_identity,cosine,model_007,16,80,20.0,0.0
+ORL,20,CSA-3+LDA,preprocess,original,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_000,33,80,41.25,30.0
+ORL,20,CSA-3+LDA,preprocess,original,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_001,25,80,31.25,10.0
+ORL,20,CSA-3+LDA,preprocess,original,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_002,26,80,32.5,20.0
+ORL,20,CSA-3+LDA,preprocess,original,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_003,19,80,23.75,10.0
+ORL,20,CSA-3+LDA,preprocess,original,standard4,sqrt,none,False,identity,unit_columns,cosine,preprocess_004,36,80,45.0,30.0
+ORL,20,CSA-3+LDA,preprocess,original,standard4,sqrt,none,False,identity,unit_columns,euclidean,preprocess_005,29,80,36.25,20.0
+ORL,20,CSA-3+LDA,preprocess,original,standard4,sqrt,l2,False,identity,unit_columns,cosine,preprocess_006,38,80,47.5,30.0
+ORL,20,CSA-3+LDA,preprocess,original,standard4,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_007,28,80,35.0,10.0
+ORL,20,CSA-3+LDA,preprocess,original,smaller2,linear,none,False,identity,unit_columns,cosine,preprocess_008,43,80,53.75,30.0
+ORL,20,CSA-3+LDA,preprocess,original,smaller2,linear,none,False,identity,unit_columns,euclidean,preprocess_009,32,80,40.0,20.0
+ORL,20,CSA-3+LDA,preprocess,original,smaller2,linear,l2,False,identity,unit_columns,cosine,preprocess_010,44,80,55.0,30.0
+ORL,20,CSA-3+LDA,preprocess,original,smaller2,linear,l2,False,identity,unit_columns,euclidean,preprocess_011,35,80,43.75,10.0
+ORL,20,CSA-3+LDA,preprocess,original,smaller2,sqrt,none,False,identity,unit_columns,cosine,preprocess_012,40,80,50.0,30.0
+ORL,20,CSA-3+LDA,preprocess,original,smaller2,sqrt,none,False,identity,unit_columns,euclidean,preprocess_013,36,80,45.0,20.0
+ORL,20,CSA-3+LDA,preprocess,original,smaller2,sqrt,l2,False,identity,unit_columns,cosine,preprocess_014,44,80,55.0,40.0
+ORL,20,CSA-3+LDA,preprocess,original,smaller2,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_015,38,80,47.5,10.0
+ORL,20,CSA-3+LDA,preprocess,medium,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_016,27,80,33.75,20.0
+ORL,20,CSA-3+LDA,preprocess,medium,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_017,19,80,23.75,10.0
+ORL,20,CSA-3+LDA,preprocess,medium,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_018,19,80,23.75,10.0
+ORL,20,CSA-3+LDA,preprocess,medium,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_019,18,80,22.5,10.0
+ORL,20,CSA-3+LDA,preprocess,medium,standard4,sqrt,none,False,identity,unit_columns,cosine,preprocess_020,28,80,35.0,30.0
+ORL,20,CSA-3+LDA,preprocess,medium,standard4,sqrt,none,False,identity,unit_columns,euclidean,preprocess_021,22,80,27.5,20.0
+ORL,20,CSA-3+LDA,preprocess,medium,standard4,sqrt,l2,False,identity,unit_columns,cosine,preprocess_022,29,80,36.25,20.0
+ORL,20,CSA-3+LDA,preprocess,medium,standard4,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_023,19,80,23.75,10.0
+ORL,20,CSA-3+LDA,preprocess,medium,smaller2,linear,none,False,identity,unit_columns,cosine,preprocess_024,28,80,35.0,20.0
+ORL,20,CSA-3+LDA,preprocess,medium,smaller2,linear,none,False,identity,unit_columns,euclidean,preprocess_025,24,80,30.0,10.0
+ORL,20,CSA-3+LDA,preprocess,medium,smaller2,linear,l2,False,identity,unit_columns,cosine,preprocess_026,31,80,38.75,20.0
+ORL,20,CSA-3+LDA,preprocess,medium,smaller2,linear,l2,False,identity,unit_columns,euclidean,preprocess_027,23,80,28.75,10.0
+ORL,20,CSA-3+LDA,preprocess,medium,smaller2,sqrt,none,False,identity,unit_columns,cosine,preprocess_028,37,80,46.25,30.0
+ORL,20,CSA-3+LDA,preprocess,medium,smaller2,sqrt,none,False,identity,unit_columns,euclidean,preprocess_029,26,80,32.5,20.0
+ORL,20,CSA-3+LDA,preprocess,medium,smaller2,sqrt,l2,False,identity,unit_columns,cosine,preprocess_030,31,80,38.75,10.0
+ORL,20,CSA-3+LDA,preprocess,medium,smaller2,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_031,24,80,30.0,10.0
+ORL,20,CSA-3+LDA,preprocess,fuller,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_032,28,80,35.0,20.0
+ORL,20,CSA-3+LDA,preprocess,fuller,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_033,24,80,30.0,10.0
+ORL,20,CSA-3+LDA,preprocess,fuller,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_034,28,80,35.0,20.0
+ORL,20,CSA-3+LDA,preprocess,fuller,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_035,22,80,27.5,20.0
+ORL,20,CSA-3+LDA,preprocess,fuller,standard4,sqrt,none,False,identity,unit_columns,cosine,preprocess_036,43,80,53.75,50.0
+ORL,20,CSA-3+LDA,preprocess,fuller,standard4,sqrt,none,False,identity,unit_columns,euclidean,preprocess_037,31,80,38.75,10.0
+ORL,20,CSA-3+LDA,preprocess,fuller,standard4,sqrt,l2,False,identity,unit_columns,cosine,preprocess_038,35,80,43.75,30.0
+ORL,20,CSA-3+LDA,preprocess,fuller,standard4,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_039,28,80,35.0,20.0
+ORL,20,CSA-3+LDA,preprocess,fuller,smaller2,linear,none,False,identity,unit_columns,cosine,preprocess_040,32,80,40.0,30.0
+ORL,20,CSA-3+LDA,preprocess,fuller,smaller2,linear,none,False,identity,unit_columns,euclidean,preprocess_041,25,80,31.25,10.0
+ORL,20,CSA-3+LDA,preprocess,fuller,smaller2,linear,l2,False,identity,unit_columns,cosine,preprocess_042,32,80,40.0,20.0
+ORL,20,CSA-3+LDA,preprocess,fuller,smaller2,linear,l2,False,identity,unit_columns,euclidean,preprocess_043,25,80,31.25,10.0
+ORL,20,CSA-3+LDA,preprocess,fuller,smaller2,sqrt,none,False,identity,unit_columns,cosine,preprocess_044,38,80,47.5,40.0
+ORL,20,CSA-3+LDA,preprocess,fuller,smaller2,sqrt,none,False,identity,unit_columns,euclidean,preprocess_045,34,80,42.5,30.0
+ORL,20,CSA-3+LDA,preprocess,fuller,smaller2,sqrt,l2,False,identity,unit_columns,cosine,preprocess_046,34,80,42.5,40.0
+ORL,20,CSA-3+LDA,preprocess,fuller,smaller2,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_047,27,80,33.75,10.0
+ORL,20,CSA-3+LDA,model,original,smaller2,sqrt,l2,False,identity,unit_columns,cosine,model_000,44,80,55.0,40.0
+ORL,20,CSA-3+LDA,model,original,smaller2,sqrt,l2,False,identity,unit_columns,euclidean,model_001,38,80,47.5,10.0
+ORL,20,CSA-3+LDA,model,original,smaller2,sqrt,l2,False,identity,sw_identity,cosine,model_002,30,80,37.5,10.0
+ORL,20,CSA-3+LDA,model,original,smaller2,sqrt,l2,False,identity,sw_identity,euclidean,model_003,28,80,35.0,10.0
+ORL,20,CSA-3+LDA,model,original,smaller2,sqrt,l2,False,random,unit_columns,cosine,model_004,44,80,55.0,40.0
+ORL,20,CSA-3+LDA,model,original,smaller2,sqrt,l2,False,random,unit_columns,euclidean,model_005,38,80,47.5,10.0
+ORL,20,CSA-3+LDA,model,original,smaller2,sqrt,l2,False,random,sw_identity,cosine,model_006,30,80,37.5,10.0
+ORL,20,CSA-3+LDA,model,original,smaller2,sqrt,l2,False,random,sw_identity,euclidean,model_007,28,80,35.0,10.0
+ORL,20,CSA-3+LDA,model,original,smaller2,sqrt,l2,True,identity,unit_columns,cosine,model_008,34,80,42.5,20.0
+ORL,20,CSA-3+LDA,model,original,smaller2,sqrt,l2,True,identity,unit_columns,euclidean,model_009,30,80,37.5,20.0
+ORL,20,CSA-3+LDA,model,original,smaller2,sqrt,l2,True,identity,sw_identity,cosine,model_010,26,80,32.5,20.0
+ORL,20,CSA-3+LDA,model,original,smaller2,sqrt,l2,True,identity,sw_identity,euclidean,model_011,21,80,26.25,20.0
+ORL,20,CSA-3+LDA,model,original,smaller2,sqrt,l2,True,random,unit_columns,cosine,model_012,34,80,42.5,20.0
+ORL,20,CSA-3+LDA,model,original,smaller2,sqrt,l2,True,random,unit_columns,euclidean,model_013,30,80,37.5,20.0
+ORL,20,CSA-3+LDA,model,original,smaller2,sqrt,l2,True,random,sw_identity,cosine,model_014,26,80,32.5,20.0
+ORL,20,CSA-3+LDA,model,original,smaller2,sqrt,l2,True,random,sw_identity,euclidean,model_015,21,80,26.25,20.0
+ORL,21,PCA+LDA (Gray),preprocess,original,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_000,51,80,63.75,50.0
+ORL,21,PCA+LDA (Gray),preprocess,original,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_001,50,80,62.5,40.0
+ORL,21,PCA+LDA (Gray),preprocess,original,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_002,50,80,62.5,50.0
+ORL,21,PCA+LDA (Gray),preprocess,original,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_003,51,80,63.75,40.0
+ORL,21,PCA+LDA (Gray),preprocess,medium,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_004,44,80,55.0,40.0
+ORL,21,PCA+LDA (Gray),preprocess,medium,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_005,45,80,56.25,40.0
+ORL,21,PCA+LDA (Gray),preprocess,medium,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_006,42,80,52.5,30.0
+ORL,21,PCA+LDA (Gray),preprocess,medium,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_007,45,80,56.25,40.0
+ORL,21,PCA+LDA (Gray),preprocess,fuller,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_008,37,80,46.25,30.0
+ORL,21,PCA+LDA (Gray),preprocess,fuller,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_009,37,80,46.25,20.0
+ORL,21,PCA+LDA (Gray),preprocess,fuller,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_010,36,80,45.0,20.0
+ORL,21,PCA+LDA (Gray),preprocess,fuller,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_011,37,80,46.25,20.0
+ORL,21,PCA+LDA (Gray),model,original,standard4,linear,none,True,identity,unit_columns,cosine,model_000,51,80,63.75,50.0
+ORL,21,PCA+LDA (Gray),model,original,standard4,linear,none,True,identity,unit_columns,euclidean,model_001,50,80,62.5,40.0
+ORL,21,PCA+LDA (Gray),model,original,standard4,linear,none,True,identity,sw_identity,cosine,model_002,20,80,25.0,10.0
+ORL,21,PCA+LDA (Gray),model,original,standard4,linear,none,True,identity,sw_identity,euclidean,model_003,13,80,16.25,0.0
+ORL,21,PCA+LDA (Gray),model,original,standard4,linear,none,False,identity,unit_columns,cosine,model_004,42,80,52.5,20.0
+ORL,21,PCA+LDA (Gray),model,original,standard4,linear,none,False,identity,unit_columns,euclidean,model_005,52,80,65.0,40.0
+ORL,21,PCA+LDA (Gray),model,original,standard4,linear,none,False,identity,sw_identity,cosine,model_006,21,80,26.25,10.0
+ORL,21,PCA+LDA (Gray),model,original,standard4,linear,none,False,identity,sw_identity,euclidean,model_007,6,80,7.5,0.0
+ORL,21,CSA-2+LDA,preprocess,original,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_000,41,80,51.25,30.0
+ORL,21,CSA-2+LDA,preprocess,original,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_001,51,80,63.75,40.0
+ORL,21,CSA-2+LDA,preprocess,original,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_002,40,80,50.0,20.0
+ORL,21,CSA-2+LDA,preprocess,original,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_003,52,80,65.0,40.0
+ORL,21,CSA-2+LDA,preprocess,medium,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_004,41,80,51.25,30.0
+ORL,21,CSA-2+LDA,preprocess,medium,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_005,45,80,56.25,40.0
+ORL,21,CSA-2+LDA,preprocess,medium,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_006,39,80,48.75,30.0
+ORL,21,CSA-2+LDA,preprocess,medium,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_007,44,80,55.0,30.0
+ORL,21,CSA-2+LDA,preprocess,fuller,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_008,26,80,32.5,10.0
+ORL,21,CSA-2+LDA,preprocess,fuller,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_009,29,80,36.25,10.0
+ORL,21,CSA-2+LDA,preprocess,fuller,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_010,27,80,33.75,10.0
+ORL,21,CSA-2+LDA,preprocess,fuller,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_011,28,80,35.0,10.0
+ORL,21,CSA-2+LDA,model,original,standard4,linear,l2,False,identity,unit_columns,cosine,model_000,52,80,65.0,40.0
+ORL,21,CSA-2+LDA,model,original,standard4,linear,l2,False,identity,unit_columns,euclidean,model_001,40,80,50.0,20.0
+ORL,21,CSA-2+LDA,model,original,standard4,linear,l2,False,identity,sw_identity,cosine,model_002,39,80,48.75,20.0
+ORL,21,CSA-2+LDA,model,original,standard4,linear,l2,False,identity,sw_identity,euclidean,model_003,36,80,45.0,10.0
+ORL,21,CSA-2+LDA,model,original,standard4,linear,l2,False,random,unit_columns,cosine,model_004,52,80,65.0,40.0
+ORL,21,CSA-2+LDA,model,original,standard4,linear,l2,False,random,unit_columns,euclidean,model_005,40,80,50.0,20.0
+ORL,21,CSA-2+LDA,model,original,standard4,linear,l2,False,random,sw_identity,cosine,model_006,39,80,48.75,20.0
+ORL,21,CSA-2+LDA,model,original,standard4,linear,l2,False,random,sw_identity,euclidean,model_007,36,80,45.0,10.0
+ORL,21,CSA-2+LDA,model,original,standard4,linear,l2,True,identity,unit_columns,cosine,model_008,54,80,67.5,50.0
+ORL,21,CSA-2+LDA,model,original,standard4,linear,l2,True,identity,unit_columns,euclidean,model_009,46,80,57.5,30.0
+ORL,21,CSA-2+LDA,model,original,standard4,linear,l2,True,identity,sw_identity,cosine,model_010,36,80,45.0,30.0
+ORL,21,CSA-2+LDA,model,original,standard4,linear,l2,True,identity,sw_identity,euclidean,model_011,38,80,47.5,30.0
+ORL,21,CSA-2+LDA,model,original,standard4,linear,l2,True,random,unit_columns,cosine,model_012,53,80,66.25,50.0
+ORL,21,CSA-2+LDA,model,original,standard4,linear,l2,True,random,unit_columns,euclidean,model_013,45,80,56.25,30.0
+ORL,21,CSA-2+LDA,model,original,standard4,linear,l2,True,random,sw_identity,cosine,model_014,38,80,47.5,30.0
+ORL,21,CSA-2+LDA,model,original,standard4,linear,l2,True,random,sw_identity,euclidean,model_015,38,80,47.5,30.0
+ORL,21,PCA (Gabor),preprocess,original,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_000,46,80,57.5,30.0
+ORL,21,PCA (Gabor),preprocess,original,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_001,54,80,67.5,30.0
+ORL,21,PCA (Gabor),preprocess,original,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_002,45,80,56.25,30.0
+ORL,21,PCA (Gabor),preprocess,original,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_003,53,80,66.25,30.0
+ORL,21,PCA (Gabor),preprocess,original,standard4,sqrt,none,True,identity,unit_columns,cosine,preprocess_004,47,80,58.75,40.0
+ORL,21,PCA (Gabor),preprocess,original,standard4,sqrt,none,True,identity,unit_columns,euclidean,preprocess_005,55,80,68.75,50.0
+ORL,21,PCA (Gabor),preprocess,original,standard4,sqrt,l2,True,identity,unit_columns,cosine,preprocess_006,46,80,57.5,40.0
+ORL,21,PCA (Gabor),preprocess,original,standard4,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_007,53,80,66.25,50.0
+ORL,21,PCA (Gabor),preprocess,original,smaller2,linear,none,True,identity,unit_columns,cosine,preprocess_008,50,80,62.5,50.0
+ORL,21,PCA (Gabor),preprocess,original,smaller2,linear,none,True,identity,unit_columns,euclidean,preprocess_009,57,80,71.25,50.0
+ORL,21,PCA (Gabor),preprocess,original,smaller2,linear,l2,True,identity,unit_columns,cosine,preprocess_010,46,80,57.5,40.0
+ORL,21,PCA (Gabor),preprocess,original,smaller2,linear,l2,True,identity,unit_columns,euclidean,preprocess_011,58,80,72.5,50.0
+ORL,21,PCA (Gabor),preprocess,original,smaller2,sqrt,none,True,identity,unit_columns,cosine,preprocess_012,48,80,60.0,40.0
+ORL,21,PCA (Gabor),preprocess,original,smaller2,sqrt,none,True,identity,unit_columns,euclidean,preprocess_013,52,80,65.0,50.0
+ORL,21,PCA (Gabor),preprocess,original,smaller2,sqrt,l2,True,identity,unit_columns,cosine,preprocess_014,48,80,60.0,40.0
+ORL,21,PCA (Gabor),preprocess,original,smaller2,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_015,53,80,66.25,50.0
+ORL,21,PCA (Gabor),preprocess,medium,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_016,46,80,57.5,40.0
+ORL,21,PCA (Gabor),preprocess,medium,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_017,53,80,66.25,50.0
+ORL,21,PCA (Gabor),preprocess,medium,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_018,47,80,58.75,40.0
+ORL,21,PCA (Gabor),preprocess,medium,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_019,57,80,71.25,50.0
+ORL,21,PCA (Gabor),preprocess,medium,standard4,sqrt,none,True,identity,unit_columns,cosine,preprocess_020,51,80,63.75,50.0
+ORL,21,PCA (Gabor),preprocess,medium,standard4,sqrt,none,True,identity,unit_columns,euclidean,preprocess_021,58,80,72.5,50.0
+ORL,21,PCA (Gabor),preprocess,medium,standard4,sqrt,l2,True,identity,unit_columns,cosine,preprocess_022,52,80,65.0,40.0
+ORL,21,PCA (Gabor),preprocess,medium,standard4,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_023,60,80,75.0,50.0
+ORL,21,PCA (Gabor),preprocess,medium,smaller2,linear,none,True,identity,unit_columns,cosine,preprocess_024,47,80,58.75,40.0
+ORL,21,PCA (Gabor),preprocess,medium,smaller2,linear,none,True,identity,unit_columns,euclidean,preprocess_025,49,80,61.25,40.0
+ORL,21,PCA (Gabor),preprocess,medium,smaller2,linear,l2,True,identity,unit_columns,cosine,preprocess_026,46,80,57.5,50.0
+ORL,21,PCA (Gabor),preprocess,medium,smaller2,linear,l2,True,identity,unit_columns,euclidean,preprocess_027,49,80,61.25,50.0
+ORL,21,PCA (Gabor),preprocess,medium,smaller2,sqrt,none,True,identity,unit_columns,cosine,preprocess_028,50,80,62.5,50.0
+ORL,21,PCA (Gabor),preprocess,medium,smaller2,sqrt,none,True,identity,unit_columns,euclidean,preprocess_029,53,80,66.25,50.0
+ORL,21,PCA (Gabor),preprocess,medium,smaller2,sqrt,l2,True,identity,unit_columns,cosine,preprocess_030,48,80,60.0,50.0
+ORL,21,PCA (Gabor),preprocess,medium,smaller2,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_031,56,80,70.0,60.0
+ORL,21,PCA (Gabor),preprocess,fuller,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_032,39,80,48.75,30.0
+ORL,21,PCA (Gabor),preprocess,fuller,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_033,49,80,61.25,50.0
+ORL,21,PCA (Gabor),preprocess,fuller,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_034,42,80,52.5,40.0
+ORL,21,PCA (Gabor),preprocess,fuller,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_035,51,80,63.75,50.0
+ORL,21,PCA (Gabor),preprocess,fuller,standard4,sqrt,none,True,identity,unit_columns,cosine,preprocess_036,43,80,53.75,40.0
+ORL,21,PCA (Gabor),preprocess,fuller,standard4,sqrt,none,True,identity,unit_columns,euclidean,preprocess_037,54,80,67.5,50.0
+ORL,21,PCA (Gabor),preprocess,fuller,standard4,sqrt,l2,True,identity,unit_columns,cosine,preprocess_038,46,80,57.5,50.0
+ORL,21,PCA (Gabor),preprocess,fuller,standard4,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_039,56,80,70.0,60.0
+ORL,21,PCA (Gabor),preprocess,fuller,smaller2,linear,none,True,identity,unit_columns,cosine,preprocess_040,33,80,41.25,30.0
+ORL,21,PCA (Gabor),preprocess,fuller,smaller2,linear,none,True,identity,unit_columns,euclidean,preprocess_041,41,80,51.25,40.0
+ORL,21,PCA (Gabor),preprocess,fuller,smaller2,linear,l2,True,identity,unit_columns,cosine,preprocess_042,36,80,45.0,20.0
+ORL,21,PCA (Gabor),preprocess,fuller,smaller2,linear,l2,True,identity,unit_columns,euclidean,preprocess_043,42,80,52.5,40.0
+ORL,21,PCA (Gabor),preprocess,fuller,smaller2,sqrt,none,True,identity,unit_columns,cosine,preprocess_044,39,80,48.75,40.0
+ORL,21,PCA (Gabor),preprocess,fuller,smaller2,sqrt,none,True,identity,unit_columns,euclidean,preprocess_045,47,80,58.75,50.0
+ORL,21,PCA (Gabor),preprocess,fuller,smaller2,sqrt,l2,True,identity,unit_columns,cosine,preprocess_046,39,80,48.75,40.0
+ORL,21,PCA (Gabor),preprocess,fuller,smaller2,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_047,50,80,62.5,50.0
+ORL,21,PCA (Gabor),model,medium,standard4,sqrt,l2,True,identity,unit_columns,euclidean,model_000,60,80,75.0,50.0
+ORL,21,PCA (Gabor),model,medium,standard4,sqrt,l2,True,identity,unit_columns,cosine,model_001,52,80,65.0,40.0
+ORL,21,PCA (Gabor),model,medium,standard4,sqrt,l2,False,identity,unit_columns,euclidean,model_002,59,80,73.75,50.0
+ORL,21,PCA (Gabor),model,medium,standard4,sqrt,l2,False,identity,unit_columns,cosine,model_003,60,80,75.0,50.0
+ORL,21,CSA-3,preprocess,original,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_000,49,80,61.25,30.0
+ORL,21,CSA-3,preprocess,original,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_001,48,80,60.0,30.0
+ORL,21,CSA-3,preprocess,original,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_002,49,80,61.25,30.0
+ORL,21,CSA-3,preprocess,original,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_003,49,80,61.25,30.0
+ORL,21,CSA-3,preprocess,original,standard4,sqrt,none,False,identity,unit_columns,cosine,preprocess_004,52,80,65.0,40.0
+ORL,21,CSA-3,preprocess,original,standard4,sqrt,none,False,identity,unit_columns,euclidean,preprocess_005,53,80,66.25,50.0
+ORL,21,CSA-3,preprocess,original,standard4,sqrt,l2,False,identity,unit_columns,cosine,preprocess_006,52,80,65.0,40.0
+ORL,21,CSA-3,preprocess,original,standard4,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_007,53,80,66.25,40.0
+ORL,21,CSA-3,preprocess,original,smaller2,linear,none,False,identity,unit_columns,cosine,preprocess_008,53,80,66.25,50.0
+ORL,21,CSA-3,preprocess,original,smaller2,linear,none,False,identity,unit_columns,euclidean,preprocess_009,52,80,65.0,50.0
+ORL,21,CSA-3,preprocess,original,smaller2,linear,l2,False,identity,unit_columns,cosine,preprocess_010,52,80,65.0,50.0
+ORL,21,CSA-3,preprocess,original,smaller2,linear,l2,False,identity,unit_columns,euclidean,preprocess_011,53,80,66.25,50.0
+ORL,21,CSA-3,preprocess,original,smaller2,sqrt,none,False,identity,unit_columns,cosine,preprocess_012,57,80,71.25,60.0
+ORL,21,CSA-3,preprocess,original,smaller2,sqrt,none,False,identity,unit_columns,euclidean,preprocess_013,53,80,66.25,50.0
+ORL,21,CSA-3,preprocess,original,smaller2,sqrt,l2,False,identity,unit_columns,cosine,preprocess_014,57,80,71.25,60.0
+ORL,21,CSA-3,preprocess,original,smaller2,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_015,57,80,71.25,60.0
+ORL,21,CSA-3,preprocess,medium,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_016,53,80,66.25,50.0
+ORL,21,CSA-3,preprocess,medium,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_017,47,80,58.75,50.0
+ORL,21,CSA-3,preprocess,medium,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_018,53,80,66.25,50.0
+ORL,21,CSA-3,preprocess,medium,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_019,54,80,67.5,50.0
+ORL,21,CSA-3,preprocess,medium,standard4,sqrt,none,False,identity,unit_columns,cosine,preprocess_020,59,80,73.75,60.0
+ORL,21,CSA-3,preprocess,medium,standard4,sqrt,none,False,identity,unit_columns,euclidean,preprocess_021,55,80,68.75,60.0
+ORL,21,CSA-3,preprocess,medium,standard4,sqrt,l2,False,identity,unit_columns,cosine,preprocess_022,59,80,73.75,60.0
+ORL,21,CSA-3,preprocess,medium,standard4,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_023,59,80,73.75,60.0
+ORL,21,CSA-3,preprocess,medium,smaller2,linear,none,False,identity,unit_columns,cosine,preprocess_024,60,80,75.0,60.0
+ORL,21,CSA-3,preprocess,medium,smaller2,linear,none,False,identity,unit_columns,euclidean,preprocess_025,55,80,68.75,60.0
+ORL,21,CSA-3,preprocess,medium,smaller2,linear,l2,False,identity,unit_columns,cosine,preprocess_026,59,80,73.75,60.0
+ORL,21,CSA-3,preprocess,medium,smaller2,linear,l2,False,identity,unit_columns,euclidean,preprocess_027,60,80,75.0,60.0
+ORL,21,CSA-3,preprocess,medium,smaller2,sqrt,none,False,identity,unit_columns,cosine,preprocess_028,57,80,71.25,60.0
+ORL,21,CSA-3,preprocess,medium,smaller2,sqrt,none,False,identity,unit_columns,euclidean,preprocess_029,55,80,68.75,50.0
+ORL,21,CSA-3,preprocess,medium,smaller2,sqrt,l2,False,identity,unit_columns,cosine,preprocess_030,57,80,71.25,60.0
+ORL,21,CSA-3,preprocess,medium,smaller2,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_031,56,80,70.0,60.0
+ORL,21,CSA-3,preprocess,fuller,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_032,47,80,58.75,40.0
+ORL,21,CSA-3,preprocess,fuller,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_033,46,80,57.5,40.0
+ORL,21,CSA-3,preprocess,fuller,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_034,47,80,58.75,40.0
+ORL,21,CSA-3,preprocess,fuller,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_035,48,80,60.0,40.0
+ORL,21,CSA-3,preprocess,fuller,standard4,sqrt,none,False,identity,unit_columns,cosine,preprocess_036,53,80,66.25,50.0
+ORL,21,CSA-3,preprocess,fuller,standard4,sqrt,none,False,identity,unit_columns,euclidean,preprocess_037,50,80,62.5,40.0
+ORL,21,CSA-3,preprocess,fuller,standard4,sqrt,l2,False,identity,unit_columns,cosine,preprocess_038,54,80,67.5,50.0
+ORL,21,CSA-3,preprocess,fuller,standard4,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_039,54,80,67.5,50.0
+ORL,21,CSA-3,preprocess,fuller,smaller2,linear,none,False,identity,unit_columns,cosine,preprocess_040,47,80,58.75,50.0
+ORL,21,CSA-3,preprocess,fuller,smaller2,linear,none,False,identity,unit_columns,euclidean,preprocess_041,45,80,56.25,40.0
+ORL,21,CSA-3,preprocess,fuller,smaller2,linear,l2,False,identity,unit_columns,cosine,preprocess_042,47,80,58.75,50.0
+ORL,21,CSA-3,preprocess,fuller,smaller2,linear,l2,False,identity,unit_columns,euclidean,preprocess_043,46,80,57.5,40.0
+ORL,21,CSA-3,preprocess,fuller,smaller2,sqrt,none,False,identity,unit_columns,cosine,preprocess_044,50,80,62.5,40.0
+ORL,21,CSA-3,preprocess,fuller,smaller2,sqrt,none,False,identity,unit_columns,euclidean,preprocess_045,49,80,61.25,40.0
+ORL,21,CSA-3,preprocess,fuller,smaller2,sqrt,l2,False,identity,unit_columns,cosine,preprocess_046,50,80,62.5,40.0
+ORL,21,CSA-3,preprocess,fuller,smaller2,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_047,49,80,61.25,40.0
+ORL,21,CSA-3,model,medium,smaller2,linear,none,False,identity,unit_columns,cosine,model_000,60,80,75.0,60.0
+ORL,21,CSA-3,model,medium,smaller2,linear,none,False,identity,unit_columns,euclidean,model_001,55,80,68.75,60.0
+ORL,21,CSA-3,model,medium,smaller2,linear,none,False,random,unit_columns,cosine,model_002,60,80,75.0,60.0
+ORL,21,CSA-3,model,medium,smaller2,linear,none,False,random,unit_columns,euclidean,model_003,55,80,68.75,60.0
+ORL,21,CSA-3,model,medium,smaller2,linear,none,True,identity,unit_columns,cosine,model_004,55,80,68.75,60.0
+ORL,21,CSA-3,model,medium,smaller2,linear,none,True,identity,unit_columns,euclidean,model_005,55,80,68.75,50.0
+ORL,21,CSA-3,model,medium,smaller2,linear,none,True,random,unit_columns,cosine,model_006,55,80,68.75,60.0
+ORL,21,CSA-3,model,medium,smaller2,linear,none,True,random,unit_columns,euclidean,model_007,55,80,68.75,50.0
+ORL,21,PCA+LDA (Gabor),preprocess,original,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_000,51,80,63.75,40.0
+ORL,21,PCA+LDA (Gabor),preprocess,original,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_001,56,80,70.0,40.0
+ORL,21,PCA+LDA (Gabor),preprocess,original,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_002,49,80,61.25,50.0
+ORL,21,PCA+LDA (Gabor),preprocess,original,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_003,59,80,73.75,60.0
+ORL,21,PCA+LDA (Gabor),preprocess,original,standard4,sqrt,none,True,identity,unit_columns,cosine,preprocess_004,49,80,61.25,40.0
+ORL,21,PCA+LDA (Gabor),preprocess,original,standard4,sqrt,none,True,identity,unit_columns,euclidean,preprocess_005,58,80,72.5,50.0
+ORL,21,PCA+LDA (Gabor),preprocess,original,standard4,sqrt,l2,True,identity,unit_columns,cosine,preprocess_006,52,80,65.0,50.0
+ORL,21,PCA+LDA (Gabor),preprocess,original,standard4,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_007,61,80,76.25,50.0
+ORL,21,PCA+LDA (Gabor),preprocess,original,smaller2,linear,none,True,identity,unit_columns,cosine,preprocess_008,42,80,52.5,30.0
+ORL,21,PCA+LDA (Gabor),preprocess,original,smaller2,linear,none,True,identity,unit_columns,euclidean,preprocess_009,49,80,61.25,40.0
+ORL,21,PCA+LDA (Gabor),preprocess,original,smaller2,linear,l2,True,identity,unit_columns,cosine,preprocess_010,40,80,50.0,30.0
+ORL,21,PCA+LDA (Gabor),preprocess,original,smaller2,linear,l2,True,identity,unit_columns,euclidean,preprocess_011,51,80,63.75,50.0
+ORL,21,PCA+LDA (Gabor),preprocess,original,smaller2,sqrt,none,True,identity,unit_columns,cosine,preprocess_012,47,80,58.75,40.0
+ORL,21,PCA+LDA (Gabor),preprocess,original,smaller2,sqrt,none,True,identity,unit_columns,euclidean,preprocess_013,56,80,70.0,50.0
+ORL,21,PCA+LDA (Gabor),preprocess,original,smaller2,sqrt,l2,True,identity,unit_columns,cosine,preprocess_014,45,80,56.25,40.0
+ORL,21,PCA+LDA (Gabor),preprocess,original,smaller2,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_015,54,80,67.5,50.0
+ORL,21,PCA+LDA (Gabor),preprocess,medium,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_016,45,80,56.25,40.0
+ORL,21,PCA+LDA (Gabor),preprocess,medium,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_017,55,80,68.75,50.0
+ORL,21,PCA+LDA (Gabor),preprocess,medium,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_018,46,80,57.5,40.0
+ORL,21,PCA+LDA (Gabor),preprocess,medium,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_019,55,80,68.75,50.0
+ORL,21,PCA+LDA (Gabor),preprocess,medium,standard4,sqrt,none,True,identity,unit_columns,cosine,preprocess_020,45,80,56.25,40.0
+ORL,21,PCA+LDA (Gabor),preprocess,medium,standard4,sqrt,none,True,identity,unit_columns,euclidean,preprocess_021,56,80,70.0,50.0
+ORL,21,PCA+LDA (Gabor),preprocess,medium,standard4,sqrt,l2,True,identity,unit_columns,cosine,preprocess_022,52,80,65.0,40.0
+ORL,21,PCA+LDA (Gabor),preprocess,medium,standard4,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_023,60,80,75.0,50.0
+ORL,21,PCA+LDA (Gabor),preprocess,medium,smaller2,linear,none,True,identity,unit_columns,cosine,preprocess_024,41,80,51.25,30.0
+ORL,21,PCA+LDA (Gabor),preprocess,medium,smaller2,linear,none,True,identity,unit_columns,euclidean,preprocess_025,51,80,63.75,40.0
+ORL,21,PCA+LDA (Gabor),preprocess,medium,smaller2,linear,l2,True,identity,unit_columns,cosine,preprocess_026,43,80,53.75,40.0
+ORL,21,PCA+LDA (Gabor),preprocess,medium,smaller2,linear,l2,True,identity,unit_columns,euclidean,preprocess_027,56,80,70.0,50.0
+ORL,21,PCA+LDA (Gabor),preprocess,medium,smaller2,sqrt,none,True,identity,unit_columns,cosine,preprocess_028,51,80,63.75,50.0
+ORL,21,PCA+LDA (Gabor),preprocess,medium,smaller2,sqrt,none,True,identity,unit_columns,euclidean,preprocess_029,57,80,71.25,60.0
+ORL,21,PCA+LDA (Gabor),preprocess,medium,smaller2,sqrt,l2,True,identity,unit_columns,cosine,preprocess_030,46,80,57.5,40.0
+ORL,21,PCA+LDA (Gabor),preprocess,medium,smaller2,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_031,55,80,68.75,50.0
+ORL,21,PCA+LDA (Gabor),preprocess,fuller,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_032,42,80,52.5,40.0
+ORL,21,PCA+LDA (Gabor),preprocess,fuller,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_033,46,80,57.5,50.0
+ORL,21,PCA+LDA (Gabor),preprocess,fuller,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_034,42,80,52.5,40.0
+ORL,21,PCA+LDA (Gabor),preprocess,fuller,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_035,48,80,60.0,50.0
+ORL,21,PCA+LDA (Gabor),preprocess,fuller,standard4,sqrt,none,True,identity,unit_columns,cosine,preprocess_036,50,80,62.5,50.0
+ORL,21,PCA+LDA (Gabor),preprocess,fuller,standard4,sqrt,none,True,identity,unit_columns,euclidean,preprocess_037,58,80,72.5,50.0
+ORL,21,PCA+LDA (Gabor),preprocess,fuller,standard4,sqrt,l2,True,identity,unit_columns,cosine,preprocess_038,46,80,57.5,50.0
+ORL,21,PCA+LDA (Gabor),preprocess,fuller,standard4,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_039,60,80,75.0,60.0
+ORL,21,PCA+LDA (Gabor),preprocess,fuller,smaller2,linear,none,True,identity,unit_columns,cosine,preprocess_040,26,80,32.5,10.0
+ORL,21,PCA+LDA (Gabor),preprocess,fuller,smaller2,linear,none,True,identity,unit_columns,euclidean,preprocess_041,36,80,45.0,30.0
+ORL,21,PCA+LDA (Gabor),preprocess,fuller,smaller2,linear,l2,True,identity,unit_columns,cosine,preprocess_042,30,80,37.5,20.0
+ORL,21,PCA+LDA (Gabor),preprocess,fuller,smaller2,linear,l2,True,identity,unit_columns,euclidean,preprocess_043,41,80,51.25,40.0
+ORL,21,PCA+LDA (Gabor),preprocess,fuller,smaller2,sqrt,none,True,identity,unit_columns,cosine,preprocess_044,39,80,48.75,30.0
+ORL,21,PCA+LDA (Gabor),preprocess,fuller,smaller2,sqrt,none,True,identity,unit_columns,euclidean,preprocess_045,51,80,63.75,50.0
+ORL,21,PCA+LDA (Gabor),preprocess,fuller,smaller2,sqrt,l2,True,identity,unit_columns,cosine,preprocess_046,41,80,51.25,40.0
+ORL,21,PCA+LDA (Gabor),preprocess,fuller,smaller2,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_047,47,80,58.75,40.0
+ORL,21,PCA+LDA (Gabor),model,original,standard4,sqrt,l2,True,identity,unit_columns,euclidean,model_000,61,80,76.25,50.0
+ORL,21,PCA+LDA (Gabor),model,original,standard4,sqrt,l2,True,identity,unit_columns,cosine,model_001,52,80,65.0,50.0
+ORL,21,PCA+LDA (Gabor),model,original,standard4,sqrt,l2,True,identity,sw_identity,euclidean,model_002,34,80,42.5,20.0
+ORL,21,PCA+LDA (Gabor),model,original,standard4,sqrt,l2,True,identity,sw_identity,cosine,model_003,35,80,43.75,10.0
+ORL,21,PCA+LDA (Gabor),model,original,standard4,sqrt,l2,False,identity,unit_columns,euclidean,model_004,55,80,68.75,50.0
+ORL,21,PCA+LDA (Gabor),model,original,standard4,sqrt,l2,False,identity,unit_columns,cosine,model_005,46,80,57.5,40.0
+ORL,21,PCA+LDA (Gabor),model,original,standard4,sqrt,l2,False,identity,sw_identity,euclidean,model_006,27,80,33.75,30.0
+ORL,21,PCA+LDA (Gabor),model,original,standard4,sqrt,l2,False,identity,sw_identity,cosine,model_007,30,80,37.5,20.0
+ORL,21,CSA-3+LDA,preprocess,original,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_000,46,80,57.5,40.0
+ORL,21,CSA-3+LDA,preprocess,original,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_001,40,80,50.0,40.0
+ORL,21,CSA-3+LDA,preprocess,original,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_002,42,80,52.5,40.0
+ORL,21,CSA-3+LDA,preprocess,original,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_003,36,80,45.0,30.0
+ORL,21,CSA-3+LDA,preprocess,original,standard4,sqrt,none,False,identity,unit_columns,cosine,preprocess_004,46,80,57.5,40.0
+ORL,21,CSA-3+LDA,preprocess,original,standard4,sqrt,none,False,identity,unit_columns,euclidean,preprocess_005,44,80,55.0,40.0
+ORL,21,CSA-3+LDA,preprocess,original,standard4,sqrt,l2,False,identity,unit_columns,cosine,preprocess_006,46,80,57.5,40.0
+ORL,21,CSA-3+LDA,preprocess,original,standard4,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_007,40,80,50.0,40.0
+ORL,21,CSA-3+LDA,preprocess,original,smaller2,linear,none,False,identity,unit_columns,cosine,preprocess_008,46,80,57.5,40.0
+ORL,21,CSA-3+LDA,preprocess,original,smaller2,linear,none,False,identity,unit_columns,euclidean,preprocess_009,38,80,47.5,30.0
+ORL,21,CSA-3+LDA,preprocess,original,smaller2,linear,l2,False,identity,unit_columns,cosine,preprocess_010,43,80,53.75,30.0
+ORL,21,CSA-3+LDA,preprocess,original,smaller2,linear,l2,False,identity,unit_columns,euclidean,preprocess_011,35,80,43.75,30.0
+ORL,21,CSA-3+LDA,preprocess,original,smaller2,sqrt,none,False,identity,unit_columns,cosine,preprocess_012,46,80,57.5,40.0
+ORL,21,CSA-3+LDA,preprocess,original,smaller2,sqrt,none,False,identity,unit_columns,euclidean,preprocess_013,41,80,51.25,30.0
+ORL,21,CSA-3+LDA,preprocess,original,smaller2,sqrt,l2,False,identity,unit_columns,cosine,preprocess_014,44,80,55.0,40.0
+ORL,21,CSA-3+LDA,preprocess,original,smaller2,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_015,39,80,48.75,30.0
+ORL,21,CSA-3+LDA,preprocess,medium,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_016,40,80,50.0,30.0
+ORL,21,CSA-3+LDA,preprocess,medium,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_017,37,80,46.25,20.0
+ORL,21,CSA-3+LDA,preprocess,medium,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_018,48,80,60.0,40.0
+ORL,21,CSA-3+LDA,preprocess,medium,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_019,40,80,50.0,30.0
+ORL,21,CSA-3+LDA,preprocess,medium,standard4,sqrt,none,False,identity,unit_columns,cosine,preprocess_020,57,80,71.25,50.0
+ORL,21,CSA-3+LDA,preprocess,medium,standard4,sqrt,none,False,identity,unit_columns,euclidean,preprocess_021,50,80,62.5,50.0
+ORL,21,CSA-3+LDA,preprocess,medium,standard4,sqrt,l2,False,identity,unit_columns,cosine,preprocess_022,50,80,62.5,50.0
+ORL,21,CSA-3+LDA,preprocess,medium,standard4,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_023,46,80,57.5,40.0
+ORL,21,CSA-3+LDA,preprocess,medium,smaller2,linear,none,False,identity,unit_columns,cosine,preprocess_024,38,80,47.5,40.0
+ORL,21,CSA-3+LDA,preprocess,medium,smaller2,linear,none,False,identity,unit_columns,euclidean,preprocess_025,32,80,40.0,30.0
+ORL,21,CSA-3+LDA,preprocess,medium,smaller2,linear,l2,False,identity,unit_columns,cosine,preprocess_026,39,80,48.75,30.0
+ORL,21,CSA-3+LDA,preprocess,medium,smaller2,linear,l2,False,identity,unit_columns,euclidean,preprocess_027,33,80,41.25,30.0
+ORL,21,CSA-3+LDA,preprocess,medium,smaller2,sqrt,none,False,identity,unit_columns,cosine,preprocess_028,45,80,56.25,50.0
+ORL,21,CSA-3+LDA,preprocess,medium,smaller2,sqrt,none,False,identity,unit_columns,euclidean,preprocess_029,37,80,46.25,30.0
+ORL,21,CSA-3+LDA,preprocess,medium,smaller2,sqrt,l2,False,identity,unit_columns,cosine,preprocess_030,46,80,57.5,40.0
+ORL,21,CSA-3+LDA,preprocess,medium,smaller2,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_031,37,80,46.25,30.0
+ORL,21,CSA-3+LDA,preprocess,fuller,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_032,42,80,52.5,40.0
+ORL,21,CSA-3+LDA,preprocess,fuller,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_033,35,80,43.75,30.0
+ORL,21,CSA-3+LDA,preprocess,fuller,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_034,39,80,48.75,30.0
+ORL,21,CSA-3+LDA,preprocess,fuller,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_035,32,80,40.0,20.0
+ORL,21,CSA-3+LDA,preprocess,fuller,standard4,sqrt,none,False,identity,unit_columns,cosine,preprocess_036,45,80,56.25,40.0
+ORL,21,CSA-3+LDA,preprocess,fuller,standard4,sqrt,none,False,identity,unit_columns,euclidean,preprocess_037,37,80,46.25,30.0
+ORL,21,CSA-3+LDA,preprocess,fuller,standard4,sqrt,l2,False,identity,unit_columns,cosine,preprocess_038,47,80,58.75,40.0
+ORL,21,CSA-3+LDA,preprocess,fuller,standard4,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_039,37,80,46.25,20.0
+ORL,21,CSA-3+LDA,preprocess,fuller,smaller2,linear,none,False,identity,unit_columns,cosine,preprocess_040,39,80,48.75,30.0
+ORL,21,CSA-3+LDA,preprocess,fuller,smaller2,linear,none,False,identity,unit_columns,euclidean,preprocess_041,35,80,43.75,30.0
+ORL,21,CSA-3+LDA,preprocess,fuller,smaller2,linear,l2,False,identity,unit_columns,cosine,preprocess_042,47,80,58.75,40.0
+ORL,21,CSA-3+LDA,preprocess,fuller,smaller2,linear,l2,False,identity,unit_columns,euclidean,preprocess_043,34,80,42.5,30.0
+ORL,21,CSA-3+LDA,preprocess,fuller,smaller2,sqrt,none,False,identity,unit_columns,cosine,preprocess_044,40,80,50.0,30.0
+ORL,21,CSA-3+LDA,preprocess,fuller,smaller2,sqrt,none,False,identity,unit_columns,euclidean,preprocess_045,32,80,40.0,20.0
+ORL,21,CSA-3+LDA,preprocess,fuller,smaller2,sqrt,l2,False,identity,unit_columns,cosine,preprocess_046,37,80,46.25,20.0
+ORL,21,CSA-3+LDA,preprocess,fuller,smaller2,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_047,28,80,35.0,10.0
+ORL,21,CSA-3+LDA,model,medium,standard4,sqrt,none,False,identity,unit_columns,cosine,model_000,57,80,71.25,50.0
+ORL,21,CSA-3+LDA,model,medium,standard4,sqrt,none,False,identity,unit_columns,euclidean,model_001,50,80,62.5,50.0
+ORL,21,CSA-3+LDA,model,medium,standard4,sqrt,none,False,identity,sw_identity,cosine,model_002,47,80,58.75,40.0
+ORL,21,CSA-3+LDA,model,medium,standard4,sqrt,none,False,identity,sw_identity,euclidean,model_003,43,80,53.75,30.0
+ORL,21,CSA-3+LDA,model,medium,standard4,sqrt,none,False,random,unit_columns,cosine,model_004,57,80,71.25,50.0
+ORL,21,CSA-3+LDA,model,medium,standard4,sqrt,none,False,random,unit_columns,euclidean,model_005,50,80,62.5,50.0
+ORL,21,CSA-3+LDA,model,medium,standard4,sqrt,none,False,random,sw_identity,cosine,model_006,46,80,57.5,40.0
+ORL,21,CSA-3+LDA,model,medium,standard4,sqrt,none,False,random,sw_identity,euclidean,model_007,43,80,53.75,30.0
+ORL,21,CSA-3+LDA,model,medium,standard4,sqrt,none,True,identity,unit_columns,cosine,model_008,51,80,63.75,50.0
+ORL,21,CSA-3+LDA,model,medium,standard4,sqrt,none,True,identity,unit_columns,euclidean,model_009,41,80,51.25,40.0
+ORL,21,CSA-3+LDA,model,medium,standard4,sqrt,none,True,identity,sw_identity,cosine,model_010,32,80,40.0,20.0
+ORL,21,CSA-3+LDA,model,medium,standard4,sqrt,none,True,identity,sw_identity,euclidean,model_011,31,80,38.75,20.0
+ORL,21,CSA-3+LDA,model,medium,standard4,sqrt,none,True,random,unit_columns,cosine,model_012,51,80,63.75,50.0
+ORL,21,CSA-3+LDA,model,medium,standard4,sqrt,none,True,random,unit_columns,euclidean,model_013,40,80,50.0,40.0
+ORL,21,CSA-3+LDA,model,medium,standard4,sqrt,none,True,random,sw_identity,cosine,model_014,32,80,40.0,20.0
+ORL,21,CSA-3+LDA,model,medium,standard4,sqrt,none,True,random,sw_identity,euclidean,model_015,31,80,38.75,20.0
+ORL,22,PCA+LDA (Gray),preprocess,original,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_000,38,80,47.5,40.0
+ORL,22,PCA+LDA (Gray),preprocess,original,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_001,43,80,53.75,40.0
+ORL,22,PCA+LDA (Gray),preprocess,original,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_002,36,80,45.0,30.0
+ORL,22,PCA+LDA (Gray),preprocess,original,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_003,43,80,53.75,40.0
+ORL,22,PCA+LDA (Gray),preprocess,medium,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_004,35,80,43.75,40.0
+ORL,22,PCA+LDA (Gray),preprocess,medium,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_005,39,80,48.75,40.0
+ORL,22,PCA+LDA (Gray),preprocess,medium,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_006,34,80,42.5,30.0
+ORL,22,PCA+LDA (Gray),preprocess,medium,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_007,39,80,48.75,40.0
+ORL,22,PCA+LDA (Gray),preprocess,fuller,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_008,25,80,31.25,20.0
+ORL,22,PCA+LDA (Gray),preprocess,fuller,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_009,36,80,45.0,40.0
+ORL,22,PCA+LDA (Gray),preprocess,fuller,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_010,24,80,30.0,20.0
+ORL,22,PCA+LDA (Gray),preprocess,fuller,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_011,37,80,46.25,40.0
+ORL,22,PCA+LDA (Gray),model,original,standard4,linear,none,True,identity,unit_columns,euclidean,model_000,43,80,53.75,40.0
+ORL,22,PCA+LDA (Gray),model,original,standard4,linear,none,True,identity,unit_columns,cosine,model_001,38,80,47.5,40.0
+ORL,22,PCA+LDA (Gray),model,original,standard4,linear,none,True,identity,sw_identity,euclidean,model_002,16,80,20.0,10.0
+ORL,22,PCA+LDA (Gray),model,original,standard4,linear,none,True,identity,sw_identity,cosine,model_003,20,80,25.0,10.0
+ORL,22,PCA+LDA (Gray),model,original,standard4,linear,none,False,identity,unit_columns,euclidean,model_004,42,80,52.5,40.0
+ORL,22,PCA+LDA (Gray),model,original,standard4,linear,none,False,identity,unit_columns,cosine,model_005,34,80,42.5,30.0
+ORL,22,PCA+LDA (Gray),model,original,standard4,linear,none,False,identity,sw_identity,euclidean,model_006,19,80,23.75,0.0
+ORL,22,PCA+LDA (Gray),model,original,standard4,linear,none,False,identity,sw_identity,cosine,model_007,24,80,30.0,0.0
+ORL,22,CSA-2+LDA,preprocess,original,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_000,30,80,37.5,20.0
+ORL,22,CSA-2+LDA,preprocess,original,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_001,33,80,41.25,30.0
+ORL,22,CSA-2+LDA,preprocess,original,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_002,28,80,35.0,20.0
+ORL,22,CSA-2+LDA,preprocess,original,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_003,34,80,42.5,30.0
+ORL,22,CSA-2+LDA,preprocess,medium,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_004,37,80,46.25,30.0
+ORL,22,CSA-2+LDA,preprocess,medium,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_005,41,80,51.25,40.0
+ORL,22,CSA-2+LDA,preprocess,medium,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_006,39,80,48.75,30.0
+ORL,22,CSA-2+LDA,preprocess,medium,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_007,42,80,52.5,40.0
+ORL,22,CSA-2+LDA,preprocess,fuller,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_008,23,80,28.75,10.0
+ORL,22,CSA-2+LDA,preprocess,fuller,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_009,26,80,32.5,20.0
+ORL,22,CSA-2+LDA,preprocess,fuller,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_010,21,80,26.25,0.0
+ORL,22,CSA-2+LDA,preprocess,fuller,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_011,25,80,31.25,20.0
+ORL,22,CSA-2+LDA,model,medium,standard4,linear,l2,False,identity,unit_columns,cosine,model_000,42,80,52.5,40.0
+ORL,22,CSA-2+LDA,model,medium,standard4,linear,l2,False,identity,unit_columns,euclidean,model_001,39,80,48.75,30.0
+ORL,22,CSA-2+LDA,model,medium,standard4,linear,l2,False,identity,sw_identity,cosine,model_002,32,80,40.0,30.0
+ORL,22,CSA-2+LDA,model,medium,standard4,linear,l2,False,identity,sw_identity,euclidean,model_003,32,80,40.0,30.0
+ORL,22,CSA-2+LDA,model,medium,standard4,linear,l2,False,random,unit_columns,cosine,model_004,41,80,51.25,40.0
+ORL,22,CSA-2+LDA,model,medium,standard4,linear,l2,False,random,unit_columns,euclidean,model_005,37,80,46.25,30.0
+ORL,22,CSA-2+LDA,model,medium,standard4,linear,l2,False,random,sw_identity,cosine,model_006,32,80,40.0,30.0
+ORL,22,CSA-2+LDA,model,medium,standard4,linear,l2,False,random,sw_identity,euclidean,model_007,32,80,40.0,30.0
+ORL,22,CSA-2+LDA,model,medium,standard4,linear,l2,True,identity,unit_columns,cosine,model_008,33,80,41.25,20.0
+ORL,22,CSA-2+LDA,model,medium,standard4,linear,l2,True,identity,unit_columns,euclidean,model_009,30,80,37.5,20.0
+ORL,22,CSA-2+LDA,model,medium,standard4,linear,l2,True,identity,sw_identity,cosine,model_010,24,80,30.0,0.0
+ORL,22,CSA-2+LDA,model,medium,standard4,linear,l2,True,identity,sw_identity,euclidean,model_011,25,80,31.25,10.0
+ORL,22,CSA-2+LDA,model,medium,standard4,linear,l2,True,random,unit_columns,cosine,model_012,33,80,41.25,20.0
+ORL,22,CSA-2+LDA,model,medium,standard4,linear,l2,True,random,unit_columns,euclidean,model_013,30,80,37.5,20.0
+ORL,22,CSA-2+LDA,model,medium,standard4,linear,l2,True,random,sw_identity,cosine,model_014,24,80,30.0,0.0
+ORL,22,CSA-2+LDA,model,medium,standard4,linear,l2,True,random,sw_identity,euclidean,model_015,25,80,31.25,10.0
+ORL,22,PCA (Gabor),preprocess,original,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_000,42,80,52.5,40.0
+ORL,22,PCA (Gabor),preprocess,original,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_001,50,80,62.5,40.0
+ORL,22,PCA (Gabor),preprocess,original,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_002,42,80,52.5,40.0
+ORL,22,PCA (Gabor),preprocess,original,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_003,53,80,66.25,50.0
+ORL,22,PCA (Gabor),preprocess,original,standard4,sqrt,none,True,identity,unit_columns,cosine,preprocess_004,43,80,53.75,40.0
+ORL,22,PCA (Gabor),preprocess,original,standard4,sqrt,none,True,identity,unit_columns,euclidean,preprocess_005,52,80,65.0,40.0
+ORL,22,PCA (Gabor),preprocess,original,standard4,sqrt,l2,True,identity,unit_columns,cosine,preprocess_006,46,80,57.5,40.0
+ORL,22,PCA (Gabor),preprocess,original,standard4,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_007,55,80,68.75,50.0
+ORL,22,PCA (Gabor),preprocess,original,smaller2,linear,none,True,identity,unit_columns,cosine,preprocess_008,42,80,52.5,40.0
+ORL,22,PCA (Gabor),preprocess,original,smaller2,linear,none,True,identity,unit_columns,euclidean,preprocess_009,52,80,65.0,50.0
+ORL,22,PCA (Gabor),preprocess,original,smaller2,linear,l2,True,identity,unit_columns,cosine,preprocess_010,38,80,47.5,30.0
+ORL,22,PCA (Gabor),preprocess,original,smaller2,linear,l2,True,identity,unit_columns,euclidean,preprocess_011,54,80,67.5,50.0
+ORL,22,PCA (Gabor),preprocess,original,smaller2,sqrt,none,True,identity,unit_columns,cosine,preprocess_012,41,80,51.25,30.0
+ORL,22,PCA (Gabor),preprocess,original,smaller2,sqrt,none,True,identity,unit_columns,euclidean,preprocess_013,49,80,61.25,50.0
+ORL,22,PCA (Gabor),preprocess,original,smaller2,sqrt,l2,True,identity,unit_columns,cosine,preprocess_014,42,80,52.5,30.0
+ORL,22,PCA (Gabor),preprocess,original,smaller2,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_015,52,80,65.0,40.0
+ORL,22,PCA (Gabor),preprocess,medium,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_016,40,80,50.0,30.0
+ORL,22,PCA (Gabor),preprocess,medium,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_017,44,80,55.0,30.0
+ORL,22,PCA (Gabor),preprocess,medium,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_018,38,80,47.5,30.0
+ORL,22,PCA (Gabor),preprocess,medium,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_019,51,80,63.75,50.0
+ORL,22,PCA (Gabor),preprocess,medium,standard4,sqrt,none,True,identity,unit_columns,cosine,preprocess_020,45,80,56.25,40.0
+ORL,22,PCA (Gabor),preprocess,medium,standard4,sqrt,none,True,identity,unit_columns,euclidean,preprocess_021,51,80,63.75,50.0
+ORL,22,PCA (Gabor),preprocess,medium,standard4,sqrt,l2,True,identity,unit_columns,cosine,preprocess_022,42,80,52.5,30.0
+ORL,22,PCA (Gabor),preprocess,medium,standard4,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_023,48,80,60.0,40.0
+ORL,22,PCA (Gabor),preprocess,medium,smaller2,linear,none,True,identity,unit_columns,cosine,preprocess_024,33,80,41.25,30.0
+ORL,22,PCA (Gabor),preprocess,medium,smaller2,linear,none,True,identity,unit_columns,euclidean,preprocess_025,43,80,53.75,30.0
+ORL,22,PCA (Gabor),preprocess,medium,smaller2,linear,l2,True,identity,unit_columns,cosine,preprocess_026,36,80,45.0,30.0
+ORL,22,PCA (Gabor),preprocess,medium,smaller2,linear,l2,True,identity,unit_columns,euclidean,preprocess_027,44,80,55.0,40.0
+ORL,22,PCA (Gabor),preprocess,medium,smaller2,sqrt,none,True,identity,unit_columns,cosine,preprocess_028,38,80,47.5,30.0
+ORL,22,PCA (Gabor),preprocess,medium,smaller2,sqrt,none,True,identity,unit_columns,euclidean,preprocess_029,45,80,56.25,40.0
+ORL,22,PCA (Gabor),preprocess,medium,smaller2,sqrt,l2,True,identity,unit_columns,cosine,preprocess_030,36,80,45.0,30.0
+ORL,22,PCA (Gabor),preprocess,medium,smaller2,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_031,43,80,53.75,40.0
+ORL,22,PCA (Gabor),preprocess,fuller,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_032,29,80,36.25,20.0
+ORL,22,PCA (Gabor),preprocess,fuller,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_033,37,80,46.25,30.0
+ORL,22,PCA (Gabor),preprocess,fuller,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_034,34,80,42.5,20.0
+ORL,22,PCA (Gabor),preprocess,fuller,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_035,40,80,50.0,40.0
+ORL,22,PCA (Gabor),preprocess,fuller,standard4,sqrt,none,True,identity,unit_columns,cosine,preprocess_036,36,80,45.0,30.0
+ORL,22,PCA (Gabor),preprocess,fuller,standard4,sqrt,none,True,identity,unit_columns,euclidean,preprocess_037,43,80,53.75,40.0
+ORL,22,PCA (Gabor),preprocess,fuller,standard4,sqrt,l2,True,identity,unit_columns,cosine,preprocess_038,38,80,47.5,30.0
+ORL,22,PCA (Gabor),preprocess,fuller,standard4,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_039,40,80,50.0,40.0
+ORL,22,PCA (Gabor),preprocess,fuller,smaller2,linear,none,True,identity,unit_columns,cosine,preprocess_040,21,80,26.25,20.0
+ORL,22,PCA (Gabor),preprocess,fuller,smaller2,linear,none,True,identity,unit_columns,euclidean,preprocess_041,33,80,41.25,30.0
+ORL,22,PCA (Gabor),preprocess,fuller,smaller2,linear,l2,True,identity,unit_columns,cosine,preprocess_042,27,80,33.75,20.0
+ORL,22,PCA (Gabor),preprocess,fuller,smaller2,linear,l2,True,identity,unit_columns,euclidean,preprocess_043,38,80,47.5,40.0
+ORL,22,PCA (Gabor),preprocess,fuller,smaller2,sqrt,none,True,identity,unit_columns,cosine,preprocess_044,31,80,38.75,30.0
+ORL,22,PCA (Gabor),preprocess,fuller,smaller2,sqrt,none,True,identity,unit_columns,euclidean,preprocess_045,40,80,50.0,40.0
+ORL,22,PCA (Gabor),preprocess,fuller,smaller2,sqrt,l2,True,identity,unit_columns,cosine,preprocess_046,31,80,38.75,20.0
+ORL,22,PCA (Gabor),preprocess,fuller,smaller2,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_047,43,80,53.75,40.0
+ORL,22,PCA (Gabor),model,original,standard4,sqrt,l2,True,identity,unit_columns,euclidean,model_000,55,80,68.75,50.0
+ORL,22,PCA (Gabor),model,original,standard4,sqrt,l2,True,identity,unit_columns,cosine,model_001,46,80,57.5,40.0
+ORL,22,PCA (Gabor),model,original,standard4,sqrt,l2,False,identity,unit_columns,euclidean,model_002,55,80,68.75,50.0
+ORL,22,PCA (Gabor),model,original,standard4,sqrt,l2,False,identity,unit_columns,cosine,model_003,55,80,68.75,50.0
+ORL,22,CSA-3,preprocess,original,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_000,47,80,58.75,50.0
+ORL,22,CSA-3,preprocess,original,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_001,43,80,53.75,40.0
+ORL,22,CSA-3,preprocess,original,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_002,47,80,58.75,50.0
+ORL,22,CSA-3,preprocess,original,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_003,47,80,58.75,50.0
+ORL,22,CSA-3,preprocess,original,standard4,sqrt,none,False,identity,unit_columns,cosine,preprocess_004,47,80,58.75,40.0
+ORL,22,CSA-3,preprocess,original,standard4,sqrt,none,False,identity,unit_columns,euclidean,preprocess_005,46,80,57.5,30.0
+ORL,22,CSA-3,preprocess,original,standard4,sqrt,l2,False,identity,unit_columns,cosine,preprocess_006,47,80,58.75,40.0
+ORL,22,CSA-3,preprocess,original,standard4,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_007,47,80,58.75,40.0
+ORL,22,CSA-3,preprocess,original,smaller2,linear,none,False,identity,unit_columns,cosine,preprocess_008,46,80,57.5,40.0
+ORL,22,CSA-3,preprocess,original,smaller2,linear,none,False,identity,unit_columns,euclidean,preprocess_009,43,80,53.75,30.0
+ORL,22,CSA-3,preprocess,original,smaller2,linear,l2,False,identity,unit_columns,cosine,preprocess_010,46,80,57.5,40.0
+ORL,22,CSA-3,preprocess,original,smaller2,linear,l2,False,identity,unit_columns,euclidean,preprocess_011,44,80,55.0,40.0
+ORL,22,CSA-3,preprocess,original,smaller2,sqrt,none,False,identity,unit_columns,cosine,preprocess_012,46,80,57.5,40.0
+ORL,22,CSA-3,preprocess,original,smaller2,sqrt,none,False,identity,unit_columns,euclidean,preprocess_013,41,80,51.25,20.0
+ORL,22,CSA-3,preprocess,original,smaller2,sqrt,l2,False,identity,unit_columns,cosine,preprocess_014,46,80,57.5,40.0
+ORL,22,CSA-3,preprocess,original,smaller2,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_015,46,80,57.5,40.0
+ORL,22,CSA-3,preprocess,medium,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_016,46,80,57.5,40.0
+ORL,22,CSA-3,preprocess,medium,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_017,41,80,51.25,30.0
+ORL,22,CSA-3,preprocess,medium,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_018,46,80,57.5,40.0
+ORL,22,CSA-3,preprocess,medium,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_019,46,80,57.5,40.0
+ORL,22,CSA-3,preprocess,medium,standard4,sqrt,none,False,identity,unit_columns,cosine,preprocess_020,48,80,60.0,40.0
+ORL,22,CSA-3,preprocess,medium,standard4,sqrt,none,False,identity,unit_columns,euclidean,preprocess_021,46,80,57.5,40.0
+ORL,22,CSA-3,preprocess,medium,standard4,sqrt,l2,False,identity,unit_columns,cosine,preprocess_022,48,80,60.0,40.0
+ORL,22,CSA-3,preprocess,medium,standard4,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_023,48,80,60.0,40.0
+ORL,22,CSA-3,preprocess,medium,smaller2,linear,none,False,identity,unit_columns,cosine,preprocess_024,46,80,57.5,50.0
+ORL,22,CSA-3,preprocess,medium,smaller2,linear,none,False,identity,unit_columns,euclidean,preprocess_025,36,80,45.0,30.0
+ORL,22,CSA-3,preprocess,medium,smaller2,linear,l2,False,identity,unit_columns,cosine,preprocess_026,46,80,57.5,50.0
+ORL,22,CSA-3,preprocess,medium,smaller2,linear,l2,False,identity,unit_columns,euclidean,preprocess_027,46,80,57.5,50.0
+ORL,22,CSA-3,preprocess,medium,smaller2,sqrt,none,False,identity,unit_columns,cosine,preprocess_028,46,80,57.5,50.0
+ORL,22,CSA-3,preprocess,medium,smaller2,sqrt,none,False,identity,unit_columns,euclidean,preprocess_029,41,80,51.25,30.0
+ORL,22,CSA-3,preprocess,medium,smaller2,sqrt,l2,False,identity,unit_columns,cosine,preprocess_030,46,80,57.5,50.0
+ORL,22,CSA-3,preprocess,medium,smaller2,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_031,47,80,58.75,50.0
+ORL,22,CSA-3,preprocess,fuller,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_032,39,80,48.75,40.0
+ORL,22,CSA-3,preprocess,fuller,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_033,33,80,41.25,20.0
+ORL,22,CSA-3,preprocess,fuller,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_034,39,80,48.75,40.0
+ORL,22,CSA-3,preprocess,fuller,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_035,39,80,48.75,40.0
+ORL,22,CSA-3,preprocess,fuller,standard4,sqrt,none,False,identity,unit_columns,cosine,preprocess_036,41,80,51.25,40.0
+ORL,22,CSA-3,preprocess,fuller,standard4,sqrt,none,False,identity,unit_columns,euclidean,preprocess_037,38,80,47.5,30.0
+ORL,22,CSA-3,preprocess,fuller,standard4,sqrt,l2,False,identity,unit_columns,cosine,preprocess_038,42,80,52.5,40.0
+ORL,22,CSA-3,preprocess,fuller,standard4,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_039,42,80,52.5,40.0
+ORL,22,CSA-3,preprocess,fuller,smaller2,linear,none,False,identity,unit_columns,cosine,preprocess_040,34,80,42.5,30.0
+ORL,22,CSA-3,preprocess,fuller,smaller2,linear,none,False,identity,unit_columns,euclidean,preprocess_041,28,80,35.0,20.0
+ORL,22,CSA-3,preprocess,fuller,smaller2,linear,l2,False,identity,unit_columns,cosine,preprocess_042,35,80,43.75,30.0
+ORL,22,CSA-3,preprocess,fuller,smaller2,linear,l2,False,identity,unit_columns,euclidean,preprocess_043,34,80,42.5,30.0
+ORL,22,CSA-3,preprocess,fuller,smaller2,sqrt,none,False,identity,unit_columns,cosine,preprocess_044,41,80,51.25,30.0
+ORL,22,CSA-3,preprocess,fuller,smaller2,sqrt,none,False,identity,unit_columns,euclidean,preprocess_045,31,80,38.75,20.0
+ORL,22,CSA-3,preprocess,fuller,smaller2,sqrt,l2,False,identity,unit_columns,cosine,preprocess_046,41,80,51.25,30.0
+ORL,22,CSA-3,preprocess,fuller,smaller2,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_047,41,80,51.25,30.0
+ORL,22,CSA-3,model,medium,standard4,sqrt,none,False,identity,unit_columns,cosine,model_000,48,80,60.0,40.0
+ORL,22,CSA-3,model,medium,standard4,sqrt,none,False,identity,unit_columns,euclidean,model_001,46,80,57.5,40.0
+ORL,22,CSA-3,model,medium,standard4,sqrt,none,False,random,unit_columns,cosine,model_002,48,80,60.0,40.0
+ORL,22,CSA-3,model,medium,standard4,sqrt,none,False,random,unit_columns,euclidean,model_003,46,80,57.5,40.0
+ORL,22,CSA-3,model,medium,standard4,sqrt,none,True,identity,unit_columns,cosine,model_004,48,80,60.0,30.0
+ORL,22,CSA-3,model,medium,standard4,sqrt,none,True,identity,unit_columns,euclidean,model_005,46,80,57.5,40.0
+ORL,22,CSA-3,model,medium,standard4,sqrt,none,True,random,unit_columns,cosine,model_006,48,80,60.0,30.0
+ORL,22,CSA-3,model,medium,standard4,sqrt,none,True,random,unit_columns,euclidean,model_007,46,80,57.5,40.0
+ORL,22,PCA+LDA (Gabor),preprocess,original,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_000,42,80,52.5,40.0
+ORL,22,PCA+LDA (Gabor),preprocess,original,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_001,48,80,60.0,50.0
+ORL,22,PCA+LDA (Gabor),preprocess,original,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_002,45,80,56.25,40.0
+ORL,22,PCA+LDA (Gabor),preprocess,original,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_003,51,80,63.75,50.0
+ORL,22,PCA+LDA (Gabor),preprocess,original,standard4,sqrt,none,True,identity,unit_columns,cosine,preprocess_004,45,80,56.25,50.0
+ORL,22,PCA+LDA (Gabor),preprocess,original,standard4,sqrt,none,True,identity,unit_columns,euclidean,preprocess_005,52,80,65.0,50.0
+ORL,22,PCA+LDA (Gabor),preprocess,original,standard4,sqrt,l2,True,identity,unit_columns,cosine,preprocess_006,45,80,56.25,40.0
+ORL,22,PCA+LDA (Gabor),preprocess,original,standard4,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_007,58,80,72.5,60.0
+ORL,22,PCA+LDA (Gabor),preprocess,original,smaller2,linear,none,True,identity,unit_columns,cosine,preprocess_008,40,80,50.0,30.0
+ORL,22,PCA+LDA (Gabor),preprocess,original,smaller2,linear,none,True,identity,unit_columns,euclidean,preprocess_009,43,80,53.75,40.0
+ORL,22,PCA+LDA (Gabor),preprocess,original,smaller2,linear,l2,True,identity,unit_columns,cosine,preprocess_010,37,80,46.25,30.0
+ORL,22,PCA+LDA (Gabor),preprocess,original,smaller2,linear,l2,True,identity,unit_columns,euclidean,preprocess_011,50,80,62.5,50.0
+ORL,22,PCA+LDA (Gabor),preprocess,original,smaller2,sqrt,none,True,identity,unit_columns,cosine,preprocess_012,39,80,48.75,30.0
+ORL,22,PCA+LDA (Gabor),preprocess,original,smaller2,sqrt,none,True,identity,unit_columns,euclidean,preprocess_013,45,80,56.25,40.0
+ORL,22,PCA+LDA (Gabor),preprocess,original,smaller2,sqrt,l2,True,identity,unit_columns,cosine,preprocess_014,37,80,46.25,30.0
+ORL,22,PCA+LDA (Gabor),preprocess,original,smaller2,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_015,51,80,63.75,50.0
+ORL,22,PCA+LDA (Gabor),preprocess,medium,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_016,41,80,51.25,40.0
+ORL,22,PCA+LDA (Gabor),preprocess,medium,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_017,45,80,56.25,30.0
+ORL,22,PCA+LDA (Gabor),preprocess,medium,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_018,40,80,50.0,30.0
+ORL,22,PCA+LDA (Gabor),preprocess,medium,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_019,50,80,62.5,50.0
+ORL,22,PCA+LDA (Gabor),preprocess,medium,standard4,sqrt,none,True,identity,unit_columns,cosine,preprocess_020,45,80,56.25,40.0
+ORL,22,PCA+LDA (Gabor),preprocess,medium,standard4,sqrt,none,True,identity,unit_columns,euclidean,preprocess_021,53,80,66.25,50.0
+ORL,22,PCA+LDA (Gabor),preprocess,medium,standard4,sqrt,l2,True,identity,unit_columns,cosine,preprocess_022,43,80,53.75,40.0
+ORL,22,PCA+LDA (Gabor),preprocess,medium,standard4,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_023,49,80,61.25,40.0
+ORL,22,PCA+LDA (Gabor),preprocess,medium,smaller2,linear,none,True,identity,unit_columns,cosine,preprocess_024,34,80,42.5,20.0
+ORL,22,PCA+LDA (Gabor),preprocess,medium,smaller2,linear,none,True,identity,unit_columns,euclidean,preprocess_025,41,80,51.25,20.0
+ORL,22,PCA+LDA (Gabor),preprocess,medium,smaller2,linear,l2,True,identity,unit_columns,cosine,preprocess_026,28,80,35.0,10.0
+ORL,22,PCA+LDA (Gabor),preprocess,medium,smaller2,linear,l2,True,identity,unit_columns,euclidean,preprocess_027,40,80,50.0,20.0
+ORL,22,PCA+LDA (Gabor),preprocess,medium,smaller2,sqrt,none,True,identity,unit_columns,cosine,preprocess_028,36,80,45.0,30.0
+ORL,22,PCA+LDA (Gabor),preprocess,medium,smaller2,sqrt,none,True,identity,unit_columns,euclidean,preprocess_029,45,80,56.25,30.0
+ORL,22,PCA+LDA (Gabor),preprocess,medium,smaller2,sqrt,l2,True,identity,unit_columns,cosine,preprocess_030,35,80,43.75,20.0
+ORL,22,PCA+LDA (Gabor),preprocess,medium,smaller2,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_031,46,80,57.5,40.0
+ORL,22,PCA+LDA (Gabor),preprocess,fuller,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_032,37,80,46.25,30.0
+ORL,22,PCA+LDA (Gabor),preprocess,fuller,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_033,38,80,47.5,30.0
+ORL,22,PCA+LDA (Gabor),preprocess,fuller,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_034,40,80,50.0,30.0
+ORL,22,PCA+LDA (Gabor),preprocess,fuller,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_035,46,80,57.5,40.0
+ORL,22,PCA+LDA (Gabor),preprocess,fuller,standard4,sqrt,none,True,identity,unit_columns,cosine,preprocess_036,39,80,48.75,30.0
+ORL,22,PCA+LDA (Gabor),preprocess,fuller,standard4,sqrt,none,True,identity,unit_columns,euclidean,preprocess_037,43,80,53.75,30.0
+ORL,22,PCA+LDA (Gabor),preprocess,fuller,standard4,sqrt,l2,True,identity,unit_columns,cosine,preprocess_038,39,80,48.75,30.0
+ORL,22,PCA+LDA (Gabor),preprocess,fuller,standard4,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_039,45,80,56.25,30.0
+ORL,22,PCA+LDA (Gabor),preprocess,fuller,smaller2,linear,none,True,identity,unit_columns,cosine,preprocess_040,27,80,33.75,30.0
+ORL,22,PCA+LDA (Gabor),preprocess,fuller,smaller2,linear,none,True,identity,unit_columns,euclidean,preprocess_041,40,80,50.0,30.0
+ORL,22,PCA+LDA (Gabor),preprocess,fuller,smaller2,linear,l2,True,identity,unit_columns,cosine,preprocess_042,26,80,32.5,20.0
+ORL,22,PCA+LDA (Gabor),preprocess,fuller,smaller2,linear,l2,True,identity,unit_columns,euclidean,preprocess_043,44,80,55.0,40.0
+ORL,22,PCA+LDA (Gabor),preprocess,fuller,smaller2,sqrt,none,True,identity,unit_columns,cosine,preprocess_044,32,80,40.0,30.0
+ORL,22,PCA+LDA (Gabor),preprocess,fuller,smaller2,sqrt,none,True,identity,unit_columns,euclidean,preprocess_045,42,80,52.5,30.0
+ORL,22,PCA+LDA (Gabor),preprocess,fuller,smaller2,sqrt,l2,True,identity,unit_columns,cosine,preprocess_046,31,80,38.75,20.0
+ORL,22,PCA+LDA (Gabor),preprocess,fuller,smaller2,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_047,47,80,58.75,40.0
+ORL,22,PCA+LDA (Gabor),model,original,standard4,sqrt,l2,True,identity,unit_columns,euclidean,model_000,58,80,72.5,60.0
+ORL,22,PCA+LDA (Gabor),model,original,standard4,sqrt,l2,True,identity,unit_columns,cosine,model_001,45,80,56.25,40.0
+ORL,22,PCA+LDA (Gabor),model,original,standard4,sqrt,l2,True,identity,sw_identity,euclidean,model_002,12,80,15.0,0.0
+ORL,22,PCA+LDA (Gabor),model,original,standard4,sqrt,l2,True,identity,sw_identity,cosine,model_003,11,80,13.75,0.0
+ORL,22,PCA+LDA (Gabor),model,original,standard4,sqrt,l2,False,identity,unit_columns,euclidean,model_004,56,80,70.0,50.0
+ORL,22,PCA+LDA (Gabor),model,original,standard4,sqrt,l2,False,identity,unit_columns,cosine,model_005,44,80,55.0,40.0
+ORL,22,PCA+LDA (Gabor),model,original,standard4,sqrt,l2,False,identity,sw_identity,euclidean,model_006,12,80,15.0,0.0
+ORL,22,PCA+LDA (Gabor),model,original,standard4,sqrt,l2,False,identity,sw_identity,cosine,model_007,14,80,17.5,0.0
+ORL,22,CSA-3+LDA,preprocess,original,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_000,42,80,52.5,30.0
+ORL,22,CSA-3+LDA,preprocess,original,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_001,39,80,48.75,20.0
+ORL,22,CSA-3+LDA,preprocess,original,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_002,42,80,52.5,30.0
+ORL,22,CSA-3+LDA,preprocess,original,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_003,40,80,50.0,30.0
+ORL,22,CSA-3+LDA,preprocess,original,standard4,sqrt,none,False,identity,unit_columns,cosine,preprocess_004,36,80,45.0,30.0
+ORL,22,CSA-3+LDA,preprocess,original,standard4,sqrt,none,False,identity,unit_columns,euclidean,preprocess_005,33,80,41.25,30.0
+ORL,22,CSA-3+LDA,preprocess,original,standard4,sqrt,l2,False,identity,unit_columns,cosine,preprocess_006,37,80,46.25,30.0
+ORL,22,CSA-3+LDA,preprocess,original,standard4,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_007,36,80,45.0,30.0
+ORL,22,CSA-3+LDA,preprocess,original,smaller2,linear,none,False,identity,unit_columns,cosine,preprocess_008,35,80,43.75,20.0
+ORL,22,CSA-3+LDA,preprocess,original,smaller2,linear,none,False,identity,unit_columns,euclidean,preprocess_009,28,80,35.0,10.0
+ORL,22,CSA-3+LDA,preprocess,original,smaller2,linear,l2,False,identity,unit_columns,cosine,preprocess_010,36,80,45.0,30.0
+ORL,22,CSA-3+LDA,preprocess,original,smaller2,linear,l2,False,identity,unit_columns,euclidean,preprocess_011,29,80,36.25,10.0
+ORL,22,CSA-3+LDA,preprocess,original,smaller2,sqrt,none,False,identity,unit_columns,cosine,preprocess_012,40,80,50.0,30.0
+ORL,22,CSA-3+LDA,preprocess,original,smaller2,sqrt,none,False,identity,unit_columns,euclidean,preprocess_013,32,80,40.0,20.0
+ORL,22,CSA-3+LDA,preprocess,original,smaller2,sqrt,l2,False,identity,unit_columns,cosine,preprocess_014,39,80,48.75,20.0
+ORL,22,CSA-3+LDA,preprocess,original,smaller2,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_015,32,80,40.0,20.0
+ORL,22,CSA-3+LDA,preprocess,medium,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_016,37,80,46.25,30.0
+ORL,22,CSA-3+LDA,preprocess,medium,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_017,31,80,38.75,30.0
+ORL,22,CSA-3+LDA,preprocess,medium,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_018,39,80,48.75,30.0
+ORL,22,CSA-3+LDA,preprocess,medium,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_019,31,80,38.75,30.0
+ORL,22,CSA-3+LDA,preprocess,medium,standard4,sqrt,none,False,identity,unit_columns,cosine,preprocess_020,35,80,43.75,30.0
+ORL,22,CSA-3+LDA,preprocess,medium,standard4,sqrt,none,False,identity,unit_columns,euclidean,preprocess_021,27,80,33.75,20.0
+ORL,22,CSA-3+LDA,preprocess,medium,standard4,sqrt,l2,False,identity,unit_columns,cosine,preprocess_022,41,80,51.25,40.0
+ORL,22,CSA-3+LDA,preprocess,medium,standard4,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_023,33,80,41.25,30.0
+ORL,22,CSA-3+LDA,preprocess,medium,smaller2,linear,none,False,identity,unit_columns,cosine,preprocess_024,40,80,50.0,40.0
+ORL,22,CSA-3+LDA,preprocess,medium,smaller2,linear,none,False,identity,unit_columns,euclidean,preprocess_025,30,80,37.5,20.0
+ORL,22,CSA-3+LDA,preprocess,medium,smaller2,linear,l2,False,identity,unit_columns,cosine,preprocess_026,31,80,38.75,30.0
+ORL,22,CSA-3+LDA,preprocess,medium,smaller2,linear,l2,False,identity,unit_columns,euclidean,preprocess_027,25,80,31.25,10.0
+ORL,22,CSA-3+LDA,preprocess,medium,smaller2,sqrt,none,False,identity,unit_columns,cosine,preprocess_028,45,80,56.25,40.0
+ORL,22,CSA-3+LDA,preprocess,medium,smaller2,sqrt,none,False,identity,unit_columns,euclidean,preprocess_029,37,80,46.25,30.0
+ORL,22,CSA-3+LDA,preprocess,medium,smaller2,sqrt,l2,False,identity,unit_columns,cosine,preprocess_030,39,80,48.75,30.0
+ORL,22,CSA-3+LDA,preprocess,medium,smaller2,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_031,30,80,37.5,10.0
+ORL,22,CSA-3+LDA,preprocess,fuller,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_032,34,80,42.5,30.0
+ORL,22,CSA-3+LDA,preprocess,fuller,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_033,28,80,35.0,20.0
+ORL,22,CSA-3+LDA,preprocess,fuller,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_034,26,80,32.5,20.0
+ORL,22,CSA-3+LDA,preprocess,fuller,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_035,25,80,31.25,20.0
+ORL,22,CSA-3+LDA,preprocess,fuller,standard4,sqrt,none,False,identity,unit_columns,cosine,preprocess_036,31,80,38.75,30.0
+ORL,22,CSA-3+LDA,preprocess,fuller,standard4,sqrt,none,False,identity,unit_columns,euclidean,preprocess_037,28,80,35.0,20.0
+ORL,22,CSA-3+LDA,preprocess,fuller,standard4,sqrt,l2,False,identity,unit_columns,cosine,preprocess_038,30,80,37.5,20.0
+ORL,22,CSA-3+LDA,preprocess,fuller,standard4,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_039,26,80,32.5,10.0
+ORL,22,CSA-3+LDA,preprocess,fuller,smaller2,linear,none,False,identity,unit_columns,cosine,preprocess_040,30,80,37.5,10.0
+ORL,22,CSA-3+LDA,preprocess,fuller,smaller2,linear,none,False,identity,unit_columns,euclidean,preprocess_041,22,80,27.5,10.0
+ORL,22,CSA-3+LDA,preprocess,fuller,smaller2,linear,l2,False,identity,unit_columns,cosine,preprocess_042,37,80,46.25,20.0
+ORL,22,CSA-3+LDA,preprocess,fuller,smaller2,linear,l2,False,identity,unit_columns,euclidean,preprocess_043,25,80,31.25,10.0
+ORL,22,CSA-3+LDA,preprocess,fuller,smaller2,sqrt,none,False,identity,unit_columns,cosine,preprocess_044,31,80,38.75,10.0
+ORL,22,CSA-3+LDA,preprocess,fuller,smaller2,sqrt,none,False,identity,unit_columns,euclidean,preprocess_045,26,80,32.5,10.0
+ORL,22,CSA-3+LDA,preprocess,fuller,smaller2,sqrt,l2,False,identity,unit_columns,cosine,preprocess_046,38,80,47.5,20.0
+ORL,22,CSA-3+LDA,preprocess,fuller,smaller2,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_047,28,80,35.0,10.0
+ORL,22,CSA-3+LDA,model,medium,smaller2,sqrt,none,False,identity,unit_columns,cosine,model_000,45,80,56.25,40.0
+ORL,22,CSA-3+LDA,model,medium,smaller2,sqrt,none,False,identity,unit_columns,euclidean,model_001,37,80,46.25,30.0
+ORL,22,CSA-3+LDA,model,medium,smaller2,sqrt,none,False,identity,sw_identity,cosine,model_002,26,80,32.5,20.0
+ORL,22,CSA-3+LDA,model,medium,smaller2,sqrt,none,False,identity,sw_identity,euclidean,model_003,27,80,33.75,20.0
+ORL,22,CSA-3+LDA,model,medium,smaller2,sqrt,none,False,random,unit_columns,cosine,model_004,45,80,56.25,40.0
+ORL,22,CSA-3+LDA,model,medium,smaller2,sqrt,none,False,random,unit_columns,euclidean,model_005,38,80,47.5,40.0
+ORL,22,CSA-3+LDA,model,medium,smaller2,sqrt,none,False,random,sw_identity,cosine,model_006,27,80,33.75,20.0
+ORL,22,CSA-3+LDA,model,medium,smaller2,sqrt,none,False,random,sw_identity,euclidean,model_007,27,80,33.75,20.0
+ORL,22,CSA-3+LDA,model,medium,smaller2,sqrt,none,True,identity,unit_columns,cosine,model_008,35,80,43.75,20.0
+ORL,22,CSA-3+LDA,model,medium,smaller2,sqrt,none,True,identity,unit_columns,euclidean,model_009,29,80,36.25,10.0
+ORL,22,CSA-3+LDA,model,medium,smaller2,sqrt,none,True,identity,sw_identity,cosine,model_010,24,80,30.0,0.0
+ORL,22,CSA-3+LDA,model,medium,smaller2,sqrt,none,True,identity,sw_identity,euclidean,model_011,22,80,27.5,0.0
+ORL,22,CSA-3+LDA,model,medium,smaller2,sqrt,none,True,random,unit_columns,cosine,model_012,38,80,47.5,20.0
+ORL,22,CSA-3+LDA,model,medium,smaller2,sqrt,none,True,random,unit_columns,euclidean,model_013,29,80,36.25,10.0
+ORL,22,CSA-3+LDA,model,medium,smaller2,sqrt,none,True,random,sw_identity,cosine,model_014,20,80,25.0,0.0
+ORL,22,CSA-3+LDA,model,medium,smaller2,sqrt,none,True,random,sw_identity,euclidean,model_015,18,80,22.5,0.0
+MNIST G30/P470,20,PCA (Gabor),preprocess,unchanged,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_000,101,120,84.16666666666667,81.66666666666667
+MNIST G30/P470,20,PCA (Gabor),preprocess,unchanged,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_001,107,120,89.16666666666667,88.33333333333333
+MNIST G30/P470,20,PCA (Gabor),preprocess,unchanged,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_002,106,120,88.33333333333333,86.66666666666667
+MNIST G30/P470,20,PCA (Gabor),preprocess,unchanged,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_003,109,120,90.83333333333333,90.0
+MNIST G30/P470,20,PCA (Gabor),preprocess,unchanged,standard4,sqrt,none,True,identity,unit_columns,cosine,preprocess_004,103,120,85.83333333333333,83.33333333333333
+MNIST G30/P470,20,PCA (Gabor),preprocess,unchanged,standard4,sqrt,none,True,identity,unit_columns,euclidean,preprocess_005,109,120,90.83333333333333,90.0
+MNIST G30/P470,20,PCA (Gabor),preprocess,unchanged,standard4,sqrt,l2,True,identity,unit_columns,cosine,preprocess_006,107,120,89.16666666666667,88.33333333333333
+MNIST G30/P470,20,PCA (Gabor),preprocess,unchanged,standard4,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_007,111,120,92.5,91.66666666666667
+MNIST G30/P470,20,PCA (Gabor),preprocess,unchanged,smaller2,linear,none,True,identity,unit_columns,cosine,preprocess_008,108,120,90.0,86.66666666666667
+MNIST G30/P470,20,PCA (Gabor),preprocess,unchanged,smaller2,linear,none,True,identity,unit_columns,euclidean,preprocess_009,106,120,88.33333333333333,86.66666666666667
+MNIST G30/P470,20,PCA (Gabor),preprocess,unchanged,smaller2,linear,l2,True,identity,unit_columns,cosine,preprocess_010,104,120,86.66666666666667,85.0
+MNIST G30/P470,20,PCA (Gabor),preprocess,unchanged,smaller2,linear,l2,True,identity,unit_columns,euclidean,preprocess_011,109,120,90.83333333333333,90.0
+MNIST G30/P470,20,PCA (Gabor),preprocess,unchanged,smaller2,sqrt,none,True,identity,unit_columns,cosine,preprocess_012,107,120,89.16666666666667,85.0
+MNIST G30/P470,20,PCA (Gabor),preprocess,unchanged,smaller2,sqrt,none,True,identity,unit_columns,euclidean,preprocess_013,107,120,89.16666666666667,88.33333333333333
+MNIST G30/P470,20,PCA (Gabor),preprocess,unchanged,smaller2,sqrt,l2,True,identity,unit_columns,cosine,preprocess_014,111,120,92.5,91.66666666666667
+MNIST G30/P470,20,PCA (Gabor),preprocess,unchanged,smaller2,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_015,109,120,90.83333333333333,90.0
+MNIST G30/P470,20,PCA (Gabor),model,unchanged,standard4,sqrt,l2,True,identity,unit_columns,euclidean,model_000,111,120,92.5,91.66666666666667
+MNIST G30/P470,20,PCA (Gabor),model,unchanged,standard4,sqrt,l2,True,identity,unit_columns,cosine,model_001,107,120,89.16666666666667,88.33333333333333
+MNIST G30/P470,20,PCA (Gabor),model,unchanged,standard4,sqrt,l2,False,identity,unit_columns,euclidean,model_002,111,120,92.5,91.66666666666667
+MNIST G30/P470,20,PCA (Gabor),model,unchanged,standard4,sqrt,l2,False,identity,unit_columns,cosine,model_003,111,120,92.5,91.66666666666667
+MNIST G30/P470,20,CSA-3,preprocess,unchanged,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_000,110,120,91.66666666666667,91.66666666666667
+MNIST G30/P470,20,CSA-3,preprocess,unchanged,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_001,107,120,89.16666666666667,88.33333333333333
+MNIST G30/P470,20,CSA-3,preprocess,unchanged,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_002,108,120,90.0,90.0
+MNIST G30/P470,20,CSA-3,preprocess,unchanged,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_003,108,120,90.0,90.0
+MNIST G30/P470,20,CSA-3,preprocess,unchanged,standard4,sqrt,none,False,identity,unit_columns,cosine,preprocess_004,110,120,91.66666666666667,91.66666666666667
+MNIST G30/P470,20,CSA-3,preprocess,unchanged,standard4,sqrt,none,False,identity,unit_columns,euclidean,preprocess_005,108,120,90.0,90.0
+MNIST G30/P470,20,CSA-3,preprocess,unchanged,standard4,sqrt,l2,False,identity,unit_columns,cosine,preprocess_006,110,120,91.66666666666667,91.66666666666667
+MNIST G30/P470,20,CSA-3,preprocess,unchanged,standard4,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_007,110,120,91.66666666666667,91.66666666666667
+MNIST G30/P470,20,CSA-3,preprocess,unchanged,smaller2,linear,none,False,identity,unit_columns,cosine,preprocess_008,110,120,91.66666666666667,91.66666666666667
+MNIST G30/P470,20,CSA-3,preprocess,unchanged,smaller2,linear,none,False,identity,unit_columns,euclidean,preprocess_009,107,120,89.16666666666667,86.66666666666667
+MNIST G30/P470,20,CSA-3,preprocess,unchanged,smaller2,linear,l2,False,identity,unit_columns,cosine,preprocess_010,109,120,90.83333333333333,90.0
+MNIST G30/P470,20,CSA-3,preprocess,unchanged,smaller2,linear,l2,False,identity,unit_columns,euclidean,preprocess_011,108,120,90.0,90.0
+MNIST G30/P470,20,CSA-3,preprocess,unchanged,smaller2,sqrt,none,False,identity,unit_columns,cosine,preprocess_012,110,120,91.66666666666667,91.66666666666667
+MNIST G30/P470,20,CSA-3,preprocess,unchanged,smaller2,sqrt,none,False,identity,unit_columns,euclidean,preprocess_013,111,120,92.5,91.66666666666667
+MNIST G30/P470,20,CSA-3,preprocess,unchanged,smaller2,sqrt,l2,False,identity,unit_columns,cosine,preprocess_014,109,120,90.83333333333333,90.0
+MNIST G30/P470,20,CSA-3,preprocess,unchanged,smaller2,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_015,109,120,90.83333333333333,90.0
+MNIST G30/P470,20,CSA-3,model,unchanged,smaller2,sqrt,none,False,identity,unit_columns,euclidean,model_000,111,120,92.5,91.66666666666667
+MNIST G30/P470,20,CSA-3,model,unchanged,smaller2,sqrt,none,False,identity,unit_columns,cosine,model_001,110,120,91.66666666666667,91.66666666666667
+MNIST G30/P470,20,CSA-3,model,unchanged,smaller2,sqrt,none,False,random,unit_columns,euclidean,model_002,111,120,92.5,91.66666666666667
+MNIST G30/P470,20,CSA-3,model,unchanged,smaller2,sqrt,none,False,random,unit_columns,cosine,model_003,110,120,91.66666666666667,91.66666666666667
+MNIST G30/P470,20,CSA-3,model,unchanged,smaller2,sqrt,none,True,identity,unit_columns,euclidean,model_004,111,120,92.5,91.66666666666667
+MNIST G30/P470,20,CSA-3,model,unchanged,smaller2,sqrt,none,True,identity,unit_columns,cosine,model_005,107,120,89.16666666666667,86.66666666666667
+MNIST G30/P470,20,CSA-3,model,unchanged,smaller2,sqrt,none,True,random,unit_columns,euclidean,model_006,111,120,92.5,91.66666666666667
+MNIST G30/P470,20,CSA-3,model,unchanged,smaller2,sqrt,none,True,random,unit_columns,cosine,model_007,107,120,89.16666666666667,86.66666666666667
+MNIST G30/P470,21,PCA (Gabor),preprocess,unchanged,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_000,106,120,88.33333333333333,83.33333333333333
+MNIST G30/P470,21,PCA (Gabor),preprocess,unchanged,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_001,105,120,87.5,83.33333333333333
+MNIST G30/P470,21,PCA (Gabor),preprocess,unchanged,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_002,107,120,89.16666666666667,83.33333333333333
+MNIST G30/P470,21,PCA (Gabor),preprocess,unchanged,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_003,106,120,88.33333333333333,83.33333333333333
+MNIST G30/P470,21,PCA (Gabor),preprocess,unchanged,standard4,sqrt,none,True,identity,unit_columns,cosine,preprocess_004,105,120,87.5,81.66666666666667
+MNIST G30/P470,21,PCA (Gabor),preprocess,unchanged,standard4,sqrt,none,True,identity,unit_columns,euclidean,preprocess_005,106,120,88.33333333333333,83.33333333333333
+MNIST G30/P470,21,PCA (Gabor),preprocess,unchanged,standard4,sqrt,l2,True,identity,unit_columns,cosine,preprocess_006,110,120,91.66666666666667,86.66666666666667
+MNIST G30/P470,21,PCA (Gabor),preprocess,unchanged,standard4,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_007,108,120,90.0,85.0
+MNIST G30/P470,21,PCA (Gabor),preprocess,unchanged,smaller2,linear,none,True,identity,unit_columns,cosine,preprocess_008,105,120,87.5,83.33333333333333
+MNIST G30/P470,21,PCA (Gabor),preprocess,unchanged,smaller2,linear,none,True,identity,unit_columns,euclidean,preprocess_009,102,120,85.0,83.33333333333333
+MNIST G30/P470,21,PCA (Gabor),preprocess,unchanged,smaller2,linear,l2,True,identity,unit_columns,cosine,preprocess_010,103,120,85.83333333333333,80.0
+MNIST G30/P470,21,PCA (Gabor),preprocess,unchanged,smaller2,linear,l2,True,identity,unit_columns,euclidean,preprocess_011,100,120,83.33333333333333,75.0
+MNIST G30/P470,21,PCA (Gabor),preprocess,unchanged,smaller2,sqrt,none,True,identity,unit_columns,cosine,preprocess_012,106,120,88.33333333333333,83.33333333333333
+MNIST G30/P470,21,PCA (Gabor),preprocess,unchanged,smaller2,sqrt,none,True,identity,unit_columns,euclidean,preprocess_013,107,120,89.16666666666667,86.66666666666667
+MNIST G30/P470,21,PCA (Gabor),preprocess,unchanged,smaller2,sqrt,l2,True,identity,unit_columns,cosine,preprocess_014,106,120,88.33333333333333,83.33333333333333
+MNIST G30/P470,21,PCA (Gabor),preprocess,unchanged,smaller2,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_015,102,120,85.0,78.33333333333333
+MNIST G30/P470,21,PCA (Gabor),model,unchanged,standard4,sqrt,l2,True,identity,unit_columns,cosine,model_000,110,120,91.66666666666667,86.66666666666667
+MNIST G30/P470,21,PCA (Gabor),model,unchanged,standard4,sqrt,l2,True,identity,unit_columns,euclidean,model_001,108,120,90.0,85.0
+MNIST G30/P470,21,PCA (Gabor),model,unchanged,standard4,sqrt,l2,False,identity,unit_columns,cosine,model_002,108,120,90.0,85.0
+MNIST G30/P470,21,PCA (Gabor),model,unchanged,standard4,sqrt,l2,False,identity,unit_columns,euclidean,model_003,108,120,90.0,85.0
+MNIST G30/P470,21,CSA-3,preprocess,unchanged,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_000,109,120,90.83333333333333,86.66666666666667
+MNIST G30/P470,21,CSA-3,preprocess,unchanged,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_001,107,120,89.16666666666667,85.0
+MNIST G30/P470,21,CSA-3,preprocess,unchanged,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_002,110,120,91.66666666666667,88.33333333333333
+MNIST G30/P470,21,CSA-3,preprocess,unchanged,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_003,110,120,91.66666666666667,88.33333333333333
+MNIST G30/P470,21,CSA-3,preprocess,unchanged,standard4,sqrt,none,False,identity,unit_columns,cosine,preprocess_004,110,120,91.66666666666667,85.0
+MNIST G30/P470,21,CSA-3,preprocess,unchanged,standard4,sqrt,none,False,identity,unit_columns,euclidean,preprocess_005,108,120,90.0,83.33333333333333
+MNIST G30/P470,21,CSA-3,preprocess,unchanged,standard4,sqrt,l2,False,identity,unit_columns,cosine,preprocess_006,110,120,91.66666666666667,85.0
+MNIST G30/P470,21,CSA-3,preprocess,unchanged,standard4,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_007,110,120,91.66666666666667,85.0
+MNIST G30/P470,21,CSA-3,preprocess,unchanged,smaller2,linear,none,False,identity,unit_columns,cosine,preprocess_008,101,120,84.16666666666667,78.33333333333333
+MNIST G30/P470,21,CSA-3,preprocess,unchanged,smaller2,linear,none,False,identity,unit_columns,euclidean,preprocess_009,103,120,85.83333333333333,85.0
+MNIST G30/P470,21,CSA-3,preprocess,unchanged,smaller2,linear,l2,False,identity,unit_columns,cosine,preprocess_010,101,120,84.16666666666667,78.33333333333333
+MNIST G30/P470,21,CSA-3,preprocess,unchanged,smaller2,linear,l2,False,identity,unit_columns,euclidean,preprocess_011,101,120,84.16666666666667,78.33333333333333
+MNIST G30/P470,21,CSA-3,preprocess,unchanged,smaller2,sqrt,none,False,identity,unit_columns,cosine,preprocess_012,102,120,85.0,78.33333333333333
+MNIST G30/P470,21,CSA-3,preprocess,unchanged,smaller2,sqrt,none,False,identity,unit_columns,euclidean,preprocess_013,107,120,89.16666666666667,86.66666666666667
+MNIST G30/P470,21,CSA-3,preprocess,unchanged,smaller2,sqrt,l2,False,identity,unit_columns,cosine,preprocess_014,102,120,85.0,78.33333333333333
+MNIST G30/P470,21,CSA-3,preprocess,unchanged,smaller2,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_015,102,120,85.0,78.33333333333333
+MNIST G30/P470,21,CSA-3,model,unchanged,standard4,linear,l2,False,identity,unit_columns,cosine,model_000,110,120,91.66666666666667,88.33333333333333
+MNIST G30/P470,21,CSA-3,model,unchanged,standard4,linear,l2,False,identity,unit_columns,euclidean,model_001,110,120,91.66666666666667,88.33333333333333
+MNIST G30/P470,21,CSA-3,model,unchanged,standard4,linear,l2,False,random,unit_columns,cosine,model_002,110,120,91.66666666666667,88.33333333333333
+MNIST G30/P470,21,CSA-3,model,unchanged,standard4,linear,l2,False,random,unit_columns,euclidean,model_003,110,120,91.66666666666667,88.33333333333333
+MNIST G30/P470,21,CSA-3,model,unchanged,standard4,linear,l2,True,identity,unit_columns,cosine,model_004,110,120,91.66666666666667,88.33333333333333
+MNIST G30/P470,21,CSA-3,model,unchanged,standard4,linear,l2,True,identity,unit_columns,euclidean,model_005,110,120,91.66666666666667,88.33333333333333
+MNIST G30/P470,21,CSA-3,model,unchanged,standard4,linear,l2,True,random,unit_columns,cosine,model_006,110,120,91.66666666666667,88.33333333333333
+MNIST G30/P470,21,CSA-3,model,unchanged,standard4,linear,l2,True,random,unit_columns,euclidean,model_007,110,120,91.66666666666667,88.33333333333333
+MNIST G30/P470,22,PCA (Gabor),preprocess,unchanged,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_000,105,120,87.5,86.66666666666667
+MNIST G30/P470,22,PCA (Gabor),preprocess,unchanged,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_001,105,120,87.5,85.0
+MNIST G30/P470,22,PCA (Gabor),preprocess,unchanged,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_002,108,120,90.0,90.0
+MNIST G30/P470,22,PCA (Gabor),preprocess,unchanged,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_003,107,120,89.16666666666667,88.33333333333333
+MNIST G30/P470,22,PCA (Gabor),preprocess,unchanged,standard4,sqrt,none,True,identity,unit_columns,cosine,preprocess_004,105,120,87.5,86.66666666666667
+MNIST G30/P470,22,PCA (Gabor),preprocess,unchanged,standard4,sqrt,none,True,identity,unit_columns,euclidean,preprocess_005,109,120,90.83333333333333,90.0
+MNIST G30/P470,22,PCA (Gabor),preprocess,unchanged,standard4,sqrt,l2,True,identity,unit_columns,cosine,preprocess_006,108,120,90.0,90.0
+MNIST G30/P470,22,PCA (Gabor),preprocess,unchanged,standard4,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_007,111,120,92.5,91.66666666666667
+MNIST G30/P470,22,PCA (Gabor),preprocess,unchanged,smaller2,linear,none,True,identity,unit_columns,cosine,preprocess_008,104,120,86.66666666666667,83.33333333333333
+MNIST G30/P470,22,PCA (Gabor),preprocess,unchanged,smaller2,linear,none,True,identity,unit_columns,euclidean,preprocess_009,106,120,88.33333333333333,86.66666666666667
+MNIST G30/P470,22,PCA (Gabor),preprocess,unchanged,smaller2,linear,l2,True,identity,unit_columns,cosine,preprocess_010,105,120,87.5,85.0
+MNIST G30/P470,22,PCA (Gabor),preprocess,unchanged,smaller2,linear,l2,True,identity,unit_columns,euclidean,preprocess_011,107,120,89.16666666666667,88.33333333333333
+MNIST G30/P470,22,PCA (Gabor),preprocess,unchanged,smaller2,sqrt,none,True,identity,unit_columns,cosine,preprocess_012,105,120,87.5,86.66666666666667
+MNIST G30/P470,22,PCA (Gabor),preprocess,unchanged,smaller2,sqrt,none,True,identity,unit_columns,euclidean,preprocess_013,108,120,90.0,85.0
+MNIST G30/P470,22,PCA (Gabor),preprocess,unchanged,smaller2,sqrt,l2,True,identity,unit_columns,cosine,preprocess_014,107,120,89.16666666666667,88.33333333333333
+MNIST G30/P470,22,PCA (Gabor),preprocess,unchanged,smaller2,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_015,108,120,90.0,86.66666666666667
+MNIST G30/P470,22,PCA (Gabor),model,unchanged,standard4,sqrt,l2,True,identity,unit_columns,euclidean,model_000,111,120,92.5,91.66666666666667
+MNIST G30/P470,22,PCA (Gabor),model,unchanged,standard4,sqrt,l2,True,identity,unit_columns,cosine,model_001,108,120,90.0,90.0
+MNIST G30/P470,22,PCA (Gabor),model,unchanged,standard4,sqrt,l2,False,identity,unit_columns,euclidean,model_002,111,120,92.5,91.66666666666667
+MNIST G30/P470,22,PCA (Gabor),model,unchanged,standard4,sqrt,l2,False,identity,unit_columns,cosine,model_003,111,120,92.5,91.66666666666667
+MNIST G30/P470,22,CSA-3,preprocess,unchanged,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_000,111,120,92.5,91.66666666666667
+MNIST G30/P470,22,CSA-3,preprocess,unchanged,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_001,106,120,88.33333333333333,86.66666666666667
+MNIST G30/P470,22,CSA-3,preprocess,unchanged,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_002,111,120,92.5,91.66666666666667
+MNIST G30/P470,22,CSA-3,preprocess,unchanged,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_003,111,120,92.5,91.66666666666667
+MNIST G30/P470,22,CSA-3,preprocess,unchanged,standard4,sqrt,none,False,identity,unit_columns,cosine,preprocess_004,109,120,90.83333333333333,90.0
+MNIST G30/P470,22,CSA-3,preprocess,unchanged,standard4,sqrt,none,False,identity,unit_columns,euclidean,preprocess_005,105,120,87.5,86.66666666666667
+MNIST G30/P470,22,CSA-3,preprocess,unchanged,standard4,sqrt,l2,False,identity,unit_columns,cosine,preprocess_006,109,120,90.83333333333333,90.0
+MNIST G30/P470,22,CSA-3,preprocess,unchanged,standard4,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_007,109,120,90.83333333333333,90.0
+MNIST G30/P470,22,CSA-3,preprocess,unchanged,smaller2,linear,none,False,identity,unit_columns,cosine,preprocess_008,105,120,87.5,85.0
+MNIST G30/P470,22,CSA-3,preprocess,unchanged,smaller2,linear,none,False,identity,unit_columns,euclidean,preprocess_009,107,120,89.16666666666667,88.33333333333333
+MNIST G30/P470,22,CSA-3,preprocess,unchanged,smaller2,linear,l2,False,identity,unit_columns,cosine,preprocess_010,106,120,88.33333333333333,86.66666666666667
+MNIST G30/P470,22,CSA-3,preprocess,unchanged,smaller2,linear,l2,False,identity,unit_columns,euclidean,preprocess_011,105,120,87.5,85.0
+MNIST G30/P470,22,CSA-3,preprocess,unchanged,smaller2,sqrt,none,False,identity,unit_columns,cosine,preprocess_012,109,120,90.83333333333333,88.33333333333333
+MNIST G30/P470,22,CSA-3,preprocess,unchanged,smaller2,sqrt,none,False,identity,unit_columns,euclidean,preprocess_013,106,120,88.33333333333333,85.0
+MNIST G30/P470,22,CSA-3,preprocess,unchanged,smaller2,sqrt,l2,False,identity,unit_columns,cosine,preprocess_014,108,120,90.0,88.33333333333333
+MNIST G30/P470,22,CSA-3,preprocess,unchanged,smaller2,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_015,108,120,90.0,88.33333333333333
+MNIST G30/P470,22,CSA-3,model,unchanged,standard4,linear,none,False,identity,unit_columns,cosine,model_000,111,120,92.5,91.66666666666667
+MNIST G30/P470,22,CSA-3,model,unchanged,standard4,linear,none,False,identity,unit_columns,euclidean,model_001,106,120,88.33333333333333,86.66666666666667
+MNIST G30/P470,22,CSA-3,model,unchanged,standard4,linear,none,False,random,unit_columns,cosine,model_002,111,120,92.5,91.66666666666667
+MNIST G30/P470,22,CSA-3,model,unchanged,standard4,linear,none,False,random,unit_columns,euclidean,model_003,106,120,88.33333333333333,86.66666666666667
+MNIST G30/P470,22,CSA-3,model,unchanged,standard4,linear,none,True,identity,unit_columns,cosine,model_004,105,120,87.5,86.66666666666667
+MNIST G30/P470,22,CSA-3,model,unchanged,standard4,linear,none,True,identity,unit_columns,euclidean,model_005,105,120,87.5,85.0
+MNIST G30/P470,22,CSA-3,model,unchanged,standard4,linear,none,True,random,unit_columns,cosine,model_006,105,120,87.5,86.66666666666667
+MNIST G30/P470,22,CSA-3,model,unchanged,standard4,linear,none,True,random,unit_columns,euclidean,model_007,105,120,87.5,85.0
+MNIST G40/P460,20,PCA (Gabor),preprocess,unchanged,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_000,143,160,89.375,86.25
+MNIST G40/P460,20,PCA (Gabor),preprocess,unchanged,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_001,147,160,91.875,88.75
+MNIST G40/P460,20,PCA (Gabor),preprocess,unchanged,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_002,147,160,91.875,91.25
+MNIST G40/P460,20,PCA (Gabor),preprocess,unchanged,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_003,149,160,93.125,88.75
+MNIST G40/P460,20,PCA (Gabor),preprocess,unchanged,standard4,sqrt,none,True,identity,unit_columns,cosine,preprocess_004,140,160,87.5,83.75
+MNIST G40/P460,20,PCA (Gabor),preprocess,unchanged,standard4,sqrt,none,True,identity,unit_columns,euclidean,preprocess_005,149,160,93.125,90.0
+MNIST G40/P460,20,PCA (Gabor),preprocess,unchanged,standard4,sqrt,l2,True,identity,unit_columns,cosine,preprocess_006,147,160,91.875,88.75
+MNIST G40/P460,20,PCA (Gabor),preprocess,unchanged,standard4,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_007,150,160,93.75,90.0
+MNIST G40/P460,20,PCA (Gabor),preprocess,unchanged,smaller2,linear,none,True,identity,unit_columns,cosine,preprocess_008,146,160,91.25,88.75
+MNIST G40/P460,20,PCA (Gabor),preprocess,unchanged,smaller2,linear,none,True,identity,unit_columns,euclidean,preprocess_009,145,160,90.625,90.0
+MNIST G40/P460,20,PCA (Gabor),preprocess,unchanged,smaller2,linear,l2,True,identity,unit_columns,cosine,preprocess_010,146,160,91.25,88.75
+MNIST G40/P460,20,PCA (Gabor),preprocess,unchanged,smaller2,linear,l2,True,identity,unit_columns,euclidean,preprocess_011,145,160,90.625,90.0
+MNIST G40/P460,20,PCA (Gabor),preprocess,unchanged,smaller2,sqrt,none,True,identity,unit_columns,cosine,preprocess_012,148,160,92.5,90.0
+MNIST G40/P460,20,PCA (Gabor),preprocess,unchanged,smaller2,sqrt,none,True,identity,unit_columns,euclidean,preprocess_013,151,160,94.375,92.5
+MNIST G40/P460,20,PCA (Gabor),preprocess,unchanged,smaller2,sqrt,l2,True,identity,unit_columns,cosine,preprocess_014,149,160,93.125,90.0
+MNIST G40/P460,20,PCA (Gabor),preprocess,unchanged,smaller2,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_015,150,160,93.75,92.5
+MNIST G40/P460,20,PCA (Gabor),model,unchanged,smaller2,sqrt,none,True,identity,unit_columns,euclidean,model_000,151,160,94.375,92.5
+MNIST G40/P460,20,PCA (Gabor),model,unchanged,smaller2,sqrt,none,True,identity,unit_columns,cosine,model_001,148,160,92.5,90.0
+MNIST G40/P460,20,PCA (Gabor),model,unchanged,smaller2,sqrt,none,False,identity,unit_columns,euclidean,model_002,151,160,94.375,92.5
+MNIST G40/P460,20,PCA (Gabor),model,unchanged,smaller2,sqrt,none,False,identity,unit_columns,cosine,model_003,150,160,93.75,91.25
+MNIST G40/P460,20,CSA-3,preprocess,unchanged,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_000,151,160,94.375,93.75
+MNIST G40/P460,20,CSA-3,preprocess,unchanged,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_001,149,160,93.125,92.5
+MNIST G40/P460,20,CSA-3,preprocess,unchanged,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_002,153,160,95.625,93.75
+MNIST G40/P460,20,CSA-3,preprocess,unchanged,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_003,154,160,96.25,95.0
+MNIST G40/P460,20,CSA-3,preprocess,unchanged,standard4,sqrt,none,False,identity,unit_columns,cosine,preprocess_004,150,160,93.75,91.25
+MNIST G40/P460,20,CSA-3,preprocess,unchanged,standard4,sqrt,none,False,identity,unit_columns,euclidean,preprocess_005,149,160,93.125,91.25
+MNIST G40/P460,20,CSA-3,preprocess,unchanged,standard4,sqrt,l2,False,identity,unit_columns,cosine,preprocess_006,150,160,93.75,90.0
+MNIST G40/P460,20,CSA-3,preprocess,unchanged,standard4,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_007,150,160,93.75,90.0
+MNIST G40/P460,20,CSA-3,preprocess,unchanged,smaller2,linear,none,False,identity,unit_columns,cosine,preprocess_008,147,160,91.875,91.25
+MNIST G40/P460,20,CSA-3,preprocess,unchanged,smaller2,linear,none,False,identity,unit_columns,euclidean,preprocess_009,148,160,92.5,92.5
+MNIST G40/P460,20,CSA-3,preprocess,unchanged,smaller2,linear,l2,False,identity,unit_columns,cosine,preprocess_010,148,160,92.5,92.5
+MNIST G40/P460,20,CSA-3,preprocess,unchanged,smaller2,linear,l2,False,identity,unit_columns,euclidean,preprocess_011,149,160,93.125,92.5
+MNIST G40/P460,20,CSA-3,preprocess,unchanged,smaller2,sqrt,none,False,identity,unit_columns,cosine,preprocess_012,149,160,93.125,92.5
+MNIST G40/P460,20,CSA-3,preprocess,unchanged,smaller2,sqrt,none,False,identity,unit_columns,euclidean,preprocess_013,150,160,93.75,92.5
+MNIST G40/P460,20,CSA-3,preprocess,unchanged,smaller2,sqrt,l2,False,identity,unit_columns,cosine,preprocess_014,149,160,93.125,92.5
+MNIST G40/P460,20,CSA-3,preprocess,unchanged,smaller2,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_015,149,160,93.125,92.5
+MNIST G40/P460,20,CSA-3,model,unchanged,standard4,linear,l2,False,identity,unit_columns,euclidean,model_000,154,160,96.25,95.0
+MNIST G40/P460,20,CSA-3,model,unchanged,standard4,linear,l2,False,identity,unit_columns,cosine,model_001,153,160,95.625,93.75
+MNIST G40/P460,20,CSA-3,model,unchanged,standard4,linear,l2,False,random,unit_columns,euclidean,model_002,154,160,96.25,95.0
+MNIST G40/P460,20,CSA-3,model,unchanged,standard4,linear,l2,False,random,unit_columns,cosine,model_003,153,160,95.625,93.75
+MNIST G40/P460,20,CSA-3,model,unchanged,standard4,linear,l2,True,identity,unit_columns,euclidean,model_004,152,160,95.0,95.0
+MNIST G40/P460,20,CSA-3,model,unchanged,standard4,linear,l2,True,identity,unit_columns,cosine,model_005,149,160,93.125,92.5
+MNIST G40/P460,20,CSA-3,model,unchanged,standard4,linear,l2,True,random,unit_columns,euclidean,model_006,152,160,95.0,95.0
+MNIST G40/P460,20,CSA-3,model,unchanged,standard4,linear,l2,True,random,unit_columns,cosine,model_007,149,160,93.125,92.5
+MNIST G40/P460,21,PCA (Gabor),preprocess,unchanged,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_000,131,160,81.875,80.0
+MNIST G40/P460,21,PCA (Gabor),preprocess,unchanged,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_001,136,160,85.0,82.5
+MNIST G40/P460,21,PCA (Gabor),preprocess,unchanged,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_002,142,160,88.75,87.5
+MNIST G40/P460,21,PCA (Gabor),preprocess,unchanged,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_003,142,160,88.75,87.5
+MNIST G40/P460,21,PCA (Gabor),preprocess,unchanged,standard4,sqrt,none,True,identity,unit_columns,cosine,preprocess_004,133,160,83.125,80.0
+MNIST G40/P460,21,PCA (Gabor),preprocess,unchanged,standard4,sqrt,none,True,identity,unit_columns,euclidean,preprocess_005,139,160,86.875,85.0
+MNIST G40/P460,21,PCA (Gabor),preprocess,unchanged,standard4,sqrt,l2,True,identity,unit_columns,cosine,preprocess_006,138,160,86.25,86.25
+MNIST G40/P460,21,PCA (Gabor),preprocess,unchanged,standard4,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_007,139,160,86.875,86.25
+MNIST G40/P460,21,PCA (Gabor),preprocess,unchanged,smaller2,linear,none,True,identity,unit_columns,cosine,preprocess_008,140,160,87.5,83.75
+MNIST G40/P460,21,PCA (Gabor),preprocess,unchanged,smaller2,linear,none,True,identity,unit_columns,euclidean,preprocess_009,138,160,86.25,82.5
+MNIST G40/P460,21,PCA (Gabor),preprocess,unchanged,smaller2,linear,l2,True,identity,unit_columns,cosine,preprocess_010,139,160,86.875,86.25
+MNIST G40/P460,21,PCA (Gabor),preprocess,unchanged,smaller2,linear,l2,True,identity,unit_columns,euclidean,preprocess_011,139,160,86.875,86.25
+MNIST G40/P460,21,PCA (Gabor),preprocess,unchanged,smaller2,sqrt,none,True,identity,unit_columns,cosine,preprocess_012,141,160,88.125,85.0
+MNIST G40/P460,21,PCA (Gabor),preprocess,unchanged,smaller2,sqrt,none,True,identity,unit_columns,euclidean,preprocess_013,141,160,88.125,87.5
+MNIST G40/P460,21,PCA (Gabor),preprocess,unchanged,smaller2,sqrt,l2,True,identity,unit_columns,cosine,preprocess_014,142,160,88.75,86.25
+MNIST G40/P460,21,PCA (Gabor),preprocess,unchanged,smaller2,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_015,142,160,88.75,88.75
+MNIST G40/P460,21,PCA (Gabor),model,unchanged,smaller2,sqrt,l2,True,identity,unit_columns,euclidean,model_000,142,160,88.75,88.75
+MNIST G40/P460,21,PCA (Gabor),model,unchanged,smaller2,sqrt,l2,True,identity,unit_columns,cosine,model_001,142,160,88.75,86.25
+MNIST G40/P460,21,PCA (Gabor),model,unchanged,smaller2,sqrt,l2,False,identity,unit_columns,euclidean,model_002,142,160,88.75,88.75
+MNIST G40/P460,21,PCA (Gabor),model,unchanged,smaller2,sqrt,l2,False,identity,unit_columns,cosine,model_003,142,160,88.75,88.75
+MNIST G40/P460,21,CSA-3,preprocess,unchanged,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_000,139,160,86.875,85.0
+MNIST G40/P460,21,CSA-3,preprocess,unchanged,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_001,139,160,86.875,83.75
+MNIST G40/P460,21,CSA-3,preprocess,unchanged,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_002,139,160,86.875,85.0
+MNIST G40/P460,21,CSA-3,preprocess,unchanged,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_003,139,160,86.875,85.0
+MNIST G40/P460,21,CSA-3,preprocess,unchanged,standard4,sqrt,none,False,identity,unit_columns,cosine,preprocess_004,141,160,88.125,86.25
+MNIST G40/P460,21,CSA-3,preprocess,unchanged,standard4,sqrt,none,False,identity,unit_columns,euclidean,preprocess_005,142,160,88.75,87.5
+MNIST G40/P460,21,CSA-3,preprocess,unchanged,standard4,sqrt,l2,False,identity,unit_columns,cosine,preprocess_006,140,160,87.5,85.0
+MNIST G40/P460,21,CSA-3,preprocess,unchanged,standard4,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_007,140,160,87.5,85.0
+MNIST G40/P460,21,CSA-3,preprocess,unchanged,smaller2,linear,none,False,identity,unit_columns,cosine,preprocess_008,141,160,88.125,87.5
+MNIST G40/P460,21,CSA-3,preprocess,unchanged,smaller2,linear,none,False,identity,unit_columns,euclidean,preprocess_009,138,160,86.25,85.0
+MNIST G40/P460,21,CSA-3,preprocess,unchanged,smaller2,linear,l2,False,identity,unit_columns,cosine,preprocess_010,144,160,90.0,90.0
+MNIST G40/P460,21,CSA-3,preprocess,unchanged,smaller2,linear,l2,False,identity,unit_columns,euclidean,preprocess_011,143,160,89.375,88.75
+MNIST G40/P460,21,CSA-3,preprocess,unchanged,smaller2,sqrt,none,False,identity,unit_columns,cosine,preprocess_012,141,160,88.125,87.5
+MNIST G40/P460,21,CSA-3,preprocess,unchanged,smaller2,sqrt,none,False,identity,unit_columns,euclidean,preprocess_013,143,160,89.375,88.75
+MNIST G40/P460,21,CSA-3,preprocess,unchanged,smaller2,sqrt,l2,False,identity,unit_columns,cosine,preprocess_014,142,160,88.75,88.75
+MNIST G40/P460,21,CSA-3,preprocess,unchanged,smaller2,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_015,143,160,89.375,88.75
+MNIST G40/P460,21,CSA-3,model,unchanged,smaller2,linear,l2,False,identity,unit_columns,cosine,model_000,144,160,90.0,90.0
+MNIST G40/P460,21,CSA-3,model,unchanged,smaller2,linear,l2,False,identity,unit_columns,euclidean,model_001,143,160,89.375,88.75
+MNIST G40/P460,21,CSA-3,model,unchanged,smaller2,linear,l2,False,random,unit_columns,cosine,model_002,144,160,90.0,90.0
+MNIST G40/P460,21,CSA-3,model,unchanged,smaller2,linear,l2,False,random,unit_columns,euclidean,model_003,143,160,89.375,88.75
+MNIST G40/P460,21,CSA-3,model,unchanged,smaller2,linear,l2,True,identity,unit_columns,cosine,model_004,142,160,88.75,86.25
+MNIST G40/P460,21,CSA-3,model,unchanged,smaller2,linear,l2,True,identity,unit_columns,euclidean,model_005,142,160,88.75,87.5
+MNIST G40/P460,21,CSA-3,model,unchanged,smaller2,linear,l2,True,random,unit_columns,cosine,model_006,142,160,88.75,86.25
+MNIST G40/P460,21,CSA-3,model,unchanged,smaller2,linear,l2,True,random,unit_columns,euclidean,model_007,142,160,88.75,87.5
+MNIST G40/P460,22,PCA (Gabor),preprocess,unchanged,standard4,linear,none,True,identity,unit_columns,cosine,preprocess_000,136,160,85.0,83.75
+MNIST G40/P460,22,PCA (Gabor),preprocess,unchanged,standard4,linear,none,True,identity,unit_columns,euclidean,preprocess_001,147,160,91.875,91.25
+MNIST G40/P460,22,PCA (Gabor),preprocess,unchanged,standard4,linear,l2,True,identity,unit_columns,cosine,preprocess_002,138,160,86.25,85.0
+MNIST G40/P460,22,PCA (Gabor),preprocess,unchanged,standard4,linear,l2,True,identity,unit_columns,euclidean,preprocess_003,143,160,89.375,85.0
+MNIST G40/P460,22,PCA (Gabor),preprocess,unchanged,standard4,sqrt,none,True,identity,unit_columns,cosine,preprocess_004,141,160,88.125,86.25
+MNIST G40/P460,22,PCA (Gabor),preprocess,unchanged,standard4,sqrt,none,True,identity,unit_columns,euclidean,preprocess_005,149,160,93.125,92.5
+MNIST G40/P460,22,PCA (Gabor),preprocess,unchanged,standard4,sqrt,l2,True,identity,unit_columns,cosine,preprocess_006,143,160,89.375,87.5
+MNIST G40/P460,22,PCA (Gabor),preprocess,unchanged,standard4,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_007,149,160,93.125,91.25
+MNIST G40/P460,22,PCA (Gabor),preprocess,unchanged,smaller2,linear,none,True,identity,unit_columns,cosine,preprocess_008,139,160,86.875,86.25
+MNIST G40/P460,22,PCA (Gabor),preprocess,unchanged,smaller2,linear,none,True,identity,unit_columns,euclidean,preprocess_009,142,160,88.75,86.25
+MNIST G40/P460,22,PCA (Gabor),preprocess,unchanged,smaller2,linear,l2,True,identity,unit_columns,cosine,preprocess_010,140,160,87.5,87.5
+MNIST G40/P460,22,PCA (Gabor),preprocess,unchanged,smaller2,linear,l2,True,identity,unit_columns,euclidean,preprocess_011,139,160,86.875,86.25
+MNIST G40/P460,22,PCA (Gabor),preprocess,unchanged,smaller2,sqrt,none,True,identity,unit_columns,cosine,preprocess_012,148,160,92.5,90.0
+MNIST G40/P460,22,PCA (Gabor),preprocess,unchanged,smaller2,sqrt,none,True,identity,unit_columns,euclidean,preprocess_013,145,160,90.625,87.5
+MNIST G40/P460,22,PCA (Gabor),preprocess,unchanged,smaller2,sqrt,l2,True,identity,unit_columns,cosine,preprocess_014,143,160,89.375,88.75
+MNIST G40/P460,22,PCA (Gabor),preprocess,unchanged,smaller2,sqrt,l2,True,identity,unit_columns,euclidean,preprocess_015,143,160,89.375,86.25
+MNIST G40/P460,22,PCA (Gabor),model,unchanged,standard4,sqrt,none,True,identity,unit_columns,euclidean,model_000,149,160,93.125,92.5
+MNIST G40/P460,22,PCA (Gabor),model,unchanged,standard4,sqrt,none,True,identity,unit_columns,cosine,model_001,141,160,88.125,86.25
+MNIST G40/P460,22,PCA (Gabor),model,unchanged,standard4,sqrt,none,False,identity,unit_columns,euclidean,model_002,148,160,92.5,92.5
+MNIST G40/P460,22,PCA (Gabor),model,unchanged,standard4,sqrt,none,False,identity,unit_columns,cosine,model_003,150,160,93.75,92.5
+MNIST G40/P460,22,CSA-3,preprocess,unchanged,standard4,linear,none,False,identity,unit_columns,cosine,preprocess_000,145,160,90.625,87.5
+MNIST G40/P460,22,CSA-3,preprocess,unchanged,standard4,linear,none,False,identity,unit_columns,euclidean,preprocess_001,143,160,89.375,86.25
+MNIST G40/P460,22,CSA-3,preprocess,unchanged,standard4,linear,l2,False,identity,unit_columns,cosine,preprocess_002,143,160,89.375,87.5
+MNIST G40/P460,22,CSA-3,preprocess,unchanged,standard4,linear,l2,False,identity,unit_columns,euclidean,preprocess_003,144,160,90.0,87.5
+MNIST G40/P460,22,CSA-3,preprocess,unchanged,standard4,sqrt,none,False,identity,unit_columns,cosine,preprocess_004,151,160,94.375,91.25
+MNIST G40/P460,22,CSA-3,preprocess,unchanged,standard4,sqrt,none,False,identity,unit_columns,euclidean,preprocess_005,145,160,90.625,86.25
+MNIST G40/P460,22,CSA-3,preprocess,unchanged,standard4,sqrt,l2,False,identity,unit_columns,cosine,preprocess_006,149,160,93.125,90.0
+MNIST G40/P460,22,CSA-3,preprocess,unchanged,standard4,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_007,149,160,93.125,90.0
+MNIST G40/P460,22,CSA-3,preprocess,unchanged,smaller2,linear,none,False,identity,unit_columns,cosine,preprocess_008,140,160,87.5,83.75
+MNIST G40/P460,22,CSA-3,preprocess,unchanged,smaller2,linear,none,False,identity,unit_columns,euclidean,preprocess_009,144,160,90.0,87.5
+MNIST G40/P460,22,CSA-3,preprocess,unchanged,smaller2,linear,l2,False,identity,unit_columns,cosine,preprocess_010,139,160,86.875,83.75
+MNIST G40/P460,22,CSA-3,preprocess,unchanged,smaller2,linear,l2,False,identity,unit_columns,euclidean,preprocess_011,140,160,87.5,83.75
+MNIST G40/P460,22,CSA-3,preprocess,unchanged,smaller2,sqrt,none,False,identity,unit_columns,cosine,preprocess_012,142,160,88.75,83.75
+MNIST G40/P460,22,CSA-3,preprocess,unchanged,smaller2,sqrt,none,False,identity,unit_columns,euclidean,preprocess_013,142,160,88.75,85.0
+MNIST G40/P460,22,CSA-3,preprocess,unchanged,smaller2,sqrt,l2,False,identity,unit_columns,cosine,preprocess_014,141,160,88.125,83.75
+MNIST G40/P460,22,CSA-3,preprocess,unchanged,smaller2,sqrt,l2,False,identity,unit_columns,euclidean,preprocess_015,141,160,88.125,83.75
+MNIST G40/P460,22,CSA-3,model,unchanged,standard4,sqrt,none,False,identity,unit_columns,cosine,model_000,151,160,94.375,91.25
+MNIST G40/P460,22,CSA-3,model,unchanged,standard4,sqrt,none,False,identity,unit_columns,euclidean,model_001,145,160,90.625,86.25
+MNIST G40/P460,22,CSA-3,model,unchanged,standard4,sqrt,none,False,random,unit_columns,cosine,model_002,151,160,94.375,91.25
+MNIST G40/P460,22,CSA-3,model,unchanged,standard4,sqrt,none,False,random,unit_columns,euclidean,model_003,145,160,90.625,86.25
+MNIST G40/P460,22,CSA-3,model,unchanged,standard4,sqrt,none,True,identity,unit_columns,cosine,model_004,142,160,88.75,87.5
+MNIST G40/P460,22,CSA-3,model,unchanged,standard4,sqrt,none,True,identity,unit_columns,euclidean,model_005,146,160,91.25,87.5
+MNIST G40/P460,22,CSA-3,model,unchanged,standard4,sqrt,none,True,random,unit_columns,cosine,model_006,142,160,88.75,87.5
+MNIST G40/P460,22,CSA-3,model,unchanged,standard4,sqrt,none,True,random,unit_columns,euclidean,model_007,146,160,91.25,87.5

@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "counts": {
+    "configurations": 252,
+    "predictions": 80640,
+    "summary_groups": 84,
+    "feature_arrays": 24,
+    "CSA_histories": 180,
+    "baseline_predictions_matched": 5760
+  },
+  "checks": [
+    "source and feature hashes, fixed dimensions and 3/10 iteration limit",
+    "six independent spatial-convolution checks and parameterized baseline replay; finite arrays and per-image normalization",
+    "channel RMS computed only from 80 training images",
+    "all 80640 predictions, gallery membership, mean and sample SD",
+    "stage1 baseline predictions exactly retained; CSA SSE monotone"
+  ],
+  "limits": "development diagnostics; unreported protocols remain uncertain; no blind winner selection"
+}

@@ -1,0 +1,21 @@
+seed,profile,input,normalization,policy,ranks,center,init,LDA_dimension,alpha,inner_correct,inner_total
+20,ordinary,yunet_d20_replicate_fixed39_zero,none,unit_columns_cosine_centered,"(4, 2, 4)",False,identity,28,0.0,59,80
+20,shrinkage,yunet_d20_replicate_fixed39_zero,none,sw_identity_cosine_centered,"(4, 2, 4)",False,identity,23,0.05,65,80
+21,ordinary,yunet_d22_zero_fixed39_zero,jet_l2,unit_columns_cosine_centered,"(4, 2, 4)",True,hosvd,24,0.0,68,80
+21,shrinkage,yunet_d22_zero_fixed39_zero,jet_l2,sw_identity_euclidean,"(4, 2, 4)",True,hosvd,19,0.35,72,80
+22,ordinary,yunet_d18_zero_fixed39_zero,sqrt,unit_columns_cosine_centered,"(4, 1, 8)",False,hosvd,18,0.0,62,80
+22,shrinkage,yunet_d18_zero_fixed39_zero,sqrt,unit_columns_cosine_centered,"(4, 1, 8)",False,hosvd,32,0.05,65,80
+23,ordinary,yunet_d22_zero_adaptive_zero,sqrt,unit_columns_cosine_centered,"(4, 2, 4)",False,identity,26,0.0,58,80
+23,shrinkage,yunet_d16_replicate_fixed39_zero,tensor_l2,sw_identity_cosine_centered,"(4, 1, 8)",False,hosvd,14,0.65,63,80
+24,ordinary,yunet_d18_replicate_sigma_pi_zero,tensor_l2,unit_columns_cosine_centered,"(4, 2, 3)",False,identity,16,0.0,60,80
+24,shrinkage,yunet_d18_replicate_sigma_pi_zero,sqrt,unit_columns_cosine_centered,"(4, 2, 4)",False,identity,25,0.15,62,80
+25,ordinary,yunet_d22_replicate_fixed39_zero,none,unit_columns_cosine_centered,"(4, 2, 3)",False,identity,23,0.0,63,80
+25,shrinkage,yunet_d22_replicate_fixed39_zero,channel_rms,unit_columns_cosine_centered,"(3, 3, 3)",False,identity,18,0.15,68,80
+26,ordinary,yunet_d18_replicate_fixed39_zero,sqrt,unit_columns_cosine_centered,"(4, 2, 4)",False,hosvd,26,0.0,62,80
+26,shrinkage,yunet_d16_replicate_fixed39_zero,channel_rms,unit_columns_cosine_centered,"(4, 2, 4)",False,identity,25,0.35,68,80
+27,ordinary,yunet_d16_replicate_sigma_pi_zero,tensor_l2,unit_columns_cosine_centered,"(4, 2, 3)",False,identity,24,0.0,57,80
+27,shrinkage,yunet_d16_replicate_sigma_pi_zero,tensor_l2,sw_identity_cosine_centered,"(4, 1, 8)",True,hosvd,28,0.05,62,80
+28,ordinary,yunet_d16_replicate_sigma_pi_zero,tensor_l2,unit_columns_cosine_centered,"(4, 2, 3)",False,identity,16,0.0,66,80
+28,shrinkage,yunet_d16_replicate_sigma_pi_zero,tensor_l2,unit_columns_cosine_centered,"(4, 1, 8)",False,hosvd,28,0.05,71,80
+29,ordinary,yunet_d16_replicate_fixed39_zero,channel_rms,unit_columns_cosine_centered,"(4, 1, 8)",True,hosvd,28,0.0,61,80
+29,shrinkage,yunet_d16_replicate_fixed39_zero,none,unit_columns_cosine_centered,"(4, 2, 4)",True,hosvd,23,0.15,66,80

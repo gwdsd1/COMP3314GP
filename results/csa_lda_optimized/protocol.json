@@ -1,0 +1,216 @@
+{
+  "seeds": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "Tmax": 3,
+  "gallery_per_class": 2,
+  "probe_per_class": 8,
+  "gray_shape": [
+    56,
+    46
+  ],
+  "gabor_shape": [
+    28,
+    23,
+    40
+  ],
+  "Gabor_scales": 5,
+  "Gabor_orientations": 8,
+  "inner": "16folds75learning/5validation, all40classes retained; each gallery image validated once",
+  "alpha_grid": [
+    0.0,
+    0.01,
+    0.05,
+    0.15,
+    0.35,
+    0.65,
+    1.0
+  ],
+  "cases": [
+    [
+      "PCA+LDA (Gray)",
+      "gray",
+      "pca",
+      30,
+      true,
+      18
+    ],
+    [
+      "CSA-2+LDA",
+      "gray",
+      "csa",
+      [
+        11,
+        2
+      ],
+      false,
+      16
+    ],
+    [
+      "PCA+LDA (Gabor)",
+      "gabor",
+      "pca",
+      33,
+      true,
+      25
+    ],
+    [
+      "CSA-3+LDA",
+      "gabor",
+      "csa",
+      [
+        4,
+        2,
+        3
+      ],
+      false,
+      23
+    ],
+    [
+      "CSA-2+LDA",
+      "gray",
+      "csa",
+      [
+        8,
+        4
+      ],
+      false,
+      16
+    ],
+    [
+      "CSA-2+LDA",
+      "gray",
+      "csa",
+      [
+        11,
+        3
+      ],
+      false,
+      16
+    ],
+    [
+      "CSA-2+LDA",
+      "gray",
+      "csa",
+      [
+        11,
+        2
+      ],
+      true,
+      16
+    ],
+    [
+      "CSA-3+LDA",
+      "gabor",
+      "csa",
+      [
+        4,
+        2,
+        4
+      ],
+      false,
+      23
+    ],
+    [
+      "CSA-3+LDA",
+      "gabor",
+      "csa",
+      [
+        3,
+        3,
+        3
+      ],
+      false,
+      23
+    ],
+    [
+      "CSA-3+LDA",
+      "gabor",
+      "csa",
+      [
+        4,
+        2,
+        3
+      ],
+      true,
+      23
+    ]
+  ],
+  "normalizations": [
+    "none",
+    "channel_rms",
+    "sqrt"
+  ],
+  "policies": {
+    "unit_columns_cosine_centered": {
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "lda_center": true
+    },
+    "unit_columns_cosine_linear": {
+      "scaling": "unit_columns",
+      "metric": "cosine",
+      "lda_center": false
+    },
+    "unit_columns_euclidean": {
+      "scaling": "unit_columns",
+      "metric": "euclidean",
+      "lda_center": true
+    },
+    "sw_identity_cosine_centered": {
+      "scaling": "sw_identity",
+      "metric": "cosine",
+      "lda_center": true
+    },
+    "sw_identity_cosine_linear": {
+      "scaling": "sw_identity",
+      "metric": "cosine",
+      "lda_center": false
+    },
+    "sw_identity_euclidean": {
+      "scaling": "sw_identity",
+      "metric": "euclidean",
+      "lda_center": true
+    }
+  },
+  "LDA_pre_limit": "inner N-Nc=35; outer N-Nc=40, retained for shrinkage too",
+  "selection": "maximize equal mean of two CSA+LDA gallery CV scores; shared input/normalization/distance for all four methods",
+  "dimensions": "prefix2..available; ties prefer paper LDA dimension, then smaller dimension; 1D cosine excluded",
+  "tie_order": "original case before added case; alpha0 before shrinkage; original input before screen winner",
+  "profiles": [
+    "regularization_only",
+    "optimized_ordinary_LDA",
+    "optimized_shrinkage_LDA",
+    "shrinkage_ablation_alpha0"
+  ],
+  "fixed_profile": "original per-seed input+policy and original pre-dimensions; select alpha/LDA dimension only",
+  "joint_screen": "all catalogue entries and three norms, raw train leave-self-out Gray/Gabor mean; best per norm plus each original-input norm anchor, at most6",
+  "not_blind": "historical probes have been observed; no current probe scores or labels enter selection objective",
+  "random_indices": "NumPy default_rng seed20..29, unchanged; never select or discard splits by accuracy",
+  "extension": "positive alpha is a covariance-shrinkage Fisher extension, not original CSA+ordinaryLDA",
+  "references": {
+    "shrinkage": "https://www.ledoit.net/ole1a.pdf",
+    "Gabor": "https://cenl.ucsd.edu/pubs/ieee-1997.pdf",
+    "normalization_distance": "https://www.cs.colostate.edu/evalfacerec/algorithms/version5/faceIdUsersGuide.pdf"
+  },
+  "source_snapshot_sha256": {
+    "optimize_csa_lda.py": "2f5265b2bdcc673242d28f3e861e88ababf77d51917e8b18584d390d273c6a91",
+    "csa.py": "29226eaae53c3c5b9d5e752d55a8d675e0a40b2d8eefac186f06682ad02ea64c",
+    "gabor.py": "ceb12f2bfbe82e381375e14a1c60d0a0a4795b91544e7bff02c22e93ac61578f",
+    "audit_orl_protocol.py": "d80bc8fc89f327dc0aac0abaeec326d07a3f7f181da427e50f02b98687cd9247",
+    "diagnose_csa_lda.py": "af1e7a68429b17e3bc9402032587328b14b33f3f8e9aae447e762d63b159dc7d",
+    "diagnose_orl_gabor.py": "3b59a9f9fc8d5bea84fe22176b8ef6fb7f4f7d972905e895ce4ef4a88c4410f9",
+    "run_shared_protocol.py": "eae57198a016ae94ab43ffd3e91888c4ae917bcee8873701ef094bed38d2749b",
+    "run_available_reproduction.py": "135ab16b4e47f840ad0e711c9bb1cb72166e1a3f871e46ae4d25726ae6928a71"
+  },
+  "previous_catalogue_sha256": "a036261245595f7c66e3aabe2e5f5fbdf98922fd5ab02cd30bad6185c17bde02"
+}

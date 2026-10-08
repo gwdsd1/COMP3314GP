@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "raw_image_hashes_checked": 400,
+  "feature_shapes_checked": 12,
+  "outer_splits_checked": 10,
+  "inner_folds_checked": 160,
+  "all_gallery_validated_exactly_once_per_seed": true,
+  "frozen_source_snapshots_checked": 7,
+  "all_CV_actual_dimensions_checked": 3520,
+  "all_CV_saved_indices_checked": 3520
+}

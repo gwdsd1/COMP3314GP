@@ -1,0 +1,2 @@
+# Install locally with --no-deps --target .deps as documented in README; do not modify the system environment.
+opencv-python-headless==4.12.0.88

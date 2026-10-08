@@ -1,0 +1,25 @@
+q,training_images,test_identities,profile,method,pre_dims,lda_dim,candidate_id,eye_target,normalization,center,init,lda_scaling,metric,sw_rank,correct,probe_count,accuracy_percent,paper_percent,difference_pp,wall_seconds
+50,100,1145,validation_selected,PCA+LDA (Gray),45,25,c000,wide,equalized,True,identity,unit_columns,euclidean,45,1018,1145,88.90829694323143,84.6,4.30829694323144,0.42267640000045503
+50,100,1145,group_primary,PCA+LDA (Gray),45,25,fixed_baseline,wide,equalized,True,identity,unit_columns,euclidean,45,1018,1145,88.90829694323143,84.6,4.30829694323144,0.4145861999995759
+50,100,1145,sw_euclidean_control,PCA+LDA (Gray),45,25,fixed_baseline,wide,equalized,False,identity,sw_identity,euclidean,45,755,1145,65.93886462882097,84.6,-18.66113537117903,0.41231819999939034
+50,100,1145,cosine_control,PCA+LDA (Gray),45,25,fixed_baseline,wide,equalized,True,identity,unit_columns,cosine,45,1020,1145,89.08296943231441,84.6,4.48296943231442,1.0071947999995245
+50,100,1145,validation_selected,CSA-2+LDA,"(10, 4)",35,c000,wide,equalized,False,identity,unit_columns,euclidean,40,1008,1145,88.0349344978166,88.2,-0.16506550218340976,0.3745494000004328
+50,100,1145,group_primary,CSA-2+LDA,"(10, 4)",35,fixed_baseline,wide,equalized,False,identity,unit_columns,euclidean,40,1008,1145,88.0349344978166,88.2,-0.16506550218340976,0.37719970000034664
+50,100,1145,sw_euclidean_control,CSA-2+LDA,"(10, 4)",35,fixed_baseline,wide,equalized,False,identity,sw_identity,euclidean,40,940,1145,82.09606986899563,88.2,-6.103930131004375,0.3544185999999172
+50,100,1145,cosine_control,CSA-2+LDA,"(10, 4)",35,fixed_baseline,wide,equalized,False,identity,unit_columns,cosine,40,1016,1145,88.73362445414847,88.2,0.533624454148466,0.9385735000005297
+100,200,1095,validation_selected,PCA+LDA (Gray),95,40,c000,wide,equalized,True,identity,unit_columns,euclidean,95,998,1095,91.14155251141553,90.6,0.5415525114155315,0.7615740999999616
+100,200,1095,group_primary,PCA+LDA (Gray),95,40,fixed_baseline,wide,equalized,True,identity,unit_columns,euclidean,95,998,1095,91.14155251141553,90.6,0.5415525114155315,0.7552364999992278
+100,200,1095,sw_euclidean_control,PCA+LDA (Gray),95,40,fixed_baseline,wide,equalized,False,identity,sw_identity,euclidean,95,725,1095,66.21004566210046,90.6,-24.38995433789954,0.7416833999996015
+100,200,1095,cosine_control,PCA+LDA (Gray),95,40,fixed_baseline,wide,equalized,True,identity,unit_columns,cosine,95,995,1095,90.8675799086758,90.6,0.26757990867579906,1.9116600000006656
+100,200,1095,validation_selected,CSA-2+LDA,"(11, 5)",44,c000,wide,equalized,False,identity,unit_columns,euclidean,55,1018,1095,92.96803652968036,92.2,0.7680365296803586,0.43028570000024047
+100,200,1095,group_primary,CSA-2+LDA,"(11, 5)",44,fixed_baseline,wide,equalized,False,identity,unit_columns,euclidean,55,1018,1095,92.96803652968036,92.2,0.7680365296803586,0.4750810999994428
+100,200,1095,sw_euclidean_control,CSA-2+LDA,"(11, 5)",44,fixed_baseline,wide,equalized,False,identity,sw_identity,euclidean,55,1012,1095,92.42009132420091,92.2,0.22009132420090793,0.4497582000003604
+100,200,1095,cosine_control,CSA-2+LDA,"(11, 5)",44,fixed_baseline,wide,equalized,False,identity,unit_columns,cosine,55,1032,1095,94.24657534246575,92.2,2.0465753424657436,1.1289951999997356
+200,400,995,validation_selected,PCA+LDA (Gray),112,69,c016,medium,equalized,True,identity,unit_columns,euclidean,112,907,995,91.15577889447236,93.4,-2.244221105527643,0.5153411000001142
+200,400,995,group_primary,PCA+LDA (Gray),112,69,fixed_baseline,wide,equalized,True,identity,unit_columns,euclidean,112,929,995,93.36683417085428,93.4,-0.033165829145730186,0.5548943000003419
+200,400,995,sw_euclidean_control,PCA+LDA (Gray),112,69,fixed_baseline,wide,equalized,False,identity,sw_identity,euclidean,112,937,995,94.17085427135679,93.4,0.7708542713567823,0.5333343999991484
+200,400,995,cosine_control,PCA+LDA (Gray),112,69,fixed_baseline,wide,equalized,True,identity,unit_columns,cosine,112,934,995,93.86934673366834,93.4,0.46934673366833124,0.6360389000001305
+200,400,995,validation_selected,CSA-2+LDA,"(13, 7)",62,c050,medium,zscore,False,identity,sw_identity,euclidean,91,930,995,93.46733668341709,95.2,-1.732663316582915,0.24018570000043837
+200,400,995,group_primary,CSA-2+LDA,"(13, 7)",62,fixed_baseline,wide,equalized,False,identity,unit_columns,euclidean,91,945,995,94.9748743718593,95.2,-0.22512562814070236,0.2432582999999795
+200,400,995,sw_euclidean_control,CSA-2+LDA,"(13, 7)",62,fixed_baseline,wide,equalized,False,identity,sw_identity,euclidean,91,949,995,95.37688442211055,95.2,0.17688442211054678,0.22674349999942933
+200,400,995,cosine_control,CSA-2+LDA,"(13, 7)",62,fixed_baseline,wide,equalized,False,identity,unit_columns,cosine,91,949,995,95.37688442211055,95.2,0.17688442211054678,0.664476700000705

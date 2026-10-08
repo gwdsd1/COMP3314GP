@@ -1,0 +1,314 @@
+[
+  {
+    "entry_id": "yunet_d16_replicate_adaptive_zero",
+    "normalization": "none",
+    "policy": "unit_columns_cosine_centered",
+    "methods": [
+      {
+        "method": "PCA+LDA (Gray)",
+        "case_index": 0,
+        "alpha": 0.01,
+        "dimension": 29,
+        "correct": 65
+      },
+      {
+        "method": "CSA-2+LDA",
+        "case_index": 1,
+        "alpha": 0.35,
+        "dimension": 21,
+        "correct": 66
+      },
+      {
+        "method": "PCA+LDA (Gabor)",
+        "case_index": 2,
+        "alpha": 0.0,
+        "dimension": 31,
+        "correct": 73
+      },
+      {
+        "method": "CSA-3+LDA",
+        "case_index": 7,
+        "alpha": 0.35,
+        "dimension": 23,
+        "correct": 66
+      }
+    ],
+    "CSA_sum_correct": 132,
+    "profile": "optimized_shrinkage_LDA",
+    "score_file": "seed28/joint/cv_yunet_d16_replicate_adaptive_zero_none.npz",
+    "score_sha256": "1e1f6edd4a49f9c26ac80424fbcd57cdca90a516cfeba81341fcc59d61894359"
+  },
+  {
+    "entry_id": "yunet_d16_replicate_adaptive_zero",
+    "normalization": "none",
+    "policy": "unit_columns_cosine_linear",
+    "methods": [
+      {
+        "method": "PCA+LDA (Gray)",
+        "case_index": 0,
+        "alpha": 0.0,
+        "dimension": 19,
+        "correct": 64
+      },
+      {
+        "method": "CSA-2+LDA",
+        "case_index": 1,
+        "alpha": 0.0,
+        "dimension": 16,
+        "correct": 63
+      },
+      {
+        "method": "PCA+LDA (Gabor)",
+        "case_index": 2,
+        "alpha": 0.0,
+        "dimension": 31,
+        "correct": 73
+      },
+      {
+        "method": "CSA-3+LDA",
+        "case_index": 7,
+        "alpha": 0.0,
+        "dimension": 25,
+        "correct": 57
+      }
+    ],
+    "CSA_sum_correct": 120,
+    "profile": "optimized_ordinary_LDA",
+    "score_file": "seed28/joint/cv_yunet_d16_replicate_adaptive_zero_none.npz",
+    "score_sha256": "1e1f6edd4a49f9c26ac80424fbcd57cdca90a516cfeba81341fcc59d61894359"
+  },
+  {
+    "entry_id": "yunet_d16_replicate_adaptive_zero",
+    "normalization": "channel_rms",
+    "policy": "unit_columns_cosine_centered",
+    "methods": [
+      {
+        "method": "PCA+LDA (Gray)",
+        "case_index": 0,
+        "alpha": 0.01,
+        "dimension": 29,
+        "correct": 65
+      },
+      {
+        "method": "CSA-2+LDA",
+        "case_index": 1,
+        "alpha": 0.35,
+        "dimension": 21,
+        "correct": 66
+      },
+      {
+        "method": "PCA+LDA (Gabor)",
+        "case_index": 2,
+        "alpha": 0.15,
+        "dimension": 26,
+        "correct": 70
+      },
+      {
+        "method": "CSA-3+LDA",
+        "case_index": 7,
+        "alpha": 0.15,
+        "dimension": 25,
+        "correct": 64
+      }
+    ],
+    "CSA_sum_correct": 130,
+    "profile": "optimized_shrinkage_LDA",
+    "score_file": "seed28/joint/cv_yunet_d16_replicate_adaptive_zero_channel_rms.npz",
+    "score_sha256": "b7577d25e0106517a379cc570ffc73954b875faed69eb710ee0590acd1ca1c0e"
+  },
+  {
+    "entry_id": "yunet_d16_replicate_adaptive_zero",
+    "normalization": "channel_rms",
+    "policy": "unit_columns_cosine_centered",
+    "methods": [
+      {
+        "method": "PCA+LDA (Gray)",
+        "case_index": 0,
+        "alpha": 0.0,
+        "dimension": 19,
+        "correct": 64
+      },
+      {
+        "method": "CSA-2+LDA",
+        "case_index": 1,
+        "alpha": 0.0,
+        "dimension": 16,
+        "correct": 61
+      },
+      {
+        "method": "PCA+LDA (Gabor)",
+        "case_index": 2,
+        "alpha": 0.0,
+        "dimension": 26,
+        "correct": 69
+      },
+      {
+        "method": "CSA-3+LDA",
+        "case_index": 3,
+        "alpha": 0.0,
+        "dimension": 23,
+        "correct": 58
+      }
+    ],
+    "CSA_sum_correct": 119,
+    "profile": "optimized_ordinary_LDA",
+    "score_file": "seed28/joint/cv_yunet_d16_replicate_adaptive_zero_channel_rms.npz",
+    "score_sha256": "b7577d25e0106517a379cc570ffc73954b875faed69eb710ee0590acd1ca1c0e"
+  },
+  {
+    "entry_id": "yunet_d16_replicate_adaptive_zero",
+    "normalization": "sqrt",
+    "policy": "unit_columns_cosine_linear",
+    "methods": [
+      {
+        "method": "PCA+LDA (Gray)",
+        "case_index": 0,
+        "alpha": 0.01,
+        "dimension": 29,
+        "correct": 65
+      },
+      {
+        "method": "CSA-2+LDA",
+        "case_index": 1,
+        "alpha": 0.01,
+        "dimension": 17,
+        "correct": 65
+      },
+      {
+        "method": "PCA+LDA (Gabor)",
+        "case_index": 2,
+        "alpha": 0.0,
+        "dimension": 28,
+        "correct": 67
+      },
+      {
+        "method": "CSA-3+LDA",
+        "case_index": 7,
+        "alpha": 1.0,
+        "dimension": 26,
+        "correct": 63
+      }
+    ],
+    "CSA_sum_correct": 128,
+    "profile": "optimized_shrinkage_LDA",
+    "score_file": "seed28/joint/cv_yunet_d16_replicate_adaptive_zero_sqrt.npz",
+    "score_sha256": "adcd803a056f4cc46352d84cf4e73e10a4f6825180cea541c4c8d4ba58c14efe"
+  },
+  {
+    "entry_id": "yunet_d16_replicate_adaptive_zero",
+    "normalization": "sqrt",
+    "policy": "unit_columns_cosine_centered",
+    "methods": [
+      {
+        "method": "PCA+LDA (Gray)",
+        "case_index": 0,
+        "alpha": 0.0,
+        "dimension": 19,
+        "correct": 64
+      },
+      {
+        "method": "CSA-2+LDA",
+        "case_index": 1,
+        "alpha": 0.0,
+        "dimension": 16,
+        "correct": 61
+      },
+      {
+        "method": "PCA+LDA (Gabor)",
+        "case_index": 2,
+        "alpha": 0.0,
+        "dimension": 28,
+        "correct": 67
+      },
+      {
+        "method": "CSA-3+LDA",
+        "case_index": 3,
+        "alpha": 0.0,
+        "dimension": 22,
+        "correct": 56
+      }
+    ],
+    "CSA_sum_correct": 117,
+    "profile": "optimized_ordinary_LDA",
+    "score_file": "seed28/joint/cv_yunet_d16_replicate_adaptive_zero_sqrt.npz",
+    "score_sha256": "adcd803a056f4cc46352d84cf4e73e10a4f6825180cea541c4c8d4ba58c14efe"
+  },
+  {
+    "entry_id": "yunet_d16_replicate_fixed39_zero",
+    "normalization": "channel_rms",
+    "policy": "unit_columns_cosine_centered",
+    "methods": [
+      {
+        "method": "PCA+LDA (Gray)",
+        "case_index": 0,
+        "alpha": 0.01,
+        "dimension": 29,
+        "correct": 65
+      },
+      {
+        "method": "CSA-2+LDA",
+        "case_index": 1,
+        "alpha": 0.35,
+        "dimension": 21,
+        "correct": 66
+      },
+      {
+        "method": "PCA+LDA (Gabor)",
+        "case_index": 2,
+        "alpha": 0.0,
+        "dimension": 26,
+        "correct": 72
+      },
+      {
+        "method": "CSA-3+LDA",
+        "case_index": 7,
+        "alpha": 0.65,
+        "dimension": 22,
+        "correct": 64
+      }
+    ],
+    "CSA_sum_correct": 130,
+    "profile": "optimized_shrinkage_LDA",
+    "score_file": "seed28/joint/cv_yunet_d16_replicate_fixed39_zero_channel_rms.npz",
+    "score_sha256": "d91153ffec54fa0b7c63d26ff7b0140cb3c62693c5095aa2dac4fc30dd5a02f7"
+  },
+  {
+    "entry_id": "yunet_d16_replicate_fixed39_zero",
+    "normalization": "channel_rms",
+    "policy": "unit_columns_cosine_centered",
+    "methods": [
+      {
+        "method": "PCA+LDA (Gray)",
+        "case_index": 0,
+        "alpha": 0.0,
+        "dimension": 19,
+        "correct": 64
+      },
+      {
+        "method": "CSA-2+LDA",
+        "case_index": 1,
+        "alpha": 0.0,
+        "dimension": 16,
+        "correct": 61
+      },
+      {
+        "method": "PCA+LDA (Gabor)",
+        "case_index": 2,
+        "alpha": 0.0,
+        "dimension": 26,
+        "correct": 72
+      },
+      {
+        "method": "CSA-3+LDA",
+        "case_index": 7,
+        "alpha": 0.0,
+        "dimension": 30,
+        "correct": 60
+      }
+    ],
+    "CSA_sum_correct": 121,
+    "profile": "optimized_ordinary_LDA",
+    "score_file": "seed28/joint/cv_yunet_d16_replicate_fixed39_zero_channel_rms.npz",
+    "score_sha256": "d91153ffec54fa0b7c63d26ff7b0140cb3c62693c5095aa2dac4fc30dd5a02f7"
+  }
+]

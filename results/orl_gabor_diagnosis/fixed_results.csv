@@ -1,0 +1,253 @@
+branch,feature_variant,seed,method,model_variant,center,metric,Tmax,lda_scaling,accuracy_percent,correct,total,seconds
+eyes_only,baseline,20,CSA-3,default,False,cosine,3,unit_columns,81.5625,261,320,0.42775130000154604
+eyes_only,baseline,20,PCA (Gabor),default,True,cosine,3,unit_columns,78.4375,251,320,0.09878929999831598
+eyes_only,baseline,20,CSA-3+LDA,default,False,cosine,3,unit_columns,68.125,218,320,0.32469180000043707
+eyes_only,baseline,20,CSA-3,centered,True,cosine,3,unit_columns,80.625,258,320,0.4326605999995081
+eyes_only,baseline,20,CSA-3,euclidean,False,euclidean,3,unit_columns,80.9375,259,320,0.4267056999997294
+eyes_only,baseline,20,CSA-3,iterations10,False,cosine,10,unit_columns,81.5625,261,320,0.40178089999972144
+eyes_only,baseline,20,CSA-3+LDA,unit_columns_euclidean,False,euclidean,3,unit_columns,66.25,212,320,0.2728440999999293
+eyes_only,baseline,20,CSA-3+LDA,sw_identity_cosine,False,cosine,3,sw_identity,68.4375,219,320,0.3224850999977207
+eyes_only,baseline,20,CSA-3+LDA,sw_identity_euclidean,False,euclidean,3,sw_identity,66.5625,213,320,0.2943765000018175
+eyes_only,baseline,21,CSA-3,default,False,cosine,3,unit_columns,76.5625,245,320,0.43222570000216365
+eyes_only,baseline,21,PCA (Gabor),default,True,cosine,3,unit_columns,76.875,246,320,0.10562670000217622
+eyes_only,baseline,21,CSA-3+LDA,default,False,cosine,3,unit_columns,63.125,202,320,0.29045899999982794
+eyes_only,baseline,21,CSA-3,centered,True,cosine,3,unit_columns,76.5625,245,320,0.4290689999979804
+eyes_only,baseline,21,CSA-3,euclidean,False,euclidean,3,unit_columns,76.5625,245,320,0.3930094999996072
+eyes_only,baseline,21,CSA-3,iterations10,False,cosine,10,unit_columns,76.5625,245,320,0.41996649999782676
+eyes_only,baseline,21,CSA-3+LDA,unit_columns_euclidean,False,euclidean,3,unit_columns,64.0625,205,320,0.32259070000145584
+eyes_only,baseline,21,CSA-3+LDA,sw_identity_cosine,False,cosine,3,sw_identity,60.0,192,320,0.3187648999992234
+eyes_only,baseline,21,CSA-3+LDA,sw_identity_euclidean,False,euclidean,3,sw_identity,59.68750000000001,191,320,0.3182013999976334
+eyes_only,baseline,22,CSA-3,default,False,cosine,3,unit_columns,74.6875,239,320,0.4327796999968996
+eyes_only,baseline,22,PCA (Gabor),default,True,cosine,3,unit_columns,79.375,254,320,0.07891889999882551
+eyes_only,baseline,22,CSA-3+LDA,default,False,cosine,3,unit_columns,66.5625,213,320,0.262710099999822
+eyes_only,baseline,22,CSA-3,centered,True,cosine,3,unit_columns,75.3125,241,320,0.422913399997924
+eyes_only,baseline,22,CSA-3,euclidean,False,euclidean,3,unit_columns,74.375,238,320,0.4345289999982924
+eyes_only,baseline,22,CSA-3,iterations10,False,cosine,10,unit_columns,74.6875,239,320,0.40468979999786825
+eyes_only,baseline,22,CSA-3+LDA,unit_columns_euclidean,False,euclidean,3,unit_columns,61.5625,197,320,0.30453619999752846
+eyes_only,baseline,22,CSA-3+LDA,sw_identity_cosine,False,cosine,3,sw_identity,63.4375,203,320,0.31304850000014994
+eyes_only,baseline,22,CSA-3+LDA,sw_identity_euclidean,False,euclidean,3,sw_identity,63.125,202,320,0.2560754000005545
+eyes_only,zero_boundary,20,CSA-3,default,False,cosine,3,unit_columns,86.25,276,320,0.4591684000006353
+eyes_only,zero_boundary,20,PCA (Gabor),default,True,cosine,3,unit_columns,82.8125,265,320,0.1027713000003132
+eyes_only,zero_boundary,20,CSA-3+LDA,default,False,cosine,3,unit_columns,78.4375,251,320,0.3213161999992735
+eyes_only,zero_boundary,21,CSA-3,default,False,cosine,3,unit_columns,82.8125,265,320,0.4542287000003853
+eyes_only,zero_boundary,21,PCA (Gabor),default,True,cosine,3,unit_columns,77.1875,247,320,0.10390670000197133
+eyes_only,zero_boundary,21,CSA-3+LDA,default,False,cosine,3,unit_columns,70.9375,227,320,0.33388209999975516
+eyes_only,zero_boundary,22,CSA-3,default,False,cosine,3,unit_columns,81.875,262,320,0.4200703999995312
+eyes_only,zero_boundary,22,PCA (Gabor),default,True,cosine,3,unit_columns,80.9375,259,320,0.09759400000257301
+eyes_only,zero_boundary,22,CSA-3+LDA,default,False,cosine,3,unit_columns,73.4375,235,320,0.3187197000006563
+eyes_only,wrap_boundary,20,CSA-3,default,False,cosine,3,unit_columns,77.1875,247,320,0.46330829999715206
+eyes_only,wrap_boundary,20,PCA (Gabor),default,True,cosine,3,unit_columns,80.3125,257,320,0.10221779999847058
+eyes_only,wrap_boundary,20,CSA-3+LDA,default,False,cosine,3,unit_columns,66.5625,213,320,0.32628330000079586
+eyes_only,wrap_boundary,21,CSA-3,default,False,cosine,3,unit_columns,77.1875,247,320,0.4225025000014284
+eyes_only,wrap_boundary,21,PCA (Gabor),default,True,cosine,3,unit_columns,78.4375,251,320,0.10975470000266796
+eyes_only,wrap_boundary,21,CSA-3+LDA,default,False,cosine,3,unit_columns,64.6875,207,320,0.33003399999870453
+eyes_only,wrap_boundary,22,CSA-3,default,False,cosine,3,unit_columns,71.875,230,320,0.45949909999762895
+eyes_only,wrap_boundary,22,PCA (Gabor),default,True,cosine,3,unit_columns,77.5,248,320,0.10489629999938188
+eyes_only,wrap_boundary,22,CSA-3+LDA,default,False,cosine,3,unit_columns,67.1875,215,320,0.32794279999870923
+eyes_only,fixed39_support,20,CSA-3,default,False,cosine,3,unit_columns,83.4375,267,320,0.45820180000009714
+eyes_only,fixed39_support,20,PCA (Gabor),default,True,cosine,3,unit_columns,80.9375,259,320,0.08921030000055907
+eyes_only,fixed39_support,20,CSA-3+LDA,default,False,cosine,3,unit_columns,73.125,234,320,0.3318524999995134
+eyes_only,fixed39_support,21,CSA-3,default,False,cosine,3,unit_columns,79.6875,255,320,0.4584799000003841
+eyes_only,fixed39_support,21,PCA (Gabor),default,True,cosine,3,unit_columns,80.0,256,320,0.10554099999717437
+eyes_only,fixed39_support,21,CSA-3+LDA,default,False,cosine,3,unit_columns,68.4375,219,320,0.32331559999875026
+eyes_only,fixed39_support,22,CSA-3,default,False,cosine,3,unit_columns,80.0,256,320,0.4312824000007822
+eyes_only,fixed39_support,22,PCA (Gabor),default,True,cosine,3,unit_columns,82.5,264,320,0.10249109999858774
+eyes_only,fixed39_support,22,CSA-3+LDA,default,False,cosine,3,unit_columns,72.1875,231,320,0.28632680000009714
+eyes_only,wavelength2,20,CSA-3,default,False,cosine,3,unit_columns,81.875,262,320,0.4151157000014791
+eyes_only,wavelength2,20,PCA (Gabor),default,True,cosine,3,unit_columns,78.75,252,320,0.08762890000070911
+eyes_only,wavelength2,20,CSA-3+LDA,default,False,cosine,3,unit_columns,71.875,230,320,0.29781780000121216
+eyes_only,wavelength2,21,CSA-3,default,False,cosine,3,unit_columns,77.8125,249,320,0.42107469999973546
+eyes_only,wavelength2,21,PCA (Gabor),default,True,cosine,3,unit_columns,76.875,246,320,0.1008382999971218
+eyes_only,wavelength2,21,CSA-3+LDA,default,False,cosine,3,unit_columns,62.18749999999999,199,320,0.32508360000065295
+eyes_only,wavelength2,22,CSA-3,default,False,cosine,3,unit_columns,75.625,242,320,0.43561849999969127
+eyes_only,wavelength2,22,PCA (Gabor),default,True,cosine,3,unit_columns,79.0625,253,320,0.1016687000010279
+eyes_only,wavelength2,22,CSA-3+LDA,default,False,cosine,3,unit_columns,68.125,218,320,0.3185689999991155
+eyes_only,sigma_pi,20,CSA-3,default,False,cosine,3,unit_columns,85.0,272,320,0.44580100000166567
+eyes_only,sigma_pi,20,PCA (Gabor),default,True,cosine,3,unit_columns,80.625,258,320,0.08572029999777442
+eyes_only,sigma_pi,20,CSA-3+LDA,default,False,cosine,3,unit_columns,78.4375,251,320,0.3226021000009496
+eyes_only,sigma_pi,21,CSA-3,default,False,cosine,3,unit_columns,81.875,262,320,0.4280983999997261
+eyes_only,sigma_pi,21,PCA (Gabor),default,True,cosine,3,unit_columns,80.3125,257,320,0.10124630000063917
+eyes_only,sigma_pi,21,CSA-3+LDA,default,False,cosine,3,unit_columns,74.375,238,320,0.3179517000025953
+eyes_only,sigma_pi,22,CSA-3,default,False,cosine,3,unit_columns,82.5,264,320,0.4271633999996993
+eyes_only,sigma_pi,22,PCA (Gabor),default,True,cosine,3,unit_columns,82.1875,263,320,0.09941579999940586
+eyes_only,sigma_pi,22,CSA-3+LDA,default,False,cosine,3,unit_columns,74.375,238,320,0.3070241999994323
+eyes_only,jet_l2,20,CSA-3,default,False,cosine,3,unit_columns,80.3125,257,320,0.4427919000008842
+eyes_only,jet_l2,20,PCA (Gabor),default,True,cosine,3,unit_columns,79.0625,253,320,0.09920490000149584
+eyes_only,jet_l2,20,CSA-3+LDA,default,False,cosine,3,unit_columns,59.375,190,320,0.3081291999988025
+eyes_only,jet_l2,21,CSA-3,default,False,cosine,3,unit_columns,76.25,244,320,0.4106390000015381
+eyes_only,jet_l2,21,PCA (Gabor),default,True,cosine,3,unit_columns,76.5625,245,320,0.10213970000040717
+eyes_only,jet_l2,21,CSA-3+LDA,default,False,cosine,3,unit_columns,61.25000000000001,196,320,0.31499729999995907
+eyes_only,jet_l2,22,CSA-3,default,False,cosine,3,unit_columns,75.625,242,320,0.42888309999761987
+eyes_only,jet_l2,22,PCA (Gabor),default,True,cosine,3,unit_columns,78.125,250,320,0.08074919999853591
+eyes_only,jet_l2,22,CSA-3+LDA,default,False,cosine,3,unit_columns,61.25000000000001,196,320,0.3007002000013017
+eyes_only,sqrt_response,20,CSA-3,default,False,cosine,3,unit_columns,82.1875,263,320,0.4541949999984354
+eyes_only,sqrt_response,20,PCA (Gabor),default,True,cosine,3,unit_columns,81.875,262,320,0.10063369999988936
+eyes_only,sqrt_response,20,CSA-3+LDA,default,False,cosine,3,unit_columns,73.4375,235,320,0.31807020000269404
+eyes_only,sqrt_response,21,CSA-3,default,False,cosine,3,unit_columns,79.6875,255,320,0.4338671000004979
+eyes_only,sqrt_response,21,PCA (Gabor),default,True,cosine,3,unit_columns,78.75,252,320,0.09702509999988251
+eyes_only,sqrt_response,21,CSA-3+LDA,default,False,cosine,3,unit_columns,69.0625,221,320,0.3175228000000061
+eyes_only,sqrt_response,22,CSA-3,default,False,cosine,3,unit_columns,78.75,252,320,0.3842406000003393
+eyes_only,sqrt_response,22,PCA (Gabor),default,True,cosine,3,unit_columns,84.375,270,320,0.09651329999906011
+eyes_only,sqrt_response,22,CSA-3+LDA,default,False,cosine,3,unit_columns,72.8125,233,320,0.3163832000027469
+eyes_only,offset11,20,CSA-3,default,False,cosine,3,unit_columns,82.1875,263,320,0.41820459999871673
+eyes_only,offset11,20,PCA (Gabor),default,True,cosine,3,unit_columns,78.125,250,320,0.09892309999850113
+eyes_only,offset11,20,CSA-3+LDA,default,False,cosine,3,unit_columns,66.875,214,320,0.31394600000203354
+eyes_only,offset11,21,CSA-3,default,False,cosine,3,unit_columns,77.1875,247,320,0.3883443000013358
+eyes_only,offset11,21,PCA (Gabor),default,True,cosine,3,unit_columns,76.25,244,320,0.09876119999898947
+eyes_only,offset11,21,CSA-3+LDA,default,False,cosine,3,unit_columns,65.0,208,320,0.32042440000077477
+eyes_only,offset11,22,CSA-3,default,False,cosine,3,unit_columns,74.6875,239,320,0.4335140000002866
+eyes_only,offset11,22,PCA (Gabor),default,True,cosine,3,unit_columns,78.125,250,320,0.09588459999940824
+eyes_only,offset11,22,CSA-3+LDA,default,False,cosine,3,unit_columns,67.5,216,320,0.3107571000000462
+eyes_only,mean_pool2,20,CSA-3,default,False,cosine,3,unit_columns,81.875,262,320,0.40960199999972247
+eyes_only,mean_pool2,20,PCA (Gabor),default,True,cosine,3,unit_columns,78.4375,251,320,0.09674620000077994
+eyes_only,mean_pool2,20,CSA-3+LDA,default,False,cosine,3,unit_columns,68.125,218,320,0.3156825000005483
+eyes_only,mean_pool2,21,CSA-3,default,False,cosine,3,unit_columns,76.875,246,320,0.4409949999972014
+eyes_only,mean_pool2,21,PCA (Gabor),default,True,cosine,3,unit_columns,76.5625,245,320,0.1054057000001194
+eyes_only,mean_pool2,21,CSA-3+LDA,default,False,cosine,3,unit_columns,64.6875,207,320,0.3196237000011024
+eyes_only,mean_pool2,22,CSA-3,default,False,cosine,3,unit_columns,74.6875,239,320,0.42590589999963413
+eyes_only,mean_pool2,22,PCA (Gabor),default,True,cosine,3,unit_columns,79.0625,253,320,0.09994120000192197
+eyes_only,mean_pool2,22,CSA-3+LDA,default,False,cosine,3,unit_columns,67.5,216,320,0.32145909999962896
+eyes_only,tensor_l2,20,CSA-3,default,False,cosine,3,unit_columns,81.875,262,320,0.42981520000103046
+eyes_only,tensor_l2,20,PCA (Gabor),default,True,cosine,3,unit_columns,80.0,256,320,0.09943849999763188
+eyes_only,tensor_l2,20,CSA-3+LDA,default,False,cosine,3,unit_columns,65.9375,211,320,0.3182833999999275
+eyes_only,tensor_l2,21,CSA-3,default,False,cosine,3,unit_columns,76.5625,245,320,0.409589999999298
+eyes_only,tensor_l2,21,PCA (Gabor),default,True,cosine,3,unit_columns,76.5625,245,320,0.09005340000294382
+eyes_only,tensor_l2,21,CSA-3+LDA,default,False,cosine,3,unit_columns,65.9375,211,320,0.32448370000201976
+eyes_only,tensor_l2,22,CSA-3,default,False,cosine,3,unit_columns,74.6875,239,320,0.41402089999974123
+eyes_only,tensor_l2,22,PCA (Gabor),default,True,cosine,3,unit_columns,80.0,256,320,0.08045649999985471
+eyes_only,tensor_l2,22,CSA-3+LDA,default,False,cosine,3,unit_columns,66.875,214,320,0.30153950000021723
+eyes_only,train_channel_rms,20,CSA-3,default,False,cosine,3,unit_columns,81.875,262,320,0.43080879999979516
+eyes_only,train_channel_rms,20,PCA (Gabor),default,True,cosine,3,unit_columns,80.9375,259,320,0.10117309999986901
+eyes_only,train_channel_rms,20,CSA-3+LDA,default,False,cosine,3,unit_columns,70.0,224,320,0.31664590000218595
+eyes_only,train_channel_rms,21,CSA-3,default,False,cosine,3,unit_columns,80.0,256,320,0.4227546000001894
+eyes_only,train_channel_rms,21,PCA (Gabor),default,True,cosine,3,unit_columns,79.0625,253,320,0.09952590000102646
+eyes_only,train_channel_rms,21,CSA-3+LDA,default,False,cosine,3,unit_columns,66.5625,213,320,0.30873459999929764
+eyes_only,train_channel_rms,22,CSA-3,default,False,cosine,3,unit_columns,78.75,252,320,0.41135360000043875
+eyes_only,train_channel_rms,22,PCA (Gabor),default,True,cosine,3,unit_columns,84.6875,271,320,0.1019730999978492
+eyes_only,train_channel_rms,22,CSA-3+LDA,default,False,cosine,3,unit_columns,70.0,224,320,0.3171113999997033
+paper_description,baseline,20,CSA-3,default,False,cosine,3,unit_columns,85.9375,275,320,0.43380009999964386
+paper_description,baseline,20,PCA (Gabor),default,True,cosine,3,unit_columns,85.625,274,320,0.10199199999988195
+paper_description,baseline,20,CSA-3+LDA,default,False,cosine,3,unit_columns,81.875,262,320,0.3190738999983296
+paper_description,baseline,20,CSA-3,centered,True,cosine,3,unit_columns,87.5,280,320,0.41140920000179904
+paper_description,baseline,20,CSA-3,euclidean,False,euclidean,3,unit_columns,86.5625,277,320,0.4407939999982773
+paper_description,baseline,20,CSA-3,iterations10,False,cosine,10,unit_columns,85.9375,275,320,0.4252857999999833
+paper_description,baseline,20,CSA-3+LDA,unit_columns_euclidean,False,euclidean,3,unit_columns,79.375,254,320,0.31737520000024233
+paper_description,baseline,20,CSA-3+LDA,sw_identity_cosine,False,cosine,3,sw_identity,75.0,240,320,0.3261811000011221
+paper_description,baseline,20,CSA-3+LDA,sw_identity_euclidean,False,euclidean,3,sw_identity,75.0,240,320,0.31341319999773987
+paper_description,baseline,21,CSA-3,default,False,cosine,3,unit_columns,83.125,266,320,0.37277850000100443
+paper_description,baseline,21,PCA (Gabor),default,True,cosine,3,unit_columns,81.5625,261,320,0.09747219999917434
+paper_description,baseline,21,CSA-3+LDA,default,False,cosine,3,unit_columns,76.25,244,320,0.3251325999990513
+paper_description,baseline,21,CSA-3,centered,True,cosine,3,unit_columns,80.9375,259,320,0.4334817999988445
+paper_description,baseline,21,CSA-3,euclidean,False,euclidean,3,unit_columns,80.3125,257,320,0.4393544999984442
+paper_description,baseline,21,CSA-3,iterations10,False,cosine,10,unit_columns,83.125,266,320,0.43717069999911473
+paper_description,baseline,21,CSA-3+LDA,unit_columns_euclidean,False,euclidean,3,unit_columns,76.5625,245,320,0.31045199999789475
+paper_description,baseline,21,CSA-3+LDA,sw_identity_cosine,False,cosine,3,sw_identity,77.1875,247,320,0.28203189999840106
+paper_description,baseline,21,CSA-3+LDA,sw_identity_euclidean,False,euclidean,3,sw_identity,77.5,248,320,0.31598090000261436
+paper_description,baseline,22,CSA-3,default,False,cosine,3,unit_columns,86.875,278,320,0.4303294999990612
+paper_description,baseline,22,PCA (Gabor),default,True,cosine,3,unit_columns,84.0625,269,320,0.09960779999892111
+paper_description,baseline,22,CSA-3+LDA,default,False,cosine,3,unit_columns,78.4375,251,320,0.31850089999716147
+paper_description,baseline,22,CSA-3,centered,True,cosine,3,unit_columns,86.5625,277,320,0.4388728000012634
+paper_description,baseline,22,CSA-3,euclidean,False,euclidean,3,unit_columns,84.375,270,320,0.4014786000007007
+paper_description,baseline,22,CSA-3,iterations10,False,cosine,10,unit_columns,86.875,278,320,0.3982132000019192
+paper_description,baseline,22,CSA-3+LDA,unit_columns_euclidean,False,euclidean,3,unit_columns,76.875,246,320,0.3240769000003638
+paper_description,baseline,22,CSA-3+LDA,sw_identity_cosine,False,cosine,3,sw_identity,72.1875,231,320,0.32877660000303877
+paper_description,baseline,22,CSA-3+LDA,sw_identity_euclidean,False,euclidean,3,sw_identity,71.25,228,320,0.3091501999988395
+paper_description,zero_boundary,20,CSA-3,default,False,cosine,3,unit_columns,87.1875,279,320,0.5121462000024621
+paper_description,zero_boundary,20,PCA (Gabor),default,True,cosine,3,unit_columns,89.0625,285,320,0.08303380000143079
+paper_description,zero_boundary,20,CSA-3+LDA,default,False,cosine,3,unit_columns,88.125,282,320,0.3758166000006895
+paper_description,zero_boundary,21,CSA-3,default,False,cosine,3,unit_columns,87.1875,279,320,0.5157559999970545
+paper_description,zero_boundary,21,PCA (Gabor),default,True,cosine,3,unit_columns,85.9375,275,320,0.11439830000017537
+paper_description,zero_boundary,21,CSA-3+LDA,default,False,cosine,3,unit_columns,81.25,260,320,0.3795734999985143
+paper_description,zero_boundary,22,CSA-3,default,False,cosine,3,unit_columns,87.8125,281,320,0.5187611000001198
+paper_description,zero_boundary,22,PCA (Gabor),default,True,cosine,3,unit_columns,88.75,284,320,0.11134680000031949
+paper_description,zero_boundary,22,CSA-3+LDA,default,False,cosine,3,unit_columns,87.5,280,320,0.36819699999978184
+paper_description,wrap_boundary,20,CSA-3,default,False,cosine,3,unit_columns,87.1875,279,320,0.4605102999994415
+paper_description,wrap_boundary,20,PCA (Gabor),default,True,cosine,3,unit_columns,90.3125,289,320,0.10064339999735239
+paper_description,wrap_boundary,20,CSA-3+LDA,default,False,cosine,3,unit_columns,79.0625,253,320,0.34102859999984503
+paper_description,wrap_boundary,21,CSA-3,default,False,cosine,3,unit_columns,81.875,262,320,0.3921961000014562
+paper_description,wrap_boundary,21,PCA (Gabor),default,True,cosine,3,unit_columns,86.25,276,320,0.10337929999877815
+paper_description,wrap_boundary,21,CSA-3+LDA,default,False,cosine,3,unit_columns,79.375,254,320,0.32686350000221864
+paper_description,wrap_boundary,22,CSA-3,default,False,cosine,3,unit_columns,84.6875,271,320,0.4231775000007474
+paper_description,wrap_boundary,22,PCA (Gabor),default,True,cosine,3,unit_columns,86.875,278,320,0.09580629999982193
+paper_description,wrap_boundary,22,CSA-3+LDA,default,False,cosine,3,unit_columns,79.6875,255,320,0.3258505999983754
+paper_description,fixed39_support,20,CSA-3,default,False,cosine,3,unit_columns,92.1875,295,320,0.5001738999999361
+paper_description,fixed39_support,20,PCA (Gabor),default,True,cosine,3,unit_columns,89.375,286,320,0.08593969999856199
+paper_description,fixed39_support,20,CSA-3+LDA,default,False,cosine,3,unit_columns,89.0625,285,320,0.3797582999977749
+paper_description,fixed39_support,21,CSA-3,default,False,cosine,3,unit_columns,91.5625,293,320,0.5155307999993965
+paper_description,fixed39_support,21,PCA (Gabor),default,True,cosine,3,unit_columns,84.0625,269,320,0.10889900000256603
+paper_description,fixed39_support,21,CSA-3+LDA,default,False,cosine,3,unit_columns,79.375,254,320,0.3899926999984018
+paper_description,fixed39_support,22,CSA-3,default,False,cosine,3,unit_columns,91.5625,293,320,0.5230185000000347
+paper_description,fixed39_support,22,PCA (Gabor),default,True,cosine,3,unit_columns,88.125,282,320,0.10002820000227075
+paper_description,fixed39_support,22,CSA-3+LDA,default,False,cosine,3,unit_columns,84.0625,269,320,0.37436329999763984
+paper_description,wavelength2,20,CSA-3,default,False,cosine,3,unit_columns,93.125,298,320,0.4839914000003773
+paper_description,wavelength2,20,PCA (Gabor),default,True,cosine,3,unit_columns,88.75,284,320,0.0930910999995831
+paper_description,wavelength2,20,CSA-3+LDA,default,False,cosine,3,unit_columns,82.8125,265,320,0.34897970000019995
+paper_description,wavelength2,21,CSA-3,default,False,cosine,3,unit_columns,88.75,284,320,0.48823170000105165
+paper_description,wavelength2,21,PCA (Gabor),default,True,cosine,3,unit_columns,83.4375,267,320,0.09907480000038049
+paper_description,wavelength2,21,CSA-3+LDA,default,False,cosine,3,unit_columns,80.625,258,320,0.3519035999997868
+paper_description,wavelength2,22,CSA-3,default,False,cosine,3,unit_columns,90.3125,289,320,0.49533380000139005
+paper_description,wavelength2,22,PCA (Gabor),default,True,cosine,3,unit_columns,86.25,276,320,0.09744810000120196
+paper_description,wavelength2,22,CSA-3+LDA,default,False,cosine,3,unit_columns,80.9375,259,320,0.3457469000022684
+paper_description,sigma_pi,20,CSA-3,default,False,cosine,3,unit_columns,92.1875,295,320,0.5251033000022289
+paper_description,sigma_pi,20,PCA (Gabor),default,True,cosine,3,unit_columns,88.125,282,320,0.10419090000141296
+paper_description,sigma_pi,20,CSA-3+LDA,default,False,cosine,3,unit_columns,89.0625,285,320,0.39243290000013076
+paper_description,sigma_pi,21,CSA-3,default,False,cosine,3,unit_columns,87.5,280,320,0.5266144000015629
+paper_description,sigma_pi,21,PCA (Gabor),default,True,cosine,3,unit_columns,84.0625,269,320,0.09219840000150725
+paper_description,sigma_pi,21,CSA-3+LDA,default,False,cosine,3,unit_columns,85.3125,273,320,0.37226400000145077
+paper_description,sigma_pi,22,CSA-3,default,False,cosine,3,unit_columns,91.875,294,320,0.5238753000012366
+paper_description,sigma_pi,22,PCA (Gabor),default,True,cosine,3,unit_columns,87.5,280,320,0.1099197000003187
+paper_description,sigma_pi,22,CSA-3+LDA,default,False,cosine,3,unit_columns,86.25,276,320,0.3980727000016486
+paper_description,jet_l2,20,CSA-3,default,False,cosine,3,unit_columns,84.0625,269,320,0.5042653999989852
+paper_description,jet_l2,20,PCA (Gabor),default,True,cosine,3,unit_columns,85.3125,273,320,0.09451249999983702
+paper_description,jet_l2,20,CSA-3+LDA,default,False,cosine,3,unit_columns,73.75,236,320,0.35182740000163903
+paper_description,jet_l2,21,CSA-3,default,False,cosine,3,unit_columns,79.6875,255,320,0.5172027000007802
+paper_description,jet_l2,21,PCA (Gabor),default,True,cosine,3,unit_columns,84.0625,269,320,0.11022950000187848
+paper_description,jet_l2,21,CSA-3+LDA,default,False,cosine,3,unit_columns,70.625,226,320,0.38433160000204225
+paper_description,jet_l2,22,CSA-3,default,False,cosine,3,unit_columns,85.625,274,320,0.5200229000001855
+paper_description,jet_l2,22,PCA (Gabor),default,True,cosine,3,unit_columns,85.9375,275,320,0.10889099999985774
+paper_description,jet_l2,22,CSA-3+LDA,default,False,cosine,3,unit_columns,69.0625,221,320,0.3584052999976848
+paper_description,sqrt_response,20,CSA-3,default,False,cosine,3,unit_columns,88.125,282,320,0.49633040000117035
+paper_description,sqrt_response,20,PCA (Gabor),default,True,cosine,3,unit_columns,89.0625,285,320,0.10342669999954524
+paper_description,sqrt_response,20,CSA-3+LDA,default,False,cosine,3,unit_columns,85.9375,275,320,0.3867973999986134
+paper_description,sqrt_response,21,CSA-3,default,False,cosine,3,unit_columns,85.0,272,320,0.5288280999993731
+paper_description,sqrt_response,21,PCA (Gabor),default,True,cosine,3,unit_columns,84.375,270,320,0.10851080000065849
+paper_description,sqrt_response,21,CSA-3+LDA,default,False,cosine,3,unit_columns,82.5,264,320,0.39110949999667355
+paper_description,sqrt_response,22,CSA-3,default,False,cosine,3,unit_columns,89.0625,285,320,0.5097573999992164
+paper_description,sqrt_response,22,PCA (Gabor),default,True,cosine,3,unit_columns,87.1875,279,320,0.10275499999988824
+paper_description,sqrt_response,22,CSA-3+LDA,default,False,cosine,3,unit_columns,78.125,250,320,0.3771958999968774
+paper_description,offset11,20,CSA-3,default,False,cosine,3,unit_columns,85.3125,273,320,0.4951195000030566
+paper_description,offset11,20,PCA (Gabor),default,True,cosine,3,unit_columns,85.625,274,320,0.10519019999992452
+paper_description,offset11,20,CSA-3+LDA,default,False,cosine,3,unit_columns,84.0625,269,320,0.3886287999994238
+paper_description,offset11,21,CSA-3,default,False,cosine,3,unit_columns,83.125,266,320,0.5245489000008092
+paper_description,offset11,21,PCA (Gabor),default,True,cosine,3,unit_columns,81.5625,261,320,0.10668179999993299
+paper_description,offset11,21,CSA-3+LDA,default,False,cosine,3,unit_columns,76.25,244,320,0.38860159999967436
+paper_description,offset11,22,CSA-3,default,False,cosine,3,unit_columns,86.875,278,320,0.5015192999999272
+paper_description,offset11,22,PCA (Gabor),default,True,cosine,3,unit_columns,84.0625,269,320,0.07842819999859785
+paper_description,offset11,22,CSA-3+LDA,default,False,cosine,3,unit_columns,79.6875,255,320,0.3924077000010584
+paper_description,mean_pool2,20,CSA-3,default,False,cosine,3,unit_columns,85.3125,273,320,0.5317188000008173
+paper_description,mean_pool2,20,PCA (Gabor),default,True,cosine,3,unit_columns,85.3125,273,320,0.10949290000280598
+paper_description,mean_pool2,20,CSA-3+LDA,default,False,cosine,3,unit_columns,82.8125,265,320,0.37129889999778243
+paper_description,mean_pool2,21,CSA-3,default,False,cosine,3,unit_columns,82.8125,265,320,0.5226380999993125
+paper_description,mean_pool2,21,PCA (Gabor),default,True,cosine,3,unit_columns,81.25,260,320,0.1038129000007757
+paper_description,mean_pool2,21,CSA-3+LDA,default,False,cosine,3,unit_columns,76.875,246,320,0.3860075999982655
+paper_description,mean_pool2,22,CSA-3,default,False,cosine,3,unit_columns,86.875,278,320,0.5342465000030643
+paper_description,mean_pool2,22,PCA (Gabor),default,True,cosine,3,unit_columns,84.0625,269,320,0.10448849999738741
+paper_description,mean_pool2,22,CSA-3+LDA,default,False,cosine,3,unit_columns,79.375,254,320,0.3573303000011947
+paper_description,tensor_l2,20,CSA-3,default,False,cosine,3,unit_columns,85.9375,275,320,0.5358102999998664
+paper_description,tensor_l2,20,PCA (Gabor),default,True,cosine,3,unit_columns,85.0,272,320,0.10159809999822755
+paper_description,tensor_l2,20,CSA-3+LDA,default,False,cosine,3,unit_columns,79.0625,253,320,0.37044020000030287
+paper_description,tensor_l2,21,CSA-3,default,False,cosine,3,unit_columns,82.5,264,320,0.5065148000030604
+paper_description,tensor_l2,21,PCA (Gabor),default,True,cosine,3,unit_columns,82.5,264,320,0.10523520000060671
+paper_description,tensor_l2,21,CSA-3+LDA,default,False,cosine,3,unit_columns,78.125,250,320,0.3584993000004033
+paper_description,tensor_l2,22,CSA-3,default,False,cosine,3,unit_columns,86.875,278,320,0.4900473999987298
+paper_description,tensor_l2,22,PCA (Gabor),default,True,cosine,3,unit_columns,85.3125,273,320,0.10365409999940312
+paper_description,tensor_l2,22,CSA-3+LDA,default,False,cosine,3,unit_columns,78.4375,251,320,0.36064710000209743
+paper_description,train_channel_rms,20,CSA-3,default,False,cosine,3,unit_columns,90.0,288,320,0.42697879999832367
+paper_description,train_channel_rms,20,PCA (Gabor),default,True,cosine,3,unit_columns,89.375,286,320,0.09921240000039688
+paper_description,train_channel_rms,20,CSA-3+LDA,default,False,cosine,3,unit_columns,83.75,268,320,0.3173848000005819
+paper_description,train_channel_rms,21,CSA-3,default,False,cosine,3,unit_columns,87.5,280,320,0.3695502000009583
+paper_description,train_channel_rms,21,PCA (Gabor),default,True,cosine,3,unit_columns,84.375,270,320,0.09814689999984694
+paper_description,train_channel_rms,21,CSA-3+LDA,default,False,cosine,3,unit_columns,82.1875,263,320,0.3224133999974583
+paper_description,train_channel_rms,22,CSA-3,default,False,cosine,3,unit_columns,87.8125,281,320,0.4204819000005955
+paper_description,train_channel_rms,22,PCA (Gabor),default,True,cosine,3,unit_columns,89.0625,285,320,0.0701958999998169
+paper_description,train_channel_rms,22,CSA-3+LDA,default,False,cosine,3,unit_columns,80.9375,259,320,0.30428960000062943

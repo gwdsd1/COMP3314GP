@@ -1,0 +1,2082 @@
+[
+  {
+    "seed": 20,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 6.301672912524225e-14
+  },
+  {
+    "seed": 20,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "PCA-equal-budget",
+    "minimum_basis_cosine": 0.9999999999999996,
+    "relative_residual": 1.1064294409003564e-14
+  },
+  {
+    "seed": 20,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 8.6806540697032e-14
+  },
+  {
+    "seed": 20,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-centered",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 4.015005560148531e-14
+  },
+  {
+    "seed": 20,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-random",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 5.4678203842578043e-14
+  },
+  {
+    "seed": 20,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.2347979461984052e-13
+  },
+  {
+    "seed": 20,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "PCA-equal-budget",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 4.473900666846834e-14
+  },
+  {
+    "seed": 20,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 2.406169340604478e-14
+  },
+  {
+    "seed": 20,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-centered",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 6.8925399195524585e-15
+  },
+  {
+    "seed": 20,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-random",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 2.6014579520960407e-14
+  },
+  {
+    "seed": 20,
+    "normalization": "tensor_l2",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999994,
+    "relative_residual": 6.116885027598166e-14
+  },
+  {
+    "seed": 20,
+    "normalization": "tensor_l2",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 6.200701195015671e-14
+  },
+  {
+    "seed": 20,
+    "normalization": "tensor_l2",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 1.362945638115591e-13
+  },
+  {
+    "seed": 20,
+    "normalization": "tensor_l2",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 1.2076615737866856e-14
+  },
+  {
+    "seed": 20,
+    "normalization": "image_zscore",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 4.870079680290649e-14
+  },
+  {
+    "seed": 20,
+    "normalization": "image_zscore",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.6790542797177213e-14
+  },
+  {
+    "seed": 20,
+    "normalization": "image_zscore",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.75360017731499e-13
+  },
+  {
+    "seed": 20,
+    "normalization": "image_zscore",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 9.657194962762247e-15
+  },
+  {
+    "seed": 20,
+    "normalization": "jet_l2",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999994,
+    "relative_residual": 6.116885027598166e-14
+  },
+  {
+    "seed": 20,
+    "normalization": "jet_l2",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 6.200701195015671e-14
+  },
+  {
+    "seed": 20,
+    "normalization": "jet_l2",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.0183753771979274e-13
+  },
+  {
+    "seed": 20,
+    "normalization": "jet_l2",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.3258583187046766e-14
+  },
+  {
+    "seed": 20,
+    "normalization": "channel_rms",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 6.301672912524225e-14
+  },
+  {
+    "seed": 20,
+    "normalization": "channel_rms",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 8.6806540697032e-14
+  },
+  {
+    "seed": 20,
+    "normalization": "channel_rms",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 2.0362068847908974e-13
+  },
+  {
+    "seed": 20,
+    "normalization": "channel_rms",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 8.40777225792792e-15
+  },
+  {
+    "seed": 21,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 4.548548696098974e-14
+  },
+  {
+    "seed": 21,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "PCA-equal-budget",
+    "minimum_basis_cosine": 0.9999999999999999,
+    "relative_residual": 3.657239775464489e-14
+  },
+  {
+    "seed": 21,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 9.605409556654568e-15
+  },
+  {
+    "seed": 21,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-centered",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 7.524850614001314e-15
+  },
+  {
+    "seed": 21,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-random",
+    "minimum_basis_cosine": 0.9999999999999999,
+    "relative_residual": 9.354747886735979e-15
+  },
+  {
+    "seed": 21,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 6.82119317121459e-13
+  },
+  {
+    "seed": 21,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "PCA-equal-budget",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 2.0627588705245822e-14
+  },
+  {
+    "seed": 21,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 1.5989994782572656e-14
+  },
+  {
+    "seed": 21,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-centered",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 6.8842712975123144e-15
+  },
+  {
+    "seed": 21,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-random",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 8.52653997567962e-15
+  },
+  {
+    "seed": 21,
+    "normalization": "tensor_l2",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 3.678561485342417e-14
+  },
+  {
+    "seed": 21,
+    "normalization": "tensor_l2",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 8.051049569121966e-15
+  },
+  {
+    "seed": 21,
+    "normalization": "tensor_l2",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999996,
+    "relative_residual": 1.3772079235025654e-13
+  },
+  {
+    "seed": 21,
+    "normalization": "tensor_l2",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 1.3899457283375783e-14
+  },
+  {
+    "seed": 21,
+    "normalization": "image_zscore",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 4.5929776334130066e-14
+  },
+  {
+    "seed": 21,
+    "normalization": "image_zscore",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999994,
+    "relative_residual": 2.664303352046921e-14
+  },
+  {
+    "seed": 21,
+    "normalization": "image_zscore",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 2.2161605069368226e-13
+  },
+  {
+    "seed": 21,
+    "normalization": "image_zscore",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 9.055478793979845e-15
+  },
+  {
+    "seed": 21,
+    "normalization": "jet_l2",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 3.678561485342417e-14
+  },
+  {
+    "seed": 21,
+    "normalization": "jet_l2",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 8.051049569121966e-15
+  },
+  {
+    "seed": 21,
+    "normalization": "jet_l2",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.1564745097389333e-13
+  },
+  {
+    "seed": 21,
+    "normalization": "jet_l2",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 9.0809686875542e-15
+  },
+  {
+    "seed": 21,
+    "normalization": "channel_rms",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 4.548548696098974e-14
+  },
+  {
+    "seed": 21,
+    "normalization": "channel_rms",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 9.605409556654568e-15
+  },
+  {
+    "seed": 21,
+    "normalization": "channel_rms",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.3696294156181957e-13
+  },
+  {
+    "seed": 21,
+    "normalization": "channel_rms",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 8.556929204037236e-15
+  },
+  {
+    "seed": 22,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999996,
+    "relative_residual": 4.5126530326733135e-14
+  },
+  {
+    "seed": 22,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "PCA-equal-budget",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 1.148579228039169e-14
+  },
+  {
+    "seed": 22,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 2.533204719367632e-14
+  },
+  {
+    "seed": 22,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-centered",
+    "minimum_basis_cosine": 0.9999999999999996,
+    "relative_residual": 1.0061551532867792e-14
+  },
+  {
+    "seed": 22,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-random",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 2.946899374912244e-14
+  },
+  {
+    "seed": 22,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 9.863083767025009e-14
+  },
+  {
+    "seed": 22,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "PCA-equal-budget",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.845522129033855e-14
+  },
+  {
+    "seed": 22,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 1.5922479604475036e-14
+  },
+  {
+    "seed": 22,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-centered",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.8655727063749086e-14
+  },
+  {
+    "seed": 22,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-random",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 2.477832401961516e-14
+  },
+  {
+    "seed": 22,
+    "normalization": "tensor_l2",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 4.87718573964103e-14
+  },
+  {
+    "seed": 22,
+    "normalization": "tensor_l2",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.2944291263558897e-14
+  },
+  {
+    "seed": 22,
+    "normalization": "tensor_l2",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999996,
+    "relative_residual": 5.4111568266225e-13
+  },
+  {
+    "seed": 22,
+    "normalization": "tensor_l2",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 9.279724087632419e-15
+  },
+  {
+    "seed": 22,
+    "normalization": "image_zscore",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 4.992688961324652e-14
+  },
+  {
+    "seed": 22,
+    "normalization": "image_zscore",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.3907751330567289e-14
+  },
+  {
+    "seed": 22,
+    "normalization": "image_zscore",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.937141987646761e-13
+  },
+  {
+    "seed": 22,
+    "normalization": "image_zscore",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 2.509769135219357e-14
+  },
+  {
+    "seed": 22,
+    "normalization": "jet_l2",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 4.87718573964103e-14
+  },
+  {
+    "seed": 22,
+    "normalization": "jet_l2",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.2944291263558897e-14
+  },
+  {
+    "seed": 22,
+    "normalization": "jet_l2",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.3404486742679785e-13
+  },
+  {
+    "seed": 22,
+    "normalization": "jet_l2",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999996,
+    "relative_residual": 1.304815818965193e-14
+  },
+  {
+    "seed": 22,
+    "normalization": "channel_rms",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999996,
+    "relative_residual": 4.5126530326733135e-14
+  },
+  {
+    "seed": 22,
+    "normalization": "channel_rms",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 2.533204719367632e-14
+  },
+  {
+    "seed": 22,
+    "normalization": "channel_rms",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 2.0501711993115365e-13
+  },
+  {
+    "seed": 22,
+    "normalization": "channel_rms",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.3026322752156271e-14
+  },
+  {
+    "seed": 23,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999996,
+    "relative_residual": 8.810635706952048e-14
+  },
+  {
+    "seed": 23,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "PCA-equal-budget",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.5522147606858307e-14
+  },
+  {
+    "seed": 23,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 2.8862920142273135e-14
+  },
+  {
+    "seed": 23,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-centered",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 5.177874161713954e-14
+  },
+  {
+    "seed": 23,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-random",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 2.8170700492479115e-14
+  },
+  {
+    "seed": 23,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 3.54809775974596e-13
+  },
+  {
+    "seed": 23,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "PCA-equal-budget",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 3.114323288421117e-14
+  },
+  {
+    "seed": 23,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 7.641327387765793e-15
+  },
+  {
+    "seed": 23,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-centered",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 2.356298711762181e-14
+  },
+  {
+    "seed": 23,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-random",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 6.510861214348447e-15
+  },
+  {
+    "seed": 23,
+    "normalization": "tensor_l2",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 9.52484711474693e-14
+  },
+  {
+    "seed": 23,
+    "normalization": "tensor_l2",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 2.1772070456091312e-14
+  },
+  {
+    "seed": 23,
+    "normalization": "tensor_l2",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.1052969825922497e-13
+  },
+  {
+    "seed": 23,
+    "normalization": "tensor_l2",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999996,
+    "relative_residual": 1.3411700294322715e-14
+  },
+  {
+    "seed": 23,
+    "normalization": "image_zscore",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.0575862088377869e-13
+  },
+  {
+    "seed": 23,
+    "normalization": "image_zscore",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 3.18855616600566e-14
+  },
+  {
+    "seed": 23,
+    "normalization": "image_zscore",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.6407672503721176e-13
+  },
+  {
+    "seed": 23,
+    "normalization": "image_zscore",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.0029457777211677e-14
+  },
+  {
+    "seed": 23,
+    "normalization": "jet_l2",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 9.52484711474693e-14
+  },
+  {
+    "seed": 23,
+    "normalization": "jet_l2",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 2.1772070456091312e-14
+  },
+  {
+    "seed": 23,
+    "normalization": "jet_l2",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 7.108789823755033e-13
+  },
+  {
+    "seed": 23,
+    "normalization": "jet_l2",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 8.928122581898813e-15
+  },
+  {
+    "seed": 23,
+    "normalization": "channel_rms",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999996,
+    "relative_residual": 8.810635706952048e-14
+  },
+  {
+    "seed": 23,
+    "normalization": "channel_rms",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 2.8862920142273135e-14
+  },
+  {
+    "seed": 23,
+    "normalization": "channel_rms",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 2.0502636200271025e-13
+  },
+  {
+    "seed": 23,
+    "normalization": "channel_rms",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 1.251927612689592e-14
+  },
+  {
+    "seed": 24,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999994,
+    "relative_residual": 4.3024093356755735e-14
+  },
+  {
+    "seed": 24,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "PCA-equal-budget",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 3.435499356105448e-14
+  },
+  {
+    "seed": 24,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.635881039568536e-14
+  },
+  {
+    "seed": 24,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-centered",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 3.585842838241082e-14
+  },
+  {
+    "seed": 24,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-random",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.6305360505391603e-14
+  },
+  {
+    "seed": 24,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.936212040388565e-13
+  },
+  {
+    "seed": 24,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "PCA-equal-budget",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 3.1323015373570155e-14
+  },
+  {
+    "seed": 24,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 8.618542748406163e-15
+  },
+  {
+    "seed": 24,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-centered",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 2.1538669092652845e-14
+  },
+  {
+    "seed": 24,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-random",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 7.645406444127293e-15
+  },
+  {
+    "seed": 24,
+    "normalization": "tensor_l2",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 4.1570795424791546e-14
+  },
+  {
+    "seed": 24,
+    "normalization": "tensor_l2",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 2.1502466660676834e-14
+  },
+  {
+    "seed": 24,
+    "normalization": "tensor_l2",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 2.0038654267627316e-13
+  },
+  {
+    "seed": 24,
+    "normalization": "tensor_l2",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999996,
+    "relative_residual": 9.020899329118635e-15
+  },
+  {
+    "seed": 24,
+    "normalization": "image_zscore",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 4.0173930326606237e-14
+  },
+  {
+    "seed": 24,
+    "normalization": "image_zscore",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999996,
+    "relative_residual": 2.4170627766641193e-14
+  },
+  {
+    "seed": 24,
+    "normalization": "image_zscore",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 4.813816541579789e-13
+  },
+  {
+    "seed": 24,
+    "normalization": "image_zscore",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.2783660534933082e-14
+  },
+  {
+    "seed": 24,
+    "normalization": "jet_l2",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 4.1570795424791546e-14
+  },
+  {
+    "seed": 24,
+    "normalization": "jet_l2",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 2.1502466660676834e-14
+  },
+  {
+    "seed": 24,
+    "normalization": "jet_l2",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 2.2866418313712245e-13
+  },
+  {
+    "seed": 24,
+    "normalization": "jet_l2",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999996,
+    "relative_residual": 2.371140449363392e-14
+  },
+  {
+    "seed": 24,
+    "normalization": "channel_rms",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999994,
+    "relative_residual": 4.3024093356755735e-14
+  },
+  {
+    "seed": 24,
+    "normalization": "channel_rms",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.635881039568536e-14
+  },
+  {
+    "seed": 24,
+    "normalization": "channel_rms",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.7761754161034508e-13
+  },
+  {
+    "seed": 24,
+    "normalization": "channel_rms",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.6078402669011455e-14
+  },
+  {
+    "seed": 25,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 4.522997220865942e-14
+  },
+  {
+    "seed": 25,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "PCA-equal-budget",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 2.6260096968713895e-14
+  },
+  {
+    "seed": 25,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 3.3020743106515476e-14
+  },
+  {
+    "seed": 25,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-centered",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 1.694507113518356e-14
+  },
+  {
+    "seed": 25,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-random",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 3.162425044861683e-14
+  },
+  {
+    "seed": 25,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.2659377878475646e-13
+  },
+  {
+    "seed": 25,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "PCA-equal-budget",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 2.2039827896078304e-14
+  },
+  {
+    "seed": 25,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 1.08931618012459e-14
+  },
+  {
+    "seed": 25,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-centered",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.7177839915189362e-14
+  },
+  {
+    "seed": 25,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-random",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 9.989738710380991e-15
+  },
+  {
+    "seed": 25,
+    "normalization": "tensor_l2",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 4.43579297350904e-14
+  },
+  {
+    "seed": 25,
+    "normalization": "tensor_l2",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999996,
+    "relative_residual": 1.4590824331746543e-14
+  },
+  {
+    "seed": 25,
+    "normalization": "tensor_l2",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.8187478399193649e-13
+  },
+  {
+    "seed": 25,
+    "normalization": "tensor_l2",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 9.757523591735164e-15
+  },
+  {
+    "seed": 25,
+    "normalization": "image_zscore",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 4.565482985923536e-14
+  },
+  {
+    "seed": 25,
+    "normalization": "image_zscore",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 1.701849391264485e-14
+  },
+  {
+    "seed": 25,
+    "normalization": "image_zscore",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 2.5023243445119884e-13
+  },
+  {
+    "seed": 25,
+    "normalization": "image_zscore",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.1400857591268713e-14
+  },
+  {
+    "seed": 25,
+    "normalization": "jet_l2",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 4.43579297350904e-14
+  },
+  {
+    "seed": 25,
+    "normalization": "jet_l2",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999996,
+    "relative_residual": 1.4590824331746543e-14
+  },
+  {
+    "seed": 25,
+    "normalization": "jet_l2",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.7843528176274366e-13
+  },
+  {
+    "seed": 25,
+    "normalization": "jet_l2",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 8.690575175094943e-15
+  },
+  {
+    "seed": 25,
+    "normalization": "channel_rms",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 4.522997220865942e-14
+  },
+  {
+    "seed": 25,
+    "normalization": "channel_rms",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 3.3020743106515476e-14
+  },
+  {
+    "seed": 25,
+    "normalization": "channel_rms",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 1.5765128723885665e-13
+  },
+  {
+    "seed": 25,
+    "normalization": "channel_rms",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 1.4641556138949918e-14
+  },
+  {
+    "seed": 26,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 4.626691435383394e-14
+  },
+  {
+    "seed": 26,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "PCA-equal-budget",
+    "minimum_basis_cosine": 0.9999999999999999,
+    "relative_residual": 2.5816702674206143e-14
+  },
+  {
+    "seed": 26,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 1.0592581699269969e-14
+  },
+  {
+    "seed": 26,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-centered",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 3.661481473104044e-14
+  },
+  {
+    "seed": 26,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-random",
+    "minimum_basis_cosine": 0.9999999999999994,
+    "relative_residual": 1.2305765425061338e-14
+  },
+  {
+    "seed": 26,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.874847743331147e-13
+  },
+  {
+    "seed": 26,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "PCA-equal-budget",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 2.189030695048238e-14
+  },
+  {
+    "seed": 26,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 7.587294003447461e-15
+  },
+  {
+    "seed": 26,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-centered",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 1.1944522250644907e-14
+  },
+  {
+    "seed": 26,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-random",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 9.63552575093369e-15
+  },
+  {
+    "seed": 26,
+    "normalization": "tensor_l2",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 3.1058509331224594e-14
+  },
+  {
+    "seed": 26,
+    "normalization": "tensor_l2",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 1.6170445559307968e-14
+  },
+  {
+    "seed": 26,
+    "normalization": "tensor_l2",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 3.2580362050259993e-13
+  },
+  {
+    "seed": 26,
+    "normalization": "tensor_l2",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 9.787561240291242e-15
+  },
+  {
+    "seed": 26,
+    "normalization": "image_zscore",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 6.471504156471175e-14
+  },
+  {
+    "seed": 26,
+    "normalization": "image_zscore",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.2433524331511592e-14
+  },
+  {
+    "seed": 26,
+    "normalization": "image_zscore",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.7564452026495007e-13
+  },
+  {
+    "seed": 26,
+    "normalization": "image_zscore",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.0754155585999019e-14
+  },
+  {
+    "seed": 26,
+    "normalization": "jet_l2",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 3.1058509331224594e-14
+  },
+  {
+    "seed": 26,
+    "normalization": "jet_l2",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 1.6170445559307968e-14
+  },
+  {
+    "seed": 26,
+    "normalization": "jet_l2",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.2685726607903122e-13
+  },
+  {
+    "seed": 26,
+    "normalization": "jet_l2",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 3.804257360126501e-14
+  },
+  {
+    "seed": 26,
+    "normalization": "channel_rms",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 4.626691435383394e-14
+  },
+  {
+    "seed": 26,
+    "normalization": "channel_rms",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 1.0592581699269969e-14
+  },
+  {
+    "seed": 26,
+    "normalization": "channel_rms",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999996,
+    "relative_residual": 1.330659649076135e-13
+  },
+  {
+    "seed": 26,
+    "normalization": "channel_rms",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 7.599622360299006e-15
+  },
+  {
+    "seed": 27,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 3.8220793575718043e-14
+  },
+  {
+    "seed": 27,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "PCA-equal-budget",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 2.0673030630335973e-14
+  },
+  {
+    "seed": 27,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 6.956661999847597e-15
+  },
+  {
+    "seed": 27,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-centered",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.6523437425078322e-14
+  },
+  {
+    "seed": 27,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-random",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.0733339080509601e-14
+  },
+  {
+    "seed": 27,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.6455588365895462e-13
+  },
+  {
+    "seed": 27,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "PCA-equal-budget",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 3.009066558236596e-14
+  },
+  {
+    "seed": 27,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 1.2901869418406428e-14
+  },
+  {
+    "seed": 27,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-centered",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.0242158617929196e-14
+  },
+  {
+    "seed": 27,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-random",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 9.498780139938867e-15
+  },
+  {
+    "seed": 27,
+    "normalization": "tensor_l2",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 5.043957413740146e-14
+  },
+  {
+    "seed": 27,
+    "normalization": "tensor_l2",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 9.647505677690067e-15
+  },
+  {
+    "seed": 27,
+    "normalization": "tensor_l2",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.4395457168649788e-13
+  },
+  {
+    "seed": 27,
+    "normalization": "tensor_l2",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999996,
+    "relative_residual": 1.0512278798965353e-14
+  },
+  {
+    "seed": 27,
+    "normalization": "image_zscore",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 6.53148754771315e-14
+  },
+  {
+    "seed": 27,
+    "normalization": "image_zscore",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999996,
+    "relative_residual": 1.3247347721709275e-14
+  },
+  {
+    "seed": 27,
+    "normalization": "image_zscore",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 3.545853990456252e-13
+  },
+  {
+    "seed": 27,
+    "normalization": "image_zscore",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 1.5348681976362505e-14
+  },
+  {
+    "seed": 27,
+    "normalization": "jet_l2",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 5.043957413740146e-14
+  },
+  {
+    "seed": 27,
+    "normalization": "jet_l2",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 9.647505677690067e-15
+  },
+  {
+    "seed": 27,
+    "normalization": "jet_l2",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 3.4118342740111935e-13
+  },
+  {
+    "seed": 27,
+    "normalization": "jet_l2",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 1.2767468536561954e-14
+  },
+  {
+    "seed": 27,
+    "normalization": "channel_rms",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 3.8220793575718043e-14
+  },
+  {
+    "seed": 27,
+    "normalization": "channel_rms",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 6.956661999847597e-15
+  },
+  {
+    "seed": 27,
+    "normalization": "channel_rms",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999996,
+    "relative_residual": 2.320274249750971e-13
+  },
+  {
+    "seed": 27,
+    "normalization": "channel_rms",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999996,
+    "relative_residual": 9.739417657168955e-15
+  },
+  {
+    "seed": 28,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.2842582234430916e-13
+  },
+  {
+    "seed": 28,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "PCA-equal-budget",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 2.5193376577061732e-14
+  },
+  {
+    "seed": 28,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 8.601406852956763e-15
+  },
+  {
+    "seed": 28,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-centered",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 1.0655438293836044e-14
+  },
+  {
+    "seed": 28,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-random",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 8.532552862727556e-15
+  },
+  {
+    "seed": 28,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 2.0910557154985882e-13
+  },
+  {
+    "seed": 28,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "PCA-equal-budget",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.4047649869852916e-14
+  },
+  {
+    "seed": 28,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 1.0041619295711322e-14
+  },
+  {
+    "seed": 28,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-centered",
+    "minimum_basis_cosine": 0.9999999999999999,
+    "relative_residual": 1.622011615955584e-14
+  },
+  {
+    "seed": 28,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-random",
+    "minimum_basis_cosine": 0.9999999999999999,
+    "relative_residual": 9.948467492779057e-15
+  },
+  {
+    "seed": 28,
+    "normalization": "tensor_l2",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.161327087543472e-13
+  },
+  {
+    "seed": 28,
+    "normalization": "tensor_l2",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.0157444084292265e-14
+  },
+  {
+    "seed": 28,
+    "normalization": "tensor_l2",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 7.335094776821846e-14
+  },
+  {
+    "seed": 28,
+    "normalization": "tensor_l2",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 6.965684502162417e-15
+  },
+  {
+    "seed": 28,
+    "normalization": "image_zscore",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.653091811112252e-13
+  },
+  {
+    "seed": 28,
+    "normalization": "image_zscore",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 4.874798099862523e-14
+  },
+  {
+    "seed": 28,
+    "normalization": "image_zscore",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.556597744089538e-13
+  },
+  {
+    "seed": 28,
+    "normalization": "image_zscore",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 1.1915170513680044e-14
+  },
+  {
+    "seed": 28,
+    "normalization": "jet_l2",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.161327087543472e-13
+  },
+  {
+    "seed": 28,
+    "normalization": "jet_l2",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.0157444084292265e-14
+  },
+  {
+    "seed": 28,
+    "normalization": "jet_l2",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 3.1878356777781834e-13
+  },
+  {
+    "seed": 28,
+    "normalization": "jet_l2",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 1.8955699314424868e-14
+  },
+  {
+    "seed": 28,
+    "normalization": "channel_rms",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.2842582234430916e-13
+  },
+  {
+    "seed": 28,
+    "normalization": "channel_rms",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 8.601406852956763e-15
+  },
+  {
+    "seed": 28,
+    "normalization": "channel_rms",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999996,
+    "relative_residual": 9.206795962027123e-14
+  },
+  {
+    "seed": 28,
+    "normalization": "channel_rms",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 1.055760409750091e-14
+  },
+  {
+    "seed": 29,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999996,
+    "relative_residual": 4.279188697434905e-14
+  },
+  {
+    "seed": 29,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "PCA-equal-budget",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 3.192283736489112e-14
+  },
+  {
+    "seed": 29,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 4.5144820279384355e-15
+  },
+  {
+    "seed": 29,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-centered",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.9534847340489956e-14
+  },
+  {
+    "seed": 29,
+    "normalization": "baseline",
+    "kind": "gray",
+    "model": "CSA-random",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 5.88242720424445e-15
+  },
+  {
+    "seed": 29,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.0476845052637263e-13
+  },
+  {
+    "seed": 29,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "PCA-equal-budget",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 2.2623166141957988e-14
+  },
+  {
+    "seed": 29,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999999,
+    "relative_residual": 8.76583007079509e-15
+  },
+  {
+    "seed": 29,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-centered",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 7.44204514529718e-15
+  },
+  {
+    "seed": 29,
+    "normalization": "baseline",
+    "kind": "gabor",
+    "model": "CSA-random",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 8.716514796771296e-15
+  },
+  {
+    "seed": 29,
+    "normalization": "tensor_l2",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 4.3852642821446277e-14
+  },
+  {
+    "seed": 29,
+    "normalization": "tensor_l2",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999996,
+    "relative_residual": 5.786637531103841e-15
+  },
+  {
+    "seed": 29,
+    "normalization": "tensor_l2",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 8.940074388109322e-14
+  },
+  {
+    "seed": 29,
+    "normalization": "tensor_l2",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 7.83078542176745e-15
+  },
+  {
+    "seed": 29,
+    "normalization": "image_zscore",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 3.702531629379101e-14
+  },
+  {
+    "seed": 29,
+    "normalization": "image_zscore",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 3.5512905216406514e-14
+  },
+  {
+    "seed": 29,
+    "normalization": "image_zscore",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999996,
+    "relative_residual": 1.797016946034131e-13
+  },
+  {
+    "seed": 29,
+    "normalization": "image_zscore",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 1.621853078843042e-14
+  },
+  {
+    "seed": 29,
+    "normalization": "jet_l2",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 4.3852642821446277e-14
+  },
+  {
+    "seed": 29,
+    "normalization": "jet_l2",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999996,
+    "relative_residual": 5.786637531103841e-15
+  },
+  {
+    "seed": 29,
+    "normalization": "jet_l2",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 1.4306461035143727e-13
+  },
+  {
+    "seed": 29,
+    "normalization": "jet_l2",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999997,
+    "relative_residual": 1.605737378585749e-14
+  },
+  {
+    "seed": 29,
+    "normalization": "channel_rms",
+    "kind": "gray",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999996,
+    "relative_residual": 4.279188697434905e-14
+  },
+  {
+    "seed": 29,
+    "normalization": "channel_rms",
+    "kind": "gray",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 4.5144820279384355e-15
+  },
+  {
+    "seed": 29,
+    "normalization": "channel_rms",
+    "kind": "gabor",
+    "model": "PCA-paper",
+    "minimum_basis_cosine": 0.9999999999999996,
+    "relative_residual": 1.5509560585255497e-13
+  },
+  {
+    "seed": 29,
+    "normalization": "channel_rms",
+    "kind": "gabor",
+    "model": "CSA-paper",
+    "minimum_basis_cosine": 0.9999999999999998,
+    "relative_residual": 9.356552500045381e-15
+  }
+]

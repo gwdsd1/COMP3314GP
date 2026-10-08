@@ -1,0 +1,74 @@
+[
+  {
+    "profile": "euclidean_control",
+    "method": "PCA+LDA (Gray)",
+    "mean_percent": 70.625,
+    "std_pp": 1.653594569415369
+  },
+  {
+    "profile": "euclidean_control",
+    "method": "CSA-2+LDA",
+    "mean_percent": 79.6875,
+    "std_pp": 1.3621559198564606
+  },
+  {
+    "profile": "euclidean_control",
+    "method": "PCA (Gabor)",
+    "mean_percent": 80.52083333333333,
+    "std_pp": 2.1271435267356393
+  },
+  {
+    "profile": "euclidean_control",
+    "method": "CSA-3",
+    "mean_percent": 83.75,
+    "std_pp": 3.1715286140913186
+  },
+  {
+    "profile": "euclidean_control",
+    "method": "PCA+LDA (Gabor)",
+    "mean_percent": 68.85416666666667,
+    "std_pp": 4.964063565601607
+  },
+  {
+    "profile": "euclidean_control",
+    "method": "CSA-3+LDA",
+    "mean_percent": 74.58333333333333,
+    "std_pp": 3.145764348029479
+  },
+  {
+    "profile": "group_primary",
+    "method": "PCA+LDA (Gray)",
+    "mean_percent": 83.02083333333333,
+    "std_pp": 0.3608439182435161
+  },
+  {
+    "profile": "group_primary",
+    "method": "CSA-2+LDA",
+    "mean_percent": 82.39583333333333,
+    "std_pp": 3.621945552232023
+  },
+  {
+    "profile": "group_primary",
+    "method": "PCA (Gabor)",
+    "mean_percent": 83.75,
+    "std_pp": 2.049199538844375
+  },
+  {
+    "profile": "group_primary",
+    "method": "CSA-3",
+    "mean_percent": 85.3125,
+    "std_pp": 1.9515618744994994
+  },
+  {
+    "profile": "group_primary",
+    "method": "PCA+LDA (Gabor)",
+    "mean_percent": 86.35416666666667,
+    "std_pp": 2.8182810955143087
+  },
+  {
+    "profile": "group_primary",
+    "method": "CSA-3+LDA",
+    "mean_percent": 78.85416666666667,
+    "std_pp": 2.835553664336708
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "repeated_probe_records": 3200,
+  "unique_probe_photos": 400,
+  "counts": {
+    "corrected": 224,
+    "new_error": 111,
+    "CSA_only": 158,
+    "PCA_only": 249,
+    "both_correct": 2653,
+    "both_wrong": 140
+  },
+  "extra_fits": 0,
+  "montage_selection": "first2 distinct photos in seed/query order per category; illustrative,not representative sample",
+  "interpretation": "eye/pose/crop explanations require visual inspection; counts do not identify causal factors"
+}

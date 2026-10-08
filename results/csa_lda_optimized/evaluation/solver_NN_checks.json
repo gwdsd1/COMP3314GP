@@ -1,0 +1,1282 @@
+[
+  {
+    "seed": 20,
+    "profile": "regularization_only",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.35,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 20,
+    "profile": "regularization_only",
+    "method": "CSA-2+LDA",
+    "alpha": 0.15,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 20,
+    "profile": "regularization_only",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 20,
+    "profile": "regularization_only",
+    "method": "CSA-3+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 20,
+    "profile": "optimized_ordinary_LDA",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 20,
+    "profile": "optimized_ordinary_LDA",
+    "method": "CSA-2+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 20,
+    "profile": "optimized_ordinary_LDA",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 20,
+    "profile": "optimized_ordinary_LDA",
+    "method": "CSA-3+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 20,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.35,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 20,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 20,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "CSA-2+LDA",
+    "alpha": 0.05,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 20,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "CSA-2+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 20,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 20,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 20,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "CSA-3+LDA",
+    "alpha": 0.01,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 20,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "CSA-3+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 21,
+    "profile": "regularization_only",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.01,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 21,
+    "profile": "regularization_only",
+    "method": "CSA-2+LDA",
+    "alpha": 0.15,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 21,
+    "profile": "regularization_only",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.01,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 21,
+    "profile": "regularization_only",
+    "method": "CSA-3+LDA",
+    "alpha": 0.01,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 21,
+    "profile": "optimized_ordinary_LDA",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 21,
+    "profile": "optimized_ordinary_LDA",
+    "method": "CSA-2+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 21,
+    "profile": "optimized_ordinary_LDA",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 21,
+    "profile": "optimized_ordinary_LDA",
+    "method": "CSA-3+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 21,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.01,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 21,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 21,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "CSA-2+LDA",
+    "alpha": 0.01,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 21,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "CSA-2+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 21,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.01,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 21,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 21,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "CSA-3+LDA",
+    "alpha": 0.01,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 21,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "CSA-3+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 22,
+    "profile": "regularization_only",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.15,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 22,
+    "profile": "regularization_only",
+    "method": "CSA-2+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 22,
+    "profile": "regularization_only",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 22,
+    "profile": "regularization_only",
+    "method": "CSA-3+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 22,
+    "profile": "optimized_ordinary_LDA",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 22,
+    "profile": "optimized_ordinary_LDA",
+    "method": "CSA-2+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 22,
+    "profile": "optimized_ordinary_LDA",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 22,
+    "profile": "optimized_ordinary_LDA",
+    "method": "CSA-3+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 22,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.15,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 22,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 22,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "CSA-2+LDA",
+    "alpha": 0.05,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 22,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "CSA-2+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 22,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 22,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 22,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "CSA-3+LDA",
+    "alpha": 0.15,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 22,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "CSA-3+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 23,
+    "profile": "regularization_only",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 23,
+    "profile": "regularization_only",
+    "method": "CSA-2+LDA",
+    "alpha": 0.01,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 23,
+    "profile": "regularization_only",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.01,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 23,
+    "profile": "regularization_only",
+    "method": "CSA-3+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 23,
+    "profile": "optimized_ordinary_LDA",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 23,
+    "profile": "optimized_ordinary_LDA",
+    "method": "CSA-2+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 23,
+    "profile": "optimized_ordinary_LDA",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 23,
+    "profile": "optimized_ordinary_LDA",
+    "method": "CSA-3+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 23,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 23,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 23,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "CSA-2+LDA",
+    "alpha": 0.35,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 23,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "CSA-2+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 23,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.35,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 23,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 23,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "CSA-3+LDA",
+    "alpha": 0.15,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 23,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "CSA-3+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 24,
+    "profile": "regularization_only",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.05,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 24,
+    "profile": "regularization_only",
+    "method": "CSA-2+LDA",
+    "alpha": 0.35,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 24,
+    "profile": "regularization_only",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 24,
+    "profile": "regularization_only",
+    "method": "CSA-3+LDA",
+    "alpha": 0.15,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 24,
+    "profile": "optimized_ordinary_LDA",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 24,
+    "profile": "optimized_ordinary_LDA",
+    "method": "CSA-2+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 24,
+    "profile": "optimized_ordinary_LDA",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 24,
+    "profile": "optimized_ordinary_LDA",
+    "method": "CSA-3+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 24,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.05,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 24,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 24,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "CSA-2+LDA",
+    "alpha": 0.05,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 24,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "CSA-2+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 24,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.01,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 24,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 24,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "CSA-3+LDA",
+    "alpha": 0.15,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 24,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "CSA-3+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 25,
+    "profile": "regularization_only",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 25,
+    "profile": "regularization_only",
+    "method": "CSA-2+LDA",
+    "alpha": 0.05,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 25,
+    "profile": "regularization_only",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 25,
+    "profile": "regularization_only",
+    "method": "CSA-3+LDA",
+    "alpha": 0.01,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 25,
+    "profile": "optimized_ordinary_LDA",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 25,
+    "profile": "optimized_ordinary_LDA",
+    "method": "CSA-2+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 25,
+    "profile": "optimized_ordinary_LDA",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 25,
+    "profile": "optimized_ordinary_LDA",
+    "method": "CSA-3+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 25,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 25,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 25,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "CSA-2+LDA",
+    "alpha": 0.01,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 25,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "CSA-2+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 25,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 25,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 25,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "CSA-3+LDA",
+    "alpha": 0.15,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 25,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "CSA-3+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 26,
+    "profile": "regularization_only",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 26,
+    "profile": "regularization_only",
+    "method": "CSA-2+LDA",
+    "alpha": 0.05,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 26,
+    "profile": "regularization_only",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 26,
+    "profile": "regularization_only",
+    "method": "CSA-3+LDA",
+    "alpha": 0.35,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 26,
+    "profile": "optimized_ordinary_LDA",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 26,
+    "profile": "optimized_ordinary_LDA",
+    "method": "CSA-2+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 26,
+    "profile": "optimized_ordinary_LDA",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 26,
+    "profile": "optimized_ordinary_LDA",
+    "method": "CSA-3+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 26,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 26,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 26,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "CSA-2+LDA",
+    "alpha": 0.15,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 26,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "CSA-2+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 26,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 26,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 26,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "CSA-3+LDA",
+    "alpha": 0.35,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 26,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "CSA-3+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 27,
+    "profile": "regularization_only",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 27,
+    "profile": "regularization_only",
+    "method": "CSA-2+LDA",
+    "alpha": 0.35,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 27,
+    "profile": "regularization_only",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 27,
+    "profile": "regularization_only",
+    "method": "CSA-3+LDA",
+    "alpha": 0.15,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 27,
+    "profile": "optimized_ordinary_LDA",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 27,
+    "profile": "optimized_ordinary_LDA",
+    "method": "CSA-2+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 27,
+    "profile": "optimized_ordinary_LDA",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 27,
+    "profile": "optimized_ordinary_LDA",
+    "method": "CSA-3+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 27,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 27,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 27,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "CSA-2+LDA",
+    "alpha": 0.35,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 27,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "CSA-2+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 27,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 27,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 27,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "CSA-3+LDA",
+    "alpha": 0.15,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 27,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "CSA-3+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 28,
+    "profile": "regularization_only",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.01,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 28,
+    "profile": "regularization_only",
+    "method": "CSA-2+LDA",
+    "alpha": 0.01,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 28,
+    "profile": "regularization_only",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 28,
+    "profile": "regularization_only",
+    "method": "CSA-3+LDA",
+    "alpha": 0.35,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 28,
+    "profile": "optimized_ordinary_LDA",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 28,
+    "profile": "optimized_ordinary_LDA",
+    "method": "CSA-2+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 28,
+    "profile": "optimized_ordinary_LDA",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 28,
+    "profile": "optimized_ordinary_LDA",
+    "method": "CSA-3+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 28,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.01,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 28,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 28,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "CSA-2+LDA",
+    "alpha": 0.35,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 28,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "CSA-2+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 28,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 28,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 28,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "CSA-3+LDA",
+    "alpha": 0.35,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 28,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "CSA-3+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 29,
+    "profile": "regularization_only",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.01,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 29,
+    "profile": "regularization_only",
+    "method": "CSA-2+LDA",
+    "alpha": 0.15,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 29,
+    "profile": "regularization_only",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 29,
+    "profile": "regularization_only",
+    "method": "CSA-3+LDA",
+    "alpha": 0.05,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 29,
+    "profile": "optimized_ordinary_LDA",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 29,
+    "profile": "optimized_ordinary_LDA",
+    "method": "CSA-2+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 29,
+    "profile": "optimized_ordinary_LDA",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 29,
+    "profile": "optimized_ordinary_LDA",
+    "method": "CSA-3+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 29,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.01,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 29,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "PCA+LDA (Gray)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 29,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "CSA-2+LDA",
+    "alpha": 0.05,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 29,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "CSA-2+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 29,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 29,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "PCA+LDA (Gabor)",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 29,
+    "profile": "optimized_shrinkage_LDA",
+    "method": "CSA-3+LDA",
+    "alpha": 0.05,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  },
+  {
+    "seed": 29,
+    "profile": "shrinkage_ablation_alpha0",
+    "method": "CSA-3+LDA",
+    "alpha": 0.0,
+    "generalized_solver_independently_checked": true,
+    "NN_independently_checked": true
+  }
+]

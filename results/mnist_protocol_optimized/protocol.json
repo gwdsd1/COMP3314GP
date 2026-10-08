@@ -1,0 +1,147 @@
+{
+  "role": "MNIST bounded optimization; shared paper-dimension comparison, not exact author protocol",
+  "seeds": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "pilot_seeds": [
+    20,
+    21,
+    22
+  ],
+  "gallery_counts": [
+    30,
+    40
+  ],
+  "source_subset": "first500 per label from official10000 test images, unchanged",
+  "shape": [
+    28,
+    28,
+    40
+  ],
+  "Tmax": 3,
+  "cases": {
+    "30": {
+      "pca": 60,
+      "csa": [
+        5,
+        9,
+        18
+      ],
+      "paper": {
+        "pca": 88.5,
+        "csa": 92.8
+      }
+    },
+    "40": {
+      "pca": 50,
+      "csa": [
+        15,
+        5,
+        13
+      ],
+      "paper": {
+        "pca": 90.5,
+        "csa": 92.4
+      }
+    }
+  },
+  "inputs": [
+    "adaptive_reflect",
+    "adaptive_zero",
+    "fixed39_reflect",
+    "fixed39_zero"
+  ],
+  "gabor": {
+    "wavelengths": [
+      4.0,
+      5.656854249492381,
+      8.000000000000002,
+      11.313708498984763,
+      16.000000000000004
+    ],
+    "orientations": [
+      0.0,
+      0.39269908169872414,
+      0.7853981633974483,
+      1.1780972450961724,
+      1.5707963267948966,
+      1.9634954084936207,
+      2.356194490192345,
+      2.748893571891069
+    ],
+    "sigma": 6.283185307179586,
+    "truncate_sigma": 3,
+    "finite_kernel_zero_mean": true,
+    "boundary": "reflect",
+    "response": "complex_magnitude",
+    "channel_order": "scale_then_orientation",
+    "feature_normalization": "none",
+    "cache_dtype": "float32",
+    "downsample": "response[::step,::step]"
+  },
+  "adaptive_radii": [
+    12,
+    17,
+    25,
+    34,
+    49
+  ],
+  "fixed_support": "39x39, radius19",
+  "padding": "reflect or constant-zero; identical kernel within each support pair",
+  "response": "complex magnitude; no sqrt/power/L2/channel normalization",
+  "inner": "stratified5fold inside each own gallery; every gallery image validates once; learning24/32 per class",
+  "screen": "four shared inputs, identity uncentered CSA and centered PCA, raw cosine; pooled mean of two methods",
+  "shortlist": "top2 per outer split and gallery count; tie prefers input order; no cross-split shortlist transfer",
+  "selection": "shortlisted inputs x three shared NN policies x identity/HOSVD CSA starts; maximize pooled mean of PCA and CSA; then worst method-fold, then earlier input, identity, policy order",
+  "policies": [
+    "cosine_raw",
+    "cosine_gallery",
+    "euclidean"
+  ],
+  "CSA_center": false,
+  "PCA_center": true,
+  "HOSVD": "object-mode bases from current learning images only; sample axis never compressed",
+  "freeze": "all20 selections and training scores replayed before any current probe scoring",
+  "evaluation_profiles": [
+    "baseline",
+    "input_only",
+    "shared_policy_identity",
+    "selected"
+  ],
+  "controls": "input_only changes only Gabor; shared_policy_identity adds chosen shared NN; selected additionally uses chosen CSA init; all paired within same seed",
+  "limits": [
+    "historical probes observed; continued development, not blind",
+    "overlapping random splits are not independent samples",
+    "finite shortlist may miss interactions",
+    "author sample indices, full Gabor/NN/init/statistical details unknown",
+    "5fold validation gallery24/32 differs from final30/40"
+  ],
+  "TA_compliance": "500/class, G30/P470 and G40/P460,28x28x40,5scales8orientations,NN,Tmax3; shared inputs/distance; no LDA or extra training samples",
+  "original_compliance": "TableIV dimensions retained; core CSA unchanged; unspecified choices are group conventions, not confirmed author settings",
+  "source_sha256": {
+    "optimize_mnist_protocol.py": "5f522f13b229987fda463443e43127df1adcc0d596590f3a18c57294b864a162",
+    "csa.py": "6aabff534f47786c9a5098b2459e3afc55f39ad3d86d99b2bcba220f868b06a3",
+    "gabor.py": "ceb12f2bfbe82e381375e14a1c60d0a0a4795b91544e7bff02c22e93ac61578f"
+  },
+  "input_sha256": {
+    "mnist_balanced.npy": "e9a64d6b0756c2437e3ef1f19ad64d4d92f509839386514e7166cf972f0dcc05",
+    "mnist_labels.npy": "d410de9e41470e47a66b968a6a4f44b5212f6719d6d60b0560dc97925a159cbf",
+    "mnist_source_indices.csv": "28189cda0d76f85276afaa23ef149d01466462185e83441240c2d604b341d148",
+    "mnist_gabor.npy": "606adccd46d4d5fef7cf667fb162ae80f1cb28c2e6fef49ba483533e069927f7"
+  },
+  "old_result_sha256": {
+    "fixed_results.csv": "b9cedaea06ac2a84607a842a38d60d3c54cf38b3f5d1d309be33d31879728e19",
+    "predictions.csv": "b02bfc9c7a4667144a0cda33fb566c479f362ad4d9cff45c80fa5dfc1764ab68",
+    "protocol.json": "b2e0de3e916643e64ecaf0ca4c3c3e7643c173f6eedf290fa05fa95284c37aee",
+    "verification.json": "fd8ec1455759cb340ed563b203a23176431a011b89869fca9287adff699adcd4"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "split_rows": 2000,
+  "prediction_rows": 9600,
+  "score_rows": 40,
+  "validation_evaluations": 37920,
+  "checked": [
+    "class-balanced disjoint split",
+    "held-out test/gallery membership",
+    "prediction accuracy recount",
+    "validation maxima and tie-breaking",
+    "locked comparators",
+    "dimension constraints",
+    "source hashes"
+  ]
+}

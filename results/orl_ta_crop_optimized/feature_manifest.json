@@ -1,0 +1,74 @@
+[
+  {
+    "id": "crop_2pi_zero",
+    "path": "results/orl_protocol_audit/features/yunet_d20_replicate_fixed39_zero.npy",
+    "sha256": "849b1161d752d9b131fbe85724de26df7e13d9e8d38be0f3fded05c95e4b307c",
+    "spec": {
+      "id": "crop_2pi_zero",
+      "wavelength": 4.0,
+      "support": 19,
+      "finite_dc": true,
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "histogram": "PIL",
+      "context": false,
+      "downsample_first": false,
+      "sigma": 6.283185307179586,
+      "boundary": "zero"
+    }
+  },
+  {
+    "id": "crop_2pi_reflect",
+    "path": "results/orl_ta_crop_optimized/features/crop_2pi_reflect.npy",
+    "sha256": "d7c1d1613b1ca6eefae26d604d8b3e624805f4c7051608c6aecb8d903cc93fa6",
+    "spec": {
+      "id": "crop_2pi_reflect",
+      "wavelength": 4.0,
+      "support": 19,
+      "finite_dc": true,
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "histogram": "PIL",
+      "context": false,
+      "downsample_first": false,
+      "sigma": 6.283185307179586,
+      "boundary": "reflect"
+    }
+  },
+  {
+    "id": "crop_pi_zero",
+    "path": "results/orl_ta_crop_optimized/features/crop_pi_zero.npy",
+    "sha256": "680562109fdf03c14a91b440d150c0f59debdcbeed4665e817f9e544fc5642f3",
+    "spec": {
+      "id": "crop_pi_zero",
+      "wavelength": 4.0,
+      "support": 19,
+      "finite_dc": true,
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "histogram": "PIL",
+      "context": false,
+      "downsample_first": false,
+      "sigma": 3.141592653589793,
+      "boundary": "zero"
+    }
+  },
+  {
+    "id": "crop_pi_reflect",
+    "path": "results/orl_ta_crop_optimized/features/crop_pi_reflect.npy",
+    "sha256": "8971f167ea39773543c51e447f0b188ac0141c3c573f19ee500406129e64633c",
+    "spec": {
+      "id": "crop_pi_reflect",
+      "wavelength": 4.0,
+      "support": 19,
+      "finite_dc": true,
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "histogram": "PIL",
+      "context": false,
+      "downsample_first": false,
+      "sigma": 3.141592653589793,
+      "boundary": "reflect"
+    }
+  }
+]

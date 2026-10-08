@@ -1,0 +1,22 @@
+{
+  "scope": "paired diagnostic, not independently selected new main result; previous probes already observed",
+  "seeds": [
+    20,
+    21,
+    22
+  ],
+  "split": "2 training/gallery +8 probe per person, unchanged",
+  "known_difference": "paper ORL paragraph states resize/equalization; instructor additionally requires eye alignment",
+  "features": "same five-scale/eight-orientation Gabor; fixed base4 linear magnitude; no L2 or sqrt",
+  "initialization": "main identity truncated; independent reference includes train-only mode-covariance HOSVD orthogonal bases",
+  "source_sha256": {
+    "diagnose_orl_pipeline.py": "1daeaf00b18e3c3f8c8dc0462b816ffed512e830b6b9f15b87456a91c1105b08",
+    "csa.py": "29226eaae53c3c5b9d5e752d55a8d675e0a40b2d8eefac186f06682ad02ea64c",
+    "gabor.py": "ceb12f2bfbe82e381375e14a1c60d0a0a4795b91544e7bff02c22e93ac61578f",
+    "prepare_available_data.py": "0f5d07532716155b41c7264fc55cfcb749678d9ce1c77a1ad479d8f43e65f6e0",
+    "run_available_reproduction.py": "135ab16b4e47f840ad0e711c9bb1cb72166e1a3f871e46ae4d25726ae6928a71"
+  },
+  "eye_sha256": "e0a9dafcd320717637c29a468e4343406244d976b98e195df45b6ca6e7dc2bcb",
+  "support_fraction_mean": 0.9848394064605236,
+  "support_fraction_min": 0.6676533222198486
+}

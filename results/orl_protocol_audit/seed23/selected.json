@@ -1,0 +1,98 @@
+{
+  "seed": 23,
+  "selection": {
+    "candidate": "yunet_d22_zero_adaptive_zero",
+    "policy": "unit_columns_cosine_centered",
+    "sum_correct": 348,
+    "mean_percent": 72.5
+  },
+  "shared_input": {
+    "id": "yunet_d22_zero_adaptive_zero",
+    "geometry": "yunet_d22_zero",
+    "eyes": "yunet",
+    "target": [
+      [
+        12.0,
+        22.0
+      ],
+      [
+        34.0,
+        22.0
+      ]
+    ],
+    "warp_padding": "zero",
+    "kernel": "adaptive_zero",
+    "gray_path": "results/orl_protocol_audit/features/yunet_d22_zero_gray.npy",
+    "gabor_path": "results/orl_protocol_audit/features/yunet_d22_zero_adaptive_zero.npy",
+    "gray_sha256": "2ee59af911714d6e6fb6fa0f7893860858e2f8c008de607baefec27ada7488b7",
+    "gabor_sha256": "5b76cf57f74fed6d5099f1b7b6b895e7ffbcebc63306af4a3d05aba03e8f6085"
+  },
+  "shared_policy": {
+    "scaling": "unit_columns",
+    "metric": "cosine",
+    "lda_center": true
+  },
+  "methods": [
+    {
+      "candidate": "yunet_d22_zero_adaptive_zero",
+      "policy": "unit_columns_cosine_centered",
+      "case_index": 0,
+      "method": "PCA+LDA (Gray)",
+      "dimension": 27,
+      "correct": 56,
+      "validation_count": 80,
+      "accuracy_percent": 70.0
+    },
+    {
+      "candidate": "yunet_d22_zero_adaptive_zero",
+      "policy": "unit_columns_cosine_centered",
+      "case_index": 1,
+      "method": "CSA-2+LDA",
+      "dimension": 16,
+      "correct": 57,
+      "validation_count": 80,
+      "accuracy_percent": 71.25
+    },
+    {
+      "candidate": "yunet_d22_zero_adaptive_zero",
+      "policy": "unit_columns_cosine_centered",
+      "case_index": 3,
+      "method": "PCA (Gabor)",
+      "dimension": 48,
+      "correct": 57,
+      "validation_count": 80,
+      "accuracy_percent": 71.25
+    },
+    {
+      "candidate": "yunet_d22_zero_adaptive_zero",
+      "policy": "unit_columns_cosine_centered",
+      "case_index": 4,
+      "method": "CSA-3",
+      "dimension": 390,
+      "correct": 56,
+      "validation_count": 80,
+      "accuracy_percent": 70.0
+    },
+    {
+      "candidate": "yunet_d22_zero_adaptive_zero",
+      "policy": "unit_columns_cosine_centered",
+      "case_index": 6,
+      "method": "PCA+LDA (Gabor)",
+      "dimension": 16,
+      "correct": 65,
+      "validation_count": 80,
+      "accuracy_percent": 81.25
+    },
+    {
+      "candidate": "yunet_d22_zero_adaptive_zero",
+      "policy": "unit_columns_cosine_centered",
+      "case_index": 7,
+      "method": "CSA-3+LDA",
+      "dimension": 19,
+      "correct": 57,
+      "validation_count": 80,
+      "accuracy_percent": 71.25
+    }
+  ],
+  "selected_before_outer_prediction": true
+}

@@ -1,0 +1,96 @@
+{
+  "seed": 20,
+  "mode": "joint",
+  "profiles": [
+    {
+      "entry_id": "yunet_d20_replicate_fixed39_zero",
+      "normalization": "none",
+      "policy": "unit_columns_cosine_centered",
+      "methods": [
+        {
+          "method": "PCA+LDA (Gray)",
+          "case_index": 0,
+          "alpha": 0.0,
+          "dimension": 22,
+          "correct": 55
+        },
+        {
+          "method": "CSA-2+LDA",
+          "case_index": 4,
+          "alpha": 0.0,
+          "dimension": 21,
+          "correct": 48
+        },
+        {
+          "method": "PCA+LDA (Gabor)",
+          "case_index": 2,
+          "alpha": 0.0,
+          "dimension": 21,
+          "correct": 71
+        },
+        {
+          "method": "CSA-3+LDA",
+          "case_index": 7,
+          "alpha": 0.0,
+          "dimension": 28,
+          "correct": 59
+        }
+      ],
+      "CSA_sum_correct": 107,
+      "profile": "optimized_ordinary_LDA",
+      "score_file": "seed20/joint/cv_yunet_d20_replicate_fixed39_zero_none.npz",
+      "score_sha256": "8db1655782401fbcf0db8ea86741b0a37fc2eca397a75b234680b5d0957f621a"
+    },
+    {
+      "entry_id": "yunet_d20_replicate_fixed39_zero",
+      "normalization": "none",
+      "policy": "unit_columns_cosine_centered",
+      "methods": [
+        {
+          "method": "PCA+LDA (Gray)",
+          "case_index": 0,
+          "alpha": 0.35,
+          "dimension": 22,
+          "correct": 58
+        },
+        {
+          "method": "CSA-2+LDA",
+          "case_index": 4,
+          "alpha": 0.05,
+          "dimension": 23,
+          "correct": 54
+        },
+        {
+          "method": "PCA+LDA (Gabor)",
+          "case_index": 2,
+          "alpha": 0.0,
+          "dimension": 21,
+          "correct": 71
+        },
+        {
+          "method": "CSA-3+LDA",
+          "case_index": 7,
+          "alpha": 0.01,
+          "dimension": 28,
+          "correct": 64
+        }
+      ],
+      "CSA_sum_correct": 118,
+      "profile": "optimized_shrinkage_LDA",
+      "score_file": "seed20/joint/cv_yunet_d20_replicate_fixed39_zero_none.npz",
+      "score_sha256": "8db1655782401fbcf0db8ea86741b0a37fc2eca397a75b234680b5d0957f621a"
+    }
+  ],
+  "training_only": true,
+  "selected_before_own_outer_scoring": true,
+  "source_snapshot_sha256": {
+    "optimize_csa_lda.py": "1c728ca2f181561fe6ee20f5e893b8c1220013890219ba218139470eb4586992",
+    "csa.py": "29226eaae53c3c5b9d5e752d55a8d675e0a40b2d8eefac186f06682ad02ea64c",
+    "gabor.py": "ceb12f2bfbe82e381375e14a1c60d0a0a4795b91544e7bff02c22e93ac61578f",
+    "audit_orl_protocol.py": "d80bc8fc89f327dc0aac0abaeec326d07a3f7f181da427e50f02b98687cd9247",
+    "diagnose_csa_lda.py": "af1e7a68429b17e3bc9402032587328b14b33f3f8e9aae447e762d63b159dc7d",
+    "diagnose_orl_gabor.py": "3b59a9f9fc8d5bea84fe22176b8ef6fb7f4f7d972905e895ce4ef4a88c4410f9",
+    "run_shared_protocol.py": "eae57198a016ae94ab43ffd3e91888c4ae917bcee8873701ef094bed38d2749b",
+    "run_available_reproduction.py": "135ab16b4e47f840ad0e711c9bb1cb72166e1a3f871e46ae4d25726ae6928a71"
+  }
+}

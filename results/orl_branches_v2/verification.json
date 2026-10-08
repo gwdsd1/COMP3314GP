@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "counts": {
+    "fixed_results": 90,
+    "predictions": 28800,
+    "split_rows": 6000,
+    "summary_groups": 30,
+    "histories": 45,
+    "curves": 2829
+  },
+  "checks": [
+    "snapshots, revised eye annotations, grayscale arrays and Gabor cache hashes",
+    "train-only median target replay and exact two-eye mapping",
+    "same 2/8 split, all predictions, fixed paper dimensions, mean and sample SD",
+    "all six old teacher baseline means exactly preserved",
+    "three-iteration monotone CSA"
+  ],
+  "limits": "not a fresh blind test; revised median geometry may perform worse; no test-selected main protocol"
+}

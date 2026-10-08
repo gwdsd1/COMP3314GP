@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "selected_rows": 8,
+  "photo_panels": 24,
+  "max_eye_target_mapping_abs_error": 3.552713678800501e-15,
+  "selection": "same deterministic examples as raw montage; not representative",
+  "limits": "affine target correctness does not establish automatic eye localization accuracy; no manual eye ground truth",
+  "figure": "historical_aligned_error_montage.png",
+  "extra_fits": 0
+}

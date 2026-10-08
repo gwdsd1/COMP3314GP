@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "scores": 300,
+  "predictions": 96000,
+  "independent_NN": true,
+  "all_splits_preserved": true,
+  "plan_sha256": "02dd33649357b68e60c735a230a60dc8d5982940c3adb95f6cdd65626d2e8a58"
+}

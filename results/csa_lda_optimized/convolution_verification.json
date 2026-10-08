@@ -1,0 +1,27 @@
+[
+  {
+    "variant": "adaptive_reflect",
+    "max_abs_error": 3.019640414381186e-07,
+    "channels_checked": 40
+  },
+  {
+    "variant": "fixed39_reflect",
+    "max_abs_error": 2.1789579063291598e-07,
+    "channels_checked": 40
+  },
+  {
+    "variant": "mean2_zero",
+    "max_abs_error": 1.300997910513857e-07,
+    "channels_checked": 40
+  },
+  {
+    "variant": "sigma_pi_zero",
+    "max_abs_error": 2.804275003320811e-07,
+    "channels_checked": 40
+  },
+  {
+    "variant": "wavelength2_zero",
+    "max_abs_error": 2.741210951562323e-07,
+    "channels_checked": 40
+  }
+]

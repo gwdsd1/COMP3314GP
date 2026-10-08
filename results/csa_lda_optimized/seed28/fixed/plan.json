@@ -1,0 +1,26 @@
+{
+  "candidates": [
+    {
+      "entry_id": "yunet_d16_replicate_adaptive_zero",
+      "normalization": "none"
+    }
+  ],
+  "cases": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "policies": [
+    "unit_columns_cosine_linear"
+  ],
+  "alpha_grid": [
+    0.0,
+    0.01,
+    0.05,
+    0.15,
+    0.35,
+    0.65,
+    1.0
+  ]
+}

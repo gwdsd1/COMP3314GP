@@ -1,0 +1,26 @@
+[
+  {
+    "entry_id": "yunet_d16_replicate_sigma_pi_zero",
+    "samples": [
+      0,
+      197
+    ],
+    "max_abs_error": 0.0
+  },
+  {
+    "entry_id": "yunet_d16_replicate_fixed39_reflect",
+    "samples": [
+      0,
+      197
+    ],
+    "max_abs_error": 0.0
+  },
+  {
+    "entry_id": "yunet_d18_replicate_sigma_pi_zero",
+    "samples": [
+      0,
+      197
+    ],
+    "max_abs_error": 0.0
+  }
+]

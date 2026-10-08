@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "configurations": 6,
+  "predictions": 1920,
+  "checks": [
+    "ten actual sweeps and monotone SSE",
+    "third-sweep SSE matches prior run",
+    "all predictions and summary accuracy reread"
+  ],
+  "limits": "development diagnostic; not independent blind evaluation"
+}

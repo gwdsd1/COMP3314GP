@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "fixed_results": 36,
+  "predictions": 11520,
+  "same_splits_as_aligned": true,
+  "checks": [
+    "raw ORL digest",
+    "gallery and probe labels",
+    "prediction and correct counts",
+    "mean and sample SD"
+  ]
+}

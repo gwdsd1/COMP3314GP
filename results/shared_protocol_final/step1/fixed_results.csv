@@ -1,0 +1,19 @@
+variant,seed,method,dataset,pre_dims,lda_dim,center,metric,lda_scaling,correct,probe_count,accuracy_percent,paper_percent,embedding,input_sha256,wall_seconds
+shared_baseline,20,PCA+LDA (Gray),ORL,30,18,True,cosine,unit_columns,240,320,75.0,82.2,embeddings/shared_baseline_20_0.npz,14f4c6054d91901a5efd70591d28e080eac90acaa4cd565b8bc9d549f5031b27,0.03142139999999927
+shared_baseline,20,CSA-2+LDA,ORL,"(11, 2)",16,False,cosine,unit_columns,223,320,69.6875,84.1,embeddings/shared_baseline_20_1.npz,14f4c6054d91901a5efd70591d28e080eac90acaa4cd565b8bc9d549f5031b27,0.03502000000025873
+shared_baseline,20,PCA (Gabor),ORL,76,,True,cosine,unit_columns,251,320,78.4375,86.6,embeddings/shared_baseline_20_2.npz,90845a5424b37ed7d7aef5f2353806c89302c3e19a6905972580a3ce57113ca8,0.12539860000015324
+shared_baseline,20,CSA-3,ORL,"(15, 1, 26)",,False,cosine,unit_columns,261,320,81.5625,94.4,embeddings/shared_baseline_20_3.npz,90845a5424b37ed7d7aef5f2353806c89302c3e19a6905972580a3ce57113ca8,0.5278963000000658
+shared_baseline,20,PCA+LDA (Gabor),ORL,33,25,True,cosine,unit_columns,261,320,81.5625,87.2,embeddings/shared_baseline_20_4.npz,90845a5424b37ed7d7aef5f2353806c89302c3e19a6905972580a3ce57113ca8,0.07409469999993235
+shared_baseline,20,CSA-3+LDA,ORL,"(4, 2, 3)",23,False,cosine,unit_columns,218,320,68.125,90.9,embeddings/shared_baseline_20_5.npz,90845a5424b37ed7d7aef5f2353806c89302c3e19a6905972580a3ce57113ca8,0.3504914000000099
+shared_baseline,21,PCA+LDA (Gray),ORL,30,18,True,cosine,unit_columns,228,320,71.25,82.2,embeddings/shared_baseline_21_0.npz,14f4c6054d91901a5efd70591d28e080eac90acaa4cd565b8bc9d549f5031b27,0.011256199999934324
+shared_baseline,21,CSA-2+LDA,ORL,"(11, 2)",16,False,cosine,unit_columns,206,320,64.375,84.1,embeddings/shared_baseline_21_1.npz,14f4c6054d91901a5efd70591d28e080eac90acaa4cd565b8bc9d549f5031b27,0.026778600000398
+shared_baseline,21,PCA (Gabor),ORL,76,,True,cosine,unit_columns,246,320,76.875,86.6,embeddings/shared_baseline_21_2.npz,90845a5424b37ed7d7aef5f2353806c89302c3e19a6905972580a3ce57113ca8,0.07555460000003222
+shared_baseline,21,CSA-3,ORL,"(15, 1, 26)",,False,cosine,unit_columns,245,320,76.5625,94.4,embeddings/shared_baseline_21_3.npz,90845a5424b37ed7d7aef5f2353806c89302c3e19a6905972580a3ce57113ca8,0.5068175999999767
+shared_baseline,21,PCA+LDA (Gabor),ORL,33,25,True,cosine,unit_columns,248,320,77.5,87.2,embeddings/shared_baseline_21_4.npz,90845a5424b37ed7d7aef5f2353806c89302c3e19a6905972580a3ce57113ca8,0.09221369999977469
+shared_baseline,21,CSA-3+LDA,ORL,"(4, 2, 3)",23,False,cosine,unit_columns,202,320,63.125,90.9,embeddings/shared_baseline_21_5.npz,90845a5424b37ed7d7aef5f2353806c89302c3e19a6905972580a3ce57113ca8,0.3331359999997403
+shared_baseline,22,PCA+LDA (Gray),ORL,30,18,True,cosine,unit_columns,228,320,71.25,82.2,embeddings/shared_baseline_22_0.npz,14f4c6054d91901a5efd70591d28e080eac90acaa4cd565b8bc9d549f5031b27,0.015639400000054593
+shared_baseline,22,CSA-2+LDA,ORL,"(11, 2)",16,False,cosine,unit_columns,223,320,69.6875,84.1,embeddings/shared_baseline_22_1.npz,14f4c6054d91901a5efd70591d28e080eac90acaa4cd565b8bc9d549f5031b27,0.02531539999972665
+shared_baseline,22,PCA (Gabor),ORL,76,,True,cosine,unit_columns,254,320,79.375,86.6,embeddings/shared_baseline_22_2.npz,90845a5424b37ed7d7aef5f2353806c89302c3e19a6905972580a3ce57113ca8,0.09122900000011214
+shared_baseline,22,CSA-3,ORL,"(15, 1, 26)",,False,cosine,unit_columns,239,320,74.6875,94.4,embeddings/shared_baseline_22_3.npz,90845a5424b37ed7d7aef5f2353806c89302c3e19a6905972580a3ce57113ca8,0.5047913000003064
+shared_baseline,22,PCA+LDA (Gabor),ORL,33,25,True,cosine,unit_columns,257,320,80.3125,87.2,embeddings/shared_baseline_22_4.npz,90845a5424b37ed7d7aef5f2353806c89302c3e19a6905972580a3ce57113ca8,0.07726329999968584
+shared_baseline,22,CSA-3+LDA,ORL,"(4, 2, 3)",23,False,cosine,unit_columns,213,320,66.5625,90.9,embeddings/shared_baseline_22_5.npz,90845a5424b37ed7d7aef5f2353806c89302c3e19a6905972580a3ce57113ca8,0.2959860999999364

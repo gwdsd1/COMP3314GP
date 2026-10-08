@@ -1,0 +1,135 @@
+{
+  "time_taipei": "2026-10-05T16:06:01.656601+08:00",
+  "scope": "ORL gray optimization, not full/exact paper reproduction",
+  "split_per_class": {
+    "train_gallery": 2,
+    "validation": 2,
+    "test": 6
+  },
+  "seeds": [
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "training_images": 80,
+  "validation_images": 80,
+  "test_images": 240,
+  "profiles": [
+    [
+      "bilinear",
+      "pillow"
+    ],
+    [
+      "bilinear",
+      "cdf_min256"
+    ],
+    [
+      "lanczos",
+      "pillow"
+    ],
+    [
+      "lanczos",
+      "cdf_min256"
+    ]
+  ],
+  "centering": [
+    true,
+    false
+  ],
+  "pca_pre_dims": [
+    30,
+    20,
+    40
+  ],
+  "csa_pre_dims": [
+    [
+      11,
+      2
+    ],
+    [
+      8,
+      3
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      6,
+      6
+    ],
+    [
+      10,
+      4
+    ]
+  ],
+  "csa_init": [
+    "identity",
+    "random"
+  ],
+  "random_initialization_seed": 2026,
+  "csa_max_iter": [
+    3,
+    10
+  ],
+  "epsilon": 0.001,
+  "lda_dim_grid": "paper anchor first, then 8,12,16,18,24,30,39 and available maximum; invalid dims removed",
+  "distance_configurations": [
+    [
+      "unit_columns",
+      "cosine",
+      "train_mean"
+    ],
+    [
+      "unit_columns",
+      "cosine",
+      "zero"
+    ],
+    [
+      "unit_columns",
+      "euclidean",
+      "train_mean"
+    ],
+    [
+      "sw_identity",
+      "cosine",
+      "train_mean"
+    ],
+    [
+      "sw_identity",
+      "cosine",
+      "zero"
+    ],
+    [
+      "sw_identity",
+      "euclidean",
+      "train_mean"
+    ]
+  ],
+  "selection": "highest validation correct count; ties retain first in declared iteration order",
+  "test_used_for_selection": false,
+  "comparators": {
+    "original_default": "bilinear_pillow, center=False, paper dimensions, identity/3 CSA, Sw-normalized LDA + Euclidean, train-mean origin",
+    "plausible_fixed": "bilinear_pillow, center=True, paper dimensions, identity/3 CSA, unit-column LDA + cosine, train-mean origin; hypothetical, not confirmed original",
+    "protocol_selected": "validation selects unknown preprocessing/centering/init/scaling/metric/origin; paper pre/LDA dims and Tmax=3 fixed",
+    "grid_selected": "validation selects protocol and bounded pre/LDA dimensions plus Tmax"
+  },
+  "limitations": "Same 400 images have been explored previously. Test is held out within each new split, not a new untouched dataset; repeated splits overlap. Test results do not influence this frozen grid.",
+  "raw_data_sha256": "60da43f93507e4e90b97129bd4e72266e02dc041ab563df8969ab7def9a2b286",
+  "profile_sha256": {
+    "bilinear_pillow": "f980d6deba63cb74051167f0976cb517b5a7622ca487be97be07962440afc6ad",
+    "bilinear_cdf_min256": "3c30481c5ed6823d2906002623546bb68cb3ab51f3d85f650c32bdf9267877a1",
+    "lanczos_pillow": "6d7b31e083f8043e9c991e59aa55b25a1750f964ff4364a54bd006e6e953c3a1",
+    "lanczos_cdf_min256": "8ccf71795a14d6ea2b926c57ca755a4e8724242eed81987fcea4c63f6ee49535"
+  },
+  "code_sha256": {
+    "csa.py": "49495c2aad54510225ff739bc821dc79a0a0cb2aab64dbbf06bef916290c910c",
+    "improve_orl_gray.py": "a5ff72da9178ea192a2627cdc4319d30ca41c6e2ccdadaa18c40be1d0bbc78e6"
+  }
+}
