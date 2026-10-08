@@ -1,6 +1,6 @@
 # Concurrent Subspaces Analysis: Reproduction and Critical Analysis
 
-HKU COMP3314 group project. We independently implement Concurrent Subspaces Analysis (CSA), compare it with PCA and Fisher LDA, and investigate the limits of reproducing a historical tensor representation method.
+HKU COMP3314 group project from Group 22. We independently implement Concurrent Subspaces Analysis (CSA), compare it with PCA and Fisher LDA, and investigate the limits of reproducing a historical tensor representation method.
 
 **Scope: partial reproduction on ORL, MNIST, and original grayscale FERET.** The original CMU PIE experiments are omitted with the instructor's permission because we could not obtain the dataset. We do not claim to recover every numerical result or every unspecified setting of the paper.
 
