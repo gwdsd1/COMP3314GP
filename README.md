@@ -15,9 +15,9 @@ CSA preserves an object's row, column, and channel modes instead of flattening i
 | File | Purpose |
 |---|---|
 | [TEAM_BRIEF.md](docs/TEAM_BRIEF.md) | English teammate guide: paper study, implementation, all experiment families, comparisons, critical analysis, and report/presentation preparation |
-| [DETAIL.md](DETAIL.md) | Previous detailed README, retained in Chinese |
-| [REPORT.md](docs/REPORT.md) | Detailed experiment evidence, protocols, discrepancies, and commands; retained in Chinese |
-| [HANDOFF.md](docs/HANDOFF.md) | Project provenance, instructor/TA correspondence, current status, and decisions; retained in Chinese |
+| [DETAIL.md](DETAIL.md) | Previous detailed README, now translated into English |
+| [REPORT.md](docs/REPORT.md) | Detailed experiment evidence, protocols, discrepancies, and commands; now in English |
+| [HANDOFF.md](docs/HANDOFF.md) | Project provenance, instructor/TA correspondence, current status, and decisions; now in English |
 | [Publication manifest](docs/publication_manifest.json) | Language exceptions, immutable source hashes, translation checks, and exclusion rules |
 | [HISTORY.md](docs/HISTORY.md) | English historical archive; statements describe the status at their original dates |
 | [FERET/README.md](FERET/README.md) | Authorized data acquisition, official pairing, eye-coordinate conventions, and redistribution exclusions |
@@ -77,6 +77,8 @@ These commands download only the public ORL/MNIST inputs. Verify the table's che
 
 For FERET, obtain NIST authorization first, then run `python FERET/download_subset.py candidates`. The downloader prompts for credentials, reconstructs the permitted grayscale subset and official Fa/Fb pairing metadata, and checks byte ranges, archive version, and local hashes. Run `python prepare_feret.py` afterward. The downloader is tied to the recorded archive size/ETag and intentionally stops if the server archive changes; do not bypass that check. All downloaded files stay excluded from Git.
 
+For the report-ready coverage, missing experiments, complete shared comparison, and extension categories, read [TEAM_BRIEF§0](docs/TEAM_BRIEF.md#reproduction-status). The latest [ORL recovery study](docs/REPORT.md#orl-recovery-20261027) preserves all historical result categories.
+
 ## Reproduction results
 
 These are **preserved shared-setting, paper-dimension reference results**, not a collection of the highest scores. Accuracy is in percent; ± denotes sample standard deviation across the stated splits. Paper values are best-configuration results with incompletely specified repetition/selection details, so the numerical differences are descriptive rather than proof of identical protocols or statistical significance.
@@ -106,6 +108,7 @@ Source: [shared comparison CSV](results/orl_protocol_audit/shared_comparison.csv
 
 | Study | Main result | Interpretation |
 |---|---|---|
+| ORL new bounded recovery,10 observed splits | CSA24→23 best candidate mean88.81±2.97; rank-conformingHOSVD88.75±2.89; pool single max93.125 | Context/initialization variants and probe-ranked exploration; mean remains below90.9 |
 | ORL crop-only, gallery-selected unknown settings, 10 splits | CSA24→23: 81.25→81.41±2.41 | Only +0.16pp; does not recover 90.9% |
 | ORL context/input selection extension, 10 splits | CSA24→23: 87.84±3.28 | Context and optional magnitude powers are extensions; not the original shared reference |
 | ORL fixed σ×context, 20 predeclared splits | CSA24→23: 80.13±3.49 for 2π crop; 87.08±2.30 for π context | Paired +6.95pp; equal-output-budget PCA24→23 is still higher at 91.08±1.48 |
@@ -163,7 +166,7 @@ Initial strict free-trajectory verification and the first scoring-reader failure
 
 Our group implements CSA, PCA, ordinary/shrinkage LDA, complex Gabor filtering, DATER, preprocessing, experiment selection, independent checks, and analysis scripts. The teaching team could not provide the original CSA code or hyperparameter records. This is an independent implementation, not the authors' official repository.
 
-Scientific/image libraries, BLAS/LAPACK, the YuNet/Haar detectors, and pretrained detection assets are reused components rather than group-created algorithms. Consult [the YuNet license](data/preprocessing_models/YuNet_LICENSE), dependency licenses, and the data-provider terms. The repository does not grant redistribution rights over FERET or third-party papers. Retained source snapshots and hash-bound experiment files remain in their original language to preserve provenance; the current English guides explain them. Chinese `DETAIL`, `REPORT`, and `HANDOFF` are intentionally retained.
+Scientific/image libraries, BLAS/LAPACK, the YuNet/Haar detectors, and pretrained detection assets are reused components rather than group-created algorithms. Consult [the YuNet license](data/preprocessing_models/YuNet_LICENSE), dependency licenses, and the data-provider terms. The repository does not grant redistribution rights over FERET or third-party papers. Retained source snapshots and hash-bound experiment files remain in their original language to preserve provenance; the current English guides explain them. All seven public Markdown documents are English following the2026-10-27 update; hash-bound source/protocol evidence retains its original language.
 
 References: [CSA, Xu et al. 2008](https://doi.org/10.1109/TCSVT.2007.903317); [Gabor representation background, Wiskott et al. 1997](https://cenl.ucsd.edu/pubs/ieee-1997.pdf); [DATER, Yan et al. CVPR 2005](https://mmlab.ie.cuhk.edu.hk/archive/2005/01467312.pdf). Our TT-plus-equalization and manual covariance-shrinkage experiments are disclosed as extensions; the shrinkage grid is not an automatic Ledoit–Wolf estimator.
 

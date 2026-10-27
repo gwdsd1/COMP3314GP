@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "input": "d20_y24",
+      "image_index": 0,
+      "max_abs": 4.137580688734488e-05
+    },
+    {
+      "input": "d20_y24",
+      "image_index": 197,
+      "max_abs": 4.464704488782445e-05
+    },
+    {
+      "input": "d18_y25",
+      "image_index": 0,
+      "max_abs": 4.3928934562842414e-05
+    },
+    {
+      "input": "d18_y25",
+      "image_index": 197,
+      "max_abs": 4.3495072617361075e-05
+    },
+    {
+      "input": "d22_y22",
+      "image_index": 0,
+      "max_abs": 4.499087671661073e-05
+    },
+    {
+      "input": "d22_y22",
+      "image_index": 197,
+      "max_abs": 4.896678476029592e-05
+    }
+  ],
+  "baseline_feature_hash_matches": true
+}

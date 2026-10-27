@@ -16,11 +16,7 @@
     "Installed dependencies and temporary files"
   ],
   "retained_evidence": "Result CSV/JSON tables, split indices, mathematical histories, verification reports, frozen source snapshots, and chart-only figures; not a dataset distribution.",
-  "language_exceptions": [
-    "DETAIL.md",
-    "docs/REPORT.md",
-    "docs/HANDOFF.md"
-  ],
+  "language_exceptions": [],
   "immutable_evidence": "Hash-bound live sources and frozen experiment files retain original bytes and may contain Chinese. Git text normalization is disabled to preserve bytes across checkout.",
   "protected_live_source": [
     {
@@ -158,9 +154,12 @@
   ],
   "translation": {
     "documents": [
-      "docs/TEAM_BRIEF.md",
+      "DETAIL.md",
+      "FERET/README.md",
+      "docs/HANDOFF.md",
       "docs/HISTORY.md",
-      "FERET/README.md"
+      "docs/REPORT.md",
+      "docs/TEAM_BRIEF.md"
     ],
     "method": "English README authored for submission; other editable guides translated with terminology and literal protection, followed by numeric/structure/link validation.",
     "review": "Translated documents retain all original table rows, numeric results, link targets and mathematical fragments; manual terminology/layout corrections and publication notes added.",
@@ -221,7 +220,13 @@
         "after_sha256": "39fdd697d4b546913e191939219a6734a3843192f9e4dd6f1e6b46d352d0859c",
         "executable_ast_unchanged": true
       }
-    ]
+    ],
+    "oct27_original_sha256": {
+      "DETAIL.md": "2c493b6ef92a881c9256f72adbc48440128baf5111fedf58b844853aad07b97f",
+      "docs/REPORT.md": "60973d1153246f29a90727daf3cbc41d8e18a759223640bb9c98afcecae647c7",
+      "docs/HANDOFF.md": "6fa0a154e36b2856615b4eacff4dd496084caf2b869e8a334662f281f03597f4"
+    },
+    "oct27_review": "Original table row/column structure, decimal values, inline math and link targets checked. Stable English correspondence anchor replaces a Chinese automatic-heading fragment; current publication/recovery notes added."
   },
   "checks": {
     "protected_live_sources_unchanged": 33,
@@ -231,5 +236,8 @@
     "readme_local_links": "All targets exist and are publishable.",
     "historical_links": "Some dataset/cache/private-letter links intentionally remain local; notices explain their exclusion."
   },
-  "reconstruction_limits": "Data acquisition/preprocessing code is supplied. Later drivers reuse fixed historical paths and hashes; omitted caches must be rebuilt and some manually annotated inputs cannot be promised byte-identical from automatic detection. Recorded scores are evidence, not new rerun results."
+  "reconstruction_limits": "Data acquisition/preprocessing code is supplied. Later drivers reuse fixed historical paths and hashes; omitted caches must be rebuilt and some manually annotated inputs cannot be promised byte-identical from automatic detection. Recorded scores are evidence, not new rerun results.",
+  "updated": "2026-10-27",
+  "documentation_language": "All seven tracked Markdown documents are English; original Chinese versions remain recoverable from Git history. Frozen source/protocol evidence is unchanged.",
+  "new_experiments": "results/orl_recovery_20261027: bounded, frozen90 CSA/30 PCA fits,1440 scores,460800 repeated predictions. Old experiment evidence unchanged."
 }

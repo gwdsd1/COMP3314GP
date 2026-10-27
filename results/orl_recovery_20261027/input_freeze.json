@@ -1,0 +1,7 @@
+{
+  "protocol.json": "7904590b25c429e9811fee1920e43c2dfe50ca0c4d0d34a21db4b4552ddbe601",
+  "splits.json": "d6849062ccbb3e2d9b69f1eb7ec62e314cc5a6c28be9c124a04604769101226c",
+  "features/d18_y25.npy": "87c3f20d044ff327a47b9ffa4054ec1c03564068a965d3331a63f08c9538de6a",
+  "features/d20_y24.npy": "0087bc61689b667a40ffdea411804ba6cbab6c1720d6278a63cc65b5092c8b72",
+  "features/d22_y22.npy": "fce28969aef35072e6ce448ce739c69eed64e7a3eed93b07a02ccaf077f0fed2"
+}

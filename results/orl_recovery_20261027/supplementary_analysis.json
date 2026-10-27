@@ -1,0 +1,94 @@
+{
+  "source_sha256": "914f3e7d02b6918d092b4c903be0bfcdc7c297af9a66a821b48c29733265285c",
+  "gallery_SSE_selected_initialization": [
+    {
+      "input": "d20_y24",
+      "mean_percent": 88.8125,
+      "std_pp": 2.908470627131876,
+      "min_percent": 84.0625,
+      "max_percent": 92.1875
+    },
+    {
+      "input": "d18_y25",
+      "mean_percent": 88.59375,
+      "std_pp": 2.225610481168906,
+      "min_percent": 85.3125,
+      "max_percent": 93.125
+    },
+    {
+      "input": "d22_y22",
+      "mean_percent": 88.3125,
+      "std_pp": 1.8411292579404752,
+      "min_percent": 85.0,
+      "max_percent": 90.9375
+    }
+  ],
+  "full_minus_rectangular_same_input": {
+    "mean_change_pp": 0.09375,
+    "wins": 3,
+    "ties": 7,
+    "losses": 0
+  },
+  "single_maximum_candidates": [
+    {
+      "input": "d18_y25",
+      "seed": "22",
+      "start": "rectangular_identity",
+      "policy": "unit_gallery_cosine_g0",
+      "gamma": "0.0",
+      "correct": "298",
+      "probe_count": "320",
+      "accuracy_percent": "93.125"
+    },
+    {
+      "input": "d18_y25",
+      "seed": "22",
+      "start": "full_identity",
+      "policy": "unit_gallery_cosine_g0",
+      "gamma": "0.0",
+      "correct": "298",
+      "probe_count": "320",
+      "accuracy_percent": "93.125"
+    },
+    {
+      "input": "d18_y25",
+      "seed": "22",
+      "start": "hosvd",
+      "policy": "unit_gallery_cosine_g0",
+      "gamma": "0.0",
+      "correct": "298",
+      "probe_count": "320",
+      "accuracy_percent": "93.125"
+    }
+  ],
+  "best_rank_conforming_start": {
+    "input": "d20_y24",
+    "start": "hosvd",
+    "policy": "unit_gallery_cosine_g0",
+    "n_splits": "10",
+    "mean_percent": "88.75",
+    "std_pp": "2.8942591644687092",
+    "min_percent": "84.0625",
+    "max_percent": "92.1875",
+    "mean_minus_paper_pp": "-2.1500000000000057",
+    "at_least_paper": "2"
+  },
+  "best_weighted_metric": {
+    "input": "d20_y24",
+    "start": "rectangular_identity",
+    "policy": "unit_gallery_cosine_g0.25",
+    "n_splits": "10",
+    "mean_percent": "86.15625",
+    "std_pp": "2.810763352721107",
+    "min_percent": "82.1875",
+    "max_percent": "91.875",
+    "mean_minus_paper_pp": "-4.743750000000006",
+    "at_least_paper": "1"
+  },
+  "limits": [
+    "Input and metric are not selected by gallery SSE.",
+    "Choosing the highest mean/maximum across candidates uses already-seen probes and is exploratory.",
+    "Full-square initialization has a larger initial mode dimension than the final ranks; not an author-confirmed setting.",
+    "SSE selection is an additional training-only analysis, not a preregistered outer-score selection."
+  ]
+}

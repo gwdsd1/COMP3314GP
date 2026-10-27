@@ -1,0 +1,182 @@
+{
+  "selection": "Exploratory best over all fixed candidates on ten already-seen probe splits",
+  "best_mean": {
+    "input": "d20_y24",
+    "start": "full_identity",
+    "policy": "unit_gallery_cosine_g0",
+    "n_splits": 10,
+    "mean_percent": 88.8125,
+    "std_pp": 2.967561896761567,
+    "min_percent": 84.0625,
+    "max_percent": 92.5,
+    "mean_minus_paper_pp": -2.0875000000000057,
+    "at_least_paper": 2
+  },
+  "best_unweighted": {
+    "input": "d20_y24",
+    "start": "full_identity",
+    "policy": "unit_gallery_cosine_g0",
+    "n_splits": 10,
+    "mean_percent": 88.8125,
+    "std_pp": 2.967561896761567,
+    "min_percent": 84.0625,
+    "max_percent": 92.5,
+    "mean_minus_paper_pp": -2.0875000000000057,
+    "at_least_paper": 2
+  },
+  "primary_policy_results": [
+    {
+      "input": "d20_y24",
+      "start": "rectangular_identity",
+      "policy": "unit_gallery_cosine_g0",
+      "n_splits": 10,
+      "mean_percent": 88.71875,
+      "std_pp": 3.009857935462514,
+      "min_percent": 83.75,
+      "max_percent": 92.5,
+      "mean_minus_paper_pp": -2.1812500000000057,
+      "at_least_paper": 2
+    },
+    {
+      "input": "d20_y24",
+      "start": "full_identity",
+      "policy": "unit_gallery_cosine_g0",
+      "n_splits": 10,
+      "mean_percent": 88.8125,
+      "std_pp": 2.967561896761567,
+      "min_percent": 84.0625,
+      "max_percent": 92.5,
+      "mean_minus_paper_pp": -2.0875000000000057,
+      "at_least_paper": 2
+    },
+    {
+      "input": "d20_y24",
+      "start": "hosvd",
+      "policy": "unit_gallery_cosine_g0",
+      "n_splits": 10,
+      "mean_percent": 88.75,
+      "std_pp": 2.8942591644687092,
+      "min_percent": 84.0625,
+      "max_percent": 92.1875,
+      "mean_minus_paper_pp": -2.1500000000000057,
+      "at_least_paper": 2
+    },
+    {
+      "input": "d20_y24",
+      "start": "PCA24",
+      "policy": "unit_gallery_cosine_g0",
+      "n_splits": 10,
+      "mean_percent": 90.59375,
+      "std_pp": 1.9401303829324918,
+      "min_percent": 87.1875,
+      "max_percent": 94.0625,
+      "mean_minus_paper_pp": -0.3062500000000057,
+      "at_least_paper": 4
+    },
+    {
+      "input": "d18_y25",
+      "start": "rectangular_identity",
+      "policy": "unit_gallery_cosine_g0",
+      "n_splits": 10,
+      "mean_percent": 88.5625,
+      "std_pp": 2.225366698871097,
+      "min_percent": 85.0,
+      "max_percent": 93.125,
+      "mean_minus_paper_pp": -2.3375000000000057,
+      "at_least_paper": 2
+    },
+    {
+      "input": "d18_y25",
+      "start": "full_identity",
+      "policy": "unit_gallery_cosine_g0",
+      "n_splits": 10,
+      "mean_percent": 88.59375,
+      "std_pp": 2.225610481168906,
+      "min_percent": 85.3125,
+      "max_percent": 93.125,
+      "mean_minus_paper_pp": -2.3062500000000057,
+      "at_least_paper": 2
+    },
+    {
+      "input": "d18_y25",
+      "start": "hosvd",
+      "policy": "unit_gallery_cosine_g0",
+      "n_splits": 10,
+      "mean_percent": 88.5625,
+      "std_pp": 2.2544323626531306,
+      "min_percent": 85.0,
+      "max_percent": 93.125,
+      "mean_minus_paper_pp": -2.3375000000000057,
+      "at_least_paper": 2
+    },
+    {
+      "input": "d18_y25",
+      "start": "PCA24",
+      "policy": "unit_gallery_cosine_g0",
+      "n_splits": 10,
+      "mean_percent": 89.5625,
+      "std_pp": 2.1102428770167667,
+      "min_percent": 84.6875,
+      "max_percent": 91.5625,
+      "mean_minus_paper_pp": -1.3375000000000057,
+      "at_least_paper": 3
+    },
+    {
+      "input": "d22_y22",
+      "start": "rectangular_identity",
+      "policy": "unit_gallery_cosine_g0",
+      "n_splits": 10,
+      "mean_percent": 88.1875,
+      "std_pp": 1.9025750094718124,
+      "min_percent": 84.6875,
+      "max_percent": 90.625,
+      "mean_minus_paper_pp": -2.7125000000000057,
+      "at_least_paper": 0
+    },
+    {
+      "input": "d22_y22",
+      "start": "full_identity",
+      "policy": "unit_gallery_cosine_g0",
+      "n_splits": 10,
+      "mean_percent": 88.25,
+      "std_pp": 1.8761570504032379,
+      "min_percent": 85.0,
+      "max_percent": 90.9375,
+      "mean_minus_paper_pp": -2.6500000000000057,
+      "at_least_paper": 1
+    },
+    {
+      "input": "d22_y22",
+      "start": "hosvd",
+      "policy": "unit_gallery_cosine_g0",
+      "n_splits": 10,
+      "mean_percent": 88.3125,
+      "std_pp": 1.8411292579404752,
+      "min_percent": 85.0,
+      "max_percent": 90.9375,
+      "mean_minus_paper_pp": -2.5875000000000057,
+      "at_least_paper": 1
+    },
+    {
+      "input": "d22_y22",
+      "start": "PCA24",
+      "policy": "unit_gallery_cosine_g0",
+      "n_splits": 10,
+      "mean_percent": 89.53125,
+      "std_pp": 2.1001922035058285,
+      "min_percent": 87.1875,
+      "max_percent": 92.8125,
+      "mean_minus_paper_pp": -1.3687500000000057,
+      "at_least_paper": 4
+    }
+  ],
+  "global_single_max": 93.125,
+  "limits": [
+    "same400images and previously observed splits, not blind",
+    "context changes field of view",
+    "full-square start is an initialization interpretation, not an author-confirmed fix",
+    "gamma>0 is Fisher-eigenvalue metric weighting, an extension",
+    "no shrinkage, new ranks, extra gallery images or discarded splits",
+    "best-result wording does not establish author seed cherry-picking"
+  ]
+}

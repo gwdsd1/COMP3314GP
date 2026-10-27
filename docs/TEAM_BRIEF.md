@@ -1,12 +1,114 @@
 # CSA Project: Team Handover, Report and Presentation Materials
 
-Updated: 2026-10-08. This guide consolidates completed work; it does not launch new experiments. Its sources are the original papers, user-provided instructor/TA/data-author correspondence, current code, recorded protocols, and original result files.
+Updated: 2026-10-27. This guide consolidates completed work; it does not launch new experiments. Its sources are the original papers, user-provided instructor/TA/data-author correspondence, current code, recorded protocols, and original result files.
 
 **Conclusion: we independently implemented and partially reproduced CSA on ORL, MNIST, and original grayscale FERET, and completed input, selection, sample-size, regularization, supervised tensor reduction, robustness, and cost studies.** Numerical and prediction checks support the implementation, but we have not recovered every CSA paper result or method ordering. PIE is omitted with instructor permission. The evidence supports a substantial paper study and partial reproduction; the instructor determines grades and bonus credit.
 
 This is a working material library for teammates, rather than the final 3–4-page report. The main text follows research questions; collapsible appendices contain historical batches and complete result entries. **Data are presented at two levels:** every experiment family, summary, before/after comparison, and paper comparison appears here; per-candidate, per-split, prediction, model, and failure records are indexed in existing CSV/JSON/NPZ files. Millions of records are not copied into Markdown. An SD or individual score omitted from one summary remains available in its linked original table.
 
-> **Public repository edition:** All three datasets, numeric caches, and image-bearing sample/reconstruction figures remain local. Some historical links therefore require data acquisition and reconstruction. English text was translated and checked against the original Chinese guide; immutable source/protocol snapshots retain their original bytes and may contain Chinese. `DETAIL`, `REPORT`, and `HANDOFF` remain Chinese by request.
+> **Public repository edition:** All three datasets, numeric caches, and image-bearing sample/reconstruction figures remain local. Some historical links therefore require data acquisition and reconstruction. English text was translated and checked against the original Chinese guide; immutable source/protocol snapshots retain their original bytes and may contain Chinese. The earlier Chinese-document exception was superseded by the 2026-10-27 request for English versions.
+
+<a id="reproduction-status"></a>
+
+## 0. Report-ready reproduction status (updated 2026-10-27)
+
+**Defensible conclusion:** We independently implemented the CSA method and partially reproduced its ORL, MNIST, and original grayscale FERET experiments. We did not obtain the authors' original implementation or complete hyperparameter records. Algorithm implementation, experiment coverage, numerical agreement, and recovery of the paper's method ranking are separate claims.
+
+### 0.1 What has been reproduced
+
+| Component | Completed work | Evidence boundary |
+|---|---|---|
+| CSA algorithm | General tensor mode products, sequential orthonormal covariance updates, core encoding and reconstruction | Independent formula/covariance checks support our implementation, not identity with unpublished author code |
+| Comparators and recognition | Independently implemented vector PCA, ordinary Fisher LDA, and nearest-neighbor classification | Numerical libraries supply primitive operations; unknown author metric/normalization is not inferred |
+| Input pipeline | Eye alignment, histogram equalization, stated image sizes, five-scale/eight-orientation complex Gabor magnitudes | Our eye targets, padding, filter support, and other missing details remain disclosed group choices |
+| ORL recognition | Six paper-dimension cases; 400 images, G2/P8, ten splits | CSA numerical levels and its low-dimensional advantage over PCA are not recovered |
+| MNIST recognition | Four cases: PCA/CSA at G30/P470 and G40/P460, 500 images per digit | CSA>PCA direction reproduced; absolute CSA results remain below the paper |
+| FERET recognition | Six cases at q50/q100/q200, official Fa/Fb pairs | Fixed shared-cosine scores are close, but are not validation-selected winners or evidence that all method rankings match |
+| Reconstruction/compression | Forty ORL fitting images, Gabor tensors, PCA/CSA dimension and storage-budget scans | Qualitative evidence; no author pointwise data or confirmed Gabor amplitude scale |
+| Iterations and checks | Convergence curves, 3-to-10-iteration diagnostics, split/NN/FFT/Fisher/hash checks | Internal consistency and limited-setting convergence, not a universal optimum or author-protocol proof |
+
+**Recognition coverage: 16 paper-corresponding cases = six ORL + four MNIST + six FERET. Coverage does not mean all 16 values match.**
+
+### 0.2 What remains unreproduced or unconfirmed
+
+- Original CMU PIE experiments, including Table III and the PIE parts of Fig.5/Fig.8, were not run; omission is instructor-authorized. Multi-PIE is not substituted.
+- The authors' exact code, eye annotations, initialization, centering, Gabor details, NN distance, validation process, and random indices are not recovered.
+- ORL low-dimensional CSA superiority and the original CSA numerical levels remain unresolved; MNIST also remains below the paper.
+- Reconstruction/convergence curves are not claimed to match every original ordinate. Our reconstruction is of fitting-sample Gabor tensors, not unseen-face reconstruction or Gabor inversion.
+- We cannot conclude that any single unknown setting caused the entire gap, that exact equality is necessary for course credit, or that a high exploratory maximum establishes full reproduction.
+
+The instructor/TA explicitly permits reasonable missing-setting choices held fixed across methods and disclosed differences. This does not individually confirm those choices as the authors' settings. Neither the supplied correspondence nor the recognition text fixes Euclidean versus cosine NN.
+
+### 0.3 Preserved paper-dimension numerical comparison
+
+Percent accuracy; differences are group minus paper in percentage points. ORL: ten-split mean±sample SD. MNIST: three-split mean±sample SD. FERET: one fixed identity partition, without repeated-partition SD. These are the original shared references, not later selected extensions.
+
+| Dataset | Method | Our shared result | Paper | Difference, pp |
+|---|---|---:|---:|---:|
+| ORL | PCA+LDA (Gray) | 83.22±1.76 | 82.20 | +1.02 |
+| ORL | CSA-2+LDA | 77.47±5.41 | 84.10 | -6.63 |
+| ORL | PCA (Gabor) | 86.88±1.63 | 86.60 | +0.28 |
+| ORL | CSA-3 | 90.19±2.37 | 94.40 | -4.21 |
+| ORL | PCA+LDA (Gabor) | 92.09±2.06 | 87.20 | +4.89 |
+| ORL | CSA-3+LDA | 79.66±2.77 | 90.90 | -11.24 |
+| MNIST G30/P470 | PCA (Gabor) | 87.52±0.40 | 88.50 | -0.98 |
+| MNIST G30/P470 | CSA-3 | 90.34±0.15 | 92.80 | -2.46 |
+| MNIST G40/P460 | PCA (Gabor) | 88.58±0.37 | 90.50 | -1.92 |
+| MNIST G40/P460 | CSA-3 | 91.04±0.25 | 92.40 | -1.36 |
+| FERET q=50 | PCA+LDA (Gray) | 89.08 | 84.60 | +4.48 |
+| FERET q=50 | CSA-2+LDA | 88.73 | 88.20 | +0.53 |
+| FERET q=100 | PCA+LDA (Gray) | 90.87 | 90.60 | +0.27 |
+| FERET q=100 | CSA-2+LDA | 94.25 | 92.20 | +2.05 |
+| FERET q=200 | PCA+LDA (Gray) | 93.87 | 93.40 | +0.47 |
+| FERET q=200 | CSA-2+LDA | 95.38 | 95.20 | +0.18 |
+
+Source: [original shared CSV](../results/orl_protocol_audit/shared_comparison.csv). FERET is numerically closest, MNIST retains CSA>PCA, and ORL24→23 remains the main gap. FERET does not recover every CSA-versus-PCA ordering. The paper reports best parameter configurations; its split aggregation is unspecified, so these differences are descriptive and do not establish significance or identical protocols.
+
+### 0.4 Additional experiments and their status
+
+| Study family | Completed evidence | Reporting category |
+|---|---|---|
+| Early grayscale and geometric audit | G2/V2/P6 selection; five geometric branches; six manual Haar corrections; later YuNet audit | Historical diagnostic protocols; different splits/inputs cannot be pooled into a paired gain |
+| Gabor and numerical sensitivities | Kernel support, padding, wavelength, sigma, magnitude/normalization, sampling; radius rounding; 3→10 rounds | Disclosed missing-setting diagnostics; ten-round runs did not change predictions in the checked branches |
+| LDA/representation analysis | Same-representation before/after LDA, scatter conditioning, output scaling and retained energy | Avoids confounding CSA390 with CSA24→23; energy is not identity information |
+| Three fixed inputs | 120 outer fits; low-dimensional CSA81.25→TT78.31 / context84.31 | Illumination/context extensions, with negative results retained |
+| Three-stage gallery selection | FinalCSA24→23 87.84±3.28, versus context84.31 | Own-gallery selection with context/power extensions; A→C adds only about0.03pp |
+| Crop-only bounded optimization | 81.25→81.41±2.41; matched controls decline | Original dimensions and explicit TA counts retained; unknown choices are not author-confirmed |
+| Fixed sigma×context | 320 outer fits, twenty fixed splits; CSA80.13/84.56/81.25/87.08 | Fixed input extension; paired improvement6.95pp for pi-context versus2pi-crop |
+| Rank/shrinkage | Refined ordinary83.28±3.30 and shrinkage85.47±4.57 | Changed ranks and/or regularization; not originalCSA24→ordinaryLDA23 |
+| Sample size | FixedP5, nestedG2/G3/G5:81.30/88.10/94.50 | More fitting/gallery samples; not the originalG2/P8 |
+| Split sensitivity and exploration | 100 fixed splits; separate6003-configuration/200-split search; maxima95/97.5 | Probe-selected extrema; corresponding means86.42/91.43 do not become independent estimates |
+| MNIST bounded selection | Ten matching splits: CSA89.66→88.89 and90.50→90.18 | Negative optimization result; do not compare old three-seed and new ten-seed means as paired gains |
+| FERET validation selection | CSA87.51/94.25/93.77, distinct from fixed-cosine88.73/94.25/95.38 | Validation choices and shared fixed controls must remain separate |
+| DATER supervised reduction | Direct24:71.64±3.18; LDA23:67.11±3.59; matchedCSA74.33/80.13 | New-method negative result;19/20 hit the cap; strict-path failure/sensitivity retained |
+| Error, cost, and robustness |224 corrected/111 new errors;830 versus618792 projection weights;1280 zero-fit perturbation scores | Reused models/predictions; limited timing and joint±1-pixel shifts, not universal efficiency/robustness |
+
+Full batch-level tables, failures, parameters, and source links remain in [Appendix A](#all-experiments), [Appendix B](#statistics), and the [inventory](#inventory). Counts of predictions, reused records, and files are not counts of independent experiments or new images.
+
+### 0.5 Text teammates can adapt
+
+**Report abstract/conclusion:** “We independently implement Concurrent Subspaces Analysis and partially reproduce recognition on ORL, MNIST and grayscale FERET, together with ORL reconstruction and convergence experiments. FERET scores are numerically close to the paper, and MNIST retains the CSA-over-PCA direction. ORL low-dimensional CSA remains substantially below the paper. Controlled preprocessing, sample-size, regularization, supervised tensor, robustness and cost studies characterize this gap without attributing it to a uniquely established cause.”
+
+**Presentation sequence:** paper problem and tensor structure → CSA/PCA/LDA and course concepts →16-case coverage and preserved comparison → one controlled ORL improvement with its matched PCA control → failure/selection bias and representation-cost trade-off → PIE omission and unknown author settings. Use separate captions for paper results, shared references, gallery-selected results, fixed extensions, and probe-selected extrema.
+
+**Do not write:** “full reproduction,” “TA confirmed our cosine/Gabor/context settings,” “95% is our ten-split mean,” “more than one million independent test images,” or “DATER is generally ineffective.”
+
+### 0.6 New ORL recovery evidence (2026-10-27)
+
+A bounded follow-up retained all ten seeds20–29, G2/P8, CSA4×2×3→ordinaryLDA23 andTmax3. Three sigma=pi/context geometry bundles and three starts produced90 CSA fits;30 matchedPCA controls were added. All120 models froze before1440 policy scores/460800 repeated predictions. No old result was overwritten.
+
+| New fixed setting, same default centered-cosine NN | Ten-split mean±SD | Single maximum | Difference from paper90.9 |
+|---|---:|---:|---:|
+| d20/y24, rectangular identity |88.72±3.01|92.50|−2.18pp |
+| d20/y24, HOSVD |88.75±2.89|92.19|−2.15pp |
+| d20/y24, full-square identity variant |88.81±2.97|92.50|−2.09pp |
+| MatchedPCA24→23, d20/y24 |90.59±1.94|94.06|No paperPCA24 counterpart |
+
+The best single CSA run across the pool is93.125% (298/320), d18/y25, rectangular identity, seed22, default NN. This exceeds the paper as an **exploratory single best run with context**, while no tested mean reaches90.9. The best candidate mean88.81 is also selected after comparing known probes; it is not a new blind validation estimate. The original shared79.66, gallery-selected87.84, twenty-split fixed87.08, and earlier95/97.5 at different dimensions remain separate.
+
+Full versus rectangular identity adds only0.09375pp on matched inputs. Full-square initialization starts with larger mode dimensions than the final ranks; treat it as a disclosed interpretation/variant, not an author-confirmed fix. Rank-conforming HOSVD already reaches88.75. Fisher-eigenvalue weighting is a metric extension and its best mean86.16 does not help. Gallery-SSE start selection gives88.81±2.91 at fixed d20/y24, but cannot make an input/metric selected on probes independent. PCA remains stronger in the matched control.
+
+Teammate wording: “At fixed24→23 output dimensions, a bounded context/initialization follow-up achieved a ten-split mean of88.81% and an exploratory best single run of93.125%. The mean remains below90.9%, and exact author settings and CSA's relative advantage remain unrecovered.” See the [full new protocol and limits](./REPORT.md#orl-recovery-20261027), [summary](../results/orl_recovery_20261027/summary.csv), and [verification](../results/orl_recovery_20261027/verification.json).
 
 ## Reading Navigation
 
@@ -460,7 +562,7 @@ PIE available sentences: *We were unable to obtain the original CMU PIE dataset 
 
 ### 8.4 Completion status and companion takeover list
 
-**Completed:** Topic selection/study and reply archiving, three database data and implementation, all experiments and verification of this article, DATER expansion, result interpretation and material organization. **Not yet completed:** Formal 3–4 page LaTeX report, 9-minute slide show/rehearsal, real public GitHub release and publicly rerunable check, member division of labor/final submission.
+**Completed:** Topic selection/study and reply archiving, three database data and implementation, all experiments and verification of this article, DATER expansion, result interpretation and material organization. **Not yet completed:** Formal 3–4 page LaTeX report, 9-minute slide show/rehearsal, full fresh-checkout rerun of all historical dependencies, member division of labor/final submission.
 
 1. Check the course requirements according to §1, and master the main lines of §2–6 first; use the appendix to search for details, and do not continue reading the entire historical account.
 2. Check main table values/figure titles/references; select fixed input to compare causal boundaries and equal budget costs, and retain DATER/TT/MNIST optimization failure.

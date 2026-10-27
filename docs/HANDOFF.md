@@ -1,131 +1,139 @@
-# COMP3314 CSA 项目完整交接文档
+# COMP3314 CSA project complete handover document
 
-更新：2026-10-08。工作区：`D:\HKU\COURSE\y2s1\COMP3314\COMP3314GP`。
+> **Current handoff update, 2026-10-27:** The public repository is [gwdsd1/COMP3314GP](https://github.com/gwdsd1/COMP3314GP). All seven Markdown documents are now English; this supersedes the earlier Chinese-document exceptions. Frozen source/protocol files retain original bytes/language. All three datasets and generated numeric caches remain excluded. The original dated history below is retained and may describe earlier publication/planning states.
+>
+> New ORL24→23 recovery study:90 CSA+30 PCA models, all ten seeds20–29, fixedTmax3/ordinaryLDA, three pi-context geometries/three starts. Candidate-best mean88.81±2.97%, best rank-conforming start88.75±2.89%, pool single maximum93.125%; no mean reaches90.9. Context, full-square initialization, and metric weighting remain disclosed variants/extensions; probe-ranked means/maxima are exploratory. The [TEAM_BRIEF overview](./TEAM_BRIEF.md#reproduction-status) and [new REPORT section](./REPORT.md#orl-recovery-20261027) are the current entry points. Do not replace shared79.66, gallery-selected87.84, fixed twenty-split87.08, or older different-dimension95/97.5. No automatic full-grid continuation is authorized by this note.
 
-**用途：让新会话在不读取全部聊天的情况下，了解项目为什么做、课程如何评分、原文和教师要求是什么、已经实现和核查了什么、哪些结果可报告，以及接下来该做什么。** 本文是状态与决策交接；完整历次讲解和邮件档案在 [HISTORY.md](./HISTORY.md)，详细当前报告在 [REPORT.md](./REPORT.md)。历史文件中的“最终”“待办”“不可取得”可能已过时，应先按本文和当前结果文件判断。
 
-## 0. 新会话先读什么
 
-**同伴准备报告／展示时优先读 [TEAM_BRIEF.md](./TEAM_BRIEF.md)**：按论文研究、实现／协议、数据比较、批判分析和交付组织；全部实验族及统计放入折叠附录，完整结果目录可追溯。REPORT保留详细历史解释。
+updated: 2026-10-08. Workspace: `D:\HKU\COURSE\y2s1\COMP3314\COMP3314GP`.
 
-1. 本文：完整来源、约束、当前结果和下一步。
-2. [README.md](../README.md)：目录、依赖、结果导航。
-3. [REPORT.md](./REPORT.md)：结果解释、全部协议差异、运行命令。
-   其中[第10节：全部实验与数据总览](./REPORT.md#experiment-overview)按批次汇总共享锚点、gallery内选参、固定对照、扩展、probe探索最高值及论文差距；含早期G2/V2/P6与后续G2/P8区别、失败／退步、重建／数值核查／错例／成本／扰动。不从总览反推未公开的原作者设置，具体运行仍须回读协议和原始结果文件。
-4. 需要修改某项实验时，再读该结果目录的 `protocol.json`、参数记录、`source_snapshot/` 和对应脚本；不要从旧报告数字猜当前配置。
-5. 争议涉及原文时，回到原始 PDF。涉及邮件时，回到本文第3节及 HISTORY 对应原句。
+**Purpose: Let new sessions understand why the project is being done, how the course is graded, what the paper and instructor requirements are, what has been implemented and verified, what results can be reported, and what to do next, without reading the entire chat.** This article is about status and decision handover; complete explanations and email files are in [HISTORY.md](./HISTORY.md), and detailed current reports are in [REPORT.md](./REPORT.md). The "final", "pending" and "unavailable" in the historical files may be out of date, and should be judged based on this article and the current results file.
 
-### 当前一句话结论
+## 0. What to read first in a new session
 
-已自行实现并实际运行 **ORL、MNIST、原始灰度 FERET** 的 CSA/PCA/LDA 实验，完成大量协议、数值与输入排查；PIE 经教师许可省略。ORL最新固定σ×上下文二十划分，π上下文CSA24→23为87.08%±2.30%，相对本轮2π裁剪内80.13%配对+6.95pp。此前裁剪内gallery选参81.41%、上下文/幂次扩展gallery选参87.84%继续分别保留，均低于论文90.9%。另有超过论文数字的probe选择探索最高值。**不能宣称原论文全部实验已 full reproduction，也不能把探索最大值写成稳定平均表现。** 课程允许明确说明无法匹配的细节，数值精确相等不是评分要求。后续DATER方法扩展已完成但未改善（直接71.64%、加LDA67.11%），见下段，不能拼入CSA复现主表。
+**Read [TEAM_BRIEF.md](./TEAM_BRIEF.md) first when peers are preparing reports/presentations**: Organized by paper research, implementation/protocol, data comparison, critical analysis and delivery; all experimental families and statistics are placed in the folded appendix, and the complete results directory is traceable. REPORT retains detailed historical explanations.
 
-**最新2026-10-08 DATER扩展按后续授权完成并停止：** 用户现要求完成DATER执行；[完整结果、协议与局限](./REPORT.md#orl-dater)，源`dater.py`/`run_orl_dater.py`，独立核查`verify_orl_dater.py`，评分读取修正`evaluate_orl_dater.py`，结果`results/orl_dater/`。固定2π裁剪内、4200–4219、G2/P8、(4,2,3)=24维；DATER直接NN71.64±3.18%，加普通LDA23为67.11±3.59%，同条件CSA74.33/80.13、PCA82.70/88.81；相对CSA分别−2.69/−13.02pp，未改善。20新DATER模型、40复用对照、1194模式更新和38,400预测核查通过。19模型达到20轮上限，仅4219第18轮满足阈值，165次联合DTC下降，不称全部收敛／全局最优。初次自由路径严格核查失败记录保留；改以独立实际轨迹核查加20自由参考重算敏感性报告，最大自由最终方向差约1.01e−5，不宣称逐轮完全相等。首次评分JSON误读失败在写评分前发生，新增读取修正入口，拟合源码／模型／历史全部不变；两个修正核查入口均在成功评分前冻结，失败和敏感性不可省略。DATER完整单位起点及广义特征更新按Figure3；单位列／符号、Tmax20、ε.001是本组固定约定，没有ridge／QR／奇异fallback。TA的Tmax3适用于CSA；DATER为新方法扩展，TA未确认其参数，原文也没有匹配ORL24D行；CSA论文90.9只作不同方法参考。原共享、gallery选参、上下文扩展和probe极值保持独立；正式提交材料仍待实施，MNIST/FERET未改。重跑须按REPORT使用补充核查和读取修正入口，不调用原驱动已知失败的verify_models/evaluate路径。
+1. This article: full sources, constraints, current results and next steps.
+2. [README.md](../README.md): Directory, dependencies, results navigation.
+3. [REPORT.md](./REPORT.md): Explanation of results, all protocol differences, running commands.
+   Among them [Section 10: Overview of all experiments and data](./REPORT.md#experiment-overview) summarizes shared anchors, gallery-only validation selection, fixed control, expansion, probe exploration maximum and paper gaps by batch; including differences between early G2/V2/P6 and subsequent G2/P8, failure/regression, reconstruction/numeric verification/error cases/cost/perturbation. The unpublished original authors settings are not deduced from the overview, and the protocol and original result files must still be read back for specific runs.
+4. When you need to modify an experiment, read the `protocol.json`, parameter record, `source_snapshot/` and corresponding script in the result directory again; do not guess the current configuration from the old report numbers.
+5. When the dispute involves the paper, go back to the original PDF. When it comes to emails, go back to Section 3 of this article and the original sentence corresponding to HISTORY.
 
-**最新2026-10-08受控实验，三项完成并停止：** 用户要求全面规划并执行此前建议，随后选择“先完成受控实验，DATER与提交材料保留规划”。源码`run_orl_controlled.py`，结果`results/orl_controlled/`，[完整证据和保留规划](./REPORT.md#orl-controlled)。评分前冻结种子4200–4219、σ2π/π×crop/context四输入、原维数四方法、identity/Tmax3/普通LDA/单位列居中余弦及全部源/输入/索引/所用历史证据哈希。320新实验模型另160CSA独立数值复算、160PCA特征方程和102400NN预测通过。CSA24→23四输入为80.13±3.49/84.56±2.44/81.25±3.03/87.08±2.30%，π上下文相对2π裁剪内+6.95pp（20/0/0），距论文仍差3.82pp，同预算PCAπ上下文91.08%；σ裁剪内效应+1.13、上下文效应+2.52，差中之差+1.39pp，仅描述性证据。CSA390四输入88.66/91.16/88.70/90.09%，上下文减σ反而下降1.06pp。复用320模型，probe双眼共同沿原图x/y±1像素，1280评分零拟合、409600独立NN预测和全部1280保存文件回读通过；低维CSAπ上下文平均−0.08pp、最差方向均值−0.52pp、最差单划分/方向−1.875pp，不覆盖单眼误检/旋转/大偏移，不证明普遍鲁棒。已有stage_C错例3200记录覆盖400张不同照片，修正224/新增111、CSAonly158/PCAonly249，原图/对齐图/最近邻已核查；无人工眼点真值，不归因于唯一原因。实测830/618792个权重，所计部署数组228272/5171968字节，本机CoreUltra9 275HX两线程预计算特征320probe投影＋LDA＋NN约21–29/60–82ms，配对2.08–3.29倍，不含Gabor/训练，不是峰值内存。协议与代码未改，环境信息/全部负对照保留；手工视觉/汇总回读及扰动图不属于标准stage自动输出。上下文是扩展、未知设置未获作者确认；历史79.66/81.41/87.84及探索最高值不替换，不能跨不同划分计算配对改善。该受控轮当时未实施DATER；后续DATER已单独完成，报告/展示及公共仓库发布仍未实施；详细20模型扩展、3–4页/9分钟和仓库规划已记在REPORT，MNIST/FERET没有调参。
+### The conclusion of the current sentence
 
-**最新2026-10-08裁剪内有限优化，已按用户授权完成并停止：** [前后比较、参数与证据](./REPORT.md#orl-ta-crop)，源码`optimize_orl_ta_crop.py`，结果`results/orl_ta_crop_optimized/`。固定原400张40类、G2/P8、种子20–29、双眼对齐/均衡56×46、5×8 Gabor输出28×23×40、Tmax3、普通LDA和论文维数。四输入σ=2π/π×zero/reflect，39×39核、λ₀=4、裁剪内滤波后stride00；没有上下文/幂变换/收缩/新秩。自己的80张gallery完整16折选前二输入，再两起点×六NN规则；960内层模型、280候选，十组选择冻结并独立核查后，40新外层拟合＋40历史基线。CSA24→23为**81.25→81.41±2.41%**（+0.16pp，2升4平4降，最高85.63%，0/10达到90.9%），CSA390为90.00→88.41%，PCA24→23为88.63→88.41%，PCA33→25为92.72→91.69%（论文87.2%）。内层508/800→566/800→568/800提升未转化为实质外层收益，原因尚未单独证实。最终π/reflect六组、π/zero一组、2π/zero三组，identity/HOSVD=8/2，全部单位列/居中余弦；不能按probe再选一个统一配置。304被选内层CSA独立复算、22,400内层预测、20外层CSA独立复算、20PCA核查、40基线NN重放及25,600外层预测通过；源码/输入/选择哈希未变，另有评分前和补充统计手工回读JSON。满足明确TA数量、尺寸、模型及共享条件；TA未逐项确认σ/补边/NN/列尺度/起点，未知设置不能写成作者协议。旧共享79.66%不同配置，81.41−79.66=1.75pp不是本轮配对增益；此前87.84%是扩展而非本轮裁剪内成绩。负结果、旧主表和probe极值完整保留；本轮不再自动扩大搜索。
+has self-implemented and actually run the CSA/PCA/LDA experiments of **ORL, MNIST, and original grayscale FERET**, and completed a large number of protocols, numerical values, and input troubleshooting; PIE is omitted with the permission of the teacher. ORL's latest fixed σ×context twenty split, π context CSA24→23 is 87.08%±2.30%, which is 80.13% matching +6.95pp in the current round of 2π clipping. Previously, 81.41% of the clipping gallery parameters and 87.84% of the context/power expansion gallery parameters were retained respectively, both of which were lower than the 90.9% in the paper. There are also probes that exceed the number of the paper and choose to explore maximum. **It cannot be claimed that all experiments in the original paper have been fully reproduced, nor can the maximum value of exploration be written as a stable average performance.** The course allows for explicit description of details that cannot be matched, and exact numerical equality is not a grading requirement. The subsequent DATER method expansion has been completed but has not been improved (directly 71.64%, plus LDA 67.11%), see the next paragraph, and cannot be integrated into the CSA reproduction main table.
 
-**此前ORL未知参数有限迭代，用户已授权执行并完成：** [三阶段证据与参数](./REPORT.md#orl-unknown-parameters)，源码`optimize_orl_unknowns.py`，输出`results/orl_unknown_parameters/`。保留G2/P8、种子20–29、Tmax3、CSA24→普通LDA23／CSA390／PCA24→23／PCA33→25。每组自己的80张gallery完整16折：12输入选前二→三个幂次→两初值和六NN规则；3520内层模型、900候选，十组选择冻结且验证后才评分，120新外层拟合加80历史对照。CSA24→23为81.25→84.31→A87.81→B87.78→C**87.84±3.28%**，最终相对上下文+3.53pp（8/1/1），论文差距3.06pp，2/10达到90.9%，最高91.56%。最终八组σ=π上下文，1组原上下文、1组CDF_min；幂次1/0.75为7/3，identity/HOSVD为6/4，全部单位列/居中余弦。共享C纯CSA390为91.03±1.43%，比上下文91.56下降0.53pp；PCA24／33为90.69／94.16%，也略降，不称四方法共同最优。416个被选内层CSA独立复算、72,000验证预测、120新外层模型／64,000外层预测核查通过，源码冻结哈希未变。保留所有负阶段与旧表，扩展及未知作者协议继续单列。差距不能断定一定是协议错误；此次仍非盲测，也不是全局最优证明。整轮已停止，不自动扩大搜索。
+**The latest 2026-10-08 DATER extension is completed and stopped according to subsequent authorization:** The user is now required to complete the DATER execution; [Full results, protocols and limitations](./REPORT.md#orl-dater), source `dater.py`/`run_orl_dater.py`, independent verification `verify_orl_dater.py`, score read correction `evaluate_orl_dater.py`, result `results/orl_dater/`. Fixed 2π clipping, 4200–4219, G2/P8, (4,2,3)=24 dimensions; DATER direct NN71.64±3.18%, plus ordinary LDA 23 is 67.11±3.59%, with the same conditions CSA74.33/80.13 and PCA82.70/88.81; the relative CSA is −2.69/−13.02pp respectively, which is not improved. 20 new DATER models, 40 reuse controls, 1194 mode updates and 38,400 prediction verification passed. 19 models reached the upper limit of 20 rounds, only the 18th round of 4219 met the threshold, and the joint DTC dropped 165 times, which is not called full convergence/global optimum. The initial free path strict verification failure record is retained; instead, independent actual trajectory verification is added and 20 free references are added to the recalculation sensitivity report. The maximum free final direction difference is about 1.01e−5, and it is not claimed to be completely equal round by round. The first scoring JSON misreading failure occurred before writing the score. A new reading correction entry was added, and the fitting source code/model/history remained unchanged. The two correction verification entries were frozen before successful scoring, and the failure and sensitivity cannot be omitted. DATER's complete unit initialization and generalized feature update are as shown in Figure 3; unit-norm columns/symbols, Tmax20, ε.001 are fixed conventions of our group, and there is no ridge/QR/singular fallback. TA's Tmax3 is suitable for CSA; DATER is a new method extension, TA has not confirmed its parameters, and the paper does not match the ORL24D line; CSA paper 90.9 is only a reference for different methods. Original sharing, gallery parameter selection, context expansion and probe extreme value remain independent; formal submission materials are still to be implemented, and MNIST/FERET has not been changed. To rerun, you must press REPORT to use the supplementary verification and read correction entries, and do not call the verify_models/evaluate path that the original driver is known to have failed.
 
-**本次后续MNIST更新：** 用户授权的四步有限优化已完成、独立核查通过；没有缩小CSA差距。十个相同种子G30/G40：原CSA89.66%/90.50%→新gallery内选参88.89%/90.18%；PCA86.67%/88.03%→86.94%/88.26%。原20–22三种子CSA90.34%/91.04%→89.33%/90.34%。保留旧共享主表及全部负结果；不能混合三次与十次均值作优化增益。详见[REPORT的MNIST最新段](./REPORT.md#mnist-bounded-optimization)，结果根`results/mnist_protocol_optimized/`。
+**The latest controlled experiment on 2026-10-08, three items were completed and stopped:** The user requested comprehensive planning and implementation of previous recommendations, and then selected "Complete the controlled experiment first, DATER and submit material retention plan". Source code `run_orl_controlled.py`, result `results/orl_controlled/`, [complete evidence and retention plan](./REPORT.md#orl-controlled). Freeze seeds 4200–4219 before scoring, σ2π/π×crop/context four inputs, the paper's dimensions four methods, identity/Tmax3/ordinary LDA/unit-norm columns mean-centered cosine and all source/input/index/used historical evidence hashes. 320 new experimental models and 160 CSA independent numerical calculations, 160 PCA characteristic equations and 102400 NN predictions passed. The four inputs of CSA24→23 are 80.13±3.49/84.56±2.44/81.25±3.03/87.08±2.30%, and the π context is +6.95pp (2 0/0/0), still 3.82pp behind the paper, with the same budget PCAπ context 91.08%; σ within-crop effect +1.13, context effect +2.52, difference in difference +1.39pp, only descriptive evidence. CSA390 four-input 88.66/91.16/88.70/90.09%, the context decreases σ but decreases by 1.06pp. Reusing the 320 model, probe both eyes along the original image x/y±1 pixel, 1280 score zero fitting, 409600 independent NN predictions and all 1280 saved file readbacks passed; the low-dimensional CSAπ context average −0.08pp, the worst direction mean −0.52pp, the worst single split/direction −1.875pp, does not cover single-eye misdetection/rotation/large offset, and does not prove universal robustness. There are 3200 records of stage_C errors covering 400 different photos, 224 corrections/111 new additions, CSAonly158/PCAonly249, the original image/alignment image/nearest neighbor has been verified; there is no artificial eye point true value, and it is not attributed to the only reason. Measured 830/618792 weights, calculated deployment array 228272/5171968 bytes, native CoreUltra9 275HX two-thread precomputed feature 320probe projection + LDA + NN about 21–29/60–82ms, pairing 2.08–3.29 times, excluding Gabor/training, not peak memory. The protocol and code have not been changed, and the environmental information/all negative controls are retained; manual visual/summary readback and disturbance graphs are not part of the standard stage automatic output. The context is extended, and the unknown setting has not been confirmed by the author; history 79.66/81.41/87.84 and exploration maximum are not replaced, and pairing improvements cannot be calculated across different splits. DATER was not implemented in this controlled round at that time; subsequent DATER has been completed separately, and reports/displays and public repository releases have not yet been implemented; detailed 20 model extensions, 3–4 pages/9 minutes, and repository planning have been recorded in REPORT, and MNIST/FERET has not been adjusted.
 
-**MNIST收尾与ORL三输入最新执行：** REPORT已记录MNIST可接受的部分复现证据/局限及欧氏距离下降消融，教师/TA没有指定欧氏或余弦。用户随后授权[三套固定输入](./REPORT.md#orl-next-directions)，120次拟合已全部完成并核查：十个相同G2/P8、原维数/共享居中余弦，CSA24＋普通LDA23基线81.25%→光照组合78.31%/上下文84.31%（上下文+3.06pp，9/10提高）；纯CSA390为90.00%→89.56%/91.56%（上下文+1.56pp，8提高1平1降）。上下文PCA24→23/PCA33→25为91.00%/94.38%。两新输入作为扩展单列，不替换共享主表/训练内选参/探索最高值。源码`run_orl_fixed_inputs.py`，输出`results/orl_fixed_input_extensions/`；核查120模型、38,400预测、60个独立CSA三轮复算、30项历史基线正确数。首次画布插值核查失败在评分前修正并保留，后续仅核查路径修正记录于`verifier_amendment.json`；未改变拟合代码或分数。光照负结果保留，该三输入轮已停止；当时DATER未实现，后续单独执行见最新段；不自动合并输入、扩大网格或增加种子。
+**The latest limited optimization within the 2026-10-08 cut has been completed and stopped according to user authorization:**[Before and after comparison, parameters and evidence](./REPORT.md#orl-ta-crop), source code `optimize_orl_ta_crop.py`, result `results/orl_ta_crop_optimized/`. Fixed original 400 images of 40 categories, G2/P8, seeds 20–29, binocular alignment/balanced 56×46, 5×8 Gabor output 28×23×40, Tmax3, ordinary LDA and paper dimension. Four inputs σ=2π/π×zero/reflect, 39×39 core, λ₀=4, stride00 after cropping inner filter; no context/power transformation/shrinkage/new rank. My own 80 gallery complete 16-fold selection of the first two inputs, and then two initialization × six NN rules; 960 inner models, 280 candidates, ten groups of selections frozen and independently verified, 40 new outer layer fittings + 40 historical baselines. CSA24→23 is**81.25→81.41±2.41%** (+0.16pp, 2 wins,4 ties,and4 losses, the highest is 85.63%, 0/10 reaches 90.9%), CS A390 is 90.00→88.41%, PCA24→23 is 88.63→88.41%, PCA33→25 is 92.72→91.69% (paper 87.2%). The inner layer 508/800 → 566/800 → 568/800 improvement has not been translated into substantial outer layer income, and the reason has not been independently confirmed. In the end, there are six groups of π/reflect, one group of π/zero, three groups of 2π/zero, identity/HOSVD=8/2, all unit-norm columns / mean-centered cosine; you cannot press probe to select another unified configuration. 304 selected inner layer CSA independent recalculations, 22,400 inner layer predictions, 20 outer layer CSA independent recalculations, 20 PCA verification, 40 baseline NN replays and 25,600 outer layer predictions passed; the source code/input/selection hash has not changed, and there is manual JSON readback before scoring and supplementary statistics. Meet the clear TA quantity, size, model and sharing conditions; TA has not confirmed σ/padding/NN/column scale/initialization item by item, and unknown settings cannot be written as an author agreement. The old shared 79.66% different configurations, 81.41−79.66=1.75pp is not the matching gain of this round; the previous 87.84% was an expansion rather than an internal score of this round of tailoring. Negative results, old main table and probe extreme value are kept intact; the search will no longer be automatically expanded in this round.
 
----
+**Previously limited iteration of ORL unknown parameters, the user has authorized the execution and completion:** [Three-stage evidence and parameters](./REPORT.md#orl-unknown-parameters), source code `optimize_orl_unknowns.py`, output `results/orl_unknown_parameters/`. Keep G2/P8, seeds 20–29, Tmax3, CSA24→ordinary LDA 23/CSA390/PCA24→23/PCA33→25. Each group's own gallery of 80 photos has a complete 16-fold validation: 12 inputs to choose the first two → three powers → two initial values ​​and six NN rules; 3520 inner models, 900 candidates, ten groups of selections are frozen and verified before scoring, 120 new outer layers plus 80 historical controls. CSA24→23 is 81.25→84.31→A87.81→B87.78→C**87.84±3.28%**, the final relative context is +3.53pp (8/1/1), the paper gap is 3.06pp, 2/10 reaches 90.9%, and the highest is 91.56%. The final eight groups of σ=π context, 1 group of original context, 1 group of CDF_min; power 1/0.75 is 7/3, identity/HOSVD is 6/4, all unit-norm columns / mean-centered cosine. Shared C pure CSA390 is 91.03±1.43%, which is 0.53pp lower than the context 91.56; PCA24/33 is 90.69/94.16%, which is also slightly lower. It is not called the joint optimal of the four methods. 416 selected inner layer CSAs were independently recalculated, 72,000 verification predictions, 120 new outer layer models/64,000 outer layer prediction verification passed, and the source code frozen hash has not changed. Keep all negative phases with the old table, extensions and unknown author agreements continue to be single columns. The gap cannot be concluded to be a protocol error; this is still not a blind test, nor is it a global optimum proof. The entire round has been stopped and the search will not be expanded automatically.
 
-## 1. 项目来源、用户目标与工作约定
+**This subsequent MNIST update:** The four-step limited optimization of user authorization has been completed, and independent verification has passed; the CSA gap has not been narrowed. Ten identical seeds G30/G40: original CSA89.66%/90.50%→new gallery-only validation selection 88.89%/90.18%; PCA86.67%/88.03%→86.94%/88.26%. Original 20–22 three-seed CSA90.34%/91.04%→89.33%/90.34%. The old shared master table and all negative results are retained; cubic and decimal means cannot be mixed for optimization gain. For details, see [REPORT's latest MNIST segment](./REPORT.md#mnist-bounded-optimization), the result is `results/mnist_protocol_optimized/`.
 
-### 1.1 来源
-
-- HKU COMP3314，工作目录属于 `y2s1/COMP3314`。
-- 课程介绍：[Lec0 Introduction.pdf](<../../Lec0 Introduction.pdf>)，用户最初要求研究第6–7页列出的12篇论文，并按 group project 的评分、讲解难度和可复现性排名。
-- 之后选定 **Concurrent Subspaces Analysis，CSA**，从选题评估逐步转为按原论文做实验复现。
-- 12篇论文排名、早期中英文教学、复现规划及最初 full reproduction 实验清单均保存在 [HISTORY 的历史01/02](./HISTORY.md#history-01)。不应把历史选题排名当作本轮实验结论。
-- 本文第2节的课程要求来自用户上传截图，而不是 CSA 论文。第3节是用户提供的教师/TA邮件；邮件未通过连接邮箱读取，记录日期不等于可验证的邮件发送日期。
-
-### 1.2 用户目标如何演变
-
-1. 初始目标是完整研究论文并尽量 full reproduction，要求先查原代码，再规划自行实现、下载必需数据。
-2. 教師回复允许无法取得的数据集省略；FERET 随后取得，PIE 最终仍未取得，实际范围变为三个数据集。
-3. 用户希望对作者未公布的细节采用合理、能够提高准确率的“本组约定”，并注明差异。
-4. ORL，特别是普通 Gabor CSA+LDA，出现较大差距；多轮请求要求对照论文、TA要求与代码定位原因，不能只解释而不执行已授权排查。
-5. 后续授权样本量扩展、收缩正则化扩展、低维秩和初始化优化、固定配置多划分诊断。
-6. 最近授权更细参数搜索、更多划分，并采用原文的 best-results 句式报告接近/超过论文的结果。已执行200划分有限网格搜索，保留全部低分记录，并明确这是使用 probe 分数选择的探索极值。
-7. 本次要求：评估离论文复现还有多少，提出有价值的补充，并创建包含**项目来源、论文、教师/TA要求、复现要求、课程截图全部核心要求**的全面交接文档。没有要求本次再启动新实验、发表仓库或创建新聊天。
-8. 交接后的新请求：用户重申课程截图要求，明确授权执行MNIST四步有限优化并给出前后/论文比较及TA/原文符合范围。该实验现已完成并核查，CSA未改善，结果单列保留；没有扩大为新全网格搜索。
-9. 随后授权完成ORL三输入固定对照，再授权列出未知参数并实际有限迭代；两轮均已完成并核查。该轮原维数CSA24→23为87.84%，只将输入/参数敏感性结果单列，不改写旧共享主表或探索最高值。
-10. 再授权按TA明确条件做四个裁剪内输入、原维数共享参数有限优化；已完成并核查，CSA24→23为81.41%（相对配对基线仅+0.16pp），其他对照下降。87.84%作为此前上下文扩展保留；没有以负结果为由自动扩大搜索。
-11. 授权执行此前规划，随后明确仅完成受控实验、DATER/提交材料保留规划。错例/成本、320模型固定σ×上下文和1280零拟合probe扰动均完成核查；π上下文87.08%为固定二十划分结果，不改称训练内选参赢家或原作者设置。
-12. 随后明确授权完成DATER：一个固定输入、20监督张量模型，直接24维与23维LDA、复用CSA/PCA对照，核查后负结果单列；不扩大搜索或制作提交材料。
-
-### 1.3 用户工作原则
-
-- 用简洁自然的中文；教学内容应讲清背景、形状、公式与代码关系。此前要求过中英文对照，正式英文报告/展示可继续据此准备。
-- 影响结论的关键假设必须说明。合理且可逆的细节可说明后执行；任务范围显著变化时再询问。
-- 精准修改，保留现有目录、历史结果、失败实验，不顺手重构或删除无关文件。
-- 用户嫌 Markdown 太多，已合并为 `REPORT.md`、`HISTORY.md` 和入口 README。本次明确要求才新增本文；后续优先更新现有文档。
-- 修改后核查实际输出和预测，不把“脚本退出成功”当作实验已验证。
-- 不未经授权发送邮件、发布仓库、上传数据或更改系统设置。
+**MNIST wrap-up with ORL three-input latest implementation:** REPORT has documented MNIST acceptable partial reproduction evidence/limitations and Euclidean distance drop ablation, the teacher/TA did not specify Euclidean or cosine. The user then authorized [three sets of fixed input](./REPORT.md#orl-next-directions), and all 120 fittings have been completed and verified: ten identical G2/P8, the paper's dimensions/shared mean-centered cosine, CSA24+ ordinary LDA 23 baseline 81.25%→light combination 78.31%/context 84.31% (context +3.06pp, 9/10 improvement); pure CSA390 is 90.00%→89.56%/91.56% (context +1.56pp, 8 increase, 1 level and 1 decrease). The context PCA24→23/PCA33→25 is 91.00%/94.38%. The two new inputs are extended as single columns and do not replace the shared main table/training-only validation selection/exploration maximum. Source code `run_orl_fixed_inputs.py`, output `results/orl_fixed_input_extensions/`; verification 120 models, 38,400 predictions, 60 independent CSA three rounds of recalculation, and 30 historical baseline correct numbers. The first canvas interpolation verification failure is corrected and retained before scoring. Subsequent verification path corrections are only recorded in `verifier_amendment.json`; the fitting code or scores are not changed. The negative lighting results are retained, and the three-input round has been stopped; DATER was not implemented at that time, and subsequent separate executions are shown in the latest section; inputs are not automatically merged, the grid is expanded, or seeds are added.
 
 ---
 
-## 2. 课程 Group Project 要求与评分：按上传截图整理
+## 1. Project source, user goals and work agreement
 
-### 2.1 选题要求 / Paper Selection
+### 1.1 Source
 
-- 选择并深入研究一篇与课程主题有关的机器学习论文。
-- 优先来自主要会议/期刊：ICML、ICLR、NeurIPS；AAAI、CVPR、ACL；JMLR、Machine Learning、TMLR；IEEE TNNLS、TPAMI、TIP、TCSVT 等。
-- 对是否合适不确定时，向教师/TA咨询。所选 CSA 发表在 TCSVT，与 PCA、降维、特征表示和线性代数关联明确。
+- HKU COMP3314, the working directory belongs to `y2s1/COMP3314`.
+- Course Introduction: [Lec0 Introduction.pdf](<../../Lec0 Introduction.pdf>), the user was initially asked to study the 12 papers listed on pages 6–7, ranked by group project rating, difficulty of explanation, and reproducibility.
+- , I selected **Concurrent Subspaces Analysis, CSA**, and gradually shifted from topic selection evaluation to experimental reproduction according to the original paper.
+- 12 paper rankings, early Chinese and English teaching, reproduction planning and the initial full reproduction experiment list are all saved in [HISTORY History 01/02](./HISTORY.md#history-01). The ranking of historical topics should not be regarded as the conclusion of this round of experiments.
+- The course requirements for Section 2 of this article come from user uploaded screenshots, not the CSA paper. Section 3 is the teacher/TA email provided by the user; the email was not read through the connected mailbox, and the record date is not equal to the verifiable email sending date.
 
-### 2.2 必须完成的论文研究 / Paper Study and Critical Analysis
+### 1.2 How user goals evolve
 
-- 解释问题定义、动机、方法和主要贡献。
-- 将论文方法与课程概念联系起来。
-- 解释实验设置和结果，判断哪些证据支持哪些主张。
-- 批判分析假设、优点、限制，提出合理改进/扩展。
-- 体现小组自己的理解、推理和学习过程；只转述摘要或展示高准确率不足以覆盖要求。
+1. is to complete the research paper and reproduce it as fully as possible. It is required to check the original code first, then plan to implement it by yourself and download the necessary data.
+2. The teacher's reply allowed the omission of unobtainable data sets; FERET subsequently obtained it, PIE ultimately failed to obtain it, and the actual range became three data sets.
+3. Users wish to adopt reasonable, accurate "our group conventions" for details not published by the author, and note differences.
+4. ORL, especially ordinary Gabor CSA+LDA, has a large gap; multiple rounds of requests require comparison of papers, TA requirements and code positioning reasons. You cannot just explain without performing authorized troubleshooting.
+5. Subsequent authorization sample size expansion, shrinkage regularization expansion, low-dimensional rank and initialization optimization, fixed configuration multi-split diagnosis.
+6. recently authorized finer parameter searches, more splits, and reported results close to/exceeding the paper using the paper's best-results syntax. A 200-split limited grid search has been performed, retaining all low-scoring records, and making it clear that this is an exploration using probe score selection for extreme value .
+7. This requirement: Evaluate how far away from the reproduction of the thesis is, propose valuable supplements, and create a comprehensive handover document containing all core requirements including project sources, thesis, teacher/TA requirements, reproduction requirements, and course screenshots. There is no requirement to start new experiments, publish to repositories, or create new chats this time.
+8. New request after handover: The user reiterates the course screenshot requirements, clearly authorizes the execution of MNIST four-step limited optimization and provides before and after/paper comparison and TA/the paper compliance range. The experiment has now been completed and verified, CSA has not been improved and the results are retained in single columns; there has been no expansion to the new full grid search.
+9. then authorized the completion of the ORL three-input fixed comparison, and then authorized the listing of unknown parameters and actual limited iteration; both rounds have been completed and verified. In this round, the paper's dimensions CSA24→23 are 87.84%. Only the input/parameter sensitivity results are listed in a single column without rewriting the old shared master table or exploring the maximum.
+10. is re-authorized to do four cropping inputs according to TA's clear conditions, and limited optimization of the paper's dimensions shared parameters; has been completed and verified, CSA24→23 is 81.41% (only +0.16pp relative to the paired baseline), and other controls have declined. 87.84% were retained as previous context expansion; no searches were automatically expanded based on negative results.
+11. authorizes execution of previous planning and subsequently clarifies that only controlled experiments, DATER/submittal retention planning will be completed. Error cases/costs, 320 model-fixed σ × context, and 1280 zero-fit probe perturbations all completed verification; 87.08% of π context was a fixed twenty-split result, not renamed the training-only validation selection winner or the original authors setting.
+12. then expressly authorizes the completion of DATER: a fixed input, 20-supervised tensor model, direct 24-dimensional and 23-dimensional LDA, reused CSA/PCA comparison, single column of negative results after verification; no expansion of search or production of submission materials.
 
-### 2.3 可选复现加分 / Optional Bonus: Experiment Reproduction
+### 1.3 User working principles
 
-- 可以复现数值、图形或实验；**完整和部分复现都可计入 bonus**。
-- 说明工作范围，与原文结果比较，并分析差异和困难。
-- 从零实现，尤其在没有公开官方代码时，会在 bonus 评估中得到额外考虑。
-- 提交代码时，要求清晰组织的**公共 GitHub 仓库**及 `README.md`：论文信息、环境/setup、运行方法、复现结果。
-- 明确本组贡献和复用代码，致谢原始来源。
-- Bonus 根据工作质量、范围、文档清晰度、分析深度评定；不是“运行次数多”或“超过一个数字”自动得满分。
-- 可使用 CS department GPU farm；本项目目前主要用本机CPU完成，无强制GPU要求。
+- Use concise and natural Chinese; the teaching content should clearly explain the relationship between background, shape, formula and code. Previously, Chinese and English translations were required, and formal English reports/presentations can continue to be prepared accordingly.
+- Key assumptions affecting the conclusions must be stated. Reasonable and reversible details can be explained before execution; ask again when the scope of the task changes significantly.
+- makes precise modifications, retains existing directories, historical results, and failed experiments, and does not easily reconstruct or delete irrelevant files.
+- user thought there was too much Markdown, so it has been merged into `REPORT.md`, `HISTORY.md` and the entrance README. This article was added only upon explicit request; priority will be given to updating existing documents in the future.
+- Modified verification actual output and prediction, do not treat "script exit successfully" as the experiment has been verified.
+- Do not send emails, publish repositories, upload data, or change system settings without authorization.
 
-### 2.4 交付物 / Deliverables
+---
 
-- **Written Report：约3–4页，LaTeX编写。** 推荐包含：问题/动机/贡献；关键方法、算法、理论及课程联系；实验设置与结果解释；假设、优缺点和限制；小组见解、改进或扩展；复现设置、与原结果比较、困难、代码链接。
-- 正确引用论文和其他来源；来自原文的结果/图与本组产生的结果/图区分标注。
-- 复现提交需公共代码仓库、运行说明和文档。
-- 现有 `docs/REPORT.md` 是详细项目材料，**不是已排版的3–4页最终LaTeX报告**。
+## 2. Course Group Project requirements and scoring: organized by uploaded screenshots
 
-### 2.5 展示与问答 / Presentation & Q&A
+### 2.1 Topic Selection Requirements / Paper Selection
 
-- **9分钟展示 + 3分钟Q&A**；所有组员应参加展示和问答。
-- 必需内容：overview（问题/动机/贡献）、methods（核心算法和课程联系）、evidence/results（设置、主要发现及证据是否支持主张）、critical analysis（假设、优缺点、限制、扩展）、team insights（学到什么及克服的概念困难）。
-- 若做复现，在规定时间内简明展示方法、结果、与原文比较、经验。
-- 使用清晰图表并注明来源；幻灯片简洁聚焦；强调团队理解与推理。
+- Select and delve into a machine learning paper related to the course topic.
+- Priority is given to major conferences/journals: ICML, ICLR, NeurIPS; AAAI, CVPR, ACL; JMLR, Machine Learning, TMLR; IEEE TNNLS, TPAMI, TIP, TCSVT, etc.
+- If you are not sure whether it is appropriate, please consult the teacher/TA. Selected CSAs are published in TCSVT and are clearly related to PCA, dimensionality reduction, feature representation, and linear algebra.
 
-### 2.6 评分 / Evaluation Criteria
+### 2.2 Paper Study and Critical Analysis that must be completed
 
-| 项目 | 权重 | 核心要求 |
+- Explain problem definition, motivation, methodology, and main contributions.
+- Links thesis methods to course concepts.
+- Explain experimental setup and results, and determine which evidence supports which claims.
+- Critically analyze assumptions, strengths, limitations, and propose reasonable improvements/extensions.
+- Reflects the group's own understanding, reasoning, and learning process; simply reciting a summary or demonstrating high accuracy is not sufficient to cover the requirements.
+
+### 2.3 Optional reproduction bonus points / Optional Bonus: Experiment Reproduction
+
+- can reproduce numerical values, graphics, or experiments; **full and partial reproductions count toward the bonus**.
+- Describe the scope of work, compare with the paper results, and analyze differences and difficulties.
+- implemented from scratch, especially when no official code is publicly available, will receive additional consideration in bonus evaluation.
+- When submitting code, a clearly organized **public GitHub repository** and `README.md` are required: paper information, environment/setup, running method, reproduction results.
+- makes it clear that our group contributes and reuses code, acknowledging the original source.
+- Bonus is rated based on quality of work, scope, clarity of documentation, and depth of analysis; not "more runs" or "more than one number" automatically gets full points.
+- can use the CS department GPU farm; this project is currently mainly completed using the local CPU, and there is no mandatory GPU requirement.
+
+### 2.4 Deliverables
+
+- **Written Report: About 3–4 pages, written in LaTeX.** Recommendations include: problem/motivation/contribution; key methods, algorithms, theories and course connections; experimental setup and result interpretation; hypotheses, advantages, disadvantages and limitations; group insights, improvements or extensions; reproduction setup, comparison with original results, difficulties, code links.
+- Correctly cite the paper and other sources; label results/figures from the paper differently from those produced by our group.
+- reproduction submission requires a public code repository, operating instructions and documentation.
+- Existing `docs/REPORT.md` is detailed project material, **not a formatted final 3–4 page LaTeX report**.
+
+### 2.5 Presentation & Q&A / Presentation & Q&A
+
+- **9 minutes presentation + 3 minutes Q&A**; all team members should participate in presentation and Q&A.
+- Required content: overview (problem/motivation/contribution), methods (core algorithm and course connection), evidence/results (setting, main findings and whether the evidence supports the claim), critical analysis (hypotheses, advantages and disadvantages, limitations, extensions), team insights (what was learned and conceptual difficulties overcome).
+- If doing reproduction, briefly present the method, results, comparison with the paper, and experience within the specified time.
+- Use clear diagrams and cite sources; slides are concise and focused; emphasize team understanding and reasoning.
+
+### 2.6 Rating / Evaluation Criteria
+
+| project| weight| Core Requirements|
 |---|---:|---|
-| Paper Understanding | 40% | 准确、深入解释问题、方法、贡献和课程关联 |
-| Critical Analysis & Insight | 30% | 解读证据，评估假设与限制，提供有支持的见解和扩展 |
-| Written Report | 10% | 清晰、组织和连贯性，正确图表与引用 |
-| Presentation & Q&A | 20% | 结构、视觉表达、答问质量 |
-| Optional reproduction bonus | 最多额外10个百分点 | 与基础评分分开；质量、范围、文档、分析深度 |
+| Paper Understanding | 40% | Accurate and in-depth explanation of issues, methods, contributions and course relevance|
+| Critical Analysis & Insight | 30% | Interpret evidence, evaluate assumptions and limitations, and provide supported insights and extensions|
+| Written Report | 10% | Clarity, organization and coherence, correct figures and references|
+| Presentation & Q&A | 20% | Structure, visual expression, quality of Q&A|
+| Optional reproduction bonus | Up to 10 additional percentage points| Separate from base scoring; quality, scope, documentation, depth of analysis|
 
-**决策影响：70%的基础分集中在理解和批判分析。已有复现材料很丰富，但仍需把它转化成清晰报告和9分钟叙述。不能承诺最终成绩或满额bonus。**
+**Decision Impact: 70% of the foundational component focuses on understanding and critical analysis. There is a wealth of reproduction material out there, but it still needs to be translated into clear reports and 9-minute narratives. There is no guarantee of final results or full bonuses.**
 
 ---
 
-## 3. 教师、TA与作者通信：原句及实施含义
+<a id="correspondence"></a>
 
-### 3.1 教师确认的协议（用户提供的邮件）
+## 3. Communication between teacher, TA and author: original sentence and implementation meaning
+
+### 3.1 Agreement confirmed by teacher (email provided by user)
 
 > FERET and CMU PIE are not held by the teaching team. Request them here:
 >
@@ -146,11 +154,11 @@
 >
 > If a dataset or setting cannot be matched exactly, **state the difference in the report. That will not affect the final grade**.
 
-完整邮件及申请经过：[HISTORY 历史03](./HISTORY.md#history-03)。图像尺寸在代码中采用数组高×宽；眼坐标为(x,y)，不能颠倒。
+Complete email and application process: [HISTORY History 03](./HISTORY.md#history-03). The image size uses the array height × width in the code; the eye coordinates are (x, y) and cannot be reversed.
 
-实施说明：FERET本组用前q身份的Fa/Fb学习，其他身份Fa做gallery、Fb做probe；按官方配对表保留的顺序定义“前q”，顺序属于记录的约定。LDA前维数≤N−Nc是必要的秩上限控制，**不保证所有实际输入的类内散度一定满秩**，仍需数值零空间处理。
+Implementation instructions: FERET our group uses Fa/Fb of the former q identity to learn, other identities Fa is used as gallery, and Fb is used as probe; define "previous q" in the order retained in the official matching table, and the order belongs to the record agreement. LDA front dimension ≤ N − Nc is a necessary rank upper limit control. **There is no guarantee that all actual input within-class scatter will satisfy rank** and numerical zero space processing is still required.
 
-### 3.2 TA Qiyuan 最新回复
+### 3.2 TA Qiyuan latest reply
 
 > Dear Zhengwei,
 >
@@ -160,9 +168,9 @@
 > Qiyuan
 > TA, COMP3314
 
-原句：[HISTORY 后续通信](./HISTORY.md#history-14)。含义：剩余ORL对齐/Gabor可按公开文献和通行实践确定，但**同一比较条件跨方法固定一致**，逐项说明差异。没有取消双眼对齐、训练量、Tmax或NN要求，也没有确认本组的新设置等于作者原设置。
+Original sentence: [HISTORY follow-up communication](./HISTORY.md#history-14). Meaning: The remaining ORL alignment/Gabor can be determined according to public literature and common practice, but the same comparison conditions are fixed and consistent across methods**, and the differences will be explained item by item. There is no cancellation of eye alignment, training volume, Tmax or NN requirements, nor confirmation that our group's new settings are equal to the author's original settings.
 
-### 3.3 PIE获取结论：两封均来自Terence Sim
+### 3.3 PIE obtained the conclusion: both letters are from Terence Sim
 
 > Unfortunately, I do not have the rights to distribute the CMU PIE dataset. The rights belong to CMU.
 
@@ -170,56 +178,56 @@
 >
 > He also does not have the rights to distribute.
 
-用户确认Simon指Simon Baker。记录：[HISTORY 历史12](./HISTORY.md#history-12)。
+The user confirmed that Simon refers to Simon Baker. Record: [HISTORY 12](./HISTORY.md#history-12).
 
-- 本组在期限内未取得**原始CMU PIE**，按教师许可省略。
-- 正确原因是所联系作者无分发权，权利属于CMU；回信说Baker已离开CMU且也没有分发权。
-- **不能改写成作者没有访问权、数据已销毁或全世界都无法取得。** 不附未经提供的邮件头/发送日期。
-- Multi-PIE不是原始PIE的等价替代。所给官网链接不能证明已取得原论文那63人子集。
-- 不填造PIE的Table III、Fig.5(b)、Fig.8。
+- our group did not obtain the **original CMU PIE** within the time limit, which is omitted by permission of the instructor.
+- The correct reason is that the author contacted does not have distribution rights and the rights belong to CMU; the reply stated that Baker has left CMU and does not have distribution rights.
+- **Cannot be adapted to indicate that the author does not have access, that the data has been destroyed, or that it is not available worldwide.** No unprovided headers/sent date attached.
+- Multi-PIE is not an equivalent replacement for the original PIE. The official website link given does not prove that the 63-person subset of the original paper has been obtained.
+- Do not fill in Table III, Fig.5(b), Fig.8 of PIE.
 
-可用于正式英文报告：
+can be used for formal English reports:
 
 > We were unable to obtain the original CMU PIE dataset within the project timeframe. Terence Sim informed us that he does not have distribution rights, which belong to CMU. He also explained that Simon Baker had left CMU and likewise did not have distribution rights. We therefore omit the PIE experiments, as permitted by the instructor, and report our reproduction scope as ORL, MNIST, and grayscale FERET.
 
 ---
 
-## 4. 目标论文、背景知识与科学主张
+## 4. Target paper, background knowledge and scientific claims
 
-### 4.1 论文身份与来源
+### 4.1 Paper identity and source
 
 **Dong Xu, Shuicheng Yan, Lei Zhang, Stephen Lin, Hong-Jiang Zhang, Thomas S. Huang.** *Reconstruction and Recognition of Tensor-Based Objects With Concurrent Subspaces Analysis*. IEEE Transactions on Circuits and Systems for Video Technology, 18(1),36–47,January2008. DOI:10.1109/TCSVT.2007.903317。
 
-- [本地原始PDF](../Reconstruction_and_Recognition_of_Tensor-Based_Objects_With_Concurrent_Subspaces_Analysis.pdf)
-- [用户给的HKU代理IEEE页面](https://ieeexplore-ieee-org.eproxy.lib.hku.hk/document/4358655)
-- [DOI页面](https://doi.org/10.1109/TCSVT.2007.903317)
-- 原文文本已提取在 `tmp/pdfs/csa_audit_text.txt`。抽取的表格/公式可能缺字符，关键数值要看PDF页图。
-- 页图 `tmp/pdfs/csa_audit-08.png` 为印刷页43：Table I/II及best-results说明；`-09.png` 为页44：Fig.7/8与Table III/IV。以PDF实际内容为准，不混淆文件页与印刷页。
+- [Local original PDF](../Reconstruction_and_Recognition_of_Tensor-Based_Objects_With_Concurrent_Subspaces_Analysis.pdf)
+- [HKU agent IEEE page given by user](https://ieeexplore-ieee-org.eproxy.lib.hku.hk/document/4358655)
+- [DOI page](https://doi.org/10.1109/TCSVT.2007.903317)
+- the paper text has been extracted at `tmp/pdfs/csa_audit_text.txt`. The extracted tables/formulas may be missing characters, and the key values ​​must be seen on the PDF page.
+- Page picture `tmp/pdfs/csa_audit-08.png` is printed page 43: Table I/II and best-results description; `-09.png` is page 44: Fig.7/8 and Table III/IV. The actual content of the PDF shall prevail, and there shall be no confusion between the document page and the printed page.
 
-### 4.2 它提出什么问题、做什么
+### 4.2 What questions it raises and what it does
 
-- 图像本来是二维矩阵；Gabor图像是高×宽×通道的三阶张量。传统PCA把所有元素拉成向量，投影矩阵可能很大；高维小样本下学习到的方向受到样本数限制。
-- CSA保持对象的多个模式（mode），分别学习行、列、通道等投影基，把对象变成更小的核心张量。
-- 目标是**最小化重建误差**，不是直接最大化分类准确率。利用列正交投影，等价于最大化投影后核心张量总能量。
-- 交替固定其他模式，更新当前模式的领先特征子空间；更新后的基立即用于后续模式。
-- 识别时将核心张量展开成特征，直接NN，或接普通Fisher LDA再NN。无监督CSA使用学习图像；LDA还使用学习身份标签。
-- 二维CSA用于灰度人脸；三维CSA用于40通道Gabor。样本轴不是对象模式，**不能把N张图的样本轴一并压缩**。
+- The image is originally a two-dimensional matrix; the Gabor image is a third-order tensor of height × width × channels. Traditional PCA pulls all elements into vectors, and the projection matrix may be very large; the direction learned under high-dimensional small samples is limited by the number of samples.
+- CSA maintains multiple modes (modes) of the object, learns projection bases such as rows, columns, and channels respectively, and turns the object into a smaller core tensor.
+- is to minimize the reconstruction error, not to directly maximize the classification accuracy. Using column orthogonal projection is equivalent to maximizing the total energy of the core tensor after projection.
+- alternately fixes other modes and updates the leading feature subspace of the current mode; the updated basis is immediately used for subsequent modes.
+- When recognizing, expand the core tensor into features, directly NN, or connect to ordinary Fisher LDA and then NN. Unsupervised CSA uses fitting images; LDA also uses learned identity labels.
+- two-dimensional CSA is used for grayscale faces; three-dimensional CSA is used for 40-channel Gabor. The sample axis is not an object mode, and the sample axis of N pictures cannot be compressed together.
 
-### 4.3 关键数学与英文术语
+### 4.3 Key Mathematical and English Terms
 
-| 概念 | 英文 | 本项目中的含义 |
+| Concept How| English| Meaning in this project|
 |---|---|---|
-| 张量 | tensor | 多维数组，例如ORL识别张量28×23×40 |
-| 模式/展开 | mode / unfolding | 固定某一维，其他维排列成列，便于求模式协方差 |
-| 核心张量 | core tensor | 投影后的r₁×r₂×r₃表示，不是分类标签 |
-| 正交基 | orthonormal basis | UₖᵀUₖ=I，保持投影/重建等价关系 |
-| 并行子空间分析 | concurrent subspaces analysis | 多个模式子空间联合优化，实际算法逐模式交替更新 |
-| 类内/类间散度 | within-/between-class scatter | Fisher LDA希望类内紧凑、类间分离 |
-| 小样本问题 | small sample size problem | N相对维度很小，协方差/散度估计不稳 |
-| 画廊/探针 | gallery / probe | NN参考图像与待识别图像 |
-| 收缩正则化 | covariance shrinkage | 本组扩展，抑制类内散度小特征值过度放大 |
+| tensor| tensor | Multidimensional array, such as ORL recognition tensor 28×23×40|
+| mode /Expand| mode / unfolding | fixes a certain dimension and arranges the other dimensions in columns to facilitate finding the mode covariance|
+| core tensor| core tensor | The projected r₁×r₂×r₃ representation, not a classification label|
+| Orthonormal basis| orthonormal basis | UₖᵀUₖ=I, maintain projection/reconstruction equivalence|
+| Parallel subspace analysis| concurrent subspaces analysis | Multiple mode subspaces are jointly optimized, and the actual algorithm is updated alternately by mode.|
+| intra-class/between-class scatter| within-/between-class scatter | Fisher LDA wants compactness within classes and separation between classes|
+| Small sample problem| small sample size problem | N has small relative dimensions and unstable covariance/divergence estimates|
+| gallery/probe| gallery / probe | NN reference image and image to be recognized|
+| shrinkage regularization| covariance shrinkage | our group expansion, suppress the excessive amplification of small eigenvalues ​​within-class scatter|
 
-核心公式（示意，×ₖ为第k模式乘积）：
+core formula (illustrated, ×ₖ is the k-th mode product):
 
 ```text
 Gᵢ = Xᵢ ×₁ U₁ᵀ ×₂ U₂ᵀ … ×K U_Kᵀ
@@ -227,325 +235,325 @@ Xhatᵢ = Gᵢ ×₁ U₁ ×₂ U₂ … ×K U_K
 min Σᵢ ||Xᵢ − Xhatᵢ||²_F, subject to UₖᵀUₖ=I
 ```
 
-当前模式的其他模式投影为Yᵢ后，构造 `Σᵢ Yᵢ(k)Yᵢ(k)ᵀ`，取领先特征向量作Uₖ。PCA是向量空间的一次特征分解；CSA施加可分离的多模式结构。两者不能仅用“特征维数相同”就认定参数/表达能力完全一样。
+After other modes of the current mode are projected into Yᵢ, `Σᵢ Yᵢ(k)Yᵢ(k)ᵀ` is constructed, and the leading eigenvector is taken as Uₖ. PCA is an eigendecomposition of vector space; CSA imposes a separable multi-mode structure. The two cannot be considered to have exactly the same parameters/expressive capabilities just by saying "the feature dimensions are the same".
 
-普通LDA解 `S_b w = λ S_w w`；ORL G2：N=80，Nc=40，故LDA前维数≤40，最终维数还受有效Sw秩与Nc−1限制。小类内特征值即使不为零，也可能放大采样噪声。
+ordinary LDA solution `S_b w = λ S_w w`; ORL G2: N=80, Nc=40, so the pre-LDA dimension is ≤ 40, and the final dimension is also limited by the effective Sw rank and Nc−1. Even if the eigenvalues ​​within small classes are not zero, sampling noise may be amplified.
 
-### 4.4 贡献、时代背景与限制
+### 4.4 Contribution, background and limitations
 
-- 在2008年前后的传统视觉表示与小样本降维研究中，强调保留张量结构、减少投影参数、拓展可用投影方向，是本论文的重要贡献。
-- 表示方法不依赖像Tensorface那样完整的身份×姿态×光照集合；重建实验每人仅一张图也可学。
-- “小样本优势”是重要主张，但不是只研究小样本；论文也用MNIST考察高维数字表示。不能把CSA说成专门为人脸小样本分类优化的监督算法。
-- 重建能量大不一定保留更有判别力的信息；交替优化有结构限制，有限迭代、初始化、模式秩、输入细节可影响结果。
-- 原文的CSA390与PCA76，以及纯CSA390与CSA24+LDA23，并非等特征/等存储预算。
-- 旧小数据集结果不能直接推断现代大规模人脸或数字识别优越性；本项目目标是复现与分析该论文，不是建立现代SOTA。
+- In the research on traditional visual representation and small sample dimensionality reduction around 2008, the emphasis on retaining the tensor structure, reducing projection parameters, and expanding the available projection directions is an important contribution of this paper.
+- The representation method does not rely on a complete identity × pose × illumination set like Tensorface; the reconstruction experiment can be learned with only one picture per person.
+- "The advantage of small samples" is an important proposition, but it does not only study small samples; the paper also uses MNIST to examine high-dimensional digital representation. CSA cannot be said to be a supervised algorithm specially optimized for the classification of small face samples.
+- Large reconstruction energy does not necessarily retain more discriminative information; alternating optimization has structural limitations, and limited iteration, initialization, mode rank, and input details can affect the results.
+- the paper's CSA390 and PCA76, as well as pure CSA390 and CSA24+LDA23, are not equal features/equal storage budgets.
+- The results of the old small data set cannot directly infer the superiority of modern large-scale face or digit recognition; the goal of this project is to reproduce and analyze the paper, not to establish a modern SOTA.
 
-### 4.5 原论文“best results”的准确解释
+### 4.5 Accurate explanation of “best results” in the original paper
 
-原文IV-C（印刷页43）明确：
+the paper IV-C (printed page 43) states:
 
 > we report the best results, with the optimal parameter configurations given in brackets.
 
-随后解释括号主要表示最优降维维数/前后级维数。原文没有交代重复划分次数、随机种子、均值/SD或是否在很多随机划分中选最大值。
+then explained that the brackets mainly represent the optimal dimensionality reduction dimension/pre- and post-level dimensions. The paper does not explain the number of repeated splits, random seeds, mean /SD, or whether to choose the maximum value among many random splits.
 
-**可确认它报告最佳参数结果；不能确认它报告多次平均，也不能确认它像本组最新实验一样跨200划分选最大值。没有证据指控作者挑种子或造假。**
-
----
-
-## 5. 数据获取、现有文件与具体协议
-
-### 5.1 数据清单
-
-| 数据 | 当前状态 | 位置与来源 |
-|---|---|---|
-| ORL / AT&T faces | 已下载核查，40人×10张=400，原始112×92 | `data/raw/orl/`；Cambridge AT&T archive |
-| MNIST | 官方测试IDX10000张已下载；每类前500张组成5000样本 | `data/raw/mnist/`；OSSci MNIST镜像，已对官方常用MD5 |
-| 原始灰度FERET | 已授权下载所需子集，3680张TIFF，官方1195Fa/Fb对 | `FERET/`，NIST授权归档中附带gray_feret |
-| 原始CMU PIE | 未取得，按教师许可省略 | 获取经过见第3.3节 |
-
-ORL下载源：[att_faces.zip](https://www.cl.cam.ac.uk/research/dtg/attarchive/pub/data/att_faces.zip)。MNIST来源与哈希见 `data/dataset_manifest.json`。**该清单是早期下载阶段快照，里面“未取得FERET”“尚未实现”的scope现已过时，不得据此覆盖后续FERET事实。**
-
-MNIST论文同时说“测试集前半”和“每类500张”，实际官方前5000张并不均衡。本组按教师“每类500张”要求，选择每个数字的前500张；具体原作者样本索引仍未知。
-
-### 5.2 FERET必须遵守的文件约定
-
-- 先读 [FERET/README.md](../FERET/README.md)、`download_report.json`、`verification.json`。
-- **优先使用 `official_fa_fb_pairs.csv`**：1195身份2390图，全部有效眼坐标；按官方gallery名单匹配身份。不能重新从额外候选挑易识别图。
-- 全部3680张TIFF，每张原始宽256、高384，附`.gnd`及XML；2390标准配对包含在其中。
-- 官方gallery名单1196人，Fb1195人；独有00989不进入配对。不要随便增为1196对。
-- TIFF存在L和灰度调色板P模式，读取 `Image.open(path).convert('L')`。
-- 官方左右眼指人体左右，按x排序转换为画面左右，坐标(x,y)。额外317候选缺眼坐标，不属于标准配对。
-- 来源不是把Color FERET彩色图转灰，而是授权大归档附带的原始灰度库。
-- 下载说明中“尚未预处理”只是下载完成时状态；后续已有 `data/processed/feret/` 和实验输出。
-- 不公开上传原始FERET或受限特征缓存；获取说明与脚本可与受限数据分开整理。无账号、密码写入交接或公开文件。
-
-### 5.3 已确认协议与本组未知细节
-
-| 项目 | 确认要求 | 本组约定/未知内容 |
-|---|---|---|
-| ORL灰度 | 56×46，双眼对齐、归一化、histeq，G2/P8 | YuNet/Haar近似眼点、目标眼距、裁剪补边、插值；原手工眼点未知 |
-| ORL Gabor识别 | 28×23×40，5尺度8方向 | 核大小、边界、幅值处理、通道顺序、采样；逐协议保存 |
-| MNIST | 28×28，每类500，G30/P470或G40/P460，Gabor28×28×40 | 每类前500索引、具体Gabor数值参数、随机种子 |
-| FERET | 41×27，q50/100/200，其他身份Fa/Fb识别 | 官方配对顺序作为训练身份顺序、眼目标、强度处理、距离 |
-| CSA | 识别Tmax=3，正交交替更新 | identity/random/HOSVD初值、可选中心化、epsilon=.001 |
-| LDA | 前维数≤N−Nc，普通LDA基线 | 数值零空间阈值、方向列归一化、最终维数 |
-| 分类 | 最近邻 | 居中/原点余弦、欧氏；同条件跨方法一致 |
-
-旧Gabor基本式λ=4√2^s（s=0…4），θ=oπ/8（o=0…7），σ=2π，DC-free复核、响应幅值；`gabor.py`保留旧reflect流程。后续ORL试验采用过理论支持零边界和39×39零边界，不替换MNIST/旧重建的缓存。
-
-最新探索中d20目标眼点为(13,24)/(33,24)、仿射replicate；d18为(14,25)/(32,25)、仿射zero。Gabor均39×39核、零补边，先56×46滤波，再`[::2,::2]`采样。**仿射裁剪补边与Gabor卷积补边是不同设置。**
-
-公开依据已在此前查询并用于文档：
-
-- [CSU官方归一化说明](https://www.cs.colostate.edu/evalfacerec/data/normalization.html)：固定眼点、裁剪与强度处理；不是作者ORL协议的证明。
-- [Wiskott等1997论文](https://cenl.ucsd.edu/pubs/ieee-1997.pdf)：多尺度方向Gabor及幅值表示；不能把本组流程称为其完整弹性图匹配。
-- [Kolda–Bader张量综述](https://www.mathsci.ai/publication/TensorReview.pdf)：HOSVD与交替更新；HOSVD是本组起点，不是已恢复作者代码。
+**Can confirm that it reports the best parameter results; cannot confirm that it reports multiple averages, nor can it confirm that it selects the maximum value across 200 splits like our group's latest experiment. There is no evidence to accuse the author of seed selection or fraud.**
 
 ---
 
-## 6. 代码实现、复现类型与验证边界
+## 5. Data acquisition, existing documentation and specific protocols
 
-### 6.1 是否有官方代码
+### 5.1 Data List
 
-此前已搜索原作者/论文相关页面，没有取得**已核验可运行的官方CSA复现代码**；教学团队明确没有原代码/超参数记录。不应把“本组没找到”写成“证明从未有任何代码”。当前为按论文公式自行实现，基础运算由NumPy/SciPy提供，没有调用现成CSA/Tucker/PCA/LDA学习算法。
+| data| current status| Location and Source|
+|---|---|---|
+| ORL / AT&T faces | has downloaded verification, 40 people × 10 photos = 400, original 112 × 92| `data/raw/orl/`；Cambridge AT&T archive |
+| MNIST | Official test IDX 10,000 pictures have been downloaded; the first 500 pictures of each category constitute 5,000 samples| `data/raw/mnist/`; OSSci MNIST mirror, which has been used by the official MD5|
+| original grayscale FERET| has been authorized to download the required subset, 3680 TIFFs, official 1195Fa/Fb pair| `FERET/`, gray_feret included in NIST authorization archive|
+| Original CMU PIE| Not obtained, omitted with teacher permission| See Section 3.3 for the acquisition process.|
 
-代码由Codex辅助编写，小组应阅读、理解、核查，并按课程规定如实披露辅助来源及成员工作。不要把AI生成/复用内容包装为完全独立手写。
+ORL download source: [att_faces.zip](https://www.cl.cam.ac.uk/research/dtg/attarchive/pub/data/att_faces.zip). MNIST source and hash see `data/dataset_manifest.json`. **This list is a snapshot of the early download stage. The scopes of "FERET not obtained" and "not yet implemented" are now obsolete and should not be used to cover subsequent FERET facts.**
 
-### 6.2 核心实现
+MNIST paper says both "the first half of the test set" and "500 images per category", but the actual official first 5,000 images are not balanced. Our group selected the first 500 pictures of each number according to the teacher's requirement of "500 pictures per category"; the specific original authors sample index is still unknown.
 
-- `csa.py`：一般n阶CSA、投影/重建、PCA、普通Fisher LDA、NN。模式依次更新；不压缩样本轴。
-- 新增可选`initial_bases`供训练生成的HOSVD基输入，验证形状、有限性及正交性，复制传入数组。无该参数的identity/random路径已与历史实现逐元素一致回归。
-- PCA中心化；CSA原基线不中心化，后来可显式比较中心化。两种处理必须记录。
-- 普通LDA使用Sw正特征子空间白化与数值零空间剔除，α=0，无新增ridge。
-- LDA列尺度可为单位列或Sw度量尺度；NN可为gallery均值居中余弦、原点余弦、居中欧氏。线性映射方向的任意尺度会影响实际距离，不能当作无关细节。
-- HOSVD模式协方差和训练均值仅由当次学习图像生成。
+### 5.2 Document conventions that FERET must comply with
 
-### 6.3 收缩、样本量与大预算属于扩展
+- Read [FERET/README.md](../FERET/README.md), `download_report.json`, `verification.json` first.
+- **Priority to use `official_fa_fb_pairs.csv`**: 1195 identity 2390 pictures, all valid eye coordinates; match the identity according to the official gallery list. The recognition graph cannot be re-picked from additional candidates.
+- All 3680 TIFFs, each original width 256, height 384, attached `.gnd` and XML; 2390 standard pairing included.
+- has 1196 people in the official gallery list and 1195 people in Fb; unique 00989 will not enter the matching. Don't just increase it to 1196 pairs.
+- TIFF exists in L and grayscale palette P mode, reads `Image.open(path).convert('L')`.
+- The official left and right eyes refer to the left and right of the human body, sorted by x and converted to the left and right of the screen, with coordinates (x, y). An additional 317 candidate missing eye coordinates are not part of the standard pairing.
+- is not to convert the Color FERET color image to gray, but to authorize the original grayscale library that comes with the large archive.
+- "Not yet preprocessed" in the download description is only the status when the download is completed; `data/processed/feret/` and experimental output will be available later.
+- Do not publicly upload raw FERET or restricted feature caches; retrieval instructions and scripts can be organized separately from restricted data. No account number or password is written in the handover or public documents.
+
+### 5.3 Confirmed agreement with our group Unknown details
+
+| project| Confirmation request| our group agreement/unknown content|
+|---|---|---|
+| ORL grayscale| 56×46, binocular alignment, normalization, histeq, G2/P8| YuNet/Haar approximate eye point, target eye distance, cropping padding, interpolation; the original manual eye point is unknown|
+| ORL Gabor recognition| 28×23×40, 5 scales and 8 directions| Core size, boundaries, amplitude processing, channel order, sampling; saved per protocol|
+| MNIST | 28×28, 500 per category, G30/P470 or G40/P460, Gabor28×28×40| Top 500 indexes of each category, specific Gabor numerical parameters, random seeds|
+| FERET | 41×27, q50/100/200, other identities Fa/Fb recognition| Official Pairing Order as Training Identity Order, Eye Target, Intensity Processing, Distance|
+| CSA | recognition Tmax=3, orthogonal alternating update| identity/random/HOSVD initial value, optional centering, epsilon=.001|
+| LDA | front dimension ≤N−Nc, ordinary LDA baseline| Numerical zero space threshold, direction column normalization, final dimension|
+| Category| nearest neighbor| Centered/origin cosine, Euclidean; same condition across methods|
+
+The old Gabor basic formula λ=4√2^s (s=0...4), θ=oπ/8 (o=0...7), σ=2π, DC-free review and response amplitude; `gabor.py` retains the old reflect process. Subsequent ORL experiments used theoretical support for zero bounds and 39×39 zero bounds, without replacing the MNIST/old reconstructed cache.
+
+In the latest exploration, the target eye point of d20 is (13,24)/(33,24), affine replicate; d18 is (14,25)/(32,25), affine zero. Gabor has 39×39 cores, zero padding, first 56×46 filtering, and then `[::2,::2]` sampling. **Affine clipping padding and Gabor convolution padding are different settings.**
+
+has been previously queried and used in the document:
+
+- [CSU official normalization description](https://www.cs.colostate.edu/evalfacerec/data/normalization.html): fixed eye point, cropping and intensity processing; not proof of the author's ORL protocol.
+- [Wiskott et al. 1997 paper](https://cenl.ucsd.edu/pubs/ieee-1997.pdf): Multi-scale direction Gabor and amplitude representation; our group process cannot be called its complete elastic graph matching.
+- [Kolda–Bader tensor review](https://www.mathsci.ai/publication/TensorReview.pdf): HOSVD with alternating updates; HOSVD is our group initialization, not the restored author code.
+
+---
+
+## 6. Code implementation, reproduction type and verification boundary
+
+### 6.1?
+
+has previously searched the original authors/paper-related pages, but did not obtain the **official CSA reproduction code that has been verified to be runnable**; the teaching team clearly has no original code/hyperparameter records. "Our group was not found" should not be written as "prove there was never any code". Currently, it is implemented by itself according to the formula of the paper, and the basic operations are provided by NumPy/SciPy, without calling the ready-made CSA/Tucker/PCA/LDA learning algorithm.
+
+The code is written with the help of Codex. The team should read, understand, verify, and truthfully disclose the auxiliary sources and member work according to the course regulations. Don’t wrap AI-generated/reused content into completely independent handwriting.
+
+### 6.2 core implementation
+
+- `csa.py`: General n-order CSA, projection/reconstruction, PCA, general Fisher LDA, NN. mode is updated sequentially; sample axis is not compressed.
+- Added optional `initial_bases` for HOSVD basis input generated by training, verifying shape, finiteness and orthogonality, and copying the incoming array. The identity/random path without this parameter has returned to the same element-by-element consistency as the historical implementation.
+- PCA centering; The original baseline of CSA is not centered, and the centering can be compared explicitly later. Both treatments must be recorded.
+- ordinary LDA uses Sw positive feature subspace whitening and numerical zero space elimination, α=0, and no new ridge.
+- LDA column scale can be unit-norm columns or Sw metric scale; NN can be gallery mean mean-centered cosine, origin cosine, centered Euclidean. Any scale in the linear mapping direction will affect the actual distance and cannot be treated as an irrelevant detail.
+- HOSVD mode covariance and training mean are generated only from the current fitting image.
+
+### 6.3 shrinkage, sample size and large budget are extensions
 
 ```text
 Sw(α) = (1−α)Sw + α trace(Sw)/p · I
 ```
 
-α候选0/.01/.05/.15/.35/.65/1，通过gallery内验证选择。正α改变普通LDA目标，因此单列为本组扩展；不是论文原算法，也不是自动Ledoit–Wolf估计。固定样本量实验还有α=.15对照。
+α candidate 0/.01/.05/.15/.35/.65/1, selected through in-gallery verification. Positive α changes the ordinary LDA objective, so the single column expands our group; not the original algorithm of the paper, nor the automatic Ledoit–Wolf estimator. Fixed sample size experiments also have α=.15 controls.
 
-- G3/G5增加训练图是扩展，不能写成G2/P8复现成功。
-- 纯CSA560/720/1120不接LDA，故不受LDA前≤N−Nc限制，但比原纯CSA390预算大，单列。
-- 当前NN/Gabor约定可在教师许可下探索；不同方法使用不同输入的各自最大值不能拿来证明方法更强。
+- The added training graph for G3/G5 is an extension and cannot be written as G2/P8 reproduction success.
+- Pure CSA560/720/1120 does not connect to LDA, so it is not restricted by ≤N−Nc before LDA, but has a larger budget than the original pure CSA390 and is single-column.
+- The current NN/Gabor convention can be explored with instructor permission; the respective maxima of different methods using different inputs cannot be used to prove that the method is stronger.
 
-### 6.4 四类结果必须分开
+### 6.4 The four types of results must be separated
 
-1. **共享输入、论文维数固定对照**：用于跨方法比較，保留原表维数。
-2. **gallery内选参**：选择仅用gallery折；外层probe未用于本轮选择。不过历史probe已开发观察，不能称全新盲测。
-3. **probe选择的探索最高值**：最近200划分网格；学习模型只拟合gallery，但probe分数选择配置和种子，选择阶段已经使用测试信息。
-4. **本组扩展**：正α收缩、更大纯CSA预算、G3/G5训练量等。
+1. **Shared input, fixed paper dimension control**: used for cross-method comparison, retaining the original table dimension.
+2. **gallery-only validation selection**: Selection only uses gallery fold; the outer probe is not used for this round of selection. However, the historical probe has been developed and observed and cannot be called a new blind test.
+3. **probe selected exploration maximum**: the latest 200 split grid; the learning model only fits the gallery, but the probe score selects the configuration and seed, and the test information has been used in the selection stage.
+4. **Our group expansion**: positive α shrinkage, larger pure CSA budget, G3/G5 training volume, etc.
 
-后验赢家固定配置的200均值也经过配置选择，不能称独立无偏泛化估计。新随机种子仍复用同400图，不能通过换seed把已观察数据变成独立盲测。
+The 200 mean of the fixed configuration of the posterior winner is also selected by the configuration and cannot be called an independent unbiased generalized estimate. The new random seed still reuses the same 400 images, and the observed data cannot be turned into an independent blind test by changing the seed.
 
-### 6.5 已排查什么
+### 6.5 What has been checked
 
-- 原始眼点/裁剪有影响，已修正，且有只换眼坐标的固定参数对照。
-- 独立核对CSA逐模式协方差、投影、重建、LDA散度和广义特征方程、NN；未发现足以解释剩余差距的核心计算错误。
-- 核对空间轴、通道置换、重新对齐、距离原点/方向尺度、核支持/取整和增加迭代；没有单个设置恢复所有普通CSA+LDA数值。
-- FFT Gabor与直接二维卷积核对，误差约3.1×10⁻⁷。
-- 完整保存划分、预测、配置、源码/特征哈希、均值/SD；验证通过说明记录和计算内部一致，**不证明未知作者协议已匹配，也不代表所有历史运行都被另一个程序独立重新拟合**。
+- The original eye point/cropping has an impact, it has been corrected, and there is a fixed parameter comparison that only replaces the eye coordinates.
+- independently checked CSA for mode-by-mode covariance, projection, reconstruction, LDA divergence and generalized characteristic equations, NN; no core computational errors were found that were sufficient to explain the remaining gap.
+- Checks spatial axes, channel displacement, realignment, distance from origin/orientation scaling, kernel support/rounding, and increased iteration; no single setting restores all normal CSA+LDA values.
+- FFT Gabor and direct two-dimensional convolution check, the error is about 3.1×10⁻⁷.
+- fully preserves split, prediction, configuration, source code/feature hash, mean/SD; verification that the records and calculations are internally consistent does not prove that the unknown author protocol has been matched, nor does it mean that all historical runs were independently refitted by another program**.
 
 ---
 
-## 7. 当前结果与离论文的距离
+## 7. Current results and distance from the paper
 
-数值单位%，差值单位百分点(pp)。以下并列不同口径，各行已标注；不能合成一张“本组全面超过论文”的排行榜。
+The value unit is %, and the difference unit is percentage point (pp). The following is a juxtaposition of different calibers, and each row has been marked; it cannot be combined into a ranking list of "our group comprehensively exceeds the paper".
 
-### 7.1 三数据集主要差距
+### 7.1 Main differences between the three data sets
 
-| 条件/方法 | 论文 | 当前结果 | 数字差距与判断 |
+| condition/method| paper| Current results| Digital Gap and Judgment|
 |---|---:|---:|---|
-| FERET q50 CSA+LDA，共享固定余弦 | 88.2 | 88.73 | +0.53pp，数值已接近 |
-| FERET q100 CSA+LDA，同上 | 92.2 | 94.25 | +2.05pp |
-| FERET q200 CSA+LDA，同上 | 95.2 | 95.38 | +0.18pp |
-| MNIST G30/P470 CSA，3种子 | 92.8 | 90.34±0.15 | −2.46pp；CSA优于同输入PCA的趋势保留 |
-| MNIST G40/P460 CSA，3种子 | 92.4 | 91.04±0.25 | −1.36pp |
-| ORL纯Gabor CSA390，共享论文维数，10种子 | 94.4 | 90.19±2.37 | −4.21pp |
-| ORL普通Gabor CSA24→LDA23，同上 | 90.9 | 79.66±2.77 | −11.24pp，原维数配置的主要缺口 |
-| ORL普通Gabor CSA+LDA，最新gallery内选参，10种子 | 90.9 | 83.28±3.30 | −7.62pp；最高89.06，但维数按gallery调整 |
-| ORL灰度CSA+普通LDA，后续优化，10种子 | 84.1 | 78.56±3.98 | −5.54pp，仍未恢复原数值 |
-| ORL灰度CSA+收缩LDA扩展，10种子 | 原普通LDA84.1 | 84.13±2.38 | 数字接近，但算法改变，不能声称原普通LDA匹配 |
-| ORL Gabor CSA+收缩LDA最新扩展，10种子 | 原普通LDA90.9 | 85.47±4.57 | 仍低5.43pp，且为扩展 |
+| FERET q50 CSA+LDA, shared fixed cosine| 88.2 | 88.73 | +0.53pp, the value is close|
+| FERET q100 CSA+LDA, same as above| 92.2 | 94.25 | +2.05pp |
+| FERET q200 CSA+LDA, same as above| 95.2 | 95.38 | +0.18pp |
+| MNIST G30/P470 CSA, 3 seeds| 92.8 | 90.34±0.15 | −2.46pp; CSA outperforms PCA with same input for trend preservation|
+| MNIST G40/P460 CSA, 3 seeds| 92.4 | 91.04±0.25 | −1.36pp |
+| ORL pure Gabor CSA390, shared paper dimension, 10 seeds| 94.4 | 90.19±2.37 | −4.21pp |
+| ORL Ordinary Gabor CSA24→LDA23, same as above| 90.9 | 79.66±2.77 | −11.24pp, the paper's dimensions configure the main gaps|
+| ORL ordinary Gabor CSA+LDA, latest gallery-only validation selection, 10 seeds| 90.9 | 83.28±3.30 | −7.62pp; up to 89.06, but the dimension is adjusted according to gallery|
+| ORL grayscale CSA+ ordinary LDA, subsequent optimization, 10 seeds| 84.1 | 78.56±3.98 | −5.54pp, the original value has not been restored yet|
+| ORL grayscale CSA+ shrinkage LDA extension, 10 seeds| original ordinary LDA 84.1| 84.13±2.38 | The numbers are close, but the algorithm has changed and the original ordinary LDA cannot be claimed to match|
+| ORL Gabor CSA+ shrinkage LDA latest extension, 10 seeds| original ordinary LDA 90.9| 85.47±4.57 | is still 5.43pp lower and is extended|
 
-灰度后续78.56不是全部历史结果中最大的均值；此前ORL审计gallery选择灰度CSA为79.75±4.33。不要以“最新”暗示每次调参都更好。本文只列明确命名流程，保留负结果。
+The grayscale follow-up of 78.56 is not the largest mean among all historical results; the previous ORL audit gallery selected the grayscale CSA as 79.75±4.33. Don’t use “latest” to imply that every parameter adjustment will be better. This article only lists the clearly named processes and keeps negative results.
 
-FERET固定余弦PCA+LDA：89.08/90.87/93.87；原文84.6/90.6/93.4。q50本组PCA高于CSA，q100/q200 CSA较高，**没有完整恢复论文全部相对优劣**。FERET为一次固定身份拆分，没有随机SD；旧表SD=0是占位，现主表留空。
+FERET fixed cosine PCA+LDA: 89.08/90.87/93.87; the paper 84.6/90.6/93.4. q50 our group PCA is higher than CSA, q100/q200 CSA is higher, **all relative advantages and disadvantages of the paper are not fully restored**. FERET is a fixed identity split, without random SD; the old table SD=0 is a placeholder, and the current main table is left blank.
 
-MNIST固定PCA：G30=87.52±.40（论文88.5）；G40=88.58±.37（论文90.5）。历史逐方法训练内选参：PCA90.12/90.75，CSA90.22/91.22，因方法可用不同输入，单列探索，不替换共享主表。
+MNIST fixed PCA: G30=87.52±.40 (paper 88.5); G40=88.58±.37 (paper 90.5). Historical method-by-method training-only validation selection: PCA90.12/90.75, CSA90.22/91.22, because the method can use different inputs, single column exploration, and no replacement of the shared main table.
 
-后续MNIST共享输入有限优化另列：四种Gabor支持/边界，各外层划分独立5折gallery内预筛最多两个输入，再选择共享NN和identity/HOSVD；论文PCA60/50、CSA810/975、Tmax3不变，不接LDA、不增加训练图。20组选择全部冻结且200个被选内层模型重放后才评分；20组均选择identity。160评分、744000预测、78个不同外层模型的投影抽样/正交性及全部NN核查通过，两种G的CSA更新独立复算最大子空间误差4.13×10⁻¹⁰。新CSA十次均值88.89%/90.18%是负结果，**不替换此前90.34/91.04三种子主表**。输入和距离仅是本组约定：满足已确认教师约束、保留Table IV维数，不表示未知作者设置已确认；本轮未扩大秩网格或按probe另选输入/种子。G40只换输入的90.62%为事后消融，不改称验证赢家。
+The follow-up MNIST shared input limited optimization is listed separately: four Gabor supports/boundaries, each outer split is independent, pre-screening up to two inputs in the 5-fold gallery, and then selecting shared NN and identity/HOSVD; the paper PCA60/50, CSA810/975, Tmax3 remains unchanged, no LDA is connected, and no training maps are added. All 20 groups selected were frozen and the 200 selected inner models were replayed before scoring; 20 groups all selected identity. 160 ratings, 744000 predictions, projection sampling/orthogonality of 78 different outer models and all NN verification passed. The CSA updates of the two Gs were independently recalculated with a maximum subspace error of 4.13×10⁻¹⁰. The ten-time mean of the new CSA is 88.89%/90.18%, which is a negative result and **does not replace the previous three seed main tables of 90.34/91.04**. The input and distance are only our group's conventions: satisfy the confirmed teacher constraints, retain Table IV dimensions, and do not indicate that the unknown author settings have been confirmed; this round does not expand the rank grid or press probe to select another input/seed. G40 only changes 90.62% of the input for subsequent ablation and does not change the name to verify the winner.
 
-权威定位：当前共享表为 `results/orl_protocol_audit/shared_comparison.csv`。`results/shared_protocol_final/shared_comparison.csv`是**更早版本**，旧ORL分数和FERET SD占位不能当当前最终表。
+Authoritative positioning: The current share table is `results/orl_protocol_audit/shared_comparison.csv`. `results/shared_protocol_final/shared_comparison.csv` is an **earlier version**, and the old ORL scores and FERET SD placeholders cannot be used as the current final table.
 
-### 7.2 200划分最佳观测搜索：已完成、已核查
+### 7.2 200 split Best observation search: completed, verified
 
-范围：种子3000–3199，共200；3输入分支×15CSA案例，每划分45拟合，共**9000次拟合**；6003有效固定配置×200，**1,200,600评分格**。同400图被重复使用，不是百万独立实验。
+Range: seeds 3000–3199, 200 in total; 3 input branches × 15 CSA cases, 45 fits per split, **9000 fits**in total; 6003 effective fixed configurations × 200,**1,200,600 scoring grid**. The same 400 figures were reused, not millions of independent experiments.
 
-| 记录 | 最高值/正确数 | seed | 固定赢家配置200均值±SD | 达到论文次数 |
+| record| maximum/correct number| seed | Fixed winner configuration 200 mean ±SD| reaches the number of papers|
 |---|---:|---:|---:|---:|
-| 普通CSA32→LDA24 | **95.00 / 304 of 320** | 3158 | 86.415625±2.446007 | ≥90.9：5/200 |
-| 纯CSA560 | **97.50 / 312 of 320** | 3188 | 91.43125±1.860908 | ≥94.4：8/200 |
-| 纯CSA390，原维数预算 | **97.1875 / 311 of 320** | 3025 | 91.998438±1.915624 | ≥94.4：15/200 |
-| 普通CSA24→LDA23，原维数配置 | **88.4375 / 283 of 320** | 3166 | 80.159375±2.901389 | ≥90.9：0/200 |
+| Ordinary CSA32→LDA24| **95.00 / 304 of 320** | 3158 | 86.415625±2.446007 | ≥90.9：5/200 |
+| Pure CSA560| **97.50 / 312 of 320** | 3188 | 91.43125±1.860908 | ≥94.4：8/200 |
+| Pure CSA390, the paper's dimensions budget| **97.1875 / 311 of 320** | 3025 | 91.998438±1.915624 | ≥94.4：15/200 |
+| Normal CSA24→LDA23, the paper's dimensions configuration| **88.4375 / 283 of 320** | 3166 | 80.159375±2.901389 | ≥90.9：0/200 |
 
-完整赢家配置：
+Complete winner configuration:
 
-| 参数 | 普通95.00 | 纯560：97.50 | 纯390：97.1875 |
+| parameter| Normal 95.00| Pure 560: 97.50| Pure 390: 97.1875|
 |---|---|---|---|
-| 输入 | d20、replicate仿射、fixed39零Gabor | d18、zero仿射、fixed39零Gabor | 同纯560 |
-| 幅值处理 | x^0.75 | sqrt(x) | sqrt(x) |
-| CSA秩 | 4×1×8=32 | 14×2×20=560 | 15×1×26=390 |
-| 初始基 | 学习集HOSVD | 学习集HOSVD | identity |
-| CSA中心化 | false | false | false |
-| LDA | 普通α=0，24维，单位列方向 | 无 | 无 |
-| NN | gallery均值居中欧氏 | gallery均值居中余弦 | 原点余弦 |
+| input| d20, replicate affine, fixed39 zero Gabor| d18, zero affine, fixed39 zero Gabor| Tongchun560|
+| Amplitude processing| x^0.75 | sqrt(x) | sqrt(x) |
+| CSA rank| 4×1×8=32 | 14×2×20=560 | 15×1×26=390 |
+| initial base| learning set HOSVD| learning set HOSVD| identity |
+| CSA centering| false | false | false |
+| LDA | Normal α=0, 24 dimensions, unit-norm columns direction| None| None|
+| NN | gallery mean centered Euclidean| gallery mean mean-centered cosine| origin cosine|
 | Tmax | 3 | 3 | 3 |
 
-原24→23最高配置：d18/sqrt/identity/noncentered，单位列LDA，gallery均值居中余弦。
+Original 24→23 highest configuration: d18/sqrt/identity/noncentered, unit-norm columns LDA, gallery mean mean-centered cosine.
 
-- 输出根：`results/orl_best_search/`。
-- `best_results.json`：两方法全局赢家；`paper_dimension_best.json`：原390和24→23子组。
-- `configuration_summary.csv`：6003配置统计；`scores/*.npz`：全部200评分；`near_or_exceed.csv`：6432条距论文不低于−1pp的记录。
-- 普通CSA+LDA有2306格≥90.9，涉及62种子；纯CSA133格≥94.4，涉及28种子。这是**整个网格**有成功配置的种子数，不能当固定配置成功率。
-- `verification.json`通过：20个不同高分模型重新拟合，独立核对6400条预测；全部CSV与评分格对应。不等于9000模型全部独立重拟合。
-- `statistical_readback.json`通过：独立回读6003配置统计，原维数两赢家重放，6个共享输入对照，冻结源码hash一致。
-- `verified_best/`保留高分嵌入和重放记录，`source_snapshot/`保留源码，`best_distribution.png`为对应赢家分布图。
-- `statistical_readback.json`及`same_input_controls.json`由补充回读代码产生，不应未经检查声称标准stage自动生成它们。
+- output root: `results/orl_best_search/`.
+- `best_results.json`: global winner of both methods; `paper_dimension_best.json`: original 390 and 24→23 subgroup.
+- `configuration_summary.csv`: 6003 configuration statistics; `scores/*.npz`: All 200 scores; `near_or_exceed.csv`: 6432 records of papers with a bar spacing of no less than −1pp.
+- Ordinary CSA+LDA has 2306 grids ≥90.9, involving 62 seeds; pure CSA has 133 grids ≥94.4, involving 28 seeds. This is the number of successfully configured seeds for the entire grid and cannot be used as a fixed configuration success rate.
+- `verification.json` passed: 20 different high-scoring models were refitted and 6400 predictions were independently checked; all CSVs correspond to the scoring grid. Not equal to 9000 models all being refitted independently.
+- `statistical_readback.json` passed: independent readback of 6003 configuration statistics, replay of two winners of the paper's dimensions, comparison of 6 shared inputs, consistent frozen source code hash.
+- `verified_best/` retains high score embedding and replay records, `source_snapshot/` retains the source code, and `best_distribution.png` is the corresponding winner distribution map.
+- `statistical_readback.json` and `same_input_controls.json` are generated by supplementary readback code and should not be claimed to be automatically generated by the standard stage without checking.
 
-同赢家划分、输入与距离的事后对照：seed3158普通CSA32+LDA24=95，原CSA24+LDA23=84.0625，纯CSA390=87.1875，PCA33+LDA25=85.3125。seed3188纯CSA560=97.5，原CSA24+LDA23=81.875，纯CSA390与PCA33+LDA25均96.5625。这些不是全划分优势，也非等预算比较。
+is the same as the winner split, post hoc comparison of input and distance: seed3158 ordinary CSA32+LDA24=95, original CSA24+LDA23=84.0625, pure CSA390=87.1875, PCA33+LDA25=85.3125. seed3188 pure CSA560=97.5, original CSA24+LDA23=81.875, pure CSA390 and PCA33+LDA25 are both 96.5625. These are not full split advantages, nor are they a budget comparison.
 
-用户要求保留的英文句式及必须伴随的说明：
+The English sentence pattern that users request to retain and the accompanying instructions:
 
 > we report the best results, with the optimal parameter configurations given in brackets.
 >
 > In this reproduction, “best” denotes the maximum probe accuracy observed across 200 predefined random splits and the finite configuration grid. “Optimal” is restricted to that grid. Probe scores were used to select the configuration and split, so these results are exploratory maxima, not an independently validated estimate of generalization. We also report the corresponding fixed configuration's mean and standard deviation over all 200 splits and retain the complete search records.
 
-**判断：高分运行已经可重放；保留原CSA390预算也能出现超过94.4的单次值。但原CSA24→LDA23在当前网格最高仍低2.4625pp，不能说原表所有配置已恢复。**
+**Judgment: The high-scoring run is replayable; a single value exceeding 94.4 can occur even if the original CSA390 budget is retained. However, the original CSA24 → LDA23 is still 2.4625pp lower in the current grid. It cannot be said that all the configurations of the original table have been restored.**
 
-### 7.3 gallery内针对性迭代与100划分诊断
+### 7.3 Targeted iteration and 100 split diagnosis in gallery
 
-`results/orl_csa_refined/`，种子20–29，普通仅α=0；收缩单列。16内层折，每折75学习/5验证，40类保留，每张gallery验证一次；内层前维数≤35，外层≤40。候选初筛在完整gallery拟合，属于近似剪枝，不能称无偏LOO评分。
+`results/orl_csa_refined/`, seeds 20–29, usually only α=0; shrinkage single column. 16 inner layer folds, each fold 75 learning/5 verification, 40 categories reserved, each gallery is verified once; the front dimension of the inner layer is ≤35, and the outer layer is ≤40. The initial screening of candidates is fitted in the complete gallery, which is approximate pruning and cannot be called unbiased LOO scoring.
 
-- 普通Gabor CSA+LDA83.28125±3.298154，max89.0625；此前82.46875，均值增加.8125pp，3提高/4相同/3下降。
-- 收缩85.46875±4.574447，max90；此前84.75，4提高/4相同/2下降。
-- 同普通输入纯CSA39089.96875±2.226585，max93.4375；原24→23锚点80.8125±3.261598；同输入PCA33+普通LDA92.09375±2.357253。
-- 选定普通CSA保留训练总变化能量22.60%、类间变化26.07%，原24锚点19.11/22.11%。这不是身份信息百分比。
-- 收缩赢家移除α后77±8.68；配置按收缩选出，不能拿这数替代重新选择的普通83.28。
-- `evaluation/verification.json`：80评分、25600预测，重算60被选内层目标，Fisher相对残差最大约2.45×10⁻¹³，通过。
+- Ordinary Gabor CSA+LDA83.28125±3.298154, max89.0625; previously 82.46875, mean increased by .8125pp, 3 increased/4 same/3 decreased.
+- shrinkage 85.46875±4.574447, max90; previously 84.75, 4 increased/4 same/2 decreased.
+- is the same as ordinary input pure CSA39089.96875±2.226585, max93.4375; original 24→23 anchor point 80.8125±3.261598; same input PCA33+ ordinary LDA 92.09375±2.357253.
+- selected ordinary CSA to retain the total training change energy of 22.60%, the inter-class change of 26.07%, and the original 24 anchor points of 19.11/22.11%. This is not an identifying percentage.
+- shrinkage The winner is 77±8.68 after removing α; the configuration is selected by shrinkage, and this number cannot be used to replace the reselected ordinary 83.28.
+- `evaluation/verification.json`: 80 ratings, 25600 predictions, recalculation of 60 selected inner targets, Fisher relative residual error at most about 2.45×10⁻¹³, ​​passed.
 
-100固定配置诊断在本轮probe评分前冻结，seeds1000–1099，无幅值幂处理，d20/fixed39，identity/noncentered，单位列居中余弦：
+100 fixed configuration diagnosis is frozen before this round of probe scoring, seeds1000–1099, no amplitude power processing, d20/fixed39, identity/noncentered, unit-norm columns mean-centered cosine:
 
-| 固定配置 | 均值±SD | 最高 |
+| fixed configuration| mean ±SD| Highest|
 |---|---:|---:|
-| 原CSA24→LDA23 | 80.925±2.97656 | 87.50 |
+| Original CSA24→LDA23| 80.925±2.97656 | 87.50 |
 | CSA32(4×2×4)→LDA28 | 84.35625±2.84157 | 90.3125 |
-| 纯CSA390 | 89.26875±1.99095 | 93.75 |
+| Pure CSA390| 89.26875±1.99095 | 93.75 |
 
-原24→23在100次也未达90.9，说明在该输入下“只换随机划分”没有恢复原数字。新200次又同时改变幅值、秩、起点、距离，不能把差异全部归因于多跑100次。100次核对300评分、96000预测记录；不表示96000独立图。
+The original 24→23 did not reach 90.9 even after 100 times, which means that under this input, "just change random split" did not restore the original number. The new 200 times also changed the amplitude, rank, initialization, and distance. The difference cannot be attributed entirely to running 100 more times. 100 times of verification, 300 ratings, 96,000 prediction records; does not mean 96,000 independent pictures.
 
-### 7.4 增加训练图的扩展：已经做完
+### 7.4 Add extension of training graph: completed
 
-`results/orl_sample_size/`：种子20–29。每人前5随机图作训练池，后5固定probe；取前2/3/5形成G2⊂G3⊂G5。较小G未使用的训练池图不进入P5；G2另有P8原协议锚点。
+`results/orl_sample_size/`: Seeds 20–29. The first 5 random pictures for each person are used as a training pool, and the last 5 are fixed probes; the first 2/3/5 are taken to form G2⊂G3⊂G5. The unused training pool map of smaller G does not enter P5; G2 also has P8 original protocol anchor point.
 
-| 相同固定P5，10次均值 | G2 | G3 | G5 |
+| Same fixed P5, 10 times mean| G2 | G3 | G5 |
 |---|---:|---:|---:|
-| 纯CSA390 | 89.80 | 93.95 | 97.45 |
-| 纯CSA24 | 76.40 | 82.95 | 90.60 |
-| CSA24+普通LDA23 | 81.30 | 88.10 | 94.50 |
-| CSA24+固定α=.15 LDA23 | 81.90 | 88.40 | 93.90 |
-| PCA24+普通LDA23 | 88.45 | 94.05 | 97.45 |
-| 纯PCA24 | 82.70 | 88.00 | 93.45 |
+| Pure CSA390| 89.80 | 93.95 | 97.45 |
+| Pure CSA24| 76.40 | 82.95 | 90.60 |
+| CSA24+ ordinary LDA 23| 81.30 | 88.10 | 94.50 |
+| CSA24+fixed α=.15 LDA23| 81.90 | 88.40 | 93.90 |
+| PCA24+ ordinary LDA 23| 88.45 | 94.05 | 97.45 |
+| Pure PCA24| 82.70 | 88.00 | 93.45 |
 
-所有四种CSA配置均在所有10种子随训练量增大而改善。90模型、280评分、64400预测核查通过，独立3轮模式投影差约1.31×10⁻¹²。支持样本量/小样本估计影响的解释，但**不是G2/P8的原实验成功**。
+All four CSA configurations improved with increasing training volume across all 10 seeds. 90 models, 280 ratings, 64400 prediction verification passed, the projection difference of three independent rounds of mode is about 1.31×10⁻¹². Supports the explanation of sample size/small sample estimate effect, but **not the success of the original experiment of G2/P8**.
 
-也说明：同24维纯CSA→加LDA由76.4升81.3，所以“纯390高于低维+LDA”不能简单解释成LDA一定有害；前级压缩预算差别很大。
+also explained: the same as 24-dimensional pure CSA → adding LDA increases from 76.4 to 81.3, so "pure 390 is higher than low dimension + LDA" cannot be simply interpreted as LDA must be harmful; the pre-amplification budget is very different.
 
-### 7.5 重建、收敛与图形覆盖
+### 7.5 Reconstruction, Convergence and Graph Coverage
 
-- 已有ORL Fig.4/5(a)对应定性收敛/重建实验，以及早期识别维数曲线，位于 `results/available_reproduction_v2/`。
-- 每人第一图，N=40；Gabor56×46×40；重建等模式秩r×r×r；这是**学习样本Gabor张量重建**，不是Gabor逆变换灰度脸或未见图泛化。
-- `RMSE=sqrt(SSE/N)`，不是除以ND的每像素RMSE。D为单张输入全部元素。
-- PCA存储量d(N+D)；等秩CSA存储Nr³+r(56+46+40)；CR=ND/存储浮点参数数量，含共享基，不是文件字节压缩率。
-- `orl_convergence_reconstruction.png`、`orl_reconstruction.csv`、`orl_convergence.json`、`dimension_curves.csv`、`orl_lda_curves.png`保留。
-- 它们仍用**早期Gabor/眼点流程**，没有随新识别优化重算；原文Gabor绝对幅值不明，不声称纵轴精确相等，不做事后乘系数来贴曲线。
-- FERET有 `paper_comparison.png`、`lda_curves.png` 对应表格/维数曲线。不能把既有图都标成“同一最终输入版本”。
-- PIE Fig.5(b)/8/Table III省略；其余图表有对应工作不等于每个原曲线点和配置已逐项匹配。
-
----
-
-## 8. 当前差距的解释：证据强弱分开
-
-### 已有支持
-
-1. 输入对齐和裁剪会改变数值，固定对照已验证；旧流程低分不能再当最新结论。
-2. 低维模式秩结构、初始化与后级距离组合影响普通CSA+LDA。32维调节有改善，但当前不能分离每个因素的贡献。
-3. G2的Sw估计更不稳定，增加训练图明显改善；收缩可改善部分配置，但没有恢复原普通LDA。
-4. 小预算CSA最大化总投影能量，可能压掉判别差异；同输入PCA低维对照往往更强。
-5. 选参和划分口径会扩大最高值与平均值的差距；200次最大值超过论文不表示均值超过。
-
-### 仍不能唯一确定
-
-- 作者完整裁剪/眼点、Gabor有限支持和幅值归一化、具体距离与LDA方向尺度、初始化、MNIST索引、FERET排序，以及随机划分/聚合口径。
-- 没有作者原代码或超参可逐行匹配。TA允许按文献约定并报告差异，这些未知项不再是课程完成的阻塞条件。
-- 未找到核心数值错误不等于证明作者一定采用同输入；现有结果也不能证明作者选了很多次最好结果。
-- 同400张ORL重复划分相互重叠。SD是划分分布描述，不能把所有probe记录视为独立观测宣称统计显著。
-
-### 为什么CSA未必比PCA强
-
-CSA的可分离结构带来更少基参数和不同归纳偏置，也限制允许的投影空间；优势依赖数据与秩结构。当前低维4×2×3对输入可能不适配，且CSA目标不是监督判别目标。纯390与低维24+LDA不公平等预算；本组等24维实验也没有支持CSA普遍更强。应把“没有稳定恢复原相对优势”作为批判分析结果，而不是先验认定代码必错。
+- Qualitative convergence/reconstruction experiments corresponding to ORL Fig.4/5(a), together with early recognition dimension curves, are preserved in `results/available_reproduction_v2/`.
+- Use the first image per person, N=40; Gabor56×46×40; equal mode ranks r×r×r. This is **fitting-sample Gabor tensor reconstruction**, not Gabor inversion to grayscale faces or generalization to unseen images.
+- `RMSE=sqrt(SSE/N)`, not per-pixel RMSE divided by ND. D is the number of elements in one input tensor.
+- PCA storage amount d(N+D); etc. rank CSA storage Nr³+r(56+46+40); CR=ND/number of stored floating point parameters, including shared base, not file byte compression rate.
+- `orl_convergence_reconstruction.png`, `orl_reconstruction.csv`, `orl_convergence.json`, `dimension_curves.csv`, `orl_lda_curves.png` are reserved.
+- They still use the **early Gabor/eyepoint process** and have not optimized and recalculated with the new recognition; the paper Gabor absolute amplitude is unknown, does not claim that the vertical axes are exactly equal, and does not use post-multiplication coefficients to attach the curve.
+- FERET has `paper_comparison.png` and `lda_curves.png` for the tables/dimension curves. Do not label all existing figures as one final input version.
+- PIE Fig.5(b)/8/Table III are omitted. Corresponding work for the other figures does not mean every original curve point/configuration was matched.
 
 ---
 
-## 9. 实现导航、环境与重跑
+## 8. Explaining the current gap: distinguish evidence strength
 
-### 9.1 关键目录/脚本
+### Supported observations
 
-| 文件/结果 | 用途与现状 |
+1. Alignment and cropping affect scores, as fixed controls demonstrate. Old low-scoring pipelines must not be presented as the latest result.
+2. Low-dimensional mode ranks, initialization, and downstream distance affect ordinary CSA+LDA. Moving to32 dimensions helped, but individual contributions are not isolated.
+3. G2 gives less stable Sw estimation; more fitting images improve recognition substantially. Shrinkage helps some settings but does not recover the original ordinary-LDA result.
+4. Small-budget CSA maximizes projected energy and may discard discriminative differences; matched-input low-dimensional PCA controls are often stronger.
+5. Selection and split aggregation widen the difference between maxima and means. A200-split maximum above the paper does not imply an above-paper mean.
+
+### Still not uniquely determined
+
+- The authors' complete eye/crop procedure, finite Gabor support, magnitude normalization, distance and LDA scaling, initialization, MNIST indices, FERET ordering, and random-split/aggregation conventions remain unknown.
+- Original author code/hyperparameters are unavailable for line-by-line comparison. TA permits literature-based choices with disclosed differences; these unknowns no longer block course completion.
+- Not finding a core numerical error does not establish identical author inputs, and these results do not establish that the authors selected the best of many random splits.
+- Repeated splits overlap on the same400 ORL images. SD describes the split distribution; all probe records cannot be treated as independent observations for significance claims.
+
+### Why CSA need not beat PCA
+
+CSA's separable structure reduces basis parameters and changes inductive bias, while restricting the projection space. Benefits depend on data/ranks. The current4×2×3 representation may be mismatched to the inputs, and CSA is not supervised discrimination. CSA390 and24+LDA have different budgets; our matched24-dimensional experiments also do not establish universal CSA superiority. Failure to recover the relative advantage is a critical-analysis result, not proof that the code must be wrong.
+
+---
+
+## 9. Implementation navigation, environment, and reruns
+
+### 9.1 Key directories/scripts
+
+| File/result| Purpose and status|
 |---|---|
-| `csa.py`, `gabor.py` | 核心CSA/PCA/LDA/NN与旧Gabor实现 |
-| `prepare_available_data.py`, `run_available_reproduction.py` | 早期ORL/MNIST准备、固定实验、重建/曲线 |
-| `prepare_feret.py`, `run_feret.py`, `select_feret.py`, `verify_feret.py` | FERET官方配对处理、初始实验、训练内选择/核查 |
-| `audit_orl_protocol.py` → `orl_protocol_audit` | 修正眼点/裁剪、共同输入比较、gallery选择、固定对照、秩补测 |
-| `diagnose_csa_lda.py` → `csa_lda_focus` | 普通LDA数值/原点/轴与通道诊断，保留失败选择 |
-| `optimize_csa_lda.py` → `csa_lda_optimized` | 灰度/Gabor普通与收缩训练内优化、去收缩消融 |
-| `refine_orl_csa.py` → `orl_csa_refined` | Gabor专项、HOSVD、秩、归一化、十次结果及100固定划分 |
-| `search_orl_best.py` → `orl_best_search` | 200次探索网格、完整评分统计、最高值重放 |
-| `run_orl_sample_size.py` → `orl_sample_size` | 同P5 G2/G3/G5及PCA等24维对照 |
-| `optimize_mnist_protocol.py` → `mnist_protocol_optimized` | MNIST四输入、5折gallery内共享选择、十次负结果及TA/原文符合范围 |
-| `run_shared_protocol.py`, `verify_shared_protocol.py` | 此前四步共享协议对照；后续ORL有更新 |
-| `docs/HISTORY.md` | 合并的早期13份文档，另附TA后续通信 |
+| `csa.py`, `gabor.py` | Core CSA/PCA/LDA/NN and historical Gabor implementation|
+| `prepare_available_data.py`, `run_available_reproduction.py` | Early ORL/MNIST preparation, fixed experiments, reconstruction/curves|
+| `prepare_feret.py`, `run_feret.py`, `select_feret.py`, `verify_feret.py` | Official FERET pairing preparation, initial experiments, training-only selection/checks|
+| `audit_orl_protocol.py` → `orl_protocol_audit` | Eye/crop correction, shared-input comparison, gallery selection, fixed controls, rank checks|
+| `diagnose_csa_lda.py` → `csa_lda_focus` | Ordinary-LDA numerics, origin, axes/channels, with failed selections retained|
+| `optimize_csa_lda.py` → `csa_lda_optimized` | Gallery-only ordinary/shrinkage optimization for grayscale/Gabor, including removal-of-shrinkage ablation|
+| `refine_orl_csa.py` → `orl_csa_refined` | Targeted Gabor, HOSVD, ranks, normalization, ten-split results and100 fixed splits|
+| `search_orl_best.py` → `orl_best_search` | 200-split exploratory grid, complete statistics, and maximum replay|
+| `run_orl_sample_size.py` → `orl_sample_size` | SharedP5 withG2/G3/G5 and matched24-dimensional PCA controls|
+| `optimize_mnist_protocol.py` → `mnist_protocol_optimized` | MNIST four inputs,5-fold shared gallery selection, ten-split negative results, and TA/paper scope|
+| `run_shared_protocol.py`, `verify_shared_protocol.py` | Historical four-step shared controls; later ORL updates supersede them|
+| `docs/HISTORY.md` | Merged13 early documents and subsequent TA correspondence|
 
-旧结果目录多是有证据价值的探索，不应为“清爽”删除原始CSV、协议或快照。用户之前授权的是合并Markdown，不是删除实验数据。
+Older result directories retain valuable exploratory evidence. Do not delete raw CSVs, protocols, or snapshots for tidiness. The earlier authorization covered Markdown consolidation, not experiment-data deletion.
 
-### 9.2 环境
+### 9.2 Environment
 
-Windows PowerShell，Python3.11（现有绝对解释器 `C:\Users\gwdsd\AppData\Local\Programs\Python\Python311\python.exe`）。
+Windows PowerShell, Python3.11 (recorded interpreter `C:\Users\gwdsd\AppData\Local\Programs\Python\Python311\python.exe`).
 
-锁定依赖：NumPy2.4.6、SciPy1.17.1、Pillow12.3.0、Matplotlib3.11.1、threadpoolctl3.6.0；预处理OpenCV-headless4.12.0.88装在项目`.deps/`，见两份requirements。
+Pinned dependencies: NumPy2.4.6, SciPy1.17.1, Pillow12.3.0, Matplotlib3.11.1, threadpoolctl3.6.0; preprocessing OpenCV-headless4.12.0.88 is installed in project `.deps/`. See both requirements files.
 
 ```powershell
 Set-Location 'D:\HKU\COURSE\y2s1\COMP3314\COMP3314GP'
-# 若环境尚未准备，再安装；已有环境不必重复安装。
+# Install dependencies only if the environment is not already prepared.
 python -m pip install -r requirements.txt
 python -m pip install --no-deps --target .deps -r requirements-preprocess.txt
 ```
 
-本机CPU已实际完成这些实验，无GPU要求。最近搜索用3进程各2BLAS线程，约23分钟；时间依赖缓存和机器，峰值内存未测，不给其他笔记本资源保证。当前交接无待续实验任务。
+These experiments ran on the local CPU without a GPU requirement. The recent search used3 processes with2 BLAS threads each and took about23 minutes. Timing depends on caches/hardware; peak memory was not measured and no other-laptop resource guarantee is made. No experiment was pending at this handoff date.
 
-### 9.3 最简高分重放
+### 9.3 Minimal high-score replay
 
 ```powershell
 python search_orl_best.py --stage replay --family 'CSA+LDA'
 python search_orl_best.py --stage replay --family CSA
 ```
 
-分别重放已保存95%和97.5%赢家，不重新选参，不是随机典型运行。390维赢家和原24→23赢家的完整记录在 `paper_dimension_best.json`，该CLI的family选择没有单独390选项。
+Replay the saved95% and97.5% winners separately without reselection; these are not typical random runs. Complete390-dimensional and original24→23 winners appear in `paper_dimension_best.json`; this CLI has no separate390 family option.
 
-### 9.4 全部200划分重跑：只有需要时才做
+### 9.4 Rerunning all200 splits: only when needed
 
 ```powershell
 python search_orl_best.py --stage prepare --output results/orl_best_search_rerun
@@ -555,11 +563,11 @@ python search_orl_best.py --stage verify --output results/orl_best_search_rerun
 python search_orl_best.py --stage plot --output results/orl_best_search_rerun
 ```
 
-每步成功、结果检查通过后再下一步；prepare输出目录必须尚不存在。run可互不重叠地分批`--start/--stop`，stop不含；完整范围3000–3199。**依赖已有ORL特征缓存，不是从空仓库下载/生成全部数据的单入口。**
+Proceed after each stage and result check succeeds. The prepare output directory must not exist. Run disjoint batches using `--start/--stop`, with exclusive stop; full range3000–3199. **Existing ORL feature caches are required; this is not a single fresh-checkout download/reconstruction entry point.**
 
-协议冻结包括源码和特征hash；修改搜索/core后，不要直接续旧评分，使用新输出根并说明版本差异。不要改源码以绕过hash检查。统计回读时不要覆写既有赢家索引。
+The freeze includes source and feature hashes. After editing search/core code, use a new output root and disclose the version difference rather than resuming old scores. Do not bypass hashes by editing source. Preserve historical winner indices when rereading statistics.
 
-### 9.5 gallery内迭代重跑
+### 9.5 Rerunning gallery-only refinement
 
 ```powershell
 python refine_orl_csa.py --stage prepare --output results/orl_csa_refined_rerun
@@ -570,9 +578,9 @@ python refine_orl_csa.py --stage randomness --output results/orl_csa_refined_rer
 python refine_orl_csa.py --stage analyze --output results/orl_csa_refined_rerun
 ```
 
-十个种子20–29选择全部冻结后评分；randomness-plan在评分前。evaluate内置核查。现有结果仅核查：`python refine_orl_csa.py --stage verify`。依赖先前csa_lda_optimized输入/眼点和锚点，不是空数据入口。
+Freeze all selections for seeds20–29 before scoring; randomness-plan precedes scoring. Evaluate includes checks. To verify existing outputs: `python refine_orl_csa.py --stage verify`. This depends on preceding csa_lda_optimized inputs/eyes/references, not an empty-data checkout.
 
-### 9.6 样本量扩展重跑
+### 9.6 Rerunning the sample-size extension
 
 ```powershell
 python run_orl_sample_size.py --output results/orl_sample_size_rerun
@@ -580,92 +588,92 @@ python run_orl_sample_size.py --diagnostic --output results/orl_sample_size_reru
 python run_orl_sample_size.py --analyze --output results/orl_sample_size_rerun
 ```
 
-同样用新输出根、逐步核查；仅复查现有输出：`python run_orl_sample_size.py --verify`。依赖ORL审计catalogue/缓存。
+Use a new output root and stage checks. To verify existing outputs only: `python run_orl_sample_size.py --verify`. Requires the ORL audit catalogue/caches.
 
-其他准备与运行入口的依赖、默认输出可能是早期版本，先查`--help`和REPORT第9节，不要盲跑默认值覆盖。准备干净公共仓库时需要另做真正从原始数据到最终固定实验的运行链，不能只提供依赖未发布results缓存的命令。
+Other entry points may have older dependencies/default outputs. Check `--help` and REPORT§9 first, rather than overwriting defaults. A clean public checkout needs a genuine raw-data-to-final-input sequence, not only commands depending on unpublished result caches.
 
 ---
 
-## 10. 验证和证据入口：优先读这些
+## 10. Verification and evidence: read these first
 
-| 证据 | 位置 | 已有核查含义 |
+| Evidence| Location| Meaning of recorded checks|
 |---|---|---|
-| 当前三数据集共享表 | `results/orl_protocol_audit/shared_comparison.csv` | 当前ORL及复用MNIST/FERET，不混用旧共享表 |
-| 最新探索高分 | `results/orl_best_search/best_results.json` | 正确计数、参数、均值SD、选择口径 |
-| 原论文维数高分 | `results/orl_best_search/paper_dimension_best.json` | 原390与24→23子组重放 |
-| 探索模型验证 | `results/orl_best_search/verification.json` | 200完整评分、20模型/6400预测独立核查 |
-| 额外统计回读 | `results/orl_best_search/statistical_readback.json` | 6003配置统计、原维数2重放、6共享条件对照、源码hash |
-| gallery内迭代 | `results/orl_csa_refined/evaluation/results.csv`、`summary.json`、`verification.json` | 80评分、25600预测、普通/扩展分开 |
-| 参数与能量 | `results/orl_csa_refined/selected_settings.csv`、`training_energy.csv` | 每个种子实际选择、训练诊断 |
-| 固定100诊断 | `results/orl_csa_refined/randomness/results.csv`及`verification.json` | 所有100保留，300评分/96000记录 |
-| 样本量扩展 | `results/orl_sample_size/summary.json`、`analysis.json`、`verification.json` | 90模型和固定P5真实配对 |
-| FERET | `results/feret_validation_selected_v3/fixed_results.csv`、`selected_configs.json`、`verification.json` | 区分validation_selected与cosine_control |
-| MNIST/早期重建 | `results/available_reproduction_v2/fixed_results.csv`、`verification.json` | 旧输入和三种子，未伪装成最新重跑 |
-| MNIST最新有限优化 | `results/mnist_protocol_optimized/comparison.csv`、`original_three_seed_comparison.csv`、`protocol.json`、`verification.json` | 十次基线与选参配对、原三次对照，负结果完整保留；补充统计/符合范围见`supplementary_readback.json`，非标准stage自动生成 |
+| Current shared three-dataset table| `results/orl_protocol_audit/shared_comparison.csv` | Current ORL and reused MNIST/FERET, separate from old shared tables|
+| Latest exploratory high scores| `results/orl_best_search/best_results.json` | Correct counts, parameters, mean/SD, and selection convention|
+| High scores at original paper dimensions| `results/orl_best_search/paper_dimension_best.json` | Original390 and24→23 subgroup replay|
+| Exploratory-model verification| `results/orl_best_search/verification.json` | 200 complete split scores;20 models/6400 predictions independently checked|
+| Supplementary statistical readback| `results/orl_best_search/statistical_readback.json` | 6003 configuration statistics, two paper-dimension replays, six shared-condition controls, source hashes|
+| Gallery-only refinement| `results/orl_csa_refined/evaluation/results.csv`、`summary.json`、`verification.json` | 80 scores,25600 predictions; ordinary methods and extensions separated|
+| Parameters and energy| `results/orl_csa_refined/selected_settings.csv`、`training_energy.csv` | Actual selections and fitting diagnostics for each seed|
+| Fixed100-split diagnosis| `results/orl_csa_refined/randomness/results.csv` and `verification.json`| All100 retained;300 scores/96000 records|
+| sample size expansion| `results/orl_sample_size/summary.json`、`analysis.json`、`verification.json` | 90 models and genuine paired comparisons at fixedP5|
+| FERET | `results/feret_validation_selected_v3/fixed_results.csv`、`selected_configs.json`、`verification.json` | Distinguish validation_selected and cosine_control|
+| MNIST/early reconstruction| `results/available_reproduction_v2/fixed_results.csv`、`verification.json` | Old inputs and three seeds, not presented as a latest rerun|
+| Latest bounded MNIST optimization| `results/mnist_protocol_optimized/comparison.csv`、`original_three_seed_comparison.csv`、`protocol.json`、`verification.json` | Ten paired baseline/selected runs, original three-seed control, and complete negative results. Supplementary statistics/compliance appear in `supplementary_readback.json`, not a standard stage-generated output.|
 
-数值真实性的核查不能排除选择偏差；数据统计hash正确也不等于原作者图像索引相同。遇到CSV和文档冲突，核对流程标签、protocol与逐预测，不静默挑最大值。
+Numerical verification does not eliminate selection bias; correct data hashes do not establish the authors' exact image indices. If CSV and prose conflict, inspect workflow labels, protocols, and predictions rather than silently choosing the maximum.
 
 ---
 
-## 11. 现在最值得补充什么：优先级与验收
+## 11. Most useful next work: priorities and acceptance criteria
 
-以下为初次交接时的建议，不代表已执行。后续MNIST有限优化已单列完成，当前无待续实验；新实验仍按用户下一项明确任务决定。
+These were recommendations at the initial handoff, not completed work. Subsequent bounded MNIST optimization is separately completed; no experiment was pending then. New experiments depend on the next explicit user task.
 
-### P0：课程正式交付和结果口径（收益最高）
+### P0: Course deliverables and result categories (highest priority)
 
-1. 冻结一张最终论文对照表：共享/原维数主结果、gallery内选择结果、探索best、扩展分别标识；原文没有SD，不擅自补SD或称其均值。
-2. 3–4页LaTeX报告：明确范围ORL/MNIST/灰度FERET，PIE许可省略；说明输入/距离/排序/索引和统计差异。
-3. 9分钟展示与3分钟Q&A：讲清张量→CSA更新→NN/LDA→数据证据→限制/小组洞见，避免展示历次搜索流水账。
-4. 公共GitHub与README：环境、数据获取、从原始数据生成最终输入、固定协议运行、绘图、预期结果；引用与AI辅助/成员贡献说明。现有缓存依赖是需要整理的实际交付缺口。
+1. Freeze a paper-comparison table labeling shared/original-dimension results, gallery selections, exploratory best, and extensions separately. Do not invent a paper SD or call its number a mean.
+2. 3–4-page LaTeX report: state ORL/MNIST/grayscale FERET scope and authorized PIE omission; disclose input/distance/order/index/statistical differences.
+3. 9-minute presentation and3-minute Q&A: tensor→CSA updates→NN/LDA→evidence→limits/team insight; avoid narrating every search run.
+4. Public GitHub and README: environment, acquisition, raw-data-to-input preparation, fixed experiments, plots, expected results, references, AI assistance/member contributions. Cache dependencies are a real delivery limitation to document.
 
-验收：干净环境按README能运行选定最终实验或明确授权数据前提；表格可追溯正确计数；报告页数和时间符合要求；原图/本组图标识清楚。**当前项目内未发现已完成的.tex/.pptx正式材料，没有已确认发布的公共仓库。**
+Acceptance: a clean environment can run the selected final experiment or clearly states authorized-data prerequisites; tables trace to correct counts; page/time limits and figure attribution are met. **At this historical point no completed.tex/.pptx deliverables or confirmed public repository were found.**
 
-### P1：统一图形与一个有解释力的补充实验
+### P1: Consistent figures and one explanatory supplementary study
 
-- 整理Table I/II/IV对应对照，以及Fig.4/5(a)/6/7的已有曲线。若要声称同一最终流程，重建/收敛图需按最终固定输入重新生成，保留早期图，不任意缩放纵轴。
-- 最有价值的新增实验是**固定相同划分和输入的消融**：24→32秩、identity→HOSVD、原幅值→0.75幂、距离余弦→欧氏、LDA23→24，分离因素及必要交互。目前95%赢家同时改变多项，不能解释究竟哪项造成改善。
-- 与PCA共享输入、距离、划分，做相同前级/后级维数或相同存储预算的对照；已有等24维对照可先整理，不必重新全网格搜索。
+- Organize Table I/II/IV comparisons and existing Fig.4/5(a)/6/7 curves. To claim one final pipeline, regenerate reconstruction/convergence from the final fixed input, retaining earlier plots and never rescaling ordinates arbitrarily.
+- The most useful new study is a **matched-split/input ablation** of24→32 ranks, identity→HOSVD, magnitude→power0.75, cosine→Euclidean, and LDA23→24, isolating factors and necessary interactions. The95% winner changes several factors simultaneously, so their separate contributions are unknown.
+- Share input, distance, and splits with PCA; match pre/post-reduction dimensions or storage budgets. Existing24-dimensional controls can be organized before adding any full grid.
 
-验收：预先冻结小规模对照，报告全部划分及失败案例，增益必须来自明确的配对比较。新seed不自动构成独立盲测，不按测试得分删低分。
+Acceptance: freeze a bounded control design first, report every split and failed case, and derive gains from explicit paired comparisons. A new seed is not automatically a blind test; do not discard low scores.
 
-### P2：有助于讲解的附加材料
+### P2: Additional explanatory materials
 
-- 错例展示：同probe在CSA/PCA的最近邻、对应gallery图，讨论姿态、光照、眼点误差；仅作为事后诊断。
-- 准确率分布与范围：现有200分布已足够展示best与mean不同，不需要为了最大值无休止增加seed。
-- 计算量/压缩效率：记录同机器/线程/输入的时间、基和系数存储，若测内存则注明测量方式；没有实测峰值不报猜测值。
-- 如果时间有限，先用已有固定P5样本量实验、同24维LDA对照及分布图做批判分析，通常比再调几百次参数更有内容。
+- Error examples: CSA/PCA neighbors and gallery images for the same probe; discuss pose, lighting, and eye errors as post-hoc diagnostics.
+- Accuracy distributions/ranges: the existing200-split distribution illustrates best versus mean; no endless seed expansion is needed.
+- Compute/compression costs: record timing and basis/coefficient storage with matched hardware/threads/inputs; define any measured memory. Do not guess unmeasured peak usage.
+- With limited time, existing fixedP5 sample-size controls, matched24-dimensional LDA controls, and distributions usually support stronger analysis than hundreds of additional parameter trials.
 
-### 推荐9分钟叙述结构
+### Suggested9-minute narrative
 
-| 时间 | 内容 |
+| Time| content|
 |---|---|
-| 0:00–1:00 | 向量化与张量：问题/动机 |
-| 1:00–3:00 | CSA投影、交替更新、与PCA/LDA课程联系 |
-| 3:00–4:00 | 论文实验和本组范围、教师协议、PIE省略 |
-| 4:00–6:00 | 三数据集主结果，ORL原维数与探索最高值分开 |
-| 6:00–8:00 | 小样本、模式预算、LDA和输入差异的证据 |
-| 8:00–9:00 | 贡献、限制、团队学习与结论 |
+| 0:00–1:00 | Vectorization versus tensors: problem/motivation|
+| 1:00–3:00 | CSA projection, alternating updates, and PCA/LDA course connections|
+| 3:00–4:00 | Paper experiments, group scope, instructor protocol, and PIE omission|
+| 4:00–6:00 | Three-dataset main results, separating original-dimension ORL and exploratory maxima|
+| 6:00–8:00 | Evidence concerning small samples, mode budgets, LDA, and inputs|
+| 8:00–9:00 | Contributions, limitations, team learning, and conclusions|
 
-Q&A应能回答：为什么不压样本轴；为何重建好不保证识别好；390与24+LDA能否公平比較；Sw秩为什么≤N−Nc；正α为何是扩展；95%为什么不能当平均；PIE为何省略；哪些代码/分析是本组贡献。
+Q&A: why not compress the sample axis; why reconstruction need not imply classification; fairness of390 versus24+LDA; why rankSw≤N−Nc; why positivealpha is an extension; why95% is not a mean; PIE omission; group code/analysis contributions.
 
 ---
 
-## 12. 新会话注意事项与可直接复制的开场
+## 12. New-session cautions and reusable opening
 
-### 不要重复踩的坑
+### Avoid repeating these mistakes
 
-- 不把95/97.5探索值替代83.28等训练内均值，不把图像拟合隔离等同于选参未用测试。
-- 不说原文是多次平均或证实作者跨多次挑最好；原文未明确统计规则。
-- 不说只剩Gabor有差距：灰度普通CSA+LDA仍低，MNIST有小差距，PIE缺失，部分原维数相对趋势不同。
-- 不把正α、G5/P5、560维纯CSA叫原协议精确复现。
-- 不把TA允许差异理解为取消共享输入/训练量/Tmax要求。
-- 不把数据清单旧scope、旧共享表、旧图和download时状态当当前状态。
-- 不因旧结果更多而删除证据，不额外生成大量计划MD。
-- 不未经授权上传FERET/缓存，或披露下载凭据。
-- 不先重跑全部实验；先从当前已验证记录和用户具体下一项任务着手。
+- Do not replace gallery-only means such as83.28 with exploratory95/97.5; fitting isolation alone does not establish test-free selection.
+- Do not claim the paper reports a repeated mean or proves best-seed selection; its aggregation rule is unspecified.
+- Do not say only Gabor remains unmatched: grayscale ordinaryCSA+LDA is also lower, MNIST has gaps, PIE is absent, and some original-dimension relative rankings differ.
+- Positivealpha, G5/P5, and560-dimensional CSA are not exact original protocols.
+- TA permission for differences does not waive shared-input, fitting-count, or Tmax requirements.
+- Historical manifest scopes, shared tables, figures, and download-time statuses do not override current results.
+- Retain historical evidence and avoid many additional planning Markdown files.
+- Never upload FERET/caches or expose download credentials without authorization.
+- Do not begin by rerunning all experiments; read verified records and the next specific user request first.
 
-### 可复制的新会话提示
+### Reusable prompt for a new session
 
-> 请先阅读 `D:\HKU\COURSE\y2s1\COMP3314\COMP3314GP\docs\HANDOFF.md`，再按其中导航读取 `README.md`、`docs/REPORT.md`及相关结果协议。这里包含项目来源、CSA原论文、课程截图评分、教师/TA与作者回信、数据、代码、全部关键结果和排查结论。请保留共享原维数结果、gallery内选参、probe选择的探索最高值以及扩展实验之间的区别，不把未知协议写成原作者已确认设置。PIE经教师许可省略。先简短说明你接手后的理解，再按我接下来指定的任务执行；不要自动再做全网格搜索或新增大量Markdown。
+> First read `D:\HKU\COURSE\y2s1\COMP3314\COMP3314GP\docs\HANDOFF.md`, then follow its navigation to `README.md`, `docs/REPORT.md`, and relevant result protocols. These cover provenance, the CSA paper, coursework screenshots, instructor/TA/author replies, data, code, key results, and diagnoses. Preserve distinctions among shared paper-dimension references, gallery-only selections, probe-selected exploratory maxima, and extensions. Do not turn unknown protocols into author-confirmed settings. PIE omission is instructor-authorized. Briefly state your understanding, then execute the next user-specified task; do not automatically rerun a full grid or create many Markdown files.
 
-初次交接已完成资料与结果回读，并检查当时本文全部本地链接；当时新增本文、README导航，澄清probe选参范围及FERET流程标签，未改变算法、参数、数据或成绩。后续已新增MNIST独立实验脚本及结果，并更新现有三份导航文档；原算法、原数据、历史成绩及其他数据集结果均保留。
+The initial handoff reread records and checked all then-current local links. It added this document/README navigation, clarified probe selection and FERET labels, and changed no algorithms, parameters, data, or scores. Subsequent bounded MNIST work added its own script/results and updated navigation documents; core algorithms, original data, historical scores, and other datasets remain preserved.
