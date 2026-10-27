@@ -121,6 +121,12 @@ Sources: [ORL HOSVD/context summary](results/orl_recovery_20261027/summary.csv) 
 
 See [all experiments and limitations](docs/TEAM_BRIEF.md), [controlled statistics](results/orl_controlled/summary.csv), [DATER statistics](results/orl_dater/summary.csv), and [MNIST comparison](results/mnist_protocol_optimized/comparison.csv). Repeated predictions reuse the same images and are not independent new samples.
 
+## Report and slide figures
+
+[Download the complete figure pack](results/report_figures_20261027/CSA_report_slide_figures_20261027.zip) or open the [27-page vector PDF atlas](output/pdf/CSA_figure_atlas_20261027.pdf). The27 English figures cover all16 paper-corresponding recognition cases, per-dataset comparisons, reconstruction/convergence and dimension curves, plus controlled studies and extensions. Each has a high-resolution PNG, editable SVG, caption, and traceable source data.
+
+Use the [numbered catalogue and presentation guidance](docs/TEAM_BRIEF.md#figure-pack), [CSV source/caption index](results/report_figures_20261027/figure_catalog.csv), or [LaTeX snippets](results/report_figures_20261027/latex_figures.tex). The current ORL HOSVD/context representative and full-square initialization variant remain separately labeled. These exports contain charts only; datasets, face images and model caches remain excluded. The last dimension-curve panel scores saved models without new fitting and verifies the23D endpoints against recorded results.
+
 ## Run and verify
 
 Run commands from the repository root. Use **new output directories** for reruns; prepare the required data first. Some later runners also reuse earlier aligned images and source models, so they are not stand-alone download-and-run entry points. Full stage sequences and dependencies are documented in [TEAM_BRIEF](docs/TEAM_BRIEF.md#verification) and [REPORT](docs/REPORT.md#outputs).

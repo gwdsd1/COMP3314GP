@@ -1132,3 +1132,58 @@ historical implementation entry (located together with the results directory, no
 | [Code and dependencies](../README.md) / [FERET instructions](../FERET/README.md) | Group results, implementation/reused components, and data acquisition; include the actual public repository URL in the final submission |
 
 The public basis and historical query records of Tan–Triggs illumination combination, HOSVD, and covariance shrinkage are recorded in [original planning/citation](./REPORT.md#orl-next-directions), [HANDOFF theory and implementation](./HANDOFF.md). Ultimately, if these methods are deployed in the report, the bibliographic information should be completed with actual citations; our group's manual shrinkage grid cannot be written to use the automatic Ledoit–Wolf estimator. This article retains the actual execution recipe and source code, and does not replace the original authors' undisclosed CSA settings with a general reference.
+
+
+<a id="figure-pack"></a>
+
+## Appendix E. Report and presentation figure pack (2026-10-27)
+
+**27 English figures cover multiple main results, not only the current ORL24→23 representative.** The pack includes all16 paper-corresponding recognition cases, reconstruction/compression and convergence, FERET/ORL dimension curves, matched ORL controls, selection outcomes, DATER, shrinkage, sample size, cost, robustness, and errors. Full reproduction is the project classification within the instructor-approved scope; the figure categories keep numerical agreement and protocol differences explicit.
+
+- [27-page vector PDF atlas](../output/pdf/CSA_figure_atlas_20261027.pdf): one numbered figure per page, with captions and limitations.
+- [Complete ZIP package](../results/report_figures_20261027/CSA_report_slide_figures_20261027.zip): atlas,27 high-resolution PNGs,27 editable vector SVGs, captions/source index, plotting data, provenance manifest, and LaTeX snippets.
+- [Figure/caption/source catalogue](../results/report_figures_20261027/figure_catalog.csv), [plotted data](../results/report_figures_20261027/plot_data.csv), [provenance manifest](../results/report_figures_20261027/manifest.json), and [LaTeX snippets](../results/report_figures_20261027/latex_figures.tex).
+- [Reproducible generator](../plot_report_figures.py): `python plot_report_figures.py`; requires recorded local evidence and, for the last panel, omitted saved model/feature caches.
+
+**Recommended main-result choices:**01-05 summarize all three datasets and paper differences;21-22 cover reconstruction and convergence;24-25 cover FERET and historical ORL dimension curves. Figure27 adds the current ORL input's dimension curves from saved models. Figures06-20 and23 support controlled analysis and extensions. Figure26 introduces the algorithm. For a short talk, select from these groups rather than treating every diagnostic as a main result.
+
+**Statistics and attribution:** Whiskers are sample SD across the stated splits, not confidence intervals. FERET uses a fixed identity partition and has no invented split SD. Paper values are attributed to Xu et al.2008; their best-result aggregation is unspecified. Current ORL HOSVD/context88.75±2.89 is marked as an extension; full-square88.81±2.97 is separate. Gallery selections, fixed extensions, historical inputs and probe-selected extrema retain distinct captions. Display rounding uses decimal half-up; underlying data are unchanged.
+
+**Zero new fits:** Figures01-26 read recorded evidence. Figure27 scores existing models at LDA dimensions1-23, using40 saved model instances and920 scores, with every23D endpoint matching its archived score. These descriptive curves do not reselect the reported23D representative and are not a new blind test. No face images, raw labels, model caches, or datasets are included in the package.
+
+To use vector output in LaTeX, copy the atlas into the report project, load `graphicx`, and select a page, for example:
+
+```latex
+% Preamble: \usepackage{graphicx}
+\includegraphics[page=2,width=\linewidth]{CSA_figure_atlas_20261027.pdf}
+```
+
+| Atlas page | Figure | Category | Individual files |
+|---:|---|---|---|
+| 01 | Paper versus reproduction: all 16 recognition cases | Main result | [PNG](../results/report_figures_20261027/png/01_all_recognition_cases.png) / [SVG](../results/report_figures_20261027/svg/01_all_recognition_cases.svg) |
+| 02 | ORL: six paper-dimension recognition cases | Main result | [PNG](../results/report_figures_20261027/png/02_orl_paper_comparison.png) / [SVG](../results/report_figures_20261027/svg/02_orl_paper_comparison.svg) |
+| 03 | MNIST: both gallery sizes, both representations | Main result | [PNG](../results/report_figures_20261027/png/03_mnist_paper_comparison.png) / [SVG](../results/report_figures_20261027/svg/03_mnist_paper_comparison.svg) |
+| 04 | FERET: three training sizes, PCA and CSA controls | Main result | [PNG](../results/report_figures_20261027/png/04_feret_paper_comparison.png) / [SVG](../results/report_figures_20261027/svg/04_feret_paper_comparison.svg) |
+| 05 | Numerical gaps from the paper across all 16 cases | Main result | [PNG](../results/report_figures_20261027/png/05_all_paper_gaps.png) / [SVG](../results/report_figures_20261027/svg/05_all_paper_gaps.svg) |
+| 06 | ORL recovery: every one of the ten observed splits | Context extension | [PNG](../results/report_figures_20261027/png/06_orl_ten_splits.png) / [SVG](../results/report_figures_20261027/svg/06_orl_ten_splits.svg) |
+| 07 | ORL: geometry and initialization interactions | Context / start variants | [PNG](../results/report_figures_20261027/png/07_orl_geometry_initialization.png) / [SVG](../results/report_figures_20261027/svg/07_orl_geometry_initialization.svg) |
+| 08 | ORL fixed factorial study: sigma by context | Fixed input extension | [PNG](../results/report_figures_20261027/png/08_orl_sigma_context_factorial.png) / [SVG](../results/report_figures_20261027/svg/08_orl_sigma_context_factorial.svg) |
+| 09 | ORL three fixed inputs: improvements and regressions | Fixed input extension | [PNG](../results/report_figures_20261027/png/09_orl_three_fixed_inputs.png) / [SVG](../results/report_figures_20261027/svg/09_orl_three_fixed_inputs.svg) |
+| 10 | Gallery-only staged selection: most gain comes early | Gallery-only selection | [PNG](../results/report_figures_20261027/png/10_orl_gallery_selection_stages.png) / [SVG](../results/report_figures_20261027/svg/10_orl_gallery_selection_stages.svg) |
+| 11 | Crop-only bounded optimization: small gain, negative controls | Gallery-only selection | [PNG](../results/report_figures_20261027/png/11_orl_crop_only_optimization.png) / [SVG](../results/report_figures_20261027/svg/11_orl_crop_only_optimization.svg) |
+| 12 | ORL sample-size extension with the same five probes | Sample-size extension | [PNG](../results/report_figures_20261027/png/12_orl_sample_size.png) / [SVG](../results/report_figures_20261027/svg/12_orl_sample_size.svg) |
+| 13 | MNIST bounded selection: preserve the negative result | Gallery-only selection | [PNG](../results/report_figures_20261027/png/13_mnist_selection_negative.png) / [SVG](../results/report_figures_20261027/svg/13_mnist_selection_negative.svg) |
+| 14 | FERET: validation winners and fixed controls differ | Selection protocol comparison | [PNG](../results/report_figures_20261027/png/14_feret_selection_vs_fixed.png) / [SVG](../results/report_figures_20261027/svg/14_feret_selection_vs_fixed.svg) |
+| 15 | DATER supervised tensor extension: a negative result | New-method extension | [PNG](../results/report_figures_20261027/png/15_dater_matched_comparison.png) / [SVG](../results/report_figures_20261027/svg/15_dater_matched_comparison.svg) |
+| 16 | Shrinkage ablation: compare both selected and matched variants | Regularization extension | [PNG](../results/report_figures_20261027/png/16_shrinkage_ablation.png) / [SVG](../results/report_figures_20261027/svg/16_shrinkage_ablation.svg) |
+| 17 | Representation cost: small weights, explicitly scoped timing | Cost analysis | [PNG](../results/report_figures_20261027/png/17_cost_scope.png) / [SVG](../results/report_figures_20261027/svg/17_cost_scope.svg) |
+| 18 | Probe-eye perturbations: local robustness with no refitting | Robustness extension | [PNG](../results/report_figures_20261027/png/18_eye_perturbation.png) / [SVG](../results/report_figures_20261027/svg/18_eye_perturbation.svg) |
+| 19 | Error analysis: corrections coexist with new failures | Error analysis | [PNG](../results/report_figures_20261027/png/19_error_tradeoffs.png) / [SVG](../results/report_figures_20261027/svg/19_error_tradeoffs.svg) |
+| 20 | Selected configurations: mean versus observed maximum | Exploration / selection bias | [PNG](../results/report_figures_20261027/png/20_mean_vs_maximum.png) / [SVG](../results/report_figures_20261027/svg/20_mean_vs_maximum.svg) |
+| 21 | ORL tensor reconstruction: error and representation storage | Main result | [PNG](../results/report_figures_20261027/png/21_orl_reconstruction.png) / [SVG](../results/report_figures_20261027/svg/21_orl_reconstruction.svg) |
+| 22 | CSA convergence: rapid stabilization in the recorded input | Main result | [PNG](../results/report_figures_20261027/png/22_csa_convergence.png) / [SVG](../results/report_figures_20261027/svg/22_csa_convergence.svg) |
+| 23 | Equal dimension does not imply equal retained variation | Representation diagnosis | [PNG](../results/report_figures_20261027/png/23_retained_variation.png) / [SVG](../results/report_figures_20261027/svg/23_retained_variation.svg) |
+| 24 | FERET main experiment: recognition versus LDA dimension | Main result | [PNG](../results/report_figures_20261027/png/24_feret_lda_curves.png) / [SVG](../results/report_figures_20261027/svg/24_feret_lda_curves.svg) |
+| 25 | ORL historical dimension curves: three representation settings | Historical main experiment | [PNG](../results/report_figures_20261027/png/25_orl_historical_dimension_curves.png) / [SVG](../results/report_figures_20261027/svg/25_orl_historical_dimension_curves.svg) |
+| 26 | CSA pipeline and the full reproduction scope | Main result | [PNG](../results/report_figures_20261027/png/26_method_pipeline.png) / [SVG](../results/report_figures_20261027/svg/26_method_pipeline.svg) |
+| 27 | ORL current input: LDA dimension curves from saved models | Zero-fit supplementary analysis | [PNG](../results/report_figures_20261027/png/27_orl_current_lda_curves.png) / [SVG](../results/report_figures_20261027/svg/27_orl_current_lda_curves.svg) |

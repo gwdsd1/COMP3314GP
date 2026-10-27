@@ -2,6 +2,8 @@
 
 **Project classification: full reproduction within the instructor-approved ORL, MNIST, and original grayscale FERET scope.** PIE omission is authorized. This classification does not assert author-identical implementation, complete recovery of undisclosed parameters, or exact agreement with every reported value. All numerical differences and extension/selection categories remain disclosed.
 
+**Report/slide exports:** [27-page vector atlas](../output/pdf/CSA_figure_atlas_20261027.pdf) and [complete27-figure catalogue](./TEAM_BRIEF.md#figure-pack), covering all16 main recognition cases plus reconstruction, convergence, curves, and extensions. No new model fits; the final curve panel re-scores existing saved models.
+
 <a id="orl-recovery-20261027"></a>
 
 ## ORL follow-up, 2026-10-27: original output dimensions, bounded recovery study
