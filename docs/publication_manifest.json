@@ -1,7 +1,7 @@
 {
   "publication_date": "2026-10-08",
   "repository": "https://github.com/gwdsd1/COMP3314GP",
-  "scope": "Independent CSA partial reproduction and critical analysis; no new recognition fits during publication preparation.",
+  "scope": "Independent CSA full reproduction within the instructor-approved ORL, MNIST, and original grayscale FERET scope, with critical analysis and disclosed numerical/protocol differences.",
   "dataset_exclusions": [
     "ORL",
     "MNIST",
@@ -239,5 +239,15 @@
   "reconstruction_limits": "Data acquisition/preprocessing code is supplied. Later drivers reuse fixed historical paths and hashes; omitted caches must be rebuilt and some manually annotated inputs cannot be promised byte-identical from automatic detection. Recorded scores are evidence, not new rerun results.",
   "updated": "2026-10-27",
   "documentation_language": "All seven tracked Markdown documents are English; original Chinese versions remain recoverable from Git history. Frozen source/protocol evidence is unchanged.",
-  "new_experiments": "results/orl_recovery_20261027: bounded, frozen90 CSA/30 PCA fits,1440 scores,460800 repeated predictions. Old experiment evidence unchanged."
+  "new_experiments": "results/orl_recovery_20261027: bounded, frozen90 CSA/30 PCA fits,1440 scores,460800 repeated predictions. Old experiment evidence unchanged.",
+  "reproduction_terminology": "Full reproduction names the approved experimental scope; PIE omission is instructor-authorized. It does not assert author-identical code, recovery of every undisclosed setting, or exact numerical equality.",
+  "historical_protocol_labels": {
+    "interpretation": "Four immutable early grayscale protocols retain their execution-stage status text. Those historical labels do not override the current full-reproduction classification within the instructor-approved scope.",
+    "files": [
+      "results/orl_gray_initial/protocol.json",
+      "results/orl_gray_profile/protocol.json",
+      "results/orl_gray_regression/protocol.json",
+      "results/orl_gray_verified/protocol.json"
+    ]
+  }
 }

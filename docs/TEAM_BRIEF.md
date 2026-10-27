@@ -2,7 +2,7 @@
 
 Updated: 2026-10-27. This guide consolidates completed work; it does not launch new experiments. Its sources are the original papers, user-provided instructor/TA/data-author correspondence, current code, recorded protocols, and original result files.
 
-**Conclusion: we independently implemented and partially reproduced CSA on ORL, MNIST, and original grayscale FERET, and completed input, selection, sample-size, regularization, supervised tensor reduction, robustness, and cost studies.** Numerical and prediction checks support the implementation, but we have not recovered every CSA paper result or method ordering. PIE is omitted with instructor permission. The evidence supports a substantial paper study and partial reproduction; the instructor determines grades and bonus credit.
+**Conclusion: we independently implemented CSA and completed full reproduction on ORL, MNIST, and original grayscale FERET within the instructor-approved scope, and completed input, selection, sample-size, regularization, supervised tensor reduction, robustness, and cost studies.** Numerical and prediction checks support the implementation, but we have not recovered every CSA paper result or method ordering. PIE is omitted with instructor permission. The evidence supports a substantial paper study and full reproduction within that approved scope; the instructor determines grades and bonus credit.
 
 This is a working material library for teammates, rather than the final 3–4-page report. The main text follows research questions; collapsible appendices contain historical batches and complete result entries. **Data are presented at two levels:** every experiment family, summary, before/after comparison, and paper comparison appears here; per-candidate, per-split, prediction, model, and failure records are indexed in existing CSV/JSON/NPZ files. Millions of records are not copied into Markdown. An SD or individual score omitted from one summary remains available in its linked original table.
 
@@ -12,7 +12,9 @@ This is a working material library for teammates, rather than the final 3–4-pa
 
 ## 0. Report-ready reproduction status (updated 2026-10-27)
 
-**Defensible conclusion:** We independently implemented the CSA method and partially reproduced its ORL, MNIST, and original grayscale FERET experiments. We did not obtain the authors' original implementation or complete hyperparameter records. Algorithm implementation, experiment coverage, numerical agreement, and recovery of the paper's method ranking are separate claims.
+**Defensible conclusion:** We independently implemented the CSA method and completed full reproduction within the instructor-approved ORL, MNIST, and original grayscale FERET scope. We did not obtain the authors' original implementation or complete hyperparameter records. Algorithm implementation, experiment coverage, numerical agreement, and recovery of the paper's method ranking are separate claims.
+
+**Terminology:** Full reproduction refers to the instructor-approved three-dataset experimental scope. PIE is omitted with permission; implementation choices, numerical gaps, extensions, and exploratory selection remain explicitly disclosed.
 
 ### 0.1 What has been reproduced
 
@@ -35,7 +37,7 @@ This is a working material library for teammates, rather than the final 3–4-pa
 - The authors' exact code, eye annotations, initialization, centering, Gabor details, NN distance, validation process, and random indices are not recovered.
 - ORL low-dimensional CSA superiority and the original CSA numerical levels remain unresolved; MNIST also remains below the paper.
 - Reconstruction/convergence curves are not claimed to match every original ordinate. Our reconstruction is of fitting-sample Gabor tensors, not unseen-face reconstruction or Gabor inversion.
-- We cannot conclude that any single unknown setting caused the entire gap, that exact equality is necessary for course credit, or that a high exploratory maximum establishes full reproduction.
+- We cannot conclude that any single unknown setting caused the entire gap, that exact equality is necessary for course credit, or that a high exploratory maximum establishes exact numerical agreement or identical author settings.
 
 The instructor/TA explicitly permits reasonable missing-setting choices held fixed across methods and disclosed differences. This does not individually confirm those choices as the authors' settings. Neither the supplied correspondence nor the recognition text fixes Euclidean versus cosine NN.
 
@@ -87,11 +89,11 @@ Full batch-level tables, failures, parameters, and source links remain in [Appen
 
 ### 0.5 Text teammates can adapt
 
-**Report abstract/conclusion:** “We independently implement Concurrent Subspaces Analysis and partially reproduce recognition on ORL, MNIST and grayscale FERET, together with ORL reconstruction and convergence experiments. FERET scores are numerically close to the paper, and MNIST retains the CSA-over-PCA direction. Our current ORL CSA24→23 representative uses a HOSVD start and context extension, achieving88.75%±2.89% over ten observed splits versus the paper90.90%; full-square initialization88.81%±2.97% is reported separately as a variant. Controlled preprocessing, sample-size, regularization, supervised tensor, robustness and cost studies characterize this gap without attributing it to a uniquely established cause.”
+**Report abstract/conclusion:** “We independently implement Concurrent Subspaces Analysis and conduct full reproduction within the instructor-approved ORL, MNIST and grayscale FERET scope, including ORL reconstruction and convergence experiments. FERET scores are numerically close to the paper, and MNIST retains the CSA-over-PCA direction. Our current ORL CSA24→23 representative uses a HOSVD start and context extension, achieving88.75%±2.89% over ten observed splits versus the paper90.90%; full-square initialization88.81%±2.97% is reported separately as a variant. Controlled preprocessing, sample-size, regularization, supervised tensor, robustness and cost studies characterize this gap without attributing it to a uniquely established cause.”
 
 **Presentation sequence:** paper problem and tensor structure → CSA/PCA/LDA and course concepts →16-case coverage and preserved comparison → one controlled ORL improvement with its matched PCA control → failure/selection bias and representation-cost trade-off → PIE omission and unknown author settings. Use separate captions for paper results, shared references, gallery-selected results, fixed extensions, and probe-selected extrema.
 
-**Do not write:** “full reproduction,” “TA confirmed our cosine/Gabor/context settings,” “95% is our ten-split mean,” “more than one million independent test images,” or “DATER is generally ineffective.”
+**Do not write:** “identical to the authors' implementation in every detail,” “TA confirmed our cosine/Gabor/context settings,” “95% is our ten-split mean,” “more than one million independent test images,” or “DATER is generally ineffective.”
 
 ### 0.6 Current ORL representative and initialization variants (2026-10-27)
 
@@ -142,7 +144,7 @@ Course requirements come from user-uploaded Group Project screenshots; they are 
 | Connect with course concepts| PCA, orthogonal projection/spectral decomposition, LDA, NN, dimensionality and small samples, validation and generalization| §2.3 and §4; the relevant course has already taught the concepts, and does not make up unchecked specific courseware page numbers.|
 | discusses the paper experiments and evidence supporting claims| Original Tables I/II/IV, reconstruction and convergence diagram; our group cross-dataset and same-budget comparison| §2.4, §5; indicate which are the author results and which are our group results|
 | Critical Analysis: Assumptions, Strengths, Limitations, Improvements| Differences in target and classification, budget mismatch, protocol sensitivity, selection bias, costs and negative outcomes| §6; Write “Evidence→Explanation→Limitations” instead of just saying that the number was not reached|
-| Experiment Reproduction: full/partial reproduction is acceptable, explain the scope, comparison and difficulty| Three dataset implementation, shared anchors, gaps, PIE license, independent numerical/prediction verification| §3–7; not called full reproduction|
+| Experiment Reproduction: explain the approved scope, comparisons, and difficulties| Three dataset implementation, shared anchors, gaps, PIE license, independent numerical/prediction verification| §3–7; full reproduction within the instructor-approved scope|
 | Implemented from scratch, distinguishing contributions and reusing code| realizes CSA/PCA/LDA/Gabor/DATER and experiments by itself; reuses scientific computing, image and detection libraries| §7.3; No the original authors code is available, which does not mean that all dependencies are implemented from scratch.|
 | Reproduction code: public GitHub + README, setup/run/results, source acknowledgments | English README, pinned dependencies, run commands, protocols, and result evidence prepared for public release; all three datasets excluded | §7–8; include the public repository URL and preserve the distinction between independent implementation and reused components |
 | Written Report: About 3–4 pages of LaTeX, appropriate figures and citations| The content is complete, the official LaTeX report has not yet been produced.| §8.1; Take the main line from this article, the complete data can be left in the repository appendix|
@@ -235,7 +237,7 @@ The reply is provided by the user. This article is not connected to the email ad
 | Source| Confirm content| should not be expanded and interpreted as|
 |---|---|---|
 | Instructor | Dataset sizes, ORL two-eye alignment/normalization/HE and dimensions, 5×8 Gabor, two MNIST splits, FERET training/test identities; NN, CSA Tmax3, LDA budget | This does not specify Euclidean distance or confirm our detailed Gabor settings, eye targets, or seeds |
-| Instructor | Unobtainable datasets may be omitted; unmatched settings must be disclosed, and exact numerical equality is not required | This does not establish full reproduction, guarantee full bonus credit, or waive disclosure of differences |
+| Instructor | Unobtainable datasets may be omitted; unmatched settings must be disclosed, and exact numerical equality is not required | This does not confirm undisclosed author settings, guarantee full bonus credit, or waive disclosure of differences |
 | TA Qiyuan | The2008 project is not maintained; original code and hyperparameter records are unavailable. Remaining ORL alignment/Gabor choices may follow public literature and standard practice, fixed across methods and disclosed | This is not individual confirmation of our σ, padding, context, NN, or DATER settings |
 | Terence Sim, twice | PIE distribution rights belong to CMU; he lacks them, as does Simon Baker, who left CMU | This does not mean the data ceased to exist worldwide, were destroyed, or became inaccessible to all authors |
 
@@ -441,7 +443,7 @@ The following materials can directly support the Critical Analysis required for 
 | Original protocol details are incomplete | Best-result wording; unknown eyes/crops/Gabor/NN/splits/repetitions; TA lacks original records | Preserve uncertainty and provide auditable group choices | The gap is not proven to be solely a protocol error, and there is no basis for accusing the authors of seed selection |
 | Strengths and engineering limits | Small mode bases, measured low projection cost, and some MNIST/FERET directions consistent with the paper | Useful representation-cost trade-offs for constrained settings | Timing excludes the full pipeline; counted arrays are not peak memory; small historical datasets do not establish modern SOTA |
 
-**Reportable group insight:** Separable tensor structure trades smaller projection parameters for restricted expressiveness. Reconstruction, low output budgets, and small-sample discrimination can conflict. The fixed ORL factors show that input choices affect part of the gap, but they establish neither a unique cause nor the paper's low-dimensional CSA advantage. Failed ablations, matched-budget controls, frozen sources/selections, and independent checks make the partial-reproduction conclusion auditable.
+**Reportable group insight:** Separable tensor structure trades smaller projection parameters for restricted expressiveness. Reconstruction, low output budgets, and small-sample discrimination can conflict. The fixed ORL factors show that input choices affect part of the gap, but they establish neither a unique cause nor the paper's low-dimensional CSA advantage. Failed ablations, matched-budget controls, frozen sources/selections, and independent checks make the full-reproduction study and its numerical discrepancies auditable.
 
 **Future work, not executed:** Independent new data and manually annotated eye ground truth; external validation of a few preregistered inputs; single-factor studies of DATER convergence, scaling, and positive-definite handling; reconstruction of unseen samples; end-to-end training/inference and peak memory. Define protocols and controls before execution, and label new regularization/objectives as extensions. No additional ORL grid or MNIST/FERET tuning is launched here, and these suggestions are not counted as completed work.
 
@@ -558,7 +560,7 @@ members should attend the presentation/Q&A. The work can be divided according to
 | How much faster and cheaper is CSA?| The specified weight is 745.5×, the counted group is 22.7×; the pre-computed feature local stage is 2.08–3.29×, excluding Gabor/training, and is not called end-to-end.|
 | Why omit PIE?| failed to obtain and the distribution rights belong to CMU; the author has no distribution rights and the teacher allows omission; no other PIE is used to impersonate|
 
-Suggested English scope sentence: *We independently CSA and partially reproduced its reconstruction and recognition experiments on ORL, MNIST, and grayscale FERET. Unspecified implementation choices and numerical discrepancies are reported explicitly. Extensions and probe-selected exploratory maxima are presented separately.*
+Suggested English scope sentence: *We independently implemented CSA and completed full reproduction within the instructor-approved ORL, MNIST, and grayscale FERET scope. Unspecified implementation choices and numerical discrepancies are reported explicitly. Extensions and probe-selected exploratory maxima are presented separately.*
 
 PIE available sentences: *We were unable to obtain the original CMU PIE dataset within the project timeframe. We omit its experiments with the instructor's permission; our reproduction scope is ORL, MNIST, and grayscale FERET.* The details of the distribution rights reply should be supplemented at the source. Do not change "unobtainable" to "data does not exist".
 

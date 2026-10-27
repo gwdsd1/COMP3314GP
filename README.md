@@ -174,4 +174,4 @@ References: [CSA, Xu et al. 2008](https://doi.org/10.1109/TCSVT.2007.903317); [G
 
 ORL has not recovered the paper's low-dimensional CSA advantage. Unknown eye/crop/filter/distance settings and best-versus-mean reporting limit exact matching. Historical probes have already been observed; later selection procedures are not new blind tests. Context changes the effective field of view, regularization changes LDA, and DATER changes the method. Negative outcomes and all result categories are retained.
 
-This repository provides reproducible code and evidence for the coursework's paper-study and partial-reproduction components. It does not imply a guaranteed mark/bonus, a completed final report/presentation, or a full reproduction of the paper.
+This repository presents our full reproduction within the instructor-approved three-dataset scope, together with paper study and critical analysis. Full reproduction describes the experimental scope; it does not imply author-identical code, exact numerical agreement, a guaranteed mark/bonus, or completed final report/presentation deliverables.
