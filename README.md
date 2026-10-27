@@ -81,7 +81,7 @@ For the report-ready coverage, missing experiments, complete shared comparison, 
 
 ## Reproduction results
 
-These are **preserved shared-setting, paper-dimension reference results**, not a collection of the highest scores. Accuracy is in percent; ± denotes sample standard deviation across the stated splits. Paper values are best-configuration results with incompletely specified repetition/selection details, so the numerical differences are descriptive rather than proof of identical protocols or statistical significance.
+These results use the paper's output dimensions. **The ORL CSA24 + LDA23 row reports the latest HOSVD-start, context-extension result; the other rows retain their shared-setting references.** The rows therefore do not all use one common input protocol. Accuracy is in percent; ± denotes sample standard deviation across the stated splits. Paper values are best-configuration results with incompletely specified repetition/selection details, so the numerical differences are descriptive rather than proof of identical protocols or statistical significance.
 
 | Dataset / splits | Method | Our result | Paper | Difference, pp |
 |---|---|---:|---:|---:|
@@ -90,7 +90,7 @@ These are **preserved shared-setting, paper-dimension reference results**, not a
 | ORL / 10 | Gabor PCA76 | 86.88±1.63 | 86.60 | +0.28 |
 | ORL / 10 | Gabor CSA390 | 90.19±2.37 | 94.40 | −4.21 |
 | ORL / 10 | Gabor PCA33 + LDA25 | 92.09±2.06 | 87.20 | +4.89 |
-| ORL / 10 | Gabor CSA24 + LDA23 | 79.66±2.77 | 90.90 | −11.24 |
+| ORL / 10 | Gabor CSA24 + LDA23 (HOSVD start; context extension) | **88.75±2.89** | 90.90 | −2.15 |
 | MNIST G30 / 3 | PCA60 | 87.52±0.40 | 88.50 | −0.98 |
 | MNIST G30 / 3 | CSA810 | 90.34±0.15 | 92.80 | −2.46 |
 | MNIST G40 / 3 | PCA50 | 88.58±0.37 | 90.50 | −1.92 |
@@ -102,13 +102,13 @@ These are **preserved shared-setting, paper-dimension reference results**, not a
 | FERET q200 / one identity split | PCA112 + LDA69 | 93.87 | 93.40 | +0.47 |
 | FERET q200 / one identity split | CSA13×7 + LDA62 | 95.38 | 95.20 | +0.18 |
 
-Source: [shared comparison CSV](results/orl_protocol_audit/shared_comparison.csv). FERET rows are a fixed shared cosine control, not the validation-selected winners.
+Sources: [ORL HOSVD/context summary](results/orl_recovery_20261027/summary.csv) (`d20_y24`, `hosvd`, `unit_gallery_cosine_g0`); [shared comparison CSV](results/orl_protocol_audit/shared_comparison.csv) for the other rows. The new ORL candidate comparison uses already-observed probes and is exploratory. FERET rows are a fixed shared cosine control, not the validation-selected winners.
 
 ### Controlled studies and extensions
 
 | Study | Main result | Interpretation |
 |---|---|---|
-| ORL new bounded recovery,10 observed splits | CSA24→23 best candidate mean88.81±2.97; rank-conformingHOSVD88.75±2.89; pool single max93.125 | Context/initialization variants and probe-ranked exploration; mean remains below90.9 |
+| ORL initialization variant, 10 observed splits | CSA24→23: 88.81±2.97 with full-square identity initialization | Context extension and larger initial mode dimensions than the final ranks; exploratory comparison, not author-confirmed |
 | ORL crop-only, gallery-selected unknown settings, 10 splits | CSA24→23: 81.25→81.41±2.41 | Only +0.16pp; does not recover 90.9% |
 | ORL context/input selection extension, 10 splits | CSA24→23: 87.84±3.28 | Context and optional magnitude powers are extensions; not the original shared reference |
 | ORL fixed σ×context, 20 predeclared splits | CSA24→23: 80.13±3.49 for 2π crop; 87.08±2.30 for π context | Paired +6.95pp; equal-output-budget PCA24→23 is still higher at 91.08±1.48 |
