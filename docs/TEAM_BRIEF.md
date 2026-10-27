@@ -39,9 +39,9 @@ This is a working material library for teammates, rather than the final 3–4-pa
 
 The instructor/TA explicitly permits reasonable missing-setting choices held fixed across methods and disclosed differences. This does not individually confirm those choices as the authors' settings. Neither the supplied correspondence nor the recognition text fixes Euclidean versus cosine NN.
 
-### 0.3 Preserved paper-dimension numerical comparison
+### 0.3 Current paper-dimension numerical comparison
 
-Percent accuracy; differences are group minus paper in percentage points. ORL: ten-split mean±sample SD. MNIST: three-split mean±sample SD. FERET: one fixed identity partition, without repeated-partition SD. These are the original shared references, not later selected extensions.
+Percent accuracy; differences are group minus paper in percentage points. ORL: ten-split mean±sample SD. MNIST: three-split mean±sample SD. FERET: one fixed identity partition, without repeated-partition SD. The ORL CSA24→23 row uses the current HOSVD/context extension; other rows retain shared references. Input protocols and selection procedures are not identical across rows.
 
 | Dataset | Method | Our shared result | Paper | Difference, pp |
 |---|---|---:|---:|---:|
@@ -50,7 +50,7 @@ Percent accuracy; differences are group minus paper in percentage points. ORL: t
 | ORL | PCA (Gabor) | 86.88±1.63 | 86.60 | +0.28 |
 | ORL | CSA-3 | 90.19±2.37 | 94.40 | -4.21 |
 | ORL | PCA+LDA (Gabor) | 92.09±2.06 | 87.20 | +4.89 |
-| ORL | CSA-3+LDA | 79.66±2.77 | 90.90 | -11.24 |
+| ORL | CSA24 + LDA23 (HOSVD start; context extension) | **88.75±2.89** | 90.90 | −2.15 |
 | MNIST G30/P470 | PCA (Gabor) | 87.52±0.40 | 88.50 | -0.98 |
 | MNIST G30/P470 | CSA-3 | 90.34±0.15 | 92.80 | -2.46 |
 | MNIST G40/P460 | PCA (Gabor) | 88.58±0.37 | 90.50 | -1.92 |
@@ -62,7 +62,7 @@ Percent accuracy; differences are group minus paper in percentage points. ORL: t
 | FERET q=200 | PCA+LDA (Gray) | 93.87 | 93.40 | +0.47 |
 | FERET q=200 | CSA-2+LDA | 95.38 | 95.20 | +0.18 |
 
-Source: [original shared CSV](../results/orl_protocol_audit/shared_comparison.csv). FERET is numerically closest, MNIST retains CSA>PCA, and ORL24→23 remains the main gap. FERET does not recover every CSA-versus-PCA ordering. The paper reports best parameter configurations; its split aggregation is unspecified, so these differences are descriptive and do not establish significance or identical protocols.
+Sources: [HOSVD/context summary](../results/orl_recovery_20261027/summary.csv) (`d20_y24`, `hosvd`, `unit_gallery_cosine_g0`) for ORL CSA24→23; [shared CSV](../results/orl_protocol_audit/shared_comparison.csv) for the other rows. The new ORL candidate comparison uses already-observed probes and remains exploratory. FERET is numerically closest, MNIST retains CSA>PCA, and ORL24→23 remains the main gap. FERET does not recover every CSA-versus-PCA ordering. The paper reports best parameter configurations; its split aggregation is unspecified, so these differences are descriptive and do not establish significance or identical protocols.
 
 ### 0.4 Additional experiments and their status
 
@@ -87,13 +87,15 @@ Full batch-level tables, failures, parameters, and source links remain in [Appen
 
 ### 0.5 Text teammates can adapt
 
-**Report abstract/conclusion:** “We independently implement Concurrent Subspaces Analysis and partially reproduce recognition on ORL, MNIST and grayscale FERET, together with ORL reconstruction and convergence experiments. FERET scores are numerically close to the paper, and MNIST retains the CSA-over-PCA direction. ORL low-dimensional CSA remains substantially below the paper. Controlled preprocessing, sample-size, regularization, supervised tensor, robustness and cost studies characterize this gap without attributing it to a uniquely established cause.”
+**Report abstract/conclusion:** “We independently implement Concurrent Subspaces Analysis and partially reproduce recognition on ORL, MNIST and grayscale FERET, together with ORL reconstruction and convergence experiments. FERET scores are numerically close to the paper, and MNIST retains the CSA-over-PCA direction. Our current ORL CSA24→23 representative uses a HOSVD start and context extension, achieving88.75%±2.89% over ten observed splits versus the paper90.90%; full-square initialization88.81%±2.97% is reported separately as a variant. Controlled preprocessing, sample-size, regularization, supervised tensor, robustness and cost studies characterize this gap without attributing it to a uniquely established cause.”
 
 **Presentation sequence:** paper problem and tensor structure → CSA/PCA/LDA and course concepts →16-case coverage and preserved comparison → one controlled ORL improvement with its matched PCA control → failure/selection bias and representation-cost trade-off → PIE omission and unknown author settings. Use separate captions for paper results, shared references, gallery-selected results, fixed extensions, and probe-selected extrema.
 
 **Do not write:** “full reproduction,” “TA confirmed our cosine/Gabor/context settings,” “95% is our ten-split mean,” “more than one million independent test images,” or “DATER is generally ineffective.”
 
-### 0.6 New ORL recovery evidence (2026-10-27)
+### 0.6 Current ORL representative and initialization variants (2026-10-27)
+
+**Current reporting choice:** **88.75%±2.89%** (HOSVD start, context extension; ten splits, −2.15pp versus the paper90.90%). Report **88.81%±2.97%** (full-square identity initialization variant; −2.09pp) separately; it is not the representative README value. Historical batch tables below retain their own observed scores.
 
 A bounded follow-up retained all ten seeds20–29, G2/P8, CSA4×2×3→ordinaryLDA23 andTmax3. Three sigma=pi/context geometry bundles and three starts produced90 CSA fits;30 matchedPCA controls were added. All120 models froze before1440 policy scores/460800 repeated predictions. No old result was overwritten.
 
@@ -108,7 +110,7 @@ The best single CSA run across the pool is93.125% (298/320), d18/y25, rectangula
 
 Full versus rectangular identity adds only0.09375pp on matched inputs. Full-square initialization starts with larger mode dimensions than the final ranks; treat it as a disclosed interpretation/variant, not an author-confirmed fix. Rank-conforming HOSVD already reaches88.75. Fisher-eigenvalue weighting is a metric extension and its best mean86.16 does not help. Gallery-SSE start selection gives88.81±2.91 at fixed d20/y24, but cannot make an input/metric selected on probes independent. PCA remains stronger in the matched control.
 
-Teammate wording: “At fixed24→23 output dimensions, a bounded context/initialization follow-up achieved a ten-split mean of88.81% and an exploratory best single run of93.125%. The mean remains below90.9%, and exact author settings and CSA's relative advantage remain unrecovered.” See the [full new protocol and limits](./REPORT.md#orl-recovery-20261027), [summary](../results/orl_recovery_20261027/summary.csv), and [verification](../results/orl_recovery_20261027/verification.json).
+Teammate wording: “At fixed24→23 output dimensions, the HOSVD/context representative achieved88.75%±2.89% over ten observed splits. A full-square identity initialization variant achieved88.81%±2.97%; the pool's exploratory best single run was93.125%. No tested mean reaches90.9%, and exact author settings and CSA's relative advantage remain unrecovered.” See the [full new protocol and limits](./REPORT.md#orl-recovery-20261027), [summary](../results/orl_recovery_20261027/summary.csv), and [verification](../results/orl_recovery_20261027/verification.json).
 
 ## Reading Navigation
 

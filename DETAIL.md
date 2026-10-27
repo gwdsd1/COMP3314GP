@@ -1,6 +1,8 @@
 # COMP3314 Group Project — CSA reproduction
 
 > English translation of the former README, updated for publication on2026-10-27. Historical scores/protocols remain intact. Use the current [README](./README.md) and [TEAM_BRIEF](./docs/TEAM_BRIEF.md#reproduction-status) for publication scope and the new ORL follow-up. All three datasets/caches remain local.
+>
+> **Current report/README representative:** **88.75%±2.89%** (HOSVD start, context extension; ten splits, −2.15pp versus the paper90.90%). The full-square identity result **88.81%±2.97%** (full-square identity initialization variant; −2.09pp) is a separate variant. The dated experiment summaries below are historical batch records; they are not the current representative comparison.
 
 
 Target paper: Xu et al., *Reconstruction and Recognition of Tensor-Based Objects With Concurrent Subspaces Analysis*, IEEE TCSVT 2008.

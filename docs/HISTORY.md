@@ -3,6 +3,8 @@
 This file merges all 13 Markdown copies before collation. It retains plans, explanations, author/teacher replies, failed experiments, and results for traceability; the current results are subject to [REPORT.md](./REPORT.md), and the running entry is in [README](../README.md). The words "to-do", "final" and "not yet obtained" in history only represent the status of the paper at that time. Only file links are relocated; the original expired links are changed to historical path text.
 
 > **Publication note:** This English translation preserves historical plans and status statements. Refer to the current [README](../README.md) for the public repository scope. All three datasets, numerical caches, and image-bearing examples are excluded; related historical links require local reconstruction. SHA-256 values attached to earlier documents identify their original source versions, not the translated text. Frozen experiment evidence is unchanged.
+>
+> **Current reporting reference,2026-10-27:** **88.75%±2.89%** (HOSVD start, context extension; ten splits, −2.15pp versus the paper90.90%). Keep **88.81%±2.97%** (full-square identity initialization variant; −2.09pp) separate. Use [TEAM_BRIEF](./TEAM_BRIEF.md#reproduction-status) and [the latest ORL study](./REPORT.md#orl-recovery-20261027) for current report/presentation numbers; historical results in this archive are not rewritten.
 
 ## Document index
 
