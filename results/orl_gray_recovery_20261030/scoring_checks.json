@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "model_count": 720,
+  "score_count": 4320,
+  "prediction_count": 1382400,
+  "all_ten_historical_anchor_correct_counts_match": true,
+  "independent_NN_matches": true
+}

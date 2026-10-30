@@ -237,7 +237,7 @@
     "historical_links": "Some dataset/cache/private-letter links intentionally remain local; notices explain their exclusion."
   },
   "reconstruction_limits": "Data acquisition/preprocessing code is supplied. Later drivers reuse fixed historical paths and hashes; omitted caches must be rebuilt and some manually annotated inputs cannot be promised byte-identical from automatic detection. Recorded scores are evidence, not new rerun results.",
-  "updated": "2026-10-27",
+  "updated": "2026-10-30",
   "documentation_language": "All seven tracked Markdown documents are English; original Chinese versions remain recoverable from Git history. Frozen source/protocol evidence is unchanged.",
   "new_experiments": "results/orl_recovery_20261027: bounded, frozen90 CSA/30 PCA fits,1440 scores,460800 repeated predictions. Old experiment evidence unchanged.",
   "reproduction_terminology": "Full reproduction names the approved experimental scope; PIE omission is instructor-authorized. It does not assert author-identical code, recovery of every undisclosed setting, or exact numerical equality.",
@@ -249,5 +249,15 @@
       "results/orl_gray_regression/protocol.json",
       "results/orl_gray_verified/protocol.json"
     ]
+  },
+  "oct30_update": {
+    "current_ORL_gray_CSA11x2_LDA16": "81.84375% +/- 1.9623739343798199 sample SD over seeds20-29; displayed81.84+/-1.96; paper84.10; difference-2.25625pp.",
+    "history": "77.46875+/-5.409550614165859 is retained only as the historical shared reference; immutable experiment tables are unchanged.",
+    "selection": "Current gray configuration is probe-selected exploratory; crop, NN and limits are documented outside the headline table.",
+    "new_experiment": "results/orl_gray_recovery_20261030:960 models in two batches;5760 scores;1843200 repeated predictions; both verifications pass.",
+    "current_figure_pack": "results/report_figures_20261030/CSA_report_slide_figures_20261030.zip",
+    "current_atlas": "output/pdf/CSA_figure_atlas_20261030.pdf",
+    "historical_figure_pack": "results/report_figures_20261027 remains unchanged.",
+    "checks": "New atlas rendered/inspected; current gray row/data/gap checked; frozen model/source/old evidence and exclusion checks recorded in current figure verification.json."
   }
 }

@@ -2,7 +2,64 @@
 
 **Project classification: full reproduction within the instructor-approved ORL, MNIST, and original grayscale FERET scope.** PIE omission is authorized. This classification does not assert author-identical implementation, complete recovery of undisclosed parameters, or exact agreement with every reported value. All numerical differences and extension/selection categories remain disclosed.
 
-**Report/slide exports:** [27-page vector atlas](../output/pdf/CSA_figure_atlas_20261027.pdf) and [complete27-figure catalogue](./TEAM_BRIEF.md#figure-pack), covering all16 main recognition cases plus reconstruction, convergence, curves, and extensions. No new model fits; the final curve panel re-scores existing saved models.
+**Report/slide exports:** [27-page vector atlas](../output/pdf/CSA_figure_atlas_20261030.pdf) and [complete27-figure catalogue](./TEAM_BRIEF.md#figure-pack), covering all16 main recognition cases plus reconstruction, convergence, curves, and extensions. No new model fits; the final curve panel re-scores existing saved models.
+
+<a id="orl-gray-recovery-20261030"></a>
+
+## ORL grayscale follow-up, 2026-10-30: unpublished-setting exploration at 11x2 to LDA16
+
+**Current grayscale representative: 81.84% +/- 1.96%, versus the historical shared reference 77.47% +/- 5.41% and the paper 84.10%.** This is +4.38 percentage points over the historical reference, with nine improved splits and one lower split. The remaining paper gap is -2.26pp. The configuration was selected using already-observed probes; it is an exploratory winner, not a new blind test or a globally optimal parameter solution. README and the current headline charts use81.84%; the old shared77.47% is retained only as a historical comparison. The existing Gabor88.75% representative and shrinkage84.13% grayscale extension are separate results.
+
+### Fixed requirements and candidate design
+
+- All400 original ORL images, identities1-40, seeds20-29, G2/P8, 80 fitting/gallery images and320 probes per split; no discarded seed, image, or synthetic sample.
+- Aligned56x46 grayscale; CSA11x2=22 coefficients followed by ordinary unregularized LDA16; Tmax3 and epsilon.001. No new rank, LDA output dimension, shrinkage, weighted Fisher metric, ensemble, or classifier was introduced.
+- Twelve input bundles were frozen before initial fitting/scoring: historical per-split shared inputs; YuNet eye distance/y20/24,18/24,22/24,20/22,20/26,16/24; cubic and Lanczos4 interpolation at20/24; zero warp fill at20/24; CDF-min equalization at20/24; and the existing Haar/manual-reviewed eyes at20/24. Other fixed inputs use linear warp, replicate fill, PIL histogram equalization.
+- Four CSA variants per initial input: final-rank rectangular identity; gallery-derived HOSVD; full-square identity progressively reduced during the first sweep; and gallery-mean-centered HOSVD. The latter two are separately disclosed interpretations. HOSVD estimates mode bases only from each fitting gallery, not by fitting each image independently or compressing the sample axis.
+- Six unweighted numeric conventions: unit-column or Sw-normalized LDA directions, each with gallery-centered cosine, linear-origin cosine, or Euclidean NN. Every input/policy is also scored for PCA30->LDA18 and the equal-budget PCA22->LDA16 controls.
+- The initial best was at eye distance16, the lower crop-range boundary. A single probe-informed refinement froze six new geometries:14/24,15/24,17/24,16/22,16/26,12/24. It retained rectangular/HOSVD uncentered starts and both PCA controls. No further automatic expansion follows this completed neighborhood.
+- Initial batch:480 CSA+240 PCA fits; refinement:120 CSA+120 PCA fits. Total960 models,5760 scores and1,843,200 repeated probe predictions. There are360 CSA configuration means, not360 independent test datasets. Every batch completed all its model fitting before its new probe scoring; the second batch was designed after seeing the first batch's probes.
+
+### Before, after, and paper comparison
+
+| Result | Mean +/- sample SD, % | Paper reference, % | Difference, pp | Category |
+|---|---:|---:|---:|---|
+| Historical shared CSA11x2 -> ordinary LDA16 |77.47 +/- 5.41|84.10|-6.63|Preserved shared reference; historical input/policy can vary by split |
+| Initial finite-pool best: d16/y24, rectangular identity, unit-column Euclidean |81.34 +/- 2.10|84.10|-2.76|Probe-selected global ten-split configuration |
+| Final finite-pool best: d15/y24, rectangular identity, unit-column centered cosine |**81.84 +/- 1.96**|84.10|-2.26|Probe-informed crop refinement; original output dimensions retained |
+| HOSVD at that final input/policy |81.84 +/- 1.96|84.10|-2.26|Same per-split correct counts as rectangular identity; no accuracy gain |
+| Matched PCA30 -> ordinary LDA18 |83.50 +/- 2.29|82.20|+1.30|Same final input/splits/NN policy as the CSA winner |
+| Matched PCA22 -> ordinary LDA16 |81.44 +/- 2.24|No matching paper row|--|Equal-output-budget control |
+| Earlier gallery-selected shrinkage extension |84.13 +/- 2.38|84.10, contextual only|+0.03|Different ranks/LDA dimensions and positive shrinkage; not original11x2->ordinary16 |
+
+The final CSA beats equal-budget PCA by0.41pp in mean, but remains1.66pp below paper-dimension PCA30->18. These are descriptive differences; repeated splits reuse the same400 photos and do not establish statistical significance. The original paper's gray CSA-over-PCA ordering at their respective reported dimensions is still not recovered.
+
+Final configuration: existing YuNet eyes; target left(15.5,24), right(30.5,24); OpenCV INTER_LINEAR similarity warp into46x56, BORDER_REPLICATE; PIL per-image histogram equalization; no CSA tensor-mean subtraction; rectangular identity at56x11 and46x2; three sequential CSA sweeps; ordinary LDA16, unit-length projection columns; fitting-gallery mean as origin; cosine1-NN. The smaller target eye separation increases the original-image field of view. There is no Gabor/context convolution in this gray experiment; adding an outer canvas and discarding it would not itself add gray input information.
+
+The highest single score in the combined candidate pool is **85.9375% (275/320)**: d14/y24, rectangular identity, unit-column Euclidean, seed22. It is not the mean winner. The mean-winning d15/y24 centered-cosine configuration ranges79.0625%-85.00%. Neither single maximum replaces81.84375% as the ten-split mean.
+
+### What the optimization established
+
+- Crop/field of view and the numeric NN convention are useful adjustment directions within this tested pool. At the final winner, rectangular identity and HOSVD give the same ten per-split correct counts and the same correctness flags. One seed22 probe receives a different incorrect class label, so the full prediction vectors are not identical. Initialization is not demonstrated as the source of the final accuracy gain.
+- At the fixed d20/y24 reference, the best initial-pool uncentered score is77.09%; d18/y24 reaches80.22%. Haar eyes69.09%, CDF-min76.53%, cubic76.72%, Lanczos77.56%, and zero fill75.09% are retained as input-specific best candidate means, not isolated causal effects or independent headline winners. Each such maximum may use a different start/policy. The full per-input table prevents silent removal of negative results.
+- Ordinary versus shrinkage results remain distinct. Earlier84.13% used8x4 ranks in7/10 splits,11x2 in2,11x3 in1, LDA dimensions19-31, and positive shrinkage in all ten. It cannot be reclassified as the present paper-dimension result.
+- TA permits disclosed choices for missing alignment/Gabor settings and requires fixed comparison conditions across methods. This batch retains the explicit count/size/iteration/dimension/NN requirements and shares each scored input/policy across methods. TA has not individually confirmed these eyes, targets, centering, starts, direction scaling, or distance, nor endorsed probe-selected parameter choice as independent validation. Full-square and centered variants remain labeled. The paper reports best parameter configurations but leaves split aggregation unspecified; it does not establish that the authors selected a best seed.
+
+### Verification, files, and rerunning
+
+Both batch verifications pass. The initial verifier independently recomputes all720 saved models' embeddings and4320 prediction vectors, checks all summary statistics, confirms all ten historical correct counts, recomputes selected full CSA trajectories via sample-matrix covariances, and checks Fisher equations and frozen hashes. The refinement checks all240 models and1440 NN vectors with a second distance calculation and saved-prediction readback, with24 independent CSA trajectory recalculations. Maximum trajectory projector discrepancy is below6.5e-13; maximum independent Fisher relative residual is below8.1e-13. Historical CSV/JSON/source evidence remains unchanged.
+
+Sources: [combined final analysis](../results/orl_gray_recovery_20261030/final_analysis.json), [all576 configuration summaries](../results/orl_gray_recovery_20261030/combined_summary.csv), [ten paired final comparisons](../results/orl_gray_recovery_20261030/final_paired_comparison.csv), [per-input exploratory maxima](../results/orl_gray_recovery_20261030/per_input_best_exploratory.csv), [initial protocol](../results/orl_gray_recovery_20261030/protocol.json), [initial verification](../results/orl_gray_recovery_20261030/verification.json), [refinement protocol](../results/orl_gray_recovery_20261030/refinement/protocol.json), [refinement verification](../results/orl_gray_recovery_20261030/refinement/verification.json). Drivers: [initial experiment](../run_orl_gray_recovery.py), [independent verifier](../verify_orl_gray_recovery.py), [refinement](../run_orl_gray_refinement.py), [consolidation](../analyze_orl_gray_recovery.py). Raw images, generated inputs, models and prediction NPZs stay local under the existing dataset/cache exclusions.
+
+After reconstructing ORL, the two existing eye records, and historical audit inputs, use a new output directory:
+
+```powershell
+python run_orl_gray_recovery.py --output results/orl_gray_recovery_rerun
+python verify_orl_gray_recovery.py --output results/orl_gray_recovery_rerun
+python run_orl_gray_refinement.py --output results/orl_gray_recovery_rerun/refinement
+```
+
+The consolidation script targets this recorded20261030 batch and does not fit models. The current27-figure edition is updated20261030: headline figures01/02/05 use gray81.84% +/- 1.96% and gap-2.26pp. The20261027 edition remains an unchanged historical archive. Detailed crop/distance and selection notes remain in captions and this section, outside the main result table.
 
 <a id="orl-recovery-20261027"></a>
 
@@ -1454,7 +1511,7 @@ Data source/confirmation conditions see [Section 2](#protocols) and [HANDOFF](./
 
 ### 10.2 Reserved shared settings at the paper's dimensions reproduction anchor
 
-Current report/presentation representative: **88.75%±2.89%** (HOSVD start, context extension; ten splits, −2.15pp versus the paper90.90%); **88.81%±2.97%** (full-square identity initialization variant; −2.09pp) is a separate variant. The table below preserves historical shared-setting results, not the current README selection. See the [current ORL study](#orl-recovery-20261027).
+Current report/presentation representatives: grayscale CSA11x2->LDA16 **81.84%±1.96%** (-2.26pp versus84.10%) and Gabor CSA24->LDA23 **88.75%±2.89%** (HOSVD start, context extension; -2.15pp versus90.90%); **88.81%±2.97%** (full-square identity initialization variant; -2.09pp) is separate. The table below preserves historical shared-setting results, not the current README selections. See the [grayscale follow-up](#orl-gray-recovery-20261030) and [Gabor study](#orl-recovery-20261027).
 
 This table does not incorporate subsequent expansion, method-by-method parameter selection, or exploration maximum; it is not the highest result of all historical experiments. FERET has only one fixed identity split, and the standard deviation of the split is not filled in. The fixed cosine comparison cannot be renamed as the winner of the verification selection.
 

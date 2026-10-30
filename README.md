@@ -81,12 +81,12 @@ For the report-ready coverage, missing experiments, complete shared comparison, 
 
 ## Reproduction results
 
-These results use the paper's output dimensions. **The ORL CSA24 + LDA23 row reports the latest HOSVD-start, context-extension result; the other rows retain their shared-setting references.** The rows therefore do not all use one common input protocol. Accuracy is in percent; ± denotes sample standard deviation across the stated splits. Paper values are best-configuration results with incompletely specified repetition/selection details, so the numerical differences are descriptive rather than proof of identical protocols or statistical significance.
+These results use the paper's output dimensions. **The two ORL CSA+LDA rows report the current grayscale and Gabor representatives; the other rows retain their shared-setting references.** The rows therefore do not all use one common input protocol. Accuracy is in percent; ± denotes sample standard deviation across the stated splits. Paper values are best-configuration results with incompletely specified repetition/selection details, so the numerical differences are descriptive rather than proof of identical protocols or statistical significance. Detailed settings and selection limits are given below the table and in REPORT.
 
 | Dataset / splits | Method | Our result | Paper | Difference, pp |
 |---|---|---:|---:|---:|
 | ORL / 10 | Grayscale PCA30 + LDA18 | 83.22±1.76 | 82.20 | +1.02 |
-| ORL / 10 | Grayscale CSA11×2 + LDA16 | 77.47±5.41 | 84.10 | −6.63 |
+| ORL / 10 | Grayscale CSA11×2 + LDA16 | **81.84±1.96** | 84.10 | −2.26 |
 | ORL / 10 | Gabor PCA76 | 86.88±1.63 | 86.60 | +0.28 |
 | ORL / 10 | Gabor CSA390 | 90.19±2.37 | 94.40 | −4.21 |
 | ORL / 10 | Gabor PCA33 + LDA25 | 92.09±2.06 | 87.20 | +4.89 |
@@ -102,12 +102,15 @@ These results use the paper's output dimensions. **The ORL CSA24 + LDA23 row rep
 | FERET q200 / one identity split | PCA112 + LDA69 | 93.87 | 93.40 | +0.47 |
 | FERET q200 / one identity split | CSA13×7 + LDA62 | 95.38 | 95.20 | +0.18 |
 
-Sources: [ORL HOSVD/context summary](results/orl_recovery_20261027/summary.csv) (`d20_y24`, `hosvd`, `unit_gallery_cosine_g0`); [shared comparison CSV](results/orl_protocol_audit/shared_comparison.csv) for the other rows. The new ORL candidate comparison uses already-observed probes and is exploratory. FERET rows are a fixed shared cosine control, not the validation-selected winners.
+Sources: [ORL grayscale final analysis](results/orl_gray_recovery_20261030/final_analysis.json) for CSA11x2 + LDA16; [ORL HOSVD/context summary](results/orl_recovery_20261027/summary.csv) (`d20_y24`, `hosvd`, `unit_gallery_cosine_g0`) for Gabor CSA24 + LDA23; [shared comparison CSV](results/orl_protocol_audit/shared_comparison.csv) for the other rows. The current ORL candidate comparisons use already-observed probes and are exploratory. FERET rows are a fixed shared cosine control, not the validation-selected winners.
+
+**Grayscale follow-up,2026-10-30:** At the original CSA11x2 -> ordinary LDA16 dimensions, the best tested global ten-split configuration is **81.84% +/- 1.96%**, up4.38pp from the preserved shared77.47% reference and2.26pp below paper84.10%. It uses a wider fixed crop (eye distance15/y24), rectangular identity, and unit-column/gallery-centered cosine NN; HOSVD ties at the same scores. Matched PCA30->18 is83.50% +/- 2.29%, PCA22->16 is81.44% +/- 2.24%. The pool single maximum85.94% is separate. Inputs/policy were selected using observed probes, including an adaptive second batch; this is exploratory and not author-confirmed. [Full settings and limits](docs/REPORT.md#orl-gray-recovery-20261030), [final analysis](results/orl_gray_recovery_20261030/final_analysis.json), [all candidate summaries](results/orl_gray_recovery_20261030/combined_summary.csv).
 
 ### Controlled studies and extensions
 
 | Study | Main result | Interpretation |
 |---|---|---|
+| ORL grayscale follow-up, ten splits | CSA11x2 -> ordinary LDA16: **81.84 +/- 1.96**; historical shared reference77.47 | 960 CSA/PCA models verified; full design and comparison in REPORT |
 | ORL initialization variant, 10 observed splits | CSA24→23: 88.81±2.97 with full-square identity initialization | Context extension and larger initial mode dimensions than the final ranks; exploratory comparison, not author-confirmed |
 | ORL crop-only, gallery-selected unknown settings, 10 splits | CSA24→23: 81.25→81.41±2.41 | Only +0.16pp; does not recover 90.9% |
 | ORL context/input selection extension, 10 splits | CSA24→23: 87.84±3.28 | Context and optional magnitude powers are extensions; not the original shared reference |
@@ -123,9 +126,11 @@ See [all experiments and limitations](docs/TEAM_BRIEF.md), [controlled statistic
 
 ## Report and slide figures
 
-[Download the complete figure pack](results/report_figures_20261027/CSA_report_slide_figures_20261027.zip) or open the [27-page vector PDF atlas](output/pdf/CSA_figure_atlas_20261027.pdf). The27 English figures cover all16 paper-corresponding recognition cases, per-dataset comparisons, reconstruction/convergence and dimension curves, plus controlled studies and extensions. Each has a high-resolution PNG, editable SVG, caption, and traceable source data.
+[Download the complete figure pack](results/report_figures_20261030/CSA_report_slide_figures_20261030.zip) or open the [27-page vector PDF atlas](output/pdf/CSA_figure_atlas_20261030.pdf). The27 English figures cover all16 paper-corresponding recognition cases, per-dataset comparisons, reconstruction/convergence and dimension curves, plus controlled studies and extensions. Each has a high-resolution PNG, editable SVG, caption, and traceable source data.
 
-Use the [numbered catalogue and presentation guidance](docs/TEAM_BRIEF.md#figure-pack), [CSV source/caption index](results/report_figures_20261027/figure_catalog.csv), or [LaTeX snippets](results/report_figures_20261027/latex_figures.tex). The current ORL HOSVD/context representative and full-square initialization variant remain separately labeled. These exports contain charts only; datasets, face images and model caches remain excluded. The last dimension-curve panel scores saved models without new fitting and verifies the23D endpoints against recorded results.
+Use the [numbered catalogue and presentation guidance](docs/TEAM_BRIEF.md#figure-pack), [CSV source/caption index](results/report_figures_20261030/figure_catalog.csv), or [LaTeX snippets](results/report_figures_20261030/latex_figures.tex). The current ORL HOSVD/context representative and full-square initialization variant remain separately labeled. These exports contain charts only; datasets, face images and model caches remain excluded. The last dimension-curve panel scores saved models without new fitting and verifies the23D endpoints against recorded results.
+
+The2026-10-30 edition updates the headline grayscale CSA result to81.84% +/- 1.96%. The [2026-10-27 figure pack](results/report_figures_20261027/CSA_report_slide_figures_20261027.zip) remains an unchanged historical archive.
 
 ## Run and verify
 

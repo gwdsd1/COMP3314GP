@@ -1,6 +1,6 @@
 # CSA Project: Team Handover, Report and Presentation Materials
 
-Updated: 2026-10-27. This guide consolidates completed work; it does not launch new experiments. Its sources are the original papers, user-provided instructor/TA/data-author correspondence, current code, recorded protocols, and original result files.
+Updated: 2026-10-30. This guide consolidates completed work; it does not launch new experiments. Its sources are the original papers, user-provided instructor/TA/data-author correspondence, current code, recorded protocols, and original result files.
 
 **Conclusion: we independently implemented CSA and completed full reproduction on ORL, MNIST, and original grayscale FERET within the instructor-approved scope, and completed input, selection, sample-size, regularization, supervised tensor reduction, robustness, and cost studies.** Numerical and prediction checks support the implementation, but we have not recovered every CSA paper result or method ordering. PIE is omitted with instructor permission. The evidence supports a substantial paper study and full reproduction within that approved scope; the instructor determines grades and bonus credit.
 
@@ -10,11 +10,17 @@ This is a working material library for teammates, rather than the final 3–4-pa
 
 <a id="reproduction-status"></a>
 
-## 0. Report-ready reproduction status (updated 2026-10-27)
+## 0. Report-ready reproduction status (updated 2026-10-30)
 
 **Defensible conclusion:** We independently implemented the CSA method and completed full reproduction within the instructor-approved ORL, MNIST, and original grayscale FERET scope. We did not obtain the authors' original implementation or complete hyperparameter records. Algorithm implementation, experiment coverage, numerical agreement, and recovery of the paper's method ranking are separate claims.
 
 **Terminology:** Full reproduction refers to the instructor-approved three-dataset experimental scope. PIE is omitted with permission; implementation choices, numerical gaps, extensions, and exploratory selection remain explicitly disclosed.
+
+**New gray follow-up,2026-10-30:** The best tested global configuration at CSA11x2 -> ordinary LDA16 is **81.84% +/- 1.96%** over the same ten seeds20-29, versus historical shared77.47% +/- 5.41% and paper84.10%. Mean change+4.38pp, nine splits improve and one declines; the remaining paper gap is2.26pp. The winner uses fixed target eyes(15.5,24)/(30.5,24), YuNet eyes, linear warp/replicate boundary,56x46/PIL equalization, uncentered rectangular identity/Tmax3, unit-length LDA columns and gallery-centered cosine1-NN. HOSVD ties at exactly the same per-split correct counts. Matched PCA30->18 is83.50% +/- 2.29%; equal-budget PCA22->16 is81.44% +/- 2.24%. CSA exceeds the equal-budget control by0.41pp but not paper-dimension PCA. No significance claim is made.
+
+The initial12 input bundles/four CSA variants/six NN policies were followed by one six-geometry crop neighborhood chosen after seeing initial probes. All960 models (600 CSA,360 PCA),5760 scores and1,843,200 repeated predictions are checked; each batch completed fitting before its own new probe scoring. Both verifications pass and historical evidence is unchanged. This is an **exploratory parameter winner on observed probes**, not a new blind estimate, gallery-only winner, proven global optimum, or recovered author setting. Counts, G2/P8,11x2->ordinary16 andTmax3 remain fixed; crop targets, initialization, centering and NN conventions are disclosed unknown-setting choices. No new rank, shrinkage or training sample is used.
+
+Keep three gray categories separate: **77.47% historical shared reference**, **81.84% current original-dimension representative**, and **84.13% +/- 2.38% earlier shrinkage/rank/dimension extension**. The combined pool single maximum is**85.9375% (275/320)** atd14/y24, identity, unit-column Euclidean, seed22; it is not the81.84% mean winner. The current20261030 figure edition uses81.84% in the headline comparisons; the20261027 edition is retained as history. See [complete design, before/after and TA limits](./REPORT.md#orl-gray-recovery-20261030), [final analysis](../results/orl_gray_recovery_20261030/final_analysis.json), [all576 configuration summaries](../results/orl_gray_recovery_20261030/combined_summary.csv), and [ten paired scores](../results/orl_gray_recovery_20261030/final_paired_comparison.csv).
 
 ### 0.1 What has been reproduced
 
@@ -43,12 +49,12 @@ The instructor/TA explicitly permits reasonable missing-setting choices held fix
 
 ### 0.3 Current paper-dimension numerical comparison
 
-Percent accuracy; differences are group minus paper in percentage points. ORL: ten-split mean±sample SD. MNIST: three-split mean±sample SD. FERET: one fixed identity partition, without repeated-partition SD. The ORL CSA24→23 row uses the current HOSVD/context extension; other rows retain shared references. Input protocols and selection procedures are not identical across rows.
+Percent accuracy; differences are group minus paper in percentage points. ORL: ten-split mean±sample SD. MNIST: three-split mean±sample SD. FERET: one fixed identity partition, without repeated-partition SD. The two ORL CSA+LDA rows use the current grayscale and Gabor representatives; other rows retain shared references. Input protocols and selection procedures are not identical across rows. Grayscale crop/distance and exploratory selection are described outside the table in the follow-up above.
 
-| Dataset | Method | Our shared result | Paper | Difference, pp |
+| Dataset | Method | Our result | Paper | Difference, pp |
 |---|---|---:|---:|---:|
 | ORL | PCA+LDA (Gray) | 83.22±1.76 | 82.20 | +1.02 |
-| ORL | CSA-2+LDA | 77.47±5.41 | 84.10 | -6.63 |
+| ORL | CSA-2+LDA | **81.84±1.96** | 84.10 | -2.26 |
 | ORL | PCA (Gabor) | 86.88±1.63 | 86.60 | +0.28 |
 | ORL | CSA-3 | 90.19±2.37 | 94.40 | -4.21 |
 | ORL | PCA+LDA (Gabor) | 92.09±2.06 | 87.20 | +4.89 |
@@ -64,7 +70,7 @@ Percent accuracy; differences are group minus paper in percentage points. ORL: t
 | FERET q=200 | PCA+LDA (Gray) | 93.87 | 93.40 | +0.47 |
 | FERET q=200 | CSA-2+LDA | 95.38 | 95.20 | +0.18 |
 
-Sources: [HOSVD/context summary](../results/orl_recovery_20261027/summary.csv) (`d20_y24`, `hosvd`, `unit_gallery_cosine_g0`) for ORL CSA24→23; [shared CSV](../results/orl_protocol_audit/shared_comparison.csv) for the other rows. The new ORL candidate comparison uses already-observed probes and remains exploratory. FERET is numerically closest, MNIST retains CSA>PCA, and ORL24→23 remains the main gap. FERET does not recover every CSA-versus-PCA ordering. The paper reports best parameter configurations; its split aggregation is unspecified, so these differences are descriptive and do not establish significance or identical protocols.
+Sources: [grayscale final analysis](../results/orl_gray_recovery_20261030/final_analysis.json) for gray CSA11x2->16; [HOSVD/context summary](../results/orl_recovery_20261027/summary.csv) (`d20_y24`, `hosvd`, `unit_gallery_cosine_g0`) for ORL CSA24→23; [shared CSV](../results/orl_protocol_audit/shared_comparison.csv) for the other rows. The current ORL candidate comparisons use already-observed probes and remain exploratory. FERET is numerically closest and MNIST retains CSA>PCA. ORL grayscale/Gabor CSA+LDA gaps are now2.26/2.15pp, while paper-dimension method ordering is still unrecovered. FERET does not recover every CSA-versus-PCA ordering. The paper reports best parameter configurations; its split aggregation is unspecified, so these differences are descriptive and do not establish significance or identical protocols.
 
 ### 0.4 Additional experiments and their status
 
@@ -336,7 +342,9 @@ This round of DATER is fixed within 2π clipping and seeds4200–4219, G2/P8, (4
 
 accuracy is %; the difference is pp (percentage points), ± is the sample standard deviation between splits. All tables clearly indicate categories; different seed groups do not count as matching gains, and SD is not filled in for a single FERET identity split. The figures of the paper are taken from Tables I/II/IV, and the statistical caliber of the original authors is not completely recoverable. The appendix retains all historical batches and original tables.
 
-### 5.1 Three data sets shared settings at the paper's dimensions anchor point
+### 5.1 Historical shared settings at the paper's dimensions
+
+This table is the preserved historical shared comparison. Use Section0.3 and README for the current gray81.84% and Gabor88.75% representatives; do not present the historical gray77.47% as the current result.
 
 | data/number of times| method| our group| paper| difference pp|
 |---|---|---|---|---|
@@ -1136,18 +1144,18 @@ The public basis and historical query records of Tan–Triggs illumination combi
 
 <a id="figure-pack"></a>
 
-## Appendix E. Report and presentation figure pack (2026-10-27)
+## Appendix E. Report and presentation figure pack (updated 2026-10-30)
 
 **27 English figures cover multiple main results, not only the current ORL24→23 representative.** The pack includes all16 paper-corresponding recognition cases, reconstruction/compression and convergence, FERET/ORL dimension curves, matched ORL controls, selection outcomes, DATER, shrinkage, sample size, cost, robustness, and errors. Full reproduction is the project classification within the instructor-approved scope; the figure categories keep numerical agreement and protocol differences explicit.
 
-- [27-page vector PDF atlas](../output/pdf/CSA_figure_atlas_20261027.pdf): one numbered figure per page, with captions and limitations.
-- [Complete ZIP package](../results/report_figures_20261027/CSA_report_slide_figures_20261027.zip): atlas,27 high-resolution PNGs,27 editable vector SVGs, captions/source index, plotting data, provenance manifest, and LaTeX snippets.
-- [Figure/caption/source catalogue](../results/report_figures_20261027/figure_catalog.csv), [plotted data](../results/report_figures_20261027/plot_data.csv), [provenance manifest](../results/report_figures_20261027/manifest.json), and [LaTeX snippets](../results/report_figures_20261027/latex_figures.tex).
+- [27-page vector PDF atlas](../output/pdf/CSA_figure_atlas_20261030.pdf): one numbered figure per page, with captions and limitations.
+- [Complete ZIP package](../results/report_figures_20261030/CSA_report_slide_figures_20261030.zip): atlas,27 high-resolution PNGs,27 editable vector SVGs, captions/source index, plotting data, provenance manifest, and LaTeX snippets.
+- [Figure/caption/source catalogue](../results/report_figures_20261030/figure_catalog.csv), [plotted data](../results/report_figures_20261030/plot_data.csv), [provenance manifest](../results/report_figures_20261030/manifest.json), and [LaTeX snippets](../results/report_figures_20261030/latex_figures.tex).
 - [Reproducible generator](../plot_report_figures.py): `python plot_report_figures.py`; requires recorded local evidence and, for the last panel, omitted saved model/feature caches.
 
 **Recommended main-result choices:**01-05 summarize all three datasets and paper differences;21-22 cover reconstruction and convergence;24-25 cover FERET and historical ORL dimension curves. Figure27 adds the current ORL input's dimension curves from saved models. Figures06-20 and23 support controlled analysis and extensions. Figure26 introduces the algorithm. For a short talk, select from these groups rather than treating every diagnostic as a main result.
 
-**Statistics and attribution:** Whiskers are sample SD across the stated splits, not confidence intervals. FERET uses a fixed identity partition and has no invented split SD. Paper values are attributed to Xu et al.2008; their best-result aggregation is unspecified. Current ORL HOSVD/context88.75±2.89 is marked as an extension; full-square88.81±2.97 is separate. Gallery selections, fixed extensions, historical inputs and probe-selected extrema retain distinct captions. Display rounding uses decimal half-up; underlying data are unchanged.
+**Statistics and attribution:** Whiskers are sample SD across the stated splits, not confidence intervals. FERET uses a fixed identity partition and has no invented split SD. Paper values are attributed to Xu et al.2008; their best-result aggregation is unspecified. Current grayscale CSA11x2->16 is81.84±1.96; crop/distance and probe-selection details are in captions and REPORT, outside the headline table. Gabor HOSVD/context88.75±2.89 is marked as an extension; full-square88.81±2.97 is separate. Gallery selections, fixed extensions, historical inputs and probe-selected extrema retain distinct captions. Display rounding uses decimal half-up; underlying experiment evidence is unchanged. The [20261027 edition](../results/report_figures_20261027/CSA_report_slide_figures_20261027.zip) is retained solely as history.
 
 **Zero new fits:** Figures01-26 read recorded evidence. Figure27 scores existing models at LDA dimensions1-23, using40 saved model instances and920 scores, with every23D endpoint matching its archived score. These descriptive curves do not reselect the reported23D representative and are not a new blind test. No face images, raw labels, model caches, or datasets are included in the package.
 
@@ -1155,35 +1163,35 @@ To use vector output in LaTeX, copy the atlas into the report project, load `gra
 
 ```latex
 % Preamble: \usepackage{graphicx}
-\includegraphics[page=2,width=\linewidth]{CSA_figure_atlas_20261027.pdf}
+\includegraphics[page=2,width=\linewidth]{CSA_figure_atlas_20261030.pdf}
 ```
 
 | Atlas page | Figure | Category | Individual files |
 |---:|---|---|---|
-| 01 | Paper versus reproduction: all 16 recognition cases | Main result | [PNG](../results/report_figures_20261027/png/01_all_recognition_cases.png) / [SVG](../results/report_figures_20261027/svg/01_all_recognition_cases.svg) |
-| 02 | ORL: six paper-dimension recognition cases | Main result | [PNG](../results/report_figures_20261027/png/02_orl_paper_comparison.png) / [SVG](../results/report_figures_20261027/svg/02_orl_paper_comparison.svg) |
-| 03 | MNIST: both gallery sizes, both representations | Main result | [PNG](../results/report_figures_20261027/png/03_mnist_paper_comparison.png) / [SVG](../results/report_figures_20261027/svg/03_mnist_paper_comparison.svg) |
-| 04 | FERET: three training sizes, PCA and CSA controls | Main result | [PNG](../results/report_figures_20261027/png/04_feret_paper_comparison.png) / [SVG](../results/report_figures_20261027/svg/04_feret_paper_comparison.svg) |
-| 05 | Numerical gaps from the paper across all 16 cases | Main result | [PNG](../results/report_figures_20261027/png/05_all_paper_gaps.png) / [SVG](../results/report_figures_20261027/svg/05_all_paper_gaps.svg) |
-| 06 | ORL recovery: every one of the ten observed splits | Context extension | [PNG](../results/report_figures_20261027/png/06_orl_ten_splits.png) / [SVG](../results/report_figures_20261027/svg/06_orl_ten_splits.svg) |
-| 07 | ORL: geometry and initialization interactions | Context / start variants | [PNG](../results/report_figures_20261027/png/07_orl_geometry_initialization.png) / [SVG](../results/report_figures_20261027/svg/07_orl_geometry_initialization.svg) |
-| 08 | ORL fixed factorial study: sigma by context | Fixed input extension | [PNG](../results/report_figures_20261027/png/08_orl_sigma_context_factorial.png) / [SVG](../results/report_figures_20261027/svg/08_orl_sigma_context_factorial.svg) |
-| 09 | ORL three fixed inputs: improvements and regressions | Fixed input extension | [PNG](../results/report_figures_20261027/png/09_orl_three_fixed_inputs.png) / [SVG](../results/report_figures_20261027/svg/09_orl_three_fixed_inputs.svg) |
-| 10 | Gallery-only staged selection: most gain comes early | Gallery-only selection | [PNG](../results/report_figures_20261027/png/10_orl_gallery_selection_stages.png) / [SVG](../results/report_figures_20261027/svg/10_orl_gallery_selection_stages.svg) |
-| 11 | Crop-only bounded optimization: small gain, negative controls | Gallery-only selection | [PNG](../results/report_figures_20261027/png/11_orl_crop_only_optimization.png) / [SVG](../results/report_figures_20261027/svg/11_orl_crop_only_optimization.svg) |
-| 12 | ORL sample-size extension with the same five probes | Sample-size extension | [PNG](../results/report_figures_20261027/png/12_orl_sample_size.png) / [SVG](../results/report_figures_20261027/svg/12_orl_sample_size.svg) |
-| 13 | MNIST bounded selection: preserve the negative result | Gallery-only selection | [PNG](../results/report_figures_20261027/png/13_mnist_selection_negative.png) / [SVG](../results/report_figures_20261027/svg/13_mnist_selection_negative.svg) |
-| 14 | FERET: validation winners and fixed controls differ | Selection protocol comparison | [PNG](../results/report_figures_20261027/png/14_feret_selection_vs_fixed.png) / [SVG](../results/report_figures_20261027/svg/14_feret_selection_vs_fixed.svg) |
-| 15 | DATER supervised tensor extension: a negative result | New-method extension | [PNG](../results/report_figures_20261027/png/15_dater_matched_comparison.png) / [SVG](../results/report_figures_20261027/svg/15_dater_matched_comparison.svg) |
-| 16 | Shrinkage ablation: compare both selected and matched variants | Regularization extension | [PNG](../results/report_figures_20261027/png/16_shrinkage_ablation.png) / [SVG](../results/report_figures_20261027/svg/16_shrinkage_ablation.svg) |
-| 17 | Representation cost: small weights, explicitly scoped timing | Cost analysis | [PNG](../results/report_figures_20261027/png/17_cost_scope.png) / [SVG](../results/report_figures_20261027/svg/17_cost_scope.svg) |
-| 18 | Probe-eye perturbations: local robustness with no refitting | Robustness extension | [PNG](../results/report_figures_20261027/png/18_eye_perturbation.png) / [SVG](../results/report_figures_20261027/svg/18_eye_perturbation.svg) |
-| 19 | Error analysis: corrections coexist with new failures | Error analysis | [PNG](../results/report_figures_20261027/png/19_error_tradeoffs.png) / [SVG](../results/report_figures_20261027/svg/19_error_tradeoffs.svg) |
-| 20 | Selected configurations: mean versus observed maximum | Exploration / selection bias | [PNG](../results/report_figures_20261027/png/20_mean_vs_maximum.png) / [SVG](../results/report_figures_20261027/svg/20_mean_vs_maximum.svg) |
-| 21 | ORL tensor reconstruction: error and representation storage | Main result | [PNG](../results/report_figures_20261027/png/21_orl_reconstruction.png) / [SVG](../results/report_figures_20261027/svg/21_orl_reconstruction.svg) |
-| 22 | CSA convergence: rapid stabilization in the recorded input | Main result | [PNG](../results/report_figures_20261027/png/22_csa_convergence.png) / [SVG](../results/report_figures_20261027/svg/22_csa_convergence.svg) |
-| 23 | Equal dimension does not imply equal retained variation | Representation diagnosis | [PNG](../results/report_figures_20261027/png/23_retained_variation.png) / [SVG](../results/report_figures_20261027/svg/23_retained_variation.svg) |
-| 24 | FERET main experiment: recognition versus LDA dimension | Main result | [PNG](../results/report_figures_20261027/png/24_feret_lda_curves.png) / [SVG](../results/report_figures_20261027/svg/24_feret_lda_curves.svg) |
-| 25 | ORL historical dimension curves: three representation settings | Historical main experiment | [PNG](../results/report_figures_20261027/png/25_orl_historical_dimension_curves.png) / [SVG](../results/report_figures_20261027/svg/25_orl_historical_dimension_curves.svg) |
-| 26 | CSA pipeline and the full reproduction scope | Main result | [PNG](../results/report_figures_20261027/png/26_method_pipeline.png) / [SVG](../results/report_figures_20261027/svg/26_method_pipeline.svg) |
-| 27 | ORL current input: LDA dimension curves from saved models | Zero-fit supplementary analysis | [PNG](../results/report_figures_20261027/png/27_orl_current_lda_curves.png) / [SVG](../results/report_figures_20261027/svg/27_orl_current_lda_curves.svg) |
+| 01 | Paper versus reproduction: all 16 recognition cases | Main result | [PNG](../results/report_figures_20261030/png/01_all_recognition_cases.png) / [SVG](../results/report_figures_20261030/svg/01_all_recognition_cases.svg) |
+| 02 | ORL: six paper-dimension recognition cases | Main result | [PNG](../results/report_figures_20261030/png/02_orl_paper_comparison.png) / [SVG](../results/report_figures_20261030/svg/02_orl_paper_comparison.svg) |
+| 03 | MNIST: both gallery sizes, both representations | Main result | [PNG](../results/report_figures_20261030/png/03_mnist_paper_comparison.png) / [SVG](../results/report_figures_20261030/svg/03_mnist_paper_comparison.svg) |
+| 04 | FERET: three training sizes, PCA and CSA controls | Main result | [PNG](../results/report_figures_20261030/png/04_feret_paper_comparison.png) / [SVG](../results/report_figures_20261030/svg/04_feret_paper_comparison.svg) |
+| 05 | Numerical gaps from the paper across all 16 cases | Main result | [PNG](../results/report_figures_20261030/png/05_all_paper_gaps.png) / [SVG](../results/report_figures_20261030/svg/05_all_paper_gaps.svg) |
+| 06 | ORL recovery: every one of the ten observed splits | Context extension | [PNG](../results/report_figures_20261030/png/06_orl_ten_splits.png) / [SVG](../results/report_figures_20261030/svg/06_orl_ten_splits.svg) |
+| 07 | ORL: geometry and initialization interactions | Context / start variants | [PNG](../results/report_figures_20261030/png/07_orl_geometry_initialization.png) / [SVG](../results/report_figures_20261030/svg/07_orl_geometry_initialization.svg) |
+| 08 | ORL fixed factorial study: sigma by context | Fixed input extension | [PNG](../results/report_figures_20261030/png/08_orl_sigma_context_factorial.png) / [SVG](../results/report_figures_20261030/svg/08_orl_sigma_context_factorial.svg) |
+| 09 | ORL three fixed inputs: improvements and regressions | Fixed input extension | [PNG](../results/report_figures_20261030/png/09_orl_three_fixed_inputs.png) / [SVG](../results/report_figures_20261030/svg/09_orl_three_fixed_inputs.svg) |
+| 10 | Gallery-only staged selection: most gain comes early | Gallery-only selection | [PNG](../results/report_figures_20261030/png/10_orl_gallery_selection_stages.png) / [SVG](../results/report_figures_20261030/svg/10_orl_gallery_selection_stages.svg) |
+| 11 | Crop-only bounded optimization: small gain, negative controls | Gallery-only selection | [PNG](../results/report_figures_20261030/png/11_orl_crop_only_optimization.png) / [SVG](../results/report_figures_20261030/svg/11_orl_crop_only_optimization.svg) |
+| 12 | ORL sample-size extension with the same five probes | Sample-size extension | [PNG](../results/report_figures_20261030/png/12_orl_sample_size.png) / [SVG](../results/report_figures_20261030/svg/12_orl_sample_size.svg) |
+| 13 | MNIST bounded selection: preserve the negative result | Gallery-only selection | [PNG](../results/report_figures_20261030/png/13_mnist_selection_negative.png) / [SVG](../results/report_figures_20261030/svg/13_mnist_selection_negative.svg) |
+| 14 | FERET: validation winners and fixed controls differ | Selection protocol comparison | [PNG](../results/report_figures_20261030/png/14_feret_selection_vs_fixed.png) / [SVG](../results/report_figures_20261030/svg/14_feret_selection_vs_fixed.svg) |
+| 15 | DATER supervised tensor extension: a negative result | New-method extension | [PNG](../results/report_figures_20261030/png/15_dater_matched_comparison.png) / [SVG](../results/report_figures_20261030/svg/15_dater_matched_comparison.svg) |
+| 16 | Shrinkage ablation: compare both selected and matched variants | Regularization extension | [PNG](../results/report_figures_20261030/png/16_shrinkage_ablation.png) / [SVG](../results/report_figures_20261030/svg/16_shrinkage_ablation.svg) |
+| 17 | Representation cost: small weights, explicitly scoped timing | Cost analysis | [PNG](../results/report_figures_20261030/png/17_cost_scope.png) / [SVG](../results/report_figures_20261030/svg/17_cost_scope.svg) |
+| 18 | Probe-eye perturbations: local robustness with no refitting | Robustness extension | [PNG](../results/report_figures_20261030/png/18_eye_perturbation.png) / [SVG](../results/report_figures_20261030/svg/18_eye_perturbation.svg) |
+| 19 | Error analysis: corrections coexist with new failures | Error analysis | [PNG](../results/report_figures_20261030/png/19_error_tradeoffs.png) / [SVG](../results/report_figures_20261030/svg/19_error_tradeoffs.svg) |
+| 20 | Selected configurations: mean versus observed maximum | Exploration / selection bias | [PNG](../results/report_figures_20261030/png/20_mean_vs_maximum.png) / [SVG](../results/report_figures_20261030/svg/20_mean_vs_maximum.svg) |
+| 21 | ORL tensor reconstruction: error and representation storage | Main result | [PNG](../results/report_figures_20261030/png/21_orl_reconstruction.png) / [SVG](../results/report_figures_20261030/svg/21_orl_reconstruction.svg) |
+| 22 | CSA convergence: rapid stabilization in the recorded input | Main result | [PNG](../results/report_figures_20261030/png/22_csa_convergence.png) / [SVG](../results/report_figures_20261030/svg/22_csa_convergence.svg) |
+| 23 | Equal dimension does not imply equal retained variation | Representation diagnosis | [PNG](../results/report_figures_20261030/png/23_retained_variation.png) / [SVG](../results/report_figures_20261030/svg/23_retained_variation.svg) |
+| 24 | FERET main experiment: recognition versus LDA dimension | Main result | [PNG](../results/report_figures_20261030/png/24_feret_lda_curves.png) / [SVG](../results/report_figures_20261030/svg/24_feret_lda_curves.svg) |
+| 25 | ORL historical dimension curves: three representation settings | Historical main experiment | [PNG](../results/report_figures_20261030/png/25_orl_historical_dimension_curves.png) / [SVG](../results/report_figures_20261030/svg/25_orl_historical_dimension_curves.svg) |
+| 26 | CSA pipeline and the full reproduction scope | Main result | [PNG](../results/report_figures_20261030/png/26_method_pipeline.png) / [SVG](../results/report_figures_20261030/svg/26_method_pipeline.svg) |
+| 27 | ORL current input: LDA dimension curves from saved models | Zero-fit supplementary analysis | [PNG](../results/report_figures_20261030/png/27_orl_current_lda_curves.png) / [SVG](../results/report_figures_20261030/svg/27_orl_current_lda_curves.svg) |

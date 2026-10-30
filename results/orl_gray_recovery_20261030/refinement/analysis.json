@@ -1,0 +1,85 @@
+{
+  "best_mean": {
+    "input": "d15_y24",
+    "start": "rectangular_identity",
+    "policy": "unit_gallery_cosine",
+    "n_splits": 10,
+    "mean_percent": 81.84375,
+    "std_pp": 1.9623739343798199,
+    "min_percent": 79.0625,
+    "max_percent": 85.0,
+    "paper_percent": 84.1,
+    "mean_minus_paper_pp": -2.2562499999999943
+  },
+  "highest_single_run": {
+    "input": "d14_y24",
+    "seed": 22,
+    "start": "rectangular_identity",
+    "policy": "unit_gallery_euclidean",
+    "correct": 275,
+    "probe_count": 320,
+    "accuracy_percent": 85.9375
+  },
+  "matched_settings": [
+    {
+      "input": "d15_y24",
+      "start": "rectangular_identity",
+      "policy": "unit_gallery_cosine",
+      "n_splits": 10,
+      "mean_percent": 81.84375,
+      "std_pp": 1.9623739343798199,
+      "min_percent": 79.0625,
+      "max_percent": 85.0,
+      "paper_percent": 84.1,
+      "mean_minus_paper_pp": -2.2562499999999943
+    },
+    {
+      "input": "d15_y24",
+      "start": "hosvd",
+      "policy": "unit_gallery_cosine",
+      "n_splits": 10,
+      "mean_percent": 81.84375,
+      "std_pp": 1.9623739343798199,
+      "min_percent": 79.0625,
+      "max_percent": 85.0,
+      "paper_percent": 84.1,
+      "mean_minus_paper_pp": -2.2562499999999943
+    },
+    {
+      "input": "d15_y24",
+      "start": "PCA30_LDA18",
+      "policy": "unit_gallery_cosine",
+      "n_splits": 10,
+      "mean_percent": 83.5,
+      "std_pp": 2.29071950123391,
+      "min_percent": 80.3125,
+      "max_percent": 87.1875,
+      "paper_percent": 82.2,
+      "mean_minus_paper_pp": 1.2999999999999972
+    },
+    {
+      "input": "d15_y24",
+      "start": "PCA22_LDA16",
+      "policy": "unit_gallery_cosine",
+      "n_splits": 10,
+      "mean_percent": 81.4375,
+      "std_pp": 2.2447856245084963,
+      "min_percent": 79.375,
+      "max_percent": 86.25,
+      "paper_percent": "",
+      "mean_minus_paper_pp": ""
+    }
+  ],
+  "selection": "Neighborhood chosen after parent probe results; best global mean is exploratory, not blind.",
+  "stopping": "This six-geometry neighborhood is the final crop refinement; report remaining gaps without automatic expansion.",
+  "limits": [
+    "Historical splits/photos already observed; not blind or nested validation.",
+    "No proof of global optimum or recovery of author settings.",
+    "Full identity has larger initial mode dimensions; report separately.",
+    "Centered CSA subtracts the fitting tensor mean; report separately.",
+    "Fixed crop targets change field of view; do not call them author-confirmed.",
+    "All methods share each input, split and scored metric convention.",
+    "No shrinkage, new ranks, new LDA dimensions, extra samples, or excluded splits.",
+    "Historical shared input varies by split; all other inputs are globally fixed."
+  ]
+}

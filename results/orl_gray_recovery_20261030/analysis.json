@@ -1,0 +1,134 @@
+{
+  "best_mean": {
+    "input": "d16_y24",
+    "start": "rectangular_identity",
+    "policy": "unit_gallery_euclidean",
+    "n_splits": 10,
+    "mean_percent": 81.34375,
+    "std_pp": 2.0991586442879653,
+    "min_percent": 77.1875,
+    "max_percent": 84.6875,
+    "paper_percent": 84.1,
+    "mean_minus_paper_pp": -2.7562499999999943
+  },
+  "best_globally_fixed_input": {
+    "input": "d16_y24",
+    "start": "rectangular_identity",
+    "policy": "unit_gallery_euclidean",
+    "n_splits": 10,
+    "mean_percent": 81.34375,
+    "std_pp": 2.0991586442879653,
+    "min_percent": 77.1875,
+    "max_percent": 84.6875,
+    "paper_percent": 84.1,
+    "mean_minus_paper_pp": -2.7562499999999943
+  },
+  "best_uncentered_rank_conforming": {
+    "input": "d16_y24",
+    "start": "rectangular_identity",
+    "policy": "unit_gallery_euclidean",
+    "n_splits": 10,
+    "mean_percent": 81.34375,
+    "std_pp": 2.0991586442879653,
+    "min_percent": 77.1875,
+    "max_percent": 84.6875,
+    "paper_percent": 84.1,
+    "mean_minus_paper_pp": -2.7562499999999943
+  },
+  "matched_settings": [
+    {
+      "input": "d16_y24",
+      "start": "rectangular_identity",
+      "policy": "unit_gallery_euclidean",
+      "n_splits": 10,
+      "mean_percent": 81.34375,
+      "std_pp": 2.0991586442879653,
+      "min_percent": 77.1875,
+      "max_percent": 84.6875,
+      "paper_percent": 84.1,
+      "mean_minus_paper_pp": -2.7562499999999943
+    },
+    {
+      "input": "d16_y24",
+      "start": "hosvd",
+      "policy": "unit_gallery_euclidean",
+      "n_splits": 10,
+      "mean_percent": 81.34375,
+      "std_pp": 2.0991586442879653,
+      "min_percent": 77.1875,
+      "max_percent": 84.6875,
+      "paper_percent": 84.1,
+      "mean_minus_paper_pp": -2.7562499999999943
+    },
+    {
+      "input": "d16_y24",
+      "start": "full_identity",
+      "policy": "unit_gallery_euclidean",
+      "n_splits": 10,
+      "mean_percent": 81.34375,
+      "std_pp": 2.0991586442879653,
+      "min_percent": 77.1875,
+      "max_percent": 84.6875,
+      "paper_percent": 84.1,
+      "mean_minus_paper_pp": -2.7562499999999943
+    },
+    {
+      "input": "d16_y24",
+      "start": "hosvd_centered",
+      "policy": "unit_gallery_euclidean",
+      "n_splits": 10,
+      "mean_percent": 78.9375,
+      "std_pp": 1.9443204325533496,
+      "min_percent": 75.3125,
+      "max_percent": 81.875,
+      "paper_percent": 84.1,
+      "mean_minus_paper_pp": -5.162499999999994
+    },
+    {
+      "input": "d16_y24",
+      "start": "PCA30_LDA18",
+      "policy": "unit_gallery_euclidean",
+      "n_splits": 10,
+      "mean_percent": 76.28125,
+      "std_pp": 2.3682744685389263,
+      "min_percent": 72.8125,
+      "max_percent": 79.375,
+      "paper_percent": 82.2,
+      "mean_minus_paper_pp": -5.918750000000003
+    },
+    {
+      "input": "d16_y24",
+      "start": "PCA22_LDA16",
+      "policy": "unit_gallery_euclidean",
+      "n_splits": 10,
+      "mean_percent": 76.15625,
+      "std_pp": 3.2276542156976964,
+      "min_percent": 70.3125,
+      "max_percent": 81.25,
+      "paper_percent": "",
+      "mean_minus_paper_pp": ""
+    }
+  ],
+  "highest_single_run": {
+    "input": "d16_y24",
+    "seed": 29,
+    "start": "rectangular_identity",
+    "policy": "unit_gallery_cosine",
+    "correct": 273,
+    "probe_count": 320,
+    "accuracy_percent": 85.3125
+  },
+  "historical_anchor_mean": 77.46875,
+  "historical_anchor_std": 5.409550614165859,
+  "selection": "Best global ten-split mean over this finite pool uses observed probes; no per-split oracle aggregation.",
+  "limits": [
+    "Historical splits/photos already observed; not blind or nested validation.",
+    "No proof of global optimum or recovery of author settings.",
+    "Full identity has larger initial mode dimensions; report separately.",
+    "Centered CSA subtracts the fitting tensor mean; report separately.",
+    "Fixed crop targets change field of view; do not call them author-confirmed.",
+    "All methods share each input, split and scored metric convention.",
+    "No shrinkage, new ranks, new LDA dimensions, extra samples, or excluded splits.",
+    "Historical shared input varies by split; all other inputs are globally fixed."
+  ]
+}

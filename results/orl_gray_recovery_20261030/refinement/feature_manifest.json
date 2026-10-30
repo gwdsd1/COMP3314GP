@@ -1,0 +1,32 @@
+[
+  {
+    "input": "d14_y24",
+    "path": "results/orl_gray_recovery_20261030/refinement/features/d14_y24.npy",
+    "sha256": "1afaec3d64ed56fab449db17fd6c90f86ebc9b78b3cb83e6f2260606b5d90897"
+  },
+  {
+    "input": "d15_y24",
+    "path": "results/orl_gray_recovery_20261030/refinement/features/d15_y24.npy",
+    "sha256": "7e7a4ef4afe24a0e5acab5ec44b80234fbc7cab9f369f4cf869033c394a6f95a"
+  },
+  {
+    "input": "d17_y24",
+    "path": "results/orl_gray_recovery_20261030/refinement/features/d17_y24.npy",
+    "sha256": "688354c096094d3875b73effa0f8d0a087d777603f7aafb834964ea89f46bdc7"
+  },
+  {
+    "input": "d16_y22",
+    "path": "results/orl_gray_recovery_20261030/refinement/features/d16_y22.npy",
+    "sha256": "1c26a20d9f5ca46cfa2f170f9da0d1e3b5d43414672967eb0edefa016b429023"
+  },
+  {
+    "input": "d16_y26",
+    "path": "results/orl_gray_recovery_20261030/refinement/features/d16_y26.npy",
+    "sha256": "ed4bd2ddc9d2d529dce51fd22e6cb9a490de6e4a7098cb6901341c231aca8bdb"
+  },
+  {
+    "input": "d12_y24",
+    "path": "results/orl_gray_recovery_20261030/refinement/features/d12_y24.npy",
+    "sha256": "c68ffdd1edb023e8fd272b30735f20b23bf2fd67c55da2091c35bea8bbec16f1"
+  }
+]

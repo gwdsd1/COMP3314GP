@@ -1,5 +1,7 @@
 # COMP3314 Group Project — CSA reproduction
 
+> **Grayscale follow-up,2026-10-30:** At unchanged CSA11x2 -> ordinary LDA16/Tmax3/G2-P8, the best tested ten-split configuration is**81.84% +/- 1.96%** (fixed wider crop, identity, unit-column centered-cosine NN), versus shared77.47% +/- 5.41% and paper84.10%. HOSVD ties; matched PCA30->18 is83.50% +/- 2.29%, PCA22->16 is81.44% +/- 2.24%. This is an observed-probe-selected exploratory result, separate from the earlier84.13% shrinkage/rank extension and pool single maximum85.9375%. The Gabor88.75 representative remains unchanged. [Full new study](./docs/REPORT.md#orl-gray-recovery-20261030), [final data](./results/orl_gray_recovery_20261030/final_analysis.json). The current README/main charts use81.84%;77.47% remains historical. The20261030 figure edition is current and the20261027 edition is archived. Historical material below retains its batch labels.
+
 > **Project classification:** full reproduction within the instructor-approved ORL, MNIST, and grayscale FERET scope. PIE omission, independent implementation, unknown settings, and numerical differences remain explicit.
 
 > English translation of the former README, updated for publication on2026-10-27. Historical scores/protocols remain intact. Use the current [README](./README.md) and [TEAM_BRIEF](./docs/TEAM_BRIEF.md#reproduction-status) for publication scope and the new ORL follow-up. All three datasets/caches remain local.

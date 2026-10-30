@@ -1,0 +1,143 @@
+{
+  "date": "2026-10-30",
+  "inputs": [
+    {
+      "id": "d14_y24",
+      "distance": 14.0,
+      "eye_y": 24.0
+    },
+    {
+      "id": "d15_y24",
+      "distance": 15.0,
+      "eye_y": 24.0
+    },
+    {
+      "id": "d17_y24",
+      "distance": 17.0,
+      "eye_y": 24.0
+    },
+    {
+      "id": "d16_y22",
+      "distance": 16.0,
+      "eye_y": 22.0
+    },
+    {
+      "id": "d16_y26",
+      "distance": 16.0,
+      "eye_y": 26.0
+    },
+    {
+      "id": "d12_y24",
+      "distance": 12.0,
+      "eye_y": 24.0
+    }
+  ],
+  "starts": [
+    "rectangular_identity",
+    "hosvd"
+  ],
+  "methods": [
+    "rectangular_identity",
+    "hosvd",
+    "PCA30_LDA18",
+    "PCA22_LDA16"
+  ],
+  "policies": [
+    {
+      "id": "unit_gallery_cosine",
+      "scale": "unit",
+      "origin": "gallery",
+      "metric": "cosine"
+    },
+    {
+      "id": "unit_linear_cosine",
+      "scale": "unit",
+      "origin": "linear",
+      "metric": "cosine"
+    },
+    {
+      "id": "unit_gallery_euclidean",
+      "scale": "unit",
+      "origin": "gallery",
+      "metric": "euclidean"
+    },
+    {
+      "id": "sw_gallery_cosine",
+      "scale": "sw",
+      "origin": "gallery",
+      "metric": "cosine"
+    },
+    {
+      "id": "sw_linear_cosine",
+      "scale": "sw",
+      "origin": "linear",
+      "metric": "cosine"
+    },
+    {
+      "id": "sw_gallery_euclidean",
+      "scale": "sw",
+      "origin": "gallery",
+      "metric": "euclidean"
+    }
+  ],
+  "CSA_ranks": [
+    11,
+    2
+  ],
+  "CSA_LDA": 16,
+  "Tmax": 3,
+  "center": false,
+  "planned_CSA_fits": 120,
+  "planned_PCA_fits": 120,
+  "planned_scores": 1440,
+  "eye_annotations": "same frozen YuNet eyes as parent",
+  "histogram": "PIL",
+  "interpolation": "linear",
+  "warp_border": "replicate",
+  "input_size": [
+    56,
+    46
+  ],
+  "gallery_per_class": 2,
+  "probe_per_class": 8,
+  "seeds": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "parent_sha256": {
+    "protocol.json": "c0a649cac8d77ec53850ef05c8e301d4a10d28ac0bbd1b7e28159769043203b4",
+    "splits.json": "d6849062ccbb3e2d9b69f1eb7ec62e314cc5a6c28be9c124a04604769101226c",
+    "summary.csv": "b570b7189ede240902acc208feaf3dcf328ee96c525400a4280936fd35450eac",
+    "results.csv": "7cac05c2bd07a0629e81813fc06ea052734ba2dfa3d24031f431bd50fe267f5c",
+    "analysis.json": "b0c1002e41d1ae375f938b4aec61a3f9810a6c31fabb17e9afe12f3881cc5abc"
+  },
+  "source_sha256": {
+    "run_orl_gray_recovery.py": "af22d92741aabe8f675b7025bf49b4e69ce60dc5ebb67caa62933b95419b3e3f",
+    "verify_orl_gray_recovery.py": "8fdad989ed3a90d1ab0042da50a761428fd55dc80ac1b2803e8eabec714ae312",
+    "csa.py": "6aabff534f47786c9a5098b2459e3afc55f39ad3d86d99b2bcba220f868b06a3",
+    "gabor.py": "ceb12f2bfbe82e381375e14a1c60d0a0a4795b91544e7bff02c22e93ac61578f",
+    "prepare_available_data.py": "0f5d07532716155b41c7264fc55cfcb749678d9ce1c77a1ad479d8f43e65f6e0",
+    "run_available_reproduction.py": "135ab16b4e47f840ad0e711c9bb1cb72166e1a3f871e46ae4d25726ae6928a71",
+    "run_orl_gray_refinement.py": "fe09bb67ea4b94f3dff6304be70fe9680207489349994885fa5854f72228e1c8"
+  },
+  "selection": "Neighborhood chosen after parent probe results; best global mean is exploratory, not blind.",
+  "stopping": "This six-geometry neighborhood is the final crop refinement; report remaining gaps without automatic expansion.",
+  "limits": [
+    "Historical splits/photos already observed; not blind or nested validation.",
+    "No proof of global optimum or recovery of author settings.",
+    "Full identity has larger initial mode dimensions; report separately.",
+    "Centered CSA subtracts the fitting tensor mean; report separately.",
+    "Fixed crop targets change field of view; do not call them author-confirmed.",
+    "All methods share each input, split and scored metric convention.",
+    "No shrinkage, new ranks, new LDA dimensions, extra samples, or excluded splits.",
+    "Historical shared input varies by split; all other inputs are globally fixed."
+  ]
+}

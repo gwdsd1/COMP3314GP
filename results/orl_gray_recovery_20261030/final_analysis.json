@@ -1,0 +1,213 @@
+{
+  "best_global_mean": {
+    "stage": "refinement",
+    "input": "d15_y24",
+    "start": "rectangular_identity",
+    "policy": "unit_gallery_cosine",
+    "n_splits": "10",
+    "mean_percent": "81.84375",
+    "std_pp": "1.9623739343798199",
+    "min_percent": "79.0625",
+    "max_percent": "85.0",
+    "paper_percent": "84.1",
+    "mean_minus_paper_pp": "-2.2562499999999943"
+  },
+  "matched_settings": [
+    {
+      "stage": "refinement",
+      "input": "d15_y24",
+      "start": "rectangular_identity",
+      "policy": "unit_gallery_cosine",
+      "n_splits": "10",
+      "mean_percent": "81.84375",
+      "std_pp": "1.9623739343798199",
+      "min_percent": "79.0625",
+      "max_percent": "85.0",
+      "paper_percent": "84.1",
+      "mean_minus_paper_pp": "-2.2562499999999943"
+    },
+    {
+      "stage": "refinement",
+      "input": "d15_y24",
+      "start": "hosvd",
+      "policy": "unit_gallery_cosine",
+      "n_splits": "10",
+      "mean_percent": "81.84375",
+      "std_pp": "1.9623739343798199",
+      "min_percent": "79.0625",
+      "max_percent": "85.0",
+      "paper_percent": "84.1",
+      "mean_minus_paper_pp": "-2.2562499999999943"
+    },
+    {
+      "stage": "refinement",
+      "input": "d15_y24",
+      "start": "PCA30_LDA18",
+      "policy": "unit_gallery_cosine",
+      "n_splits": "10",
+      "mean_percent": "83.5",
+      "std_pp": "2.29071950123391",
+      "min_percent": "80.3125",
+      "max_percent": "87.1875",
+      "paper_percent": "82.2",
+      "mean_minus_paper_pp": "1.2999999999999972"
+    },
+    {
+      "stage": "refinement",
+      "input": "d15_y24",
+      "start": "PCA22_LDA16",
+      "policy": "unit_gallery_cosine",
+      "n_splits": "10",
+      "mean_percent": "81.4375",
+      "std_pp": "2.2447856245084963",
+      "min_percent": "79.375",
+      "max_percent": "86.25",
+      "paper_percent": "",
+      "mean_minus_paper_pp": ""
+    }
+  ],
+  "highest_single_run": {
+    "stage": "refinement",
+    "input": "d14_y24",
+    "seed": "22",
+    "start": "rectangular_identity",
+    "policy": "unit_gallery_euclidean",
+    "correct": "275",
+    "probe_count": "320",
+    "accuracy_percent": "85.9375"
+  },
+  "old_shared_mean": 77.46875,
+  "old_shared_std": 5.409550614165859,
+  "mean_change_pp": 4.375,
+  "improved_splits": 9,
+  "tied_splits": 0,
+  "lower_splits": 1,
+  "model_count": 960,
+  "CSA_models": 600,
+  "PCA_models": 360,
+  "score_count": 5760,
+  "prediction_count": 1843200,
+  "candidate_CSA_means": 360,
+  "input_bundles": 18,
+  "all_ten_splits_retained": true,
+  "all_batches_verified": true,
+  "selection": "Global configuration selected using already-observed probes; no per-split oracle mean.",
+  "paper_aggregation_unknown": true,
+  "author_settings_confirmed": false,
+  "fixed": {
+    "input_size": [
+      56,
+      46
+    ],
+    "CSA_ranks": [
+      11,
+      2
+    ],
+    "LDA": 16,
+    "Tmax": 3,
+    "G": 2,
+    "P": 8,
+    "regularization": "none",
+    "additional_training_images": false
+  },
+  "best_settings": {
+    "eyes": "YuNet frozen annotation",
+    "target_left": [
+      15.5,
+      24.0
+    ],
+    "target_right": [
+      30.5,
+      24.0
+    ],
+    "interpolation": "OpenCV INTER_LINEAR",
+    "boundary": "BORDER_REPLICATE",
+    "histogram": "PIL equalize",
+    "CSA_center": false,
+    "CSA_start": "rectangular_identity",
+    "LDA_scale": "unit columns",
+    "NN": "gallery-centered cosine"
+  },
+  "identity_hosvd_comparison": [
+    {
+      "seed": 20,
+      "predicted_labels_differ": 0,
+      "correctness_flags_differ": 0,
+      "identity_correct": 257,
+      "hosvd_correct": 257
+    },
+    {
+      "seed": 21,
+      "predicted_labels_differ": 0,
+      "correctness_flags_differ": 0,
+      "identity_correct": 253,
+      "hosvd_correct": 253
+    },
+    {
+      "seed": 22,
+      "predicted_labels_differ": 1,
+      "correctness_flags_differ": 0,
+      "identity_correct": 267,
+      "hosvd_correct": 267
+    },
+    {
+      "seed": 23,
+      "predicted_labels_differ": 0,
+      "correctness_flags_differ": 0,
+      "identity_correct": 259,
+      "hosvd_correct": 259
+    },
+    {
+      "seed": 24,
+      "predicted_labels_differ": 0,
+      "correctness_flags_differ": 0,
+      "identity_correct": 267,
+      "hosvd_correct": 267
+    },
+    {
+      "seed": 25,
+      "predicted_labels_differ": 0,
+      "correctness_flags_differ": 0,
+      "identity_correct": 260,
+      "hosvd_correct": 260
+    },
+    {
+      "seed": 26,
+      "predicted_labels_differ": 0,
+      "correctness_flags_differ": 0,
+      "identity_correct": 255,
+      "hosvd_correct": 255
+    },
+    {
+      "seed": 27,
+      "predicted_labels_differ": 0,
+      "correctness_flags_differ": 0,
+      "identity_correct": 272,
+      "hosvd_correct": 272
+    },
+    {
+      "seed": 28,
+      "predicted_labels_differ": 0,
+      "correctness_flags_differ": 0,
+      "identity_correct": 261,
+      "hosvd_correct": 261
+    },
+    {
+      "seed": 29,
+      "predicted_labels_differ": 0,
+      "correctness_flags_differ": 0,
+      "identity_correct": 268,
+      "hosvd_correct": 268
+    }
+  ],
+  "limits": [
+    "Historical splits/photos already observed; not blind or nested validation.",
+    "No proof of global optimum or recovery of author settings.",
+    "Full identity has larger initial mode dimensions; report separately.",
+    "Centered CSA subtracts the fitting tensor mean; report separately.",
+    "Fixed crop targets change field of view; do not call them author-confirmed.",
+    "All methods share each input, split and scored metric convention.",
+    "No shrinkage, new ranks, new LDA dimensions, extra samples, or excluded splits.",
+    "Historical shared input varies by split; all other inputs are globally fixed."
+  ]
+}

@@ -23,19 +23,20 @@ from scipy.spatial.distance import cdist
 from threadpoolctl import threadpool_limits
 
 BASE = Path(__file__).resolve().parent
-OUT = BASE/'results/report_figures_20261027'
-PDF = BASE/'output/pdf/CSA_figure_atlas_20261027.pdf'
+DATE_STAMP = '20261030'
+OUT = BASE/f'results/report_figures_{DATE_STAMP}'
+PDF = BASE/f'output/pdf/CSA_figure_atlas_{DATE_STAMP}.pdf'
 PAPER, BLUE, TEAL, ORANGE, PURPLE, RED = '#344254', '#326FA0', '#168078', '#CF7132', '#8363A7', '#B64F58'
 METHODS = ['CSA24_LDA23', 'CSA390', 'PCA24_LDA23', 'PCA33_LDA25']
 NAMES = {'CSA24_LDA23':'CSA24 + LDA23', 'CSA390':'CSA390',
          'PCA24_LDA23':'PCA24 + LDA23', 'PCA33_LDA25':'PCA33 + LDA25'}
 SOURCE_HASHES, ITEMS, DATAPOINTS, FIGURES = {}, [], [], []
 SOURCE_MAP = {
- 'all_recognition_cases':['results/orl_protocol_audit/shared_comparison.csv','results/orl_recovery_20261027/summary.csv'],
- 'orl_paper_comparison':['results/orl_protocol_audit/shared_comparison.csv','results/orl_recovery_20261027/summary.csv'],
+ 'all_recognition_cases':['results/orl_protocol_audit/shared_comparison.csv','results/orl_recovery_20261027/summary.csv','results/orl_gray_recovery_20261030/final_analysis.json'],
+ 'orl_paper_comparison':['results/orl_protocol_audit/shared_comparison.csv','results/orl_recovery_20261027/summary.csv','results/orl_gray_recovery_20261030/final_analysis.json'],
  'mnist_paper_comparison':['results/orl_protocol_audit/shared_comparison.csv'],
  'feret_paper_comparison':['results/orl_protocol_audit/shared_comparison.csv'],
- 'all_paper_gaps':['results/orl_protocol_audit/shared_comparison.csv','results/orl_recovery_20261027/summary.csv'],
+ 'all_paper_gaps':['results/orl_protocol_audit/shared_comparison.csv','results/orl_recovery_20261027/summary.csv','results/orl_gray_recovery_20261030/final_analysis.json'],
  'orl_ten_splits':['results/orl_recovery_20261027/results.csv','results/orl_recovery_20261027/summary.csv'],
  'orl_geometry_initialization':['results/orl_recovery_20261027/summary.csv'],
  'orl_sigma_context_factorial':['results/orl_controlled/summary.csv'],
@@ -57,7 +58,7 @@ SOURCE_MAP = {
  'feret_lda_curves':['results/feret_validation_selected_v3/lda_dimension_curves.csv'],
  'orl_historical_dimension_curves':['results/available_reproduction_v2/dimension_curves.csv'],
  'method_pipeline':['csa.py','run_orl_recovery.py'],
- 'orl_current_lda_curves':['results/report_figures_20261027/derived_lda_curves.csv','results/orl_recovery_20261027/models.csv','results/orl_recovery_20261027/results.csv']}
+ 'orl_current_lda_curves':[f'results/report_figures_{DATE_STAMP}/derived_lda_curves.csv','results/orl_recovery_20261027/models.csv','results/orl_recovery_20261027/results.csv']}
 plt.rcParams.update({'font.family':'DejaVu Sans', 'font.size':11,
     'axes.spines.top':False, 'axes.spines.right':False, 'axes.labelsize':11,
     'axes.titlesize':13, 'legend.fontsize':9, 'pdf.fonttype':42,
@@ -146,8 +147,13 @@ def current_rows():
           if r['profile'] in ['paper_dimensions','group_primary','cosine_control']]
     recovery=read('results/orl_recovery_20261027/summary.csv')
     new=pick(recovery,input='d20_y24',start='hosvd',policy='unit_gallery_cosine_g0')
+    gray=js('results/orl_gray_recovery_20261030/final_analysis.json')['best_global_mean']
     for r in rows:
         r['category']='Shared-setting reference'
+        if r['dataset']=='ORL' and r['method']=='CSA-2+LDA':
+            r.update(mean_percent=gray['mean_percent'],std_pp=gray['std_pp'],
+                     difference_pp=gray['mean_minus_paper_pp'],category='Gray recovery representative',
+                     source='results/orl_gray_recovery_20261030/final_analysis.json',profile='gray_recovery_representative')
         if r['dataset']=='ORL' and r['method']=='CSA-3+LDA':
             r.update(mean_percent=new['mean_percent'],std_pp=new['std_pp'],
                      difference_pp=new['mean_minus_paper_pp'],category='HOSVD/context extension',
@@ -173,7 +179,7 @@ def main_comparisons():
         return ({50:'PCA45 + LDA25',100:'PCA95 + LDA40',200:'PCA112 + LDA69'} if r['method']=='PCA+LDA (Gray)'
                 else {50:'CSA10x4 + LDA35',100:'CSA11x5 + LDA44',200:'CSA13x7 + LDA62'})[q]
     title='Paper versus reproduction: all 16 recognition cases'
-    fig,axes=one(title,'Full reproduction within the instructor-approved three-dataset scope; * marks the ORL context extension.',size=(13.33,9.3))
+    fig,axes=one(title,'Updated 2026-10-30 within the approved scope; protocol notes are below. * marks the Gabor context extension.',size=(13.33,9.3))
     ax=axes[0];ax.axis('off')
     cells=[]
     for r in rows:
@@ -186,18 +192,20 @@ def main_comparisons():
     for (i,j),cell in table.get_celld().items():
         cell.set_edgecolor('#DDE4EB');cell.set_linewidth(.5)
         if i==0:cell.set_facecolor(PAPER);cell.set_text_props(color='white',weight='bold')
-        else:cell.set_facecolor('#FFF0E4' if i==6 else ('#F2F6FA' if i%2 else 'white'))
-    finish(fig,'all_recognition_cases',title,'ORL: ten splits; MNIST: three splits; error values are sample SD, not confidence intervals. FERET: one fixed identity partition, no split SD. ORL* uses HOSVD/context; other rows retain their reference protocols. Paper repetition/selection details are unspecified.',rows,use='Report or backup slide')
+        else:cell.set_facecolor('#FFF0E4' if i in [2,6] else ('#F2F6FA' if i%2 else 'white'))
+    finish(fig,'all_recognition_cases',title,'ORL: ten splits; MNIST: three; +/- is sample SD. FERET: one fixed identity partition. Gray CSA uses the observed-probe-selected 2026-10-30 recovery; Gabor CSA24* uses HOSVD/context. Other rows retain reference protocols. Crop/distance details are in REPORT; author split aggregation is unknown.',rows,use='Report or backup slide')
     for ds,slug,title in [('ORL','orl_paper_comparison','ORL: six paper-dimension recognition cases'),
                            ('MNIST','mnist_paper_comparison','MNIST: both gallery sizes, both representations')]:
         selected=[r for r in rows if r['dataset'].startswith(ds)]
         fig,axes=one(title,'Diamonds: paper values. Circles: our means. Horizontal whiskers: sample SD.')
         labels=[method_label(r)+('\n'+r['dataset'] if ds=='MNIST' else '') for r in selected]
-        colors=[ORANGE if r['category']=='HOSVD/context extension' else BLUE for r in selected]
+        colors=[ORANGE if r['category'] in ['HOSVD/context extension','Gray recovery representative'] else BLUE for r in selected]
         draw_pair(axes[0],labels,[f(r,'paper_percent') for r in selected],[f(r) for r in selected],
                   [f(r,'std_pp') for r in selected],colors,limits=(65,101) if ds=='ORL' else (84,96))
         axes[0].legend(loc='upper right');fig.subplots_adjust(left=.27)
-        finish(fig,slug,title,'ORL* is the current HOSVD/context extension at 24->23 dimensions, not a common input with every other ORL row. MNIST uses the original three-seed references. Best paper configurations and our repeated means have different reporting conventions.',selected)
+        caption=('Gray CSA11x2->16 uses the current probe-selected crop/distance configuration; Gabor CSA24* uses HOSVD/context. Other ORL rows retain shared references, so this is not one common input protocol. See REPORT for full settings; paper aggregation is unknown.' if ds=='ORL' else
+                 'MNIST uses the original three-seed references. Best paper configurations and our repeated means have different reporting conventions.')
+        finish(fig,slug,title,caption,selected)
     fer=[r for r in rows if r['dataset'].startswith('FERET')]
     title='FERET: three training sizes, PCA and CSA controls'
     fig,axes=one(title,'Official grayscale Fa/Fb pairs; first q identities learn the representation; remaining identities are tested.')
@@ -212,11 +220,11 @@ def main_comparisons():
     title='Numerical gaps from the paper across all 16 cases'
     fig,axes=one(title,'Positive differences mean a higher recorded number; they do not prove a matched-protocol improvement.',size=(13.33,9.3))
     ax=axes[0];y=np.arange(16);vals=[f(r,'difference_pp') for r in rows]
-    ax.barh(y,vals,color=[ORANGE if r['category']=='HOSVD/context extension' else (TEAL if v>=0 else BLUE) for r,v in zip(rows,vals)])
+    ax.barh(y,vals,color=[ORANGE if r['category'] in ['HOSVD/context extension','Gray recovery representative'] else (TEAL if v>=0 else BLUE) for r,v in zip(rows,vals)])
     ax.set_yticks(y,[r['dataset']+' | '+method_label(r) for r in rows],fontsize=9);ax.invert_yaxis();ax.axvline(0,color=PAPER,lw=1)
     ax.set_xlim(-8.5,7);ax.set_xlabel('Our value minus paper value (percentage points)')
     for i,v in enumerate(vals):ax.text(v+(.13 if v>=0 else -.13),i,f'{fmt(v, signed=True)}',ha='left' if v>=0 else 'right',va='center',fontsize=9)
-    fig.subplots_adjust(left=.34);finish(fig,'all_paper_gaps',title,'Orange is the HOSVD/context ORL representative. Other values use their preserved shared references. FERET has a fixed identity partition; paper best-result aggregation is not recoverable.',rows,use='Report / backup slide')
+    fig.subplots_adjust(left=.34);finish(fig,'all_paper_gaps',title,'Orange: current ORL CSA representatives, gray recovery81.84 and Gabor HOSVD/context88.75. Gray settings were selected using observed probes; see REPORT for crop/distance details. Other values retain reference protocols. Paper best-result aggregation is unknown.',rows,use='Report / backup slide')
 
 
 def recovery():
@@ -524,11 +532,12 @@ def main():
         for fig in FIGURES:atlas.savefig(fig)
     for fig in FIGURES:plt.close(fig)
     write_table(OUT/'figure_catalog.csv',ITEMS);write_table(OUT/'plot_data.csv',DATAPOINTS)
-    manifest=dict(created='2026-10-27',figure_count=len(ITEMS),project_classification='Full reproduction within the instructor-approved three-dataset scope',
+    manifest=dict(created='2026-10-30',figure_count=len(ITEMS),project_classification='Full reproduction within the instructor-approved three-dataset scope',
         generator_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),source_sha256=SOURCE_HASHES,
         provenance='All figures use saved evidence. The last curve panel newly scores saved models, zero new fits; endpoints independently match archived23D scores.',
         paper_values='Recorded Tables I/II/IV references; author split aggregation unknown.',
-        current_ORL='HOSVD/context88.75+/-2.89; full-square88.81+/-2.97 separate',
+        current_ORL='Gray CSA11x2+LDA16:81.84+/-1.96; Gabor HOSVD/context88.75+/-2.89; full-square88.81+/-2.97 separate',
+        historical_edition='results/report_figures_20261027 remains unchanged as the historical edition.',
         statistics='Sample SD across specified splits, not CI. FERET uses one fixed identity split. Repeated predictions are not independent photos.',
         excluded='No face images, dataset labels/arrays, model caches or private letters included.',
         atlas=PDF.relative_to(BASE).as_posix(),figures=ITEMS)
@@ -536,11 +545,11 @@ def main():
     snippets=['% Vector PDF atlas: choose a page, or use the per-figure SVG/PNG exports.']
     for item in ITEMS:
         snippets+=['',f'% Figure {item["number"]}: {item["title"]}',r'\begin{figure}[t]',r'\centering',
-                   r'\includegraphics[page='+str(item['number'])+r',width=\linewidth]{CSA_figure_atlas_20261027.pdf}',
+                   r'\includegraphics[page='+str(item['number'])+r',width=\linewidth]{'+PDF.name+'}',
                    r'\caption{'+item['caption'].replace('%',r'\%').replace('_',r'\_').replace('&',r'\&')+'}',
                    r'\label{fig:'+item['slug']+'}',r'\end{figure}']
     (OUT/'latex_figures.tex').write_text('\n'.join(snippets)+'\n',encoding='utf-8')
-    package=OUT/'CSA_report_slide_figures_20261027.zip'
+    package=OUT/f'CSA_report_slide_figures_{DATE_STAMP}.zip'
     with zipfile.ZipFile(package,'w',compression=zipfile.ZIP_DEFLATED) as archive:
         archive.write(PDF,PDF.name)
         for path in sorted(OUT.rglob('*')):

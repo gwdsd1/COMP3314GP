@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "models": 720,
+  "CSA_models": 480,
+  "PCA_models": 240,
+  "scores": 4320,
+  "predictions": 1382400,
+  "summary_rows": 432,
+  "max_reference_projector_error": 5.847136333973204e-13,
+  "max_gallery_core_abs_error": 4.274625098332763e-11,
+  "max_independent_fisher_residual": 8.011318318604136e-13,
+  "all_saved_predictions_recomputed": true,
+  "source_input_model_hashes_match": true,
+  "historical_evidence_unchanged": true,
+  "all_splits_retained": true,
+  "improvement_splits": 7,
+  "tied_splits": 0,
+  "lower_splits": 3,
+  "winner_is_exploratory": true,
+  "author_settings_recovered": false
+}

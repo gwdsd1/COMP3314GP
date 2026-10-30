@@ -1,0 +1,218 @@
+{
+  "date": "2026-10-30",
+  "inputs": [
+    {
+      "eyes": "yunet",
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "interpolation": "linear",
+      "border": "replicate",
+      "histogram": "PIL",
+      "id": "historical_shared",
+      "historical": true
+    },
+    {
+      "eyes": "yunet",
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "interpolation": "linear",
+      "border": "replicate",
+      "histogram": "PIL",
+      "id": "d20_y24"
+    },
+    {
+      "eyes": "yunet",
+      "distance": 18.0,
+      "eye_y": 24.0,
+      "interpolation": "linear",
+      "border": "replicate",
+      "histogram": "PIL",
+      "id": "d18_y24"
+    },
+    {
+      "eyes": "yunet",
+      "distance": 22.0,
+      "eye_y": 24.0,
+      "interpolation": "linear",
+      "border": "replicate",
+      "histogram": "PIL",
+      "id": "d22_y24"
+    },
+    {
+      "eyes": "yunet",
+      "distance": 20.0,
+      "eye_y": 22.0,
+      "interpolation": "linear",
+      "border": "replicate",
+      "histogram": "PIL",
+      "id": "d20_y22"
+    },
+    {
+      "eyes": "yunet",
+      "distance": 20.0,
+      "eye_y": 26.0,
+      "interpolation": "linear",
+      "border": "replicate",
+      "histogram": "PIL",
+      "id": "d20_y26"
+    },
+    {
+      "eyes": "yunet",
+      "distance": 16.0,
+      "eye_y": 24.0,
+      "interpolation": "linear",
+      "border": "replicate",
+      "histogram": "PIL",
+      "id": "d16_y24"
+    },
+    {
+      "eyes": "yunet",
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "interpolation": "cubic",
+      "border": "replicate",
+      "histogram": "PIL",
+      "id": "d20_y24_cubic"
+    },
+    {
+      "eyes": "yunet",
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "interpolation": "lanczos4",
+      "border": "replicate",
+      "histogram": "PIL",
+      "id": "d20_y24_lanczos"
+    },
+    {
+      "eyes": "yunet",
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "interpolation": "linear",
+      "border": "zero",
+      "histogram": "PIL",
+      "id": "d20_y24_zero"
+    },
+    {
+      "eyes": "yunet",
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "interpolation": "linear",
+      "border": "replicate",
+      "histogram": "CDF_min",
+      "id": "d20_y24_cdfmin"
+    },
+    {
+      "eyes": "haar_v2",
+      "distance": 20.0,
+      "eye_y": 24.0,
+      "interpolation": "linear",
+      "border": "replicate",
+      "histogram": "PIL",
+      "id": "haar_d20_y24"
+    }
+  ],
+  "seeds": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "CSA_ranks": [
+    11,
+    2
+  ],
+  "CSA_LDA": 16,
+  "PCA_controls": {
+    "PCA30_LDA18": [
+      30,
+      18
+    ],
+    "PCA22_LDA16": [
+      22,
+      16
+    ]
+  },
+  "Tmax": 3,
+  "epsilon": 0.001,
+  "starts": [
+    "rectangular_identity",
+    "hosvd",
+    "full_identity",
+    "hosvd_centered"
+  ],
+  "policies": [
+    {
+      "id": "unit_gallery_cosine",
+      "scale": "unit",
+      "origin": "gallery",
+      "metric": "cosine"
+    },
+    {
+      "id": "unit_linear_cosine",
+      "scale": "unit",
+      "origin": "linear",
+      "metric": "cosine"
+    },
+    {
+      "id": "unit_gallery_euclidean",
+      "scale": "unit",
+      "origin": "gallery",
+      "metric": "euclidean"
+    },
+    {
+      "id": "sw_gallery_cosine",
+      "scale": "sw",
+      "origin": "gallery",
+      "metric": "cosine"
+    },
+    {
+      "id": "sw_linear_cosine",
+      "scale": "sw",
+      "origin": "linear",
+      "metric": "cosine"
+    },
+    {
+      "id": "sw_gallery_euclidean",
+      "scale": "sw",
+      "origin": "gallery",
+      "metric": "euclidean"
+    }
+  ],
+  "planned_CSA_fits": 480,
+  "planned_PCA_fits": 240,
+  "planned_scores": 4320,
+  "source_sha256": {
+    "run_orl_gray_recovery.py": "af22d92741aabe8f675b7025bf49b4e69ce60dc5ebb67caa62933b95419b3e3f",
+    "verify_orl_gray_recovery.py": "8fdad989ed3a90d1ab0042da50a761428fd55dc80ac1b2803e8eabec714ae312",
+    "csa.py": "6aabff534f47786c9a5098b2459e3afc55f39ad3d86d99b2bcba220f868b06a3",
+    "gabor.py": "ceb12f2bfbe82e381375e14a1c60d0a0a4795b91544e7bff02c22e93ac61578f",
+    "prepare_available_data.py": "0f5d07532716155b41c7264fc55cfcb749678d9ce1c77a1ad479d8f43e65f6e0",
+    "run_available_reproduction.py": "135ab16b4e47f840ad0e711c9bb1cb72166e1a3f871e46ae4d25726ae6928a71"
+  },
+  "input_size": [
+    56,
+    46
+  ],
+  "gallery_per_class": 2,
+  "probe_per_class": 8,
+  "primary_policy": "unit_gallery_cosine",
+  "paper_CSA": 84.1,
+  "paper_PCA": 82.2,
+  "selection": "Best global ten-split mean over this finite pool uses observed probes; no per-split oracle aggregation.",
+  "limits": [
+    "Historical splits/photos already observed; not blind or nested validation.",
+    "No proof of global optimum or recovery of author settings.",
+    "Full identity has larger initial mode dimensions; report separately.",
+    "Centered CSA subtracts the fitting tensor mean; report separately.",
+    "Fixed crop targets change field of view; do not call them author-confirmed.",
+    "All methods share each input, split and scored metric convention.",
+    "No shrinkage, new ranks, new LDA dimensions, extra samples, or excluded splits.",
+    "Historical shared input varies by split; all other inputs are globally fixed."
+  ]
+}
